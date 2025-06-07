@@ -31,4 +31,35 @@ public class SubArrays {
         }
         return ans == Integer.MAX_VALUE ? 0 : ans;
     }
+
+    /**
+     * Problem <p>
+     * Given an array of integers nums and an integer k, return the number of contiguous subarrays where the product of all the elements in the subarray is strictly less than k.
+     * </p>
+     * Approach <p>
+     * Imagine a sliding window traversing the array. We keep track of the product of elements within the window. If the product becomes greater than or equal to k, we need to shrink the window from the left side until the product becomes less than k. This process ensures that all subarrays considered have a product strictly less than k.
+     * </p>
+     * Complexity
+     * <p>
+     * Time complexity:{@code O(n)}
+     * <p></p>
+     * Space  complexity:{@code O(1)}
+     */
+    public int numSubarrayProductLessThanK(int[] nums, int k) {
+        if (k <= 1) return 0;
+        int i = 0, product = 1, count = 0;
+
+        for (int j = 0; j < nums.length; j++) {
+            product *= nums[j];
+
+            while (product >= k) {
+                product /= nums[i];
+                i++;
+            }
+
+            count += (j - i + 1);
+        }
+
+        return count;
+    }
 }

@@ -157,7 +157,7 @@ public class SortedArray {
      * <p></p>
      * Space complexity: {@code O(1)}
      */
-    public List<List<Integer>> findTriplets(int[] nums) {
+    public static List<List<Integer>> findTriplets(int[] nums) {
         // Your code here
         Arrays.sort(nums);
         int n = nums.length;
@@ -192,5 +192,45 @@ public class SortedArray {
             }
         }
         return ans;
+    }
+
+    /**
+     * Problem <p>
+     * Given an array arr[] and an integer target, the task is to find the sum of three integers in arr[] such that the sum is closest to target.
+     * Note: If multiple sums are closest to target, return the maximum one.
+     * </p>
+     * Intuition <p>
+     * Initially, we sort the input array so that we can apply two pointers technique. Then, we iterate over the array fixing the first element of the triplet and then use two pointers technique to find the remaining two elements. Set one pointer at the beginning (left) and another at the end (right) of the remaining array. We then find the absolute difference between the sum of triplet and target and store the triplet having minimum absolute difference.
+     * </p>
+     * Complexity
+     * <p>
+     * Time complexity:{@code O(n^2)} (for sorting)
+     * <p></p>
+     * Space complexity:{@code O(1)} (for storing merged intervals)
+     */
+
+    public static int closest3Sum(int[] arr, int target) {
+        int n = arr.length;
+        Arrays.sort(arr);
+        int res = 0;
+        int minDiff = Integer.MAX_VALUE;
+        for (int i = 0; i < n - 2; i++) {
+            int l = i + 1, r = n - 1;
+            while (l < r) {
+                int currSum = arr[i] + arr[l] + arr[r];
+                if (Math.abs(currSum - target) < minDiff) {
+                    minDiff = Math.abs(currSum - target);
+                    res = currSum;
+                } else if (Math.abs(currSum - target) == minDiff) {
+                    res = Math.max(res, currSum);
+                }
+                if (currSum > target) {
+                    r--;
+                } else {
+                    l++;
+                }
+            }
+        }
+        return res;
     }
 }
