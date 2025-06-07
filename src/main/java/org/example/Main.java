@@ -1,6 +1,6 @@
 package org.example;
 
-import org.example.arrays.MoveZeroToLeft;
+import org.example.coding.arrays.MoveZeroToLeft;
 
 public class Main {
     public static void main(String[] args) {

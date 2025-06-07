@@ -1,4 +1,4 @@
-package org.example.arrays;
+package org.example.coding.arrays;
 
 public class MoveZeroToLeft {
 
