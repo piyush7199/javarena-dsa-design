@@ -1,6 +1,7 @@
 package org.example.coding.arrays;
 
 public class SubArrays {
+
     /**
      * Problem
      * <p>
