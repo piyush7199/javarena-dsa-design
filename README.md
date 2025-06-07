@@ -27,6 +27,8 @@ src/
 | # | Problem               | Solution                                                                                                                            |
 |---|-----------------------|-------------------------------------------------------------------------------------------------------------------------------------|
 | 1 | [Move Zero to Left](https://www.geeksforgeeks.org/move-all-zeros-to-front-of-array/) | [Solution](https://github.com/piyush7199/javarena-dsa-design/blob/main/src/main/java/org/example/coding/arrays/MoveZeroToLeft.java) |
+| 2 | [Best Time to Buy and Sell Stock](https://leetcode.com/problems/best-time-to-buy-and-sell-stock/description/) | [Solution](https://github.com/piyush7199/javarena-dsa-design/blob/main/src/main/java/org/example/coding/arrays/StockBuySell.java)   |
+| 3 | [Merge Intervals](https://leetcode.com/problems/merge-intervals/description/) | [Solution](https://github.com/piyush7199/javarena-dsa-design/blob/main/src/main/java/org/example/coding/arrays/MergeIntervals.java) |
 ---
 
 ## 🧩 Low-Level Design (LLD)
