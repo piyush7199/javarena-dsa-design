@@ -29,6 +29,8 @@ src/
 | 1 | [Move Zero to Left](https://www.geeksforgeeks.org/move-all-zeros-to-front-of-array/) | [Solution](https://github.com/piyush7199/javarena-dsa-design/blob/main/src/main/java/org/example/coding/arrays/MoveZeroToLeft.java) |
 | 2 | [Best Time to Buy and Sell Stock](https://leetcode.com/problems/best-time-to-buy-and-sell-stock/description/) | [Solution](https://github.com/piyush7199/javarena-dsa-design/blob/main/src/main/java/org/example/coding/arrays/StockBuySell.java)   |
 | 3 | [Merge Intervals](https://leetcode.com/problems/merge-intervals/description/) | [Solution](https://github.com/piyush7199/javarena-dsa-design/blob/main/src/main/java/org/example/coding/arrays/MergeIntervals.java) |
+| 4 | [Minimum Size Subarray Sum](https://leetcode.com/problems/minimum-size-subarray-sum/description/) | [Solution](https://github.com/piyush7199/javarena-dsa-design/blob/main/src/main/java/org/example/coding/arrays/SubArrays.java)      |
+| 5 | [Squares of a Sorted Array](https://leetcode.com/problems/squares-of-a-sorted-array/description/) | [Solution](https://github.com/piyush7199/javarena-dsa-design/blob/main/src/main/java/org/example/coding/arrays/SquareSortedArray.java)           |
 ---
 
 ## 🧩 Low-Level Design (LLD)
