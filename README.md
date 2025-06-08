@@ -25,9 +25,10 @@ src/
 
 ## 📘 DSA Problems
 
-| # | Topic                                                        | 
-|---|--------------------------------------------------------------|
-| 1 | [Array](./src/main/java/org/example/coding/arrays/README.md) |
+| # | Topic                                                                 | 
+|---|-----------------------------------------------------------------------|
+| 1 | [Array](./src/main/java/org/example/coding/arrays/README.md)          |
+| 2 | [Algorithms](./src/main/java/org/example/coding/algorithms/README.md) |
 
 ---
 
