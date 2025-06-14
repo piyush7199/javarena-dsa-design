@@ -1,8 +1,6 @@
 package org.example.coding.algorithms;
 
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.List;
+import java.util.*;
 
 class Item {
     int value, weight;
@@ -370,5 +368,99 @@ public class GreedyAlgorithms {
             maxReachable = Math.max(maxReachable, i + nums[i]);
         }
         return true;
+    }
+
+    /**
+     * 7. Constructs the lexicographically largest merge of two strings using greedy approach.
+     *
+     * <p><b>Intuition:</b></p>
+     * To construct the largest merge string, at each step we greedily choose the lexicographically
+     * larger suffix between word1 and word2.
+     * - If the current character in word1 is greater than that in word2, pick from word1.
+     * - If they are equal, compare the remaining substrings to decide which path will lead to a bigger result.
+     * This ensures the final string is the largest possible at every branching point.
+     *
+     * <p><b>Time Complexity:</b> O(n * m) in the worst case, due to repeated use of `substring(i).compareTo(...)`.
+     * However, with string slicing optimization or character-by-character comparison, it can be reduced to O(n + m).
+     *
+     * <p><b>Space Complexity:</b> O(n + m)</p>
+     * - The space required for the resulting string of length n + m.
+     */
+    public String largestMerge(String word1, String word2) {
+        int i = 0;
+        int j = 0;
+        int n = word1.length();
+        int m = word2.length();
+        StringBuilder ans = new StringBuilder();
+
+        while (i < n && j < m) {
+            // Compare substrings starting at i and j to decide the optimal pick
+            if (word1.substring(i).compareTo(word2.substring(j)) > 0) {
+                ans.append(word1.charAt(i++));
+            } else {
+                ans.append(word2.charAt(j++));
+            }
+        }
+
+        // Append remaining characters from word1
+        while (i < n) {
+            ans.append(word1.charAt(i++));
+        }
+
+        // Append remaining characters from word2
+        while (j < m) {
+            ans.append(word2.charAt(j++));
+        }
+
+        return ans.toString();
+    }
+
+    /**
+     * Rearranges the barcodes so that no two adjacent barcodes are the same.
+     *
+     * <p><b>Intuition:</b></p>
+     * - First, count the frequency of each barcode using a HashMap.
+     * - Use a max-heap (PriorityQueue with custom comparator) to always pick the barcode with the highest frequency.
+     * - Place barcodes at every other index (0, 2, 4, ...) first to maximize spacing and avoid adjacent duplicates.
+     * - If you reach the end of the array, start filling the odd indices (1, 3, 5, ...).
+     * - Since it's guaranteed a valid rearrangement exists, this greedy approach ensures correctness.
+     *
+     * <p><b>Time Complexity:</b> O(n log k)</p>
+     * - n = length of barcodes
+     * - k = number of unique barcodes
+     * - Building the heap takes O(k), and each insertion takes O(log k), repeated n times.
+     *
+     * <p><b>Space Complexity:</b> O(k)</p>
+     * - For the HashMap and PriorityQueue storing up to k unique barcodes.
+     */
+    public int[] rearrangeBarcodes(int[] barcodes) {
+        int n = barcodes.length;
+
+        // Step 1: Count frequency of each barcode
+        HashMap<Integer, Integer> hm = new HashMap<>();
+        for (int code : barcodes) {
+            hm.put(code, hm.getOrDefault(code, 0) + 1);
+        }
+
+        // Step 2: Create max-heap based on frequency
+        PriorityQueue<Integer> pq = new PriorityQueue<>((a, b) -> hm.get(b) - hm.get(a));
+        pq.addAll(hm.keySet());
+
+        int[] res = new int[n];
+        int i = 0;
+
+        // Step 3: Place barcodes by frequency at even indices, then odd if needed
+        while (!pq.isEmpty()) {
+            int code = pq.poll();
+            int freq = hm.get(code);
+
+            for (int j = 0; j < freq; j++) {
+                if (i >= n) i = 1; // Switch to odd indices after filling even ones
+                res[i] = code;
+                i += 2;
+            }
+        }
+
+        return res;
     }
 }

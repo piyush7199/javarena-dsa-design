@@ -19,13 +19,21 @@
 
 ---
 
-## 🤑 Greedy Algorithms
+## 🤑 Greedy Algorithm
 
-| # | Problem                                                                                              | Solution                            |
-|---|------------------------------------------------------------------------------------------------------|-------------------------------------|
-| 1 | [Assign Cookies](https://leetcode.com/problems/assign-cookies/description/)                          | [Solution](./GreedyAlgorithms.java) |
-| 2 | [Lemonade Change](https://leetcode.com/problems/lemonade-change/description/)                        | [Solution](./GreedyAlgorithms.java) |
-| 3 | [Minimum number of Coins](https://www.geeksforgeeks.org/problems/-minimum-number-of-coins4426/1)     | [Solution](./GreedyAlgorithms.java) |
-| 4 | [Fractional Knapsack](https://www.geeksforgeeks.org/problems/fractional-knapsack-1587115620/1)       | [Solution](./GreedyAlgorithms.java) |
-| 5 | [N meetings in one room](https://www.geeksforgeeks.org/problems/n-meetings-in-one-room-1587115620/1) | [Solution](./GreedyAlgorithms.java) |
-| 6 | [Jump Game](https://leetcode.com/problems/jump-game/description/)                                    | [Solution](./GreedyAlgorithms.java) |
+| # | Problem                                                                                                 | Solution                            |
+|---|---------------------------------------------------------------------------------------------------------|-------------------------------------|
+| 1 | [Assign Cookies](https://leetcode.com/problems/assign-cookies/description/)                             | [Solution](./GreedyAlgorithms.java) |
+| 2 | [Lemonade Change](https://leetcode.com/problems/lemonade-change/description/)                           | [Solution](./GreedyAlgorithms.java) |
+| 3 | [Minimum number of Coins](https://www.geeksforgeeks.org/problems/-minimum-number-of-coins4426/1)        | [Solution](./GreedyAlgorithms.java) |
+| 4 | [Fractional Knapsack](https://www.geeksforgeeks.org/problems/fractional-knapsack-1587115620/1)          | [Solution](./GreedyAlgorithms.java) |
+| 5 | [N meetings in one room](https://www.geeksforgeeks.org/problems/n-meetings-in-one-room-1587115620/1)    | [Solution](./GreedyAlgorithms.java) |
+| 6 | [Jump Game](https://leetcode.com/problems/jump-game/description/)                                       | [Solution](./GreedyAlgorithms.java) |
+| 7 | [Largest Merge Of Two Strings](https://leetcode.com/problems/largest-merge-of-two-strings/description/) | [Solution](./GreedyAlgorithms.java) |
+| 8 | [Distant Barcodes](https://leetcode.com/problems/distant-barcodes/description/)                         | [Solution](./GreedyAlgorithms.java) |
+
+## 🪟 Sliding Window Algorithm
+
+| # | Problem                                                                                                                                                         | Solution                         |
+|---|-----------------------------------------------------------------------------------------------------------------------------------------------------------------|----------------------------------|
+| 1 | [Shortest and Lexicographically Smallest Beautiful String](https://leetcode.com/problems/shortest-and-lexicographically-smallest-beautiful-string/description/) | [Solution](./SlidingWindow.java) |

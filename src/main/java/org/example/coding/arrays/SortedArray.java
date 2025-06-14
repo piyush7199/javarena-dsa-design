@@ -233,4 +233,46 @@ public class SortedArray {
         }
         return res;
     }
+
+    /**
+     * Determines whether a given array was originally sorted in non-decreasing order
+     * and then rotated some number of times (possibly zero).
+     *
+     * <p>A non-decreasing array is one where each element is less than or equal to the next.
+     * An array that is sorted and rotated will have at most one place where the current element
+     * is greater than the next one. For example, [3, 4, 5, 1, 2] is a rotation of the sorted array
+     * [1, 2, 3, 4, 5]. Duplicates are allowed in the array.</p>
+     *
+     * <p>Note: Rotating an array A by x positions results in a new array B such that:
+     * B[i] == A[(i + x) % A.length] for every valid index i.</p>
+     *
+     * <h3>Approach:</h3>
+     * Count the number of positions where a decrease occurs (i.e., nums[i - 1] > nums[i]).
+     * In a properly sorted and rotated array, this count should be at most 1:
+     * <ul>
+     *   <li>If the count is 0: the array is sorted and not rotated.</li>
+     *   <li>If the count is 1: the array is sorted and rotated.</li>
+     *   <li>If the count is more than 1: the array is not sorted and rotated.</li>
+     * </ul>
+     *
+     * <h3>Time and Space Complexity:</h3>
+     * <ul>
+     *   <li>Time Complexity: O(n), where n is the length of the array.</li>
+     *   <li>Space Complexity: O(1), as no additional space is used.</li>
+     * </ul>
+     */
+    public static boolean check(int[] nums) {
+        int count = 0;
+        int n = nums.length;
+        for (int i = 1; i < n; i++) {
+            if (nums[i - 1] > nums[i]) {
+                count++;
+            }
+        }
+        if (nums[n - 1] > nums[0]) {
+            count++;
+        }
+        return count <= 1;
+    }
+
 }
