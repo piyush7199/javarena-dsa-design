@@ -63,3 +63,7 @@ System.out.println(queue.peek());     // 20
 
 ## 📈 Problem Tracker
 
+| # | Problem                                                                                                 | Solution                       |
+|---|---------------------------------------------------------------------------------------------------------|--------------------------------|
+| 1 | [Implement Queue using Stacks](https://leetcode.com/problems/implement-queue-using-stacks/description/) | [MyQueue.java](./MyQueue.java) |
+| 2 | [Implement Stack using Queues](https://leetcode.com/problems/implement-stack-using-queues/description/) | [MyStack.java](./MyStack.java) |
