@@ -1,4 +1,4 @@
-package org.example.coding.linkedList;
+package org.example.coding.datastructures.linkedList;
 
 public class ListNode {
     int val;

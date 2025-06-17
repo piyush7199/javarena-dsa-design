@@ -1,4 +1,4 @@
-package org.example.coding.arrays;
+package org.example.coding.datastructures.arrays;
 
 public class MoveZeroToLeft {
 
