@@ -1,5 +1,7 @@
 package org.example.coding.algorithms;
 
+import java.util.*;
+
 public class SortingAlgorithms {
 
     /**
@@ -289,5 +291,43 @@ public class SortingAlgorithms {
         int[] arr = {-4, 5, 6, 7, 6, 2, 7, 6, 2};
         quickSort(arr);
         print(arr);
+    }
+}
+
+
+class ProblemsSorting {
+
+    /**
+     * Groups a list of strings into anagram groups.
+     *
+     * <p><b>Problem:</b></p>
+     * Given an array of strings `strs`, group the anagrams together.
+     * Two strings are anagrams if they contain the same characters in a different order.
+     * The result can be in any order.
+     *
+     * <p><b>Intuition:</b></p>
+     * - For each string, we sort its characters alphabetically to form a key.
+     * - All anagrams will have the same sorted key (e.g., "eat", "tea", "ate" => "aet").
+     * - Use a HashMap to collect all strings that share the same sorted key.
+     * - Finally, return all values from the map as grouped lists.
+     *
+     * <p><b>Time Complexity:</b> O(n * k log k)</p>
+     * - n = number of strings
+     * - k = maximum length of a string
+     * - Each string is sorted individually, which takes O(k log k).
+     *
+     * <p><b>Space Complexity:</b> O(n * k)</p>
+     * - For storing the grouped anagrams in a HashMap and final result list.
+     */
+    public List<List<String>> groupAnagrams(String[] strs) {
+        Map<String, List<String>> anagramMap = new HashMap<>();
+
+        for (String str : strs) {
+            char[] charArray = str.toCharArray();
+            Arrays.sort(charArray);
+            String sortedStr = new String(charArray);
+            anagramMap.computeIfAbsent(sortedStr, k -> new ArrayList<>()).add(str);
+        }
+        return new ArrayList<>(anagramMap.values());
     }
 }

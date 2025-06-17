@@ -7,6 +7,16 @@
 
 ---
 
+## 🔢 Problems on Searching Algorithms
+
+| # | Problem                                                                                                                                                       | Solution                               |
+|---|---------------------------------------------------------------------------------------------------------------------------------------------------------------|----------------------------------------|
+| 1 | [Median of Two Sorted Arrays](https://leetcode.com/problems/median-of-two-sorted-arrays/description/)                                                         | [Solution](./SearchingAlgorithms.java) |
+| 2 | [Search a 2D Matrix](https://leetcode.com/problems/search-a-2d-matrix/description/)                                                                           | [Solution](./SearchingAlgorithms.java) |
+| 3 | [Find First and Last Position of Element in Sorted Array](https://leetcode.com/problems/find-first-and-last-position-of-element-in-sorted-array/description/) | [Solution](./SearchingAlgorithms.java) |
+
+---
+
 ## 🔢 Sorting Algorithms
 
 | # | Algorithm                                  | Description                                                                      |
@@ -16,6 +26,14 @@
 | 3 | [Insertion Sort](./SortingAlgorithms.java) | Builds the sorted array one item at a time. Time complexity: O(n²). Stable sort. |
 | 4 | [Merge Sort](./SortingAlgorithms.java)     | Divide-and-conquer based sort with O(n log n) time. Stable sort.                 |
 | 5 | [Quick Sort](./SortingAlgorithms.java)     | Efficient divide-and-conquer sort with average time O(n log n). Not stable.      |
+
+---
+
+## 🔢 Problems on Sorting Algorithms
+
+| # | Problem                                                                     | Solution                             |
+|---|-----------------------------------------------------------------------------|--------------------------------------|
+| 1 | [Group Anagrams](https://leetcode.com/problems/group-anagrams/description/) | [Solution](./SortingAlgorithms.java) |
 
 ---
 
