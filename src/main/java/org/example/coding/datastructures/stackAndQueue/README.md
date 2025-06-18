@@ -63,7 +63,10 @@ System.out.println(queue.peek());     // 20
 
 ## 📈 Problem Tracker
 
-| # | Problem                                                                                                 | Solution                       |
-|---|---------------------------------------------------------------------------------------------------------|--------------------------------|
-| 1 | [Implement Queue using Stacks](https://leetcode.com/problems/implement-queue-using-stacks/description/) | [MyQueue.java](./MyQueue.java) |
-| 2 | [Implement Stack using Queues](https://leetcode.com/problems/implement-stack-using-queues/description/) | [MyStack.java](./MyStack.java) |
+| # | Problem                                                                                                  | Solution                           |
+|---|----------------------------------------------------------------------------------------------------------|------------------------------------|
+| 1 | [Implement Queue using Stacks](https://leetcode.com/problems/implement-queue-using-stacks/description/)  | [MyQueue.java](./MyQueue.java)     |
+| 2 | [Implement Stack using Queues](https://leetcode.com/problems/implement-stack-using-queues/description/)  | [MyStack.java](./MyStack.java)     |
+| 3 | [Generate Binary Numbers](https://www.geeksforgeeks.org/problems/generate-binary-numbers-1587115620/1)   | [Solution.java](./Solution.java)   |
+| 4 | [Two Stacks in an Array](https://www.geeksforgeeks.org/problems/implement-two-stacks-in-an-array/1)      | [TwoStacks.java](./TwoStacks.java) |
+| 5 | [Reverse first K of a Queue](https://www.geeksforgeeks.org/problems/reverse-first-k-elements-of-queue/1) | [Solution.java](./Solution.java)   |
