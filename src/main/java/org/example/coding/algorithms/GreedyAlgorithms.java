@@ -463,4 +463,116 @@ public class GreedyAlgorithms {
 
         return res;
     }
+
+    /**
+     * Calculates the minimum number of platforms required at the railway station so that no train waits.
+     *
+     * <p><b>Problem:</b></p>
+     * Each train needs one platform and no two trains can use the same platform at the same time.
+     * Find the minimum number of platforms needed so that no train is delayed.
+     *
+     * <p><b>Intuition:</b></p>
+     * - Instead of sorting, use a difference array (similar to prefix sum technique).<br>
+     * - Increment count at arrival time and decrement at departure + 1.<br>
+     * - Track running count of trains at each time unit to find peak overlap.
+     *
+     * <p><b>Time Complexity:</b> O(N + M)</p>
+     * - N: number of trains <br>
+     * - M: max departure time (for iterating over the time array)
+     *
+     * <p><b>Space Complexity:</b> O(M)</p>
+     * - M: maximum time value (to hold train counts at each time index)
+     */
+    public static int findPlatform(int[] arr, int[] dep) {
+        int n = arr.length;
+        int res = 0;
+
+        // Find maximum departure time
+        int maxDep = dep[0];
+        for (int i = 1; i < n; i++) {
+            maxDep = Math.max(maxDep, dep[i]);
+        }
+
+        // Difference array to track platforms needed at each time unit
+        int[] v = new int[maxDep + 2];
+        for (int i = 0; i < n; i++) {
+            v[arr[i]]++;
+            v[dep[i] + 1]--;
+        }
+
+        // Prefix sum to find max platforms needed
+        int count = 0;
+        for (int i = 0; i <= maxDep + 1; i++) {
+            count += v[i];
+            res = Math.max(res, count);
+        }
+
+        return res;
+    }
+
+    /**
+     * Solves the Job Sequencing Problem.
+     *
+     * <p><b>Problem:</b> Given two arrays:<br>
+     * - `deadline[]`: the deadline by which each job must be completed.<br>
+     * - `profit[]`: the profit earned if the corresponding job is completed on or before its deadline.
+     * <p>
+     * Each job takes exactly 1 unit of time. Only one job can be executed at any time.
+     *
+     * <p><b>Goal:</b> Maximize the number of jobs done within deadlines and the total profit.
+     *
+     * <p><b>Approach:</b>
+     * - Create a list of jobs as (deadline, profit) pairs.<br>
+     * - Sort jobs by deadline (ascending).<br>
+     * - Use a min-heap (priority queue) to track the most profitable jobs that can be scheduled.<br>
+     * - If the current number of scheduled jobs is less than the job’s deadline, schedule it.<br>
+     * - Else, if the current job has more profit than the smallest in the heap, replace it.<br>
+     * - At the end, the heap contains the most profitable jobs within valid time slots.
+     *
+     * <p><b>Time Complexity:</b> O(n log n)
+     * - Sorting: O(n log n)<br>
+     * - Heap operations for n jobs: O(n log n)
+     *
+     * <p><b>Space Complexity:</b> O(n)
+     * - For storing jobs and using the priority queue.
+     */
+    public ArrayList<Integer> jobSequencing(int[] deadline, int[] profit) {
+        int n = deadline.length;
+        ArrayList<Integer> ans = new ArrayList<>();
+        List<int[]> jobs = new ArrayList<>();
+
+        // Combine deadlines and profits into a list of jobs
+        for (int i = 0; i < n; i++) {
+            jobs.add(new int[]{deadline[i], profit[i]});
+        }
+
+        // Sort jobs by deadline (earliest deadline first)
+        jobs.sort(Comparator.comparingInt(a -> a[0]));
+
+        // Min-heap to keep track of least profitable job scheduled so far
+        PriorityQueue<Integer> pq = new PriorityQueue<>();
+
+        for (int[] job : jobs) {
+            if (job[0] > pq.size()) {
+                // If there's still time before deadline, schedule job
+                pq.add(job[1]);
+            } else if (!pq.isEmpty() && pq.peek() < job[1]) {
+                // Replace least profitable job with a more profitable one
+                pq.poll();
+                pq.add(job[1]);
+            }
+        }
+
+        int totalJobs = pq.size();
+        int totalProfit = 0;
+        while (!pq.isEmpty()) {
+            totalProfit += pq.poll();
+        }
+
+        ans.add(totalJobs);
+        ans.add(totalProfit);
+        return ans;
+    }
+
+
 }
