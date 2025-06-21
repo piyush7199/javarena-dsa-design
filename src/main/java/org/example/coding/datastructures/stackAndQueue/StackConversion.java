@@ -1,6 +1,5 @@
 package org.example.coding.datastructures.stackAndQueue;
 
-import java.util.HashSet;
 import java.util.Set;
 import java.util.Stack;
 
@@ -102,5 +101,93 @@ public class StackConversion {
             }
         }
         return stack.pop();
+    }
+
+    /**
+     * Returns the precedence of a given operator.
+     *
+     * <p>Higher value means higher precedence.<br>
+     * - '^' = 3            <br>
+     * - '*' or '/' = 2     <br>
+     * - '+' or '-' = 1
+     */
+    private static int prec(char c) {
+        if (c == '^') return 3;
+        else if (c == '/' || c == '*') return 2;
+        else if (c == '+' || c == '-') return 1;
+        else return -1;
+    }
+
+    /**
+     * Converts an infix expression to postfix.
+     *
+     * <p><b>Infix:</b> (A+B)*C <br>
+     * <b>Postfix:</b> AB+C*
+     *
+     * <p><b>Algorithm:</b>
+     * - Use a stack to hold operators.<br>
+     * - Output operands directly.<br>
+     * - Push '(' to stack.<br>
+     * - On ')', pop and output until '('.<br>
+     * - Pop higher/equal precedence operators before pushing a new one.
+     *
+     * <p><b>Time Complexity:</b> O(n) <br>
+     * <b>Space Complexity:</b> O(n)
+     */
+    public static String infixToPostfix(String s) {
+        Stack<Character> stack = new Stack<>();
+        StringBuilder sb = new StringBuilder();
+
+        for (char ch : s.toCharArray()) {
+            if (Character.isLetterOrDigit(ch)) {
+                sb.append(ch);
+            } else if (ch == '(') {
+                stack.push(ch);
+            } else if (ch == ')') {
+                while (!stack.isEmpty() && stack.peek() != '(') {
+                    sb.append(stack.pop());
+                }
+                if (!stack.isEmpty()) stack.pop(); // Remove '('
+            } else {
+                while (!stack.isEmpty() && prec(ch) <= prec(stack.peek())) {
+                    sb.append(stack.pop());
+                }
+                stack.push(ch);
+            }
+        }
+
+        while (!stack.isEmpty()) {
+            sb.append(stack.pop());
+        }
+
+        return sb.toString();
+    }
+
+    /**
+     * Converts an infix expression to prefix using reversal + postfix logic.
+     *
+     * <p><b>Infix:</b> (A+B)*C <br>
+     * <b>Prefix:</b> *+ABC
+     *
+     * <p><b>Algorithm:</b>
+     * - Reverse the infix expression.<br>
+     * - Swap '(' with ')'.<br>
+     * - Convert to postfix.<br>
+     * - Reverse the postfix result to get prefix.
+     *
+     * <p><b>Time Complexity:</b> O(n) <br>
+     * <b>Space Complexity:</b> O(n)
+     */
+    public static String infixToPrefix(String infix) {
+        StringBuilder sb = new StringBuilder(infix).reverse();
+
+        char[] chars = sb.toString().toCharArray();
+        for (int i = 0; i < chars.length; i++) {
+            if (chars[i] == '(') chars[i] = ')';
+            else if (chars[i] == ')') chars[i] = '(';
+        }
+
+        String postfix = infixToPostfix(new String(chars));
+        return new StringBuilder(postfix).reverse().toString();
     }
 }
