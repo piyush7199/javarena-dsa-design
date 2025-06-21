@@ -240,4 +240,87 @@ public class Solution {
 
         return Integer.parseInt(stack.pop());
     }
+
+    /**
+     * Finds the Next Greater Element for each element in a circular array.
+     *
+     * <p><b>Problem:</b> Given a circular array, for each element, find the next greater element.
+     * If no such element exists, assign -1.
+     *
+     * <p><b>Intuition:</b>
+     * - Simulate the circular array by iterating 2n times.                                 <br>
+     * - Use a monotonic stack to store candidates for next greater elements.               <br>
+     * - While traversing from the end, maintain a stack of elements in decreasing order.
+     *
+     * <p><b>Time Complexity:</b> O(n) — each element is pushed/popped at most once.
+     * <br><b>Space Complexity:</b> O(n) — for the stack and output array.
+     */
+    public int[] nextGreaterElements(int[] nums) {
+        int n = nums.length;
+        int[] ans = new int[n];
+        Stack<Integer> stack = new Stack<>();
+
+        for (int i = 2 * n - 1; i >= 0; i--) {
+            while (!stack.isEmpty() && nums[i % n] >= stack.peek()) {
+                stack.pop();
+            }
+            if (i < n) {
+                ans[i] = stack.isEmpty() ? -1 : stack.peek();
+            }
+            stack.push(nums[i % n]);
+        }
+
+        return ans;
+    }
+
+    /**
+     * Removes k digits from the number to get the smallest possible number.
+     *
+     * <p><b>Problem:</b> Given a string num and an integer k, remove k digits to get
+     * the smallest possible number.
+     *
+     * <p><b>Intuition:</b>
+     * - Use a monotonic increasing stack to build the smallest possible number.    <br>
+     * - Remove digits from the stack if a smaller digit comes and k > 0.           <br>
+     * - Remove extra digits from the end if k > 0 after loop.                      <br>
+     * - Strip leading zeros before returning.
+     *
+     * <p><b>Time Complexity:</b> O(n) — one pass through the string.
+     * <br><b>Space Complexity:</b> O(n) — for the stack and result building.
+     */
+    public String removeKdigits(String num, int k) {
+        int n = num.length();
+        if (n <= k) return "0";
+
+        Stack<Character> stack = new Stack<>();
+        for (Character ch : num.toCharArray()) {
+            while (!stack.isEmpty() && k > 0 && stack.peek() > ch) {
+                stack.pop();
+                k--;
+            }
+            stack.push(ch);
+        }
+
+        // Remove extra digits from the end if needed
+        while (!stack.isEmpty() && k > 0) {
+            stack.pop();
+            k--;
+        }
+
+        // Build result from stack
+        StringBuilder sb = new StringBuilder();
+        while (!stack.isEmpty()) {
+            sb.append(stack.pop());
+        }
+
+        sb.reverse();
+
+        // Remove leading zeros
+        while (sb.length() > 1 && sb.charAt(0) == '0') {
+            sb.deleteCharAt(0);
+        }
+
+        return sb.toString();
+    }
+
 }
