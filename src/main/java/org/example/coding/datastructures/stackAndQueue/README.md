@@ -1,4 +1,8 @@
-# 📚 Stack and Queue in Java
+"# 📚 Stack and Queue in Java
+
+Includes implementations and key problems to master these linear data structures. Solutions are organized by functionality and conversion logic.
+
+---
 
 This module provides:
 
@@ -8,56 +12,19 @@ This module provides:
 
 ---
 
-## 🧱 Stack Implementation (`StackImpl<T>`)
+## 🧱 Stack Implementation
 
-```
-package org.example.coding.datastructures.stackAndQueue;
-```
-
-### ✨ Features
-
-- Generic type support (`T`)
-- Array-backed, fixed-size stack
-- Core methods: `push()`, `pop()`, `peek()`
-- Overflow and underflow checks
-- Utility methods: `isEmpty()`, `isFull()`, `top()`, `getCapacity()`
-
-### 📘 Example Usage
-
-```
-StackImpl<Integer> stack = new StackImpl<>(5);
-stack.push(10);
-stack.push(20);
-System.out.println(stack.pop());  // Output: 20
-System.out.println(stack.peek()); // Output: 10
-```
+- Generic `StackImpl<T>` using arrays
+- Overflow & underflow handling
+- Utility methods: `top()`, `peek()`, `isEmpty()`
 
 ---
 
-## 🔁 Queue Implementation (`QueueImpl<T>`)
+## 🔁 Queue Implementation
 
-```
-package org.example.coding.datastructures.stackAndQueue;
-```
-
-### ✨ Features
-
-- Generic type support (`T`)
-- Circular array-based queue
-- Fixed maximum size
-- Core methods: `enqueue()`, `dequeue()`, `peek()`
-- Overflow and underflow handling
-- Utility methods: `isEmpty()`, `isFull()`, `getSize()`
-
-### 📘 Example Usage
-
-```
-QueueImpl<Integer> queue = new QueueImpl<>(5);
-queue.enqueue(10);
-queue.enqueue(20);
-System.out.println(queue.dequeue());  // Output: 10
-System.out.println(queue.peek());     // Output: 20
-```
+- Circular `QueueImpl<T>` with array backing
+- Efficient `enqueue()` and `dequeue()`
+- Size & capacity checks
 
 ---
 

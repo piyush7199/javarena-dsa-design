@@ -1,3 +1,9 @@
+# ⚙️ Algorithms in Java
+
+This module focuses on core algorithms, categorized by paradigm, with code implementations and hand-picked problems from LeetCode, GeeksforGeeks, and others.
+
+---
+
 ## 🔍 Searching Algorithms
 
 | # | Algorithm                                   | Description                                                                                |

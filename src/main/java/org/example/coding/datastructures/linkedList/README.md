@@ -1,4 +1,10 @@
-## 🔁 LinkedList Problems
+# 🔁 Linked List Problems
+
+Focused on traversal, cycle detection, reversal, and merging techniques with both iterative and recursive approaches.
+
+---
+
+## 💻 Problem Tracker
 
 | # | Problem                                                                         | Solution                      |
 |---|---------------------------------------------------------------------------------|-------------------------------|

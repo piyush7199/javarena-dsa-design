@@ -1,4 +1,11 @@
-## 📘 Array Problems
+# 🧮 Array Problems
+
+This section includes classic and advanced problems using arrays, focusing on patterns like prefix sum, sliding window,
+two-pointers, and sorting.
+
+---
+
+## 💻 Problem Tracker
 
 | #  | Problem                                                                                                                 | Solution                          |
 |----|-------------------------------------------------------------------------------------------------------------------------|-----------------------------------|
