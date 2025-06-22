@@ -1,6 +1,7 @@
 "# 📚 Stack and Queue in Java
 
-Includes implementations and key problems to master these linear data structures. Solutions are organized by functionality and conversion logic.
+Includes implementations and key problems to master these linear data structures. Solutions are organized by
+functionality and conversion logic.
 
 ---
 
@@ -50,4 +51,6 @@ This module provides:
 | 16 | [Convert Infix To Prefix Notation](https://www.geeksforgeeks.org/dsa/convert-infix-prefix-notation/)     | [StackConversion.java](./StackConversion.java) |
 | 17 | [Next Greater Element II](https://leetcode.com/problems/next-greater-element-ii/description/)            | [Solution.java](./Solution.java)               |
 | 18 | [Remove K Digits](https://leetcode.com/problems/remove-k-digits/description/)                            | [Solution.java](./Solution.java)               |
+| 19 | [Asteroid Collision](https://leetcode.com/problems/asteroid-collision/description/)                      | [Solution.java](./Solution.java)               |
+| 20 | [Trapping Rain Water](https://leetcode.com/problems/trapping-rain-water/description/)                    | [Solution.java](./Solution.java)               |
 

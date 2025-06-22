@@ -323,4 +323,82 @@ public class Solution {
         return sb.toString();
     }
 
+    /**
+     * Simulates asteroid collisions and returns the state of the asteroids after all collisions.
+     *
+     * <p><b>Problem:</b> Each asteroid moves in a straight line with a size. Positive values move right,
+     * negative values move left. When two asteroids collide, the smaller one explodes. If both are same size,
+     * both explode. You need to return the state after all collisions.
+     *
+     * <p><b>Intuition:</b>                                                                                 <br>
+     * - Use a stack to simulate the collisions.                                                            <br>
+     * - Push positive (right-moving) asteroids onto the stack.                                             <br>
+     * - For a negative asteroid, simulate collisions by popping smaller positive asteroids.                <br>
+     * - Push the negative asteroid if it survives.
+     *
+     * <p><b>Time Complexity:</b> O(n) — Each asteroid is pushed and popped at most once.
+     * <br><b>Space Complexity:</b> O(n) — Stack stores surviving asteroids.
+     */
+    public int[] asteroidCollision(int[] asteroids) {
+        Stack<Integer> stack = new Stack<>();
+        for (int a : asteroids) {
+            if (a > 0) {
+                stack.push(a);
+            } else {
+                while (!stack.isEmpty() && stack.peek() > 0 && stack.peek() < -a) {
+                    stack.pop();
+                }
+                if (stack.isEmpty() || stack.peek() < 0) {
+                    stack.push(a);
+                } else if (stack.peek() == -a) {
+                    stack.pop();
+                }
+            }
+        }
+
+        int[] res = new int[stack.size()];
+        for (int i = res.length - 1; i >= 0; i--) {
+            res[i] = stack.pop();
+        }
+
+        return res;
+    }
+
+    /**
+     * Calculates the total amount of rainwater that can be trapped between buildings.
+     *
+     * <p><b>Problem:</b> Given an array of non-negative integers representing elevation map,
+     * compute how much water it can trap after raining.
+     *
+     * <p><b>Intuition:</b>
+     * - Use two pointers (`l`, `r`) to move inward from both ends.         <br>
+     * - Track max height on both sides (`lMax`, `rMax`).                   <br>
+     * - Water trapped at each index is min(lMax, rMax) - height[i].
+     *
+     * <p><b>Time Complexity:</b> O(n) — Each index is visited once.
+     * <br><b>Space Complexity:</b> O(1) — Constant extra space.
+     */
+    public int trap(int[] height) {
+        int rMax = 0, lMax = 0, r = height.length - 1, l = 0, amt = 0;
+
+        while (r > l) {
+            if (height[l] <= height[r]) {
+                if (lMax > height[l]) {
+                    amt += lMax - height[l];
+                } else {
+                    lMax = height[l];
+                }
+                l++;
+            } else {
+                if (rMax > height[r]) {
+                    amt += rMax - height[r];
+                } else {
+                    rMax = height[r];
+                }
+                r--;
+            }
+        }
+
+        return amt;
+    }
 }
