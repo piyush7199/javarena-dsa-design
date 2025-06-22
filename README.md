@@ -6,13 +6,13 @@ Welcome to **Javarena** – a structured, Java-based repository to master coding
 
 ## 📌 Table of Contents
 
-- [🎯 Overview](#🎯-overview)
-- [📁 Project Structure](#📁-project-structure)
-- [📘 DSA Topics](#📘-dsa-topics)
-- [🧩 Low-Level Design (LLD)](#🧩-low-level-design-lld)
-- [🏗 High-Level Design (HLD)](#🏗-high-level-design-hld)
-- [🚀 Getting Started](#🚀-getting-started)
-- [🏷️ Badges](#🏷️-badges)
+- [🎯 Overview](#-overview)
+- [📁 Project Structure](#-project-structure)
+- [📘 DSA Topics](#-dsa-topics)
+- [🧩 Low-Level Design (LLD)](#-low-level-design-lld)
+- [🏗 High-Level Design (HLD)](#-high-level-design-hld)
+- [🚀 Getting Started](#-getting-started)
+- [🏷️ Badges](#%EF%B8%8F-badges)
 
 ---
 
