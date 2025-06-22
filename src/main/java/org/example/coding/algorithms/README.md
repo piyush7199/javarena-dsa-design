@@ -1,6 +1,18 @@
 # ⚙️ Algorithms in Java
 
-This module focuses on core algorithms, categorized by paradigm, with code implementations and hand-picked problems from LeetCode, GeeksforGeeks, and others.
+This module covers core algorithmic paradigms including searching, sorting, greedy, sliding window, and dynamic
+programming. Each category includes Java implementations and curated problems from platforms like **LeetCode**, *
+*GeeksforGeeks**, and others.
+
+---
+
+## Table of Contents
+
+- [🔍 Searching Algorithms](#-searching-algorithms)
+- [🔢 Sorting Algorithms](#-sorting-algorithms)
+- [💰 Greedy Algorithms](#-greedy-algorithms)
+- [🪟 Sliding Window Algorithm](#-sliding-window-algorithm)
+- [🧠 Dynamic Programming](#-dynamic-programming)
 
 ---
 
@@ -66,3 +78,20 @@ This module focuses on core algorithms, categorized by paradigm, with code imple
 | 2 | [Longest Substring Without Repeating Characters](https://leetcode.com/problems/longest-substring-without-repeating-characters/description/)                     | [SlidingWindow.java](./SlidingWindow.java) |
 | 3 | [Max Consecutive Ones III](https://leetcode.com/problems/max-consecutive-ones-iii/description/)                                                                 | [SlidingWindow.java](./SlidingWindow.java) |
 | 4 | [Fruit Into Baskets](https://leetcode.com/problems/fruit-into-baskets/description/)                                                                             | [SlidingWindow.java](./SlidingWindow.java) |
+
+---
+
+## 🧠 Dynamic Programming
+
+Dynamic Programming (DP) solves problems by breaking them into overlapping subproblems and storing results to avoid
+recomputation.
+
+📚 Learn the
+basics: [Dynamic Programming Introduction – Take U Forward](https://takeuforward.org/data-structure/dynamic-programming-introduction/)
+
+| # | Problem                                                                                      | Solution                                             |
+|---|----------------------------------------------------------------------------------------------|------------------------------------------------------|
+| 1 | [Partition Equal Subset Sum](https://leetcode.com/problems/partition-equal-subset-sum)       | [DynamicProgramming.java](./DynamicProgramming.java) |
+| 2 | [Subset Sum Problem](https://www.geeksforgeeks.org/problems/subset-sum-problem-1611555638/1) | [DynamicProgramming.java](./DynamicProgramming.java) |
+
+---
