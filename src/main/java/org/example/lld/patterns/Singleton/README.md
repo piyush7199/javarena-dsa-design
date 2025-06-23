@@ -1,5 +1,21 @@
 # 🔄 Singleton Design Pattern
 
+## 📑 Table of Contents
+
+1. [✅ Definition](#-definition)
+2. [🤔 Intuition](#-intuition)
+3. [📌 Use Cases](#-use-cases)
+4. [🧠 Key Concepts](#-key-concepts)
+5. [🔐 Thread Safety & Variants](#-thread-safety--variants)
+    - [1. Eager Initialization](#1-eager-initialization)
+    - [2. Lazy Initialization (Non-thread-safe)](#2-lazy-initialization-non-thread-safe)
+    - [3. Synchronized Method](#3-synchronized-method-thread-safe-but-slow)
+    - [4. Double-Checked Locking](#4-double-checked-locking)
+    - [5. Bill Pugh Singleton](#5-bill-pugh-singleton-best-practice)
+    - [6. Handling Reflection Attacks](#6-handling-reflection-attacks)
+    - [7. Enum Singleton](#7-enum-singleton-best-protection)
+6. [📚 Further Reading](#-further-reading)
+
 ## ✅ Definition
 
 The Singleton pattern ensures that a class has only one instance throughout the application and provides a global access
