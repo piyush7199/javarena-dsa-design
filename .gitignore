@@ -36,3 +36,6 @@ build/
 
 ### Mac OS ###
 .DS_Store
+
+topic_history.*
+TopicSuggestions_2025-06-23*
