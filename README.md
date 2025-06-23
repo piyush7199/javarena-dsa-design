@@ -20,12 +20,12 @@ Welcome to **Javarena** – a structured, Java-based repository to master coding
 
 This repository includes:
 
-- ✅ **Data Structures & Algorithms (DSA)** – Topic-wise problems from **LeetCode**, **GeeksforGeeks**, and other platforms.
+- ✅ **Data Structures & Algorithms (DSA)** – Topic-wise problems from **LeetCode**, **GeeksforGeeks**, and other
+  platforms.
 - 🧩 **Low-Level Design (LLD)** – Object-oriented design using core design patterns. *(Coming Soon)*
 - 🏗 **High-Level Design (HLD)** – Scalable architecture with diagrams and real-world trade-offs. *(Coming Soon)*
 
 ---
-
 
 ## 📁 Project Structure
 
@@ -51,6 +51,7 @@ src/
 | 2 | [Array](./src/main/java/org/example/coding/datastructures/arrays/README.md)                |
 | 3 | [Linked List](./src/main/java/org/example/coding/datastructures/linkedList/README.md)      |
 | 4 | [Stack & Queue](./src/main/java/org/example/coding/datastructures/stackAndQueue/README.md) |
+| 5 | [Graph](./src/main/java/org/example/coding/datastructures/graph/README.md)                 |
 
 ---
 

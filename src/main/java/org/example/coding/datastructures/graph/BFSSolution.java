@@ -1,7 +1,9 @@
 package org.example.coding.datastructures.graph;
 
 import java.util.ArrayList;
+import java.util.LinkedList;
 import java.util.List;
+import java.util.Queue;
 
 public class BFSSolution {
 
@@ -34,8 +36,87 @@ public class BFSSolution {
         return island;
     }
 
-    public static void main(String[] args) {
-        int[][] mat = {{1, 1, 0}, {1, 1, 0}, {0, 0, 1}};
-        System.out.println(findCircleNum(mat));
+    /**
+     * Uses BFS to simulate the rotting process of oranges in a grid.
+     *
+     * <p>Each minute, a rotten orange can rot adjacent fresh oranges (up, down, left, right).
+     * This method returns the minimum time required to rot all fresh oranges, or -1 if not possible.
+     *
+     * <p><b>Time Complexity:</b> O(n * m) <br>
+     * <b>Space Complexity:</b> O(n * m)
+     */
+    public int orangesRotting(int[][] grid) {
+        int freshOrange = 0;
+        Queue<Pair> queue = new LinkedList<>();
+        int n = grid.length;
+        int m = grid[0].length;
+        boolean[][] visited = new boolean[n][m];
+        for (int i = 0; i < n; i++) {
+            for (int j = 0; j < m; j++) {
+                if (grid[i][j] == 2) {
+                    queue.offer(new Pair(i, j, 0));
+                    visited[i][j] = true;
+                } else if (grid[i][j] == 1) {
+                    freshOrange++;
+                }
+            }
+        }
+        int ans = 0;
+        int[] nRow = {-1, 0, 1, 0};
+        int[] nCol = {0, 1, 0, -1};
+        while (!queue.isEmpty()) {
+            int row = queue.peek().row;
+            int col = queue.peek().col;
+            int time = queue.peek().value;
+            ans = Math.max(ans, time);
+            queue.poll();
+            for (int i = 0; i < 4; i++) {
+                int r = row + nRow[i];
+                int c = col + nCol[i];
+                if (r >= 0 && c >= 0 && r < n && c < m && grid[r][c] == 1 && !visited[r][c]) {
+                    freshOrange--;
+                    visited[r][c] = true;
+                    queue.offer(new Pair(r, c, time + 1));
+                }
+            }
+        }
+        return freshOrange != 0 ? -1 : ans;
     }
+
+    /**
+     * Performs a BFS-based flood fill starting from a given pixel.
+     *
+     * <p>Recolors the starting pixel and all connected pixels (with the same color)
+     * to a new target color using a BFS traversal.
+
+     * <p><b>Time Complexity:</b> O(n * m) <br>
+     * <b>Space Complexity:</b> O(n * m)
+     */
+    public int[][] floodFill(int[][] image, int sr, int sc, int color) {
+        int n = image.length;
+        int m = image[0].length;
+        boolean[][] visited = new boolean[n][m];
+        int[] nRow = {-1, 0, 1, 0};
+        int[] nCol = {0, 1, 0, -1};
+
+        Queue<Pair> queue = new LinkedList<>();
+        queue.offer(new Pair(sr, sc, image[sr][sc]));
+        while (!queue.isEmpty()) {
+            int row = queue.peek().row;
+            int col = queue.peek().col;
+            int oldColor = queue.peek().value;
+            queue.poll();
+            image[row][col] = color;
+            for (int i = 0; i < 4; i++) {
+                int r = row + nRow[i];
+                int c = col + nCol[i];
+                if (r >= 0 && c >= 0 && r < n && c < m && image[r][c] == oldColor && !visited[r][c]) {
+                    visited[r][c] = true;
+                    queue.offer(new Pair(r, c, oldColor));
+                }
+            }
+        }
+        return image;
+    }
+
 }

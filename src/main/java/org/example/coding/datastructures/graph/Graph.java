@@ -71,6 +71,18 @@ class AdjacencyListUndirectedGraph {
     }
 }
 
+class Pair {
+    int row;
+    int col;
+    int value;
+
+    public Pair(int i, int j, int k) {
+        this.row = i;
+        this.col = j;
+        this.value = k;
+    }
+}
+
 public class Graph {
 
     public static List<List<Integer>> convertMatrixToAdjList(int[][] matrix) {
