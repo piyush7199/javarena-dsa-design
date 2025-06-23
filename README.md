@@ -57,10 +57,9 @@ src/
 
 ## 🧩 Low-Level Design (LLD)
 
-| # | Pattern / System  | Status         | Notes                               |
-|---|-------------------|----------------|-------------------------------------|
-| 1 | Singleton Pattern | 🛠 In Progress | Coming soon                         |
-| 2 | Rate Limiter      | 🛠 In Progress | Will include interface, impl, tests |
+| # | Pattern / System                                                                  | 
+|---|-----------------------------------------------------------------------------------|
+| 1 | [Singleton Pattern](./src/main/java/org/example/lld/patterns/Singleton/README.md) |
 
 ---
 
