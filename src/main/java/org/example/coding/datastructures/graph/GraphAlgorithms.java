@@ -9,7 +9,7 @@ public class GraphAlgorithms {
      * <p><b>Time Complexity:</b> O(V+E)
      * <br><b>Space Complexity:</b> O(V)
      */
-    private void bfs(List<List<Integer>> adj, int s, boolean[] visited, List<Integer> res) {
+    public void bfs(List<List<Integer>> adj, int s, boolean[] visited, List<Integer> res) {
         Queue<Integer> queue = new LinkedList<>();
         visited[s] = true;
         queue.offer(s);
@@ -39,7 +39,7 @@ public class GraphAlgorithms {
         // For disconnected components
         for (int i = 0; i < V; i++) {
             if (!visited[i]) {
-                bfs(adj, i, visited, res); // Optionally you can do bfs here too
+                bfs(adj, i, visited, res);
             }
         }
 
@@ -52,7 +52,7 @@ public class GraphAlgorithms {
      * <p><b>Time Complexity:</b> O(V+E)
      * <br><b>Space Complexity:</b> O(V) (recursive call stack + visited array)
      */
-    private void dfs(List<List<Integer>> adj, int s, boolean[] visited, List<Integer> res) {
+    public void dfs(List<List<Integer>> adj, int s, boolean[] visited, List<Integer> res) {
         visited[s] = true;
         res.add(s);
 

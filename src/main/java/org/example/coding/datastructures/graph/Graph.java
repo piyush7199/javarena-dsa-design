@@ -72,6 +72,25 @@ class AdjacencyListUndirectedGraph {
 }
 
 public class Graph {
+
+    public static List<List<Integer>> convertMatrixToAdjList(int[][] matrix) {
+        List<List<Integer>> adj = new ArrayList<>();
+        int v = matrix.length;
+        for (int i = 0; i < v; i++) {
+            adj.add(new ArrayList<>());
+        }
+
+        for (int i = 0; i < v; i++) {
+            for (int j = 0; j < v; j++) {
+                if (matrix[i][j] != 0) {
+                    adj.get(i).add(j);
+                }
+            }
+        }
+
+        return adj;
+    }
+
     public static void main(String[] args) {
         AdjacencyMatrixUndirectedGraph graph1 = new AdjacencyMatrixUndirectedGraph(4);
         graph1.addEdge(0, 1);
