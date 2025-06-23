@@ -401,4 +401,61 @@ public class Solution {
 
         return amt;
     }
+
+    public List<Integer> firstNegInt(int arr[], int k) {
+        // write code here
+        Queue<Integer> queue = new LinkedList<>();
+        List<Integer> ans = new ArrayList<>();
+        int j = 0;
+        for (int i = 0; i < arr.length; i++) {
+            if (arr[i] < 0) {
+                queue.add(i);
+            }
+
+            if (i - j + 1 == k) {
+                while (!queue.isEmpty() && queue.peek() < j) {
+                    queue.poll();
+                }
+                if (queue.isEmpty()) {
+                    ans.add(0);
+                } else {
+                    ans.add(arr[queue.peek()]);
+                }
+                j++;
+            }
+        }
+        return ans;
+    }
+
+    public ArrayList<Integer> maxOfSubarrays(int arr[], int k) {
+        // code here
+        PriorityQueue<Integer> pq = new PriorityQueue<>((a, b) -> arr[b] - arr[a]);
+        ArrayList<Integer> ans = new ArrayList<>();
+        int j = 0;
+        for (int i = 0; i < arr.length; i++) {
+            pq.offer(i);
+            if (i - j + 1 == k) {
+                while (!pq.isEmpty() && pq.peek() < j) {
+                    pq.poll();
+                }
+                if (pq.isEmpty()) {
+                    ans.add(0);
+                } else {
+                    ans.add(arr[pq.peek()]);
+                }
+                j++;
+            }
+        }
+        return ans;
+    }
+}
+
+class Pair {
+    int ind;
+    int ele;
+
+    public Pair(int ind, int ele) {
+        this.ind = ind;
+        this.ele = ele;
+    }
 }
