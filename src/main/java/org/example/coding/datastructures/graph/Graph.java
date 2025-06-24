@@ -81,6 +81,11 @@ class Pair {
         this.col = j;
         this.value = k;
     }
+
+    public Pair(int i, int j) {
+        this.row = i;
+        this.col = j;
+    }
 }
 
 public class Graph {

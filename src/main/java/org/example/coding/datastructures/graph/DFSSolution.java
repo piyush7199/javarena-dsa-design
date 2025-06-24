@@ -92,4 +92,60 @@ public class DFSSolution {
         return image;
     }
 
+    /**
+     * Detects if there is a cycle in an undirected graph using Depth-First Search (DFS).
+     *
+     * <p><b>Intuition:</b></p>
+     * - In DFS traversal, we recursively visit each node. <br>
+     * - While visiting neighbors, if we encounter a visited node that is not the parent, a cycle is detected.
+     *
+     * <p><b>Time Complexity:</b> O(V + E) <br>
+     * - Each node and edge is visited once in DFS.
+     * <p>
+     * <b>Space Complexity:</b> O(V + E) <br>
+     * - Adjacency list stores all edges: O(V + E) <br>
+     * - Visited array: O(V) <br>
+     * - Recursion stack: O(V) in worst case (linear graph)
+     */
+
+    public boolean isCycle(int V, int[][] edges) {
+        // Code here
+        List<List<Integer>> adj = new ArrayList<>();
+
+        for (int i = 0; i < V; i++) {
+            adj.add(new ArrayList<>());
+        }
+
+        for (int[] edge : edges) {
+            int u = edge[0];
+            int v = edge[1];
+            adj.get(u).add(v);
+            adj.get(v).add(u);
+        }
+
+        boolean[] visited = new boolean[V];
+        for (int i = 0; i < V; i++) {
+            if (!visited[i]) {
+                if (isCycleUtils(i, adj, visited, -1)) {
+                    return true;
+                }
+            }
+        }
+        return false;
+    }
+
+    public boolean isCycleUtils(int node, List<List<Integer>> adj, boolean[] visited, int parent) {
+        visited[node] = true;
+        for (int newNode : adj.get(node)) {
+            if (!visited[newNode]) {
+                if (isCycleUtils(newNode, adj, visited, node)) {
+                    return true;
+                }
+            } else if (parent != newNode) {
+                return true;
+            }
+        }
+        return false;
+    }
+
 }

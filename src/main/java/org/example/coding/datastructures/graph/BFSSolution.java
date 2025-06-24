@@ -88,7 +88,7 @@ public class BFSSolution {
      *
      * <p>Recolors the starting pixel and all connected pixels (with the same color)
      * to a new target color using a BFS traversal.
-
+     *
      * <p><b>Time Complexity:</b> O(n * m) <br>
      * <b>Space Complexity:</b> O(n * m)
      */
@@ -117,6 +117,69 @@ public class BFSSolution {
             }
         }
         return image;
+    }
+
+    /**
+     * Detects if there is a cycle in an undirected graph using Breadth-First Search (BFS).
+     *
+     * <p><b>Intuition:</b></p>
+     * - In BFS traversal, we track the parent of each visited node. <br>
+     * - If we encounter a visited neighbor that is not the parent, a cycle exists.<br>
+     * - BFS helps explore level by level, so using a queue ensures we check all adjacent nodes fairly.
+     *
+     * <p><b>Time Complexity:</b> O(V + E) <br>
+     * - We visit each node and edge once.
+     * <p>
+     * <b>Space Complexity:</b> O(V + E) <br>
+     * - Adjacency list stores all edges: O(V + E) <br>
+     * - Visited array: O(V) <br>
+     * - Queue for BFS: O(V)
+     */
+    public boolean isCycle(int V, int[][] edges) {
+        // Code here
+        List<List<Integer>> adj = new ArrayList<>();
+
+        for (int i = 0; i < V; i++) {
+            adj.add(new ArrayList<>());
+        }
+
+        for (int[] edge : edges) {
+            int u = edge[0];
+            int v = edge[1];
+            adj.get(u).add(v);
+            adj.get(v).add(u);
+        }
+
+        boolean[] visited = new boolean[V];
+        for (int i = 0; i < V; i++) {
+            if (!visited[i]) {
+                if (isCycleUtils(i, adj, visited)) {
+                    return true;
+                }
+            }
+        }
+        return false;
+    }
+
+    public boolean isCycleUtils(int src, List<List<Integer>> adj, boolean[] visited) {
+        Queue<Pair> queue = new LinkedList<>();
+        queue.add(new Pair(src, -1));
+        visited[src] = true;
+        while (!queue.isEmpty()) {
+            int node = queue.peek().row;
+            int parent = queue.peek().col;
+
+            queue.poll();
+            for (int adjNode : adj.get(node)) {
+                if (!visited[adjNode]) {
+                    visited[adjNode] = true;
+                    queue.add(new Pair(adjNode, node));
+                } else if (parent != adjNode) {
+                    return true;
+                }
+            }
+        }
+        return false;
     }
 
 }

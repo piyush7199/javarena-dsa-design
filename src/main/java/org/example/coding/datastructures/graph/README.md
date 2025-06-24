@@ -51,13 +51,14 @@ Graph traversal algorithms help in searching or visiting nodes:
 
 ## 🧪 Practice Problems
 
-| # | Problem                                                                                    | Type                 | Solution File                                                                  |
-|---|--------------------------------------------------------------------------------------------|----------------------|--------------------------------------------------------------------------------|
-| 1 | [BFS of Graph](https://www.geeksforgeeks.org/problems/bfs-traversal-of-graph/1)            | Traversal            | [GraphAlgorithms.java](./GraphAlgorithms.java)                                 |
-| 2 | [DFS of Graph](https://www.geeksforgeeks.org/problems/depth-first-traversal-for-a-graph/1) | Traversal            | [GraphAlgorithms.java](./GraphAlgorithms.java)                                 |
-| 3 | [Number of Provinces](https://leetcode.com/problems/number-of-provinces/)                  | Connected Components | [BFSSolution.java](./BFSSolution.java), [DFSSolution.java](./DFSSolution.java) |
-| 4 | [Rotting Oranges](https://leetcode.com/problems/rotting-oranges/)                          | Traversal            | [BFSSolution.java](./BFSSolution.java)                                         |
-| 5 | [Flood Fill](https://leetcode.com/problems/flood-fill/)                                    | Traversal            | [BFSSolution.java](./BFSSolution.java), [DFSSolution.java](./DFSSolution.java) |
+| # | Problem                                                                                                | Type                 | Solution File                                                                  |
+|---|--------------------------------------------------------------------------------------------------------|----------------------|--------------------------------------------------------------------------------|
+| 1 | [BFS of Graph](https://www.geeksforgeeks.org/problems/bfs-traversal-of-graph/1)                        | Traversal            | [GraphAlgorithms.java](./GraphAlgorithms.java)                                 |
+| 2 | [DFS of Graph](https://www.geeksforgeeks.org/problems/depth-first-traversal-for-a-graph/1)             | Traversal            | [GraphAlgorithms.java](./GraphAlgorithms.java)                                 |
+| 3 | [Number of Provinces](https://leetcode.com/problems/number-of-provinces/)                              | Connected Components | [BFSSolution.java](./BFSSolution.java), [DFSSolution.java](./DFSSolution.java) |
+| 4 | [Rotting Oranges](https://leetcode.com/problems/rotting-oranges/)                                      | Traversal            | [BFSSolution.java](./BFSSolution.java)                                         |
+| 5 | [Flood Fill](https://leetcode.com/problems/flood-fill/)                                                | Traversal            | [BFSSolution.java](./BFSSolution.java), [DFSSolution.java](./DFSSolution.java) |
+| 6 | [Undirected Graph Cycle](https://www.geeksforgeeks.org/problems/detect-cycle-in-an-undirected-graph/1) | Cycle Detection      | [BFSSolution.java](./BFSSolution.java), [DFSSolution.java](./DFSSolution.java) |
 
 ---
 
