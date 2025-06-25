@@ -427,26 +427,25 @@ public class Solution {
         return ans;
     }
 
-    public ArrayList<Integer> maxOfSubarrays(int arr[], int k) {
-        // code here
-        PriorityQueue<Integer> pq = new PriorityQueue<>((a, b) -> arr[b] - arr[a]);
-        ArrayList<Integer> ans = new ArrayList<>();
-        int j = 0;
-        for (int i = 0; i < arr.length; i++) {
-            pq.offer(i);
-            if (i - j + 1 == k) {
-                while (!pq.isEmpty() && pq.peek() < j) {
-                    pq.poll();
-                }
-                if (pq.isEmpty()) {
-                    ans.add(0);
-                } else {
-                    ans.add(arr[pq.peek()]);
-                }
-                j++;
+    public int[] maxOfSubarrays(int[] nums, int k) {
+        int[] res = new int[nums.length - k + 1];
+        Deque<Integer> dq = new LinkedList<>();
+
+        for (int i = 0; i < nums.length; i++) {
+            // Remove indices out of current window
+            while (!dq.isEmpty() && dq.peekFirst() <= i - k) {
+                dq.removeFirst();
             }
+
+            while (!dq.isEmpty() && nums[dq.peekLast()] < nums[i])
+                dq.removeLast();
+
+            dq.addLast(i);
+
+            if (i >= k - 1)
+                res[i - k + 1] = nums[dq.peekFirst()];
         }
-        return ans;
+        return res;
     }
 }
 

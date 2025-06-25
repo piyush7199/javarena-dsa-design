@@ -54,5 +54,5 @@ This module provides:
 | 19 | [Asteroid Collision](https://leetcode.com/problems/asteroid-collision/description/)                                                       | [Solution.java](./Solution.java)               |
 | 20 | [Trapping Rain Water](https://leetcode.com/problems/trapping-rain-water/description/)                                                     | [Solution.java](./Solution.java)               |
 | 21 | [First negative in every window of size k](https://www.geeksforgeeks.org/problems/first-negative-integer-in-every-window-of-size-k3345/1) | [Solution.java](./Solution.java)               |
-| 22 | [K Sized Subarray Maximum](https://www.geeksforgeeks.org/problems/maximum-of-all-subarrays-of-size-k3101/1)                               | [Solution.java](./Solution.java)               |
+| 22 | [K Sized Subarray Maximum](https://leetcode.com/problems/sliding-window-maximum/)                                                         | [Solution.java](./Solution.java)               |
 
