@@ -59,7 +59,8 @@ src/
 
 | # | Pattern / System                                                                  | 
 |---|-----------------------------------------------------------------------------------|
-| 1 | [Singleton Pattern](./src/main/java/org/example/lld/patterns/Singleton/README.md) |
+| 0 | [LLD Basics](./src/main/java/org/example/lld/basics/README.md)                    |
+| 1 | [Singleton Pattern](./src/main/java/org/example/lld/patterns/singleton/README.md) |
 
 ---
 

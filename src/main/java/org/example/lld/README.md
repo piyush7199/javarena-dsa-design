@@ -9,6 +9,8 @@ practice problems.
 
 ```
 lld/
+├── basics/
+│ └── RAEADME.md
 ├── patterns/
 │ └── Singleton.java
 │ └── FactoryPattern.java
@@ -17,14 +19,19 @@ lld/
 │ └── [Classes implementing Parking Lot System]
 ```
 
-
 ---
 
 ## 📦 Design Patterns
 
-| #  | Pattern Name | Description | Example |
-|----|--------------|-------------|---------|
-| 1  | [Singleton](./patterns/Singleton/README.md) | Ensure a class has only one instance and provide a global point of access to it. | `Singleton.java` |
+| # | Pattern Name                     | Description       | 
+|---|----------------------------------|-------------------|
+| 1 | [LLD Basics](./basics/README.md) | OOPs & LLD basics |
+
+## 📦 Design Patterns
+
+| # | Pattern Name                                | Description                                                                      | Example          |
+|---|---------------------------------------------|----------------------------------------------------------------------------------|------------------|
+| 1 | [Singleton](./patterns/singleton/README.md) | Ensure a class has only one instance and provide a global point of access to it. | `Singleton.java` |
 
 > More patterns like Factory, Strategy, Observer, Builder, etc. coming soon...
 
@@ -32,5 +39,5 @@ lld/
 
 ## 🧪 Practice Problems
 
-| #  | System Design Problem | Description | Example |
-|----|------------------------|-------------|---------|
+| # | System Design Problem | Description | Example |
+|---|-----------------------|-------------|---------|
