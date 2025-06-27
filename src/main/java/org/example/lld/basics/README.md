@@ -1,4 +1,4 @@
-~~# 📘 Low-Level Design (LLD) Basics
+# 📘 Low-Level Design (LLD) Basics
 
 Welcome to the Low-Level Design (LLD) Basics guide! This resource is crafted for developers new to LLD, helping you
 master the fundamentals of designing modular, scalable, and maintainable software systems. Whether you're preparing for
@@ -276,35 +276,33 @@ Design patterns are reusable solutions to common design problems.
 
 Patterns provide tested approaches to structure code effectively.
 
----
-
 ### Categories of Design Patterns
 
 ### Creational Patterns
 
 Control object creation to reduce complexity.
 
-| Pattern                                      | Purpose                                |
-|----------------------------------------------|----------------------------------------|
-| [Singleton](../patterns/singleton/README.md) | Ensures only one instance exists       |
-| Factory                                      | Creates objects without exposing logic |
-| Builder                                      | Builds complex objects step-by-step    |
-| Prototype                                    | Clone existing object                  |
-| Abstract Factory                             | Create families of related objects     |
+| Pattern                                                 | Purpose                                |
+|---------------------------------------------------------|----------------------------------------|
+| [Singleton](../patterns/creational/singleton/README.md) | Ensures only one instance exists       |
+| Factory                                                 | Creates objects without exposing logic |
+| Builder                                                 | Builds complex objects step-by-step    |
+| Prototype                                               | Clone existing object                  |
+| Abstract Factory                                        | Create families of related objects     |
 
 ### Structural Patterns
 
 Organize classes and objects into larger structures.
 
-| Pattern   | Purpose                                  |
-|-----------|------------------------------------------|
-| Adapter   | Converts one interface into another      |
-| Decorator | Add functionality dynamically            |
-| Composite | Tree structure of objects                |
-| Proxy     | Stand-in for another object              |
-| Bridge    | Decouple abstraction from implementation |
-| Flyweight | Share objects to save memory             |
-| Facade    | Simplified interface to a complex system |
+| Pattern                                                 | Purpose                                  |
+|---------------------------------------------------------|------------------------------------------|
+| Adapter                                                 | Converts one interface into another      |
+| [Decorator](../patterns/structural/decorator/README.md) | Add functionality dynamically            |
+| Composite                                               | Tree structure of objects                |
+| Proxy                                                   | Stand-in for another object              |
+| Bridge                                                  | Decouple abstraction from implementation |
+| Flyweight                                               | Share objects to save memory             |
+| Facade                                                  | Simplified interface to a complex system |
 
 ### Behavioral Patterns
 

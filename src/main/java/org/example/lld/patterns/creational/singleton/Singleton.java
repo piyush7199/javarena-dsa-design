@@ -1,4 +1,4 @@
-package org.example.lld.patterns.singleton;
+package org.example.lld.patterns.creational.singleton;
 
 public class Singleton {
     private Singleton() {
