@@ -1,5 +1,10 @@
 # 🔄 Singleton Design Pattern
 
+The **Singleton Design Pattern** ensures that a class has only one instance and provides a global point of access to it.
+It’s like having a single, shared resource, such as a configuration manager, that all parts of an application can use.
+
+---
+
 ## 📑 Table of Contents
 
 1. [✅ Definition](#-definition)
@@ -14,7 +19,9 @@
     - [5. Bill Pugh Singleton](#5-bill-pugh-singleton-best-practice)
     - [6. Handling Reflection Attacks](#6-handling-reflection-attacks)
     - [7. Enum Singleton](#7-enum-singleton-best-protection)
-6. [📚 Further Reading](#-further-reading)
+6. [📊 UML Diagram (Text Form)](#-uml-diagram)
+7. [🎯 Advantages & Disadvantages](#-advantages--disadvantages)
+8. [📚 Further Reading](#-further-reading)
 
 ## ✅ Definition
 
@@ -224,6 +231,30 @@ public enum Singleton {
     }
 }
 ```
+
+---
+
+## 📊 UML Diagram
+
+<p align="center">
+ <img src="../../../diagrams/singleton-uml.png" alt="Decorator UML"/>
+</p>
+
+---
+
+## 🎯 Advantages & Disadvantages
+
+### Advantages
+
+- Ensures a single instance, reducing resource usage.
+- Provides a global access point for shared resources.
+- Supports lazy initialization for efficiency.
+
+### Disadvantages
+
+- Can introduce global state, making testing and debugging harder.
+- Thread safety adds complexity (e.g., synchronization overhead).
+- May violate Single Responsibility Principle if the singleton handles multiple tasks.
 
 ---
 

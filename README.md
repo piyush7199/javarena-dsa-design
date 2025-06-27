@@ -61,7 +61,8 @@ src/
 |---|----------------------------------------------------------------------------------------------|
 | 0 | [LLD Basics](./src/main/java/org/example/lld/basics/README.md)                               |
 | 1 | [Singleton Pattern](./src/main/java/org/example/lld/patterns/creational/singleton/README.md) |
-| 2 | [Decorator Pattner](./src/main/java/org/example/lld/patterns/structural/decorator/README.md) |
+| 2 | [Decorator Pattern](./src/main/java/org/example/lld/patterns/structural/decorator/README.md) |
+| 3 | [Factory Pattern](./src/main/java/org/example/lld/patterns/creational/factory/README.md)     |
 
 ---
 

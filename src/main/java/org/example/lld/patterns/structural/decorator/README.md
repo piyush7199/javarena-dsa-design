@@ -1,6 +1,6 @@
 # 🔄 Decorator Design Pattern
 
-The Decorator Pattern is a structural design pattern that allows you to dynamically add responsibilities to objects
+The **Decorator Pattern** is a structural design pattern that allows you to dynamically add responsibilities to objects
 without modifying their code. It’s like wrapping a gift—adding layers of wrapping paper enhances the gift without
 changing what’s inside.
 ---
@@ -11,6 +11,8 @@ changing what’s inside.
 2. [🤔 Intuition](#-intuition)
 3. [📌 Use Cases](#-use-cases)
 4. [🧠 Key Concepts](#-key-concepts)
+5. [📊 UML Diagram (Text Form)](#-uml-diagram)
+6. [🎯 Advantages & Disadvantages](#-advantages--disadvantages)
 
 ---
 
@@ -73,7 +75,7 @@ The Decorator Pattern is ideal when you need to:
 
 ---
 
-## 📊 UML Diagram (Text Form)
+## 📊 UML Diagram
 
 <p align="center">
  <img src="../../../diagrams/decorator-uml.png" alt="Decorator UML"/>
@@ -81,7 +83,7 @@ The Decorator Pattern is ideal when you need to:
 
 ---
 
-## Advantages & Disadvantages
+## 🎯 Advantages & Disadvantages
 
 ### Advantages
 
@@ -90,8 +92,6 @@ The Decorator Pattern is ideal when you need to:
 - Adheres to Open/Closed Principle.
 
 ### Disadvantages
-
-Disadvantages
 
 - Can lead to complex object hierarchies with many decorators.
 - May increase code complexity for simple use cases.
