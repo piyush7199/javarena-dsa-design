@@ -52,6 +52,7 @@ src/
 | 3 | [Linked List](./src/main/java/org/example/coding/datastructures/linkedList/README.md)      |
 | 4 | [Stack & Queue](./src/main/java/org/example/coding/datastructures/stackAndQueue/README.md) |
 | 5 | [Graph](./src/main/java/org/example/coding/datastructures/graph/README.md)                 |
+| 6 | [Segment Tree](./src/main/java/org/example/coding/datastructures/segmentTree/README.md)    |
 
 ---
 

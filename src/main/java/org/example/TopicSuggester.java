@@ -120,10 +120,12 @@ public class TopicSuggester {
         loadHistory();
 
         // Get user input for DS/Algo counts
-        System.out.print("Enter number of Data Structure topics (1-5, default 2): ");
-        int dsCount = getValidInput(scanner, 1, 5, 2);
-        System.out.print("Enter number of Algorithm topics (1-5, default 2): ");
-        int algoCount = getValidInput(scanner, 1, 5, 2);
+//        System.out.print("Enter number of Data Structure topics (1-5, default 2): ");
+//        int dsCount = getValidInput(scanner, 1, 5, 2);
+//        System.out.print("Enter number of Algorithm topics (1-5, default 2): ");
+//        int algoCount = getValidInput(scanner, 1, 5, 2);
+        int dsCount = 2;
+        int algoCount = 2;
 
         // Get random suggestions
         List<Topic> dsSuggestions = getRandomTopics(dataStructures, dsCount, rand, recentDsTopics);
