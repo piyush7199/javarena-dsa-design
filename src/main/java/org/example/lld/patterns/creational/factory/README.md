@@ -1,6 +1,7 @@
 # 🏭 Factory Design Pattern
 
-The **Factory Design Pattern** is a creational design pattern that provides a way to create objects without specifying their
+The **Factory Design Pattern** is a creational design pattern that provides a way to create objects without specifying
+their
 exact class. It encapsulates object creation logic in a separate "factory" class, making it easier to manage and extend
 object instantiation.
 
@@ -12,7 +13,7 @@ object instantiation.
 2. [🤔 Intuition](#-intuition)
 3. [📌 Use Cases](#-use-cases)
 4. [🧠 Key Concepts](#-key-concepts)
-5. [📊 UML Diagram (Text Form)](#-uml-diagram)
+5. [📊 UML Diagram](#-uml-diagram)
 6. [🎯 Advantages & Disadvantages](#-advantages--disadvantages)
 
 ---

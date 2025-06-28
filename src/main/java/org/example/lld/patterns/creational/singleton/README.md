@@ -19,14 +19,17 @@ It’s like having a single, shared resource, such as a configuration manager, t
     - [5. Bill Pugh Singleton](#5-bill-pugh-singleton-best-practice)
     - [6. Handling Reflection Attacks](#6-handling-reflection-attacks)
     - [7. Enum Singleton](#7-enum-singleton-best-protection)
-6. [📊 UML Diagram (Text Form)](#-uml-diagram)
+6. [📊 UML Diagram](#-uml-diagram)
 7. [🎯 Advantages & Disadvantages](#-advantages--disadvantages)
 8. [📚 Further Reading](#-further-reading)
 
 ## ✅ Definition
 
-The Singleton pattern ensures that a class has only one instance throughout the application and provides a global access
-point to that instance.
+The Singleton Pattern restricts a class to a single instance and provides a global access point to that instance. It
+ensures that only one object of the class is created, often used for managing shared resources or centralized control.
+
+- **Category:** Creational Pattern
+- **Purpose:** Control object creation to maintain a single instance and provide global access.
 
 ---
 

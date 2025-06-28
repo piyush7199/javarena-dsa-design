@@ -11,7 +11,7 @@ changing what’s inside.
 2. [🤔 Intuition](#-intuition)
 3. [📌 Use Cases](#-use-cases)
 4. [🧠 Key Concepts](#-key-concepts)
-5. [📊 UML Diagram (Text Form)](#-uml-diagram)
+5. [📊 UML Diagram](#-uml-diagram)
 6. [🎯 Advantages & Disadvantages](#-advantages--disadvantages)
 
 ---
