@@ -1,6 +1,7 @@
 package org.example.coding.datastructures.graph;
 
 import java.util.ArrayList;
+import java.util.Collections;
 import java.util.List;
 import java.util.Stack;
 
@@ -147,5 +148,57 @@ public class DFSSolution {
         }
         return false;
     }
+
+    /**
+     * Performs topological sorting of a Directed Acyclic Graph (DAG) using Depth-First Search (DFS).
+     * <p>
+     * 📌 Intuition: <br>
+     * - Perform DFS traversal and, after visiting all descendants of a node, add it to a stack. <br>
+     * - Finally, reverse the stack to get the topological order. <br>
+     * - A node is added *after* all its children (post-order), ensuring prerequisites come first.
+     * <p>
+     * Time Complexity: O(V + E) <br>
+     * - Each node and edge is visited exactly once.
+     * <p>
+     * Space Complexity: O(V + E) <br>
+     * - Adjacency list: O(V + E) <br>
+     * - Visited array and recursion stack: O(V)
+     */
+    public static ArrayList<Integer> topoSort(int V, int[][] edges) {
+        List<List<Integer>> adj = new ArrayList<>();
+        for (int i = 0; i < V; i++) adj.add(new ArrayList<>());
+
+        for (int[] edge : edges) {
+            int u = edge[0];
+            int v = edge[1];
+            adj.get(u).add(v);
+        }
+
+        boolean[] visited = new boolean[V];
+        ArrayList<Integer> result = new ArrayList<>();
+
+        for (int i = 0; i < V; i++) {
+            if (!visited[i]) {
+                dfs(adj, visited, i, result);
+            }
+        }
+
+        Collections.reverse(result);  // Because DFS adds in post-order
+        return result;
+    }
+
+    /**
+     * Recursive DFS helper for topological sorting.
+     */
+    public static void dfs(List<List<Integer>> adj, boolean[] visited, int node, ArrayList<Integer> stack) {
+        visited[node] = true;
+        for (int neighbor : adj.get(node)) {
+            if (!visited[neighbor]) {
+                dfs(adj, visited, neighbor, stack);
+            }
+        }
+        stack.add(node);
+    }
+
 
 }

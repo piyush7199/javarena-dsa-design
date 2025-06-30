@@ -19,9 +19,6 @@ storing solutions to avoid redundant computations.
     - **Top-Down (Memoization):** Recursive solution with a cache to store results.
     - **Bottom-Up (Tabulation):** Iterative solution building a table from smaller to larger subproblems.
 
-> Read
-> more [Dynamic Programming Introduction – Take U Forward](https://takeuforward.org/data-structure/dynamic-programming-introduction/)
-
 ---
 
 ## Use Cases
@@ -74,3 +71,9 @@ function knapsack(values, weights, W):
 |---|----------------------------------------------------------------------------------------------|------------------------------------------------------|
 | 1 | [Partition Equal Subset Sum](https://leetcode.com/problems/partition-equal-subset-sum)       | [DynamicProgramming.java](./DynamicProgramming.java) |
 | 2 | [Subset Sum Problem](https://www.geeksforgeeks.org/problems/subset-sum-problem-1611555638/1) | [DynamicProgramming.java](./DynamicProgramming.java) |
+
+---
+
+## Resources
+
+- [Dynamic Programming Introduction – Take U Forward](https://takeuforward.org/data-structure/dynamic-programming-introduction/)

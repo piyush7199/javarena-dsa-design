@@ -59,6 +59,7 @@ Graph traversal algorithms help in searching or visiting nodes:
 | 4 | [Rotting Oranges](https://leetcode.com/problems/rotting-oranges/)                                      | Traversal            | [BFSSolution.java](./BFSSolution.java)                                         |
 | 5 | [Flood Fill](https://leetcode.com/problems/flood-fill/)                                                | Traversal            | [BFSSolution.java](./BFSSolution.java), [DFSSolution.java](./DFSSolution.java) |
 | 6 | [Undirected Graph Cycle](https://www.geeksforgeeks.org/problems/detect-cycle-in-an-undirected-graph/1) | Cycle Detection      | [BFSSolution.java](./BFSSolution.java), [DFSSolution.java](./DFSSolution.java) |
+| 7 | [Topological sort](https://www.geeksforgeeks.org/problems/topological-sort/1)                          | Topological Sorting  | [BFSSolution.java](./BFSSolution.java), [DFSSolution.java](./DFSSolution.java) |                                                                   |
 
 ---
 

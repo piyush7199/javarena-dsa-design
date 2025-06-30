@@ -182,4 +182,61 @@ public class BFSSolution {
         return false;
     }
 
+    /**
+     * Performs topological sorting of a Directed Acyclic Graph (DAG) using Kahn's Algorithm (BFS-based).
+     * <p>
+     * Intuition: <br>
+     * - Kahn's Algorithm uses in-degree to identify nodes with no incoming edges. <br>
+     * - Start with all nodes with in-degree 0 and add them to the queue. <br>
+     * - Remove them one by one, reducing the in-degree of their neighbors. <br>
+     * - When a neighbor’s in-degree becomes 0, add it to the queue. <br>
+     * - This gives a valid linear ordering of the vertices (topological order). <br>
+     * <p>
+     * Time Complexity: O(V + E) <br>
+     * - V: Number of vertices <br>
+     * - E: Number of edges (each edge is processed once)
+     * <p>
+     * Space Complexity: O(V + E) <br>
+     * - Adjacency list: O(V + E) <br>
+     * - Queue and visited array: O(V)
+     */
+    public static ArrayList<Integer> topoSort(int V, int[][] edges) {
+        List<List<Integer>> adj = new ArrayList<>();
+        for (int i = 0; i < V; i++) adj.add(new ArrayList<>());
+
+        int[] inDegree = new int[V];
+
+        for (int[] edge : edges) {
+            int u = edge[0];
+            int v = edge[1];
+            adj.get(u).add(v);
+            inDegree[v]++;
+        }
+
+        Queue<Integer> queue = new LinkedList<>();
+        boolean[] visited = new boolean[V];
+
+        for (int i = 0; i < V; i++) {
+            if (inDegree[i] == 0) {
+                queue.offer(i);
+                visited[i] = true;
+            }
+        }
+
+        ArrayList<Integer> result = new ArrayList<>();
+        while (!queue.isEmpty()) {
+            int node = queue.poll();
+            result.add(node);
+            for (int neighbor : adj.get(node)) {
+                inDegree[neighbor]--;
+                if (inDegree[neighbor] == 0 && !visited[neighbor]) {
+                    visited[neighbor] = true;
+                    queue.offer(neighbor);
+                }
+            }
+        }
+
+        return result;
+    }
+
 }

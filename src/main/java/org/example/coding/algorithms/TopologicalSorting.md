@@ -174,5 +174,12 @@ function topologicalSortKahn(graph):
 
 ## 🧪 Practice Problems
 
-| # | Problem | Solution |
-|---|---------|----------|
+| # | Problem                                                                       | Solution                                                                                                                   |
+|---|-------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------|
+| 1 | [Topological sort](https://www.geeksforgeeks.org/problems/topological-sort/1) | [BFSSolution.java](../datastructures/graph/BFSSolution.java), [DFSSolution.java](../datastructures/graph/DFSSolution.java) |
+
+---
+
+## Resources
+
+- [Topological Sorting GFG](https://www.geeksforgeeks.org/dsa/topological-sorting/)
