@@ -250,8 +250,8 @@ function heapify(arr, n, i):
 
 ## 🧪 Problems on Sorting Algorithms
 
-| # | Problem                                                                     | Solution                                           |
-|---|-----------------------------------------------------------------------------|----------------------------------------------------|
-| 1 | [Group Anagrams](https://leetcode.com/problems/group-anagrams/description/) | [SortingAlgorithms.java](./SortingAlgorithms.java) |
+| # | Problem                                                                     | Solution                                           | Companies   |
+|---|-----------------------------------------------------------------------------|----------------------------------------------------|-------------|
+| 1 | [Group Anagrams](https://leetcode.com/problems/group-anagrams/description/) | [SortingAlgorithms.java](./SortingAlgorithms.java) | `Microsoft` |
 
 
