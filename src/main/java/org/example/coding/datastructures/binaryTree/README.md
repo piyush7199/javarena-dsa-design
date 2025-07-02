@@ -131,6 +131,8 @@ public class BinaryTree {
 | 3 | [Postorder Traversal](https://leetcode.com/problems/binary-tree-postorder-traversal/description/)                                                                                                | [BinaryTree.java](./BinaryTree.java) |
 | 4 | [Level Order Traversal](https://leetcode.com/problems/binary-tree-level-order-traversal/)                                                                                                        | [BinaryTree.java](./BinaryTree.java) |
 | 5 | [Preorder, Postorder and Inorder Traversal of a Binary Tree using a single Stack](https://www.geeksforgeeks.org/preorder-postorder-and-inorder-traversal-of-a-binary-tree-using-a-single-stack/) | [BinaryTree.java](./BinaryTree.java) |
+| 6 | [Identical Trees](https://www.geeksforgeeks.org/problems/determine-if-two-trees-are-identical/1)                                                                                                 | [Solutions.java](./Solutions.java)   |
+| 7 | [Maximum Depth of Binary Tree](https://leetcode.com/problems/maximum-depth-of-binary-tree/)                                                                                                      | [Solutions.java](./Solutions.java)   |
 
 ---
 
