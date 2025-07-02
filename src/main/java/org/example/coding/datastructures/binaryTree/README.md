@@ -124,12 +124,13 @@ public class BinaryTree {
 
 ## 🧪 Practice Problems
 
-| # | Problem                                                                                           | Solution File |
-|---|---------------------------------------------------------------------------------------------------|---------------|
-| 1 | [Preorder Traversal](https://leetcode.com/problems/binary-tree-preorder-traversal/)               |               |
-| 2 | [Inorder Traversal](https://leetcode.com/problems/binary-tree-inorder-traversal/)                 |               |
-| 3 | [Postorder Traversal](https://leetcode.com/problems/binary-tree-postorder-traversal/description/) |               |
-| 4 | [Level Order Traversal](https://leetcode.com/problems/binary-tree-level-order-traversal/)         |               |
+| # | Problem                                                                                                                                                                                          | Solution File                        |
+|---|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------------------------------|
+| 1 | [Preorder Traversal](https://leetcode.com/problems/binary-tree-preorder-traversal/)                                                                                                              | [BinaryTree.java](./BinaryTree.java) |
+| 2 | [Inorder Traversal](https://leetcode.com/problems/binary-tree-inorder-traversal/)                                                                                                                | [BinaryTree.java](./BinaryTree.java) |
+| 3 | [Postorder Traversal](https://leetcode.com/problems/binary-tree-postorder-traversal/description/)                                                                                                | [BinaryTree.java](./BinaryTree.java) |
+| 4 | [Level Order Traversal](https://leetcode.com/problems/binary-tree-level-order-traversal/)                                                                                                        | [BinaryTree.java](./BinaryTree.java) |
+| 5 | [Preorder, Postorder and Inorder Traversal of a Binary Tree using a single Stack](https://www.geeksforgeeks.org/preorder-postorder-and-inorder-traversal-of-a-binary-tree-using-a-single-stack/) | [BinaryTree.java](./BinaryTree.java) |
 
 ---
 
