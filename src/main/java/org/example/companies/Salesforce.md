@@ -9,3 +9,4 @@
 | 5 | MEDIUM | [Maximum Subarray](https://leetcode.com/problems/maximum-subarray) | [Solution](../coding/datastructures/arrays/SubArrays.java) | Array, Divide and Conquer, Dynamic Programming |
 | 6 | HARD | [Lfu Cache](https://leetcode.com/problems/lfu-cache) | [Solution](../coding/datastructures/linkedList/LFUCache.java) | Hash Table, Linked List, Design, Doubly-Linked List |
 | 7 | MEDIUM | [Merge Intervals](https://leetcode.com/problems/merge-intervals) | [Solution](../coding/datastructures/arrays/SubArrays.java) | Array, Sorting |
+| 8 | MEDIUM | [Top K Frequent Elements](https://leetcode.com/problems/top-k-frequent-elements) | [Solution](../coding/datastructures/hashMapAndSet/Solutions.java) | Array, Hash Table, Divide and Conquer, Sorting, Heap (Priority Queue), Bucket Sort, Counting, Quickselect |
