@@ -124,18 +124,18 @@ public class BinaryTree {
 
 ## 🧪 Practice Problems
 
-| #  | Problem                                                                                                                                                                                          | Solution File                        | Companies   |
-|----|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------------------------------|-------------|
-| 1  | [Preorder Traversal](https://leetcode.com/problems/binary-tree-preorder-traversal/)                                                                                                              | [BinaryTree.java](./BinaryTree.java) |             |
-| 2  | [Inorder Traversal](https://leetcode.com/problems/binary-tree-inorder-traversal/)                                                                                                                | [BinaryTree.java](./BinaryTree.java) | `Microsoft` |
-| 3  | [Postorder Traversal](https://leetcode.com/problems/binary-tree-postorder-traversal/)                                                                                                            | [BinaryTree.java](./BinaryTree.java) |             |
-| 4  | [Level Order Traversal](https://leetcode.com/problems/binary-tree-level-order-traversal/)                                                                                                        | [BinaryTree.java](./BinaryTree.java) | `Microsoft` |
-| 5  | [Preorder, Postorder and Inorder Traversal of a Binary Tree using a single Stack](https://www.geeksforgeeks.org/preorder-postorder-and-inorder-traversal-of-a-binary-tree-using-a-single-stack/) | [BinaryTree.java](./BinaryTree.java) |             |
-| 6  | [Identical Trees](https://www.geeksforgeeks.org/problems/determine-if-two-trees-are-identical/1)                                                                                                 | [Solutions.java](./Solutions.java)   |             |
-| 7  | [Maximum Depth of Binary Tree](https://leetcode.com/problems/maximum-depth-of-binary-tree/)                                                                                                      | [Solutions.java](./Solutions.java)   | `Microsoft` |
-| 8  | [Binary Tree Zigzag Level Order Traversal](https://leetcode.com/problems/binary-tree-zigzag-level-order-traversal/)                                                                              | [Solutions.java](./Solutions.java)   | `Microsoft` |
-| 9  | [Validate Binary Search Tree](https://leetcode.com/problems/validate-binary-search-tree/)                                                                                                        | [Solutions.java](./Solutions.java)   | `Microsoft` |
-| 10 | [Same Tree](https://leetcode.com/problems/same-tree/)                                                                                                                                            | [Solutions.java](./Solutions.java)   | `Microsoft` |
+| #  | Problem                                                                                                                                                                                          | Solution File                        |
+|----|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------------------------------|
+| 1  | [Preorder Traversal](https://leetcode.com/problems/binary-tree-preorder-traversal/)                                                                                                              | [BinaryTree.java](./BinaryTree.java) |
+| 2  | [Inorder Traversal](https://leetcode.com/problems/binary-tree-inorder-traversal/)                                                                                                                | [BinaryTree.java](./BinaryTree.java) |
+| 3  | [Postorder Traversal](https://leetcode.com/problems/binary-tree-postorder-traversal/)                                                                                                            | [BinaryTree.java](./BinaryTree.java) |
+| 4  | [Level Order Traversal](https://leetcode.com/problems/binary-tree-level-order-traversal/)                                                                                                        | [BinaryTree.java](./BinaryTree.java) |
+| 5  | [Preorder, Postorder and Inorder Traversal of a Binary Tree using a single Stack](https://www.geeksforgeeks.org/preorder-postorder-and-inorder-traversal-of-a-binary-tree-using-a-single-stack/) | [BinaryTree.java](./BinaryTree.java) |
+| 6  | [Identical Trees](https://www.geeksforgeeks.org/problems/determine-if-two-trees-are-identical/1)                                                                                                 | [Solutions.java](./Solutions.java)   |
+| 7  | [Maximum Depth of Binary Tree](https://leetcode.com/problems/maximum-depth-of-binary-tree/)                                                                                                      | [Solutions.java](./Solutions.java)   |
+| 8  | [Binary Tree Zigzag Level Order Traversal](https://leetcode.com/problems/binary-tree-zigzag-level-order-traversal/)                                                                              | [Solutions.java](./Solutions.java)   |
+| 9  | [Validate Binary Search Tree](https://leetcode.com/problems/validate-binary-search-tree/)                                                                                                        | [Solutions.java](./Solutions.java)   |
+| 10 | [Same Tree](https://leetcode.com/problems/same-tree/)                                                                                                                                            | [Solutions.java](./Solutions.java)   |
 
 ---
 

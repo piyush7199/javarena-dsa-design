@@ -6,8 +6,9 @@ Focused on traversal, cycle detection, reversal, and merging techniques with bot
 
 ## 💻 Problem Tracker
 
-| # | Problem                                                                         | Solution                      | Companies   |
-|---|---------------------------------------------------------------------------------|-------------------------------|-------------|
-| 1 | [Reverse Linked List](https://leetcode.com/problems/reverse-linked-list/)       | [Solution](./LinkedList.java) |             |
-| 2 | [Linked List Cycle](https://leetcode.com/problems/linked-list-cycle/)           | [Solution](./LinkedList.java) |             |
-| 3 | [Merge Two Sorted Lists](https://leetcode.com/problems/merge-two-sorted-lists/) | [Solution](./LinkedList.java) | `Microsoft` |
+| # | Problem                                                                         | Solution                         |
+|---|---------------------------------------------------------------------------------|----------------------------------|
+| 1 | [Reverse Linked List](https://leetcode.com/problems/reverse-linked-list/)       | [Solution](./LinkedList.java)    |
+| 2 | [Linked List Cycle](https://leetcode.com/problems/linked-list-cycle/)           | [Solution](./LinkedList.java)    |
+| 3 | [Merge Two Sorted Lists](https://leetcode.com/problems/merge-two-sorted-lists/) | [Solution](./LinkedList.java)    |
+| 4 | [LRU Cache](https://leetcode.com/problems/lru-cache/)                           | [LRUCache.java](./LRUCache.java) |

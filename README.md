@@ -1,6 +1,7 @@
-# Javarena: DSA & System Design in Java
+# Javarena: DSA, LLD & HLD in Java
 
-Welcome to **Javarena** – a structured, Java-based repository to master coding interviews and system design concepts.
+Welcome to **Javarena** – a structured, Java-based repository crafted to help you master **coding interviews** and *
+*system design** with real-world examples, design patterns, and company-specific problem tracking.
 
 ---
 
@@ -9,6 +10,7 @@ Welcome to **Javarena** – a structured, Java-based repository to master coding
 - [🎯 Overview](#-overview)
 - [📁 Project Structure](#-project-structure)
 - [📘 DSA Topics](#-dsa-topics)
+- [🏢 Company-Wise Problems](#-company-wise-problems)
 - [🧩 Low-Level Design (LLD)](#-low-level-design-lld)
 - [🏗 High-Level Design (HLD)](#-high-level-design-hld)
 - [🚀 Getting Started](#-getting-started)
@@ -20,10 +22,12 @@ Welcome to **Javarena** – a structured, Java-based repository to master coding
 
 This repository includes:
 
-- ✅ **Data Structures & Algorithms (DSA)** – Topic-wise problems from **LeetCode**, **GeeksforGeeks**, and other
-  platforms.
-- 🧩 **Low-Level Design (LLD)** – Object-oriented design using core design patterns. *(Coming Soon)*
-- 🏗 **High-Level Design (HLD)** – Scalable architecture with diagrams and real-world trade-offs. *(Coming Soon)*
+- ✅ **Data Structures & Algorithms (DSA)** – Topic-wise and company-wise curated problems from **LeetCode**, *
+  *GeeksforGeeks**, etc.
+- 🏢 **Company-Wise Tracking** – Solved and categorized interview problems for top tech companies like Amazon, Adobe,
+  Google, etc.
+- 🧩 **Low-Level Design (LLD)** – Core OOP design patterns with hands-on examples. *(In Progress)*
+- 🏗 **High-Level Design (HLD)** – Scalable architecture design with trade-offs and system diagrams. *(In Progress)*
 
 ---
 
@@ -32,18 +36,18 @@ This repository includes:
 ```
 src/
 └── main/
-    └── java/
-        └── org/
-            └── example/
-                ├── coding/     # Data Structures & Algorithms
-                ├── lld/        # Low-Level Design
-                └── hld/        # High-Level Design
-
+└── java/
+└── org/
+└── example/
+├── coding/ # DSA by topic
+├── companies/ # DSA by company
+├── lld/ # Low-Level Design
+└── hld/ # High-Level Design
 ```
 
 ---
 
-## 📘 DSA Problems
+## 📘 DSA Topics
 
 | # | Topic                                                                                      | 
 |---|--------------------------------------------------------------------------------------------|
@@ -56,15 +60,35 @@ src/
 
 ---
 
+## 🏢 Company-Wise Problems
+
+Solve company-tagged questions like real interviews and track your progress here:
+
+| Company                                          | File                                                               |
+|--------------------------------------------------|--------------------------------------------------------------------|
+| Amazon                                           | [Amazon.md](./src/main/java/org/example/companies/Amazon.md)       |
+| Adobe                                            | [Adobe.md](./src/main/java/org/example/companies/Adobe.md)         |
+| Google                                           | [Google.md](./src/main/java/org/example/companies/Google.md)       |
+| Microsoft                                        | [Microsoft.md](./src/main/java/org/example/companies/Microsoft.md) |
+| [More...](./src/main/java/org/example/companies) | 📁 View all                                                        |
+
+Each file contains:
+
+- 🎯 **Problem link**
+- 📂 **Solution file path**
+- ⚡️ **Difficulty & topic tags**
+
+---
+
 ## 🧩 Low-Level Design (LLD)
 
-| # | Pattern / System                                                                                                       | 
-|---|------------------------------------------------------------------------------------------------------------------------|
-| 0 | [LLD Basics](./src/main/java/org/example/lld/basics/README.md)                                                         |
-| 1 | [Singleton Pattern](./src/main/java/org/example/lld/patterns/creational/singleton/README.md)                           |
-| 2 | [Decorator Pattern](./src/main/java/org/example/lld/patterns/structural/decorator/README.md)                           |
-| 3 | [Factory Pattern](./src/main/java/org/example/lld/patterns/creational/factory/README.md)                               |
-| 4 | [Chain of Responsibiliy Pattern](./src/main/java/org/example/lld/patterns/behavioural/chainOfResponsibility/README.md) |
+| # | Pattern / System                                                                                                | 
+|---|-----------------------------------------------------------------------------------------------------------------|
+| 0 | [LLD Basics](./src/main/java/org/example/lld/basics/README.md)                                                  |
+| 1 | [Singleton Pattern](./src/main/java/org/example/lld/patterns/creational/singleton/README.md)                    |
+| 2 | [Decorator Pattern](./src/main/java/org/example/lld/patterns/structural/decorator/README.md)                    |
+| 3 | [Factory Pattern](./src/main/java/org/example/lld/patterns/creational/factory/README.md)                        |
+| 4 | [Chain of Responsibility](./src/main/java/org/example/lld/patterns/behavioural/chainOfResponsibility/README.md) |
 
 ---
 
@@ -80,11 +104,11 @@ src/
 ## 🚀 Getting Started
 
 ```bash
-  git clone https://github.com/piyush7199/javarena-dsa-design.git
-  cd javarena-dsa-designō
+git clone https://github.com/piyush7199/javarena-dsa-design.git
+cd javarena-dsa-design
 ```
 
-Open the repo in your favorite IDE (preferably IntelliJ or VSCode with Java support).
+Open in your favorite IDE (IntelliJ or VSCode recommended for Java).
 
 ---
 
