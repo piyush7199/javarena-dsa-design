@@ -62,4 +62,28 @@ public class SubArrays {
 
         return count;
     }
+
+    /**
+     * Finds the contiguous subarray within a one-dimensional array of numbers
+     * which has the largest sum (Kadane's Algorithm).
+     *
+     * <p>Intuition: <br>
+     * - We keep track of the running sum of the current subarray. <br>
+     * - If adding the current element gives a smaller sum than starting fresh from the current element,
+     * we reset the sum. <br>
+     * - At each step, we update the global maximum.
+     * <p>
+     * Time Complexity: O(n), where n is the length of the array. <br>
+     * Space Complexity: O(1), constant extra space used.
+     */
+    public int maxSubArray(int[] nums) {
+        int sum = 0;
+        int ans = nums[0];
+        for (int ele : nums) {
+            sum = Math.max(ele, sum + ele);
+            ans = Math.max(sum, ans);
+        }
+        return ans;
+    }
+
 }

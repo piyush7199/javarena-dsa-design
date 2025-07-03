@@ -12,3 +12,4 @@ Focused on traversal, cycle detection, reversal, and merging techniques with bot
 | 2 | [Linked List Cycle](https://leetcode.com/problems/linked-list-cycle/)           | [Solution](./LinkedList.java)    |
 | 3 | [Merge Two Sorted Lists](https://leetcode.com/problems/merge-two-sorted-lists/) | [Solution](./LinkedList.java)    |
 | 4 | [LRU Cache](https://leetcode.com/problems/lru-cache/)                           | [LRUCache.java](./LRUCache.java) |
+| 5 | [LFU Cache](https://leetcode.com/problems/lfu-cache/)                           | [LFUCache.java](./LFUCache.java) |
