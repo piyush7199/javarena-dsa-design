@@ -22,3 +22,5 @@
 | 18 | MEDIUM | [Max Consecutive Ones Iii](https://leetcode.com/problems/max-consecutive-ones-iii) | [Solution](../coding/algorithms/SlidingWindow.java) | Array, Binary Search, Sliding Window, Prefix Sum |
 | 19 | MEDIUM | [Fruit Into Baskets](https://leetcode.com/problems/fruit-into-baskets) | [Solution](../coding/algorithms/SlidingWindow.java) | Array, Hash Table, Sliding Window |
 | 20 | MEDIUM | [Group Anagrams](https://leetcode.com/problems/group-anagrams) | [Solution](../coding/algorithms/SortingAlgorithms.java) | Array, Hash Table, String, Sorting |
+| 21 | MEDIUM | [Jump Game](https://leetcode.com/problems/jump-game) | [Solution](../coding/algorithms/GreedyAlgorithms.java) | Array, Dynamic Programming, Greedy |
+| 22 | MEDIUM | [Reverse Integer](https://leetcode.com/problems/reverse-integer) | [Solution](../coding/miscellaneous/ReverseInteger.java) | Math |

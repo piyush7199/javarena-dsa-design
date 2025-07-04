@@ -8,3 +8,4 @@
 | 4 | MEDIUM | [Merge Intervals](https://leetcode.com/problems/merge-intervals) | [Solution](../coding/datastructures/arrays/SubArrays.java) | Array, Sorting |
 | 5 | EASY | [Two Sum](https://leetcode.com/problems/two-sum) | [Solution](../coding/datastructures/hashMapAndSet/Solutions.java) | Array, Hash Table |
 | 6 | MEDIUM | [Longest Substring Without Repeating Characters](https://leetcode.com/problems/longest-substring-without-repeating-characters) | [Solution](../coding/algorithms/SlidingWindow.java) | Hash Table, String, Sliding Window |
+| 7 | MEDIUM | [Reverse Integer](https://leetcode.com/problems/reverse-integer) | [Solution](../coding/miscellaneous/ReverseInteger.java) | Math |

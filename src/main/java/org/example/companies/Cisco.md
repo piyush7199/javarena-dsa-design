@@ -10,3 +10,4 @@
 | 6 | MEDIUM | [Search A 2d Matrix](https://leetcode.com/problems/search-a-2d-matrix) | [Solution](../coding/algorithms/SearchingAlgorithms.java) | Array, Binary Search, Matrix |
 | 7 | MEDIUM | [Longest Substring Without Repeating Characters](https://leetcode.com/problems/longest-substring-without-repeating-characters) | [Solution](../coding/algorithms/SlidingWindow.java) | Hash Table, String, Sliding Window |
 | 8 | MEDIUM | [Group Anagrams](https://leetcode.com/problems/group-anagrams) | [Solution](../coding/algorithms/SortingAlgorithms.java) | Array, Hash Table, String, Sorting |
+| 9 | MEDIUM | [Jump Game](https://leetcode.com/problems/jump-game) | [Solution](../coding/algorithms/GreedyAlgorithms.java) | Array, Dynamic Programming, Greedy |

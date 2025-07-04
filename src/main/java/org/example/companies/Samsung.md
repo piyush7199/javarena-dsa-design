@@ -7,3 +7,4 @@
 | 3 | MEDIUM | [Merge Intervals](https://leetcode.com/problems/merge-intervals) | [Solution](../coding/datastructures/arrays/SubArrays.java) | Array, Sorting |
 | 4 | MEDIUM | [Rotate Array](https://leetcode.com/problems/rotate-array) | [Solution](../coding/datastructures/arrays/RotateArrays.java) | Array, Math, Two Pointers |
 | 5 | EASY | [Two Sum](https://leetcode.com/problems/two-sum) | [Solution](../coding/datastructures/hashMapAndSet/Solutions.java) | Array, Hash Table |
+| 6 | MEDIUM | [Reverse Integer](https://leetcode.com/problems/reverse-integer) | [Solution](../coding/miscellaneous/ReverseInteger.java) | Math |

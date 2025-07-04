@@ -10,3 +10,4 @@
 | 6 | MEDIUM | [Maximum Product Subarray](https://leetcode.com/problems/maximum-product-subarray) | [Solution](../coding/algorithms/DynamicProgramming.java) | Array, Dynamic Programming |
 | 7 | MEDIUM | [Longest Substring Without Repeating Characters](https://leetcode.com/problems/longest-substring-without-repeating-characters) | [Solution](../coding/algorithms/SlidingWindow.java) | Hash Table, String, Sliding Window |
 | 8 | MEDIUM | [Group Anagrams](https://leetcode.com/problems/group-anagrams) | [Solution](../coding/algorithms/SortingAlgorithms.java) | Array, Hash Table, String, Sorting |
+| 9 | MEDIUM | [Reverse Integer](https://leetcode.com/problems/reverse-integer) | [Solution](../coding/miscellaneous/ReverseInteger.java) | Math |

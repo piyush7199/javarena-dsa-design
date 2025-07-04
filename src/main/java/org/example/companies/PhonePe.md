@@ -6,3 +6,4 @@
 | 2 | MEDIUM | [Binary Tree Level Order Traversal](https://leetcode.com/problems/binary-tree-level-order-traversal) | [Solution](../coding/datastructures/binaryTree/Solutions.java) | Tree, Breadth-First Search, Binary Tree |
 | 3 | MEDIUM | [Merge Intervals](https://leetcode.com/problems/merge-intervals) | [Solution](../coding/datastructures/arrays/SubArrays.java) | Array, Sorting |
 | 4 | MEDIUM | [Group Anagrams](https://leetcode.com/problems/group-anagrams) | [Solution](../coding/algorithms/SortingAlgorithms.java) | Array, Hash Table, String, Sorting |
+| 5 | MEDIUM | [Jump Game](https://leetcode.com/problems/jump-game) | [Solution](../coding/algorithms/GreedyAlgorithms.java) | Array, Dynamic Programming, Greedy |
