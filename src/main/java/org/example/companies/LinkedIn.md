@@ -12,3 +12,8 @@
 | 8 | HARD | [Median Of Two Sorted Arrays](https://leetcode.com/problems/median-of-two-sorted-arrays) | [Solution](../coding/algorithms/SearchingAlgorithms.java) | Array, Binary Search, Divide and Conquer |
 | 9 | MEDIUM | [Maximum Subarray](https://leetcode.com/problems/maximum-subarray) | [Solution](../coding/datastructures/arrays/SubArrays.java) | Array, Divide and Conquer, Dynamic Programming |
 | 10 | MEDIUM | [Merge Intervals](https://leetcode.com/problems/merge-intervals) | [Solution](../coding/datastructures/arrays/SubArrays.java) | Array, Sorting |
+| 11 | EASY | [Two Sum](https://leetcode.com/problems/two-sum) | [Solution](../coding/datastructures/hashMapAndSet/Solutions.java) | Array, Hash Table |
+| 12 | MEDIUM | [Maximum Product Subarray](https://leetcode.com/problems/maximum-product-subarray) | [Solution](../coding/algorithms/DynamicProgramming.java) | Array, Dynamic Programming |
+| 13 | MEDIUM | [Find First And Last Position Of Element In Sorted Array](https://leetcode.com/problems/find-first-and-last-position-of-element-in-sorted-array) | [Solution](../coding/algorithms/SearchingAlgorithms.java) | Array, Binary Search |
+| 14 | MEDIUM | [Longest Substring Without Repeating Characters](https://leetcode.com/problems/longest-substring-without-repeating-characters) | [Solution](../coding/algorithms/SlidingWindow.java) | Hash Table, String, Sliding Window |
+| 15 | MEDIUM | [Max Consecutive Ones Iii](https://leetcode.com/problems/max-consecutive-ones-iii) | [Solution](../coding/algorithms/SlidingWindow.java) | Array, Binary Search, Sliding Window, Prefix Sum |

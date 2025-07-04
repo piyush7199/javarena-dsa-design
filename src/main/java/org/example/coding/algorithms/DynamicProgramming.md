@@ -71,6 +71,7 @@ function knapsack(values, weights, W):
 |---|----------------------------------------------------------------------------------------------|------------------------------------------------------|
 | 1 | [Partition Equal Subset Sum](https://leetcode.com/problems/partition-equal-subset-sum)       | [DynamicProgramming.java](./DynamicProgramming.java) |
 | 2 | [Subset Sum Problem](https://www.geeksforgeeks.org/problems/subset-sum-problem-1611555638/1) | [DynamicProgramming.java](./DynamicProgramming.java) |
+| 3 | [Maximum Product Subarray](https://leetcode.com/problems/maximum-product-subarray/)          | [DynamicProgramming.java](./DynamicProgramming.java) |
 
 ---
 

@@ -43,3 +43,4 @@ Below is the complexity analysis for key operations in Java’s HashMap and Hash
 | # | Problem                                                                           | Solution                           |
 |---|-----------------------------------------------------------------------------------|------------------------------------|
 | 1 | [Top K Frequent Elements](https://leetcode.com/problems/top-k-frequent-elements/) | [Solutions.java](./Solutions.java) |
+| 2 | [Two Sum](https://leetcode.com/problems/two-sum/)                                 | [Solutions.java](./Solutions.java) |

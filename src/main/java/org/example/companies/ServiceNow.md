@@ -10,3 +10,10 @@
 | 6 | HARD | [Lfu Cache](https://leetcode.com/problems/lfu-cache) | [Solution](../coding/datastructures/linkedList/LFUCache.java) | Hash Table, Linked List, Design, Doubly-Linked List |
 | 7 | MEDIUM | [Merge Intervals](https://leetcode.com/problems/merge-intervals) | [Solution](../coding/datastructures/arrays/SubArrays.java) | Array, Sorting |
 | 8 | MEDIUM | [Rotate Array](https://leetcode.com/problems/rotate-array) | [Solution](../coding/datastructures/arrays/RotateArrays.java) | Array, Math, Two Pointers |
+| 9 | EASY | [Two Sum](https://leetcode.com/problems/two-sum) | [Solution](../coding/datastructures/hashMapAndSet/Solutions.java) | Array, Hash Table |
+| 10 | MEDIUM | [Top K Frequent Words](https://leetcode.com/problems/top-k-frequent-words) | [Solution](../coding/datastructures/hashMapAndSet/Solutions.java) | Array, Hash Table, String, Trie, Sorting, Heap (Priority Queue), Bucket Sort, Counting |
+| 11 | MEDIUM | [Maximum Product Subarray](https://leetcode.com/problems/maximum-product-subarray) | [Solution](../coding/algorithms/DynamicProgramming.java) | Array, Dynamic Programming |
+| 12 | MEDIUM | [Partition Equal Subset Sum](https://leetcode.com/problems/partition-equal-subset-sum) | [Solution](../coding/algorithms/DynamicProgramming.java) | Array, Dynamic Programming |
+| 13 | MEDIUM | [Find First And Last Position Of Element In Sorted Array](https://leetcode.com/problems/find-first-and-last-position-of-element-in-sorted-array) | [Solution](../coding/algorithms/SearchingAlgorithms.java) | Array, Binary Search |
+| 14 | MEDIUM | [Longest Substring Without Repeating Characters](https://leetcode.com/problems/longest-substring-without-repeating-characters) | [Solution](../coding/algorithms/SlidingWindow.java) | Hash Table, String, Sliding Window |
+| 15 | MEDIUM | [Group Anagrams](https://leetcode.com/problems/group-anagrams) | [Solution](../coding/algorithms/SortingAlgorithms.java) | Array, Hash Table, String, Sorting |
