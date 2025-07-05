@@ -12,3 +12,4 @@
 | 8 | EASY | [Implement Queue Using Stacks](https://leetcode.com/problems/implement-queue-using-stacks) | [Solution](../coding/datastructures/stackAndQueue/MyQueue.java) | Stack, Design, Queue |
 | 9 | EASY | [Valid Parentheses](https://leetcode.com/problems/valid-parentheses) | [Solution](../coding/datastructures/stackAndQueue/Solution.java) | String, Stack |
 | 10 | HARD | [Trapping Rain Water](https://leetcode.com/problems/trapping-rain-water) | [Solution](../coding/datastructures/stackAndQueue/MinStack.java) | Array, Two Pointers, Dynamic Programming, Stack, Monotonic Stack |
+| 11 | EASY | [Climbing Stairs](https://leetcode.com/problems/climbing-stairs) | [Solution](../coding/algorithms/DynamicProgramming.java) | Math, Dynamic Programming, Memoization |

@@ -27,3 +27,5 @@
 | 23 | MEDIUM | [Evaluate Reverse Polish Notation](https://leetcode.com/problems/evaluate-reverse-polish-notation) | [Solution](../coding/datastructures/stackAndQueue/Solution.java) | Array, Math, Stack |
 | 24 | HARD | [Trapping Rain Water](https://leetcode.com/problems/trapping-rain-water) | [Solution](../coding/datastructures/stackAndQueue/MinStack.java) | Array, Two Pointers, Dynamic Programming, Stack, Monotonic Stack |
 | 25 | HARD | [Word Ladder](https://leetcode.com/problems/word-ladder) | [Solution](../coding/datastructures/graph/WordLadder.java) | Hash Table, String, Breadth-First Search |
+| 26 | MEDIUM | [House Robber](https://leetcode.com/problems/house-robber) | [Solution](../coding/algorithms/DynamicProgramming.java) | Array, Dynamic Programming |
+| 27 | EASY | [Climbing Stairs](https://leetcode.com/problems/climbing-stairs) | [Solution](../coding/algorithms/DynamicProgramming.java) | Math, Dynamic Programming, Memoization |

@@ -17,3 +17,5 @@
 | 13 | MEDIUM | [Asteroid Collision](https://leetcode.com/problems/asteroid-collision) | [Solution](../coding/datastructures/stackAndQueue/MinStack.java) | Array, Stack, Simulation |
 | 14 | MEDIUM | [Remove K Digits](https://leetcode.com/problems/remove-k-digits) | [Solution](../coding/datastructures/stackAndQueue/MinStack.java) | String, Stack, Greedy, Monotonic Stack |
 | 15 | MEDIUM | [Rotting Oranges](https://leetcode.com/problems/rotting-oranges) | [Solution](../coding/datastructures/graph/BFSSolution.java) | Array, Breadth-First Search, Matrix |
+| 16 | MEDIUM | [House Robber](https://leetcode.com/problems/house-robber) | [Solution](../coding/algorithms/DynamicProgramming.java) | Array, Dynamic Programming |
+| 17 | EASY | [Climbing Stairs](https://leetcode.com/problems/climbing-stairs) | [Solution](../coding/algorithms/DynamicProgramming.java) | Math, Dynamic Programming, Memoization |

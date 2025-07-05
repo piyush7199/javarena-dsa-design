@@ -9,3 +9,5 @@
 | 5 | MEDIUM | [Group Anagrams](https://leetcode.com/problems/group-anagrams) | [Solution](../coding/algorithms/SortingAlgorithms.java) | Array, Hash Table, String, Sorting |
 | 6 | MEDIUM | [Jump Game](https://leetcode.com/problems/jump-game) | [Solution](../coding/algorithms/GreedyAlgorithms.java) | Array, Dynamic Programming, Greedy |
 | 7 | EASY | [Valid Parentheses](https://leetcode.com/problems/valid-parentheses) | [Solution](../coding/datastructures/stackAndQueue/Solution.java) | String, Stack |
+| 8 | MEDIUM | [House Robber](https://leetcode.com/problems/house-robber) | [Solution](../coding/algorithms/DynamicProgramming.java) | Array, Dynamic Programming |
+| 9 | EASY | [Climbing Stairs](https://leetcode.com/problems/climbing-stairs) | [Solution](../coding/algorithms/DynamicProgramming.java) | Math, Dynamic Programming, Memoization |

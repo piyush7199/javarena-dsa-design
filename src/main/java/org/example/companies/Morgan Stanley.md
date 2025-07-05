@@ -11,3 +11,4 @@
 | 7 | MEDIUM | [Jump Game](https://leetcode.com/problems/jump-game) | [Solution](../coding/algorithms/GreedyAlgorithms.java) | Array, Dynamic Programming, Greedy |
 | 8 | EASY | [Valid Parentheses](https://leetcode.com/problems/valid-parentheses) | [Solution](../coding/datastructures/stackAndQueue/Solution.java) | String, Stack |
 | 9 | MEDIUM | [Min Stack](https://leetcode.com/problems/min-stack) | [Solution](../coding/datastructures/stackAndQueue/MinStack.java) | Stack, Design |
+| 10 | MEDIUM | [House Robber](https://leetcode.com/problems/house-robber) | [Solution](../coding/algorithms/DynamicProgramming.java) | Array, Dynamic Programming |

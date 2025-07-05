@@ -14,3 +14,5 @@
 | 10 | MEDIUM | [Find The Celebrity](https://leetcode.com/problems/find-the-celebrity) | [Solution](../coding/algorithms/TwoPointer.java) | Two Pointers, Graph, Interactive |
 | 11 | MEDIUM | [Rotting Oranges](https://leetcode.com/problems/rotting-oranges) | [Solution](../coding/datastructures/graph/BFSSolution.java) | Array, Breadth-First Search, Matrix |
 | 12 | HARD | [Word Ladder](https://leetcode.com/problems/word-ladder) | [Solution](../coding/datastructures/graph/WordLadder.java) | Hash Table, String, Breadth-First Search |
+| 13 | MEDIUM | [House Robber](https://leetcode.com/problems/house-robber) | [Solution](../coding/algorithms/DynamicProgramming.java) | Array, Dynamic Programming |
+| 14 | MEDIUM | [House Robber Ii](https://leetcode.com/problems/house-robber-ii) | [Solution](../coding/algorithms/DynamicProgramming.java) | Array, Dynamic Programming |

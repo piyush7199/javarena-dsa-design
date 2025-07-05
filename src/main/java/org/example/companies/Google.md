@@ -33,3 +33,5 @@
 | 29 | MEDIUM | [Number Of Provinces](https://leetcode.com/problems/number-of-provinces) | [Solution](../coding/datastructures/graph/BFSSolution.java) | Depth-First Search, Breadth-First Search, Union Find, Graph |
 | 30 | MEDIUM | [Surrounded Regions](https://leetcode.com/problems/surrounded-regions) | [Solution](../coding/datastructures/graph/SurroundedRegions.java) | Array, Depth-First Search, Breadth-First Search, Union Find, Matrix |
 | 31 | HARD | [Word Ladder](https://leetcode.com/problems/word-ladder) | [Solution](../coding/datastructures/graph/WordLadder.java) | Hash Table, String, Breadth-First Search |
+| 32 | MEDIUM | [House Robber](https://leetcode.com/problems/house-robber) | [Solution](../coding/algorithms/DynamicProgramming.java) | Array, Dynamic Programming |
+| 33 | EASY | [Climbing Stairs](https://leetcode.com/problems/climbing-stairs) | [Solution](../coding/algorithms/DynamicProgramming.java) | Math, Dynamic Programming, Memoization |

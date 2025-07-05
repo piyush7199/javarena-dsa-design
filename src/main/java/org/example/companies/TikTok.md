@@ -26,3 +26,6 @@
 | 22 | MEDIUM | [Surrounded Regions](https://leetcode.com/problems/surrounded-regions) | [Solution](../coding/datastructures/graph/SurroundedRegions.java) | Array, Depth-First Search, Breadth-First Search, Union Find, Matrix |
 | 23 | HARD | [Word Ladder](https://leetcode.com/problems/word-ladder) | [Solution](../coding/datastructures/graph/WordLadder.java) | Hash Table, String, Breadth-First Search |
 | 24 | HARD | [Word Ladder Ii](https://leetcode.com/problems/word-ladder-ii) | [Solution](../coding/datastructures/graph/WordLadder.java) | Hash Table, String, Backtracking, Breadth-First Search |
+| 25 | MEDIUM | [House Robber](https://leetcode.com/problems/house-robber) | [Solution](../coding/algorithms/DynamicProgramming.java) | Array, Dynamic Programming |
+| 26 | EASY | [Climbing Stairs](https://leetcode.com/problems/climbing-stairs) | [Solution](../coding/algorithms/DynamicProgramming.java) | Math, Dynamic Programming, Memoization |
+| 27 | MEDIUM | [House Robber Ii](https://leetcode.com/problems/house-robber-ii) | [Solution](../coding/algorithms/DynamicProgramming.java) | Array, Dynamic Programming |

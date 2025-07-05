@@ -1,5 +1,7 @@
 package org.example.coding.algorithms;
 
+import java.util.Arrays;
+
 public class DynamicProgramming {
     /**
      * Determines if the input array can be partitioned into two subsets with equal sums.
@@ -144,6 +146,104 @@ public class DynamicProgramming {
         }
 
         return ans;
+    }
 
+    /**
+     * Calculates the number of distinct ways to climb to the top (step `n`)
+     * when at each step you can climb either 1 or 2 steps.
+     * <p>
+     * Intuition:
+     * - This is a classic DP problem similar to Fibonacci sequence.
+     * - To reach step `i`, you can come from `i-1` or `i-2`.
+     * <p>
+     * Recurrence: dp[i] = dp[i-1] + dp[i-2]
+     * <p>
+     * Time Complexity: O(n)
+     * Space Complexity: O(1)
+     */
+    public int climbStairs(int n) {
+        if (n <= 0) return 0;
+        if (n == 1) return 1;
+        int prev = 1;
+        int prev2 = 2;
+        for (int i = 3; i <= n; i++) {
+            int temp = prev + prev2;
+            prev = prev2;
+            prev2 = temp;
+        }
+        return prev2;
+    }
+
+    /**
+     * Returns the minimum cost to reach the last step by jumping either 1 or 2 steps at a time.
+     * Cost of a jump is the absolute height difference.
+     * <p>
+     * Intuition:
+     * - At each step, decide whether to jump from one step before or two steps before, and take the minimum.
+     * - Classic DP on 1D array with 2-step dependency.
+     * <p>
+     * Time Complexity: O(n)
+     * Space Complexity: O(1)
+     */
+    int minCost(int[] height) {
+        // code here
+        int n = height.length;
+        if (n <= 1) return 0;
+
+        int prev2 = 0;
+        int prev = Math.abs(height[0] - height[1]);
+        for (int i = 2; i < n; i++) {
+            int jumpOne = prev + Math.abs(height[i] - height[i - 1]);
+            int jumpTwo = prev2 + Math.abs(height[i] - height[i - 2]);
+            int cur = Math.min(jumpOne, jumpTwo);
+            prev2 = prev;
+            prev = cur;
+        }
+        return prev;
+    }
+
+    /**
+     * Solves the House Robber problem — find the maximum amount you can rob
+     * from non-adjacent houses.
+     * <p>
+     * Intuition:
+     * - At each house, decide to rob it (and skip previous), or skip it.
+     * - Uses DP with state compression.
+     * <p>
+     * Time Complexity: O(n)
+     * Space Complexity: O(1)
+     */
+    public int rob(int[] nums) {
+        return robHelper(nums);
+    }
+
+    /**
+     * Solves the House Robber II problem (circular street) — can't rob both first and last houses.
+     * <p>
+     * Intuition:
+     * - Break the circle into two linear arrays:
+     * 1. From house 0 to n-2
+     * 2. From house 1 to n-1
+     * - Take the max of the two cases.
+     * <p>
+     * Time Complexity: O(n)
+     * Space Complexity: O(1)
+     */
+    public int rob2(int[] nums) {
+        int n = nums.length;
+        return Math.max(robHelper(Arrays.copyOfRange(nums, 0, n - 1)), robHelper(Arrays.copyOfRange(nums, 1, n)));
+    }
+
+    public int robHelper(int[] nums) {
+        int prev = nums[0];
+        int prev2 = 0;
+        for (int i = 1; i < nums.length; i++) {
+            int pick = nums[i] + prev2;
+            int notPick = prev;
+            int cur = Math.max(pick, notPick);
+            prev2 = prev;
+            prev = cur;
+        }
+        return prev;
     }
 }

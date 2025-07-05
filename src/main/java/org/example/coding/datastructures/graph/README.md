@@ -19,7 +19,6 @@ techniques, traversal methods, and real-world problem-solving with BFS, DFS, and
 A **graph** is a non-linear data structure consisting of nodes (vertices) and edges. It's useful for modeling networks,
 social relationships, routing paths, etc.
 
-- 📖 [GFG: Graph and its Representations](https://www.geeksforgeeks.org/dsa/graph-and-its-representations/)
 - 📂 [Code Reference](./Graph.java)
 
 ---
@@ -68,10 +67,7 @@ Graph traversal algorithms help in searching or visiting nodes:
 
 ---
 
-## ✅ Notes
+## Resources
 
-- Try both **recursive** and **iterative** versions of BFS & DFS.
-- Practice graph problems in both **undirected** and **directed** contexts.
-
----
-
+- 📖 [GFG: Graph and its Representations](https://www.geeksforgeeks.org/dsa/graph-and-its-representations/)
+- 📖 [Graph - Take U Forward](https://takeuforward.org/graph/introduction-to-graph/)

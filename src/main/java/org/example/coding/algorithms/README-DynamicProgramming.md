@@ -72,9 +72,14 @@ function knapsack(values, weights, W):
 | 1 | [Partition Equal Subset Sum](https://leetcode.com/problems/partition-equal-subset-sum)       | [DynamicProgramming.java](./DynamicProgramming.java) |
 | 2 | [Subset Sum Problem](https://www.geeksforgeeks.org/problems/subset-sum-problem-1611555638/1) | [DynamicProgramming.java](./DynamicProgramming.java) |
 | 3 | [Maximum Product Subarray](https://leetcode.com/problems/maximum-product-subarray/)          | [DynamicProgramming.java](./DynamicProgramming.java) |
+| 4 | [Climbing Stairs](https://leetcode.com/problems/climbing-stairs/)                            | [DynamicProgramming.java](./DynamicProgramming.java) |
+| 5 | [Frog Jump](https://www.geeksforgeeks.org/problems/geek-jump/1)                              | [DynamicProgramming.java](./DynamicProgramming.java) |
+| 6 | [House Robber](https://leetcode.com/problems/house-robber/)                                  | [DynamicProgramming.java](./DynamicProgramming.java) |
+| 7 | [House Robber II](https://leetcode.com/problems/house-robber-ii/description/)                | [DynamicProgramming.java](./DynamicProgramming.java) |
 
 ---
 
 ## Resources
 
-- [Dynamic Programming Introduction – Take U Forward](https://takeuforward.org/data-structure/dynamic-programming-introduction/)
+- [GFG | Dynamic Programming](https://www.geeksforgeeks.org/competitive-programming/dynamic-programming/)
+- [Take U Forward | Dynamic Programming Introduction](https://takeuforward.org/data-structure/dynamic-programming-introduction/)
