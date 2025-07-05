@@ -15,3 +15,4 @@
 | 11 | MEDIUM | [Min Stack](https://leetcode.com/problems/min-stack) | [Solution](../coding/datastructures/stackAndQueue/MinStack.java) | Stack, Design |
 | 12 | MEDIUM | [Remove K Digits](https://leetcode.com/problems/remove-k-digits) | [Solution](../coding/datastructures/stackAndQueue/MinStack.java) | String, Stack, Greedy, Monotonic Stack |
 | 13 | HARD | [Word Ladder](https://leetcode.com/problems/word-ladder) | [Solution](../coding/datastructures/graph/WordLadder.java) | Hash Table, String, Breadth-First Search |
+| 14 | HARD | [Binary Tree Maximum Path Sum](https://leetcode.com/problems/binary-tree-maximum-path-sum) | [Solution](../coding/datastructures/binaryTree/Solutions.java) | Dynamic Programming, Tree, Depth-First Search, Binary Tree |

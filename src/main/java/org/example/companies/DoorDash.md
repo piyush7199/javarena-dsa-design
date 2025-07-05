@@ -13,3 +13,4 @@
 | 9 | MEDIUM | [Find The Celebrity](https://leetcode.com/problems/find-the-celebrity) | [Solution](../coding/algorithms/TwoPointer.java) | Two Pointers, Graph, Interactive |
 | 10 | MEDIUM | [Number Of Provinces](https://leetcode.com/problems/number-of-provinces) | [Solution](../coding/datastructures/graph/BFSSolution.java) | Depth-First Search, Breadth-First Search, Union Find, Graph |
 | 11 | MEDIUM | [01 Matrix](https://leetcode.com/problems/01-matrix) | [Solution](../coding/datastructures/graph/BFSSolution.java) | Array, Dynamic Programming, Breadth-First Search, Matrix |
+| 12 | HARD | [Binary Tree Maximum Path Sum](https://leetcode.com/problems/binary-tree-maximum-path-sum) | [Solution](../coding/datastructures/binaryTree/Solutions.java) | Dynamic Programming, Tree, Depth-First Search, Binary Tree |

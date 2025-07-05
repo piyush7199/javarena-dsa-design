@@ -19,3 +19,4 @@
 | 15 | MEDIUM | [Surrounded Regions](https://leetcode.com/problems/surrounded-regions) | [Solution](../coding/datastructures/graph/SurroundedRegions.java) | Array, Depth-First Search, Breadth-First Search, Union Find, Matrix |
 | 16 | MEDIUM | [01 Matrix](https://leetcode.com/problems/01-matrix) | [Solution](../coding/datastructures/graph/BFSSolution.java) | Array, Dynamic Programming, Breadth-First Search, Matrix |
 | 17 | MEDIUM | [House Robber](https://leetcode.com/problems/house-robber) | [Solution](../coding/algorithms/DynamicProgramming.java) | Array, Dynamic Programming |
+| 18 | HARD | [Binary Tree Maximum Path Sum](https://leetcode.com/problems/binary-tree-maximum-path-sum) | [Solution](../coding/datastructures/binaryTree/Solutions.java) | Dynamic Programming, Tree, Depth-First Search, Binary Tree |

@@ -136,6 +136,8 @@ public class BinaryTree {
 | 8  | [Binary Tree Zigzag Level Order Traversal](https://leetcode.com/problems/binary-tree-zigzag-level-order-traversal/)                                                                              | [Solutions.java](./Solutions.java)   |
 | 9  | [Validate Binary Search Tree](https://leetcode.com/problems/validate-binary-search-tree/)                                                                                                        | [Solutions.java](./Solutions.java)   |
 | 10 | [Same Tree](https://leetcode.com/problems/same-tree/)                                                                                                                                            | [Solutions.java](./Solutions.java)   |
+| 11 | [Balanced Binary Tree](https://leetcode.com/problems/balanced-binary-tree/)                                                                                                                      | [Solutions.java](./Solutions.java)   |
+| 12 | [Binary Tree Maximum Path Sum](https://leetcode.com/problems/binary-tree-maximum-path-sum/)                                                                                                      | [Solutions.java](./Solutions.java)   |
 
 ---
 

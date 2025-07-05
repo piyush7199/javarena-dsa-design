@@ -22,7 +22,6 @@ public class Solutions {
      * Time Complexity: O(n) — Traverse each node once
      * Space Complexity: O(h) — Call stack for recursion (h = height)
      * <p>
-     * 📌 Asked in: Amazon, Google, Microsoft, Adobe
      */
     public boolean isIdentical(Node r1, Node r2) {
         if (r1 == null || r2 == null) return r1 == r2;
@@ -44,7 +43,6 @@ public class Solutions {
      * Time Complexity: O(n)
      * Space Complexity: O(h)
      * <p>
-     * 📌 Asked in: Amazon, Google, Facebook, Uber
      */
     public int maxDepth(Node root) {
         if (root == null) return 0;
@@ -63,7 +61,6 @@ public class Solutions {
      * Time Complexity: O(n)
      * Space Complexity: O(n)
      * <p>
-     * 📌 Asked in: Amazon, Apple, Bloomberg
      */
     public List<List<Integer>> zigzagLevelOrder(Node root) {
         List<List<Integer>> res = new ArrayList<>();
@@ -108,7 +105,6 @@ public class Solutions {
      * Time Complexity: O(n)
      * Space Complexity: O(h)
      * <p>
-     * 📌 Asked in: Google, Amazon, Facebook, Microsoft
      */
     public boolean isValidBST(Node root) {
         return isValid(root, Long.MIN_VALUE, Long.MAX_VALUE);
@@ -133,7 +129,6 @@ public class Solutions {
      * Time Complexity: O(n)
      * Space Complexity: O(h)
      * <p>
-     * 📌 Asked in: Google, Amazon, Adobe
      */
     public boolean isSameTree(Node p, Node q) {
         if (p == null && q == null) return true;
@@ -144,5 +139,79 @@ public class Solutions {
             return isSameTree(p.right, q.right);
         }
         return false;
+    }
+
+    /**
+     * Determines if a binary tree is height-balanced.
+     * A binary tree is balanced if the height difference between
+     * left and right subtrees of every node is no more than 1.
+     * <p>
+     * Intuition:
+     * - Perform post-order traversal (bottom-up).
+     * - At each node, compute left and right heights.
+     * - If height difference > 1, propagate `-1` up as a failure flag.
+     * <p>
+     * Time Complexity: O(n)
+     * - Each node is visited once.
+     * Space Complexity: O(h)
+     * - Due to recursion stack, where h is the height of the tree.
+     */
+    public boolean isBalanced(Node root) {
+        if (root == null) return true;
+        return maxDepth2(root) != -1;
+    }
+
+    /**
+     * Helper function to compute the depth of the binary tree and
+     * check for height balance in one traversal.
+     * <p>
+     * Intuition:
+     * - Returns -1 if subtree is unbalanced.
+     * - Otherwise, returns the actual depth.
+     * <p>
+     * Time Complexity: O(n)
+     * Space Complexity: O(h)
+     */
+    public int maxDepth2(Node root) {
+        if (root == null) return 0;
+        int left = maxDepth(root.left);
+        if (left == -1) return -1;
+        int right = maxDepth(root.right);
+        if (right == -1) return -1;
+        if (Math.abs(right - left) > 1) return -1;
+        return 1 + Math.max(right, left);
+    }
+
+    /**
+     * Finds the maximum path sum in a binary tree.
+     * A path is any sequence of nodes where each pair is connected via parent-child edge.
+     * It may or may not pass through the root, and must contain at least one node.
+     * <p>
+     * Intuition:
+     * - Use post-order traversal to calculate the max sum from left and right subtrees.
+     * - For each node, compute the maximum contribution:
+     * - `max(root + left, root + right, root)` for recursion return.
+     * - `left + root + right` for updating global max.
+     * <p>
+     * Time Complexity: O(n)
+     * Space Complexity: O(h)
+     */
+    public int maxPathSum(Node root) {
+        int[] ans = new int[1];
+        ans[0] = Integer.MIN_VALUE;
+        maxSum(root, ans);
+        return ans[0];
+    }
+
+    /**
+     * Helper function that computes the maximum root-to-leaf path sum and
+     * updates the overall max path sum.
+     */
+    public int maxSum(Node root, int[] sum) {
+        if (root == null) return 0;
+        int l = Math.max(maxSum(root.left, sum), 0);
+        int r = Math.max(maxSum(root.right, sum), 0);
+        sum[0] = Math.max(sum[0], l + r + root.val);
+        return root.val + Math.max(l, r);
     }
 }
