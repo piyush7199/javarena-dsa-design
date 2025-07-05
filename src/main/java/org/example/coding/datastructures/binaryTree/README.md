@@ -139,6 +139,7 @@ public class BinaryTree {
 | 11 | [Balanced Binary Tree](https://leetcode.com/problems/balanced-binary-tree/)                                                                                                                      | [Solutions.java](./Solutions.java)   |
 | 12 | [Binary Tree Maximum Path Sum](https://leetcode.com/problems/binary-tree-maximum-path-sum/)                                                                                                      | [Solutions.java](./Solutions.java)   |
 | 13 | [Vertical Order Traversal of a Binary Tree](https://leetcode.com/problems/vertical-order-traversal-of-a-binary-tree/)                                                                            | [Traversals.java](./Traversals.java) |
+| 14 | [Tree Boundary Traversal](https://www.geeksforgeeks.org/problems/boundary-traversal-of-binary-tree/1)                                                                                            | [Traversals.java](./Traversals.java) |
 
 ---
 
