@@ -138,6 +138,7 @@ public class BinaryTree {
 | 10 | [Same Tree](https://leetcode.com/problems/same-tree/)                                                                                                                                            | [Solutions.java](./Solutions.java)   |
 | 11 | [Balanced Binary Tree](https://leetcode.com/problems/balanced-binary-tree/)                                                                                                                      | [Solutions.java](./Solutions.java)   |
 | 12 | [Binary Tree Maximum Path Sum](https://leetcode.com/problems/binary-tree-maximum-path-sum/)                                                                                                      | [Solutions.java](./Solutions.java)   |
+| 13 | [Vertical Order Traversal of a Binary Tree](https://leetcode.com/problems/vertical-order-traversal-of-a-binary-tree/)                                                                            | [Traversals.java](./Traversals.java) |
 
 ---
 
