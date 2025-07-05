@@ -32,3 +32,4 @@
 | 28 | HARD       | [Trapping Rain Water](https://leetcode.com/problems/trapping-rain-water)                                                                         | [Solution](../coding/datastructures/stackAndQueue/MinStack.java)     | Array, Two Pointers, Dynamic Programming, Stack, Monotonic Stack     |
 | 29 | MEDIUM     | [Online Stock Span](https://leetcode.com/problems/online-stock-span)                                                                             | [Solution](../coding/datastructures/stackAndQueue/StockSpanner.java) | Stack, Design, Monotonic Stack, Data Stream                          |
 | 30 | MEDIUM | [Rotting Oranges](https://leetcode.com/problems/rotting-oranges) | [Solution](../coding/datastructures/graph/BFSSolution.java) | Array, Breadth-First Search, Matrix |
+| 31 | HARD | [Word Ladder](https://leetcode.com/problems/word-ladder) | [Solution](../coding/datastructures/graph/WordLadder.java) | Hash Table, String, Breadth-First Search |

@@ -14,3 +14,4 @@
 | 10 | MEDIUM | [Largest Merge Of Two Strings](https://leetcode.com/problems/largest-merge-of-two-strings) | [Solution](../coding/algorithms/GreedyAlgorithms.java) | Two Pointers, String, Greedy |
 | 11 | MEDIUM | [Min Stack](https://leetcode.com/problems/min-stack) | [Solution](../coding/datastructures/stackAndQueue/MinStack.java) | Stack, Design |
 | 12 | MEDIUM | [Remove K Digits](https://leetcode.com/problems/remove-k-digits) | [Solution](../coding/datastructures/stackAndQueue/MinStack.java) | String, Stack, Greedy, Monotonic Stack |
+| 13 | HARD | [Word Ladder](https://leetcode.com/problems/word-ladder) | [Solution](../coding/datastructures/graph/WordLadder.java) | Hash Table, String, Breadth-First Search |

@@ -32,3 +32,4 @@
 | 28 | MEDIUM     | [Find The Celebrity](https://leetcode.com/problems/find-the-celebrity)                                                                           | [Solution](../coding/algorithms/TwoPointer.java)                  | Two Pointers, Graph, Interactive                                                       |
 | 29 | MEDIUM | [Number Of Provinces](https://leetcode.com/problems/number-of-provinces) | [Solution](../coding/datastructures/graph/BFSSolution.java) | Depth-First Search, Breadth-First Search, Union Find, Graph |
 | 30 | MEDIUM | [Surrounded Regions](https://leetcode.com/problems/surrounded-regions) | [Solution](../coding/datastructures/graph/SurroundedRegions.java) | Array, Depth-First Search, Breadth-First Search, Union Find, Matrix |
+| 31 | HARD | [Word Ladder](https://leetcode.com/problems/word-ladder) | [Solution](../coding/datastructures/graph/WordLadder.java) | Hash Table, String, Breadth-First Search |

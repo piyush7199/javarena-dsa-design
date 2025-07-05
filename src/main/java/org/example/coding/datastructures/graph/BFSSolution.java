@@ -239,6 +239,16 @@ public class BFSSolution {
         return result;
     }
 
+    /**
+     * For each cell in the matrix, returns the distance to the nearest 0.
+     * <p>
+     * Intuition:
+     * - Multi-source BFS from all 0s.
+     * - Use a queue to expand distance from 0s to neighboring 1s.
+     * <p>
+     * Time Complexity: O(N * M)
+     * Space Complexity: O(N * M)
+     */
     public int[][] updateMatrix(int[][] mat) {
         class Pair {
             int row;
@@ -265,8 +275,8 @@ public class BFSSolution {
                 }
             }
         }
-        int rows[] = {-1, 0, 1, 0};
-        int cols[] = {0, 1, 0, -1};
+        int[] rows = {-1, 0, 1, 0};
+        int[] cols = {0, 1, 0, -1};
         while (!q.isEmpty()) {
             int r = q.peek().row;
             int c = q.peek().col;
