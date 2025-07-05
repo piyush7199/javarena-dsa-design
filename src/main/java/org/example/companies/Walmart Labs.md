@@ -21,3 +21,4 @@
 | 17 | EASY | [Valid Parentheses](https://leetcode.com/problems/valid-parentheses) | [Solution](../coding/datastructures/stackAndQueue/Solution.java) | String, Stack |
 | 18 | MEDIUM | [Min Stack](https://leetcode.com/problems/min-stack) | [Solution](../coding/datastructures/stackAndQueue/MinStack.java) | Stack, Design |
 | 19 | HARD | [Trapping Rain Water](https://leetcode.com/problems/trapping-rain-water) | [Solution](../coding/datastructures/stackAndQueue/MinStack.java) | Array, Two Pointers, Dynamic Programming, Stack, Monotonic Stack |
+| 20 | MEDIUM | [Rotting Oranges](https://leetcode.com/problems/rotting-oranges) | [Solution](../coding/datastructures/graph/BFSSolution.java) | Array, Breadth-First Search, Matrix |

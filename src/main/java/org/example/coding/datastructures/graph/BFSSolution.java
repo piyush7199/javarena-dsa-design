@@ -239,4 +239,50 @@ public class BFSSolution {
         return result;
     }
 
+    public int[][] updateMatrix(int[][] mat) {
+        class Pair {
+            int row;
+            int col;
+            int dis;
+
+            public Pair(int row, int col, int dis) {
+                this.row = row;
+                this.col = col;
+                this.dis = dis;
+            }
+        }
+
+        int n = mat.length;
+        int m = mat[0].length;
+        int[][] visited = new int[n][m];
+        int[][] dis = new int[n][m];
+        Queue<Pair> q = new LinkedList<>();
+        for (int i = 0; i < n; i++) {
+            for (int j = 0; j < m; j++) {
+                if (mat[i][j] == 0) {
+                    visited[i][j] = 1;
+                    q.add(new Pair(i, j, 0));
+                }
+            }
+        }
+        int rows[] = {-1, 0, 1, 0};
+        int cols[] = {0, 1, 0, -1};
+        while (!q.isEmpty()) {
+            int r = q.peek().row;
+            int c = q.peek().col;
+            int d = q.peek().dis;
+            q.poll();
+            dis[r][c] = d;
+            for (int i = 0; i < 4; i++) {
+                int nrow = r + rows[i];
+                int ncol = c + cols[i];
+                if (nrow >= 0 && ncol >= 0 && nrow < n && ncol < m && visited[nrow][ncol] == 0) {
+                    visited[nrow][ncol] = 1;
+                    q.add(new Pair(nrow, ncol, d + 1));
+                }
+            }
+        }
+        return dis;
+    }
+
 }

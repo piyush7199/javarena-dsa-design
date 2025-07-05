@@ -7,3 +7,4 @@
 | 3 | MEDIUM | [Group Anagrams](https://leetcode.com/problems/group-anagrams) | [Solution](../coding/algorithms/SortingAlgorithms.java) | Array, Hash Table, String, Sorting |
 | 4 | HARD | [Trapping Rain Water](https://leetcode.com/problems/trapping-rain-water) | [Solution](../coding/datastructures/stackAndQueue/MinStack.java) | Array, Two Pointers, Dynamic Programming, Stack, Monotonic Stack |
 | 5 | MEDIUM | [Asteroid Collision](https://leetcode.com/problems/asteroid-collision) | [Solution](../coding/datastructures/stackAndQueue/MinStack.java) | Array, Stack, Simulation |
+| 6 | MEDIUM | [Rotting Oranges](https://leetcode.com/problems/rotting-oranges) | [Solution](../coding/datastructures/graph/BFSSolution.java) | Array, Breadth-First Search, Matrix |

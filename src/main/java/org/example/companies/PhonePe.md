@@ -11,3 +11,5 @@
 | 7 | HARD | [Trapping Rain Water](https://leetcode.com/problems/trapping-rain-water) | [Solution](../coding/datastructures/stackAndQueue/MinStack.java) | Array, Two Pointers, Dynamic Programming, Stack, Monotonic Stack |
 | 8 | MEDIUM | [Asteroid Collision](https://leetcode.com/problems/asteroid-collision) | [Solution](../coding/datastructures/stackAndQueue/MinStack.java) | Array, Stack, Simulation |
 | 9 | MEDIUM | [Remove K Digits](https://leetcode.com/problems/remove-k-digits) | [Solution](../coding/datastructures/stackAndQueue/MinStack.java) | String, Stack, Greedy, Monotonic Stack |
+| 10 | MEDIUM | [Find The Celebrity](https://leetcode.com/problems/find-the-celebrity) | [Solution](../coding/algorithms/TwoPointer.java) | Two Pointers, Graph, Interactive |
+| 11 | MEDIUM | [Rotting Oranges](https://leetcode.com/problems/rotting-oranges) | [Solution](../coding/datastructures/graph/BFSSolution.java) | Array, Breadth-First Search, Matrix |

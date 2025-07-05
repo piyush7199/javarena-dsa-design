@@ -10,3 +10,4 @@
 | 6 | MEDIUM | [Group Anagrams](https://leetcode.com/problems/group-anagrams) | [Solution](../coding/algorithms/SortingAlgorithms.java) | Array, Hash Table, String, Sorting |
 | 7 | EASY | [Valid Parentheses](https://leetcode.com/problems/valid-parentheses) | [Solution](../coding/datastructures/stackAndQueue/Solution.java) | String, Stack |
 | 8 | HARD | [Trapping Rain Water](https://leetcode.com/problems/trapping-rain-water) | [Solution](../coding/datastructures/stackAndQueue/MinStack.java) | Array, Two Pointers, Dynamic Programming, Stack, Monotonic Stack |
+| 9 | MEDIUM | [Rotting Oranges](https://leetcode.com/problems/rotting-oranges) | [Solution](../coding/datastructures/graph/BFSSolution.java) | Array, Breadth-First Search, Matrix |

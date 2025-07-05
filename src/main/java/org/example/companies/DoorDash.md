@@ -10,3 +10,6 @@
 | 6 | MEDIUM | [Jump Game](https://leetcode.com/problems/jump-game) | [Solution](../coding/algorithms/GreedyAlgorithms.java) | Array, Dynamic Programming, Greedy |
 | 7 | HARD | [Sliding Window Maximum](https://leetcode.com/problems/sliding-window-maximum) | [Solution](../coding/datastructures/stackAndQueue/MinStack.java) | Array, Queue, Sliding Window, Heap (Priority Queue), Monotonic Queue |
 | 8 | MEDIUM | [Asteroid Collision](https://leetcode.com/problems/asteroid-collision) | [Solution](../coding/datastructures/stackAndQueue/MinStack.java) | Array, Stack, Simulation |
+| 9 | MEDIUM | [Find The Celebrity](https://leetcode.com/problems/find-the-celebrity) | [Solution](../coding/algorithms/TwoPointer.java) | Two Pointers, Graph, Interactive |
+| 10 | MEDIUM | [Number Of Provinces](https://leetcode.com/problems/number-of-provinces) | [Solution](../coding/datastructures/graph/BFSSolution.java) | Depth-First Search, Breadth-First Search, Union Find, Graph |
+| 11 | MEDIUM | [01 Matrix](https://leetcode.com/problems/01-matrix) | [Solution](../coding/datastructures/graph/BFSSolution.java) | Array, Dynamic Programming, Breadth-First Search, Matrix |

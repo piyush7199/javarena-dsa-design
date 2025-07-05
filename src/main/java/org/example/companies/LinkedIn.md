@@ -20,3 +20,5 @@
 | 16 | EASY | [Valid Parentheses](https://leetcode.com/problems/valid-parentheses) | [Solution](../coding/datastructures/stackAndQueue/Solution.java) | String, Stack |
 | 17 | MEDIUM | [Evaluate Reverse Polish Notation](https://leetcode.com/problems/evaluate-reverse-polish-notation) | [Solution](../coding/datastructures/stackAndQueue/Solution.java) | Array, Math, Stack |
 | 18 | MEDIUM | [Min Stack](https://leetcode.com/problems/min-stack) | [Solution](../coding/datastructures/stackAndQueue/MinStack.java) | Stack, Design |
+| 19 | MEDIUM | [Find The Celebrity](https://leetcode.com/problems/find-the-celebrity) | [Solution](../coding/algorithms/TwoPointer.java) | Two Pointers, Graph, Interactive |
+| 20 | MEDIUM | [01 Matrix](https://leetcode.com/problems/01-matrix) | [Solution](../coding/datastructures/graph/BFSSolution.java) | Array, Dynamic Programming, Breadth-First Search, Matrix |

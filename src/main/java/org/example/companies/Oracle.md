@@ -26,3 +26,4 @@
 | 22 | MEDIUM | [Min Stack](https://leetcode.com/problems/min-stack) | [Solution](../coding/datastructures/stackAndQueue/MinStack.java) | Stack, Design |
 | 23 | HARD | [Sliding Window Maximum](https://leetcode.com/problems/sliding-window-maximum) | [Solution](../coding/datastructures/stackAndQueue/MinStack.java) | Array, Queue, Sliding Window, Heap (Priority Queue), Monotonic Queue |
 | 24 | HARD | [Trapping Rain Water](https://leetcode.com/problems/trapping-rain-water) | [Solution](../coding/datastructures/stackAndQueue/MinStack.java) | Array, Two Pointers, Dynamic Programming, Stack, Monotonic Stack |
+| 25 | MEDIUM | [Rotting Oranges](https://leetcode.com/problems/rotting-oranges) | [Solution](../coding/datastructures/graph/BFSSolution.java) | Array, Breadth-First Search, Matrix |

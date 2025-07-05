@@ -11,3 +11,5 @@
 | 7 | MEDIUM | [Group Anagrams](https://leetcode.com/problems/group-anagrams) | [Solution](../coding/algorithms/SortingAlgorithms.java) | Array, Hash Table, String, Sorting |
 | 8 | HARD | [Sliding Window Maximum](https://leetcode.com/problems/sliding-window-maximum) | [Solution](../coding/datastructures/stackAndQueue/MinStack.java) | Array, Queue, Sliding Window, Heap (Priority Queue), Monotonic Queue |
 | 9 | HARD | [Trapping Rain Water](https://leetcode.com/problems/trapping-rain-water) | [Solution](../coding/datastructures/stackAndQueue/MinStack.java) | Array, Two Pointers, Dynamic Programming, Stack, Monotonic Stack |
+| 10 | MEDIUM | [Rotting Oranges](https://leetcode.com/problems/rotting-oranges) | [Solution](../coding/datastructures/graph/BFSSolution.java) | Array, Breadth-First Search, Matrix |
+| 11 | MEDIUM | [Surrounded Regions](https://leetcode.com/problems/surrounded-regions) | [Solution](../coding/datastructures/graph/SurroundedRegions.java) | Array, Depth-First Search, Breadth-First Search, Union Find, Matrix |

@@ -15,3 +15,6 @@
 | 11 | HARD | [Sliding Window Maximum](https://leetcode.com/problems/sliding-window-maximum) | [Solution](../coding/datastructures/stackAndQueue/MinStack.java) | Array, Queue, Sliding Window, Heap (Priority Queue), Monotonic Queue |
 | 12 | HARD | [Trapping Rain Water](https://leetcode.com/problems/trapping-rain-water) | [Solution](../coding/datastructures/stackAndQueue/MinStack.java) | Array, Two Pointers, Dynamic Programming, Stack, Monotonic Stack |
 | 13 | MEDIUM | [Asteroid Collision](https://leetcode.com/problems/asteroid-collision) | [Solution](../coding/datastructures/stackAndQueue/MinStack.java) | Array, Stack, Simulation |
+| 14 | MEDIUM | [Rotting Oranges](https://leetcode.com/problems/rotting-oranges) | [Solution](../coding/datastructures/graph/BFSSolution.java) | Array, Breadth-First Search, Matrix |
+| 15 | MEDIUM | [Surrounded Regions](https://leetcode.com/problems/surrounded-regions) | [Solution](../coding/datastructures/graph/SurroundedRegions.java) | Array, Depth-First Search, Breadth-First Search, Union Find, Matrix |
+| 16 | MEDIUM | [01 Matrix](https://leetcode.com/problems/01-matrix) | [Solution](../coding/datastructures/graph/BFSSolution.java) | Array, Dynamic Programming, Breadth-First Search, Matrix |

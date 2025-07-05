@@ -14,3 +14,4 @@
 | 10 | MEDIUM | [Longest Substring Without Repeating Characters](https://leetcode.com/problems/longest-substring-without-repeating-characters) | [Solution](../coding/algorithms/SlidingWindow.java) | Hash Table, String, Sliding Window |
 | 11 | MEDIUM | [Group Anagrams](https://leetcode.com/problems/group-anagrams) | [Solution](../coding/algorithms/SortingAlgorithms.java) | Array, Hash Table, String, Sorting |
 | 12 | EASY | [Valid Parentheses](https://leetcode.com/problems/valid-parentheses) | [Solution](../coding/datastructures/stackAndQueue/Solution.java) | String, Stack |
+| 13 | MEDIUM | [Rotting Oranges](https://leetcode.com/problems/rotting-oranges) | [Solution](../coding/datastructures/graph/BFSSolution.java) | Array, Breadth-First Search, Matrix |

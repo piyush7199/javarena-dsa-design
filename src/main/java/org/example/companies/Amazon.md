@@ -32,3 +32,5 @@
 | 28 | HARD | [Trapping Rain Water](https://leetcode.com/problems/trapping-rain-water) | [Solution](../coding/datastructures/stackAndQueue/MinStack.java) | Array, Two Pointers, Dynamic Programming, Stack, Monotonic Stack |
 | 29 | MEDIUM | [Next Greater Element Ii](https://leetcode.com/problems/next-greater-element-ii) | [Solution](../coding/datastructures/stackAndQueue/MinStack.java) | Array, Stack, Monotonic Stack |
 | 30 | MEDIUM | [Asteroid Collision](https://leetcode.com/problems/asteroid-collision) | [Solution](../coding/datastructures/stackAndQueue/MinStack.java) | Array, Stack, Simulation |
+| 31 | MEDIUM | [Number Of Provinces](https://leetcode.com/problems/number-of-provinces) | [Solution](../coding/datastructures/graph/BFSSolution.java) | Depth-First Search, Breadth-First Search, Union Find, Graph |
+| 32 | MEDIUM | [Rotting Oranges](https://leetcode.com/problems/rotting-oranges) | [Solution](../coding/datastructures/graph/BFSSolution.java) | Array, Breadth-First Search, Matrix |

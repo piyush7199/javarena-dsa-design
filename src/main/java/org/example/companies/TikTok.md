@@ -23,3 +23,4 @@
 | 19 | EASY | [Valid Parentheses](https://leetcode.com/problems/valid-parentheses) | [Solution](../coding/datastructures/stackAndQueue/Solution.java) | String, Stack |
 | 20 | HARD | [Sliding Window Maximum](https://leetcode.com/problems/sliding-window-maximum) | [Solution](../coding/datastructures/stackAndQueue/MinStack.java) | Array, Queue, Sliding Window, Heap (Priority Queue), Monotonic Queue |
 | 21 | HARD | [Trapping Rain Water](https://leetcode.com/problems/trapping-rain-water) | [Solution](../coding/datastructures/stackAndQueue/MinStack.java) | Array, Two Pointers, Dynamic Programming, Stack, Monotonic Stack |
+| 22 | MEDIUM | [Surrounded Regions](https://leetcode.com/problems/surrounded-regions) | [Solution](../coding/datastructures/graph/SurroundedRegions.java) | Array, Depth-First Search, Breadth-First Search, Union Find, Matrix |
