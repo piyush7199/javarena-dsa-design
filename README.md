@@ -82,13 +82,31 @@ Each file contains:
 
 ## 🧩 Low-Level Design (LLD)
 
-| # | Pattern / System                                                                                                | 
-|---|-----------------------------------------------------------------------------------------------------------------|
-| 0 | [LLD Basics](./src/main/java/org/example/lld/basics/README.md)                                                  |
-| 1 | [Singleton Pattern](./src/main/java/org/example/lld/patterns/creational/singleton/README.md)                    |
-| 2 | [Decorator Pattern](./src/main/java/org/example/lld/patterns/structural/decorator/README.md)                    |
-| 3 | [Factory Pattern](./src/main/java/org/example/lld/patterns/creational/factory/README.md)                        |
-| 4 | [Chain of Responsibility](./src/main/java/org/example/lld/patterns/behavioural/chainOfResponsibility/README.md) |
+### 📚 Basics
+
+| # | Pattern Name                                                   | Description       | 
+|---|----------------------------------------------------------------|-------------------|
+| 1 | [LLD Basics](./src/main/java/org/example/lld/basics/README.md) | OOPs & LLD basics |
+
+### 🔨 Creational Design Patterns
+
+| # | Pattern Name                                                                         | Description                                                                      |
+|---|--------------------------------------------------------------------------------------|----------------------------------------------------------------------------------|
+| 1 | [Singleton](./src/main/java/org/example/lld/patterns/creational/singleton/README.md) | Ensure a class has only one instance and provide a global point of access to it. |
+| 2 | [Builder](./src/main/java/org/example/lld/patterns/creational/builder/README.md)     | Separates complex object construction from its representation.                   |
+| 3 | [Factory](./src/main/java/org/example/lld/patterns/creational/factory/README.md)     | Creates objects without exposing the instantiation logic.                        |
+
+### 🧠 Behavioural Design Patterns
+
+| # | Pattern Name                                                                                                    | Description                                                              |
+|---|-----------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------|
+| 1 | [Chain Of Responsibility](./src/main/java/org/example/lld/patterns/behavioural/chainOfResponsibility/README.md) | Passes a request along a chain of handlers until one of them handles it. |
+
+### 🧱 Structural Design Patterns
+
+| # | Pattern Name                                                                                       | Description                                          |
+|---|----------------------------------------------------------------------------------------------------|------------------------------------------------------|
+| 1 | [Chain Of Responsibility](./src/main/java/org/example/lld/patterns/structural/decorator/README.md) | Dynamically adds new behavior to objects at runtime. |
 
 ---
 
