@@ -124,4 +124,55 @@ public class LinkedList {
         }
         return head.next;
     }
+
+    /**
+     * Adds two numbers represented by two non-empty linked lists, where each node contains a single digit.
+     * The digits are stored in reverse order, and each of their nodes contains a single digit.
+     * <p>
+     * Intuition:
+     * - This simulates the process of addition (like how we do on paper).
+     * - We keep adding digits from both lists and carry forward any overflow using a variable `r`.
+     * - If one list is shorter, we continue with the longer list and the carry.
+     * - A final carry is appended if non-zero.
+     * <p>
+     * Time Complexity: O(max(N, M)) where N = length of l1, M = length of l2
+     * Space Complexity: O(max(N, M)) for the resulting linked list
+     */
+    public ListNode addTwoNumbers(ListNode l1, ListNode l2) {
+        ListNode dummy = new ListNode(0);
+        ListNode head = dummy;
+        ListNode h1 = l1;
+        ListNode h2 = l2;
+        int r = 0;
+        while (h1 != null && h2 != null) {
+            int sum = h1.val + h2.val + r;
+            r = (sum / 10);
+            head.next = new ListNode(sum % 10);
+            head = head.next;
+            h1 = h1.next;
+            h2 = h2.next;
+        }
+
+        while (h1 != null) {
+            int sum = h1.val + r;
+            r = (sum / 10);
+            head.next = new ListNode(sum % 10);
+            head = head.next;
+            h1 = h1.next;
+        }
+
+        while (h2 != null) {
+            int sum = h2.val + r;
+            r = (sum / 10);
+            head.next = new ListNode(sum % 10);
+            head = head.next;
+            h2 = h2.next;
+        }
+
+        while (r != 0) {
+            head.next = new ListNode(r % 10);
+            r /= 10;
+        }
+        return dummy.next;
+    }
 }

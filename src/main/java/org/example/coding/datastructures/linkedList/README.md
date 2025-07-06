@@ -6,10 +6,11 @@ Focused on traversal, cycle detection, reversal, and merging techniques with bot
 
 ## 💻 Problem Tracker
 
-| # | Problem                                                                         | Solution                         |
-|---|---------------------------------------------------------------------------------|----------------------------------|
-| 1 | [Reverse Linked List](https://leetcode.com/problems/reverse-linked-list/)       | [Solution](./LinkedList.java)    |
-| 2 | [Linked List Cycle](https://leetcode.com/problems/linked-list-cycle/)           | [Solution](./LinkedList.java)    |
-| 3 | [Merge Two Sorted Lists](https://leetcode.com/problems/merge-two-sorted-lists/) | [Solution](./LinkedList.java)    |
-| 4 | [LRU Cache](https://leetcode.com/problems/lru-cache/)                           | [LRUCache.java](./LRUCache.java) |
-| 5 | [LFU Cache](https://leetcode.com/problems/lfu-cache/)                           | [LFUCache.java](./LFUCache.java) |
+| # | Problem                                                                         | Solution                             |
+|---|---------------------------------------------------------------------------------|--------------------------------------|
+| 1 | [Reverse Linked List](https://leetcode.com/problems/reverse-linked-list/)       | [LinkedList.java](./LinkedList.java) |
+| 2 | [Linked List Cycle](https://leetcode.com/problems/linked-list-cycle/)           | [LinkedList.java](./LinkedList.java) |
+| 3 | [Merge Two Sorted Lists](https://leetcode.com/problems/merge-two-sorted-lists/) | [LinkedList.java](./LinkedList.java) |
+| 4 | [LRU Cache](https://leetcode.com/problems/lru-cache/)                           | [LRUCache.java](./LRUCache.java)     |
+| 5 | [LFU Cache](https://leetcode.com/problems/lfu-cache/)                           | [LFUCache.java](./LFUCache.java)     |
+| 6 | [Add Two Numbers](https://leetcode.com/problems/add-two-numbers/)               | [LinkedList.java](./LinkedList.java) |

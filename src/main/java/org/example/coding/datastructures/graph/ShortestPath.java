@@ -16,6 +16,17 @@ public class ShortestPath {
         }
     }
 
+    /**
+     * Computes the shortest path from a source node to all other nodes in an unweighted undirected graph.
+     * <p>
+     * Intuition:
+     * - Since all edges have equal weight (unweighted), we can use Breadth-First Search (BFS).
+     * - The first time we reach a node will always be through the shortest path.
+     * - We use a queue to perform level-wise traversal and maintain visited states and distance.
+     * <p>
+     * Time Complexity: O(V + E), where V = number of vertices and E = number of edges
+     * Space Complexity: O(V) for visited array and distance array
+     */
     public int[] shortestPath(ArrayList<ArrayList<Integer>> adj, int src) {
         // code here
         int n = adj.size();
