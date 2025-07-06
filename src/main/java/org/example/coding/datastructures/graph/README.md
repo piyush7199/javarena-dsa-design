@@ -64,6 +64,10 @@ Graph traversal algorithms help in searching or visiting nodes:
 | 10 | [Word Ladder](https://leetcode.com/problems/word-ladder/)                                              | Traversal              | [WordLadder.java](./WordLadder.java)                                           |
 | 11 | [Surrounded Regions](https://leetcode.com/problems/surrounded-regions/)                                | Traversal,  Components | [SurroundedRegions.java](./SurroundedRegions.java)                             |
 | 12 | [Find the number of islands](https://www.geeksforgeeks.org/problems/find-the-number-of-islands/1)      | Traversal,  Components | [SurroundedRegions.java](./SurroundedRegions.java)                             |
+| 13 | [Course Schedule II](https://leetcode.com/problems/course-schedule-ii/)                                | Topological Sorting    | [TopologicalSorting.java](./TopologicalSorting.java)                           |
+| 14 | [Course Schedule](https://leetcode.com/problems/course-schedule/)                                      | Topological Sorting    | [TopologicalSorting.java](./TopologicalSorting.java)                           |
+| 15 | [Find Eventual Safe States](https://leetcode.com/problems/find-eventual-safe-states/)                  | Topological Sorting    | [TopologicalSorting.java](./TopologicalSorting.java)                           |                                                                                |
+| 16 | [Alien Dictionary](https://www.geeksforgeeks.org/problems/alien-dictionary/1)                          | Topological Sorting    | [TopologicalSorting.java](./TopologicalSorting.java)                           |                                                                                |
 
 ---
 

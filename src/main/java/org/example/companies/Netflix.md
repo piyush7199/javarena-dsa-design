@@ -11,3 +11,4 @@
 | 7 | EASY | [Implement Queue Using Stacks](https://leetcode.com/problems/implement-queue-using-stacks) | [Solution](../coding/datastructures/stackAndQueue/MyQueue.java) | Stack, Design, Queue |
 | 8 | EASY | [Valid Parentheses](https://leetcode.com/problems/valid-parentheses) | [Solution](../coding/datastructures/stackAndQueue/Solution.java) | String, Stack |
 | 9 | EASY | [Merge Sorted Array](https://leetcode.com/problems/merge-sorted-array) | [Solution](../coding/algorithms/TwoPointer.java) | Array, Two Pointers, Sorting |
+| 10 | MEDIUM | [Course Schedule Ii](https://leetcode.com/problems/course-schedule-ii) | [Solution](../coding/datastructures/graph/TopologicalSorting.java) | Depth-First Search, Breadth-First Search, Graph, Topological Sort |

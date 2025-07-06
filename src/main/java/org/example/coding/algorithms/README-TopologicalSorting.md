@@ -174,9 +174,13 @@ function topologicalSortKahn(graph):
 
 ## 🧪 Practice Problems
 
-| # | Problem                                                                       | Solution                                                                                                                   |
-|---|-------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------|
-| 1 | [Topological sort](https://www.geeksforgeeks.org/problems/topological-sort/1) | [BFSSolution.java](../datastructures/graph/BFSSolution.java), [DFSSolution.java](../datastructures/graph/DFSSolution.java) |
+| # | Problem                                                                               | Solution                                                                                                                   |
+|---|---------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------|
+| 1 | [Topological sort](https://www.geeksforgeeks.org/problems/topological-sort/1)         | [BFSSolution.java](../datastructures/graph/BFSSolution.java), [DFSSolution.java](../datastructures/graph/DFSSolution.java) |
+| 2 | [Course Schedule II](https://leetcode.com/problems/course-schedule-ii/)               | [TopologicalSorting.java](../datastructures/graph/TopologicalSorting.java)                                                 |
+| 3 | [Course Schedule](https://leetcode.com/problems/course-schedule/)                     | [TopologicalSorting.java](../datastructures/graph/TopologicalSorting.java)                                                 |
+| 4 | [Find Eventual Safe States](https://leetcode.com/problems/find-eventual-safe-states/) | [TopologicalSorting.java](../datastructures/graph/TopologicalSorting.java)                                                 |
+| 5 | [Alien Dictionary](https://www.geeksforgeeks.org/problems/alien-dictionary/1)         | [TopologicalSorting.java](../datastructures/graph/TopologicalSorting.java)                                                 |
 
 ---
 
