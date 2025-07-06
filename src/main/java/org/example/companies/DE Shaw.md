@@ -13,3 +13,4 @@
 | 9 | HARD | [Trapping Rain Water](https://leetcode.com/problems/trapping-rain-water) | [Solution](../coding/datastructures/stackAndQueue/MinStack.java) | Array, Two Pointers, Dynamic Programming, Stack, Monotonic Stack |
 | 10 | MEDIUM | [Remove K Digits](https://leetcode.com/problems/remove-k-digits) | [Solution](../coding/datastructures/stackAndQueue/MinStack.java) | String, Stack, Greedy, Monotonic Stack |
 | 11 | MEDIUM | [House Robber](https://leetcode.com/problems/house-robber) | [Solution](../coding/algorithms/DynamicProgramming.java) | Array, Dynamic Programming |
+| 12 | MEDIUM | [4sum](https://leetcode.com/problems/4sum) | [Solution](../coding/algorithms/TwoPointerSum.java) | Array, Two Pointers, Sorting |

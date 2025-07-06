@@ -53,4 +53,32 @@ public class TwoPointer {
 
         return c;
     }
+
+    /**
+     * Merges two sorted arrays `nums1` and `nums2` into `nums1` in-place.
+     * `nums1` has a size of m + n with the first `m` elements initialized.
+     * <p>
+     * Intuition:
+     * - We fill `nums1` from the back (largest index) to avoid overwriting.
+     * - Compare the elements from end of `nums1` and `nums2`, place the larger at the end.
+     * <p>
+     * Time Complexity: O(m + n)
+     * Space Complexity: O(1) – in-place
+     */
+    public void merge(int[] nums1, int m, int[] nums2, int n) {
+        int i = m - 1;
+        int j = n - 1;
+        int k = m + n - 1;
+        while (j >= 0) {
+            if (i >= 0 && nums1[i] > nums2[j]) {
+                nums1[k] = nums1[i];
+                i--;
+            } else {
+                nums1[k] = nums2[j];
+                j--;
+            }
+            k--;
+        }
+
+    }
 }

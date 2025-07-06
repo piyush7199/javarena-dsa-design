@@ -124,4 +124,33 @@ public class Solutions {
         }
         return ans;
     }
+
+    /**
+     * Counts the number of subarrays whose XOR is equal to a given number `m`.
+     * <p>
+     * Intuition:
+     * - Maintain a prefix XOR.
+     * - Use a map to store frequency of each prefix XOR.
+     * - For each prefix XOR, check if (prefix XOR ^ m) exists in map.
+     * <p>
+     * XOR properties used:
+     * A ^ B = C ⇒ A = B ^ C ⇒ B = A ^ C
+     * <p>
+     * Time Complexity: O(n)
+     * Space Complexity: O(n)
+     */
+    public long subarrayXor(int arr[], int m) {
+        // code here
+        int xor = 0;
+        HashMap<Integer, Integer> map = new HashMap<>();
+        map.put(xor, 1);
+        long cnt = 0;
+        for (int ele : arr) {
+            xor = xor ^ ele;
+            int rem = xor ^ m;
+            cnt += map.getOrDefault(rem, 0);
+            map.put(xor, map.getOrDefault(xor, 0) + 1);
+        }
+        return cnt;
+    }
 }

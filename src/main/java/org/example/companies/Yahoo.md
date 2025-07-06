@@ -25,3 +25,6 @@
 | 21 | HARD       | [Trapping Rain Water](https://leetcode.com/problems/trapping-rain-water)                                                                         | [Solution](../coding/datastructures/stackAndQueue/MinStack.java)  | Array, Two Pointers, Dynamic Programming, Stack, Monotonic Stack |
 | 22 | HARD       | [Word Ladder](https://leetcode.com/problems/word-ladder)                                                                                         | [Solution](../coding/datastructures/graph/WordLadder.java)        | Hash Table, String, Breadth-First Search                         |
 | 23 | EASY       | [Climbing Stairs](https://leetcode.com/problems/climbing-stairs)                                                                                 | [Solution](../coding/algorithms/DynamicProgramming.java)          | Math, Dynamic Programming, Memoization                           |
+| 24 | MEDIUM | [3sum](https://leetcode.com/problems/3sum) | [Solution](../coding/algorithms/TwoPointerSum.java) | Array, Two Pointers, Sorting |
+| 25 | MEDIUM | [4sum](https://leetcode.com/problems/4sum) | [Solution](../coding/algorithms/TwoPointerSum.java) | Array, Two Pointers, Sorting |
+| 26 | EASY | [Merge Sorted Array](https://leetcode.com/problems/merge-sorted-array) | [Solution](../coding/algorithms/TwoPointer.java) | Array, Two Pointers, Sorting |

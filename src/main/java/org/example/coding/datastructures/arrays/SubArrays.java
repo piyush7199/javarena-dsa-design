@@ -1,5 +1,7 @@
 package org.example.coding.datastructures.arrays;
 
+import java.util.HashMap;
+
 public class SubArrays {
 
     /**
@@ -82,6 +84,36 @@ public class SubArrays {
         for (int ele : nums) {
             sum = Math.max(ele, sum + ele);
             ans = Math.max(sum, ans);
+        }
+        return ans;
+    }
+
+    /**
+     * Finds the length of the longest subarray whose elements sum up to 0.
+     * <p>
+     * Intuition:
+     * - Maintain a prefix sum and store first occurrence of each prefix sum in a HashMap.
+     * - If a prefix sum repeats, it means elements in between sum to 0.
+     * <p>
+     * Time Complexity: O(n)
+     * Space Complexity: O(n)
+     */
+    public int maxLength(int[] arr) {
+        // code here
+        int ans = 0;
+        HashMap<Integer, Integer> map = new HashMap<>();
+        map.put(0, 0);
+        int preSum = 0;
+        int n = arr.length;
+        for (int i = 0; i < n; i++) {
+            preSum += arr[i];
+            if (preSum == 0) {
+                ans = i + 1;
+            } else if (map.containsKey(preSum)) {
+                ans = Math.max(i - map.get(preSum), ans);
+            } else {
+                map.put(preSum, i);
+            }
         }
         return ans;
     }

@@ -26,3 +26,4 @@
 | 22 | HARD | [Word Ladder Ii](https://leetcode.com/problems/word-ladder-ii) | [Solution](../coding/datastructures/graph/WordLadder.java) | Hash Table, String, Backtracking, Breadth-First Search |
 | 23 | MEDIUM | [House Robber](https://leetcode.com/problems/house-robber) | [Solution](../coding/algorithms/DynamicProgramming.java) | Array, Dynamic Programming |
 | 24 | MEDIUM | [House Robber Ii](https://leetcode.com/problems/house-robber-ii) | [Solution](../coding/algorithms/DynamicProgramming.java) | Array, Dynamic Programming |
+| 25 | EASY | [Merge Sorted Array](https://leetcode.com/problems/merge-sorted-array) | [Solution](../coding/algorithms/TwoPointer.java) | Array, Two Pointers, Sorting |
