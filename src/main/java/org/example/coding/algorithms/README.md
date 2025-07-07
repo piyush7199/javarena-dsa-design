@@ -13,5 +13,6 @@ programming. Each category includes Java implementations and curated problems fr
 - [💰 Greedy Algorithms](README-GreedyAlgorithms.md)
 - [🪟 Sliding Window Algorithm](README-SlidingWindowAlgorithms.md)
 - [🧠 Dynamic Programming](README-DynamicProgramming.md)
-- [🔢 Topological Sorting](README-TopologicalSorting.md)
+- [🔢 Topological Sorting](README-Graph-TopologicalSorting.md)
 - [📍 Two-Pointer Technique](README-TwoPointer.md)
+- [ Dijkstra's algorithm](README-Graph-DijkstraAlgorithm.md)

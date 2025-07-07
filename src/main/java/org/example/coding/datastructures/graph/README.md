@@ -69,6 +69,9 @@ Graph traversal algorithms help in searching or visiting nodes:
 | 15 | [Find Eventual Safe States](https://leetcode.com/problems/find-eventual-safe-states/)                                                | Topological Sorting      | [TopologicalSorting.java](./TopologicalSorting.java)                           |                                                                                |
 | 16 | [Alien Dictionary](https://www.geeksforgeeks.org/problems/alien-dictionary/1)                                                        | Topological Sorting      | [TopologicalSorting.java](./TopologicalSorting.java)                           |                                                                                |
 | 17 | [Shortest Path in Undirected Graph](https://www.geeksforgeeks.org/problems/shortest-path-in-undirected-graph-having-unit-distance/1) | Traversal, Shortest Path | [ShortestPath.java](./ShortestPath.java)                                       |
+| 18 | [Shortest path in Directed Acyclic Graph](https://www.geeksforgeeks.org/problems/shortest-path-in-undirected-graph/1)                | Traversal, Shortest Path | [ShortestPath.java](./ShortestPath.java)                                       |
+| 19 | [Dijkstra Algorithm](https://www.geeksforgeeks.org/problems/implementing-dijkstra-set-1-adjacency-matrix/1)                          | Shortest Path            | [ShortestPathUsingDijkstra.java](./ShortestPathUsingDijkstra.java)             |
+| 20 | [Shortest Path in Binary Matrix](https://leetcode.com/problems/shortest-path-in-binary-matrix/)                                      | Traversal, Shortest Path | [ShortestPath.java](./ShortestPath.java)                                       |
 
 ---
 

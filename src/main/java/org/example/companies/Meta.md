@@ -38,3 +38,4 @@
 | 34 | HARD | [Alien Dictionary](https://leetcode.com/problems/alien-dictionary) | [Solution](../coding/datastructures/graph/TopologicalSorting.java) | Array, String, Depth-First Search, Breadth-First Search, Graph, Topological Sort |
 | 35 | MEDIUM | [Course Schedule](https://leetcode.com/problems/course-schedule) | [Solution](../coding/datastructures/graph/TopologicalSorting.java) | Depth-First Search, Breadth-First Search, Graph, Topological Sort |
 | 36 | MEDIUM | [Course Schedule Ii](https://leetcode.com/problems/course-schedule-ii) | [Solution](../coding/datastructures/graph/TopologicalSorting.java) | Depth-First Search, Breadth-First Search, Graph, Topological Sort |
+| 37 | MEDIUM | [Shortest Path In Binary Matrix](https://leetcode.com/problems/shortest-path-in-binary-matrix) | [Solution](../coding/datastructures/graph/ShortestPath.java) | Array, Breadth-First Search, Matrix |
