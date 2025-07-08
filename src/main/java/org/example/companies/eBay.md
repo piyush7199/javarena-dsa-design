@@ -19,3 +19,5 @@
 | 15 | HARD | [Vertical Order Traversal Of A Binary Tree](https://leetcode.com/problems/vertical-order-traversal-of-a-binary-tree) | [Solution](../coding/datastructures/binaryTree/Traversals.java) | Hash Table, Tree, Depth-First Search, Breadth-First Search, Sorting, Binary Tree |
 | 16 | MEDIUM | [Course Schedule](https://leetcode.com/problems/course-schedule) | [Solution](../coding/datastructures/graph/TopologicalSorting.java) | Depth-First Search, Breadth-First Search, Graph, Topological Sort |
 | 17 | MEDIUM | [Course Schedule Ii](https://leetcode.com/problems/course-schedule-ii) | [Solution](../coding/datastructures/graph/TopologicalSorting.java) | Depth-First Search, Breadth-First Search, Graph, Topological Sort |
+| 18 | MEDIUM | [Find Peak Element](https://leetcode.com/problems/find-peak-element) | [Solution](../coding/algorithms/SearchingAlgorithms.java) | Array, Binary Search |
+| 19 | MEDIUM | [Find Minimum In Rotated Sorted Array](https://leetcode.com/problems/find-minimum-in-rotated-sorted-array) | [Solution](../coding/algorithms/SearchingAlgorithms.java) | Array, Binary Search |

@@ -22,3 +22,4 @@
 | 18 | MEDIUM | [House Robber Ii](https://leetcode.com/problems/house-robber-ii) | [Solution](../coding/algorithms/DynamicProgramming.java) | Array, Dynamic Programming |
 | 19 | MEDIUM | [3sum](https://leetcode.com/problems/3sum) | [Solution](../coding/algorithms/TwoPointerSum.java) | Array, Two Pointers, Sorting |
 | 20 | MEDIUM | [Course Schedule](https://leetcode.com/problems/course-schedule) | [Solution](../coding/datastructures/graph/TopologicalSorting.java) | Depth-First Search, Breadth-First Search, Graph, Topological Sort |
+| 21 | MEDIUM | [Find Peak Element](https://leetcode.com/problems/find-peak-element) | [Solution](../coding/algorithms/SearchingAlgorithms.java) | Array, Binary Search |

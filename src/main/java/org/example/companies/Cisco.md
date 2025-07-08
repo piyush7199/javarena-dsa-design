@@ -20,3 +20,4 @@
 | 16 | EASY | [Climbing Stairs](https://leetcode.com/problems/climbing-stairs) | [Solution](../coding/algorithms/DynamicProgramming.java) | Math, Dynamic Programming, Memoization |
 | 17 | MEDIUM | [3sum](https://leetcode.com/problems/3sum) | [Solution](../coding/algorithms/TwoPointerSum.java) | Array, Two Pointers, Sorting |
 | 18 | EASY | [Merge Sorted Array](https://leetcode.com/problems/merge-sorted-array) | [Solution](../coding/algorithms/TwoPointer.java) | Array, Two Pointers, Sorting |
+| 19 | MEDIUM | [Find Minimum In Rotated Sorted Array](https://leetcode.com/problems/find-minimum-in-rotated-sorted-array) | [Solution](../coding/algorithms/SearchingAlgorithms.java) | Array, Binary Search |

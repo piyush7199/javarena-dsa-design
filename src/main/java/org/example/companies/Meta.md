@@ -41,3 +41,5 @@
 | 37 | MEDIUM | [Shortest Path In Binary Matrix](https://leetcode.com/problems/shortest-path-in-binary-matrix) | [Solution](../coding/datastructures/graph/ShortestPath.java) | Array, Breadth-First Search, Matrix |
 | 38 | MEDIUM | [Binary Tree Right Side View](https://leetcode.com/problems/binary-tree-right-side-view) | [Solution](../coding/datastructures/binaryTree/Traversals.java) | Tree, Depth-First Search, Breadth-First Search, Binary Tree |
 | 39 | EASY | [Symmetric Tree](https://leetcode.com/problems/symmetric-tree) | [Solution](../coding/datastructures/binaryTree/Solutions.java) | Tree, Depth-First Search, Breadth-First Search, Binary Tree |
+| 40 | MEDIUM | [Find Peak Element](https://leetcode.com/problems/find-peak-element) | [Solution](../coding/algorithms/SearchingAlgorithms.java) | Array, Binary Search |
+| 41 | MEDIUM | [Find Minimum In Rotated Sorted Array](https://leetcode.com/problems/find-minimum-in-rotated-sorted-array) | [Solution](../coding/algorithms/SearchingAlgorithms.java) | Array, Binary Search |

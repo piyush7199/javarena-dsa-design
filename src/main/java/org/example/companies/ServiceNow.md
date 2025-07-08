@@ -28,3 +28,6 @@
 | 24 | MEDIUM | [4sum](https://leetcode.com/problems/4sum) | [Solution](../coding/algorithms/TwoPointerSum.java) | Array, Two Pointers, Sorting |
 | 25 | EASY | [Merge Sorted Array](https://leetcode.com/problems/merge-sorted-array) | [Solution](../coding/algorithms/TwoPointer.java) | Array, Two Pointers, Sorting |
 | 26 | MEDIUM | [Binary Tree Right Side View](https://leetcode.com/problems/binary-tree-right-side-view) | [Solution](../coding/datastructures/binaryTree/Traversals.java) | Tree, Depth-First Search, Breadth-First Search, Binary Tree |
+| 27 | MEDIUM | [Single Element In A Sorted Array](https://leetcode.com/problems/single-element-in-a-sorted-array) | [Solution](../coding/algorithms/SearchingAlgorithms.java) | Array, Binary Search |
+| 28 | MEDIUM | [Find Peak Element](https://leetcode.com/problems/find-peak-element) | [Solution](../coding/algorithms/SearchingAlgorithms.java) | Array, Binary Search |
+| 29 | MEDIUM | [Find Minimum In Rotated Sorted Array](https://leetcode.com/problems/find-minimum-in-rotated-sorted-array) | [Solution](../coding/algorithms/SearchingAlgorithms.java) | Array, Binary Search |

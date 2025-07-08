@@ -18,3 +18,4 @@
 | 14 | MEDIUM | [Boundary Of Binary Tree](https://leetcode.com/problems/boundary-of-binary-tree) | [Solution](../coding/datastructures/binaryTree/Traversals.java) | Tree, Depth-First Search, Binary Tree |
 | 15 | MEDIUM | [3sum](https://leetcode.com/problems/3sum) | [Solution](../coding/algorithms/TwoPointerSum.java) | Array, Two Pointers, Sorting |
 | 16 | MEDIUM | [Course Schedule](https://leetcode.com/problems/course-schedule) | [Solution](../coding/datastructures/graph/TopologicalSorting.java) | Depth-First Search, Breadth-First Search, Graph, Topological Sort |
+| 17 | MEDIUM | [Find Minimum In Rotated Sorted Array](https://leetcode.com/problems/find-minimum-in-rotated-sorted-array) | [Solution](../coding/algorithms/SearchingAlgorithms.java) | Array, Binary Search |

@@ -14,3 +14,4 @@
 | 10 | MEDIUM | [Boundary Of Binary Tree](https://leetcode.com/problems/boundary-of-binary-tree) | [Solution](../coding/datastructures/binaryTree/Traversals.java) | Tree, Depth-First Search, Binary Tree |
 | 11 | MEDIUM | [Course Schedule](https://leetcode.com/problems/course-schedule) | [Solution](../coding/datastructures/graph/TopologicalSorting.java) | Depth-First Search, Breadth-First Search, Graph, Topological Sort |
 | 12 | MEDIUM | [Course Schedule Ii](https://leetcode.com/problems/course-schedule-ii) | [Solution](../coding/datastructures/graph/TopologicalSorting.java) | Depth-First Search, Breadth-First Search, Graph, Topological Sort |
+| 13 | MEDIUM | [Single Element In A Sorted Array](https://leetcode.com/problems/single-element-in-a-sorted-array) | [Solution](../coding/algorithms/SearchingAlgorithms.java) | Array, Binary Search |

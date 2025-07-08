@@ -75,8 +75,10 @@ function binarySearch(arr, target):
 
 ## 🧪 Problems on Searching Algorithms
 
-| # | Problem                                                                                                                                                      | Solution                                               |
-|---|--------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------|
-| 1 | [Median of Two Sorted Arrays](https://leetcode.com/problems/median-of-two-sorted-arrays/)                                                         | [SearchingAlgorithms.java](./SearchingAlgorithms.java) |
-| 2 | [Search a 2D Matrix](https://leetcode.com/problems/search-a-2d-matrix/description/)                                                                          | [SearchingAlgorithms.java](./SearchingAlgorithms.java) |
+| # | Problem                                                                                                                                                       | Solution                                               |
+|---|---------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------|
+| 1 | [Median of Two Sorted Arrays](https://leetcode.com/problems/median-of-two-sorted-arrays/)                                                                     | [SearchingAlgorithms.java](./SearchingAlgorithms.java) |
+| 2 | [Search a 2D Matrix](https://leetcode.com/problems/search-a-2d-matrix/description/)                                                                           | [SearchingAlgorithms.java](./SearchingAlgorithms.java) |
 | 3 | [Find First and Last Position of Element in Sorted Array](https://leetcode.com/problems/find-first-and-last-position-of-element-in-sorted-array/description/) | [SearchingAlgorithms.java](./SearchingAlgorithms.java) |
+| 4 | [Find Peak Element](https://leetcode.com/problems/find-peak-element/)                                                                                         | [SearchingAlgorithms.java](./SearchingAlgorithms.java) |
+| 5 | [](https://leetcode.com/problems/find-minimum-in-rotated-sorted-array/)                                                                                                                                                          |                                                        |

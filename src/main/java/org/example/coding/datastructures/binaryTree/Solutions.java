@@ -237,4 +237,27 @@ public class Solutions {
         }
         return false;
     }
+
+    /**
+     * Checks whether the value of each non-leaf node is equal to the sum of its children.
+     * <p>
+     * Intuition:
+     * Perform a DFS traversal.
+     * At each node, check if `node.val == left.val + right.val`.
+     * Recursively validate for left and right subtrees.
+     * <p>
+     * Time Complexity: O(N)
+     * Space Complexity: O(H) – where H is the height of the tree (stack space)
+     */
+    public boolean checkTree(Node root) {
+        if (root == null) return true;
+        if (root.left == null && root.right == null) return true;
+        int sum = 0;
+        if (root.left != null) sum += root.left.val;
+        if (root.right != null) sum += root.right.val;
+        if (sum == root.val) {
+            return checkTree(root.left) && checkTree(root.right);
+        }
+        return false;
+    }
 }

@@ -144,6 +144,7 @@ public class BinaryTree {
 | 16 | [Top View of Binary Tree](https://www.geeksforgeeks.org/problems/top-view-of-binary-tree/1)                                                                                                      | [Traversals.java](./Traversals.java) |
 | 17 | [Bottom View of Binary Tree](https://www.geeksforgeeks.org/problems/bottom-view-of-binary-tree/1)                                                                                                | [Traversals.java](./Traversals.java) |
 | 18 | [Binary Tree Right Side View](https://leetcode.com/problems/binary-tree-right-side-view)                                                                                                         | [Traversals.java](./Traversals.java) |
+| 19 | [Root Equals Sum of Children](https://leetcode.com/problems/root-equals-sum-of-children/)                                                                                                        | [Solutions.java](./Solutions.java)   |
 
 ---
 
