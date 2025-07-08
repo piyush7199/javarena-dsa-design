@@ -17,3 +17,4 @@
 | 13 | HARD | [Vertical Order Traversal Of A Binary Tree](https://leetcode.com/problems/vertical-order-traversal-of-a-binary-tree) | [Solution](../coding/datastructures/binaryTree/Traversals.java) | Hash Table, Tree, Depth-First Search, Breadth-First Search, Sorting, Binary Tree |
 | 14 | MEDIUM | [3sum](https://leetcode.com/problems/3sum) | [Solution](../coding/algorithms/TwoPointerSum.java) | Array, Two Pointers, Sorting |
 | 15 | MEDIUM | [4sum](https://leetcode.com/problems/4sum) | [Solution](../coding/algorithms/TwoPointerSum.java) | Array, Two Pointers, Sorting |
+| 16 | MEDIUM | [Search In Rotated Sorted Array](https://leetcode.com/problems/search-in-rotated-sorted-array) | [Solution](../coding/algorithms/SearchingAlgorithms.java) | Array, Binary Search |

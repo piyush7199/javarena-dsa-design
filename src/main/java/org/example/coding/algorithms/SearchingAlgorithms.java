@@ -343,4 +343,138 @@ class Problems {
         }
         return ans;
     }
+
+    /**
+     * 🔍 Search in Rotated Sorted Array (No Duplicates)
+     * <p>
+     * Intuition:
+     * This is a modified binary search. At each step, check which half is sorted and decide
+     * which direction to search based on the target's value.
+     * <p>
+     * Time Complexity: O(log n)
+     * Space Complexity: O(1)
+     */
+    public int search(int[] nums, int target) {
+        int low = 0;
+        int high = nums.length - 1;
+
+        while (low <= high) {
+            int mid = (low + high) / 2;
+            if (nums[mid] == target) {
+                return mid;
+            } else if (nums[low] <= nums[mid]) {
+                if (nums[low] <= target && target <= nums[mid]) high = mid - 1;
+                else low = mid + 1;
+            } else {
+                if (nums[mid] <= target && target <= nums[high]) low = mid + 1;
+                else high = mid - 1;
+            }
+        }
+
+        return -1;
+    }
+
+    /**
+     * 🔍 Search in Rotated Sorted Array (With Duplicates)
+     * <p>
+     * Intuition:
+     * Similar to the previous version but adds logic to handle duplicates, which can
+     * interfere with identifying the sorted half. If start == mid == end, shrink both ends.
+     * <p>
+     * Time Complexity: O(log n) on average, O(n) in worst case (due to duplicates)
+     * Space Complexity: O(1)
+     */
+    public boolean search2(int[] nums, int target) {
+        int low = 0;
+        int high = nums.length - 1;
+
+        while (low <= high) {
+            int mid = (low + high) / 2;
+            if (nums[mid] == target) {
+                return true;
+            } else if (nums[low] == nums[mid] && nums[mid] == nums[high]) {
+                low++;
+                high--;
+            } else if (nums[low] <= nums[mid]) {
+                if (nums[low] <= target && target <= nums[mid]) high = mid - 1;
+                else low = mid + 1;
+            } else {
+                if (nums[mid] <= target && target <= nums[high]) low = mid + 1;
+                else high = mid - 1;
+            }
+        }
+
+        return false;
+    }
+
+    /**
+     * ⬇️ Lower Bound in Sorted Array
+     * <p>
+     * Intuition:
+     * Binary search to find the first index where arr[i] >= target.
+     * <p>
+     * Time Complexity: O(log n)
+     * Space Complexity: O(1)
+     */
+    int lowerBound(int[] arr, int target) {
+        // code here
+        int low = 0;
+        int high = arr.length - 1;
+        while (low <= high) {
+            int mid = (low + high) / 2;
+            if (arr[mid] >= target) {
+                high = mid - 1;
+            } else {
+                low = mid + 1;
+            }
+        }
+        return low;
+    }
+
+    /**
+     * ⬆️ Upper Bound in Sorted Array
+     * <p>
+     * Intuition:
+     * Binary search to find the first index where arr[i] > target.
+     * <p>
+     * Time Complexity: O(log n)
+     * Space Complexity: O(1)
+     */
+    int upperBound(int[] arr, int target) {
+        // code here
+        int low = 0;
+        int high = arr.length - 1;
+
+        while (low <= high) {
+            int mid = (low + high) / 2;
+            if (arr[mid] <= target) low = mid + 1;
+            else high = mid - 1;
+        }
+        return low;
+    }
+
+    /**
+     * 📌 Search Insert Position
+     * <p>
+     * Intuition:
+     * Modified binary search to return either the index of the target or the position
+     * where it should be inserted to maintain sorted order.
+     * <p>
+     * Time Complexity: O(log n)
+     * Space Complexity: O(1)
+     */
+    public int searchInsert(int[] arr, int target) {
+        int low = 0;
+        int high = arr.length - 1;
+        while (low <= high) {
+            int mid = (low + high) / 2;
+            if (arr[mid] == target) return mid;
+            if (arr[mid] > target) {
+                high = mid - 1;
+            } else {
+                low = mid + 1;
+            }
+        }
+        return low;
+    }
 }

@@ -153,4 +153,29 @@ public class Solutions {
         }
         return cnt;
     }
+
+    /**
+     * 🧮 K-th Occurrence of Element
+     * <p>
+     * Intuition:
+     * Traverse the array and track positions of x using a counter. For each query,
+     * return the corresponding stored index or -1.
+     * <p>
+     * Time Complexity: O(n + q) where q = queries.length
+     * Space Complexity: O(k) where k is the number of times x occurs
+     */
+    public int[] occurrencesOfElement(int[] nums, int[] queries, int x) {
+        HashMap<Integer, Integer> map = new HashMap<>();
+        int counter = 1;
+        for (int i = 0; i < nums.length; i++) {
+            if (nums[i] == x) {
+                map.put(counter, i);
+                counter++;
+            }
+        }
+        for (int i = 0; i < queries.length; i++) {
+            queries[i] = map.getOrDefault(queries[i], -1);
+        }
+        return queries;
+    }
 }

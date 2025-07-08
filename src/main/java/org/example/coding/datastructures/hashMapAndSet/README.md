@@ -40,8 +40,9 @@ Below is the complexity analysis for key operations in Java’s HashMap and Hash
 
 ## Practice Problems
 
-| # | Problem                                                                                                  | Solution                           |
-|---|----------------------------------------------------------------------------------------------------------|------------------------------------|
-| 1 | [Top K Frequent Elements](https://leetcode.com/problems/top-k-frequent-elements/)                        | [Solutions.java](./Solutions.java) |
-| 2 | [Two Sum](https://leetcode.com/problems/two-sum/)                                                        | [Solutions.java](./Solutions.java) |
-| 3 | [Count Subarrays with given XOR](https://www.geeksforgeeks.org/problems/count-subarray-with-given-xor/1) | [Solutions.java](./Solutions.java) |
+| # | Problem                                                                                                                 | Solution                           |
+|---|-------------------------------------------------------------------------------------------------------------------------|------------------------------------|
+| 1 | [Top K Frequent Elements](https://leetcode.com/problems/top-k-frequent-elements/)                                       | [Solutions.java](./Solutions.java) |
+| 2 | [Two Sum](https://leetcode.com/problems/two-sum/)                                                                       | [Solutions.java](./Solutions.java) |
+| 3 | [Count Subarrays with given XOR](https://www.geeksforgeeks.org/problems/count-subarray-with-given-xor/1)                | [Solutions.java](./Solutions.java) |
+| 4 | [Find Occurrences of an Element in an Array](https://leetcode.com/problems/find-occurrences-of-an-element-in-an-array/) | [Solutions.java](./Solutions.java) |                               |
