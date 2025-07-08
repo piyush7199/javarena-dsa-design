@@ -214,4 +214,27 @@ public class Solutions {
         sum[0] = Math.max(sum[0], l + r + root.val);
         return root.val + Math.max(l, r);
     }
+
+    /**
+     * Checks whether a binary tree is symmetric around its center.
+     * <p>
+     * Intuition:
+     * A tree is symmetric if its left and right subtrees are mirror images of each other.
+     * We use recursion to check if the left subtree of one node is a mirror of the right subtree of the other node.
+     * <p>
+     * Time Complexity: O(N) – where N is the number of nodes.
+     * Space Complexity: O(H) – for recursion stack, where H is the height of the tree.
+     */
+    public boolean isSymmetric(Node root) {
+        return isSymmetric(root, root);
+    }
+
+    private boolean isSymmetric(Node p, Node q) {
+        if (p == null && q == null) return true;
+        if (p == null || q == null) return false;
+        if (p.val == q.val) {
+            return isSymmetric(p.left, q.right) && isSymmetric(p.right, q.left);
+        }
+        return false;
+    }
 }

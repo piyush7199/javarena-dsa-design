@@ -200,4 +200,118 @@ public class Traversals {
         }
     }
 
+    /**
+     * Computes the top view of a binary tree.
+     * <p>
+     * Intuition:
+     * Perform level order traversal and keep track of horizontal distances (HD).
+     * For each HD, store the first node encountered.
+     * <p>
+     * Time Complexity: O(N)
+     * Space Complexity: O(N)
+     */
+    static ArrayList<Integer> topView(Node root) {
+        // code here
+        class NodeInfo {
+            int dir;
+            Node node;
+
+            public NodeInfo(int dir, Node node) {
+                this.dir = dir;
+                this.node = node;
+            }
+        }
+        HashMap<Integer, Integer> map = new HashMap<>();
+        Queue<NodeInfo> q = new LinkedList<>();
+        q.offer(new NodeInfo(0, root));
+        while (!q.isEmpty()) {
+            NodeInfo info = q.peek();
+            Node node = info.node;
+            int dir = info.dir;
+            q.poll();
+            if (!map.containsKey(dir)) {
+                map.put(dir, node.val);
+            }
+            if (node.left != null) q.offer(new NodeInfo(dir - 1, node.left));
+            if (node.right != null) q.offer(new NodeInfo(dir + 1, node.right));
+        }
+        List<Integer> keys = new ArrayList<>(map.keySet());
+        Collections.sort(keys);
+        ArrayList<Integer> ans = new ArrayList<>();
+        for (int ele : keys) {
+            ans.add(map.get(ele));
+        }
+        return ans;
+    }
+
+    /**
+     * Computes the bottom view of a binary tree.
+     * <p>
+     * Intuition:
+     * Use level order traversal and update the value at each horizontal distance (HD).
+     * The last value seen at each HD is part of the bottom view.
+     * <p>
+     * Time Complexity: O(N)
+     * Space Complexity: O(N)
+     */
+    public ArrayList<Integer> bottomView(Node root) {
+        class NodeInfo {
+            int dir;
+            Node node;
+
+            public NodeInfo(int dir, Node node) {
+                this.dir = dir;
+                this.node = node;
+            }
+        }
+        // Code here
+        HashMap<Integer, Integer> map = new HashMap<>();
+        Queue<NodeInfo> q = new LinkedList<>();
+        q.offer(new NodeInfo(0, root));
+        while (!q.isEmpty()) {
+            NodeInfo info = q.peek();
+            Node node = info.node;
+            int dir = info.dir;
+            q.poll();
+            map.put(dir, node.val);
+
+            if (node.left != null) q.offer(new NodeInfo(dir - 1, node.left));
+            if (node.right != null) q.offer(new NodeInfo(dir + 1, node.right));
+        }
+        List<Integer> keys = new ArrayList<>(map.keySet());
+        Collections.sort(keys);
+        ArrayList<Integer> ans = new ArrayList<>();
+        for (int ele : keys) {
+            ans.add(map.get(ele));
+        }
+        return ans;
+    }
+
+    /**
+     * Computes the right side view of a binary tree.
+     * <p>
+     * Intuition:
+     * Use level order traversal and pick the last node at each level.
+     * <p>
+     * Time Complexity: O(N)
+     * Space Complexity: O(N)
+     */
+    public List<Integer> rightSideView(Node root) {
+        List<Integer> ans = new ArrayList<>();
+        if (root == null) return ans;
+        Queue<Node> q = new LinkedList<>();
+        q.offer(root);
+        while (!q.isEmpty()) {
+            int n = q.size();
+            int ele = -1;
+            for (int i = 0; i < n; i++) {
+                Node node = q.poll();
+                ele = node.val;
+                if (node.left != null) q.offer(node.left);
+                if (node.right != null) q.offer(node.right);
+            }
+            ans.add(ele);
+        }
+        return ans;
+    }
 }
