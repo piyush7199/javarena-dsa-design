@@ -5,3 +5,4 @@
 | 1 | MEDIUM | [Maximum Subarray](https://leetcode.com/problems/maximum-subarray) | [Solution](../coding/datastructures/arrays/SubArrays.java) | Array, Divide and Conquer, Dynamic Programming |
 | 2 | HARD | [Lfu Cache](https://leetcode.com/problems/lfu-cache) | [Solution](../coding/datastructures/linkedList/LFUCache.java) | Hash Table, Linked List, Design, Doubly-Linked List |
 | 3 | MEDIUM | [3sum](https://leetcode.com/problems/3sum) | [Solution](../coding/algorithms/TwoPointerSum.java) | Array, Two Pointers, Sorting |
+| 4 | MEDIUM | [Unique Paths Ii](https://leetcode.com/problems/unique-paths-ii) | [Solution](../coding/algorithms/DynamicProgramming2DTabulation.java) | Array, Dynamic Programming, Matrix |

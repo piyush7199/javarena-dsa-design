@@ -50,3 +50,5 @@
 | 46 | EASY | [Search Insert Position](https://leetcode.com/problems/search-insert-position) | [Solution](../coding/algorithms/SearchingAlgorithms.java) | Array, Binary Search |
 | 47 | EASY | [Reverse Linked List](https://leetcode.com/problems/reverse-linked-list) | [Solution](../coding/datastructures/linkedList/LinkedList.java) | Linked List, Recursion |
 | 48 | MEDIUM | [Remove Nth Node From End Of List](https://leetcode.com/problems/remove-nth-node-from-end-of-list) | [Solution](../coding/datastructures/linkedList/OperationsOnLL.java) | Linked List, Two Pointers |
+| 49 | MEDIUM | [Minimum Path Sum](https://leetcode.com/problems/minimum-path-sum) | [Solution](../coding/algorithms/DynamicProgramming2DTabulation.java) | Array, Dynamic Programming, Matrix |
+| 50 | MEDIUM | [Unique Paths](https://leetcode.com/problems/unique-paths) | [Solution](../coding/algorithms/DynamicProgramming2DTabulation.java) | Math, Dynamic Programming, Combinatorics |

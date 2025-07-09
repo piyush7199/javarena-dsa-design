@@ -67,15 +67,18 @@ function knapsack(values, weights, W):
 
 ## 🧪 Practice Problems
 
-| # | Problem                                                                                      | Solution                                             |
-|---|----------------------------------------------------------------------------------------------|------------------------------------------------------|
-| 1 | [Partition Equal Subset Sum](https://leetcode.com/problems/partition-equal-subset-sum)       | [DynamicProgramming.java](./DynamicProgramming.java) |
-| 2 | [Subset Sum Problem](https://www.geeksforgeeks.org/problems/subset-sum-problem-1611555638/1) | [DynamicProgramming.java](./DynamicProgramming.java) |
-| 3 | [Maximum Product Subarray](https://leetcode.com/problems/maximum-product-subarray/)          | [DynamicProgramming.java](./DynamicProgramming.java) |
-| 4 | [Climbing Stairs](https://leetcode.com/problems/climbing-stairs/)                            | [DynamicProgramming.java](./DynamicProgramming.java) |
-| 5 | [Frog Jump](https://www.geeksforgeeks.org/problems/geek-jump/1)                              | [DynamicProgramming.java](./DynamicProgramming.java) |
-| 6 | [House Robber](https://leetcode.com/problems/house-robber/)                                  | [DynamicProgramming.java](./DynamicProgramming.java) |
-| 7 | [House Robber II](https://leetcode.com/problems/house-robber-ii/description/)                | [DynamicProgramming.java](./DynamicProgramming.java) |
+| #  | Problem                                                                                      | Solution                                                                                                                                                       |
+|----|----------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| 1  | [Partition Equal Subset Sum](https://leetcode.com/problems/partition-equal-subset-sum)       | [DynamicProgramming.java](./DynamicProgramming.java)                                                                                                           |
+| 2  | [Subset Sum Problem](https://www.geeksforgeeks.org/problems/subset-sum-problem-1611555638/1) | [DynamicProgramming.java](./DynamicProgramming.java)                                                                                                           |
+| 3  | [Maximum Product Subarray](https://leetcode.com/problems/maximum-product-subarray/)          | [DynamicProgramming.java](./DynamicProgramming.java)                                                                                                           |
+| 4  | [Climbing Stairs](https://leetcode.com/problems/climbing-stairs/)                            | [DynamicProgramming.java](./DynamicProgramming.java)                                                                                                           |
+| 5  | [Frog Jump](https://www.geeksforgeeks.org/problems/geek-jump/1)                              | [DynamicProgramming.java](./DynamicProgramming.java)                                                                                                           |
+| 6  | [House Robber](https://leetcode.com/problems/house-robber/)                                  | [DynamicProgramming.java](./DynamicProgramming.java)                                                                                                           |
+| 7  | [House Robber II](https://leetcode.com/problems/house-robber-ii/description/)                | [DynamicProgramming.java](./DynamicProgramming.java)                                                                                                           |
+| 8  | [Geek's Training](https://www.geeksforgeeks.org/problems/geeks-training/1)                   | [DynamicProgramming2DMemorization.java](./DynamicProgramming2DMemorization.java), [DynamicProgramming2DTabulation.java](./DynamicProgramming2DTabulation.java) |
+| 9  | [Unique Paths](https://leetcode.com/problems/unique-paths/)                                  | [DynamicProgramming2DMemorization.java](./DynamicProgramming2DMemorization.java), [DynamicProgramming2DTabulation.java](./DynamicProgramming2DTabulation.java) |
+| 10 | [Unique Paths II](https://leetcode.com/problems/unique-paths-ii/)                            | [DynamicProgramming2DMemorization.java](./DynamicProgramming2DMemorization.java), [DynamicProgramming2DTabulation.java](./DynamicProgramming2DTabulation.java) |
 
 ---
 

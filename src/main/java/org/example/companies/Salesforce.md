@@ -25,3 +25,4 @@
 | 21 | MEDIUM | [3sum](https://leetcode.com/problems/3sum) | [Solution](../coding/algorithms/TwoPointerSum.java) | Array, Two Pointers, Sorting |
 | 22 | MEDIUM | [Course Schedule Ii](https://leetcode.com/problems/course-schedule-ii) | [Solution](../coding/datastructures/graph/TopologicalSorting.java) | Depth-First Search, Breadth-First Search, Graph, Topological Sort |
 | 23 | MEDIUM | [Search In Rotated Sorted Array](https://leetcode.com/problems/search-in-rotated-sorted-array) | [Solution](../coding/algorithms/SearchingAlgorithms.java) | Array, Binary Search |
+| 24 | MEDIUM | [Minimum Path Sum](https://leetcode.com/problems/minimum-path-sum) | [Solution](../coding/algorithms/DynamicProgramming2DTabulation.java) | Array, Dynamic Programming, Matrix |

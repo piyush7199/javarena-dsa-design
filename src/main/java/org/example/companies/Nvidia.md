@@ -29,3 +29,4 @@
 | 25 | EASY | [Intersection Of Two Linked Lists](https://leetcode.com/problems/intersection-of-two-linked-lists) | [Solution](../coding/datastructures/linkedList/LinkedList.java) | Hash Table, Linked List, Two Pointers |
 | 26 | EASY | [Reverse Linked List](https://leetcode.com/problems/reverse-linked-list) | [Solution](../coding/datastructures/linkedList/LinkedList.java) | Linked List, Recursion |
 | 27 | MEDIUM | [Remove Nth Node From End Of List](https://leetcode.com/problems/remove-nth-node-from-end-of-list) | [Solution](../coding/datastructures/linkedList/OperationsOnLL.java) | Linked List, Two Pointers |
+| 28 | MEDIUM | [Unique Paths Ii](https://leetcode.com/problems/unique-paths-ii) | [Solution](../coding/algorithms/DynamicProgramming2DTabulation.java) | Array, Dynamic Programming, Matrix |

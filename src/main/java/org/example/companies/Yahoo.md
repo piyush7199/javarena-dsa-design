@@ -35,3 +35,5 @@
 | 31 | EASY | [Search Insert Position](https://leetcode.com/problems/search-insert-position) | [Solution](../coding/algorithms/SearchingAlgorithms.java) | Array, Binary Search |
 | 32 | MEDIUM | [Remove Nth Node From End Of List](https://leetcode.com/problems/remove-nth-node-from-end-of-list) | [Solution](../coding/datastructures/linkedList/OperationsOnLL.java) | Linked List, Two Pointers |
 | 33 | MEDIUM | [Sort List](https://leetcode.com/problems/sort-list) | [Solution](../coding/datastructures/linkedList/OperationsOnLL.java) | Linked List, Two Pointers, Divide and Conquer, Sorting, Merge Sort |
+| 34 | MEDIUM | [Minimum Path Sum](https://leetcode.com/problems/minimum-path-sum) | [Solution](../coding/algorithms/DynamicProgramming2DTabulation.java) | Array, Dynamic Programming, Matrix |
+| 35 | MEDIUM | [Unique Paths Ii](https://leetcode.com/problems/unique-paths-ii) | [Solution](../coding/algorithms/DynamicProgramming2DTabulation.java) | Array, Dynamic Programming, Matrix |

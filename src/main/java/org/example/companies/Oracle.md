@@ -41,3 +41,4 @@
 | 37 | EASY | [Reverse Linked List](https://leetcode.com/problems/reverse-linked-list) | [Solution](../coding/datastructures/linkedList/LinkedList.java) | Linked List, Recursion |
 | 38 | MEDIUM | [Sort List](https://leetcode.com/problems/sort-list) | [Solution](../coding/datastructures/linkedList/OperationsOnLL.java) | Linked List, Two Pointers, Divide and Conquer, Sorting, Merge Sort |
 | 39 | EASY | [Palindrome Linked List](https://leetcode.com/problems/palindrome-linked-list) | [Solution](../coding/datastructures/linkedList/LinkedList.java) | Linked List, Two Pointers, Stack, Recursion |
+| 40 | MEDIUM | [Unique Paths](https://leetcode.com/problems/unique-paths) | [Solution](../coding/algorithms/DynamicProgramming2DTabulation.java) | Math, Dynamic Programming, Combinatorics |
