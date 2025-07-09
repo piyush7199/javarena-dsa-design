@@ -183,6 +183,16 @@ public class LinkedList {
         return reverseListIter(sum);
     }
 
+    /**
+     * Get Intersection Node of Two Linked Lists
+     * <p>
+     * Intuition:
+     * Use two pointers traversing both lists. When one reaches the end, redirect it to the other list's head.
+     * They will meet at the intersection point or both reach null.
+     * <p>
+     * Time Complexity: O(n + m)
+     * Space Complexity: O(1)
+     */
     public ListNode getIntersectionNode(ListNode headA, ListNode headB) {
         ListNode l1 = headA;
         ListNode l2 = headB;
@@ -193,6 +203,71 @@ public class LinkedList {
         return l1;
     }
 
+    /**
+     * Detect the start of the cycle in a linked list using Floyd’s Cycle Detection algorithm.
+     * <p>
+     * Intuition:
+     * - Use two pointers (slow and fast) to detect a cycle.
+     * - Once a cycle is found, move one pointer to head, and move both one step at a time — they’ll meet at the cycle start.
+     * <p>
+     * Time Complexity: O(n)
+     * Space Complexity: O(1)
+     */
+    public ListNode detectCycle(ListNode head) {
+        ListNode slow = head;
+        ListNode fast = head;
+        while (fast != null && fast.next != null) {
+            slow = slow.next;
+            fast = fast.next.next;
+            if (fast == slow) break;
+        }
+        if (fast == null || fast.next == null) return null;
+        slow = head;
+        while (slow != fast) {
+            slow = slow.next;
+            fast = fast.next;
+        }
+        return slow;
+    }
+
+    /**
+     * Check if a linked list is a palindrome.
+     * <p>
+     * Intuition:
+     * - Use fast and slow pointers to find the middle.
+     * - Reverse the second half of the list and compare node-by-node with the first half.
+     * <p>
+     * Time Complexity: O(n)
+     * Space Complexity: O(1) (modifies the list, but uses no extra space)
+     */
+    public boolean isPalindrome(ListNode head) {
+        ListNode slow = head;
+        ListNode fast = head.next;
+        while (fast != null && fast.next != null) {
+            slow = slow.next;
+            fast = fast.next.next;
+        }
+        ListNode rev = reverseListIter(slow.next); // reverse second list
+        slow.next = null;
+        while (rev != null) {
+            if (head.val != rev.val) {
+                return false;
+            }
+            head = head.next;
+            rev = rev.next;
+        }
+        return true;
+    }
+
+    /**
+     * Segregate 0s, 1s, and 2s in a Linked List (Dutch National Flag Problem)
+     * <p>
+     * Intuition:
+     * Create separate lists for 0s, 1s, and 2s and connect them in the end.
+     * <p>
+     * Time Complexity: O(n)
+     * Space Complexity: O(1)
+     */
     public ListNode segregate(ListNode head) {
         // code here
         ListNode zeroNode = new ListNode(0);
