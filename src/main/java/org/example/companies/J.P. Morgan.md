@@ -13,3 +13,4 @@
 | 9 | EASY | [Climbing Stairs](https://leetcode.com/problems/climbing-stairs) | [Solution](../coding/algorithms/DynamicProgramming.java) | Math, Dynamic Programming, Memoization |
 | 10 | MEDIUM | [Binary Tree Right Side View](https://leetcode.com/problems/binary-tree-right-side-view) | [Solution](../coding/datastructures/binaryTree/Traversals.java) | Tree, Depth-First Search, Breadth-First Search, Binary Tree |
 | 11 | MEDIUM | [Find Occurrences Of An Element In An Array](https://leetcode.com/problems/find-occurrences-of-an-element-in-an-array) | [Solution](../coding/datastructures/hashMapAndSet/Solutions.java) | Array, Hash Table |
+| 12 | EASY | [Reverse Linked List](https://leetcode.com/problems/reverse-linked-list) | [Solution](../coding/datastructures/linkedList/LinkedList.java) | Linked List, Recursion |

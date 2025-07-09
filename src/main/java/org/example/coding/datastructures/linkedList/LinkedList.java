@@ -175,4 +175,57 @@ public class LinkedList {
         }
         return dummy.next;
     }
+
+    public ListNode addOne(ListNode head) {
+        ListNode cur = reverseListIter(head);
+        ListNode one = new ListNode(1);
+        ListNode sum = addTwoNumbers(cur, one);
+        return reverseListIter(sum);
+    }
+
+    public ListNode getIntersectionNode(ListNode headA, ListNode headB) {
+        ListNode l1 = headA;
+        ListNode l2 = headB;
+        while (l1 != l2) {
+            l1 = l1 == null ? headA : l1.next;
+            l2 = l2 == null ? headB : l2.next;
+        }
+        return l1;
+    }
+
+    public ListNode segregate(ListNode head) {
+        // code here
+        ListNode zeroNode = new ListNode(0);
+        ListNode oneNode = new ListNode(0);
+        ListNode twoNode = new ListNode(0);
+
+        ListNode zero = zeroNode;
+        ListNode one = oneNode;
+        ListNode two = twoNode;
+
+
+        ListNode cur = head;
+        while (cur != null) {
+            if (cur.val == 0) {
+                zero.next = cur;
+                zero = zero.next;
+            } else if (cur.val == 1) {
+                one.next = cur;
+                one = one.next;
+            } else {
+                two.next = cur;
+                two = two.next;
+            }
+
+            cur = cur.next;
+        }
+        zero.next = oneNode.next != null ? oneNode.next : twoNode.next;
+
+        one.next = twoNode.next;
+        two.next = null;
+
+        head = zeroNode.next;
+
+        return head;
+    }
 }

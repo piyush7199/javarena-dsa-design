@@ -46,3 +46,4 @@
 | 42 | MEDIUM | [Search In Rotated Sorted Array](https://leetcode.com/problems/search-in-rotated-sorted-array) | [Solution](../coding/algorithms/SearchingAlgorithms.java) | Array, Binary Search |
 | 43 | MEDIUM | [Search In Rotated Sorted Array Ii](https://leetcode.com/problems/search-in-rotated-sorted-array-ii) | [Solution](../coding/algorithms/SearchingAlgorithms.java) | Array, Binary Search |
 | 44 | EASY | [Search Insert Position](https://leetcode.com/problems/search-insert-position) | [Solution](../coding/algorithms/SearchingAlgorithms.java) | Array, Binary Search |
+| 45 | EASY | [Reverse Linked List](https://leetcode.com/problems/reverse-linked-list) | [Solution](../coding/datastructures/linkedList/LinkedList.java) | Linked List, Recursion |

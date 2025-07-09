@@ -14,3 +14,4 @@
 | 10 | MEDIUM | [House Robber](https://leetcode.com/problems/house-robber) | [Solution](../coding/algorithms/DynamicProgramming.java) | Array, Dynamic Programming |
 | 11 | EASY | [Climbing Stairs](https://leetcode.com/problems/climbing-stairs) | [Solution](../coding/algorithms/DynamicProgramming.java) | Math, Dynamic Programming, Memoization |
 | 12 | EASY | [Merge Sorted Array](https://leetcode.com/problems/merge-sorted-array) | [Solution](../coding/algorithms/TwoPointer.java) | Array, Two Pointers, Sorting |
+| 13 | EASY | [Reverse Linked List](https://leetcode.com/problems/reverse-linked-list) | [Solution](../coding/datastructures/linkedList/LinkedList.java) | Linked List, Recursion |

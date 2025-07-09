@@ -37,3 +37,5 @@
 | 33 | MEDIUM | [Binary Tree Right Side View](https://leetcode.com/problems/binary-tree-right-side-view) | [Solution](../coding/datastructures/binaryTree/Traversals.java) | Tree, Depth-First Search, Breadth-First Search, Binary Tree |
 | 34 | MEDIUM | [Find Peak Element](https://leetcode.com/problems/find-peak-element) | [Solution](../coding/algorithms/SearchingAlgorithms.java) | Array, Binary Search |
 | 35 | MEDIUM | [Search In Rotated Sorted Array](https://leetcode.com/problems/search-in-rotated-sorted-array) | [Solution](../coding/algorithms/SearchingAlgorithms.java) | Array, Binary Search |
+| 36 | EASY | [Intersection Of Two Linked Lists](https://leetcode.com/problems/intersection-of-two-linked-lists) | [Solution](../coding/datastructures/linkedList/LinkedList.java) | Hash Table, Linked List, Two Pointers |
+| 37 | EASY | [Reverse Linked List](https://leetcode.com/problems/reverse-linked-list) | [Solution](../coding/datastructures/linkedList/LinkedList.java) | Linked List, Recursion |

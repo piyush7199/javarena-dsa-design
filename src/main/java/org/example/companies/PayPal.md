@@ -27,3 +27,4 @@
 | 23 | MEDIUM | [Find Peak Element](https://leetcode.com/problems/find-peak-element) | [Solution](../coding/algorithms/SearchingAlgorithms.java) | Array, Binary Search |
 | 24 | MEDIUM | [Find Minimum In Rotated Sorted Array](https://leetcode.com/problems/find-minimum-in-rotated-sorted-array) | [Solution](../coding/algorithms/SearchingAlgorithms.java) | Array, Binary Search |
 | 25 | MEDIUM | [Search In Rotated Sorted Array](https://leetcode.com/problems/search-in-rotated-sorted-array) | [Solution](../coding/algorithms/SearchingAlgorithms.java) | Array, Binary Search |
+| 26 | EASY | [Reverse Linked List](https://leetcode.com/problems/reverse-linked-list) | [Solution](../coding/datastructures/linkedList/LinkedList.java) | Linked List, Recursion |

@@ -23,3 +23,4 @@
 | 19 | MEDIUM | [Course Schedule](https://leetcode.com/problems/course-schedule) | [Solution](../coding/datastructures/graph/TopologicalSorting.java) | Depth-First Search, Breadth-First Search, Graph, Topological Sort |
 | 20 | MEDIUM | [Course Schedule Ii](https://leetcode.com/problems/course-schedule-ii) | [Solution](../coding/datastructures/graph/TopologicalSorting.java) | Depth-First Search, Breadth-First Search, Graph, Topological Sort |
 | 21 | MEDIUM | [Shortest Path In Binary Matrix](https://leetcode.com/problems/shortest-path-in-binary-matrix) | [Solution](../coding/datastructures/graph/ShortestPath.java) | Array, Breadth-First Search, Matrix |
+| 22 | EASY | [Middle Of The Linked List](https://leetcode.com/problems/middle-of-the-linked-list) | [Solution](../coding/datastructures/linkedList/LinkedList.java) | Linked List, Two Pointers |

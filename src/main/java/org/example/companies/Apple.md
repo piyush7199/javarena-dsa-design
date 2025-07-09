@@ -39,3 +39,5 @@
 | 35 | MEDIUM | [Search In Rotated Sorted Array](https://leetcode.com/problems/search-in-rotated-sorted-array) | [Solution](../coding/algorithms/SearchingAlgorithms.java) | Array, Binary Search |
 | 36 | MEDIUM | [Search In Rotated Sorted Array Ii](https://leetcode.com/problems/search-in-rotated-sorted-array-ii) | [Solution](../coding/algorithms/SearchingAlgorithms.java) | Array, Binary Search |
 | 37 | EASY | [Search Insert Position](https://leetcode.com/problems/search-insert-position) | [Solution](../coding/algorithms/SearchingAlgorithms.java) | Array, Binary Search |
+| 38 | EASY | [Intersection Of Two Linked Lists](https://leetcode.com/problems/intersection-of-two-linked-lists) | [Solution](../coding/datastructures/linkedList/LinkedList.java) | Hash Table, Linked List, Two Pointers |
+| 39 | EASY | [Reverse Linked List](https://leetcode.com/problems/reverse-linked-list) | [Solution](../coding/datastructures/linkedList/LinkedList.java) | Linked List, Recursion |

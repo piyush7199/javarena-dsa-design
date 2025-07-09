@@ -30,3 +30,4 @@
 | 26 | MEDIUM | [Course Schedule Ii](https://leetcode.com/problems/course-schedule-ii) | [Solution](../coding/datastructures/graph/TopologicalSorting.java) | Depth-First Search, Breadth-First Search, Graph, Topological Sort |
 | 27 | EASY | [Symmetric Tree](https://leetcode.com/problems/symmetric-tree) | [Solution](../coding/datastructures/binaryTree/Solutions.java) | Tree, Depth-First Search, Breadth-First Search, Binary Tree |
 | 28 | MEDIUM | [Search In Rotated Sorted Array](https://leetcode.com/problems/search-in-rotated-sorted-array) | [Solution](../coding/algorithms/SearchingAlgorithms.java) | Array, Binary Search |
+| 29 | EASY | [Intersection Of Two Linked Lists](https://leetcode.com/problems/intersection-of-two-linked-lists) | [Solution](../coding/datastructures/linkedList/LinkedList.java) | Hash Table, Linked List, Two Pointers |

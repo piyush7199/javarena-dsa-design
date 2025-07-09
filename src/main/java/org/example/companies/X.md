@@ -8,3 +8,4 @@
 | 4 | HARD | [Trapping Rain Water](https://leetcode.com/problems/trapping-rain-water) | [Solution](../coding/datastructures/stackAndQueue/MinStack.java) | Array, Two Pointers, Dynamic Programming, Stack, Monotonic Stack |
 | 5 | MEDIUM | [Rotting Oranges](https://leetcode.com/problems/rotting-oranges) | [Solution](../coding/datastructures/graph/BFSSolution.java) | Array, Breadth-First Search, Matrix |
 | 6 | HARD | [Alien Dictionary](https://leetcode.com/problems/alien-dictionary) | [Solution](../coding/datastructures/graph/TopologicalSorting.java) | Array, String, Depth-First Search, Breadth-First Search, Graph, Topological Sort |
+| 7 | EASY | [Reverse Linked List](https://leetcode.com/problems/reverse-linked-list) | [Solution](../coding/datastructures/linkedList/LinkedList.java) | Linked List, Recursion |
