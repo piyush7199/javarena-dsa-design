@@ -15,4 +15,5 @@ programming. Each category includes Java implementations and curated problems fr
 - [🧠 Dynamic Programming](README-DynamicProgramming.md)
 - [🔢 Topological Sorting](README-Graph-TopologicalSorting.md)
 - [📍 Two-Pointer Technique](README-TwoPointer.md)
-- [ Dijkstra's algorithm](README-Graph-DijkstraAlgorithm.md)
+- [🛤️ Dijkstra's algorithm](README-Graph-DijkstraAlgorithm.md)
+- [🌐 Disjoint Set (Union-Find)](README-Graph-Disjoint-Set.md)
