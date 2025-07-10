@@ -166,4 +166,6 @@ class DisjointSetSize:
 
 ## Resources
 
+- [GFG | Disjoint Set](https://www.geeksforgeeks.org/dsa/introduction-to-disjoint-set-data-structure-or-union-find-algorithm/)
 - [Techdose | Disjoint Set | UNION and FIND](https://www.youtube.com/watch?v=eTaWFhPXPz4)
+- [TakeUForward | Disjoint Set](https://www.youtube.com/watch?v=aBxjDBC4M1U)

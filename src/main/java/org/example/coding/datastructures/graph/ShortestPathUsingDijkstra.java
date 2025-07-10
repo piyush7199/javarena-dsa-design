@@ -14,6 +14,18 @@ public class ShortestPathUsingDijkstra {
         }
     }
 
+    static class Pair {
+        int row;
+        int col;
+        int effort;
+
+        public Pair(int row, int col, int effort) {
+            this.row = row;
+            this.col = col;
+            this.effort = effort;
+        }
+    }
+
     public int[] dijkstra(int V, int[][] edges, int src) {
         // code here
         List<List<Edge>> adj = new ArrayList<>();
@@ -51,5 +63,58 @@ public class ShortestPathUsingDijkstra {
         }
 
         return distances;
+    }
+
+    /**
+     * Finds the minimum effort required to travel from top-left to bottom-right cell in a 2D grid.
+     * <p>
+     * Intuition:
+     * - Use modified Dijkstra's algorithm where instead of minimizing distance, we minimize the *maximum* height difference along any path.
+     * - Each move adds the max of current path effort and the height difference between adjacent cells.
+     * - Stop once we reach the destination cell with the minimum possible max effort.
+     * <p>
+     * Time Complexity: O(N * M * log(N * M)) — each cell can be visited once with priority queue operations
+     * Space Complexity: O(N * M) — for effort matrix and priority queue
+     */
+    public int minimumEffortPath(int[][] heights) {
+        int n = heights.length;
+        int m = heights[0].length;
+
+        int[][] effort = new int[n][m];
+        for (int[] row : effort) Arrays.fill(row, Integer.MAX_VALUE);
+        effort[0][0] = 0;
+
+        PriorityQueue<Pair> pq = new PriorityQueue<>(Comparator.comparingInt(a -> a.effort));
+
+        pq.offer(new Pair(0, 0, 0));
+
+        int[] dRow = {-1, 0, 1, 0};
+        int[] dCol = {0, 1, 0, -1};
+
+        while (!pq.isEmpty()) {
+            Pair cur = pq.poll();
+            int r = cur.row;
+            int c = cur.col;
+            int currEffort = cur.effort;
+
+            if (r == n - 1 && c == m - 1) return currEffort; // reached destination
+
+            for (int i = 0; i < 4; i++) {
+                int newRow = r + dRow[i];
+                int newCol = c + dCol[i];
+
+                if (newRow >= 0 && newRow < n && newCol >= 0 && newCol < m) {
+                    int heightDiff = Math.abs(heights[newRow][newCol] - heights[r][c]);
+                    int maxEffort = Math.max(currEffort, heightDiff);
+
+                    if (maxEffort < effort[newRow][newCol]) {
+                        effort[newRow][newCol] = maxEffort;
+                        pq.offer(new Pair(newRow, newCol, maxEffort));
+                    }
+                }
+            }
+        }
+
+        return -1; // should never reach here
     }
 }

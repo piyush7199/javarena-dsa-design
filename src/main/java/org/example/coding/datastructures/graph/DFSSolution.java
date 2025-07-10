@@ -1,9 +1,6 @@
 package org.example.coding.datastructures.graph;
 
-import java.util.ArrayList;
-import java.util.Collections;
-import java.util.List;
-import java.util.Stack;
+import java.util.*;
 
 public class DFSSolution {
     private static final GraphAlgorithms graphAlgorithms = new GraphAlgorithms();
@@ -200,5 +197,43 @@ public class DFSSolution {
         stack.add(node);
     }
 
+    /**
+     * Checks if the given graph is bipartite using DFS and coloring.
+     * <p>
+     * Intuition:
+     * - A graph is bipartite if we can color it using two colors such that no two adjacent nodes have the same color.
+     * - Traverse each component using DFS and try assigning alternate colors to adjacent nodes.
+     * - If a conflict in coloring occurs, the graph is not bipartite.
+     * <p>
+     * Time Complexity: O(V + E) — visiting all vertices and edges once
+     * Space Complexity: O(V) — for the visited (color) array and recursion stack
+     */
+    public boolean isBipartite(int[][] graph) {
+        int n = graph.length;
+        int[] vis = new int[n];
+        Arrays.fill(vis, -1);
+        for (int i = 0; i < n; i++) {
+            if (vis[i] == -1) {
+                if (!isBipartite(graph, i, vis, 1)) {
+                    return false;
+                }
+            }
+        }
+
+
+        return true;
+    }
+
+    private boolean isBipartite(int[][] graph, int node, int[] vis, int colour) {
+        vis[node] = colour;
+        for (int i = 0; i < graph[node].length; i++) {
+            int u = graph[node][i];
+            if (vis[u] == -1) {
+                if (!isBipartite(graph, u, vis, 1 - colour)) return false;
+
+            } else if (vis[u] == colour) return false;
+        }
+        return true;
+    }
 
 }
