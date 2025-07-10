@@ -15,3 +15,4 @@
 | 11 | MEDIUM | [House Robber](https://leetcode.com/problems/house-robber) | [Solution](../coding/algorithms/DynamicProgramming.java) | Array, Dynamic Programming |
 | 12 | MEDIUM | [4sum](https://leetcode.com/problems/4sum) | [Solution](../coding/algorithms/TwoPointerSum.java) | Array, Two Pointers, Sorting |
 | 13 | MEDIUM | [Unique Paths](https://leetcode.com/problems/unique-paths) | [Solution](../coding/algorithms/DynamicProgramming2DTabulation.java) | Math, Dynamic Programming, Combinatorics |
+| 14 | MEDIUM | [All Nodes Distance K In Binary Tree](https://leetcode.com/problems/all-nodes-distance-k-in-binary-tree) | [Solution](../coding/datastructures/binaryTree/Solutions.java) | Hash Table, Tree, Depth-First Search, Breadth-First Search, Binary Tree |

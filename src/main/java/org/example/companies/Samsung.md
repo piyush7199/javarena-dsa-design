@@ -19,3 +19,4 @@
 | 15 | MEDIUM | [4sum](https://leetcode.com/problems/4sum) | [Solution](../coding/algorithms/TwoPointerSum.java) | Array, Two Pointers, Sorting |
 | 16 | MEDIUM | [Search In Rotated Sorted Array](https://leetcode.com/problems/search-in-rotated-sorted-array) | [Solution](../coding/algorithms/SearchingAlgorithms.java) | Array, Binary Search |
 | 17 | EASY | [Reverse Linked List](https://leetcode.com/problems/reverse-linked-list) | [Solution](../coding/datastructures/linkedList/LinkedList.java) | Linked List, Recursion |
+| 18 | MEDIUM | [All Nodes Distance K In Binary Tree](https://leetcode.com/problems/all-nodes-distance-k-in-binary-tree) | [Solution](../coding/datastructures/binaryTree/Solutions.java) | Hash Table, Tree, Depth-First Search, Breadth-First Search, Binary Tree |

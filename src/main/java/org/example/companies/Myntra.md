@@ -9,3 +9,4 @@
 | 5 | MEDIUM | [Asteroid Collision](https://leetcode.com/problems/asteroid-collision) | [Solution](../coding/datastructures/stackAndQueue/MinStack.java) | Array, Stack, Simulation |
 | 6 | MEDIUM | [Rotting Oranges](https://leetcode.com/problems/rotting-oranges) | [Solution](../coding/datastructures/graph/BFSSolution.java) | Array, Breadth-First Search, Matrix |
 | 7 | MEDIUM | [3sum](https://leetcode.com/problems/3sum) | [Solution](../coding/algorithms/TwoPointerSum.java) | Array, Two Pointers, Sorting |
+| 8 | MEDIUM | [Lowest Common Ancestor Of A Binary Tree](https://leetcode.com/problems/lowest-common-ancestor-of-a-binary-tree) | [Solution](../coding/datastructures/binaryTree/Solutions.java) | Tree, Depth-First Search, Binary Tree |

@@ -47,3 +47,5 @@
 | 43 | MEDIUM | [Linked List Cycle Ii](https://leetcode.com/problems/linked-list-cycle-ii) | [Solution](../coding/datastructures/linkedList/LinkedList.java) | Hash Table, Linked List, Two Pointers |
 | 44 | MEDIUM | [Minimum Path Sum](https://leetcode.com/problems/minimum-path-sum) | [Solution](../coding/algorithms/DynamicProgramming2DTabulation.java) | Array, Dynamic Programming, Matrix |
 | 45 | MEDIUM | [Unique Paths](https://leetcode.com/problems/unique-paths) | [Solution](../coding/algorithms/DynamicProgramming2DTabulation.java) | Math, Dynamic Programming, Combinatorics |
+| 46 | MEDIUM | [Lowest Common Ancestor Of A Binary Tree](https://leetcode.com/problems/lowest-common-ancestor-of-a-binary-tree) | [Solution](../coding/datastructures/binaryTree/Solutions.java) | Tree, Depth-First Search, Binary Tree |
+| 47 | MEDIUM | [All Nodes Distance K In Binary Tree](https://leetcode.com/problems/all-nodes-distance-k-in-binary-tree) | [Solution](../coding/datastructures/binaryTree/Solutions.java) | Hash Table, Tree, Depth-First Search, Breadth-First Search, Binary Tree |

@@ -25,3 +25,4 @@
 | 21 | MEDIUM | [Shortest Path In Binary Matrix](https://leetcode.com/problems/shortest-path-in-binary-matrix) | [Solution](../coding/datastructures/graph/ShortestPath.java) | Array, Breadth-First Search, Matrix |
 | 22 | EASY | [Middle Of The Linked List](https://leetcode.com/problems/middle-of-the-linked-list) | [Solution](../coding/datastructures/linkedList/LinkedList.java) | Linked List, Two Pointers |
 | 23 | EASY | [Palindrome Linked List](https://leetcode.com/problems/palindrome-linked-list) | [Solution](../coding/datastructures/linkedList/LinkedList.java) | Linked List, Two Pointers, Stack, Recursion |
+| 24 | MEDIUM | [Lowest Common Ancestor Of A Binary Tree](https://leetcode.com/problems/lowest-common-ancestor-of-a-binary-tree) | [Solution](../coding/datastructures/binaryTree/Solutions.java) | Tree, Depth-First Search, Binary Tree |

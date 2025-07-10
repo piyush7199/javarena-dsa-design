@@ -27,3 +27,6 @@
 | 23 | MEDIUM | [Find Peak Element](https://leetcode.com/problems/find-peak-element) | [Solution](../coding/algorithms/SearchingAlgorithms.java) | Array, Binary Search |
 | 24 | MEDIUM | [Search In Rotated Sorted Array](https://leetcode.com/problems/search-in-rotated-sorted-array) | [Solution](../coding/algorithms/SearchingAlgorithms.java) | Array, Binary Search |
 | 25 | MEDIUM | [Unique Paths Ii](https://leetcode.com/problems/unique-paths-ii) | [Solution](../coding/algorithms/DynamicProgramming2DTabulation.java) | Array, Dynamic Programming, Matrix |
+| 26 | MEDIUM | [Maximum Width Of Binary Tree](https://leetcode.com/problems/maximum-width-of-binary-tree) | [Solution](../coding/datastructures/binaryTree/Solutions.java) | Tree, Depth-First Search, Breadth-First Search, Binary Tree |
+| 27 | MEDIUM | [Lowest Common Ancestor Of A Binary Tree](https://leetcode.com/problems/lowest-common-ancestor-of-a-binary-tree) | [Solution](../coding/datastructures/binaryTree/Solutions.java) | Tree, Depth-First Search, Binary Tree |
+| 28 | MEDIUM | [All Nodes Distance K In Binary Tree](https://leetcode.com/problems/all-nodes-distance-k-in-binary-tree) | [Solution](../coding/datastructures/binaryTree/Solutions.java) | Hash Table, Tree, Depth-First Search, Breadth-First Search, Binary Tree |

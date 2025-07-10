@@ -7,3 +7,4 @@
 | 3 | MEDIUM | [Merge Intervals](https://leetcode.com/problems/merge-intervals) | [Solution](../coding/datastructures/arrays/SubArrays.java) | Array, Sorting |
 | 4 | MEDIUM | [Rotate Array](https://leetcode.com/problems/rotate-array) | [Solution](../coding/datastructures/arrays/RotateArrays.java) | Array, Math, Two Pointers |
 | 5 | EASY | [Valid Parentheses](https://leetcode.com/problems/valid-parentheses) | [Solution](../coding/datastructures/stackAndQueue/Solution.java) | String, Stack |
+| 6 | EASY | [Binary Tree Paths](https://leetcode.com/problems/binary-tree-paths) | [Solution](../coding/datastructures/binaryTree/Solutions.java) | String, Backtracking, Tree, Depth-First Search, Binary Tree |

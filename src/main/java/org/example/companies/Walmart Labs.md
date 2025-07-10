@@ -32,3 +32,4 @@
 | 28 | MEDIUM | [Binary Tree Right Side View](https://leetcode.com/problems/binary-tree-right-side-view) | [Solution](../coding/datastructures/binaryTree/Traversals.java) | Tree, Depth-First Search, Breadth-First Search, Binary Tree |
 | 29 | MEDIUM | [Search In Rotated Sorted Array](https://leetcode.com/problems/search-in-rotated-sorted-array) | [Solution](../coding/algorithms/SearchingAlgorithms.java) | Array, Binary Search |
 | 30 | EASY | [Middle Of The Linked List](https://leetcode.com/problems/middle-of-the-linked-list) | [Solution](../coding/datastructures/linkedList/LinkedList.java) | Linked List, Two Pointers |
+| 31 | MEDIUM | [All Nodes Distance K In Binary Tree](https://leetcode.com/problems/all-nodes-distance-k-in-binary-tree) | [Solution](../coding/datastructures/binaryTree/Solutions.java) | Hash Table, Tree, Depth-First Search, Breadth-First Search, Binary Tree |

@@ -50,3 +50,5 @@
 | 46 | MEDIUM | [Remove Nth Node From End Of List](https://leetcode.com/problems/remove-nth-node-from-end-of-list) | [Solution](../coding/datastructures/linkedList/OperationsOnLL.java) | Linked List, Two Pointers |
 | 47 | MEDIUM | [Minimum Path Sum](https://leetcode.com/problems/minimum-path-sum) | [Solution](../coding/algorithms/DynamicProgramming2DTabulation.java) | Array, Dynamic Programming, Matrix |
 | 48 | MEDIUM | [Unique Paths Ii](https://leetcode.com/problems/unique-paths-ii) | [Solution](../coding/algorithms/DynamicProgramming2DTabulation.java) | Array, Dynamic Programming, Matrix |
+| 49 | MEDIUM | [Lowest Common Ancestor Of A Binary Tree](https://leetcode.com/problems/lowest-common-ancestor-of-a-binary-tree) | [Solution](../coding/datastructures/binaryTree/Solutions.java) | Tree, Depth-First Search, Binary Tree |
+| 50 | MEDIUM | [All Nodes Distance K In Binary Tree](https://leetcode.com/problems/all-nodes-distance-k-in-binary-tree) | [Solution](../coding/datastructures/binaryTree/Solutions.java) | Hash Table, Tree, Depth-First Search, Breadth-First Search, Binary Tree |

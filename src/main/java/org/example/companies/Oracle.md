@@ -42,3 +42,4 @@
 | 38 | MEDIUM | [Sort List](https://leetcode.com/problems/sort-list) | [Solution](../coding/datastructures/linkedList/OperationsOnLL.java) | Linked List, Two Pointers, Divide and Conquer, Sorting, Merge Sort |
 | 39 | EASY | [Palindrome Linked List](https://leetcode.com/problems/palindrome-linked-list) | [Solution](../coding/datastructures/linkedList/LinkedList.java) | Linked List, Two Pointers, Stack, Recursion |
 | 40 | MEDIUM | [Unique Paths](https://leetcode.com/problems/unique-paths) | [Solution](../coding/algorithms/DynamicProgramming2DTabulation.java) | Math, Dynamic Programming, Combinatorics |
+| 41 | MEDIUM | [Lowest Common Ancestor Of A Binary Tree](https://leetcode.com/problems/lowest-common-ancestor-of-a-binary-tree) | [Solution](../coding/datastructures/binaryTree/Solutions.java) | Tree, Depth-First Search, Binary Tree |

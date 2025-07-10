@@ -1,9 +1,6 @@
 package org.example.coding.datastructures.binaryTree;
 
-import java.util.ArrayList;
-import java.util.Deque;
-import java.util.LinkedList;
-import java.util.List;
+import java.util.*;
 
 /**
  * A collection of binary tree problems commonly asked in top tech companies.
@@ -259,5 +256,178 @@ public class Solutions {
             return checkTree(root.left) && checkTree(root.right);
         }
         return false;
+    }
+
+    /**
+     * Return all root-to-leaf paths in a binary tree as strings.
+     * <p>
+     * Intuition:
+     * - Perform a DFS traversal, appending the path as we go.
+     * - On reaching a leaf node, record the complete path.
+     * <p>
+     * Time Complexity: O(n) — visits each node once
+     * Space Complexity: O(h) — recursion stack, where h = tree height
+     */
+    public List<String> binaryTreePaths(Node root) {
+        List<String> ans = new ArrayList<>();
+        if (root == null) return ans;
+        binaryTreeHelper(root, ans, "");
+        return ans;
+    }
+
+    private void binaryTreeHelper(Node node, List<String> ans, String str) {
+        if (node == null) {
+            return;
+        }
+        if (node.left == null && node.right == null) {
+            ans.add(str + Integer.toString(node.val));
+            return;
+        }
+        String newPath = str + Integer.toString(node.val);
+        if (node.left != null) {
+            binaryTreeHelper(node.left, ans, newPath + "->");
+        }
+        if (node.right != null) {
+            binaryTreeHelper(node.right, ans, newPath + "->");
+        }
+    }
+
+    /**
+     * Find the lowest common ancestor (LCA) of two nodes in a binary tree.
+     * <p>
+     * Intuition:
+     * - Recursively traverse left and right.
+     * - If one node is found in each subtree, current node is LCA.
+     * - If one is null, propagate the non-null result up.
+     * <p>
+     * <p>
+     * Time Complexity: O(n) — visits each node once
+     * Space Complexity: O(h) — recursion stack, where h = tree height
+     */
+    public Node lowestCommonAncestor(Node root, Node p, Node q) {
+        if (root == null || p == root || q == root) {
+            return root;
+        }
+        Node left = lowestCommonAncestor(root.left, p, q);
+        Node right = lowestCommonAncestor(root.right, p, q);
+        if (left == null) return right;
+        else if (right == null) return left;
+        return root;
+
+    }
+
+    /**
+     * Find the maximum width of a binary tree.
+     * <p>
+     * Intuition:
+     * - Use level-order traversal (BFS).
+     * - Assign position indexes to nodes to simulate full binary tree structure.
+     * - Width of each level = last index - first index + 1.
+     * <p>
+     * Time Complexity: O(n) — each node visited once
+     * Space Complexity: O(n) — queue stores all nodes in a level
+     */
+    public int widthOfBinaryTree(Node root) {
+        if (root == null) return 0;
+        int ans = 0;
+        Queue<Pair> q = new LinkedList<>();
+        q.add(new Pair(root, 0));
+        while (!q.isEmpty()) {
+            int mmin = q.peek().num;
+            int last = 0;
+            int n = q.size();
+            for (int i = 0; i < n; i++) {
+                int cur_id = q.peek().num - mmin;
+                Node node = q.peek().node;
+                q.poll();
+                last = cur_id;
+                if (node.left != null) {
+                    q.add(new Pair(node.left, cur_id * 2 + 1));
+                }
+                if (node.right != null) {
+                    q.add(new Pair(node.right, cur_id * 2 + 2));
+                }
+            }
+            ans = Math.max(ans, last + 1);
+        }
+        return ans;
+    }
+
+    /**
+     * Helper method to record parent relationships for all nodes in the binary tree.
+     * <p>
+     * Intuition:
+     * - Perform a level-order traversal (BFS).
+     * - For every child node, store its parent in a HashMap.
+     * <p>
+     * Time Complexity: O(n) — each node is visited once
+     * Space Complexity: O(n) — to store the parent map and queue
+     */
+    private HashMap<Node, Node> markParents(Node root) {
+        HashMap<Node, Node> map = new HashMap<>();
+        Queue<Node> q = new LinkedList<>();
+        q.offer(root);
+        while (!q.isEmpty()) {
+            Node cur = q.poll();
+            if (cur.left != null) {
+                q.offer(cur.left);
+                map.put(cur.left, cur);
+            }
+
+            if (cur.right != null) {
+                q.offer(cur.right);
+                map.put(cur.right, cur);
+            }
+        }
+
+        return map;
+    }
+
+    /**
+     * Returns all node values that are exactly k distance away from the target node.
+     * <p>
+     * Intuition:
+     * - First, build a parent map using BFS (to allow upward traversal).
+     * - Then perform a second BFS starting from the target node.
+     * - Stop when current level equals k.
+     * <p>
+     * Time Complexity: O(n) — every node is visited at most once
+     * Space Complexity: O(n) — for parent map, visited set, and queue
+     */
+    public List<Integer> distanceK(Node root, Node target, int k) {
+        HashMap<Node, Node> map = markParents(root);
+        Set<Node> vis = new HashSet<>();
+        Queue<Node> q = new LinkedList<>();
+        int cur = 0;
+        q.offer(target);
+        vis.add(target);
+        while (!q.isEmpty()) {
+            int n = q.size();
+            if (cur == k) break;
+            cur++;
+            for (int i = 0; i < n; i++) {
+                Node node = q.poll();
+                if (node.left != null && !vis.contains(node.left)) {
+                    q.offer(node.left);
+                    vis.add(node.left);
+                }
+
+                if (node.right != null && !vis.contains(node.right)) {
+                    q.offer(node.right);
+                    vis.add(node.right);
+                }
+
+                if (map.get(node) != null && !vis.contains(map.get(node))) {
+                    q.offer(map.get(node));
+                    vis.add(map.get(node));
+                }
+            }
+        }
+
+        List<Integer> ans = new ArrayList<>();
+        while (!q.isEmpty()) {
+            ans.add(q.poll().val);
+        }
+        return ans;
     }
 }
