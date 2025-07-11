@@ -14,6 +14,18 @@ public class ShortestPathUsingDijkstra {
         }
     }
 
+    static class State {
+        int city;
+        int cost;
+        int stops;
+
+        State(int city, int cost, int stops) {
+            this.city = city;
+            this.cost = cost;
+            this.stops = stops;
+        }
+    }
+
     static class Pair {
         int row;
         int col;
@@ -116,5 +128,49 @@ public class ShortestPathUsingDijkstra {
         }
 
         return -1; // should never reach here
+    }
+
+    /**
+     * Finds the cheapest price to reach the destination from the source with at most `k` stops.
+     * <p>
+     * Intuition:
+     * - Use Dijkstra’s-like approach but with a modification to track number of stops.
+     * - Use a priority queue to always expand the cheapest path next.
+     * - Skip paths that exceed the allowed number of stops or are not better than a previously found one.
+     * <p>
+     * Time Complexity: O(E * logV) — where E is the number of flights and V is the number of cities
+     * Space Complexity: O(V + E) — for adjacency list and visited array
+     */
+    public int findCheapestPrice(int n, int[][] flights, int src, int dst, int k) {
+        List<List<Edge>> adj = new ArrayList<>();
+        for (int i = 0; i < n; i++) adj.add(new ArrayList<>());
+        for (int[] flight : flights)
+            adj.get(flight[0]).add(new Edge(flight[1], flight[2]));
+
+        // PriorityQueue by cost
+        PriorityQueue<State> pq = new PriorityQueue<>((a, b) -> Integer.compare(a.cost, b.cost));
+        pq.offer(new State(src, 0, 0));
+
+        // best[city][stops] = min cost to reach that city using `stops` stops
+        int[] visitedStops = new int[n];
+        Arrays.fill(visitedStops, Integer.MAX_VALUE);
+
+        while (!pq.isEmpty()) {
+            State cur = pq.poll();
+            int city = cur.city, cost = cur.cost, stops = cur.stops;
+
+            // If destination is reached
+            if (city == dst) return cost;
+
+            // Don't process if more than k stops
+            if (stops > k || visitedStops[city] < stops) continue;
+            visitedStops[city] = stops;
+
+            for (Edge edge : adj.get(city)) {
+                pq.offer(new State(edge.target, cost + edge.weight, stops + 1));
+            }
+        }
+
+        return -1;
     }
 }

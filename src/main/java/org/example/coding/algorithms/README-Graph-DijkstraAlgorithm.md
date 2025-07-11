@@ -100,8 +100,10 @@ function dijkstra(graph, source):
 
 ## 🧪 Practice Problems
 
-| # | Problem | Solution |
-|---|---------|----------|
+| # | Problem                                                                                           | Solution                                                                                 |
+|---|---------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------|
+| 1 | [Path With Minimum Effort](https://leetcode.com/problems/path-with-minimum-effort/)               | [ShortestPathUsingDijkstra.java](../datastructures/graph/ShortestPathUsingDijkstra.java) |
+| 2 | [Cheapest Flights Within K Stops](https://leetcode.com/problems/cheapest-flights-within-k-stops/) | [ShortestPathUsingDijkstra.java](../datastructures/graph/ShortestPathUsingDijkstra.java) |                                                                                    |
 
 ---
 

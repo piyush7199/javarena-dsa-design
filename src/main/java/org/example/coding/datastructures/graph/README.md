@@ -74,6 +74,7 @@ Graph traversal algorithms help in searching or visiting nodes:
 | 20 | [Shortest Path in Binary Matrix](https://leetcode.com/problems/shortest-path-in-binary-matrix/)                                      | [ShortestPath.java](./ShortestPath.java)                                       |
 | 21 | [Is Graph Bipartite?](https://leetcode.com/problems/is-graph-bipartite/)                                                             | [DFSSolution.java](./DFSSolution.java)                                         |
 | 22 | [Path With Minimum Effort](https://leetcode.com/problems/path-with-minimum-effort/)                                                  | [ShortestPathUsingDijkstra.java](./ShortestPathUsingDijkstra.java)             |
+| 23 | [Cheapest Flights Within K Stops](https://leetcode.com/problems/cheapest-flights-within-k-stops/)                                    | [ShortestPathUsingDijkstra.java](./ShortestPathUsingDijkstra.java)             |
 
 ---
 

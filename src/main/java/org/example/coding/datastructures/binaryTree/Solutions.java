@@ -430,4 +430,79 @@ public class Solutions {
         }
         return ans;
     }
+
+    /**
+     * Marks each node's parent in a binary tree and finds the target node with value `start`.
+     * <p>
+     * Intuition:
+     * - To simulate fire spreading to parent nodes, we need a way to move upwards in the tree.
+     * - Use BFS to traverse the tree and record each node’s parent in a map.
+     * - Simultaneously, identify and return the target node where fire starts.
+     * <p>
+     * Time Complexity: O(N) — each node is visited once
+     * Space Complexity: O(N) — for parent map and BFS queue
+     */
+    private Node markParents(Node root, HashMap<Integer, Node> map, int start) {
+        Node target = root;
+        Queue<Node> q = new LinkedList<>();
+        q.offer(root);
+        while (!q.isEmpty()) {
+            Node cur = q.poll();
+            if (cur.left != null) {
+                q.offer(cur.left);
+                map.put(cur.left.val, cur);
+            }
+
+            if (cur.right != null) {
+                q.offer(cur.right);
+                map.put(cur.right.val, cur);
+            }
+            if (cur.val == start) target = cur;
+        }
+
+        return target;
+    }
+
+    /**
+     * Returns the total time to burn the entire binary tree from a given starting node.
+     * <p>
+     * Intuition:
+     * - Model the burning process as a BFS traversal from the starting node.
+     * - Fire spreads in all three directions: left, right, and parent.
+     * - Use a set to track visited nodes and count BFS levels to measure time.
+     * <p>
+     * Time Complexity: O(N) — each node is visited once
+     * Space Complexity: O(N) — for queue, visited set, and parent map
+     */
+    public int amountOfTime(Node root, int start) {
+        HashMap<Integer, Node> map = new HashMap<>();
+        Node target = markParents(root, map, start);
+        Set<Node> vis = new HashSet<>();
+        Queue<Node> q = new LinkedList<>();
+        int cur = -1;
+        q.offer(target);
+        vis.add(target);
+        while (!q.isEmpty()) {
+            int n = q.size();
+            for (int i = 0; i < n; i++) {
+                Node node = q.poll();
+                if (node.left != null && !vis.contains(node.left)) {
+                    q.offer(node.left);
+                    vis.add(node.left);
+                }
+                if (node.right != null && !vis.contains(node.right)) {
+                    q.offer(node.right);
+                    vis.add(node.right);
+                }
+                Node parent = map.get(node.val);
+                if (parent != null && !vis.contains(parent)) {
+                    q.offer(parent);
+                    vis.add(parent);
+                }
+            }
+            cur++;
+        }
+
+        return cur;
+    }
 }

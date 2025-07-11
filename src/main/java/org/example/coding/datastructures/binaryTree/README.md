@@ -149,6 +149,7 @@ public class BinaryTree {
 | 21 | [LCA of Binary Tree](https://leetcode.com/problems/lowest-common-ancestor-of-a-binary-tree/)                                                                                                     | [Solutions.java](./Solutions.java)   |
 | 22 | [Maximum Width of Binary Tree](https://leetcode.com/problems/maximum-width-of-binary-tree/)                                                                                                      | [Solutions.java](./Solutions.java)   |
 | 23 | [All Nodes Distance K in Binary Tree](https://leetcode.com/problems/all-nodes-distance-k-in-binary-tree/)                                                                                        | [Solutions.java](./Solutions.java)   |
+| 24 | [Amount of Time for Binary Tree to Be Infected](https://leetcode.com/problems/amount-of-time-for-binary-tree-to-be-infected/)                                                                    |                                      |
 
 ---
 
