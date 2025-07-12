@@ -7,6 +7,19 @@ design concepts and preparing for software engineering interviews. It complement
 on designing scalable, reliable, and performant systems. Topics include database design, consistency models, isolation
 levels, and more, with theory, practical examples, and interview-style problems.
 
+---
+
+## Content
+
+### Concepts
+
+- [Database Design and Databases](./concepts/database_design.md)
+- [Consistency Patterns](./concepts/consistency_models.md)
+- [Isolation Level](./concepts/isolation_levels.md)
+- [Cache](./concepts/cache.md)
+
+---
+
 ## Purpose
 
 This section is designed for:
@@ -14,6 +27,8 @@ This section is designed for:
 - **Interview Preparation**: Master HLD concepts and solve common system design problems.
 - **Learning**: Understand how to architect real-world systems.
 - **Reference**: Use as a guide for system design challenges in projects or interviews.
+
+---
 
 ## Structure
 
@@ -39,6 +54,8 @@ Example:
 │   ├── design_url_shortner.md
 ├── README.md
 ```
+
+---
 
 ## How to Use
 

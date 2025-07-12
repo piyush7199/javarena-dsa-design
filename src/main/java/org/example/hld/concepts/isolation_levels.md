@@ -6,11 +6,15 @@ Isolation levels define how transactions in a database are isolated from each ot
 uncommitted changes. They are a key property of ACID transactions in relational databases (e.g., MySQL, PostgreSQL),
 ensuring data consistency during concurrent operations.
 
+---
+
 ## Why It Matters
 
 Isolation levels balance transaction consistency with performance. Higher isolation levels prevent data anomalies but
 increase locking and overhead, while lower levels improve concurrency but risk inconsistencies. In system design
 interviews, isolation levels test your understanding of transactional behavior and trade-offs.
+
+---
 
 ## Key Concepts
 
@@ -78,11 +82,15 @@ Isolation levels, as defined by the SQL standard, range from least to most stric
     - Locking: Simple but risks deadlocks and contention.
     - MVCC: Improves concurrency but increases storage for versioned data.
 
+---
+
 ## Real-World Examples
 
 - **PostgreSQL at Uber**: Uses Repeatable Read for consistent trip data reads, with MVCC to avoid locking contention.
 - **MySQL at Airbnb**: Employs Read Committed for booking updates, balancing performance and consistency.
 - **Oracle at Banks**: Uses Serializable for financial transactions to prevent anomalies.
+
+---
 
 ## Trade-offs
 
@@ -92,6 +100,8 @@ Isolation levels, as defined by the SQL standard, range from least to most stric
 - **Locking vs. MVCC**:
     - Locking: Simpler but prone to deadlocks.
     - MVCC: Better concurrency but higher storage overhead.
+
+---
 
 ## Important Notes
 
@@ -107,6 +117,8 @@ Isolation levels, as defined by the SQL standard, range from least to most stric
     - Simulate concurrent transactions to verify isolation behavior.
 - **Interview Tip**:
     - Clarify if the system requires strict consistency or can tolerate anomalies.
+
+---
 
 ## Interview Guidance
 
@@ -131,6 +143,8 @@ Isolation levels, as defined by the SQL standard, range from least to most stric
 - **Draw Diagrams**: Show transaction timelines or lock interactions.
 - **Discuss Trade-offs**: Highlight performance vs. consistency trade-offs.
 - **Handle Follow-ups**: Be ready for questions like “How do you avoid deadlocks?” or “What’s MVCC’s impact?”
+
+---
 
 ## Sample Interview Problem: Design a Banking System’s Database
 
@@ -168,9 +182,10 @@ Isolation levels, as defined by the SQL standard, range from least to most stric
       B --> C[PostgreSQL Master]
       C --> D[PostgreSQL Slave]
 
+---
+
 ## Resources
 
 - Designing Data-Intensive Applications by Martin Kleppmann
 - PostgreSQL Documentation: Transaction Isolation
 - MySQL Documentation: InnoDB Transaction Model
-- YouTube: System Design Interview - Transaction Isolation

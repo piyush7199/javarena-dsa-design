@@ -6,6 +6,8 @@ Database design is the process of structuring and organizing data storage to mee
 non-functional requirements. It involves selecting the appropriate database type (e.g., SQL, NoSQL), designing schemas,
 and ensuring scalability, performance, reliability, and security.
 
+---
+
 ## Why It Matters
 
 Databases power most modern applications, from e-commerce to social media. Effective database design ensures:
@@ -17,6 +19,8 @@ Databases power most modern applications, from e-commerce to social media. Effec
 
 In system design interviews, database design tests your ability to make informed decisions about trade-offs like
 consistency vs. performance or scalability vs. complexity.
+
+---
 
 ## Key Concepts
 
@@ -132,6 +136,8 @@ consistency vs. performance or scalability vs. complexity.
 - **Redis at Twitter**: In-memory caching for timelines, reducing database load.
 - **Cassandra at Netflix**: Column-family database for streaming analytics with high scalability.
 
+---
+
 ## Trade-offs
 
 - **SQL vs. NoSQL**:
@@ -143,6 +149,8 @@ consistency vs. performance or scalability vs. complexity.
 - **Indexes**:
     - Pros: Faster reads for targeted queries.
     - Cons: Slower writes, higher storage.
+
+---
 
 ## Important Notes
 
@@ -164,6 +172,8 @@ consistency vs. performance or scalability vs. complexity.
     - Encrypt data at rest and in transit.
     - Use role-based access control (RBAC) and row-level security.
 
+---
+
 ## Sample HLD Questions
 
 1. **Design a database for a ride-sharing app**:
@@ -176,7 +186,8 @@ consistency vs. performance or scalability vs. complexity.
     - Approach: Use Cassandra for high write throughput, Redis for caching feeds, and eventual consistency.
     - Solution: `In Progress`.
 
+---
+
 ## Resources
 
 - Books: *Designing Data-Intensive Applications* by Martin Kleppmann.
-- Videos: System Design Playlist by TechWithMaddy on YouTube.

@@ -112,6 +112,13 @@ Each file contains:
 
 ## 🏗 High-Level Design (HLD)
 
+### Concepts
+
+- [Database Design and Databases](./src/main/java/org/example/hld/concepts/database_design.md)
+- [Consistency Patterns](./src/main/java/org/example/hld/concepts/consistency_models.md)
+- [Isolation Level](./src/main/java/org/example/hld/concepts/isolation_levels.md)
+- [Cache](./src/main/java/org/example/hld/concepts/cache.md)
+
 | # | System         | Status         | Description                   |
 |---|----------------|----------------|-------------------------------|
 | 1 | URL Shortener  | 🛠 In Progress | Service decomposition planned |

@@ -6,12 +6,16 @@ Consistency models define the rules governing how data is read and written in da
 specify guarantees about the visibility, ordering, and freshness of data updates, balancing data accuracy (consistency)
 with performance (latency) and availability.
 
+---
+
 ## Why It Matters
 
 Choosing the right consistency model is critical for meeting application requirements. For example, financial systems
 demand strong consistency to prevent errors, while social media feeds can use eventual consistency for better
 scalability. In system design interviews, consistency models test your ability to navigate trade-offs in distributed
 systems.
+
+---
 
 ## Key Concepts
 
@@ -83,6 +87,8 @@ systems.
   within a single database, while consistency models apply to distributed systems.
 - **Details**: See [Isolation Levels](isolation_levels.md) for in-depth coverage.
 
+---
+
 ## Real-World Examples
 
 - **Amazon DynamoDB**: Offers eventual consistency for high-throughput e-commerce (e.g., cart updates) and strong
@@ -90,6 +96,8 @@ systems.
 - **MongoDB**: Configurable consistency; defaults to AP but supports CP for critical operations.
 - **Google Spanner**: Uses TrueTime for strong consistency, ideal for financial transactions.
 - **Twitter**: Employs eventual consistency for timelines, prioritizing low latency.
+
+---
 
 ## Trade-offs
 
@@ -103,6 +111,8 @@ systems.
     - AP: Suited for high-availability systems (e.g., social media).
 - **Tunable Consistency**:
     - Databases like DynamoDB and Cassandra allow per-operation consistency levels for flexibility.
+
+---
 
 ## Important Notes
 
@@ -118,6 +128,8 @@ systems.
     - Use tunable consistency (e.g., Cassandra’s quorum reads) for workload-specific needs.
 - **Testing**:
     - Simulate partitions or failures to verify consistency behavior.
+
+---
 
 ## Interview Guidance
 
@@ -142,6 +154,8 @@ systems.
 - **Discuss Trade-offs**: Highlight pros/cons of your consistency choice.
 - **Handle Follow-ups**: Be ready for questions like “What if a node fails?” or “How do you handle conflicts?”
 - **Real-World Examples**: Reference systems like Netflix (Cassandra, AP) or PayPal (SQL, CP).
+
+---
 
 ## Sample Interview Problem: Design a Notification System’s Database
 
@@ -202,9 +216,10 @@ requiring low-latency delivery and eventual consistency for non-critical notific
     E --> G[Node 2]
     E --> H[Node 3]
 
+---
+
 ## Resources
 
 - Designing Data-Intensive Applications by Martin Kleppmann
-- System Design Primer: CAP Theorem
+- [System Design Primer: Consistency patterns](https://github.com/donnemartin/system-design-primer?tab=readme-ov-file#consistency-patterns)
 - AWS DynamoDB Consistency Models
-- YouTube: System Design Interview - Consistency Models
