@@ -79,6 +79,7 @@ function knapsack(values, weights, W):
 | 8  | [Geek's Training](https://www.geeksforgeeks.org/problems/geeks-training/1)                   | [DynamicProgramming2DMemorization.java](./DynamicProgramming2DMemorization.java), [DynamicProgramming2DTabulation.java](./DynamicProgramming2DTabulation.java) |
 | 9  | [Unique Paths](https://leetcode.com/problems/unique-paths/)                                  | [DynamicProgramming2DMemorization.java](./DynamicProgramming2DMemorization.java), [DynamicProgramming2DTabulation.java](./DynamicProgramming2DTabulation.java) |
 | 10 | [Unique Paths II](https://leetcode.com/problems/unique-paths-ii/)                            | [DynamicProgramming2DMemorization.java](./DynamicProgramming2DMemorization.java), [DynamicProgramming2DTabulation.java](./DynamicProgramming2DTabulation.java) |
+| 11 | [Word Break](https://leetcode.com/problems/word-break/)                                      | [RecursionWordBreak.java](./RecursionWordBreak.java)                                                                                                           |
 
 ---
 

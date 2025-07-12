@@ -8,7 +8,7 @@ programming. Each category includes Java implementations and curated problems fr
 
 ## Table of Contents
 
-- [🔍 Searching Algorithms](./Searching.md)
+- [🔍 Searching Algorithms](README-Searching.md)
 - [🔢 Sorting Algorithms](README-Sorting.md)
 - [💰 Greedy Algorithms](README-GreedyAlgorithms.md)
 - [🪟 Sliding Window Algorithm](README-SlidingWindowAlgorithms.md)
@@ -17,3 +17,4 @@ programming. Each category includes Java implementations and curated problems fr
 - [📍 Two-Pointer Technique](README-TwoPointer.md)
 - [🛤️ Dijkstra's algorithm](README-Graph-DijkstraAlgorithm.md)
 - [🌐 Disjoint Set (Union-Find)](README-Graph-Disjoint-Set.md)
+- [🔄 Recursion and Backtracking](README-RecursionAndBacktracking.md)
