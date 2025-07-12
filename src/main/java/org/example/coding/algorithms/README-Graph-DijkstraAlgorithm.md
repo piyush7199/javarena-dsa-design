@@ -104,6 +104,8 @@ function dijkstra(graph, source):
 |---|---------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------|
 | 1 | [Path With Minimum Effort](https://leetcode.com/problems/path-with-minimum-effort/)               | [ShortestPathUsingDijkstra.java](../datastructures/graph/ShortestPathUsingDijkstra.java) |
 | 2 | [Cheapest Flights Within K Stops](https://leetcode.com/problems/cheapest-flights-within-k-stops/) | [ShortestPathUsingDijkstra.java](../datastructures/graph/ShortestPathUsingDijkstra.java) |                                                                                    |
+| 3 | [Network Delay Time](https://leetcode.com/problems/network-delay-time/)                           | [NetworkDelay.java](../datastructures/graph/NetworkDelay.java)                           |
+|   |
 
 ---
 
