@@ -14,3 +14,4 @@
 | 10 | MEDIUM | [Course Schedule Ii](https://leetcode.com/problems/course-schedule-ii) | [Solution](../coding/datastructures/graph/TopologicalSorting.java) | Depth-First Search, Breadth-First Search, Graph, Topological Sort |
 | 11 | MEDIUM | [Search In Rotated Sorted Array](https://leetcode.com/problems/search-in-rotated-sorted-array) | [Solution](../coding/algorithms/SearchingAlgorithms.java) | Array, Binary Search |
 | 12 | MEDIUM | [Word Break](https://leetcode.com/problems/word-break) | [Solution](../coding/algorithms/RecursionWordBreak.java) | Array, Hash Table, String, Dynamic Programming, Trie, Memoization |
+| 13 | MEDIUM | [Network Delay Time](https://leetcode.com/problems/network-delay-time) | [Solution](../coding/datastructures/graph/NetworkDelay.java) | Depth-First Search, Breadth-First Search, Graph, Heap (Priority Queue), Shortest Path |
