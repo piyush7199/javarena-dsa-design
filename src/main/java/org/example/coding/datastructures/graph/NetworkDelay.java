@@ -6,6 +6,18 @@ import java.util.List;
 import java.util.PriorityQueue;
 
 public class NetworkDelay {
+
+    /**
+     * Dijkstra’s Algorithm to find the time it takes for all nodes to receive a signal sent from node `k`.
+     * <p>
+     * Intuition:
+     * - Use a min-heap (priority queue) to always pick the node with the least accumulated delay.
+     * - Track the shortest time to reach each node using a distance array.
+     * - Return the maximum time from source to all other nodes, or -1 if any node is unreachable.
+     * <p>
+     * Time Complexity: O(E * log V) — E edges, V vertices due to priority queue operations.
+     * Space Complexity: O(V + E) — adjacency list and distance array.
+     */
     public int networkDelayTime(int[][] times, int n, int k) {
         List<List<int[]>> adj = new ArrayList<>();
         for (int i = 0; i <= n; i++) adj.add(new ArrayList<>());
