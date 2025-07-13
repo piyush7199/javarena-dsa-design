@@ -17,6 +17,7 @@ levels, and more, with theory, practical examples, and interview-style problems.
 - [Consistency Patterns](./concepts/consistency_models.md)
 - [Isolation Level](./concepts/isolation_levels.md)
 - [Cache](./concepts/cache.md)
+- [Networks & Communication](./concepts/networks.md)
 
 ---
 

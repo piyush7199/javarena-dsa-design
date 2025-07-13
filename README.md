@@ -118,6 +118,7 @@ Each file contains:
 - [Consistency Patterns](./src/main/java/org/example/hld/concepts/consistency_models.md)
 - [Isolation Level](./src/main/java/org/example/hld/concepts/isolation_levels.md)
 - [Cache](./src/main/java/org/example/hld/concepts/cache.md)
+- [Networks & Communication](./src/main/java/org/example/hld/concepts/networks.md)
 
 | # | System         | Status         | Description                   |
 |---|----------------|----------------|-------------------------------|
