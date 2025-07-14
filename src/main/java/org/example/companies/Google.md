@@ -58,3 +58,4 @@
 | 54 | HARD | [N Queens](https://leetcode.com/problems/n-queens) | [Solution](../coding/algorithms/RecursionNQueens.java) | Array, Backtracking |
 | 55 | MEDIUM | [Word Break](https://leetcode.com/problems/word-break) | [Solution](../coding/algorithms/RecursionWordBreak.java) | Array, Hash Table, String, Dynamic Programming, Trie, Memoization |
 | 56 | MEDIUM | [Construct Binary Tree From Preorder And Inorder Traversal](https://leetcode.com/problems/construct-binary-tree-from-preorder-and-inorder-traversal) | [Solution](../coding/datastructures/binaryTree/ConstructTree.java) | Array, Hash Table, Divide and Conquer, Tree, Binary Tree |
+| 57 | MEDIUM | [Reverse Words In A String](https://leetcode.com/problems/reverse-words-in-a-string) | [Solution](../coding/datastructures/string/ReverseWords.java) | Two Pointers, String |
