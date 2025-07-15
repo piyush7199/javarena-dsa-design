@@ -56,15 +56,17 @@ lld/
 
 ### 🧠 Behavioural Design Patterns
 
-| # | Pattern Name                                                                      | Description                                                              |
-|---|-----------------------------------------------------------------------------------|--------------------------------------------------------------------------|
-| 1 | [Chain Of Responsibility](./patterns/behavioural/chainOfResponsibility/README.md) | Passes a request along a chain of handlers until one of them handles it. |
+| # | Pattern Name                                                                      | Description                                                                                                                        |
+|---|-----------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------|
+| 1 | [Chain Of Responsibility](./patterns/behavioural/chainOfResponsibility/README.md) | Passes a request along a chain of handlers until one of them handles it.                                                           |
+| 2 | [Observer](./patterns/behavioural/observer/README.md)                             | Defines a one-to-many dependency so that when one object changes state, all its dependents are notified and updated automatically. |
+| 3 | [Strategy](./patterns/behavioural/strategy/README.md)                             | Enables selecting an algorithm's behavior at runtime by encapsulating it within a class and making it interchangeable.             |
 
 ### 🧱 Structural Design Patterns
 
-| # | Pattern Name                                                         | Description                                          |
-|---|----------------------------------------------------------------------|------------------------------------------------------|
-| 1 | [Chain Of Responsibility](./patterns/structural/decorator/README.md) | Dynamically adds new behavior to objects at runtime. |
+| # | Pattern Name                                           | Description                                          |
+|---|--------------------------------------------------------|------------------------------------------------------|
+| 1 | [Decorator](./patterns/structural/decorator/README.md) | Dynamically adds new behavior to objects at runtime. |
 
 > ✨ More patterns like Strategy, Observer, Adapter, Proxy, and Template coming soon...
 
