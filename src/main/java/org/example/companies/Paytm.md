@@ -13,3 +13,4 @@
 | 9 | EASY | [Reverse Linked List](https://leetcode.com/problems/reverse-linked-list) | [Solution](../coding/datastructures/linkedList/LinkedList.java) | Linked List, Recursion |
 | 10 | MEDIUM | [Linked List Cycle Ii](https://leetcode.com/problems/linked-list-cycle-ii) | [Solution](../coding/datastructures/linkedList/LinkedList.java) | Hash Table, Linked List, Two Pointers |
 | 11 | MEDIUM | [Reverse Words In A String](https://leetcode.com/problems/reverse-words-in-a-string) | [Solution](../coding/datastructures/string/ReverseWords.java) | Two Pointers, String |
+| 12 | MEDIUM | [Word Search](https://leetcode.com/problems/word-search) | [Solution](../coding/algorithms/recursionAndBacktracking/WordSearch.java) | Array, String, Backtracking, Depth-First Search, Matrix |

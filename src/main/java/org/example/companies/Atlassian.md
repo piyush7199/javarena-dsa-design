@@ -16,3 +16,4 @@
 | 12 | MEDIUM | [Single Element In A Sorted Array](https://leetcode.com/problems/single-element-in-a-sorted-array) | [Solution](../coding/algorithms/SearchingAlgorithms.java) | Array, Binary Search |
 | 13 | MEDIUM | [Unique Paths Ii](https://leetcode.com/problems/unique-paths-ii) | [Solution](../coding/algorithms/DynamicProgramming2DTabulation.java) | Array, Dynamic Programming, Matrix |
 | 14 | MEDIUM | [Lowest Common Ancestor Of A Binary Tree](https://leetcode.com/problems/lowest-common-ancestor-of-a-binary-tree) | [Solution](../coding/datastructures/binaryTree/Solutions.java) | Tree, Depth-First Search, Binary Tree |
+| 15 | MEDIUM | [Word Search](https://leetcode.com/problems/word-search) | [Solution](../coding/algorithms/recursionAndBacktracking/WordSearch.java) | Array, String, Backtracking, Depth-First Search, Matrix |

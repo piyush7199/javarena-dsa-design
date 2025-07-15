@@ -22,3 +22,4 @@
 | 18 | MEDIUM | [All Nodes Distance K In Binary Tree](https://leetcode.com/problems/all-nodes-distance-k-in-binary-tree) | [Solution](../coding/datastructures/binaryTree/Solutions.java) | Hash Table, Tree, Depth-First Search, Breadth-First Search, Binary Tree |
 | 19 | MEDIUM | [Is Graph Bipartite](https://leetcode.com/problems/is-graph-bipartite) | [Solution](../coding/datastructures/graph/DFSSolution.java) | Depth-First Search, Breadth-First Search, Union Find, Graph |
 | 20 | HARD | [N Queens](https://leetcode.com/problems/n-queens) | [Solution](../coding/algorithms/recursionAndBacktracking/NQueens.java) | Array, Backtracking |
+| 21 | MEDIUM | [Word Search](https://leetcode.com/problems/word-search) | [Solution](../coding/algorithms/recursionAndBacktracking/WordSearch.java) | Array, String, Backtracking, Depth-First Search, Matrix |

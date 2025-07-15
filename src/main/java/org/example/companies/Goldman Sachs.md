@@ -36,3 +36,4 @@
 | 32 | MEDIUM | [Amount Of Time For Binary Tree To Be Infected](https://leetcode.com/problems/amount-of-time-for-binary-tree-to-be-infected) | [Solution](../coding/datastructures/binaryTree/Solutions.java) | Hash Table, Tree, Depth-First Search, Breadth-First Search, Binary Tree |
 | 33 | MEDIUM | [Powx N](https://leetcode.com/problems/powx-n) | [Solution](../coding/algorithms/recursionAndBacktracking/MyPow.java) | Math, Recursion |
 | 34 | HARD | [N Queens](https://leetcode.com/problems/n-queens) | [Solution](../coding/algorithms/recursionAndBacktracking/NQueens.java) | Array, Backtracking |
+| 35 | MEDIUM | [Word Search](https://leetcode.com/problems/word-search) | [Solution](../coding/algorithms/recursionAndBacktracking/WordSearch.java) | Array, String, Backtracking, Depth-First Search, Matrix |

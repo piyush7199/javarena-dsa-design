@@ -15,3 +15,4 @@
 | 11 | MEDIUM | [Search In Rotated Sorted Array](https://leetcode.com/problems/search-in-rotated-sorted-array) | [Solution](../coding/algorithms/SearchingAlgorithms.java) | Array, Binary Search |
 | 12 | MEDIUM | [Word Break](https://leetcode.com/problems/word-break) | [Solution](../coding/algorithms/recursionAndBacktracking/WordBreak.java) | Array, Hash Table, String, Dynamic Programming, Trie, Memoization |
 | 13 | MEDIUM | [Network Delay Time](https://leetcode.com/problems/network-delay-time) | [Solution](../coding/datastructures/graph/NetworkDelay.java) | Depth-First Search, Breadth-First Search, Graph, Heap (Priority Queue), Shortest Path |
+| 14 | MEDIUM | [Word Search](https://leetcode.com/problems/word-search) | [Solution](../coding/algorithms/recursionAndBacktracking/WordSearch.java) | Array, String, Backtracking, Depth-First Search, Matrix |

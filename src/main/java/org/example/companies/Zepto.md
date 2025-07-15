@@ -10,3 +10,4 @@
 | 6 | MEDIUM | [Find Peak Element](https://leetcode.com/problems/find-peak-element) | [Solution](../coding/algorithms/SearchingAlgorithms.java) | Array, Binary Search |
 | 7 | MEDIUM | [Search In Rotated Sorted Array](https://leetcode.com/problems/search-in-rotated-sorted-array) | [Solution](../coding/algorithms/SearchingAlgorithms.java) | Array, Binary Search |
 | 8 | MEDIUM | [Unique Paths Ii](https://leetcode.com/problems/unique-paths-ii) | [Solution](../coding/algorithms/DynamicProgramming2DTabulation.java) | Array, Dynamic Programming, Matrix |
+| 9 | MEDIUM | [Word Search](https://leetcode.com/problems/word-search) | [Solution](../coding/algorithms/recursionAndBacktracking/WordSearch.java) | Array, String, Backtracking, Depth-First Search, Matrix |

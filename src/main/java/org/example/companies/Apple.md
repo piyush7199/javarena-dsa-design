@@ -52,3 +52,4 @@
 | 48 | MEDIUM | [Construct Binary Tree From Preorder And Inorder Traversal](https://leetcode.com/problems/construct-binary-tree-from-preorder-and-inorder-traversal) | [Solution](../coding/datastructures/binaryTree/ConstructTree.java) | Array, Hash Table, Divide and Conquer, Tree, Binary Tree |
 | 49 | MEDIUM | [Reverse Words In A String](https://leetcode.com/problems/reverse-words-in-a-string) | [Solution](../coding/datastructures/string/ReverseWords.java) | Two Pointers, String |
 | 50 | HARD | [Sudoku Solver](https://leetcode.com/problems/sudoku-solver) | [Solution](../coding/algorithms/recursionAndBacktracking/SudokuSolver.java) | Array, Hash Table, Backtracking, Matrix |
+| 51 | MEDIUM | [Word Search](https://leetcode.com/problems/word-search) | [Solution](../coding/algorithms/recursionAndBacktracking/WordSearch.java) | Array, String, Backtracking, Depth-First Search, Matrix |

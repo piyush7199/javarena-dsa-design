@@ -37,3 +37,4 @@
 | 33 | MEDIUM | [Word Break](https://leetcode.com/problems/word-break) | [Solution](../coding/algorithms/recursionAndBacktracking/WordBreak.java) | Array, Hash Table, String, Dynamic Programming, Trie, Memoization |
 | 34 | MEDIUM | [Construct Binary Tree From Inorder And Postorder Traversal](https://leetcode.com/problems/construct-binary-tree-from-inorder-and-postorder-traversal) | [Solution](../coding/datastructures/binaryTree/ConstructTree.java) | Array, Hash Table, Divide and Conquer, Tree, Binary Tree |
 | 35 | MEDIUM | [Reverse Words In A String](https://leetcode.com/problems/reverse-words-in-a-string) | [Solution](../coding/datastructures/string/ReverseWords.java) | Two Pointers, String |
+| 36 | MEDIUM | [Word Search](https://leetcode.com/problems/word-search) | [Solution](../coding/algorithms/recursionAndBacktracking/WordSearch.java) | Array, String, Backtracking, Depth-First Search, Matrix |

@@ -27,3 +27,4 @@
 | 23 | MEDIUM | [Cheapest Flights Within K Stops](https://leetcode.com/problems/cheapest-flights-within-k-stops) | [Solution](../coding/datastructures/graph/ShortestPathUsingDijkstra.java) | Dynamic Programming, Depth-First Search, Breadth-First Search, Graph, Heap (Priority Queue), Shortest Path |
 | 24 | MEDIUM | [Reverse Words In A String](https://leetcode.com/problems/reverse-words-in-a-string) | [Solution](../coding/datastructures/string/ReverseWords.java) | Two Pointers, String |
 | 25 | HARD | [Sudoku Solver](https://leetcode.com/problems/sudoku-solver) | [Solution](../coding/algorithms/recursionAndBacktracking/SudokuSolver.java) | Array, Hash Table, Backtracking, Matrix |
+| 26 | MEDIUM | [Word Search](https://leetcode.com/problems/word-search) | [Solution](../coding/algorithms/recursionAndBacktracking/WordSearch.java) | Array, String, Backtracking, Depth-First Search, Matrix |

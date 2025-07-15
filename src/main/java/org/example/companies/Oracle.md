@@ -46,3 +46,4 @@
 | 42 | MEDIUM | [Powx N](https://leetcode.com/problems/powx-n) | [Solution](../coding/algorithms/recursionAndBacktracking/MyPow.java) | Math, Recursion |
 | 43 | HARD | [N Queens](https://leetcode.com/problems/n-queens) | [Solution](../coding/algorithms/recursionAndBacktracking/NQueens.java) | Array, Backtracking |
 | 44 | HARD | [Sudoku Solver](https://leetcode.com/problems/sudoku-solver) | [Solution](../coding/algorithms/recursionAndBacktracking/SudokuSolver.java) | Array, Hash Table, Backtracking, Matrix |
+| 45 | MEDIUM | [Word Search](https://leetcode.com/problems/word-search) | [Solution](../coding/algorithms/recursionAndBacktracking/WordSearch.java) | Array, String, Backtracking, Depth-First Search, Matrix |

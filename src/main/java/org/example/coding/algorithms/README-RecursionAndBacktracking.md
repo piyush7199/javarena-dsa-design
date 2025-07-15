@@ -83,3 +83,4 @@ Complexity varies by problem, but general guidelines for recursion and backtrack
 | 3 | [Rat in a Maze Problem - I](https://www.geeksforgeeks.org/problems/rat-in-a-maze-problem/1) | [MazeProblems.java](./recursionAndBacktracking/MazeProblems.java)    |
 | 4 | [Word Break](https://leetcode.com/problems/word-break/)                                     | [RecursionWordBreak.java](./recursionAndBacktracking/WordBreak.java) |
 | 5 | [Sudoku Solver](https://leetcode.com/problems/sudoku-solver/)                               | [SudokuSolver.java](./recursionAndBacktracking/SudokuSolver.java)    |
+| 6 | [Word Search](https://leetcode.com/problems/word-search/)                                   | [WordSearch.java](recursionAndBacktracking/WordSearch.java)          |
