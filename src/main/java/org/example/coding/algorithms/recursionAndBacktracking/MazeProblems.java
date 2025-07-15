@@ -1,9 +1,9 @@
-package org.example.coding.algorithms;
+package org.example.coding.algorithms.recursionAndBacktracking;
 
 import java.util.ArrayList;
 import java.util.Collections;
 
-public class RecursionMazeProblems {
+public class MazeProblems {
 
     /**
      * Finds all possible paths for a rat to reach the destination in a maze.

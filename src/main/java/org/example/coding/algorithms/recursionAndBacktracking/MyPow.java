@@ -1,6 +1,6 @@
-package org.example.coding.algorithms;
+package org.example.coding.algorithms.recursionAndBacktracking;
 
-public class RecursionMyPow {
+public class MyPow {
 
 
     /**

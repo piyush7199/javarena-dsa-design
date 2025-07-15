@@ -1,9 +1,9 @@
-package org.example.coding.algorithms;
+package org.example.coding.algorithms.recursionAndBacktracking;
 
 import java.util.ArrayList;
 import java.util.List;
 
-public class RecursionNQueens {
+public class NQueens {
 
     /**
      * Solves the N-Queens problem and returns all valid board configurations.

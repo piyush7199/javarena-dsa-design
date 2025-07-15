@@ -1,11 +1,11 @@
-package org.example.coding.algorithms;
+package org.example.coding.algorithms.recursionAndBacktracking;
 
 import java.util.Arrays;
 import java.util.HashSet;
 import java.util.List;
 import java.util.Set;
 
-public class RecursionWordBreak {
+public class WordBreak {
 
     /**
      * Backtracking approach for the Word Break problem (inefficient for large inputs).
