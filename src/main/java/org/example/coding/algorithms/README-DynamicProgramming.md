@@ -79,7 +79,10 @@ function knapsack(values, weights, W):
 | 8  | [Geek's Training](https://www.geeksforgeeks.org/problems/geeks-training/1)                   | [DynamicProgramming2DMemorization.java](./DynamicProgramming2DMemorization.java), [DynamicProgramming2DTabulation.java](./DynamicProgramming2DTabulation.java) |
 | 9  | [Unique Paths](https://leetcode.com/problems/unique-paths/)                                  | [DynamicProgramming2DMemorization.java](./DynamicProgramming2DMemorization.java), [DynamicProgramming2DTabulation.java](./DynamicProgramming2DTabulation.java) |
 | 10 | [Unique Paths II](https://leetcode.com/problems/unique-paths-ii/)                            | [DynamicProgramming2DMemorization.java](./DynamicProgramming2DMemorization.java), [DynamicProgramming2DTabulation.java](./DynamicProgramming2DTabulation.java) |
-| 11 | [Word Break](https://leetcode.com/problems/word-break/)                                      | [RecursionWordBreak.java](./RecursionWordBreak.java)                                                                                                           |
+| 11 | [Word Break](https://leetcode.com/problems/word-break/)                                      | [WordBreak.java](./recursionAndBacktracking/WordBreak.java)                                                                                                    |
+| 12 | [Minimum Path Sum](https://leetcode.com/problems/minimum-path-sum/)                          | [MinPathSum.java](./dynamicProgramming/MinPathSum.java)                                                                                                        |
+| 13 | [Minimum Falling Path Sum](https://leetcode.com/problems/minimum-falling-path-sum/)          | [MinPathSum.java](./dynamicProgramming/MinPathSum.java)                                                                                                        |
+| 14 | [Triangle](https://leetcode.com/problems/triangle/)                                          | [TrianglePathSum.java](./dynamicProgramming/TrianglePathSum.java)                                                                                              |
 
 ---
 
