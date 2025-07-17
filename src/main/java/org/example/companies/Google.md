@@ -61,3 +61,4 @@
 | 57 | MEDIUM | [Reverse Words In A String](https://leetcode.com/problems/reverse-words-in-a-string) | [Solution](../coding/datastructures/string/ReverseWords.java) | Two Pointers, String |
 | 58 | HARD | [Sudoku Solver](https://leetcode.com/problems/sudoku-solver) | [Solution](../coding/algorithms/recursionAndBacktracking/SudokuSolver.java) | Array, Hash Table, Backtracking, Matrix |
 | 59 | MEDIUM | [Minimum Falling Path Sum](https://leetcode.com/problems/minimum-falling-path-sum) | [Solution](../coding/algorithms/dynamicProgramming/MinFallingPathSum.java) | Array, Dynamic Programming, Matrix |
+| 60 | MEDIUM | [Insert Interval](https://leetcode.com/problems/insert-interval) | [Solution](../coding/algorithms/greedy/InsertInterval.java) | Array |

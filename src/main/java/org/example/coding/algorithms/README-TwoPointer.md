@@ -139,9 +139,11 @@ function removeDuplicates(nums):
 
 ## 🧪 Practice Problems
 
-| # | Problem                                                                                 | Solution                                   |
-|---|-----------------------------------------------------------------------------------------|--------------------------------------------|
-| 1 | [The Celebrity Problem](https://www.geeksforgeeks.org/problems/the-celebrity-problem/1) | [TwoPointer.java](./TwoPointer.java)       |
-| 2 | [3Sum](https://leetcode.com/problems/3sum/)                                             | [TwoPointerSum.java](./TwoPointerSum.java) |
-| 3 | [4Sum](https://leetcode.com/problems/4sum/)                                             | [TwoPointerSum.java](./TwoPointerSum.java) |
-| 4 | [Merge Sorted Array](https://leetcode.com/problems/merge-sorted-array/)                 | [TwoPointer.java](./TwoPointer.java)       |
+| # | Problem                                                                                                                     | Solution                                                                    |
+|---|-----------------------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------|
+| 1 | [The Celebrity Problem](https://www.geeksforgeeks.org/problems/the-celebrity-problem/1)                                     | [TwoPointer.java](./TwoPointer.java)                                        |
+| 2 | [3Sum](https://leetcode.com/problems/3sum/)                                                                                 | [TwoPointerSum.java](./TwoPointerSum.java)                                  |
+| 3 | [4Sum](https://leetcode.com/problems/4sum/)                                                                                 | [TwoPointerSum.java](./TwoPointerSum.java)                                  |
+| 4 | [Merge Sorted Array](https://leetcode.com/problems/merge-sorted-array/)                                                     | [TwoPointer.java](./TwoPointer.java)                                        |
+| 5 | [Longest Substring with K Uniques](https://www.geeksforgeeks.org/problems/longest-k-unique-characters-substring0853/1)      | [LongestSubstring.java](./twoPointerAndSlidingWindow/LongestSubstring.java) |
+| 6 | [Longest Substring with At Most K Distinct Characters](https://www.naukri.com/code360/problems/distinct-characters_2221410) | [LongestSubstring.java](./twoPointerAndSlidingWindow/LongestSubstring.java) |
