@@ -18,6 +18,7 @@ levels, and more, with theory, practical examples, and interview-style problems.
 - [Isolation Level](./concepts/isolation_levels.md)
 - [Cache](./concepts/cache.md)
 - [Networks & Communication](./concepts/networks.md)
+- [Rate Limit](./concepts/rate-limiting.md)
 
 ---
 

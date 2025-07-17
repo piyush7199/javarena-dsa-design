@@ -121,6 +121,7 @@ Each file contains:
 - [Isolation Level](./src/main/java/org/example/hld/concepts/isolation_levels.md)
 - [Cache](./src/main/java/org/example/hld/concepts/cache.md)
 - [Networks & Communication](./src/main/java/org/example/hld/concepts/networks.md)
+- [Rate Limit](./src/main/java/org/example/hld/concepts/rate-limiting.md)
 
 | # | System         | Status         | Description                   |
 |---|----------------|----------------|-------------------------------|
