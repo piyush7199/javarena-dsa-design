@@ -10,3 +10,4 @@
 | 6 | MEDIUM | [Rotting Oranges](https://leetcode.com/problems/rotting-oranges) | [Solution](../coding/datastructures/graph/BFSSolution.java) | Array, Breadth-First Search, Matrix |
 | 7 | MEDIUM | [Course Schedule](https://leetcode.com/problems/course-schedule) | [Solution](../coding/datastructures/graph/TopologicalSorting.java) | Depth-First Search, Breadth-First Search, Graph, Topological Sort |
 | 8 | MEDIUM | [Unique Paths](https://leetcode.com/problems/unique-paths) | [Solution](../coding/algorithms/DynamicProgramming2DTabulation.java) | Math, Dynamic Programming, Combinatorics |
+| 9 | MEDIUM | [Count Number Of Nice Subarrays](https://leetcode.com/problems/count-number-of-nice-subarrays) | [Solution](../coding/algorithms/twoPointerAndSlidingWindow/NiceArray.java) | Array, Hash Table, Math, Sliding Window, Prefix Sum |
