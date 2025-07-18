@@ -16,3 +16,4 @@
 | 12 | EASY | [Palindrome Linked List](https://leetcode.com/problems/palindrome-linked-list) | [Solution](../coding/datastructures/linkedList/LinkedList.java) | Linked List, Two Pointers, Stack, Recursion |
 | 13 | MEDIUM | [Reverse Words In A String](https://leetcode.com/problems/reverse-words-in-a-string) | [Solution](../coding/datastructures/string/ReverseWords.java) | Two Pointers, String |
 | 14 | MEDIUM | [Word Search](https://leetcode.com/problems/word-search) | [Solution](../coding/algorithms/recursionAndBacktracking/WordSearch.java) | Array, String, Backtracking, Depth-First Search, Matrix |
+| 15 | HARD | [Subarrays With K Different Integers](https://leetcode.com/problems/subarrays-with-k-different-integers) | [Solution](../coding/algorithms/twoPointerAndSlidingWindow/SubarrayWithKDifferentInteger.java) | Array, Hash Table, Sliding Window, Counting |
