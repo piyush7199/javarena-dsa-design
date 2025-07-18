@@ -34,3 +34,4 @@
 | 30 | MEDIUM | [Construct Binary Tree From Preorder And Inorder Traversal](https://leetcode.com/problems/construct-binary-tree-from-preorder-and-inorder-traversal) | [Solution](../coding/datastructures/binaryTree/ConstructTree.java) | Array, Hash Table, Divide and Conquer, Tree, Binary Tree |
 | 31 | MEDIUM | [Word Search](https://leetcode.com/problems/word-search) | [Solution](../coding/algorithms/recursionAndBacktracking/WordSearch.java) | Array, String, Backtracking, Depth-First Search, Matrix |
 | 32 | MEDIUM | [Triangle](https://leetcode.com/problems/triangle) | [Solution](../coding/algorithms/dynamicProgramming/TrianglePathSum.java) | Array, Dynamic Programming |
+| 33 | HARD | [Minimum Window Substring](https://leetcode.com/problems/minimum-window-substring) | [Solution](../coding/algorithms/twoPointerAndSlidingWindow/MinimumWindowSubstring.java) | Hash Table, String, Sliding Window |

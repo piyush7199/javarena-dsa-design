@@ -34,3 +34,4 @@
 | 30 | MEDIUM | [Lowest Common Ancestor Of A Binary Tree](https://leetcode.com/problems/lowest-common-ancestor-of-a-binary-tree) | [Solution](../coding/datastructures/binaryTree/Solutions.java) | Tree, Depth-First Search, Binary Tree |
 | 31 | MEDIUM | [Powx N](https://leetcode.com/problems/powx-n) | [Solution](../coding/algorithms/recursionAndBacktracking/MyPow.java) | Math, Recursion |
 | 32 | MEDIUM | [Insert Interval](https://leetcode.com/problems/insert-interval) | [Solution](../coding/algorithms/greedy/InsertInterval.java) | Array |
+| 33 | HARD | [Minimum Window Substring](https://leetcode.com/problems/minimum-window-substring) | [Solution](../coding/algorithms/twoPointerAndSlidingWindow/MinimumWindowSubstring.java) | Hash Table, String, Sliding Window |

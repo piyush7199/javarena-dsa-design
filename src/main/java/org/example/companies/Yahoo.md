@@ -43,3 +43,4 @@
 | 39 | MEDIUM | [Construct Binary Tree From Preorder And Inorder Traversal](https://leetcode.com/problems/construct-binary-tree-from-preorder-and-inorder-traversal) | [Solution](../coding/datastructures/binaryTree/ConstructTree.java) | Array, Hash Table, Divide and Conquer, Tree, Binary Tree |
 | 40 | HARD | [Sudoku Solver](https://leetcode.com/problems/sudoku-solver) | [Solution](../coding/algorithms/recursionAndBacktracking/SudokuSolver.java) | Array, Hash Table, Backtracking, Matrix |
 | 41 | MEDIUM | [Insert Interval](https://leetcode.com/problems/insert-interval) | [Solution](../coding/algorithms/greedy/InsertInterval.java) | Array |
+| 42 | HARD | [Minimum Window Substring](https://leetcode.com/problems/minimum-window-substring) | [Solution](../coding/algorithms/twoPointerAndSlidingWindow/MinimumWindowSubstring.java) | Hash Table, String, Sliding Window |

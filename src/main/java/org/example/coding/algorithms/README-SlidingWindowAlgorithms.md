@@ -69,9 +69,10 @@ function longestSubstringWithKDistinct(s, k):
 
 ## 🪟 Sliding Window Algorithm
 
-| # | Problem                                                                                                                                                         | Solution                                   | Companies   |
-|---|-----------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------|-------------|
-| 1 | [Shortest and Lexicographically Smallest Beautiful String](https://leetcode.com/problems/shortest-and-lexicographically-smallest-beautiful-string/description/) | [SlidingWindow.java](./SlidingWindow.java) |             |
-| 2 | [Longest Substring Without Repeating Characters](https://leetcode.com/problems/longest-substring-without-repeating-characters/description/)                     | [SlidingWindow.java](./SlidingWindow.java) | `Microsoft` |
-| 3 | [Max Consecutive Ones III](https://leetcode.com/problems/max-consecutive-ones-iii/description/)                                                                 | [SlidingWindow.java](./SlidingWindow.java) |             |
-| 4 | [Fruit Into Baskets](https://leetcode.com/problems/fruit-into-baskets/description/)                                                                             | [SlidingWindow.java](./SlidingWindow.java) |             |
+| # | Problem                                                                                                                                                         | Solution                                                                                |
+|---|-----------------------------------------------------------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------|
+| 1 | [Shortest and Lexicographically Smallest Beautiful String](https://leetcode.com/problems/shortest-and-lexicographically-smallest-beautiful-string/description/) | [SlidingWindow.java](./SlidingWindow.java)                                              |
+| 2 | [Longest Substring Without Repeating Characters](https://leetcode.com/problems/longest-substring-without-repeating-characters/description/)                     | [SlidingWindow.java](./SlidingWindow.java)                                              |
+| 3 | [Max Consecutive Ones III](https://leetcode.com/problems/max-consecutive-ones-iii/description/)                                                                 | [SlidingWindow.java](./SlidingWindow.java)                                              |
+| 4 | [Fruit Into Baskets](https://leetcode.com/problems/fruit-into-baskets/description/)                                                                             | [SlidingWindow.java](./SlidingWindow.java)                                              |
+| 5 | [Minimum Window Substring](https://leetcode.com/problems/minimum-window-substring/)                                                                             | [MinimumWindowSubstring.java](./twoPointerAndSlidingWindow/MinimumWindowSubstring.java) |

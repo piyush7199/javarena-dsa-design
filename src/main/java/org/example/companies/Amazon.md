@@ -61,3 +61,4 @@
 | 57 | MEDIUM | [Word Search](https://leetcode.com/problems/word-search) | [Solution](../coding/algorithms/recursionAndBacktracking/WordSearch.java) | Array, String, Backtracking, Depth-First Search, Matrix |
 | 58 | MEDIUM | [Triangle](https://leetcode.com/problems/triangle) | [Solution](../coding/algorithms/dynamicProgramming/TrianglePathSum.java) | Array, Dynamic Programming |
 | 59 | MEDIUM | [Insert Interval](https://leetcode.com/problems/insert-interval) | [Solution](../coding/algorithms/greedy/InsertInterval.java) | Array |
+| 60 | HARD | [Minimum Window Substring](https://leetcode.com/problems/minimum-window-substring) | [Solution](../coding/algorithms/twoPointerAndSlidingWindow/MinimumWindowSubstring.java) | Hash Table, String, Sliding Window |
