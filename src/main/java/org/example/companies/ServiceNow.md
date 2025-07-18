@@ -36,3 +36,4 @@
 | 32 | EASY | [Palindrome Linked List](https://leetcode.com/problems/palindrome-linked-list) | [Solution](../coding/datastructures/linkedList/LinkedList.java) | Linked List, Two Pointers, Stack, Recursion |
 | 33 | MEDIUM | [Amount Of Time For Binary Tree To Be Infected](https://leetcode.com/problems/amount-of-time-for-binary-tree-to-be-infected) | [Solution](../coding/datastructures/binaryTree/Solutions.java) | Hash Table, Tree, Depth-First Search, Breadth-First Search, Binary Tree |
 | 34 | MEDIUM | [Powx N](https://leetcode.com/problems/powx-n) | [Solution](../coding/algorithms/recursionAndBacktracking/MyPow.java) | Math, Recursion |
+| 35 | MEDIUM | [Letter Combinations Of A Phone Number](https://leetcode.com/problems/letter-combinations-of-a-phone-number) | [Solution](../coding/algorithms/recursionAndBacktracking/LetterCombination.java) | Hash Table, String, Backtracking |

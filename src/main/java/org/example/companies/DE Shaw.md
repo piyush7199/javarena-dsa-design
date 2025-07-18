@@ -20,3 +20,4 @@
 | 16 | MEDIUM | [Triangle](https://leetcode.com/problems/triangle) | [Solution](../coding/algorithms/dynamicProgramming/TrianglePathSum.java) | Array, Dynamic Programming |
 | 17 | MEDIUM | [Maximum Points You Can Obtain From Cards](https://leetcode.com/problems/maximum-points-you-can-obtain-from-cards) | [Solution](../coding/algorithms/twoPointerAndSlidingWindow/MaxPoints.java) | Array, Sliding Window, Prefix Sum |
 | 18 | MEDIUM | [Number Of Substrings Containing All Three Characters](https://leetcode.com/problems/number-of-substrings-containing-all-three-characters) | [Solution](../coding/algorithms/twoPointerAndSlidingWindow/CountSubstrings.java) | Hash Table, String, Sliding Window |
+| 19 | MEDIUM | [Letter Combinations Of A Phone Number](https://leetcode.com/problems/letter-combinations-of-a-phone-number) | [Solution](../coding/algorithms/recursionAndBacktracking/LetterCombination.java) | Hash Table, String, Backtracking |

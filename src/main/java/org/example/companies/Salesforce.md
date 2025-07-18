@@ -35,3 +35,4 @@
 | 31 | MEDIUM | [Word Search](https://leetcode.com/problems/word-search) | [Solution](../coding/algorithms/recursionAndBacktracking/WordSearch.java) | Array, String, Backtracking, Depth-First Search, Matrix |
 | 32 | MEDIUM | [Triangle](https://leetcode.com/problems/triangle) | [Solution](../coding/algorithms/dynamicProgramming/TrianglePathSum.java) | Array, Dynamic Programming |
 | 33 | HARD | [Minimum Window Substring](https://leetcode.com/problems/minimum-window-substring) | [Solution](../coding/algorithms/twoPointerAndSlidingWindow/MinimumWindowSubstring.java) | Hash Table, String, Sliding Window |
+| 34 | MEDIUM | [Letter Combinations Of A Phone Number](https://leetcode.com/problems/letter-combinations-of-a-phone-number) | [Solution](../coding/algorithms/recursionAndBacktracking/LetterCombination.java) | Hash Table, String, Backtracking |

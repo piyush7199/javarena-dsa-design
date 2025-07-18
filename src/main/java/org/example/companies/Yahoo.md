@@ -44,3 +44,4 @@
 | 40 | HARD | [Sudoku Solver](https://leetcode.com/problems/sudoku-solver) | [Solution](../coding/algorithms/recursionAndBacktracking/SudokuSolver.java) | Array, Hash Table, Backtracking, Matrix |
 | 41 | MEDIUM | [Insert Interval](https://leetcode.com/problems/insert-interval) | [Solution](../coding/algorithms/greedy/InsertInterval.java) | Array |
 | 42 | HARD | [Minimum Window Substring](https://leetcode.com/problems/minimum-window-substring) | [Solution](../coding/algorithms/twoPointerAndSlidingWindow/MinimumWindowSubstring.java) | Hash Table, String, Sliding Window |
+| 43 | MEDIUM | [Letter Combinations Of A Phone Number](https://leetcode.com/problems/letter-combinations-of-a-phone-number) | [Solution](../coding/algorithms/recursionAndBacktracking/LetterCombination.java) | Hash Table, String, Backtracking |

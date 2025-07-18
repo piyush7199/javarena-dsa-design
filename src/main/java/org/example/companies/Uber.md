@@ -52,3 +52,4 @@
 | 48 | MEDIUM | [Insert Interval](https://leetcode.com/problems/insert-interval) | [Solution](../coding/algorithms/greedy/InsertInterval.java) | Array |
 | 49 | HARD | [Minimum Window Substring](https://leetcode.com/problems/minimum-window-substring) | [Solution](../coding/algorithms/twoPointerAndSlidingWindow/MinimumWindowSubstring.java) | Hash Table, String, Sliding Window |
 | 50 | MEDIUM | [Maximum Points You Can Obtain From Cards](https://leetcode.com/problems/maximum-points-you-can-obtain-from-cards) | [Solution](../coding/algorithms/twoPointerAndSlidingWindow/MaxPoints.java) | Array, Sliding Window, Prefix Sum |
+| 51 | MEDIUM | [Letter Combinations Of A Phone Number](https://leetcode.com/problems/letter-combinations-of-a-phone-number) | [Solution](../coding/algorithms/recursionAndBacktracking/LetterCombination.java) | Hash Table, String, Backtracking |

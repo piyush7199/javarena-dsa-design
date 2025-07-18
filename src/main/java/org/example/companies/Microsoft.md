@@ -66,3 +66,4 @@
 | 62 | MEDIUM | [Insert Interval](https://leetcode.com/problems/insert-interval) | [Solution](../coding/algorithms/greedy/InsertInterval.java) | Array |
 | 63 | MEDIUM | [Longest Substring With At Most K Distinct Characters](https://leetcode.com/problems/longest-substring-with-at-most-k-distinct-characters) | [Solution](../coding/algorithms/twoPointerAndSlidingWindow/LongestSubstring.java) | Hash Table, String, Sliding Window |
 | 64 | HARD | [Minimum Window Substring](https://leetcode.com/problems/minimum-window-substring) | [Solution](../coding/algorithms/twoPointerAndSlidingWindow/MinimumWindowSubstring.java) | Hash Table, String, Sliding Window |
+| 65 | MEDIUM | [Letter Combinations Of A Phone Number](https://leetcode.com/problems/letter-combinations-of-a-phone-number) | [Solution](../coding/algorithms/recursionAndBacktracking/LetterCombination.java) | Hash Table, String, Backtracking |
