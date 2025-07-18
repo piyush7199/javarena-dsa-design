@@ -18,3 +18,4 @@ programming. Each category includes Java implementations and curated problems fr
 - [🛤️ Dijkstra's algorithm](README-Graph-DijkstraAlgorithm.md)
 - [🌐 Disjoint Set (Union-Find)](README-Graph-Disjoint-Set.md)
 - [🔄 Recursion and Backtracking](README-RecursionAndBacktracking.md)
+- [🌳 Minimum Spanning Tree](README-Graph-MST.md)
