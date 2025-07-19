@@ -83,6 +83,8 @@ function knapsack(values, weights, W):
 | 12 | [Minimum Path Sum](https://leetcode.com/problems/minimum-path-sum/)                          | [MinPathSum.java](./dynamicProgramming/MinPathSum.java)                                                                                                        |
 | 13 | [Minimum Falling Path Sum](https://leetcode.com/problems/minimum-falling-path-sum/)          | [MinPathSum.java](./dynamicProgramming/MinPathSum.java)                                                                                                        |
 | 14 | [Triangle](https://leetcode.com/problems/triangle/)                                          | [TrianglePathSum.java](./dynamicProgramming/TrianglePathSum.java)                                                                                              |
+| 15 | [Partition Equal Subset Sum](https://leetcode.com/problems/partition-equal-subset-sum)       | [EqualSumPartition.java](./dynamicProgramming/EqualSumPartition.java)                                                                                          |
+| 16 | [Target Sum](https://leetcode.com/problems/target-sum)                                       | [TargetSum.java](./dynamicProgramming/TargetSum.java)                                                                                                          |
 
 ---
 
