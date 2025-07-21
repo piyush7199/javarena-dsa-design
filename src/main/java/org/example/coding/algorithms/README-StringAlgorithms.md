@@ -66,6 +66,8 @@ matching after a mismatch. Use this to skip redundant comparisons in the text.
     - O(m) for the LPS array.
     - Total: O(m).
 
+> Java Implementation - [KMPSearch.java](./string/KMPSearch.java)
+
 ```
 function kmpSearch(text, pattern):
     # Input: text (string), pattern (string)
@@ -126,6 +128,8 @@ verify character-by-character to avoid collisions.
 - **Space Complexity**:
     - O(1) for hash values and temporary variables.
     - Total: O(1).
+
+> Java Implementation - [RobinKarpSearch.java](./string/RobinKarpSearch.java)
 
 ```
 function rabinKarpSearch(text, pattern, d, q):
