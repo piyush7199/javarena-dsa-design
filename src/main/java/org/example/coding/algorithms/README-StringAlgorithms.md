@@ -160,3 +160,14 @@ function rabinKarpSearch(text, pattern, d, q):
                 t += q
     return -1
 ```
+
+---
+
+## 🧪 Practice Problems
+
+| # | Problem                                                                                         | Solution                                                      |
+|---|-------------------------------------------------------------------------------------------------|---------------------------------------------------------------|
+| 1 | [KMP Search](https://leetcode.com/problems/find-the-index-of-the-first-occurrence-in-a-string/) | [KMPSearch.java](./string/KMPSearch.java)                     |
+| 2 | [Search Pattern (KMP-Algorithm)](https://www.geeksforgeeks.org/problems/search-pattern0205/1)   | [FindPatternsIndexes.java](./string/FindPatternsIndexes.java) |
+| 3 | [Repeated String Match](https://leetcode.com/problems/repeated-string-match/)                   | [RepeatedStringMatch.java](./string/RepeatedStringMatch.java) |
+| 4 | [Shortest Palindrome](https://leetcode.com/problems/shortest-palindrome/)                       | [ShortestPalindrome.java](./string/ShortestPalindrome.java)   |
