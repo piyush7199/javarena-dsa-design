@@ -40,3 +40,4 @@
 | 36 | MEDIUM | [Word Search](https://leetcode.com/problems/word-search) | [Solution](../coding/algorithms/recursionAndBacktracking/WordSearch.java) | Array, String, Backtracking, Depth-First Search, Matrix |
 | 37 | HARD | [Minimum Window Substring](https://leetcode.com/problems/minimum-window-substring) | [Solution](../coding/algorithms/twoPointerAndSlidingWindow/MinimumWindowSubstring.java) | Hash Table, String, Sliding Window |
 | 38 | MEDIUM | [Count Number Of Nice Subarrays](https://leetcode.com/problems/count-number-of-nice-subarrays) | [Solution](../coding/algorithms/twoPointerAndSlidingWindow/NiceArray.java) | Array, Hash Table, Math, Sliding Window, Prefix Sum |
+| 39 | MEDIUM | [Minimum Add To Make Parentheses Valid](https://leetcode.com/problems/minimum-add-to-make-parentheses-valid) | [Solution](../coding/datastructures/string/AddParentheses.java) | String, Stack, Greedy |

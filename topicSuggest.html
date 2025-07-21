@@ -1,0 +1,646 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>System Design Topic Suggester</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f0f4f8; /* Light blue-gray background */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            margin: 0;
+            padding: 20px;
+            box-sizing: border-box;
+        }
+        .container {
+            background-color: #ffffff;
+            border-radius: 1.5rem; /* More rounded corners */
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+            padding: 2.5rem;
+            max-width: 800px; /* Increased max-width for more content */
+            width: 100%;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            gap: 1.5rem;
+        }
+        .difficulty-filters {
+            display: flex;
+            justify-content: center;
+            gap: 1.5rem;
+            margin-bottom: 1.5rem;
+            flex-wrap: wrap;
+        }
+        .difficulty-filters label {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            font-weight: 600;
+            color: #4a5568;
+            cursor: pointer;
+        }
+        .difficulty-filters input[type="checkbox"] {
+            -webkit-appearance: none;
+            -moz-appearance: none;
+            appearance: none;
+            width: 1.25rem;
+            height: 1.25rem;
+            border: 2px solid #a7b1ee;
+            border-radius: 0.375rem; /* rounded-md */
+            background-color: #fff;
+            transition: all 0.2s ease;
+            cursor: pointer;
+        }
+        .difficulty-filters input[type="checkbox"]:checked {
+            background-color: #4c51bf;
+            border-color: #4c51bf;
+            position: relative;
+        }
+        .difficulty-filters input[type="checkbox"]:checked::after {
+            content: '✔';
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            color: white;
+            font-size: 0.8rem;
+        }
+
+        .topic-display {
+            min-height: 80px; /* Ensure space even if content is short */
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start; /* Align content to start */
+            align-items: flex-start; /* Align content to start */
+            background-color: #e2e8f0; /* Lighter gray for display area */
+            border-radius: 0.75rem;
+            padding: 1.5rem;
+            font-size: 1rem; /* Slightly smaller font for lists */
+            font-weight: 400;
+            color: #2d3748; /* Darker text */
+            transition: all 0.3s ease-in-out;
+            text-shadow: 1px 1px 2px rgba(0,0,0,0.02);
+            line-height: 1.6; /* Improved line spacing for readability */
+            text-align: left; /* Ensure text aligns left */
+            overflow-y: auto; /* Add scroll for long lists */
+            max-height: 60vh; /* Limit height and enable scrolling */
+        }
+        .category-section {
+            margin-bottom: 1.5rem;
+            width: 100%;
+        }
+        .category-title {
+            font-size: 1.4rem; /* Larger title for categories */
+            font-weight: 700;
+            color: #4c51bf; /* Purple title */
+            margin-bottom: 0.75rem;
+            border-bottom: 2px solid #a7b1ee; /* Underline for categories */
+            padding-bottom: 0.5rem;
+        }
+        .topic-list {
+            list-style: none; /* Remove default bullet points for custom layout */
+            margin-left: 0;
+            padding: 0;
+        }
+        .topic-list li {
+            margin-bottom: 0.4rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap; /* Allow wrapping for small screens */
+            padding-left: 1.5rem; /* Indent for visual consistency */
+            position: relative;
+        }
+        .topic-list li::before {
+            content: '•'; /* Custom bullet point */
+            position: absolute;
+            left: 0;
+            color: #4c51bf;
+            font-size: 1.2em;
+            line-height: 1;
+        }
+        .topic-text {
+            flex-grow: 1;
+            margin-right: 10px; /* Space between text and buttons */
+        }
+        .topic-buttons {
+            display: flex;
+            gap: 8px; /* Space between buttons */
+            margin-top: 5px; /* Space above buttons on wrap */
+        }
+        .topic-buttons button {
+            padding: 0.3rem 0.6rem;
+            border-radius: 0.5rem;
+            font-size: 0.8rem;
+            font-weight: 600;
+            cursor: pointer;
+            border: 1px solid #a7b1ee;
+            background-color: #e0e7ff; /* Light purple background */
+            color: #4c51bf; /* Dark purple text */
+            transition: background-color 0.2s ease, transform 0.1s ease;
+        }
+        .topic-buttons button:hover {
+            background-color: #c3ccf9; /* Slightly darker on hover */
+            transform: translateY(-1px);
+        }
+        .topic-buttons button:active {
+            transform: translateY(0);
+        }
+
+        /* Modal Styles */
+        .modal-overlay {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.6);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            z-index: 1000;
+            opacity: 0;
+            visibility: hidden;
+            transition: opacity 0.3s ease, visibility 0.3s ease;
+        }
+        .modal-overlay.show {
+            opacity: 1;
+            visibility: visible;
+        }
+        .modal-content {
+            background-color: #ffffff;
+            border-radius: 1rem;
+            padding: 2rem;
+            max-width: 600px;
+            width: 90%;
+            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
+            position: relative;
+            transform: translateY(-20px);
+            transition: transform 0.3s ease;
+        }
+        .modal-overlay.show .modal-content {
+            transform: translateY(0);
+        }
+        .modal-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 1.5rem;
+            border-bottom: 1px solid #e2e8f0;
+            padding-bottom: 1rem;
+        }
+        .modal-title {
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: #2d3748;
+        }
+        .modal-close-button {
+            background: none;
+            border: none;
+            font-size: 1.8rem;
+            cursor: pointer;
+            color: #718096;
+            transition: color 0.2s ease;
+        }
+        .modal-close-button:hover {
+            color: #4a5568;
+        }
+        .modal-body {
+            font-size: 1rem;
+            color: #4a5568;
+            line-height: 1.6;
+            text-align: left;
+            max-height: 40vh; /* Limit height of modal body */
+            overflow-y: auto; /* Enable scrolling for long content */
+            padding-right: 10px; /* Space for scrollbar */
+        }
+        .loading-spinner {
+            border: 4px solid #f3f3f3;
+            border-top: 4px solid #4c51bf;
+            border-radius: 50%;
+            width: 30px;
+            height: 30px;
+            animation: spin 1s linear infinite;
+            margin: 20px auto;
+        }
+        @keyframes spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+    <h1 class="text-3xl font-bold text-gray-800 mb-4">Study Topic Suggester</h1>
+    <p class="text-gray-600 mb-6">Select difficulty levels and click 'Suggest New Topics' to get random topics from each
+        category. Use the buttons to get explanations or interview questions!</p>
+
+    <div class="difficulty-filters">
+        <label>
+            <input type="checkbox" id="difficultyBeginner" value="Beginner" checked> Beginner
+        </label>
+        <label>
+            <input type="checkbox" id="difficultyIntermediate" value="Intermediate" checked> Intermediate
+        </label>
+        <label>
+            <input type="checkbox" id="difficultyAdvanced" value="Advanced" checked> Advanced
+        </label>
+    </div>
+
+    <div id="topicDisplay" class="topic-display">
+        <!-- Suggested topics will be displayed here by JavaScript -->
+    </div>
+
+    <button id="suggestButton" class="suggest-button">
+        Suggest New Topics
+    </button>
+</div>
+
+<!-- Modal Structure -->
+<div id="geminiModal" class="modal-overlay">
+    <div class="modal-content">
+        <div class="modal-header">
+            <h2 id="modalTitle" class="modal-title"></h2>
+            <button id="modalCloseButton" class="modal-close-button">&times;</button>
+        </div>
+        <div id="modalBody" class="modal-body">
+            <!-- Content will be loaded here -->
+        </div>
+    </div>
+</div>
+
+<script>
+    // Define comprehensive lists of topics for each category with difficulty levels
+    const topics = {
+    dsa: [
+        { name: "Arrays (Dynamic, Static, Multi-dimensional, Sparse Arrays)", difficulty: "Beginner" },
+        { name: "Linked Lists (Singly, Doubly, Circular, Skip Lists, XOR Linked Lists)", difficulty: "Beginner" },
+        { name: "Stacks (Array, Linked List based, Min/Max Stack)", difficulty: "Beginner" },
+        { name: "Queues (Array, Linked List based, Circular, Deque, Priority Queue, Monotonic Queue)", difficulty: "Beginner" },
+        { name: "Trees (Binary Tree, Binary Search Tree (BST), AVL Trees, Red-Black Trees)", difficulty: "Intermediate" },
+        { name: "Trees (B-Trees, B+ Trees, Trie (Prefix Tree))", difficulty: "Advanced" },
+        { name: "Trees (Segment Trees, Fenwick Trees/BIT, Suffix Trees, Suffix Arrays, K-D Trees, Treaps)", difficulty: "Advanced" },
+        { name: "Heaps (Min-Heap, Max-Heap)", difficulty: "Beginner" },
+        { name: "Hash Tables (Hashing functions, Collision Resolution: Chaining, Open Addressing, Load Factor)", difficulty: "Intermediate" },
+        { name: "Hash Tables (Cuckoo Hashing, Universal Hashing)", difficulty: "Advanced" },
+        { name: "Graphs (Adjacency Matrix/List, Directed/Undirected, Weighted/Unweighted, Spanning Trees)", difficulty: "Intermediate" },
+        { name: "Graphs (Bipartite Graphs, Eulerian/Hamiltonian Paths)", difficulty: "Advanced" },
+        { name: "Disjoint Set Union (DSU) with Path Compression & Union by Rank/Size)", difficulty: "Intermediate" },
+        { name: "Advanced Data Structures (Bloom Filters, LRU Cache, LFU Cache)", difficulty: "Intermediate" },
+        { name: "Advanced Data Structures (Fibonacci Heap, Splay Tree)", difficulty: "Advanced" },
+        { name: "Amortized Analysis (Concept)", difficulty: "Advanced" },
+        { name: "Mathematics (Prefix Sum, Sieve of Eratosthenes, Fast Exponentiation, GCD with Extended Euclidean)", difficulty: "Intermediate" },
+        { name: "Matrix Algorithms (Transpose, Rotate, Prefix Matrix, Binary Search in Matrix)", difficulty: "Beginner" },
+        { name: "Interval Trees", difficulty: "Advanced" }, // New
+        { name: "Persistent Data Structures (Persistent Segment Trees, Persistent Trie)", difficulty: "Advanced" }, // New
+        { name: "Rolling Hash (Polynomial Hashing for Strings)", difficulty: "Intermediate" }, // New
+    ],
+    algorithms: [
+        { name: "Meet in the Middle (Subset sum variations)", difficulty: "Advanced" },
+        { name: "Heavy-Light Decomposition", difficulty: "Advanced" },
+        { name: "Sorting Algorithms (Merge Sort, Quick Sort, Heap Sort)", difficulty: "Beginner" },
+        { name: "Sorting Algorithms (Counting Sort, Radix Sort, Bucket Sort, External Sorting)", difficulty: "Intermediate" },
+        { name: "Searching Algorithms (Binary Search, Ternary Search, Interpolation Search, Exponential Search)", difficulty: "Beginner" },
+        { name: "Recursion & Backtracking (N-Queens, Sudoku Solver, Permutations, Combinations, Subset Sum)", difficulty: "Intermediate" },
+        { name: "Dynamic Programming (Memoization, Tabulation, Space Optimization, Common problems like Knapsack, Longest Common Subsequence, Edit Distance, Coin Change)", difficulty: "Intermediate" },
+        { name: "Dynamic Programming (Matrix Chain Multiplication, Advanced DP problems)", difficulty: "Advanced" },
+        { name: "Greedy Algorithms (Activity Selection, Huffman Coding)", difficulty: "Beginner" },
+        { name: "Graph Traversal (BFS, DFS, Cycle Detection, Connected Components)", difficulty: "Beginner" },
+        { name: "Graph Traversal (Strong/Weakly Connected Components)", difficulty: "Intermediate" },
+        { name: "Shortest Path Algorithms (Dijkstra's, Bellman-Ford, Floyd-Warshall)", difficulty: "Intermediate" },
+        { name: "Shortest Path Algorithms (SPFA, A* Search)", difficulty: "Advanced" },
+        { name: "Minimum Spanning Tree (Prim's, Kruskal's)", difficulty: "Intermediate" },
+        { name: "Topological Sort (Kahn's Algorithm, DFS-based)", difficulty: "Intermediate" },
+        { name: "String Algorithms (KMP, Rabin-Karp, Z-algorithm)", difficulty: "Intermediate" },
+        { name: "String Algorithms (Manacher's Algorithm, Boyer-Moore)", difficulty: "Advanced" },
+        { name: "Bit Manipulation (Common tricks, powers of 2, XOR properties, Bitmasks)", difficulty: "Beginner" },
+        { name: "Divide and Conquer (Master Theorem, Karatsuba Algorithm, Strassen's Algorithm)", difficulty: "Intermediate" },
+        { name: "Network Flow (Max Flow Min Cut Theorem, Ford-Fulkerson, Edmonds-Karp)", difficulty: "Advanced" },
+        { name: "Two Pointers, Sliding Window", difficulty: "Beginner" },
+        { name: "Geometric Algorithms (Convex Hull, Line Intersection)", difficulty: "Advanced" },
+        { name: "Computational Geometry Basics", difficulty: "Advanced" },
+        { name: "Number Theory (Primes, GCD, LCM, Modular Arithmetic, Fermat's Little Theorem)", difficulty: "Intermediate" },
+        { name: "Game Theory (Nim Game, Grundy Numbers)", difficulty: "Advanced" }, // New
+        { name: "Monotonic Stack/Queue Applications", difficulty: "Intermediate" }, // New
+        { name: "Line Sweep Algorithms", difficulty: "Advanced" }, // New
+        { name: "Union-Find with Rollback", difficulty: "Advanced" }, // New
+    ],
+    lld: [
+        { name: "Builder Pattern with Fluent Interfaces", difficulty: "Intermediate" },
+        { name: "Validation Frameworks (JSR-303, Hibernate Validator)", difficulty: "Intermediate" },
+        { name: "API Rate Limiting Implementation (Token Bucket, Leaky Bucket)", difficulty: "Advanced" },
+        { name: "SOLID Principles (Single Responsibility, Open/Closed, Liskov Substitution, Interface Segregation, Dependency Inversion)", difficulty: "Beginner" },
+        { name: "Design Patterns (Creational: Singleton, Factory Method, Abstract Factory, Builder, Prototype)", difficulty: "Intermediate" },
+        { name: "Design Patterns (Structural: Adapter, Decorator, Facade, Proxy, Bridge, Composite, Flyweight)", difficulty: "Intermediate" },
+        { name: "Design Patterns (Behavioral: Observer, Strategy, Command, State, Template Method, Iterator, Mediator, Chain of Responsibility, Memento, Visitor, Interpreter)", difficulty: "Advanced" },
+        { name: "UML Diagrams (Class Diagrams, Sequence Diagrams)", difficulty: "Beginner" },
+        { name: "UML Diagrams (Component Diagrams, Activity Diagrams, State Machine Diagrams)", difficulty: "Intermediate" },
+        { name: "Concurrency Patterns (Producer-Consumer, Reader-Writer, Thread Pool)", difficulty: "Intermediate" },
+        { name: "Concurrency Patterns (Fork-Join Framework, Phaser, StampedLock, Latch, Barrier, Semaphore, Atomic Operations)", difficulty: "Advanced" },
+        { name: "Error Handling Strategies (Custom Exceptions, try-with-resources, Exception Propagation)", difficulty: "Beginner" },
+        { name: "Resilience Patterns (Circuit Breaker, Retry, Fallback)", difficulty: "Intermediate" },
+        { name: "API Design Principles (RESTful principles, Idempotency, API Versioning)", difficulty: "Beginner" },
+        { name: "API Design Principles (HATEOAS, API Gateway patterns)", difficulty: "Intermediate" },
+        { name: "Code Quality & Refactoring (Clean Code principles, Code Smells, Refactoring Techniques)", difficulty: "Beginner" },
+        { name: "Static Analysis Tools (basics)", difficulty: "Intermediate" },
+        { name: "Testing Principles (Unit Testing, Integration Testing, Mocking, Stubbing, Testable Code)", difficulty: "Beginner" },
+        { name: "Testing Principles (Test Driven Development (TDD), Behavior Driven Development (BDD))", difficulty: "Intermediate" },
+        { name: "Object-Oriented Design Case Studies (e.g., Vending Machine, Parking Lot, Tic-Tac-Toe)", difficulty: "Beginner" },
+        { name: "Object-Oriented Design Case Studies (e.g., Elevator System, Online Chess Game, ATM)", difficulty: "Intermediate" },
+        { name: "Object-Oriented Design Case Studies (e.g., Distributed Logger, Rate Limiter, URL Shortener)", difficulty: "Advanced" },
+        { name: "GRASP Principles (Creator, Information Expert, Low Coupling, High Cohesion)", difficulty: "Intermediate" },
+        { name: "GRASP Principles (Controller, Polymorphism, Pure Fabrication, Indirection, Protected Variations)", difficulty: "Advanced" },
+        { name: "Domain-Driven Design (DDD) Basics (Entities, Value Objects, Aggregates, Bounded Contexts)", difficulty: "Intermediate" },
+        { name: "Domain-Driven Design (DDD) (Domain Events, Repositories, Services)", difficulty: "Advanced" },
+        { name: "Event-Driven Architecture (LLD perspective: Events, Event Handlers, Message Bus/Broker)", difficulty: "Intermediate" },
+        { name: "Event Sourcing & CQRS (LLD perspective)", difficulty: "Advanced" },
+        { name: "Dependency Injection Frameworks (e.g., Spring IoC Container, Guice)", difficulty: "Beginner" },
+        { name: "Aspect-Oriented Programming (AOP) concepts", difficulty: "Intermediate" },
+        { name: "JVM Internals (Class Loading, Memory Management, JIT Compilation basics)", difficulty: "Intermediate" },
+        { name: "Garbage Collection (Types, Tuning basics)", difficulty: "Intermediate" },
+        { name: "Concurrency Primitives (Locks, Semaphores, Mutexes, Condition Variables)", difficulty: "Intermediate" },
+        { name: "Object Pooling Pattern", difficulty: "Intermediate" }, // New
+        { name: "Command Query Separation (CQS)", difficulty: "Intermediate" }, // New
+        { name: "Repository Pattern", difficulty: "Intermediate" }, // New
+        { name: "Unit of Work Pattern", difficulty: "Advanced" }, // New
+    ],
+    hld: [
+        { name: "Data Modeling (ER Modeling, Star vs. Snowflake Schema)", difficulty: "Intermediate" },
+        { name: "Job Scheduling Systems (Quartz, CRON, Event-based Triggers)", difficulty: "Intermediate" },
+        { name: "Geo-based Systems (Geohashing, Radius Search, Spatial Indexing)", difficulty: "Advanced" },
+        { name: "Scalability (Vertical vs. Horizontal Scaling, Load Balancing Algorithms - Round Robin, Least Connections, IP Hash)", difficulty: "Beginner" },
+        { name: "Scalability (Weighted Round Robin, Consistent Hashing)", difficulty: "Intermediate" },
+        { name: "Caching Strategies (CDN, Application-level, Database-level, Cache Invalidation, Cache Aside, Write Through, Write Back)", difficulty: "Intermediate" },
+        { name: "Database Sharding/Partitioning (Range, Hash, Directory-based)", difficulty: "Intermediate" },
+        { name: "Replication (Master-Slave, Multi-Master, Leader-Follower; Read Replicas, Data Locality)", difficulty: "Beginner" },
+        { name: "Availability & Reliability (Redundancy, Fault Tolerance, Disaster Recovery (RTO/RPO), N-tier Architecture)", difficulty: "Intermediate" },
+        { name: "Availability & Reliability (Microservices vs. Monolith, Serverless, Health Checks, Self-healing Systems)", difficulty: "Intermediate" },
+        { name: "Resilience Patterns (Circuit Breakers, Bulkheads, Retries, Fallbacks)", difficulty: "Intermediate" },
+        { name: "Consistency Models (ACID, BASE, Strong Consistency, Eventual Consistency)", difficulty: "Beginner" },
+        { name: "Consistency Models (Causal Consistency, Read-Your-Writes Consistency, Linearizability, Sequential Consistency)", difficulty: "Advanced" },
+        { name: "Data Storage (Relational vs. NoSQL Databases - Document, Key-Value, Column-Family, Graph)", difficulty: "Beginner" },
+        { name: "Data Storage (Database Indexing, Denormalization, Data Warehousing basics, Data Lakes, ETL/ELT, OLAP/OLTP)", difficulty: "Intermediate" },
+        { name: "Messaging Systems (Message Queues - SQS, RabbitMQ, ActiveMQ; Pub/Sub - SNS, Kafka, Google Pub/Sub)", difficulty: "Intermediate" },
+        { name: "Messaging Systems (Message Brokers, Idempotent Consumers, Dead Letter Queues, Message Ordering, Retries)", difficulty: "Advanced" },
+        { name: "Security (Authentication - OAuth2, OpenID Connect, JWT, SAML)", difficulty: "Intermediate" },
+        { name: "Security (Authorization - RBAC, ABAC; HTTPS/TLS, Encryption at Rest/In Transit, Rate Limiting, WAFs, DDoS Protection, Security Headers, OWASP Top 10)", difficulty: "Advanced" },
+        { name: "Monitoring & Logging (Centralized Logging - ELK Stack, Splunk; Metrics - Prometheus, Grafana; Alerting)", difficulty: "Intermediate" },
+        { name: "Monitoring & Logging (Distributed Tracing - Jaeger, Zipkin, OpenTelemetry; APM tools)", difficulty: "Advanced" },
+        { name: "Networking Basics (DNS, TCP/IP, HTTP/HTTPS, Proxies, Reverse Proxies, Firewalls)", difficulty: "Beginner" },
+        { name: "Networking Basics (VPNs, CIDR, Subnetting)", difficulty: "Intermediate" },
+        { name: "Common System Designs (URL Shortener, Chat System, Notification Service, News Feed)", difficulty: "Intermediate" },
+        { name: "Common System Designs (Payment Gateway, Distributed Cache, Ride-Sharing App, E-commerce Platform)", difficulty: "Advanced" },
+        { name: "Common System Designs (Recommendation Engine, Search Engine, Social Media Feed, Online Gaming Platform, Video Streaming Service, Analytics Platform)", difficulty: "Advanced" },
+        { name: "Distributed Consensus (Paxos, Raft - basic understanding, Zookeeper, etcd, Consul)", difficulty: "Advanced" },
+        { name: "API Gateway (Purpose, features - Authentication, Throttling, Routing, Transformation, Caching, Logging, Monitoring)", difficulty: "Intermediate" },
+        { name: "Service Discovery (Client-side vs. Server-side, Eureka, Consul, ZooKeeper, Kubernetes Service Discovery)", difficulty: "Intermediate" },
+        { name: "CDN (Content Delivery Network, Edge Caching, Cache Invalidation)", difficulty: "Beginner" },
+        { name: "Containerization & Orchestration (Docker, Kubernetes - Pods, Deployments, Services, Ingress)", difficulty: "Intermediate" },
+        { name: "Containerization & Orchestration (Helm Charts, StatefulSets)", difficulty: "Advanced" },
+        { name: "CI/CD Pipelines (Build, Test, Deploy Automation, Jenkins, GitLab CI, GitHub Actions, ArgoCD, Spinnaker)", difficulty: "Intermediate" },
+        { name: "Cloud Computing Concepts (IaaS, PaaS, SaaS; AWS/GCP/Azure core services - Compute, Storage, Databases, Serverless)", difficulty: "Beginner" },
+        { name: "Cloud Computing Concepts (Advanced Cloud Services, Cost Optimization, Multi-Cloud Strategies)", difficulty: "Intermediate" },
+        { name: "Event Sourcing & CQRS (Command Query Responsibility Segregation)", difficulty: "Advanced" },
+        { name: "GraphQL vs. REST (Comparison, Use Cases, N+1 problem)", difficulty: "Intermediate" },
+        { name: "System Reliability Engineering (SRE) Principles (SLAs, SLOs, SLIs, Error Budgets, Post-mortems, Toil)", difficulty: "Advanced" },
+        { name: "Data Streaming (Kafka Streams, Flink, Spark Streaming)", difficulty: "Advanced" },
+        { name: "Search Technologies (Elasticsearch, Solr, Lucene)", difficulty: "Intermediate" },
+        { name: "API Gateways & Service Mesh (Istio, Linkerd)", difficulty: "Advanced" },
+        { name: "Distributed Transactions (2PC, Saga Pattern, TCC)", difficulty: "Advanced" },
+        { name: "Feature Flags/Toggle Systems", difficulty: "Intermediate" },
+        { name: "A/B Testing Infrastructure", difficulty: "Intermediate" },
+        { name: "Time Series Databases (InfluxDB, Prometheus)", difficulty: "Intermediate" }, // New
+        { name: "Distributed Locking Mechanisms (Redis, Zookeeper)", difficulty: "Advanced" }, // New
+        { name: "Event-Driven Microservices (Design and Implementation)", difficulty: "Advanced" }, // New
+        { name: "Data Consistency in Microservices (Eventual Consistency Patterns)", difficulty: "Advanced" }, // New
+    ],
+    backendTech: [
+        { name: "Thread Dumps & Heap Dumps (Analyzing with VisualVM, MAT)", difficulty: "Advanced" },
+        { name: "Spring Retry, Resilience4j Advanced Configs", difficulty: "Intermediate" },
+        { name: "Java Flight Recorder, JFR Event Streaming", difficulty: "Advanced" },
+        { name: "gRPC (Unary, Streaming, Load Balancing, Interceptors)", difficulty: "Advanced" },
+        { name: "Java Core (JVM Internals, Class Loading, Memory Model, Concurrency Utilities)", difficulty: "Intermediate" },
+        { name: "Java Core (JVM Tuning, Advanced Concurrency Primitives)", difficulty: "Advanced" },
+        { name: "Spring Framework (IoC, DI, AOP, Bean Scopes, Lifecycle)", difficulty: "Beginner" },
+        { name: "Spring Boot (Auto-configuration, Starters, Actuator, Profiles, Externalized Config)", difficulty: "Beginner" },
+        { name: "Spring Data JPA/Hibernate (Entities, Repositories, Transactions, Lazy/Eager Loading, N+1 Problem, Caching)", difficulty: "Intermediate" },
+        { name: "Spring Web (MVC/REST Controllers, Request/Response Handling, DTOs, Validation)", difficulty: "Beginner" },
+        { name: "Spring Security (Authentication, Authorization, Filters, JWT, OAuth2)", difficulty: "Intermediate" },
+        { name: "Spring Cloud (Service Discovery, Config Server, API Gateway, Circuit Breaker, Load Balancer)", difficulty: "Advanced" },
+        { name: "Reactive Programming (Reactor/WebFlux, RxJava - concepts and benefits)", difficulty: "Advanced" },
+        { name: "Database Technologies (SQL vs NoSQL, ACID vs BASE, Indexing, Normalization, Transactions)", difficulty: "Beginner" },
+        { name: "Database Technologies (Database Connection Pooling, ORM Performance Tuning, Database Migrations - Flyway/Liquibase)", difficulty: "Intermediate" },
+        { name: "Messaging Systems (Kafka, RabbitMQ, SQS, SNS - Producers, Consumers, Topics, Queues)", difficulty: "Intermediate" },
+        { name: "Messaging Systems (Kafka Streams, Schema Registry, Idempotent Consumers, Exactly-once Semantics, Consumer Groups)", difficulty: "Advanced" },
+        { name: "Containerization (Docker - Dockerfile, Images, Containers, Volumes, Networks)", difficulty: "Beginner" },
+        { name: "Container Orchestration (Kubernetes - Pods, Deployments, Services, Ingress, StatefulSets, Helm)", difficulty: "Intermediate" },
+        { name: "Cloud Platforms (AWS/GCP/Azure - core compute, storage, database, serverless services)", difficulty: "Beginner" },
+        { name: "Cloud Platforms (Cloud Networking, Security Groups, IAM, Cost Optimization in Cloud)", difficulty: "Intermediate" },
+        { name: "CI/CD (Version Control - Git; Build Tools - Maven/Gradle; CI/CD Pipelines - Jenkins, GitLab CI, GitHub Actions)", difficulty: "Beginner" },
+        { name: "Observability (Logging - Log4j/Logback; Metrics - Micrometer, Prometheus; Tracing - OpenTelemetry, Zipkin; Alerting)", difficulty: "Intermediate" },
+        { name: "Distributed Systems Concepts (Consensus, Leader Election, Distributed Locks, Idempotency)", difficulty: "Advanced" },
+        { name: "API Design (RESTful best practices, GraphQL, gRPC)", difficulty: "Intermediate" },
+        { name: "Performance Testing & Tuning (JMeter, LoadRunner, Profiling, Benchmarking)", difficulty: "Intermediate" },
+        { name: "Security Best Practices (OWASP Top 10, Secure Coding, Vulnerability Scanning)", difficulty: "Intermediate" },
+        { name: "Microservices Architecture (Patterns, Communication, Data Management, Testing)", difficulty: "Intermediate" },
+        { name: "Serverless Computing (Lambda/Cloud Functions, FaaS)", difficulty: "Intermediate" },
+        { name: "Gateway API (Spring Cloud Gateway, Zuul)", difficulty: "Intermediate" },
+        { name: "Service Mesh (Istio, Linkerd - basic concepts)", difficulty: "Advanced" },
+        { name: "Database Performance Optimization (Query Optimization, Indexing Strategies)", difficulty: "Intermediate" }, // New
+        { name: "Distributed Caching (Redis Cluster, Memcached)", difficulty: "Advanced" }, // New
+        { name: "Asynchronous Processing (Spring Async, CompletableFuture)", difficulty: "Intermediate" }, // New
+        { name: "Event-Driven Architecture with Kafka (Event Design, Consumer Groups)", difficulty: "Advanced" }, // New
+    ],
+};
+
+    const categories = Object.keys(topics);
+    const topicDisplay = document.getElementById('topicDisplay');
+    const suggestButton = document.getElementById('suggestButton');
+    const geminiModal = document.getElementById('geminiModal');
+    const modalTitle = document.getElementById('modalTitle');
+    const modalBody = document.getElementById('modalBody');
+    const modalCloseButton = document.getElementById('modalCloseButton');
+
+    // Difficulty filter checkboxes
+    const difficultyBeginner = document.getElementById('difficultyBeginner');
+    const difficultyIntermediate = document.getElementById('difficultyIntermediate');
+    const difficultyAdvanced = document.getElementById('difficultyAdvanced');
+
+    /**
+     * Shows the modal with the given title and content.
+     * @param {string} title - The title for the modal.
+     * @param {string} content - The HTML content for the modal body.
+     */
+    function showModal(title, content) {
+        modalTitle.textContent = title;
+        modalBody.innerHTML = content;
+        geminiModal.classList.add('show');
+    }
+
+    /**
+     * Hides the modal.
+     */
+    function hideModal() {
+        geminiModal.classList.remove('show');
+        // Clear content after transition for smoother experience
+        setTimeout(() => {
+            modalTitle.textContent = '';
+            modalBody.innerHTML = '';
+        }, 300);
+    }
+
+    /**
+     * Calls the Gemini API with a given prompt and returns the text response.
+     * Displays loading spinner during the fetch.
+     * @param {string} prompt - The prompt to send to the LLM.
+     * @returns {Promise<string>} The generated text from the LLM.
+     */
+    async function callGeminiAPI(prompt) {
+        modalBody.innerHTML = '<div class="loading-spinner"></div><p class="text-center text-gray-500 mt-4">Generating response...</p>';
+        const chatHistory = [];
+        chatHistory.push({ role: "user", parts: [{ text: prompt }] });
+        const payload = { contents: chatHistory };
+        const apiKey = ""; // If you want to use models other than gemini-2.0-flash or imagen-3.0-generate-002, provide an API key here. Otherwise, leave this as-is.
+        const apiUrl = `https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent?key=${apiKey}`;
+
+        try {
+            const response = await fetch(apiUrl, {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify(payload)
+            });
+            const result = await response.json();
+
+            if (result.candidates && result.candidates.length > 0 &&
+                result.candidates[0].content && result.candidates[0].content.parts &&
+                result.candidates[0].content.parts.length > 0) {
+                return result.candidates[0].content.parts[0].text;
+            } else {
+                console.error("Unexpected API response structure:", result);
+                return "Error: Could not get a response from Gemini API. Please try again.";
+            }
+        } catch (error) {
+            console.error("Error calling Gemini API:", error);
+            return "Error: Failed to connect to Gemini API. Please check your network or try again later.";
+        }
+    }
+
+    /**
+     * Handles the click event for the "Explain" button.
+     * @param {string} topicText - The text of the topic to explain.
+     */
+    async function handleExplainTopic(topicText) {
+        showModal(`Explanation for: ${topicText}`, ''); // Show modal with loading state
+        const prompt = `Explain "${topicText}" concisely for a backend developer with 3 years of experience. Focus on key concepts and practical relevance.`;
+        const explanation = await callGeminiAPI(prompt);
+        modalBody.innerHTML = explanation.replace(/\n/g, '<br>'); // Replace newlines with <br> for HTML display
+    }
+
+    /**
+     * Handles the click event for the "Generate Question" button.
+     * @param {string} topicText - The text of the topic for which to generate a question.
+     */
+    async function handleGenerateQuestion(topicText) {
+        showModal(`Interview Question for: ${topicText}`, ''); // Show modal with loading state
+        const prompt = `Generate a challenging interview question for a backend developer with 3 years of experience on the topic "${topicText}". The question should be practical and encourage discussion of trade-offs or design choices.`;
+        const question = await callGeminiAPI(prompt);
+        modalBody.innerHTML = question.replace(/\n/g, '<br>'); // Replace newlines with <br> for HTML display
+    }
+
+    /**
+     * Suggests one random topic from each category (DSA, Algorithms, LLD, HLD, Backend Tech)
+     * based on selected difficulty levels.
+     * Attaches event listeners for the new Gemini-powered buttons.
+     */
+    function suggestTopicsFromEachCategory() {
+        const selectedDifficulties = [];
+        if (difficultyBeginner.checked) selectedDifficulties.push("Beginner");
+        if (difficultyIntermediate.checked) selectedDifficulties.push("Intermediate");
+        if (difficultyAdvanced.checked) selectedDifficulties.push("Advanced");
+
+        let htmlContent = '';
+        for (const categoryKey of categories) {
+            const displayCategory = categoryKey.toUpperCase();
+            const categoryTopics = topics[categoryKey];
+
+            // Filter topics by selected difficulty levels
+            const filteredTopics = categoryTopics.filter(topic =>
+                selectedDifficulties.includes(topic.difficulty)
+            );
+
+            if (filteredTopics.length > 0) {
+                // Select one random topic from the filtered list
+                const randomTopicIndex = Math.floor(Math.random() * filteredTopics.length);
+                const selectedTopic = filteredTopics[randomTopicIndex];
+
+                htmlContent += `
+                    <div class="category-section">
+                        <div class="category-title">${displayCategory}</div>
+                        <ul class="topic-list">
+                            <li data-topic="${selectedTopic.name}">
+                                <span class="topic-text">${selectedTopic.name} <span class="text-xs text-gray-500">(${selectedTopic.difficulty})</span></span>
+                                <div class="topic-buttons">
+                                    <button class="explain-btn">✨ Explain</button>
+                                    <button class="question-btn">✨ Question</button>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                `;
+            } else {
+                htmlContent += `
+                    <div class="category-section">
+                        <div class="category-title">${displayCategory}</div>
+                        <p class="text-gray-500 text-sm pl-6">No topics found for selected difficulty levels in this category.</p>
+                    </div>
+                `;
+            }
+        }
+        topicDisplay.innerHTML = htmlContent;
+
+        // The event listener is already attached to topicDisplay (the parent)
+        // via event delegation in the global scope. It does not need to be re-attached
+        // or re-cloned here.
+    }
+
+    // Attach event listeners for modal
+    modalCloseButton.addEventListener('click', hideModal);
+    geminiModal.addEventListener('click', (event) => {
+        if (event.target === geminiModal) { // Close only if clicking on the overlay, not the content
+            hideModal();
+        }
+    });
+
+    // Attach the main event listener for topic buttons *once*
+    // This relies on event delegation, so it works for dynamically added content.
+    topicDisplay.addEventListener('click', (event) => {
+        const target = event.target;
+        if (target.classList.contains('explain-btn')) {
+            const topicText = target.closest('li').dataset.topic;
+            handleExplainTopic(topicText);
+        } else if (target.classList.contains('question-btn')) {
+            const topicText = target.closest('li').dataset.topic;
+            handleGenerateQuestion(topicText);
+        }
+    });
+
+
+    // Add event listeners to difficulty checkboxes
+    difficultyBeginner.addEventListener('change', suggestTopicsFromEachCategory);
+    difficultyIntermediate.addEventListener('change', suggestTopicsFromEachCategory);
+    difficultyAdvanced.addEventListener('change', suggestTopicsFromEachCategory);
+
+    // Add event listener to the suggest button
+    suggestButton.addEventListener('click', suggestTopicsFromEachCategory);
+
+    // Suggest topics on initial load
+    window.onload = suggestTopicsFromEachCategory;
+</script>
+</body>
+</html>

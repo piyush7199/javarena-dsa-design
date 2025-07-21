@@ -209,7 +209,7 @@ class Course {
 }
 ```
 
-### 🧩 Dependency (uses)
+#### 🧩 Dependency (uses)
 
 ```java
 class OrderService {
@@ -219,7 +219,7 @@ class OrderService {
 }
 ```
 
-### ⚪ Aggregation (whole-part, weak)
+#### ⚪ Aggregation (whole-part, weak)
 
 ```java
 class Book {
@@ -231,7 +231,7 @@ class Library {
 }
 ```
 
-### ⚫ Composition (whole-part, strong)
+#### ⚫ Composition (whole-part, strong)
 
 ```java
 class Heart {
