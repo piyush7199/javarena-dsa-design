@@ -171,3 +171,4 @@ function rabinKarpSearch(text, pattern, d, q):
 | 2 | [Search Pattern (KMP-Algorithm)](https://www.geeksforgeeks.org/problems/search-pattern0205/1)   | [FindPatternsIndexes.java](./string/FindPatternsIndexes.java) |
 | 3 | [Repeated String Match](https://leetcode.com/problems/repeated-string-match/)                   | [RepeatedStringMatch.java](./string/RepeatedStringMatch.java) |
 | 4 | [Shortest Palindrome](https://leetcode.com/problems/shortest-palindrome/)                       | [ShortestPalindrome.java](./string/ShortestPalindrome.java)   |
+| 5 | [Longest Happy Prefix](https://leetcode.com/problems/longest-happy-prefix/)                     | [LongestHappyPrefix.java](./string/LongestHappyPrefix.java)   |
