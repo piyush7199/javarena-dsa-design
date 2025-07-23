@@ -68,3 +68,7 @@
 | 64 | MEDIUM | [Target Sum](https://leetcode.com/problems/target-sum) | [Solution](../coding/algorithms/dynamicProgramming/TargetSum.java) | Array, Dynamic Programming, Backtracking |
 | 65 | EASY | [Find The Index Of The First Occurrence In A String](https://leetcode.com/problems/find-the-index-of-the-first-occurrence-in-a-string) | [Solution](../coding/algorithms/string/KMPSearch.java) | Two Pointers, String, String Matching |
 | 66 | HARD | [Shortest Palindrome](https://leetcode.com/problems/shortest-palindrome) | [Solution](../coding/algorithms/string/ShortestPalindrome.java) | String, Rolling Hash, String Matching, Hash Function |
+| 67 | MEDIUM | [Longest Palindromic Substring](https://leetcode.com/problems/longest-palindromic-substring) | [Solution](../coding/algorithms/twoPointerAndSlidingWindow/LongestPalindromic.java) | Two Pointers, String, Dynamic Programming |
+| 68 | MEDIUM | [Zigzag Conversion](https://leetcode.com/problems/zigzag-conversion) | [Solution](../coding/datastructures/string/ZigZagConversion.java) | String |
+| 69 | MEDIUM | [String To Integer Atoi](https://leetcode.com/problems/string-to-integer-atoi) | [Solution](../coding/datastructures/string/StringToInteger.java) | String |
+| 70 | EASY | [Palindrome Number](https://leetcode.com/problems/palindrome-number) | [Solution](../coding/algorithms/miscellaneous/PalindromeNumber.java) | Math |

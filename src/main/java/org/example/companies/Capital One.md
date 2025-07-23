@@ -9,3 +9,4 @@
 | 5 | EASY | [Valid Parentheses](https://leetcode.com/problems/valid-parentheses) | [Solution](../coding/datastructures/stackAndQueue/Solution.java) | String, Stack |
 | 6 | EASY | [Binary Tree Paths](https://leetcode.com/problems/binary-tree-paths) | [Solution](../coding/datastructures/binaryTree/Solutions.java) | String, Backtracking, Tree, Depth-First Search, Binary Tree |
 | 7 | MEDIUM | [Word Search](https://leetcode.com/problems/word-search) | [Solution](../coding/algorithms/recursionAndBacktracking/WordSearch.java) | Array, String, Backtracking, Depth-First Search, Matrix |
+| 8 | EASY | [Palindrome Number](https://leetcode.com/problems/palindrome-number) | [Solution](../coding/algorithms/miscellaneous/PalindromeNumber.java) | Math |
