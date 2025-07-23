@@ -153,6 +153,8 @@ public class BinaryTree {
 | 25 | [Count Complete Tree Nodes](https://leetcode.com/problems/count-complete-tree-nodes/)                                                                                                            | [CountNodes.java](./CountNodes.java)       |
 | 26 | [Construct Binary Tree from Preorder and Inorder Traversal](https://leetcode.com/problems/construct-binary-tree-from-preorder-and-inorder-traversal/)                                            | [ConstructTree.java](./ConstructTree.java) |
 | 27 | [Construct Binary Tree from Inorder and Postorder Traversal](https://leetcode.com/problems/construct-binary-tree-from-inorder-and-postorder-traversal/)                                          | [ConstructTree.java](./ConstructTree.java) |
+| 28 | [BST Search](https://leetcode.com/problems/search-in-a-binary-search-tree/)                                                                                                                      | [BSTSearch.java](./BSTSearch.java)         |
+| 29 | [Closest Nodes Queries in a Binary Search Tree](https://leetcode.com/problems/closest-nodes-queries-in-a-binary-search-tree/)                                                                    | [BSTClosetNode.java](./BSTClosetNode.java) |
 
 ---
 
