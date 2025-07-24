@@ -30,3 +30,4 @@
 | 26 | HARD | [Sudoku Solver](https://leetcode.com/problems/sudoku-solver) | [Solution](../coding/algorithms/recursionAndBacktracking/SudokuSolver.java) | Array, Hash Table, Backtracking, Matrix |
 | 27 | MEDIUM | [Minimum Falling Path Sum](https://leetcode.com/problems/minimum-falling-path-sum) | [Solution](../coding/algorithms/dynamicProgramming/MinFallingPathSum.java) | Array, Dynamic Programming, Matrix |
 | 28 | MEDIUM | [Zigzag Conversion](https://leetcode.com/problems/zigzag-conversion) | [Solution](../coding/datastructures/string/ZigZagConversion.java) | String |
+| 29 | MEDIUM | [Insert Delete Getrandom O1](https://leetcode.com/problems/insert-delete-getrandom-o1) | [Solution](../coding/datastructures/hashMapAndSet/RandomizedSet.java) | Array, Hash Table, Math, Design, Randomized |
