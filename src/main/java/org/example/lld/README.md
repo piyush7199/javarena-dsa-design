@@ -48,11 +48,13 @@ lld/
 
 ### 🔨 Creational Design Patterns
 
-| # | Pattern Name                                           | Description                                                                      |
-|---|--------------------------------------------------------|----------------------------------------------------------------------------------|
-| 1 | [Singleton](./patterns/creational/singleton/README.md) | Ensure a class has only one instance and provide a global point of access to it. |
-| 2 | [Builder](./patterns/creational/builder/README.md)     | Separates complex object construction from its representation.                   |
-| 3 | [Factory](./patterns/creational/factory/README.md)     | Creates objects without exposing the instantiation logic.                        |
+| # | Pattern Name                                                        | Description                                                                                                            |
+|---|---------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------|
+| 1 | [Singleton](./patterns/creational/singleton/README.md)              | Ensure a class has only one instance and provide a global point of access to it.                                       |
+| 2 | [Builder](./patterns/creational/builder/README.md)                  | Separates complex object construction from its representation.                                                         |
+| 3 | [Factory](./patterns/creational/factory/README.md)                  | Creates objects without exposing the instantiation logic.                                                              |
+| 4 | [Prototype](./patterns/creational/prototype/README.md)              | Create new objects by copying existing ones, reducing the cost of creation.                                            |
+| 5 | [Abstract Factory](./patterns/creational/abstractFactory/README.md) | Provides an interface for creating families of related or dependent objects without specifying their concrete classes. |
 
 ### 🧠 Behavioural Design Patterns
 
