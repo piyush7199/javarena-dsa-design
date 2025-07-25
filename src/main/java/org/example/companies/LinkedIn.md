@@ -38,3 +38,4 @@
 | 34 | MEDIUM | [Letter Combinations Of A Phone Number](https://leetcode.com/problems/letter-combinations-of-a-phone-number) | [Solution](../coding/algorithms/recursionAndBacktracking/LetterCombination.java) | Hash Table, String, Backtracking |
 | 35 | MEDIUM | [Longest Palindromic Substring](https://leetcode.com/problems/longest-palindromic-substring) | [Solution](../coding/algorithms/twoPointerAndSlidingWindow/LongestPalindromic.java) | Two Pointers, String, Dynamic Programming |
 | 36 | MEDIUM | [Insert Delete Getrandom O1](https://leetcode.com/problems/insert-delete-getrandom-o1) | [Solution](../coding/datastructures/hashMapAndSet/RandomizedSet.java) | Array, Hash Table, Math, Design, Randomized |
+| 37 | HARD | [Merge K Sorted Lists](https://leetcode.com/problems/merge-k-sorted-lists) | [Solution](../coding/datastructures/linkedList/MergeKSortedLists.java) | Linked List, Divide and Conquer, Heap (Priority Queue), Merge Sort |

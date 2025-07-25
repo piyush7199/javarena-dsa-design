@@ -25,3 +25,4 @@
 | 21 | MEDIUM | [Word Break](https://leetcode.com/problems/word-break) | [Solution](../coding/algorithms/recursionAndBacktracking/WordBreak.java) | Array, Hash Table, String, Dynamic Programming, Trie, Memoization |
 | 22 | MEDIUM | [Longest Palindromic Substring](https://leetcode.com/problems/longest-palindromic-substring) | [Solution](../coding/algorithms/twoPointerAndSlidingWindow/LongestPalindromic.java) | Two Pointers, String, Dynamic Programming |
 | 23 | MEDIUM | [Meeting Rooms Ii](https://leetcode.com/problems/meeting-rooms-ii) | [Solution](../coding/datastructures/arrays/MeetingScheduleII.java) | Array, Two Pointers, Greedy, Sorting, Heap (Priority Queue), Prefix Sum |
+| 24 | HARD | [Merge K Sorted Lists](https://leetcode.com/problems/merge-k-sorted-lists) | [Solution](../coding/datastructures/linkedList/MergeKSortedLists.java) | Linked List, Divide and Conquer, Heap (Priority Queue), Merge Sort |

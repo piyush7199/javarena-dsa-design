@@ -59,3 +59,4 @@
 | 55 | MEDIUM | [String To Integer Atoi](https://leetcode.com/problems/string-to-integer-atoi) | [Solution](../coding/datastructures/string/StringToInteger.java) | String |
 | 56 | EASY | [Palindrome Number](https://leetcode.com/problems/palindrome-number) | [Solution](../coding/algorithms/miscellaneous/PalindromeNumber.java) | Math |
 | 57 | MEDIUM | [Insert Delete Getrandom O1](https://leetcode.com/problems/insert-delete-getrandom-o1) | [Solution](../coding/datastructures/hashMapAndSet/RandomizedSet.java) | Array, Hash Table, Math, Design, Randomized |
+| 58 | HARD | [Merge K Sorted Lists](https://leetcode.com/problems/merge-k-sorted-lists) | [Solution](../coding/datastructures/linkedList/MergeKSortedLists.java) | Linked List, Divide and Conquer, Heap (Priority Queue), Merge Sort |

@@ -73,3 +73,4 @@
 | 69 | MEDIUM | [String To Integer Atoi](https://leetcode.com/problems/string-to-integer-atoi) | [Solution](../coding/datastructures/string/StringToInteger.java) | String |
 | 70 | EASY | [Palindrome Number](https://leetcode.com/problems/palindrome-number) | [Solution](../coding/algorithms/miscellaneous/PalindromeNumber.java) | Math |
 | 71 | MEDIUM | [Meeting Rooms Ii](https://leetcode.com/problems/meeting-rooms-ii) | [Solution](../coding/datastructures/arrays/MeetingScheduleII.java) | Array, Two Pointers, Greedy, Sorting, Heap (Priority Queue), Prefix Sum |
+| 72 | HARD | [Merge K Sorted Lists](https://leetcode.com/problems/merge-k-sorted-lists) | [Solution](../coding/datastructures/linkedList/MergeKSortedLists.java) | Linked List, Divide and Conquer, Heap (Priority Queue), Merge Sort |

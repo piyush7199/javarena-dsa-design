@@ -12,3 +12,4 @@
 | 8 | EASY | [Intersection Of Two Linked Lists](https://leetcode.com/problems/intersection-of-two-linked-lists) | [Solution](../coding/datastructures/linkedList/LinkedList.java) | Hash Table, Linked List, Two Pointers |
 | 9 | MEDIUM | [Cheapest Flights Within K Stops](https://leetcode.com/problems/cheapest-flights-within-k-stops) | [Solution](../coding/datastructures/graph/ShortestPathUsingDijkstra.java) | Dynamic Programming, Depth-First Search, Breadth-First Search, Graph, Heap (Priority Queue), Shortest Path |
 | 10 | HARD | [Minimum Window Substring](https://leetcode.com/problems/minimum-window-substring) | [Solution](../coding/algorithms/twoPointerAndSlidingWindow/MinimumWindowSubstring.java) | Hash Table, String, Sliding Window |
+| 11 | HARD | [Merge K Sorted Lists](https://leetcode.com/problems/merge-k-sorted-lists) | [Solution](../coding/datastructures/linkedList/MergeKSortedLists.java) | Linked List, Divide and Conquer, Heap (Priority Queue), Merge Sort |

@@ -21,3 +21,4 @@
 | 17 | HARD | [Sudoku Solver](https://leetcode.com/problems/sudoku-solver) | [Solution](../coding/algorithms/recursionAndBacktracking/SudokuSolver.java) | Array, Hash Table, Backtracking, Matrix |
 | 18 | MEDIUM | [Longest Palindromic Substring](https://leetcode.com/problems/longest-palindromic-substring) | [Solution](../coding/algorithms/twoPointerAndSlidingWindow/LongestPalindromic.java) | Two Pointers, String, Dynamic Programming |
 | 19 | MEDIUM | [Insert Delete Getrandom O1](https://leetcode.com/problems/insert-delete-getrandom-o1) | [Solution](../coding/datastructures/hashMapAndSet/RandomizedSet.java) | Array, Hash Table, Math, Design, Randomized |
+| 20 | HARD | [Merge K Sorted Lists](https://leetcode.com/problems/merge-k-sorted-lists) | [Solution](../coding/datastructures/linkedList/MergeKSortedLists.java) | Linked List, Divide and Conquer, Heap (Priority Queue), Merge Sort |

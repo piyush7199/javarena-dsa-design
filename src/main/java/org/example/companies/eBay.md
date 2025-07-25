@@ -28,3 +28,4 @@
 | 24 | HARD | [Shortest Palindrome](https://leetcode.com/problems/shortest-palindrome) | [Solution](../coding/algorithms/string/ShortestPalindrome.java) | String, Rolling Hash, String Matching, Hash Function |
 | 25 | MEDIUM | [Longest Palindromic Substring](https://leetcode.com/problems/longest-palindromic-substring) | [Solution](../coding/algorithms/twoPointerAndSlidingWindow/LongestPalindromic.java) | Two Pointers, String, Dynamic Programming |
 | 26 | MEDIUM | [Meeting Rooms Ii](https://leetcode.com/problems/meeting-rooms-ii) | [Solution](../coding/datastructures/arrays/MeetingScheduleII.java) | Array, Two Pointers, Greedy, Sorting, Heap (Priority Queue), Prefix Sum |
+| 27 | HARD | [Merge K Sorted Lists](https://leetcode.com/problems/merge-k-sorted-lists) | [Solution](../coding/datastructures/linkedList/MergeKSortedLists.java) | Linked List, Divide and Conquer, Heap (Priority Queue), Merge Sort |

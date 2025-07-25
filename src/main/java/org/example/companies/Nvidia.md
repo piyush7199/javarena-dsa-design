@@ -34,3 +34,4 @@
 | 30 | MEDIUM | [String To Integer Atoi](https://leetcode.com/problems/string-to-integer-atoi) | [Solution](../coding/datastructures/string/StringToInteger.java) | String |
 | 31 | MEDIUM | [Insert Delete Getrandom O1](https://leetcode.com/problems/insert-delete-getrandom-o1) | [Solution](../coding/datastructures/hashMapAndSet/RandomizedSet.java) | Array, Hash Table, Math, Design, Randomized |
 | 32 | MEDIUM | [Meeting Rooms Ii](https://leetcode.com/problems/meeting-rooms-ii) | [Solution](../coding/datastructures/arrays/MeetingScheduleII.java) | Array, Two Pointers, Greedy, Sorting, Heap (Priority Queue), Prefix Sum |
+| 33 | HARD | [Merge K Sorted Lists](https://leetcode.com/problems/merge-k-sorted-lists) | [Solution](../coding/datastructures/linkedList/MergeKSortedLists.java) | Linked List, Divide and Conquer, Heap (Priority Queue), Merge Sort |

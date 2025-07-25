@@ -43,3 +43,4 @@
 | 39 | MEDIUM | [Minimum Add To Make Parentheses Valid](https://leetcode.com/problems/minimum-add-to-make-parentheses-valid) | [Solution](../coding/datastructures/string/AddParentheses.java) | String, Stack, Greedy |
 | 40 | MEDIUM | [Longest Palindromic Substring](https://leetcode.com/problems/longest-palindromic-substring) | [Solution](../coding/algorithms/twoPointerAndSlidingWindow/LongestPalindromic.java) | Two Pointers, String, Dynamic Programming |
 | 41 | EASY | [Palindrome Number](https://leetcode.com/problems/palindrome-number) | [Solution](../coding/algorithms/miscellaneous/PalindromeNumber.java) | Math |
+| 42 | HARD | [Merge K Sorted Lists](https://leetcode.com/problems/merge-k-sorted-lists) | [Solution](../coding/datastructures/linkedList/MergeKSortedLists.java) | Linked List, Divide and Conquer, Heap (Priority Queue), Merge Sort |
