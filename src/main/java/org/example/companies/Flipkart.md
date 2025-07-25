@@ -34,3 +34,4 @@
 | 30 | MEDIUM | [Word Break](https://leetcode.com/problems/word-break) | [Solution](../coding/algorithms/recursionAndBacktracking/WordBreak.java) | Array, Hash Table, String, Dynamic Programming, Trie, Memoization |
 | 31 | MEDIUM | [Maximum Points You Can Obtain From Cards](https://leetcode.com/problems/maximum-points-you-can-obtain-from-cards) | [Solution](../coding/algorithms/twoPointerAndSlidingWindow/MaxPoints.java) | Array, Sliding Window, Prefix Sum |
 | 32 | MEDIUM | [Longest Repeating Character Replacement](https://leetcode.com/problems/longest-repeating-character-replacement) | [Solution](../coding/algorithms/twoPointerAndSlidingWindow/RepeatingChars.java) | Hash Table, String, Sliding Window |
+| 33 | MEDIUM | [Kth Largest Element In An Array](https://leetcode.com/problems/kth-largest-element-in-an-array) | [Solution](../coding/datastructures/arrays/KthLargetElement.java) | Array, Divide and Conquer, Sorting, Heap (Priority Queue), Quickselect |

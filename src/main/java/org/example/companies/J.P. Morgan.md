@@ -17,3 +17,4 @@
 | 13 | MEDIUM | [Letter Combinations Of A Phone Number](https://leetcode.com/problems/letter-combinations-of-a-phone-number) | [Solution](../coding/algorithms/recursionAndBacktracking/LetterCombination.java) | Hash Table, String, Backtracking |
 | 14 | MEDIUM | [Longest Palindromic Substring](https://leetcode.com/problems/longest-palindromic-substring) | [Solution](../coding/algorithms/twoPointerAndSlidingWindow/LongestPalindromic.java) | Two Pointers, String, Dynamic Programming |
 | 15 | EASY | [Palindrome Number](https://leetcode.com/problems/palindrome-number) | [Solution](../coding/algorithms/miscellaneous/PalindromeNumber.java) | Math |
+| 16 | MEDIUM | [Kth Largest Element In An Array](https://leetcode.com/problems/kth-largest-element-in-an-array) | [Solution](../coding/datastructures/arrays/KthLargetElement.java) | Array, Divide and Conquer, Sorting, Heap (Priority Queue), Quickselect |

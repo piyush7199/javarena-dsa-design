@@ -25,3 +25,4 @@ two-pointers, and sorting.
 | 14 | [Largest subarray with 0 sum](https://www.geeksforgeeks.org/problems/largest-subarray-with-0-sum/1)                     | [SubArrays.java](./SubArrays.java)                 |
 | 15 | [Missing And Repeating](https://www.geeksforgeeks.org/problems/find-missing-and-repeating2512/1)                        | [Arrays.java](./SubArrays.java)                    |
 | 16 | [Meeting Rooms II](https://neetcode.io/problems/meeting-schedule-ii)                                                    | [MeetingScheduleII.java](./MeetingScheduleII.java) |
+| 17 | [Kth Larget Element](https://leetcode.com/problems/kth-largest-element-in-an-array/)                                    | [KthLargetElement.java](./KthLargetElement.java)   |

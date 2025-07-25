@@ -14,3 +14,4 @@
 | 10 | MEDIUM | [3sum](https://leetcode.com/problems/3sum) | [Solution](../coding/algorithms/TwoPointerSum.java) | Array, Two Pointers, Sorting |
 | 11 | MEDIUM | [Longest Repeating Character Replacement](https://leetcode.com/problems/longest-repeating-character-replacement) | [Solution](../coding/algorithms/twoPointerAndSlidingWindow/RepeatingChars.java) | Hash Table, String, Sliding Window |
 | 12 | MEDIUM | [Longest Palindromic Substring](https://leetcode.com/problems/longest-palindromic-substring) | [Solution](../coding/algorithms/twoPointerAndSlidingWindow/LongestPalindromic.java) | Two Pointers, String, Dynamic Programming |
+| 13 | MEDIUM | [Kth Largest Element In An Array](https://leetcode.com/problems/kth-largest-element-in-an-array) | [Solution](../coding/datastructures/arrays/KthLargetElement.java) | Array, Divide and Conquer, Sorting, Heap (Priority Queue), Quickselect |

@@ -21,3 +21,4 @@
 | 17 | MEDIUM | [Powx N](https://leetcode.com/problems/powx-n) | [Solution](../coding/algorithms/recursionAndBacktracking/MyPow.java) | Math, Recursion |
 | 18 | MEDIUM | [String To Integer Atoi](https://leetcode.com/problems/string-to-integer-atoi) | [Solution](../coding/datastructures/string/StringToInteger.java) | String |
 | 19 | EASY | [Palindrome Number](https://leetcode.com/problems/palindrome-number) | [Solution](../coding/algorithms/miscellaneous/PalindromeNumber.java) | Math |
+| 20 | MEDIUM | [Kth Largest Element In An Array](https://leetcode.com/problems/kth-largest-element-in-an-array) | [Solution](../coding/datastructures/arrays/KthLargetElement.java) | Array, Divide and Conquer, Sorting, Heap (Priority Queue), Quickselect |

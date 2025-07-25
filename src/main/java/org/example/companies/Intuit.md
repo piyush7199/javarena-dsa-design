@@ -31,3 +31,4 @@
 | 27 | MEDIUM | [Minimum Falling Path Sum](https://leetcode.com/problems/minimum-falling-path-sum) | [Solution](../coding/algorithms/dynamicProgramming/MinFallingPathSum.java) | Array, Dynamic Programming, Matrix |
 | 28 | MEDIUM | [Zigzag Conversion](https://leetcode.com/problems/zigzag-conversion) | [Solution](../coding/datastructures/string/ZigZagConversion.java) | String |
 | 29 | MEDIUM | [Insert Delete Getrandom O1](https://leetcode.com/problems/insert-delete-getrandom-o1) | [Solution](../coding/datastructures/hashMapAndSet/RandomizedSet.java) | Array, Hash Table, Math, Design, Randomized |
+| 30 | MEDIUM | [Kth Largest Element In An Array](https://leetcode.com/problems/kth-largest-element-in-an-array) | [Solution](../coding/datastructures/arrays/KthLargetElement.java) | Array, Divide and Conquer, Sorting, Heap (Priority Queue), Quickselect |

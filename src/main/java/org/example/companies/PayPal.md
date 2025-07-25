@@ -34,3 +34,4 @@
 | 30 | MEDIUM | [Number Of Substrings Containing All Three Characters](https://leetcode.com/problems/number-of-substrings-containing-all-three-characters) | [Solution](../coding/algorithms/twoPointerAndSlidingWindow/CountSubstrings.java) | Hash Table, String, Sliding Window |
 | 31 | MEDIUM | [Zigzag Conversion](https://leetcode.com/problems/zigzag-conversion) | [Solution](../coding/datastructures/string/ZigZagConversion.java) | String |
 | 32 | MEDIUM | [Meeting Rooms Ii](https://leetcode.com/problems/meeting-rooms-ii) | [Solution](../coding/datastructures/arrays/MeetingScheduleII.java) | Array, Two Pointers, Greedy, Sorting, Heap (Priority Queue), Prefix Sum |
+| 33 | MEDIUM | [Kth Largest Element In An Array](https://leetcode.com/problems/kth-largest-element-in-an-array) | [Solution](../coding/datastructures/arrays/KthLargetElement.java) | Array, Divide and Conquer, Sorting, Heap (Priority Queue), Quickselect |

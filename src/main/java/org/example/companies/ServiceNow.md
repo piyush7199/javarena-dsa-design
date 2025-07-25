@@ -41,3 +41,4 @@
 | 37 | MEDIUM | [Longest Palindromic Substring](https://leetcode.com/problems/longest-palindromic-substring) | [Solution](../coding/algorithms/twoPointerAndSlidingWindow/LongestPalindromic.java) | Two Pointers, String, Dynamic Programming |
 | 38 | MEDIUM | [Zigzag Conversion](https://leetcode.com/problems/zigzag-conversion) | [Solution](../coding/datastructures/string/ZigZagConversion.java) | String |
 | 39 | MEDIUM | [Meeting Rooms Ii](https://leetcode.com/problems/meeting-rooms-ii) | [Solution](../coding/datastructures/arrays/MeetingScheduleII.java) | Array, Two Pointers, Greedy, Sorting, Heap (Priority Queue), Prefix Sum |
+| 40 | MEDIUM | [Kth Largest Element In An Array](https://leetcode.com/problems/kth-largest-element-in-an-array) | [Solution](../coding/datastructures/arrays/KthLargetElement.java) | Array, Divide and Conquer, Sorting, Heap (Priority Queue), Quickselect |
