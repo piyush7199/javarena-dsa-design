@@ -40,3 +40,4 @@
 | 36 | MEDIUM | [Target Sum](https://leetcode.com/problems/target-sum) | [Solution](../coding/algorithms/dynamicProgramming/TargetSum.java) | Array, Dynamic Programming, Backtracking |
 | 37 | MEDIUM | [Longest Palindromic Substring](https://leetcode.com/problems/longest-palindromic-substring) | [Solution](../coding/algorithms/twoPointerAndSlidingWindow/LongestPalindromic.java) | Two Pointers, String, Dynamic Programming |
 | 38 | MEDIUM | [Zigzag Conversion](https://leetcode.com/problems/zigzag-conversion) | [Solution](../coding/datastructures/string/ZigZagConversion.java) | String |
+| 39 | MEDIUM | [Meeting Rooms Ii](https://leetcode.com/problems/meeting-rooms-ii) | [Solution](../coding/datastructures/arrays/MeetingScheduleII.java) | Array, Two Pointers, Greedy, Sorting, Heap (Priority Queue), Prefix Sum |

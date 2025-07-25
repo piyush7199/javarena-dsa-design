@@ -11,3 +11,4 @@
 | 7 | MEDIUM | [House Robber Ii](https://leetcode.com/problems/house-robber-ii) | [Solution](../coding/algorithms/DynamicProgramming.java) | Array, Dynamic Programming |
 | 8 | MEDIUM | [3sum](https://leetcode.com/problems/3sum) | [Solution](../coding/algorithms/TwoPointerSum.java) | Array, Two Pointers, Sorting |
 | 9 | MEDIUM | [Insert Delete Getrandom O1](https://leetcode.com/problems/insert-delete-getrandom-o1) | [Solution](../coding/datastructures/hashMapAndSet/RandomizedSet.java) | Array, Hash Table, Math, Design, Randomized |
+| 10 | MEDIUM | [Meeting Rooms Ii](https://leetcode.com/problems/meeting-rooms-ii) | [Solution](../coding/datastructures/arrays/MeetingScheduleII.java) | Array, Two Pointers, Greedy, Sorting, Heap (Priority Queue), Prefix Sum |

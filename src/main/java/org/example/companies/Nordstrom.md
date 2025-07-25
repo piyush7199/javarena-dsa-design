@@ -7,3 +7,4 @@
 | 3 | MEDIUM | [House Robber Ii](https://leetcode.com/problems/house-robber-ii) | [Solution](../coding/algorithms/DynamicProgramming.java) | Array, Dynamic Programming |
 | 4 | MEDIUM | [Course Schedule](https://leetcode.com/problems/course-schedule) | [Solution](../coding/datastructures/graph/TopologicalSorting.java) | Depth-First Search, Breadth-First Search, Graph, Topological Sort |
 | 5 | MEDIUM | [Word Break](https://leetcode.com/problems/word-break) | [Solution](../coding/algorithms/recursionAndBacktracking/WordBreak.java) | Array, Hash Table, String, Dynamic Programming, Trie, Memoization |
+| 6 | MEDIUM | [Meeting Rooms Ii](https://leetcode.com/problems/meeting-rooms-ii) | [Solution](../coding/datastructures/arrays/MeetingScheduleII.java) | Array, Two Pointers, Greedy, Sorting, Heap (Priority Queue), Prefix Sum |

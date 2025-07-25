@@ -8,3 +8,4 @@
 | 4 | EASY | [Two Sum](https://leetcode.com/problems/two-sum) | [Solution](../coding/datastructures/hashMapAndSet/Solutions.java) | Array, Hash Table |
 | 5 | MEDIUM | [Find The Celebrity](https://leetcode.com/problems/find-the-celebrity) | [Solution](../coding/algorithms/TwoPointer.java) | Two Pointers, Graph, Interactive |
 | 6 | EASY | [Merge Sorted Array](https://leetcode.com/problems/merge-sorted-array) | [Solution](../coding/algorithms/TwoPointer.java) | Array, Two Pointers, Sorting |
+| 7 | MEDIUM | [Meeting Rooms Ii](https://leetcode.com/problems/meeting-rooms-ii) | [Solution](../coding/datastructures/arrays/MeetingScheduleII.java) | Array, Two Pointers, Greedy, Sorting, Heap (Priority Queue), Prefix Sum |

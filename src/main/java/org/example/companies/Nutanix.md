@@ -24,3 +24,4 @@
 | 20 | MEDIUM | [Amount Of Time For Binary Tree To Be Infected](https://leetcode.com/problems/amount-of-time-for-binary-tree-to-be-infected) | [Solution](../coding/datastructures/binaryTree/Solutions.java) | Hash Table, Tree, Depth-First Search, Breadth-First Search, Binary Tree |
 | 21 | MEDIUM | [Word Break](https://leetcode.com/problems/word-break) | [Solution](../coding/algorithms/recursionAndBacktracking/WordBreak.java) | Array, Hash Table, String, Dynamic Programming, Trie, Memoization |
 | 22 | MEDIUM | [Longest Palindromic Substring](https://leetcode.com/problems/longest-palindromic-substring) | [Solution](../coding/algorithms/twoPointerAndSlidingWindow/LongestPalindromic.java) | Two Pointers, String, Dynamic Programming |
+| 23 | MEDIUM | [Meeting Rooms Ii](https://leetcode.com/problems/meeting-rooms-ii) | [Solution](../coding/datastructures/arrays/MeetingScheduleII.java) | Array, Two Pointers, Greedy, Sorting, Heap (Priority Queue), Prefix Sum |

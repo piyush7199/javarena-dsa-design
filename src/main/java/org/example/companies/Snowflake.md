@@ -22,3 +22,4 @@
 | 18 | MEDIUM | [Construct Binary Tree From Preorder And Inorder Traversal](https://leetcode.com/problems/construct-binary-tree-from-preorder-and-inorder-traversal) | [Solution](../coding/datastructures/binaryTree/ConstructTree.java) | Array, Hash Table, Divide and Conquer, Tree, Binary Tree |
 | 19 | HARD | [Minimum Window Substring](https://leetcode.com/problems/minimum-window-substring) | [Solution](../coding/algorithms/twoPointerAndSlidingWindow/MinimumWindowSubstring.java) | Hash Table, String, Sliding Window |
 | 20 | MEDIUM | [Insert Delete Getrandom O1](https://leetcode.com/problems/insert-delete-getrandom-o1) | [Solution](../coding/datastructures/hashMapAndSet/RandomizedSet.java) | Array, Hash Table, Math, Design, Randomized |
+| 21 | MEDIUM | [Meeting Rooms Ii](https://leetcode.com/problems/meeting-rooms-ii) | [Solution](../coding/datastructures/arrays/MeetingScheduleII.java) | Array, Two Pointers, Greedy, Sorting, Heap (Priority Queue), Prefix Sum |

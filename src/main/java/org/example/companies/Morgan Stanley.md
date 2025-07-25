@@ -19,3 +19,4 @@
 | 15 | HARD | [Subarrays With K Different Integers](https://leetcode.com/problems/subarrays-with-k-different-integers) | [Solution](../coding/algorithms/twoPointerAndSlidingWindow/SubarrayWithKDifferentInteger.java) | Array, Hash Table, Sliding Window, Counting |
 | 16 | MEDIUM | [Letter Combinations Of A Phone Number](https://leetcode.com/problems/letter-combinations-of-a-phone-number) | [Solution](../coding/algorithms/recursionAndBacktracking/LetterCombination.java) | Hash Table, String, Backtracking |
 | 17 | MEDIUM | [Longest Palindromic Substring](https://leetcode.com/problems/longest-palindromic-substring) | [Solution](../coding/algorithms/twoPointerAndSlidingWindow/LongestPalindromic.java) | Two Pointers, String, Dynamic Programming |
+| 18 | MEDIUM | [Meeting Rooms Ii](https://leetcode.com/problems/meeting-rooms-ii) | [Solution](../coding/datastructures/arrays/MeetingScheduleII.java) | Array, Two Pointers, Greedy, Sorting, Heap (Priority Queue), Prefix Sum |
