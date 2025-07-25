@@ -12,3 +12,4 @@
 | 8 | MEDIUM | [Unique Paths](https://leetcode.com/problems/unique-paths) | [Solution](../coding/algorithms/DynamicProgramming2DTabulation.java) | Math, Dynamic Programming, Combinatorics |
 | 9 | MEDIUM | [Count Number Of Nice Subarrays](https://leetcode.com/problems/count-number-of-nice-subarrays) | [Solution](../coding/algorithms/twoPointerAndSlidingWindow/NiceArray.java) | Array, Hash Table, Math, Sliding Window, Prefix Sum |
 | 10 | HARD | [Subarrays With K Different Integers](https://leetcode.com/problems/subarrays-with-k-different-integers) | [Solution](../coding/algorithms/twoPointerAndSlidingWindow/SubarrayWithKDifferentInteger.java) | Array, Hash Table, Sliding Window, Counting |
+| 11 | MEDIUM | [Spiral Matrix](https://leetcode.com/problems/spiral-matrix) | [Solution](../coding/datastructures/arrays/SpiralMatrix.java) | Array, Matrix, Simulation |

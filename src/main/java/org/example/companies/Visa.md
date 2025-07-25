@@ -30,3 +30,4 @@
 | 26 | HARD | [Shortest Palindrome](https://leetcode.com/problems/shortest-palindrome) | [Solution](../coding/algorithms/string/ShortestPalindrome.java) | String, Rolling Hash, String Matching, Hash Function |
 | 27 | MEDIUM | [Longest Palindromic Substring](https://leetcode.com/problems/longest-palindromic-substring) | [Solution](../coding/algorithms/twoPointerAndSlidingWindow/LongestPalindromic.java) | Two Pointers, String, Dynamic Programming |
 | 28 | EASY | [Palindrome Number](https://leetcode.com/problems/palindrome-number) | [Solution](../coding/algorithms/miscellaneous/PalindromeNumber.java) | Math |
+| 29 | MEDIUM | [Spiral Matrix](https://leetcode.com/problems/spiral-matrix) | [Solution](../coding/datastructures/arrays/SpiralMatrix.java) | Array, Matrix, Simulation |
