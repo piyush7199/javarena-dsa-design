@@ -22,3 +22,4 @@
 | 18 | MEDIUM | [Insert Interval](https://leetcode.com/problems/insert-interval) | [Solution](../coding/algorithms/greedy/InsertInterval.java) | Array |
 | 19 | MEDIUM | [Longest Repeating Character Replacement](https://leetcode.com/problems/longest-repeating-character-replacement) | [Solution](../coding/algorithms/twoPointerAndSlidingWindow/RepeatingChars.java) | Hash Table, String, Sliding Window |
 | 20 | MEDIUM | [Longest Palindromic Substring](https://leetcode.com/problems/longest-palindromic-substring) | [Solution](../coding/algorithms/twoPointerAndSlidingWindow/LongestPalindromic.java) | Two Pointers, String, Dynamic Programming |
+| 21 | EASY | [Best Time To Buy And Sell Stock](https://leetcode.com/problems/best-time-to-buy-and-sell-stock) | [Solution](../coding/datastructures/arrays/StockBuySell.java) | Array, Dynamic Programming |

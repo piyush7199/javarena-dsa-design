@@ -27,3 +27,5 @@ two-pointers, and sorting.
 | 16 | [Meeting Rooms II](https://neetcode.io/problems/meeting-schedule-ii)                                                    | [MeetingScheduleII.java](./MeetingScheduleII.java) |
 | 17 | [Kth Larget Element](https://leetcode.com/problems/kth-largest-element-in-an-array/)                                    | [KthLargetElement.java](./KthLargetElement.java)   |
 | 18 | [Spiral Matrix](https://leetcode.com/problems/spiral-matrix/)                                                           | [SpiralMatrix.java](./SpiralMatrix.java)           |
+| 19 | [Integer To Roman](https://leetcode.com/problems/integer-to-roman/)                                                     | [IntegerToRoman.java](./IntegerToRoman.java)       |
+| 20 | [Roman To Int](https://leetcode.com/problems/roman-to-integer/)                                                         | [RomanToInt.java](/RomanToInt.java)                |
