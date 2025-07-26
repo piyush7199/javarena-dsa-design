@@ -14,3 +14,4 @@
 | 10 | HARD | [Minimum Window Substring](https://leetcode.com/problems/minimum-window-substring) | [Solution](../coding/algorithms/twoPointerAndSlidingWindow/MinimumWindowSubstring.java) | Hash Table, String, Sliding Window |
 | 11 | MEDIUM | [Longest Palindromic Substring](https://leetcode.com/problems/longest-palindromic-substring) | [Solution](../coding/algorithms/twoPointerAndSlidingWindow/LongestPalindromic.java) | Two Pointers, String, Dynamic Programming |
 | 12 | MEDIUM | [Insert Delete Getrandom O1](https://leetcode.com/problems/insert-delete-getrandom-o1) | [Solution](../coding/datastructures/hashMapAndSet/RandomizedSet.java) | Array, Hash Table, Math, Design, Randomized |
+| 13 | MEDIUM | [Generate Parentheses](https://leetcode.com/problems/generate-parentheses) | [Solution](../coding/algorithms/recursionAndBacktracking/GenerateParentheses.java) | String, Dynamic Programming, Backtracking |

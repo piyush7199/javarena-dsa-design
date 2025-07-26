@@ -49,3 +49,4 @@
 | 45 | EASY | [Best Time To Buy And Sell Stock](https://leetcode.com/problems/best-time-to-buy-and-sell-stock) | [Solution](../coding/datastructures/arrays/StockBuySell.java) | Array, Dynamic Programming |
 | 46 | MEDIUM | [Integer To Roman](https://leetcode.com/problems/integer-to-roman) | [Solution](../coding/datastructures/arrays/IntegerToRoman.java) | Hash Table, Math, String |
 | 47 | EASY | [Longest Common Prefix](https://leetcode.com/problems/longest-common-prefix) | [Solution](../coding/datastructures/string/LongestCommonPrefix.java) | String, Trie |
+| 48 | MEDIUM | [Generate Parentheses](https://leetcode.com/problems/generate-parentheses) | [Solution](../coding/algorithms/recursionAndBacktracking/GenerateParentheses.java) | String, Dynamic Programming, Backtracking |

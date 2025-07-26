@@ -77,3 +77,4 @@
 | 73 | EASY | [Roman To Integer](https://leetcode.com/problems/roman-to-integer) | [Solution](../coding/datastructures/arrays/RomanToInt.java) | Hash Table, Math, String |
 | 74 | EASY | [Longest Common Prefix](https://leetcode.com/problems/longest-common-prefix) | [Solution](../coding/datastructures/string/LongestCommonPrefix.java) | String, Trie |
 | 75 | MEDIUM | [3sum Closest](https://leetcode.com/problems/3sum-closest) | [Solution](../coding/algorithms/twoPointerAndSlidingWindow/ThreeSumClosest.java) | Array, Two Pointers, Sorting |
+| 76 | MEDIUM | [Generate Parentheses](https://leetcode.com/problems/generate-parentheses) | [Solution](../coding/algorithms/recursionAndBacktracking/GenerateParentheses.java) | String, Dynamic Programming, Backtracking |
