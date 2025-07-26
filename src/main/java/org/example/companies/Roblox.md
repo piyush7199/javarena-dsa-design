@@ -14,3 +14,4 @@
 | 10 | HARD | [Subarrays With K Different Integers](https://leetcode.com/problems/subarrays-with-k-different-integers) | [Solution](../coding/algorithms/twoPointerAndSlidingWindow/SubarrayWithKDifferentInteger.java) | Array, Hash Table, Sliding Window, Counting |
 | 11 | MEDIUM | [Spiral Matrix](https://leetcode.com/problems/spiral-matrix) | [Solution](../coding/datastructures/arrays/SpiralMatrix.java) | Array, Matrix, Simulation |
 | 12 | EASY | [Best Time To Buy And Sell Stock](https://leetcode.com/problems/best-time-to-buy-and-sell-stock) | [Solution](../coding/datastructures/arrays/StockBuySell.java) | Array, Dynamic Programming |
+| 13 | EASY | [Longest Common Prefix](https://leetcode.com/problems/longest-common-prefix) | [Solution](../coding/datastructures/string/LongestCommonPrefix.java) | String, Trie |

@@ -153,3 +153,4 @@ function removeDuplicates(nums):
 | 10 | [Count Number of Nice Subarrays](https://leetcode.com/problems/count-number-of-nice-subarrays/)                                             | [NiceArray.java](./twoPointerAndSlidingWindow/NiceArray.java)                   |
 | 11 | [Number of Substrings Containing All Three Characters](https://leetcode.com/problems/number-of-substrings-containing-all-three-characters/) | [CountSubstrings.java](./twoPointerAndSlidingWindow/CountSubstrings.java)       |
 | 12 | [Longest Palindromic Substring](https://leetcode.com/problems/longest-palindromic-substring/)                                               | [LongestPalindromic.java](./twoPointerAndSlidingWindow/LongestPalindromic.java) |
+| 13 | [3Sum Closest](https://leetcode.com/problems/3sum-closest/)                                                                                 | [ThreeSumClosest.java](./twoPointerAndSlidingWindow/ThreeSumClosest.java)       |

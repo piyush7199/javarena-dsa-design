@@ -36,3 +36,4 @@
 | 32 | MEDIUM | [Longest Repeating Character Replacement](https://leetcode.com/problems/longest-repeating-character-replacement) | [Solution](../coding/algorithms/twoPointerAndSlidingWindow/RepeatingChars.java) | Hash Table, String, Sliding Window |
 | 33 | MEDIUM | [Kth Largest Element In An Array](https://leetcode.com/problems/kth-largest-element-in-an-array) | [Solution](../coding/datastructures/arrays/KthLargetElement.java) | Array, Divide and Conquer, Sorting, Heap (Priority Queue), Quickselect |
 | 34 | EASY | [Best Time To Buy And Sell Stock](https://leetcode.com/problems/best-time-to-buy-and-sell-stock) | [Solution](../coding/datastructures/arrays/StockBuySell.java) | Array, Dynamic Programming |
+| 35 | MEDIUM | [3sum Closest](https://leetcode.com/problems/3sum-closest) | [Solution](../coding/algorithms/twoPointerAndSlidingWindow/ThreeSumClosest.java) | Array, Two Pointers, Sorting |
