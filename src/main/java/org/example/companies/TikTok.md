@@ -67,3 +67,4 @@
 | 63 | MEDIUM | [Integer To Roman](https://leetcode.com/problems/integer-to-roman) | [Solution](../coding/datastructures/arrays/IntegerToRoman.java) | Hash Table, Math, String |
 | 64 | EASY | [Longest Common Prefix](https://leetcode.com/problems/longest-common-prefix) | [Solution](../coding/datastructures/string/LongestCommonPrefix.java) | String, Trie |
 | 65 | MEDIUM | [Generate Parentheses](https://leetcode.com/problems/generate-parentheses) | [Solution](../coding/algorithms/recursionAndBacktracking/GenerateParentheses.java) | String, Dynamic Programming, Backtracking |
+| 66 | MEDIUM | [Swap Nodes In Pairs](https://leetcode.com/problems/swap-nodes-in-pairs) | [Solution](../coding/datastructures/linkedList/SwapNodeInPairs.java) | Linked List, Recursion |

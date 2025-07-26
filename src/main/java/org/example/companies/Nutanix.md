@@ -28,3 +28,4 @@
 | 24 | HARD | [Merge K Sorted Lists](https://leetcode.com/problems/merge-k-sorted-lists) | [Solution](../coding/datastructures/linkedList/MergeKSortedLists.java) | Linked List, Divide and Conquer, Heap (Priority Queue), Merge Sort |
 | 25 | MEDIUM | [Spiral Matrix](https://leetcode.com/problems/spiral-matrix) | [Solution](../coding/datastructures/arrays/SpiralMatrix.java) | Array, Matrix, Simulation |
 | 26 | EASY | [Best Time To Buy And Sell Stock](https://leetcode.com/problems/best-time-to-buy-and-sell-stock) | [Solution](../coding/datastructures/arrays/StockBuySell.java) | Array, Dynamic Programming |
+| 27 | MEDIUM | [Swap Nodes In Pairs](https://leetcode.com/problems/swap-nodes-in-pairs) | [Solution](../coding/datastructures/linkedList/SwapNodeInPairs.java) | Linked List, Recursion |

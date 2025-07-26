@@ -24,3 +24,4 @@ Focused on traversal, cycle detection, reversal, and merging techniques with bot
 | 14 | [Linked List Cycle II](https://leetcode.com/problems/linked-list-cycle-ii/)                                                 | [LinkedList.java](./LinkedList.java)               |
 | 15 | [Palindrome Linked List](https://leetcode.com/problems/palindrome-linked-list/)                                             | [LinkedList.java](./LinkedList.java)               |
 | 16 | [Merge k Sorted Lists](https://leetcode.com/problems/merge-k-sorted-lists/)                                                 | [MergeKSortedLists.java](./MergeKSortedLists.java) |
+| 17 | [Swap Node In Pairs](https://leetcode.com/problems/swap-nodes-in-pairs/)                                                    | [SwapNodeInPairs.java](./SwapNodeInPairs.java)     |
