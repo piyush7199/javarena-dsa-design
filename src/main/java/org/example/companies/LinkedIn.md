@@ -42,3 +42,4 @@
 | 38 | MEDIUM | [Kth Largest Element In An Array](https://leetcode.com/problems/kth-largest-element-in-an-array) | [Solution](../coding/datastructures/arrays/KthLargetElement.java) | Array, Divide and Conquer, Sorting, Heap (Priority Queue), Quickselect |
 | 39 | EASY | [Best Time To Buy And Sell Stock](https://leetcode.com/problems/best-time-to-buy-and-sell-stock) | [Solution](../coding/datastructures/arrays/StockBuySell.java) | Array, Dynamic Programming |
 | 40 | MEDIUM | [Integer To Roman](https://leetcode.com/problems/integer-to-roman) | [Solution](../coding/datastructures/arrays/IntegerToRoman.java) | Hash Table, Math, String |
+| 41 | MEDIUM | [Partition Labels](https://leetcode.com/problems/partition-labels) | [Solution](../coding/datastructures/string/PartitionLabels.java) | Hash Table, Two Pointers, String, Greedy |
