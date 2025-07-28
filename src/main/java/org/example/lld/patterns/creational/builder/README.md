@@ -90,7 +90,7 @@ The Builder Pattern is used in:
   configurations.
 
 <p align="center">
- <img src="../../../diagrams/builder-uml.png" alt="Decorator UML"/>
+ <img src="../../../diagrams/builder-uml.png" alt="Builder UML"/>
 </p>
 
 ---

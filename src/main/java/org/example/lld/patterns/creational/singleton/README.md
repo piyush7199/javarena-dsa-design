@@ -240,7 +240,7 @@ public enum Singleton {
 ## 📊 UML Diagram
 
 <p align="center">
- <img src="../../../diagrams/singleton-uml.png" alt="Decorator UML"/>
+ <img src="../../../diagrams/singleton-uml.png" alt="Singleton UML"/>
 </p>
 
 ---

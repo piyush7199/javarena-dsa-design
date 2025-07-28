@@ -75,7 +75,7 @@ The Observer Pattern is ideal when:
 ## 📊 UML Diagram
 
 <p align="center">
- <img src="../../../diagrams/observer-uml.svg" alt="Decorator UML"/>
+ <img src="../../../diagrams/observer-uml.svg" alt="Observer UML"/>
 </p>
 
 ---

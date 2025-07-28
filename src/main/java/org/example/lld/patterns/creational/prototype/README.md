@@ -74,7 +74,7 @@ The Prototype Pattern is ideal when:
 ## 📊 UML Diagram
 
 <p align="center">
- <img src="../../../diagrams/prototype-uml.png" alt="Decorator UML"/>
+ <img src="../../../diagrams/prototype-uml.png" alt="Prototype UML"/>
 </p>
 
 ---

@@ -72,7 +72,7 @@ The Strategy Pattern is ideal when:
 ## 📊 UML Diagram
 
 <p align="center">
- <img src="../../../diagrams/strategy-uml.png" alt="Decorator UML"/>
+ <img src="../../../diagrams/strategy-uml.png" alt="Strategy UML"/>
 </p>
 
 ---

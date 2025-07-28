@@ -74,7 +74,7 @@ The Abstract Factory Pattern is ideal when:
 ## 📊 UML Diagram
 
 <p align="center">
- <img src="../../../diagrams/abtractFactory-uml.png" alt="Decorator UML"/>
+ <img src="../../../diagrams/abtractFactory-uml.png" alt="Abstract Factory UML"/>
 </p>
 
 ---

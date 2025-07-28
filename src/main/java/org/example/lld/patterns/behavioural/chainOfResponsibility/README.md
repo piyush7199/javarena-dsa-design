@@ -79,7 +79,7 @@ The Chain of Responsibility Pattern is ideal when:
 ## 📊 UML Diagram
 
 <p align="center">
- <img src="../../../diagrams/chain-of-responsibility-uml.png" alt="Decorator UML"/>
+ <img src="../../../diagrams/chain-of-responsibility-uml.png" alt="Chain of Responsibility UML"/>
 </p>
 
 ---

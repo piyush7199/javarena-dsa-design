@@ -76,7 +76,7 @@ The Factory Pattern is useful when:
 ## 📊 UML Diagram
 
 <p align="center">
- <img src="../../../diagrams/factory-uml.png" alt="Decorator UML"/>
+ <img src="../../../diagrams/factory-uml.png" alt="Factory UML"/>
 </p>
 
 ---
