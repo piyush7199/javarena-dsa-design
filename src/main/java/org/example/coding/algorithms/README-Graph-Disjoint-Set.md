@@ -159,8 +159,9 @@ class DisjointSetSize:
 
 ## 🧪 Practice Problems
 
-| # | Problem | Solution |
-|---|---------|----------|
+| # | Problem                                                                                                 | Solution                                                                     |
+|---|---------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------|
+| 1 | [Process Restricted Friend Requests](https://leetcode.com/problems/process-restricted-friend-requests/) | [ProcessRestrictions.java](../datastructures/graph/ProcessRestrictions.java) |
 
 ---
 
