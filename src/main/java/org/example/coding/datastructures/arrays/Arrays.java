@@ -1,6 +1,7 @@
 package org.example.coding.datastructures.arrays;
 
 import java.util.ArrayList;
+import java.util.List;
 
 public class Arrays {
 
@@ -33,5 +34,20 @@ public class Arrays {
         ans.add((int) missing);
         ans.add((int) repeating);
         return ans;
+    }
+
+    public List<Boolean> kidsWithCandies(int[] candies, int extraCandies) {
+        ArrayList<Boolean> result = new ArrayList<>();
+        int max = 0;
+        for (int num : candies) {
+            if (num > max)
+                max = num;
+        }
+        for (int ca : candies) {
+            if (ca + extraCandies >= max)
+                result.add(true);
+            else result.add(false);
+        }
+        return result;
     }
 }
