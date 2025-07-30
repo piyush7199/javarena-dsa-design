@@ -12,3 +12,5 @@
 | 8 | MEDIUM | [Search In Rotated Sorted Array](https://leetcode.com/problems/search-in-rotated-sorted-array) | [Solution](../coding/algorithms/SearchingAlgorithms.java) | Array, Binary Search |
 | 9 | MEDIUM | [Letter Combinations Of A Phone Number](https://leetcode.com/problems/letter-combinations-of-a-phone-number) | [Solution](../coding/algorithms/recursionAndBacktracking/LetterCombination.java) | Hash Table, String, Backtracking |
 | 10 | MEDIUM | [Longest Palindromic Substring](https://leetcode.com/problems/longest-palindromic-substring) | [Solution](../coding/algorithms/twoPointerAndSlidingWindow/LongestPalindromic.java) | Two Pointers, String, Dynamic Programming |
+| 11 | HARD | [Block Placement Queries](https://leetcode.com/problems/block-placement-queries) | [Solution](../coding/datastructures/segmentTree/BlockPlacementQueries.java) | Array, Binary Search, Binary Indexed Tree, Segment Tree |
+| 12 | EASY | [Distribute Elements Into Two Arrays I](https://leetcode.com/problems/distribute-elements-into-two-arrays-i) | [Solution](../coding/datastructures/arrays/DistributeElements.java) | Array, Simulation |

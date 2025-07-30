@@ -63,3 +63,4 @@ Below is the space and time complexity for both Segment Tree implementations:
 |---|-------------------------------------------------------------------------------------|----------------------------------------------------|
 | 1 | [Range Minimum Query](https://www.geeksforgeeks.org/problems/range-minimum-query/1) | [RangeMinimumQuery.java](./RangeMinimumQuery.java) |
 | 2 | [Range Sum Query - Mutable](https://leetcode.com/problems/range-sum-query-mutable/) | [STUsingArray.java](./impl/STUsingArray.java)      |
+| 3 | [](https://leetcode.com/problems/block-placement-queries/)                          |                                                    |

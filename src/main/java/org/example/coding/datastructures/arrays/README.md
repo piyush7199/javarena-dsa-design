@@ -32,3 +32,4 @@ two-pointers, and sorting.
 | 21 | [Count Hills and Valleys in an Array](https://leetcode.com/problems/count-hills-and-valleys-in-an-array)                | [CountHillsAndValleys.java](./CountHillsAndValleys.java) |
 | 22 | [Maximum Unique Subarray Sum After Deletion](https://leetcode.com/problems/maximum-unique-subarray-sum-after-deletion/) | [MaxUniqueSubArray.java](./MaxUniqueSubArray.java)       |
 | 23 | [Minimum Right Shifts to Sort the Array](https://leetcode.com/problems/minimum-right-shifts-to-sort-the-array/)         | [MinRightShiftToSort.java](./MinRightShiftToSort.java)   |
+| 24 | [Distribute Elements Into Two Arrays I](https://leetcode.com/problems/distribute-elements-into-two-arrays-i/)           | [DistributeElements.java](./DistributeElements.java)     |

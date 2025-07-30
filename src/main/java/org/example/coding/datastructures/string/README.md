@@ -14,4 +14,5 @@ This section includes problems related to *String.*
 | 4 | [Zigzag Conversion](https://leetcode.com/problems/zigzag-conversion/)                                                                              | [ZigZagConversion.java](./ZigZagConversion.java)       |
 | 5 | [String to Integer (atoi)](https://leetcode.com/problems/string-to-integer-atoi/)                                                                  | [StringToInteger.java](./StringToInteger.java)         |
 | 6 | [Longest Common Prefix](https://leetcode.com/problems/longest-common-prefix/)                                                                      | [LongestCommonPrefix.java](./LongestCommonPrefix.java) |
-| 7 | [](https://leetcode.com/problems/partition-labels/)                                                                                                                                               |                                                        |
+| 7 | [Partition Labels](https://leetcode.com/problems/partition-labels/)                                                                                |                                                        |
+| 8 | [Largest 3-Same-Digit Number in String](https://leetcode.com/problems/largest-3-same-digit-number-in-string/)                                      | [Largest3Same.java](./Largest3Same.java)               |

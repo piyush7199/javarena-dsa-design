@@ -14,3 +14,4 @@
 | 10 | MEDIUM | [Spiral Matrix](https://leetcode.com/problems/spiral-matrix) | [Solution](../coding/datastructures/arrays/SpiralMatrix.java) | Array, Matrix, Simulation |
 | 11 | EASY | [Best Time To Buy And Sell Stock](https://leetcode.com/problems/best-time-to-buy-and-sell-stock) | [Solution](../coding/datastructures/arrays/StockBuySell.java) | Array, Dynamic Programming |
 | 12 | EASY | [Roman To Integer](https://leetcode.com/problems/roman-to-integer) | [Solution](../coding/datastructures/arrays/RomanToInt.java) | Hash Table, Math, String |
+| 13 | HARD | [Block Placement Queries](https://leetcode.com/problems/block-placement-queries) | [Solution](../coding/datastructures/segmentTree/BlockPlacementQueries.java) | Array, Binary Search, Binary Indexed Tree, Segment Tree |
