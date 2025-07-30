@@ -47,3 +47,4 @@ Below is the complexity analysis for key operations in Java’s HashMap and Hash
 | 3 | [Count Subarrays with given XOR](https://www.geeksforgeeks.org/problems/count-subarray-with-given-xor/1)                | [Solutions.java](./Solutions.java)         |
 | 4 | [Find Occurrences of an Element in an Array](https://leetcode.com/problems/find-occurrences-of-an-element-in-an-array/) | [Solutions.java](./Solutions.java)         |                               |
 | 5 | [Insert Delete GetRandom O(1)](https://leetcode.com/problems/insert-delete-getrandom-o1/)                               | [RandomizedSet.java](./RandomizedSet.java) |
+| 6 | [Subarrays with sum K](https://www.geeksforgeeks.org/problems/subarrays-with-sum-k/1)                                   | [SubArraySumEqualsK.java](./SubArraySumEqualsK.java)              |
