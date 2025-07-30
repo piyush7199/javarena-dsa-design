@@ -30,4 +30,5 @@ two-pointers, and sorting.
 | 19 | [Integer To Roman](https://leetcode.com/problems/integer-to-roman/)                                                     | [IntegerToRoman.java](./IntegerToRoman.java)             |
 | 20 | [Roman To Int](https://leetcode.com/problems/roman-to-integer/)                                                         | [RomanToInt.java](/RomanToInt.java)                      |
 | 21 | [Count Hills and Valleys in an Array](https://leetcode.com/problems/count-hills-and-valleys-in-an-array)                | [CountHillsAndValleys.java](./CountHillsAndValleys.java) |
-| 22 | [Maximum Unique Subarray Sum After Deletion](https://leetcode.com/problems/maximum-unique-subarray-sum-after-deletion/)                                                                                                                    | [MaxUniqueSubArray.java](./MaxUniqueSubArray.java)                             |
+| 22 | [Maximum Unique Subarray Sum After Deletion](https://leetcode.com/problems/maximum-unique-subarray-sum-after-deletion/) | [MaxUniqueSubArray.java](./MaxUniqueSubArray.java)       |
+| 23 | [Minimum Right Shifts to Sort the Array](https://leetcode.com/problems/minimum-right-shifts-to-sort-the-array/)         | [MinRightShiftToSort.java](./MinRightShiftToSort.java)   |

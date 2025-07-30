@@ -77,6 +77,7 @@ Graph traversal algorithms help in searching or visiting nodes:
 | 23 | [Cheapest Flights Within K Stops](https://leetcode.com/problems/cheapest-flights-within-k-stops/)                                    | [ShortestPathUsingDijkstra.java](./ShortestPathUsingDijkstra.java)             |
 | 24 | [Network Delay Time](https://leetcode.com/problems/network-delay-time/)                                                              | [NetworkDelay.java](./NetworkDelay.java)                                       |
 | 25 | [Process Restricted Friend Requests](https://leetcode.com/problems/process-restricted-friend-requests/)                              | [ProcessRestrictions.java](./ProcessRestrictions.java)                         |
+| 26 | [Minimum Score of a Path Between Two Cities](https://leetcode.com/problems/minimum-score-of-a-path-between-two-cities/)              | [MinScorePath.java](./MinScorePath.java)                                       |
 
 ---
 

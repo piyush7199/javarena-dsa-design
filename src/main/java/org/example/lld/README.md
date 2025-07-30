@@ -63,6 +63,8 @@ lld/
 | 1 | [Chain Of Responsibility](./patterns/behavioural/chainOfResponsibility/README.md) | Passes a request along a chain of handlers until one of them handles it.                                                           |
 | 2 | [Observer](./patterns/behavioural/observer/README.md)                             | Defines a one-to-many dependency so that when one object changes state, all its dependents are notified and updated automatically. |
 | 3 | [Strategy](./patterns/behavioural/strategy/README.md)                             | Enables selecting an algorithm's behavior at runtime by encapsulating it within a class and making it interchangeable.             |
+| 4 | [Command](./patterns/behavioural/command/README.md)                               | Encapsulates a request as an object, thereby allowing users to parameterize clients, delay execution, or queue and log operations. |
+| 5 | [State](./patterns/behavioural/state/README.md)                                   | Allows an object to change its behavior when its internal state changes, appearing as if it changed its class.                     |
 
 ### 🧱 Structural Design Patterns
 
