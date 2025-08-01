@@ -69,3 +69,4 @@
 | 65 | MEDIUM | [Generate Parentheses](https://leetcode.com/problems/generate-parentheses) | [Solution](../coding/algorithms/recursionAndBacktracking/GenerateParentheses.java) | String, Dynamic Programming, Backtracking |
 | 66 | MEDIUM | [Swap Nodes In Pairs](https://leetcode.com/problems/swap-nodes-in-pairs) | [Solution](../coding/datastructures/linkedList/SwapNodeInPairs.java) | Linked List, Recursion |
 | 67 | HARD | [Block Placement Queries](https://leetcode.com/problems/block-placement-queries) | [Solution](../coding/datastructures/segmentTree/BlockPlacementQueries.java) | Array, Binary Search, Binary Indexed Tree, Segment Tree |
+| 68 | EASY | [Pascals Triangle](https://leetcode.com/problems/pascals-triangle) | [Solution](../coding/algorithms/dynamicProgramming/PascalTriangle.java) | Array, Dynamic Programming |

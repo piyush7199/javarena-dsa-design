@@ -85,6 +85,7 @@ function knapsack(values, weights, W):
 | 14 | [Triangle](https://leetcode.com/problems/triangle/)                                          | [TrianglePathSum.java](./dynamicProgramming/TrianglePathSum.java)                                                                                              |
 | 15 | [Partition Equal Subset Sum](https://leetcode.com/problems/partition-equal-subset-sum)       | [EqualSumPartition.java](./dynamicProgramming/EqualSumPartition.java)                                                                                          |
 | 16 | [Target Sum](https://leetcode.com/problems/target-sum)                                       | [TargetSum.java](./dynamicProgramming/TargetSum.java)                                                                                                          |
+| 17 | [Pascal Triangle](https://leetcode.com/problems/pascals-triangle/)                           | [PascalTriangle.java](./dynamicProgramming/PascalTriangle.java)                                                                                                                                                         |
 
 ---
 
