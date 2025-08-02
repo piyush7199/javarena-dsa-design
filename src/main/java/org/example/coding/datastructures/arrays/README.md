@@ -35,3 +35,4 @@ two-pointers, and sorting.
 | 24 | [Distribute Elements Into Two Arrays I](https://leetcode.com/problems/distribute-elements-into-two-arrays-i/)           | [DistributeElements.java](./DistributeElements.java)           |
 | 25 | [Find Missing and Repeated Values](https://leetcode.com/problems/find-missing-and-repeated-values/)                     | [FindMissingNRepeatedNum.java](./FindMissingNRepeatedNum.java) |
 | 26 | [Maximum Erasure Value](https://leetcode.com/problems/maximum-erasure-value/)                                           | [MaximumErasureValue.java](./MaximumErasureValue.java)         |
+| 27 | [Build Array from Permutation](https://leetcode.com/problems/build-array-from-permutation/)                             | [ArrayPermutation.java](./ArrayPermutation.java)               |
