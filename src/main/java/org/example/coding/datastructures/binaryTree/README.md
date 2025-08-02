@@ -155,6 +155,7 @@ public class BinaryTree {
 | 27 | [Construct Binary Tree from Inorder and Postorder Traversal](https://leetcode.com/problems/construct-binary-tree-from-inorder-and-postorder-traversal/)                                          | [ConstructTree.java](./ConstructTree.java) |
 | 28 | [BST Search](https://leetcode.com/problems/search-in-a-binary-search-tree/)                                                                                                                      | [BSTSearch.java](./BSTSearch.java)         |
 | 29 | [Closest Nodes Queries in a Binary Search Tree](https://leetcode.com/problems/closest-nodes-queries-in-a-binary-search-tree/)                                                                    | [BSTClosetNode.java](./BSTClosetNode.java) |
+| 30 | [Even Odd Tree](https://leetcode.com/problems/even-odd-tree/)                                                                                                                                    | [EvenOddTree.java](./EvenOddTree.java)     |
 
 ---
 

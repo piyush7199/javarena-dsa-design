@@ -114,4 +114,5 @@ Below is the complexity analysis for key operations in `StackImpl<T>` and `Queue
 | 21 | [First negative in every window of size k](https://www.geeksforgeeks.org/problems/first-negative-integer-in-every-window-of-size-k3345/1) | [Solution.java](./Solution.java)               |
 | 22 | [Sliding Window Maximum](https://leetcode.com/problems/sliding-window-maximum/)                                                           | [Solution.java](./Solution.java)               |
 | 23 | [Online Stock Span](https://leetcode.com/problems/online-stock-span/)                                                                     | [StockSpanner.java](./StockSpanner.java)       |
+| 24 | [Max Stack](https://leetcode.com/problems/max-stack/)                                                                                                                             | [MaxStack.java](./MaxStack.java)                            |
 
