@@ -110,9 +110,11 @@ Each file contains:
 
 ### 🧱 Structural Design Patterns
 
-| # | Pattern Name                                                                         | Description                                          |
-|---|--------------------------------------------------------------------------------------|------------------------------------------------------|
-| 1 | [Decorator](./src/main/java/org/example/lld/patterns/structural/decorator/README.md) | Dynamically adds new behavior to objects at runtime. |
+| # | Pattern Name                                                                         | Description                                                                 |
+|---|--------------------------------------------------------------------------------------|-----------------------------------------------------------------------------|
+| 1 | [Decorator](./src/main/java/org/example/lld/patterns/structural/decorator/README.md) | Dynamically adds new behavior to objects at runtime.                        |
+| 2 | [Flyweight](./src/main/java/org/example/lld/patterns/structural/flyweight/README.md) | Reduces memory usage by sharing common parts of object state among objects. |
+| 3 | [Adapter](./src/main/java/org/example/lld/patterns/structural/adapter/README.md)     | Converts one interface into another expected by the client.                 |
 
 ---
 

@@ -68,9 +68,11 @@ lld/
 
 ### 🧱 Structural Design Patterns
 
-| # | Pattern Name                                           | Description                                          |
-|---|--------------------------------------------------------|------------------------------------------------------|
-| 1 | [Decorator](./patterns/structural/decorator/README.md) | Dynamically adds new behavior to objects at runtime. |
+| # | Pattern Name                                           | Description                                                                 |
+|---|--------------------------------------------------------|-----------------------------------------------------------------------------|
+| 1 | [Decorator](./patterns/structural/decorator/README.md) | Dynamically adds new behavior to objects at runtime.                        |
+| 2 | [Flyweight](./patterns/structural/flyweight/README.md) | Reduces memory usage by sharing common parts of object state among objects. |
+| 3 | [Adapter](./patterns/structural/adapter/README.md)     | Converts one interface into another expected by the client.                 |
 
 > ✨ More patterns like Strategy, Observer, Adapter, Proxy, and Template coming soon...
 
