@@ -52,3 +52,4 @@
 | 48 | MEDIUM | [Generate Parentheses](https://leetcode.com/problems/generate-parentheses) | [Solution](../coding/algorithms/recursionAndBacktracking/GenerateParentheses.java) | String, Dynamic Programming, Backtracking |
 | 49 | MEDIUM | [Subarray Sum Equals K](https://leetcode.com/problems/subarray-sum-equals-k) | [Solution](../coding/datastructures/hashMapAndSet/SubArraySumEqualsK.java) | Array, Hash Table, Prefix Sum |
 | 50 | HARD | [Max Stack](https://leetcode.com/problems/max-stack) | [Solution](../coding/datastructures/stackAndQueue/MaxStack.java) | Linked List, Stack, Design, Doubly-Linked List, Ordered Set |
+| 51 | EASY | [Diameter Of Binary Tree](https://leetcode.com/problems/diameter-of-binary-tree) | [Solution](../coding/datastructures/binaryTree/DiameterOfBinaryTree.java) | Tree, Depth-First Search, Binary Tree |

@@ -44,3 +44,4 @@
 | 40 | MEDIUM | [Integer To Roman](https://leetcode.com/problems/integer-to-roman) | [Solution](../coding/datastructures/arrays/IntegerToRoman.java) | Hash Table, Math, String |
 | 41 | MEDIUM | [Partition Labels](https://leetcode.com/problems/partition-labels) | [Solution](../coding/datastructures/string/PartitionLabels.java) | Hash Table, Two Pointers, String, Greedy |
 | 42 | HARD | [Max Stack](https://leetcode.com/problems/max-stack) | [Solution](../coding/datastructures/stackAndQueue/MaxStack.java) | Linked List, Stack, Design, Doubly-Linked List, Ordered Set |
+| 43 | EASY | [Diameter Of Binary Tree](https://leetcode.com/problems/diameter-of-binary-tree) | [Solution](../coding/datastructures/binaryTree/DiameterOfBinaryTree.java) | Tree, Depth-First Search, Binary Tree |

@@ -36,3 +36,4 @@
 | 32 | EASY | [Roman To Integer](https://leetcode.com/problems/roman-to-integer) | [Solution](../coding/datastructures/arrays/RomanToInt.java) | Hash Table, Math, String |
 | 33 | EASY | [Longest Common Prefix](https://leetcode.com/problems/longest-common-prefix) | [Solution](../coding/datastructures/string/LongestCommonPrefix.java) | String, Trie |
 | 34 | HARD | [Block Placement Queries](https://leetcode.com/problems/block-placement-queries) | [Solution](../coding/datastructures/segmentTree/BlockPlacementQueries.java) | Array, Binary Search, Binary Indexed Tree, Segment Tree |
+| 35 | EASY | [Diameter Of Binary Tree](https://leetcode.com/problems/diameter-of-binary-tree) | [Solution](../coding/datastructures/binaryTree/DiameterOfBinaryTree.java) | Tree, Depth-First Search, Binary Tree |
