@@ -36,3 +36,4 @@ two-pointers, and sorting.
 | 25 | [Find Missing and Repeated Values](https://leetcode.com/problems/find-missing-and-repeated-values/)                     | [FindMissingNRepeatedNum.java](./FindMissingNRepeatedNum.java) |
 | 26 | [Maximum Erasure Value](https://leetcode.com/problems/maximum-erasure-value/)                                           | [MaximumErasureValue.java](./MaximumErasureValue.java)         |
 | 27 | [Build Array from Permutation](https://leetcode.com/problems/build-array-from-permutation/)                             | [ArrayPermutation.java](./ArrayPermutation.java)               |
+| 28 | [Fruits Into Baskets II](https://leetcode.com/problems/fruits-into-baskets-ii/)                                         | [FruitsIntoBaskets.java](./FruitsIntoBaskets.java)             |
