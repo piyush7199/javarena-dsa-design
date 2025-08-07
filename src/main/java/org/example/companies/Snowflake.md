@@ -27,3 +27,4 @@
 | 23 | EASY | [Best Time To Buy And Sell Stock](https://leetcode.com/problems/best-time-to-buy-and-sell-stock) | [Solution](../coding/datastructures/arrays/StockBuySell.java) | Array, Dynamic Programming |
 | 24 | EASY | [Roman To Integer](https://leetcode.com/problems/roman-to-integer) | [Solution](../coding/datastructures/arrays/RomanToInt.java) | Hash Table, Math, String |
 | 25 | MEDIUM | [Swap Nodes In Pairs](https://leetcode.com/problems/swap-nodes-in-pairs) | [Solution](../coding/datastructures/linkedList/SwapNodeInPairs.java) | Linked List, Recursion |
+| 26 | HARD | [Count Subarrays With Fixed Bounds](https://leetcode.com/problems/count-subarrays-with-fixed-bounds) | [Solution](../coding/datastructures/arrays/CountSubArraysWithFixedBound.java) | Array, Queue, Sliding Window, Monotonic Queue |

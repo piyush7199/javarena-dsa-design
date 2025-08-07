@@ -4,3 +4,4 @@
 |---|------------|---------|----------|--------|
 | 1 | EASY | [Two Sum](https://leetcode.com/problems/two-sum) | [Solution](../coding/datastructures/hashMapAndSet/Solutions.java) | Array, Hash Table |
 | 2 | MEDIUM | [Jump Game](https://leetcode.com/problems/jump-game) | [Solution](../coding/algorithms/GreedyAlgorithms.java) | Array, Dynamic Programming, Greedy |
+| 3 | HARD | [Count Subarrays With Fixed Bounds](https://leetcode.com/problems/count-subarrays-with-fixed-bounds) | [Solution](../coding/datastructures/arrays/CountSubArraysWithFixedBound.java) | Array, Queue, Sliding Window, Monotonic Queue |
