@@ -51,3 +51,4 @@
 | 47 | EASY | [Roman To Integer](https://leetcode.com/problems/roman-to-integer) | [Solution](../coding/datastructures/arrays/RomanToInt.java) | Hash Table, Math, String |
 | 48 | MEDIUM | [Subarray Sum Equals K](https://leetcode.com/problems/subarray-sum-equals-k) | [Solution](../coding/datastructures/hashMapAndSet/SubArraySumEqualsK.java) | Array, Hash Table, Prefix Sum |
 | 49 | EASY | [Pascals Triangle](https://leetcode.com/problems/pascals-triangle) | [Solution](../coding/algorithms/dynamicProgramming/PascalTriangle.java) | Array, Dynamic Programming |
+| 50 | MEDIUM | [Coin Change](https://leetcode.com/problems/coin-change) | [Solution](../coding/algorithms/dynamicProgramming/CoinChange.java) | Array, Dynamic Programming, Breadth-First Search |

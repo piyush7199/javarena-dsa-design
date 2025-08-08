@@ -66,3 +66,4 @@
 | 62 | EASY | [Longest Common Prefix](https://leetcode.com/problems/longest-common-prefix) | [Solution](../coding/datastructures/string/LongestCommonPrefix.java) | String, Trie |
 | 63 | MEDIUM | [Generate Parentheses](https://leetcode.com/problems/generate-parentheses) | [Solution](../coding/algorithms/recursionAndBacktracking/GenerateParentheses.java) | String, Dynamic Programming, Backtracking |
 | 64 | EASY | [Pascals Triangle](https://leetcode.com/problems/pascals-triangle) | [Solution](../coding/algorithms/dynamicProgramming/PascalTriangle.java) | Array, Dynamic Programming |
+| 65 | MEDIUM | [Coin Change](https://leetcode.com/problems/coin-change) | [Solution](../coding/algorithms/dynamicProgramming/CoinChange.java) | Array, Dynamic Programming, Breadth-First Search |
