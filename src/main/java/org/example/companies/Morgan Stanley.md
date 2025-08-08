@@ -25,3 +25,4 @@
 | 21 | MEDIUM | [Generate Parentheses](https://leetcode.com/problems/generate-parentheses) | [Solution](../coding/algorithms/recursionAndBacktracking/GenerateParentheses.java) | String, Dynamic Programming, Backtracking |
 | 22 | MEDIUM | [Subarray Sum Equals K](https://leetcode.com/problems/subarray-sum-equals-k) | [Solution](../coding/datastructures/hashMapAndSet/SubArraySumEqualsK.java) | Array, Hash Table, Prefix Sum |
 | 23 | HARD | [Count Subarrays With Fixed Bounds](https://leetcode.com/problems/count-subarrays-with-fixed-bounds) | [Solution](../coding/datastructures/arrays/CountSubArraysWithFixedBound.java) | Array, Queue, Sliding Window, Monotonic Queue |
+| 24 | MEDIUM | [Coin Change Ii](https://leetcode.com/problems/coin-change-ii) | [Solution](../coding/algorithms/dynamicProgramming/CoinChange.java) | Array, Dynamic Programming |
