@@ -78,7 +78,7 @@ lld/
 
 ---
 
-## 🧪 Practice Problems
+## 🧪 LLD Interview Questions
 
 | # | System Design Problem | Description | Example |
 |---|-----------------------|-------------|---------|
