@@ -9,3 +9,4 @@
 | 5 | MEDIUM | [3sum](https://leetcode.com/problems/3sum) | [Solution](../coding/algorithms/TwoPointerSum.java) | Array, Two Pointers, Sorting |
 | 6 | EASY | [Merge Sorted Array](https://leetcode.com/problems/merge-sorted-array) | [Solution](../coding/algorithms/TwoPointer.java) | Array, Two Pointers, Sorting |
 | 7 | EASY | [Palindrome Linked List](https://leetcode.com/problems/palindrome-linked-list) | [Solution](../coding/datastructures/linkedList/LinkedList.java) | Linked List, Two Pointers, Stack, Recursion |
+| 8 | MEDIUM | [Lexicographical Numbers](https://leetcode.com/problems/lexicographical-numbers) | [Solution](../coding/miscellaneous/LexicographicalNumbers.java) | Depth-First Search, Trie |
