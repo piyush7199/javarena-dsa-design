@@ -54,3 +54,4 @@
 | 50 | HARD | [Max Stack](https://leetcode.com/problems/max-stack) | [Solution](../coding/datastructures/stackAndQueue/MaxStack.java) | Linked List, Stack, Design, Doubly-Linked List, Ordered Set |
 | 51 | EASY | [Diameter Of Binary Tree](https://leetcode.com/problems/diameter-of-binary-tree) | [Solution](../coding/datastructures/binaryTree/DiameterOfBinaryTree.java) | Tree, Depth-First Search, Binary Tree |
 | 52 | MEDIUM | [Coin Change](https://leetcode.com/problems/coin-change) | [Solution](../coding/algorithms/dynamicProgramming/CoinChange.java) | Array, Dynamic Programming, Breadth-First Search |
+| 53 | MEDIUM | [Longest Common Subsequence](https://leetcode.com/problems/longest-common-subsequence) | [Solution](../coding/algorithms/dynamicProgramming/LongestCommonSubsequence.java) | String, Dynamic Programming |

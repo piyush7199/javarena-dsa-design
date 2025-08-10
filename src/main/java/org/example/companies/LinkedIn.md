@@ -45,3 +45,4 @@
 | 41 | MEDIUM | [Partition Labels](https://leetcode.com/problems/partition-labels) | [Solution](../coding/datastructures/string/PartitionLabels.java) | Hash Table, Two Pointers, String, Greedy |
 | 42 | HARD | [Max Stack](https://leetcode.com/problems/max-stack) | [Solution](../coding/datastructures/stackAndQueue/MaxStack.java) | Linked List, Stack, Design, Doubly-Linked List, Ordered Set |
 | 43 | EASY | [Diameter Of Binary Tree](https://leetcode.com/problems/diameter-of-binary-tree) | [Solution](../coding/datastructures/binaryTree/DiameterOfBinaryTree.java) | Tree, Depth-First Search, Binary Tree |
+| 44 | MEDIUM | [Longest Palindromic Subsequence](https://leetcode.com/problems/longest-palindromic-subsequence) | [Solution](../coding/algorithms/dynamicProgramming/LongestPalindromicSubsequence.java) | String, Dynamic Programming |
