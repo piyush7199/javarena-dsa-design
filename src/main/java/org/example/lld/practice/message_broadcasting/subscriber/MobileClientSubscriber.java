@@ -1,7 +1,7 @@
-package org.example.lld.practice.messageBroadcasting.subscriber;
+package org.example.lld.practice.message_broadcasting.subscriber;
 
-import org.example.lld.practice.messageBroadcasting.models.Message;
-import org.example.lld.practice.messageBroadcasting.models.MessageType;
+import org.example.lld.practice.message_broadcasting.models.Message;
+import org.example.lld.practice.message_broadcasting.models.MessageType;
 
 import java.util.HashSet;
 import java.util.Set;

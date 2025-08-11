@@ -1,12 +1,12 @@
-package org.example.lld.practice.messageBroadcasting;
+package org.example.lld.practice.message_broadcasting;
 
-import org.example.lld.practice.messageBroadcasting.models.Message;
-import org.example.lld.practice.messageBroadcasting.models.MessageType;
-import org.example.lld.practice.messageBroadcasting.publisher.MessagePublisher;
-import org.example.lld.practice.messageBroadcasting.subscriber.EmailClientSubscriber;
-import org.example.lld.practice.messageBroadcasting.subscriber.MobileClientSubscriber;
-import org.example.lld.practice.messageBroadcasting.subscriber.Subscriber;
-import org.example.lld.practice.messageBroadcasting.subscriber.WebClientSubscriber;
+import org.example.lld.practice.message_broadcasting.models.Message;
+import org.example.lld.practice.message_broadcasting.models.MessageType;
+import org.example.lld.practice.message_broadcasting.publisher.MessagePublisher;
+import org.example.lld.practice.message_broadcasting.subscriber.EmailClientSubscriber;
+import org.example.lld.practice.message_broadcasting.subscriber.MobileClientSubscriber;
+import org.example.lld.practice.message_broadcasting.subscriber.Subscriber;
+import org.example.lld.practice.message_broadcasting.subscriber.WebClientSubscriber;
 
 import java.util.Set;
 

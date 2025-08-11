@@ -1,8 +1,8 @@
-package org.example.lld.practice.messageBroadcasting.publisher;
+package org.example.lld.practice.message_broadcasting.publisher;
 
-import org.example.lld.practice.messageBroadcasting.models.Message;
-import org.example.lld.practice.messageBroadcasting.models.MessageType;
-import org.example.lld.practice.messageBroadcasting.subscriber.Subscriber;
+import org.example.lld.practice.message_broadcasting.models.Message;
+import org.example.lld.practice.message_broadcasting.models.MessageType;
+import org.example.lld.practice.message_broadcasting.subscriber.Subscriber;
 
 import java.util.ArrayList;
 import java.util.List;

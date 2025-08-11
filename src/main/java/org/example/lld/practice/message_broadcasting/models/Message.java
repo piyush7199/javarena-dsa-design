@@ -1,4 +1,4 @@
-package org.example.lld.practice.messageBroadcasting.models;
+package org.example.lld.practice.message_broadcasting.models;
 
 public class Message {
     private final String content;

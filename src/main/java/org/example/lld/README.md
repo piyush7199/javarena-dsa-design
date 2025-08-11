@@ -80,5 +80,9 @@ lld/
 
 ## 🧪 LLD Interview Questions
 
-| # | System Design Problem | Description | Example |
-|---|-----------------------|-------------|---------|
+| # | System Design Problem                                                       |
+|---|-----------------------------------------------------------------------------|
+| 1 | [IOT Event Notification System](./practice/iot_event_notification_system)   |
+| 2 | [Message Broadcasting](./practice/message_broadcasting)                     |
+| 3 | [Real-Time Stock Price Update System](./practice/stock_price_update_system) |
+| 4 | [Tic Tac Toe](./practice/tic_tac_toe)                                       |
