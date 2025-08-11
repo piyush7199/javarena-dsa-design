@@ -133,3 +133,4 @@ Add problems you solve, including their names, platforms, links, and solution fi
 | 1 | [Longest Subarray With Maximum Bitwise AND](https://leetcode.com/problems/longest-subarray-with-maximum-bitwise-and) | [LongestSubarrayWithMaxBitAnd.java](./bitManupulation/LongestSubarrayWithMaxBitAnd.java) |
 | 2 | [Bitwise ORs of Subarrays](https://leetcode.com/problems/bitwise-ors-of-subarrays/)                                  | [BitOrSubarray.java](./bitManupulation/BitOrSubarray.java)                               |
 | 3 | [Power of Two](https://leetcode.com/problems/power-of-two/)                                                          |                                                                                          |
+| 4 | [Sum of Two Integers](https://leetcode.com/problems/sum-of-two-integers/)                                            | [SumOfTwoIntegers.java](./bitManupulation/SumOfTwoIntegers.java)                         |

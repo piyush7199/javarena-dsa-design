@@ -75,3 +75,4 @@
 | 71 | MEDIUM | [Find Peak Element](https://leetcode.com/problems/find-peak-element) | [Solution](../coding/algorithms/SearchingAlgorithms.java) | Array, Binary Search |
 | 72 | MEDIUM | [Binary Tree Right Side View](https://leetcode.com/problems/binary-tree-right-side-view) | [Solution](../coding/datastructures/binaryTree/Traversals.java) | Tree, Depth-First Search, Breadth-First Search, Binary Tree |
 | 73 | MEDIUM | [Partition Labels](https://leetcode.com/problems/partition-labels) | [Solution](../coding/datastructures/string/PartitionLabels.java) | Hash Table, Two Pointers, String, Greedy |
+| 74 | MEDIUM | [Sum Of Two Integers](https://leetcode.com/problems/sum-of-two-integers) | [Solution](../coding/algorithms/bitManupulation/SumOfTwoIntegers.java) | Math, Bit Manipulation |
