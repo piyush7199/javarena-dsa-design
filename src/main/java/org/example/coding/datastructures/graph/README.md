@@ -78,6 +78,7 @@ Graph traversal algorithms help in searching or visiting nodes:
 | 24 | [Network Delay Time](https://leetcode.com/problems/network-delay-time/)                                                              | [NetworkDelay.java](./NetworkDelay.java)                                       |
 | 25 | [Process Restricted Friend Requests](https://leetcode.com/problems/process-restricted-friend-requests/)                              | [ProcessRestrictions.java](./ProcessRestrictions.java)                         |
 | 26 | [Minimum Score of a Path Between Two Cities](https://leetcode.com/problems/minimum-score-of-a-path-between-two-cities/)              | [MinScorePath.java](./MinScorePath.java)                                       |
+| 27 | [Number of Connected Components in an Undirected Graph](https://neetcode.io/problems/count-connected-components/)                    | [NoOfConnectedComponent.java](./NoOfConnectedComponent.java)                   |
 
 ---
 
