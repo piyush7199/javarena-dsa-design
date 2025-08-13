@@ -38,3 +38,4 @@ two-pointers, and sorting.
 | 27 | [Build Array from Permutation](https://leetcode.com/problems/build-array-from-permutation/)                             | [ArrayPermutation.java](./ArrayPermutation.java)                         |
 | 28 | [Fruits Into Baskets II](https://leetcode.com/problems/fruits-into-baskets-ii/)                                         | [FruitsIntoBaskets.java](./FruitsIntoBaskets.java)                       |
 | 29 | [Count SubArrays With Fixed Bound](https://leetcode.com/problems/count-subarrays-with-fixed-bounds/)                    | [CountSubArraysWithFixedBound.java](./CountSubArraysWithFixedBound.java) |
+| 30 | [Rotate Image](https://leetcode.com/problems/rotate-image/)                                                             | [RotateImage.java](./RotateImage.java)                                   |

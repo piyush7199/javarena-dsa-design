@@ -35,3 +35,4 @@
 | 31 | MEDIUM | [Partition Equal Subset Sum](https://leetcode.com/problems/partition-equal-subset-sum) | [Solution](../coding/algorithms/DynamicProgramming.java) | Array, Dynamic Programming |
 | 32 | MEDIUM | [Find Occurrences Of An Element In An Array](https://leetcode.com/problems/find-occurrences-of-an-element-in-an-array) | [Solution](../coding/datastructures/hashMapAndSet/Solutions.java) | Array, Hash Table |
 | 33 | MEDIUM | [Shortest And Lexicographically Smallest Beautiful String](https://leetcode.com/problems/shortest-and-lexicographically-smallest-beautiful-string) | [Solution](../coding/algorithms/SlidingWindow.java) | String, Sliding Window |
+| 34 | MEDIUM | [Rotate Image](https://leetcode.com/problems/rotate-image) | [Solution](../coding/datastructures/arrays/RotateImage.java) | Array, Math, Matrix |
