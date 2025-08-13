@@ -76,3 +76,4 @@
 | 72 | MEDIUM | [Binary Tree Right Side View](https://leetcode.com/problems/binary-tree-right-side-view) | [Solution](../coding/datastructures/binaryTree/Traversals.java) | Tree, Depth-First Search, Breadth-First Search, Binary Tree |
 | 73 | MEDIUM | [Partition Labels](https://leetcode.com/problems/partition-labels) | [Solution](../coding/datastructures/string/PartitionLabels.java) | Hash Table, Two Pointers, String, Greedy |
 | 74 | MEDIUM | [Sum Of Two Integers](https://leetcode.com/problems/sum-of-two-integers) | [Solution](../coding/algorithms/bitManupulation/SumOfTwoIntegers.java) | Math, Bit Manipulation |
+| 75 | MEDIUM | [Divide Array Into Arrays With Max Difference](https://leetcode.com/problems/divide-array-into-arrays-with-max-difference) | [Solution](../coding/algorithms/greedy/DivideArrayIntoArraysWithMaxDifference.java) | Array, Greedy, Sorting |

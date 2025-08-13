@@ -53,3 +53,4 @@
 | 49 | EASY | [Pascals Triangle](https://leetcode.com/problems/pascals-triangle) | [Solution](../coding/algorithms/dynamicProgramming/PascalTriangle.java) | Array, Dynamic Programming |
 | 50 | MEDIUM | [Coin Change](https://leetcode.com/problems/coin-change) | [Solution](../coding/algorithms/dynamicProgramming/CoinChange.java) | Array, Dynamic Programming, Breadth-First Search |
 | 51 | MEDIUM | [Longest Common Subsequence](https://leetcode.com/problems/longest-common-subsequence) | [Solution](../coding/algorithms/dynamicProgramming/LongestCommonSubsequence.java) | String, Dynamic Programming |
+| 52 | EASY | [Power Of Three](https://leetcode.com/problems/power-of-three) | [Solution](../coding/algorithms/recursionAndBacktracking/PowerOfThree.java) | Math, Recursion |
