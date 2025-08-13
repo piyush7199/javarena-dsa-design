@@ -44,3 +44,4 @@
 | 40 | EASY       | [Middle Of The Linked List](https://leetcode.com/problems/middle-of-the-linked-list)                                                             | [Solution](../coding/datastructures/linkedList/LinkedList.java)                     | Linked List, Two Pointers                                              |
 | 41 | EASY       | [Binary Search](https://leetcode.com/problems/binary-search)                                                                                     | [Solution](../coding/algorithms/SearchingAlgorithms.java)                           | Array, Binary Search                                                   |
 | 42 | MEDIUM | [Rotate Image](https://leetcode.com/problems/rotate-image) | [Solution](../coding/datastructures/arrays/RotateImage.java) | Array, Math, Matrix |
+| 43 | EASY | [Plus One](https://leetcode.com/problems/plus-one) | [Solution](../coding/datastructures/arrays/PlusOne.java) | Array, Math |

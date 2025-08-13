@@ -78,3 +78,5 @@
 | 74 | MEDIUM | [Sum Of Two Integers](https://leetcode.com/problems/sum-of-two-integers) | [Solution](../coding/algorithms/bitManupulation/SumOfTwoIntegers.java) | Math, Bit Manipulation |
 | 75 | MEDIUM | [Divide Array Into Arrays With Max Difference](https://leetcode.com/problems/divide-array-into-arrays-with-max-difference) | [Solution](../coding/algorithms/greedy/DivideArrayIntoArraysWithMaxDifference.java) | Array, Greedy, Sorting |
 | 76 | MEDIUM | [Rotate Image](https://leetcode.com/problems/rotate-image) | [Solution](../coding/datastructures/arrays/RotateImage.java) | Array, Math, Matrix |
+| 77 | MEDIUM | [Set Matrix Zeroes](https://leetcode.com/problems/set-matrix-zeroes) | [Solution](../coding/datastructures/arrays/SetMatrixZero.java) | Array, Hash Table, Matrix |
+| 78 | EASY | [Plus One](https://leetcode.com/problems/plus-one) | [Solution](../coding/datastructures/arrays/PlusOne.java) | Array, Math |

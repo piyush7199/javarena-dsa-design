@@ -39,3 +39,5 @@ two-pointers, and sorting.
 | 28 | [Fruits Into Baskets II](https://leetcode.com/problems/fruits-into-baskets-ii/)                                         | [FruitsIntoBaskets.java](./FruitsIntoBaskets.java)                       |
 | 29 | [Count SubArrays With Fixed Bound](https://leetcode.com/problems/count-subarrays-with-fixed-bounds/)                    | [CountSubArraysWithFixedBound.java](./CountSubArraysWithFixedBound.java) |
 | 30 | [Rotate Image](https://leetcode.com/problems/rotate-image/)                                                             | [RotateImage.java](./RotateImage.java)                                   |
+| 31 | [Set Matrix Zero](https://leetcode.com/problems/set-matrix-zeroes/)                                                     | [SetMatrixZero.java](./SetMatrixZero.java)                               |
+| 32 | [Plus One](https://leetcode.com/problems/plus-one/)                                                                     | [PlusOne.java](./PlusOne.java)                                           |
