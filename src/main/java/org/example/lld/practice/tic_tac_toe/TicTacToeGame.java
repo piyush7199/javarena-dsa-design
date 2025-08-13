@@ -42,18 +42,18 @@ public class TicTacToeGame {
                 continue;
             }
 
-            int[] moves = playerTurn.getPlayerStrategy().makeMove(board);
+            int[] moves = playerTurn.playerStrategy().makeMove(board);
 
-            boolean placeSuccessfully = board.addPiece(moves[0], moves[1], playerTurn.getPiece());
+            boolean placeSuccessfully = board.addPiece(moves[0], moves[1], playerTurn.piece());
             if (!placeSuccessfully) {
                 System.out.println("Incorrect position chosen, try again");
                 players.addFirst(playerTurn);
                 continue;
             }
             players.addLast(playerTurn);
-            boolean isWinner = board.isThereWinner(moves[0], moves[1], playerTurn.getPiece().getPieceType());
+            boolean isWinner = board.isThereWinner(moves[0], moves[1], playerTurn.piece().getPieceType());
             if (isWinner) {
-                return playerTurn.getUsername();
+                return playerTurn.username();
             }
         }
         return "tie";
