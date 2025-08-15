@@ -25,3 +25,4 @@
 | 21 | MEDIUM | [Swap Nodes In Pairs](https://leetcode.com/problems/swap-nodes-in-pairs) | [Solution](../coding/datastructures/linkedList/SwapNodeInPairs.java) | Linked List, Recursion |
 | 22 | EASY | [Power Of Two](https://leetcode.com/problems/power-of-two) | [Solution](../coding/algorithms/bitManupulation/PowerOfTwo.java) | Math, Bit Manipulation, Recursion |
 | 23 | MEDIUM | [Rotate Image](https://leetcode.com/problems/rotate-image) | [Solution](../coding/datastructures/arrays/RotateImage.java) | Array, Math, Matrix |
+| 24 | EASY | [Power Of Four](https://leetcode.com/problems/power-of-four) | [Solution](../coding/algorithms/miscellaneous/PowerOfFour.java) | Math, Bit Manipulation, Recursion |
