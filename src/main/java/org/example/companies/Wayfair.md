@@ -7,3 +7,4 @@
 | 3 | MEDIUM | [Longest Palindromic Substring](https://leetcode.com/problems/longest-palindromic-substring) | [Solution](../coding/algorithms/twoPointerAndSlidingWindow/LongestPalindromic.java) | Two Pointers, String, Dynamic Programming |
 | 4 | HARD | [Sliding Window Maximum](https://leetcode.com/problems/sliding-window-maximum) | [Solution](../coding/datastructures/stackAndQueue/MinStack.java) | Array, Queue, Sliding Window, Heap (Priority Queue), Monotonic Queue |
 | 5 | MEDIUM | [Reverse Words In A String](https://leetcode.com/problems/reverse-words-in-a-string) | [Solution](../coding/datastructures/string/ReverseWords.java) | Two Pointers, String |
+| 6 | EASY | [Backspace String Compare](https://leetcode.com/problems/backspace-string-compare) | [Solution](../coding/datastructures/string/BackspaceStringCompare.java) | Two Pointers, String, Stack, Simulation |

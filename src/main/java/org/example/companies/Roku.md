@@ -7,3 +7,4 @@
 | 3 | HARD | [Sliding Window Maximum](https://leetcode.com/problems/sliding-window-maximum) | [Solution](../coding/datastructures/stackAndQueue/MinStack.java) | Array, Queue, Sliding Window, Heap (Priority Queue), Monotonic Queue |
 | 4 | MEDIUM | [Asteroid Collision](https://leetcode.com/problems/asteroid-collision) | [Solution](../coding/datastructures/stackAndQueue/MinStack.java) | Array, Stack, Simulation |
 | 5 | MEDIUM | [Max Consecutive Ones Iii](https://leetcode.com/problems/max-consecutive-ones-iii) | [Solution](../coding/algorithms/SlidingWindow.java) | Array, Binary Search, Sliding Window, Prefix Sum |
+| 6 | EASY | [Backspace String Compare](https://leetcode.com/problems/backspace-string-compare) | [Solution](../coding/datastructures/string/BackspaceStringCompare.java) | Two Pointers, String, Stack, Simulation |

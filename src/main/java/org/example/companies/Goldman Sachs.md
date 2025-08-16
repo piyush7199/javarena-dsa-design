@@ -56,3 +56,4 @@
 | 52 | EASY | [Power Of Three](https://leetcode.com/problems/power-of-three) | [Solution](../coding/algorithms/recursionAndBacktracking/PowerOfThree.java) | Math, Recursion |
 | 53 | MEDIUM | [Rotate Image](https://leetcode.com/problems/rotate-image) | [Solution](../coding/datastructures/arrays/RotateImage.java) | Array, Math, Matrix |
 | 54 | MEDIUM | [Set Matrix Zeroes](https://leetcode.com/problems/set-matrix-zeroes) | [Solution](../coding/datastructures/arrays/SetMatrixZero.java) | Array, Hash Table, Matrix |
+| 55 | EASY | [Backspace String Compare](https://leetcode.com/problems/backspace-string-compare) | [Solution](../coding/datastructures/string/BackspaceStringCompare.java) | Two Pointers, String, Stack, Simulation |

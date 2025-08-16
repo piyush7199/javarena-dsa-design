@@ -48,3 +48,4 @@
 | 44 | EASY | [Roman To Integer](https://leetcode.com/problems/roman-to-integer) | [Solution](../coding/datastructures/arrays/RomanToInt.java) | Hash Table, Math, String |
 | 45 | MEDIUM | [Coin Change](https://leetcode.com/problems/coin-change) | [Solution](../coding/algorithms/dynamicProgramming/CoinChange.java) | Array, Dynamic Programming, Breadth-First Search |
 | 46 | MEDIUM | [Longest Common Subsequence](https://leetcode.com/problems/longest-common-subsequence) | [Solution](../coding/algorithms/dynamicProgramming/LongestCommonSubsequence.java) | String, Dynamic Programming |
+| 47 | EASY | [Backspace String Compare](https://leetcode.com/problems/backspace-string-compare) | [Solution](../coding/datastructures/string/BackspaceStringCompare.java) | Two Pointers, String, Stack, Simulation |

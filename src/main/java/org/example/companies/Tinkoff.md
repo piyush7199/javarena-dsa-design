@@ -13,3 +13,4 @@
 | 9 | MEDIUM | [Subarray Sum Equals K](https://leetcode.com/problems/subarray-sum-equals-k) | [Solution](../coding/datastructures/hashMapAndSet/SubArraySumEqualsK.java) | Array, Hash Table, Prefix Sum |
 | 10 | EASY | [Reverse Linked List](https://leetcode.com/problems/reverse-linked-list) | [Solution](../coding/datastructures/linkedList/LinkedList.java) | Linked List, Recursion |
 | 11 | MEDIUM | [Rotate Image](https://leetcode.com/problems/rotate-image) | [Solution](../coding/datastructures/arrays/RotateImage.java) | Array, Math, Matrix |
+| 12 | EASY | [Backspace String Compare](https://leetcode.com/problems/backspace-string-compare) | [Solution](../coding/datastructures/string/BackspaceStringCompare.java) | Two Pointers, String, Stack, Simulation |
