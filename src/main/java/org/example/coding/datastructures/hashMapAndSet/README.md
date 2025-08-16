@@ -49,3 +49,4 @@ Below is the complexity analysis for key operations in Java’s HashMap and Hash
 | 5 | [Insert Delete GetRandom O(1)](https://leetcode.com/problems/insert-delete-getrandom-o1/)                               | [RandomizedSet.java](./RandomizedSet.java)                         |
 | 6 | [Subarrays with sum K](https://www.geeksforgeeks.org/problems/subarrays-with-sum-k/1)                                   | [SubArraySumEqualsK.java](./SubArraySumEqualsK.java)               |
 | 7 | [Divide Array Into Equal Pairs](https://leetcode.com/problems/divide-array-into-equal-pairs/)                           | [DivideArrayIntoEqualPairs.java](./DivideArrayIntoEqualPairs.java) |
+| 8 | [Design A Leaderboard](https://leetcode.com/problems/design-a-leaderboard/)                                             | [DesignALeaderboard.java](DesignALeaderboard.java)                 |

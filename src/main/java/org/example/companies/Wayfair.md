@@ -10,3 +10,6 @@
 | 6 | EASY | [Backspace String Compare](https://leetcode.com/problems/backspace-string-compare) | [Solution](../coding/datastructures/string/BackspaceStringCompare.java) | Two Pointers, String, Stack, Simulation |
 | 7 | MEDIUM | [Team Scores In Football Tournament](https://leetcode.com/problems/team-scores-in-football-tournament) | [Solution](../sql/leetcode_1212.sql) | Database |
 | 8 | MEDIUM | [Largest Magic Square](https://leetcode.com/problems/largest-magic-square) | [Solution](../coding/datastructures/arrays/LargestMagicSquare.java) | Array, Matrix, Prefix Sum |
+| 9 | MEDIUM | [Minimum Moves To Reach Target Score](https://leetcode.com/problems/minimum-moves-to-reach-target-score) | [Solution](../coding/algorithms/greedy/MinimumMovesToReachTargetScore.java) | Math, Greedy |
+| 10 | EASY | [Maximum Number Of Balloons](https://leetcode.com/problems/maximum-number-of-balloons) | [Solution](../coding/datastructures/string/MaxBalloons.java) | Hash Table, String, Counting |
+| 11 | MEDIUM | [Design A Leaderboard](https://leetcode.com/problems/design-a-leaderboard) | [Solution](../coding/datastructures/hashMapAndSet/DesignALeaderboard.java) | Hash Table, Design, Sorting |

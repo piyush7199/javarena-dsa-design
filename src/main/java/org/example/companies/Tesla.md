@@ -20,3 +20,4 @@
 | 16 | MEDIUM | [Subarray Sum Equals K](https://leetcode.com/problems/subarray-sum-equals-k) | [Solution](../coding/datastructures/hashMapAndSet/SubArraySumEqualsK.java) | Array, Hash Table, Prefix Sum |
 | 17 | EASY | [Reverse Linked List](https://leetcode.com/problems/reverse-linked-list) | [Solution](../coding/datastructures/linkedList/LinkedList.java) | Linked List, Recursion |
 | 18 | MEDIUM | [Find Minimum In Rotated Sorted Array](https://leetcode.com/problems/find-minimum-in-rotated-sorted-array) | [Solution](../coding/algorithms/SearchingAlgorithms.java) | Array, Binary Search |
+| 19 | EASY | [Maximum Number Of Balloons](https://leetcode.com/problems/maximum-number-of-balloons) | [Solution](../coding/datastructures/string/MaxBalloons.java) | Hash Table, String, Counting |

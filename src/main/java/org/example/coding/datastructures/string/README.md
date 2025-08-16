@@ -19,3 +19,4 @@ This section includes problems related to *String.*
 | 9  | [Delete Characters to Make Fancy String](https://leetcode.com/problems/delete-characters-to-make-fancy-string/)                                    | [FancyString.java](./FancyString.java)                       |
 | 10 | [Reordered Power of 2](https://leetcode.com/problems/reordered-power-of-2/)                                                                        | [ReorderedPowerOfTwo.java](./ReorderedPowerOfTwo.java)       |
 | 11 | [Backspace String Compare](https://leetcode.com/problems/backspace-string-compare/)                                                                | [BackspaceStringCompare.java](./BackspaceStringCompare.java) |
+| 12 | [Maximum Number of Balloons](https://leetcode.com/problems/maximum-number-of-balloons/)                                                            | [MaxBalloons.java](./MaxBalloons.java)                       |

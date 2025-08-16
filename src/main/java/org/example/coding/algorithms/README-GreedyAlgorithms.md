@@ -66,18 +66,19 @@ function activitySelection(activities):
 
 ## 🧪 Practice Problems
 
-| #  | Problem                                                                                                                     | Solution                                                  |
-|----|-----------------------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------|
-| 1  | [Assign Cookies](https://leetcode.com/problems/assign-cookies/description/)                                                 | [GreedyAlgorithms.java](./GreedyAlgorithms.java)          |
-| 2  | [Lemonade Change](https://leetcode.com/problems/lemonade-change/description/)                                               | [GreedyAlgorithms.java](./GreedyAlgorithms.java)          |
-| 3  | [Minimum number of Coins](https://www.geeksforgeeks.org/problems/-minimum-number-of-coins4426/1)                            | [GreedyAlgorithms.java](./GreedyAlgorithms.java)          |
-| 4  | [Fractional Knapsack](https://www.geeksforgeeks.org/problems/fractional-knapsack-1587115620/1)                              | [GreedyAlgorithms.java](./GreedyAlgorithms.java)          |
-| 5  | [N meetings in one room](https://www.geeksforgeeks.org/problems/n-meetings-in-one-room-1587115620/1)                        | [GreedyAlgorithms.java](./GreedyAlgorithms.java)          |
-| 6  | [Jump Game](https://leetcode.com/problems/jump-game/description/)                                                           | [GreedyAlgorithms.java](./GreedyAlgorithms.java)          |
-| 7  | [Largest Merge Of Two Strings](https://leetcode.com/problems/largest-merge-of-two-strings/description/)                     | [GreedyAlgorithms.java](./GreedyAlgorithms.java)          |
-| 8  | [Distant Barcodes](https://leetcode.com/problems/distant-barcodes/description/)                                             | [GreedyAlgorithms.java](./GreedyAlgorithms.java)          |
-| 9  | [Minimum Platforms](https://www.geeksforgeeks.org/problems/minimum-platforms-1587115620/1)                                  | [GreedyAlgorithms.java](./GreedyAlgorithms.java)          |
-| 10 | [Job Sequencing Problem](https://www.geeksforgeeks.org/problems/job-sequencing-problem-1587115620/1)                        | [GreedyAlgorithms.java](./GreedyAlgorithms.java)          |
-| 11 | [Insert Interval](https://leetcode.com/problems/insert-interval/)                                                           | [InsertInterval.java](./greedy/InsertInterval.java)       |
-| 12 | [Rearranging Fruits](https://leetcode.com/problems/rearranging-fruits/)                                                     | [RearrangingFruits.java](./greedy/RearrangingFruits.java) |
-| 13 | [Divide Array Into Arrays With Max Difference](https://leetcode.com/problems/divide-array-into-arrays-with-max-difference/) |                                                           | [DivideArrayIntoArraysWithMaxDifference.java](./greedy/DivideArrayIntoArraysWithMaxDifference.java)
+| #  | Problem                                                                                                                     | Solution                                                                                            |
+|----|-----------------------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------|
+| 1  | [Assign Cookies](https://leetcode.com/problems/assign-cookies/description/)                                                 | [GreedyAlgorithms.java](./GreedyAlgorithms.java)                                                    |
+| 2  | [Lemonade Change](https://leetcode.com/problems/lemonade-change/description/)                                               | [GreedyAlgorithms.java](./GreedyAlgorithms.java)                                                    |
+| 3  | [Minimum number of Coins](https://www.geeksforgeeks.org/problems/-minimum-number-of-coins4426/1)                            | [GreedyAlgorithms.java](./GreedyAlgorithms.java)                                                    |
+| 4  | [Fractional Knapsack](https://www.geeksforgeeks.org/problems/fractional-knapsack-1587115620/1)                              | [GreedyAlgorithms.java](./GreedyAlgorithms.java)                                                    |
+| 5  | [N meetings in one room](https://www.geeksforgeeks.org/problems/n-meetings-in-one-room-1587115620/1)                        | [GreedyAlgorithms.java](./GreedyAlgorithms.java)                                                    |
+| 6  | [Jump Game](https://leetcode.com/problems/jump-game/description/)                                                           | [GreedyAlgorithms.java](./GreedyAlgorithms.java)                                                    |
+| 7  | [Largest Merge Of Two Strings](https://leetcode.com/problems/largest-merge-of-two-strings/description/)                     | [GreedyAlgorithms.java](./GreedyAlgorithms.java)                                                    |
+| 8  | [Distant Barcodes](https://leetcode.com/problems/distant-barcodes/description/)                                             | [GreedyAlgorithms.java](./GreedyAlgorithms.java)                                                    |
+| 9  | [Minimum Platforms](https://www.geeksforgeeks.org/problems/minimum-platforms-1587115620/1)                                  | [GreedyAlgorithms.java](./GreedyAlgorithms.java)                                                    |
+| 10 | [Job Sequencing Problem](https://www.geeksforgeeks.org/problems/job-sequencing-problem-1587115620/1)                        | [GreedyAlgorithms.java](./GreedyAlgorithms.java)                                                    |
+| 11 | [Insert Interval](https://leetcode.com/problems/insert-interval/)                                                           | [InsertInterval.java](./greedy/InsertInterval.java)                                                 |
+| 12 | [Rearranging Fruits](https://leetcode.com/problems/rearranging-fruits/)                                                     | [RearrangingFruits.java](./greedy/RearrangingFruits.java)                                           |
+| 13 | [Divide Array Into Arrays With Max Difference](https://leetcode.com/problems/divide-array-into-arrays-with-max-difference/) | [DivideArrayIntoArraysWithMaxDifference.java](./greedy/DivideArrayIntoArraysWithMaxDifference.java) 
+| 14 | [Minimum Moves to Reach Target Score](https://leetcode.com/problems/minimum-moves-to-reach-target-score/)                   | [MinimumMovesToReachTargetScore.java](./greedy/MinimumMovesToReachTargetScore.java)                 |

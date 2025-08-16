@@ -26,3 +26,4 @@
 | 22 | EASY | [Best Time To Buy And Sell Stock](https://leetcode.com/problems/best-time-to-buy-and-sell-stock) | [Solution](../coding/datastructures/arrays/StockBuySell.java) | Array, Dynamic Programming |
 | 23 | MEDIUM | [Generate Parentheses](https://leetcode.com/problems/generate-parentheses) | [Solution](../coding/algorithms/recursionAndBacktracking/GenerateParentheses.java) | String, Dynamic Programming, Backtracking |
 | 24 | MEDIUM | [Rotate Image](https://leetcode.com/problems/rotate-image) | [Solution](../coding/datastructures/arrays/RotateImage.java) | Array, Math, Matrix |
+| 25 | MEDIUM | [Design A Leaderboard](https://leetcode.com/problems/design-a-leaderboard) | [Solution](../coding/datastructures/hashMapAndSet/DesignALeaderboard.java) | Hash Table, Design, Sorting |
