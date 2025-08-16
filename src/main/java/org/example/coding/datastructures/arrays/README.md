@@ -41,3 +41,4 @@ two-pointers, and sorting.
 | 30 | [Rotate Image](https://leetcode.com/problems/rotate-image/)                                                             | [RotateImage.java](./RotateImage.java)                                   |
 | 31 | [Set Matrix Zero](https://leetcode.com/problems/set-matrix-zeroes/)                                                     | [SetMatrixZero.java](./SetMatrixZero.java)                               |
 | 32 | [Plus One](https://leetcode.com/problems/plus-one/)                                                                     | [PlusOne.java](./PlusOne.java)                                           |
+| 33 | [Largest Magic Square](https://leetcode.com/problems/largest-magic-square/)                                             | [LargestMagicSquare.java](./LargestMagicSquare.java)                     |
