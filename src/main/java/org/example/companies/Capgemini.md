@@ -15,3 +15,4 @@
 | 11 | MEDIUM | [Rotate Array](https://leetcode.com/problems/rotate-array) | [Solution](../coding/datastructures/arrays/RotateArrays.java) | Array, Math, Two Pointers |
 | 12 | MEDIUM | [Subarray Sum Equals K](https://leetcode.com/problems/subarray-sum-equals-k) | [Solution](../coding/datastructures/hashMapAndSet/SubArraySumEqualsK.java) | Array, Hash Table, Prefix Sum |
 | 13 | MEDIUM | [Reverse Words In A String](https://leetcode.com/problems/reverse-words-in-a-string) | [Solution](../coding/datastructures/string/ReverseWords.java) | Two Pointers, String |
+| 14 | MEDIUM | [Longest Happy String](https://leetcode.com/problems/longest-happy-string) | [Solution](../coding/algorithms/greedy/LongestHappyString.java) | String, Greedy, Heap (Priority Queue) |

@@ -13,3 +13,6 @@
 | 9 | MEDIUM | [Minimum Moves To Reach Target Score](https://leetcode.com/problems/minimum-moves-to-reach-target-score) | [Solution](../coding/algorithms/greedy/MinimumMovesToReachTargetScore.java) | Math, Greedy |
 | 10 | EASY | [Maximum Number Of Balloons](https://leetcode.com/problems/maximum-number-of-balloons) | [Solution](../coding/datastructures/string/MaxBalloons.java) | Hash Table, String, Counting |
 | 11 | MEDIUM | [Design A Leaderboard](https://leetcode.com/problems/design-a-leaderboard) | [Solution](../coding/datastructures/hashMapAndSet/DesignALeaderboard.java) | Hash Table, Design, Sorting |
+| 12 | MEDIUM | [Longest Happy String](https://leetcode.com/problems/longest-happy-string) | [Solution](../coding/algorithms/greedy/LongestHappyString.java) | String, Greedy, Heap (Priority Queue) |
+| 13 | EASY | [Add Strings](https://leetcode.com/problems/add-strings) | [Solution](../coding/datastructures/string/AddStrings.java) | Math, String, Simulation |
+| 14 | EASY | [Delete Characters To Make Fancy String](https://leetcode.com/problems/delete-characters-to-make-fancy-string) | [Solution](../coding/datastructures/string/FancyString.java) | String |
