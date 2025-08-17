@@ -49,3 +49,4 @@
 | 45 | MEDIUM | [Coin Change](https://leetcode.com/problems/coin-change) | [Solution](../coding/algorithms/dynamicProgramming/CoinChange.java) | Array, Dynamic Programming, Breadth-First Search |
 | 46 | MEDIUM | [Longest Common Subsequence](https://leetcode.com/problems/longest-common-subsequence) | [Solution](../coding/algorithms/dynamicProgramming/LongestCommonSubsequence.java) | String, Dynamic Programming |
 | 47 | EASY | [Backspace String Compare](https://leetcode.com/problems/backspace-string-compare) | [Solution](../coding/datastructures/string/BackspaceStringCompare.java) | Two Pointers, String, Stack, Simulation |
+| 48 | HARD | [Split Array Largest Sum](https://leetcode.com/problems/split-array-largest-sum) | [Solution](../coding/algorithms/binarySearch/SplitArrayLargestSum.java) | Array, Binary Search, Dynamic Programming, Greedy, Prefix Sum |

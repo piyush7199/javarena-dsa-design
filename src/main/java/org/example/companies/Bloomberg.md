@@ -81,3 +81,4 @@
 | 77 | MEDIUM | [Set Matrix Zeroes](https://leetcode.com/problems/set-matrix-zeroes) | [Solution](../coding/datastructures/arrays/SetMatrixZero.java) | Array, Hash Table, Matrix |
 | 78 | EASY | [Plus One](https://leetcode.com/problems/plus-one) | [Solution](../coding/datastructures/arrays/PlusOne.java) | Array, Math |
 | 79 | MEDIUM | [Design A Leaderboard](https://leetcode.com/problems/design-a-leaderboard) | [Solution](../coding/datastructures/hashMapAndSet/DesignALeaderboard.java) | Hash Table, Design, Sorting |
+| 80 | HARD | [Split Array Largest Sum](https://leetcode.com/problems/split-array-largest-sum) | [Solution](../coding/algorithms/binarySearch/SplitArrayLargestSum.java) | Array, Binary Search, Dynamic Programming, Greedy, Prefix Sum |

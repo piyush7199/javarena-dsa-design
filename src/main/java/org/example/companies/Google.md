@@ -92,3 +92,4 @@
 | 88 | MEDIUM | [Rotate Image](https://leetcode.com/problems/rotate-image) | [Solution](../coding/datastructures/arrays/RotateImage.java) | Array, Math, Matrix |
 | 89 | MEDIUM | [Set Matrix Zeroes](https://leetcode.com/problems/set-matrix-zeroes) | [Solution](../coding/datastructures/arrays/SetMatrixZero.java) | Array, Hash Table, Matrix |
 | 90 | EASY | [Plus One](https://leetcode.com/problems/plus-one) | [Solution](../coding/datastructures/arrays/PlusOne.java) | Array, Math |
+| 91 | HARD | [Split Array Largest Sum](https://leetcode.com/problems/split-array-largest-sum) | [Solution](../coding/algorithms/binarySearch/SplitArrayLargestSum.java) | Array, Binary Search, Dynamic Programming, Greedy, Prefix Sum |

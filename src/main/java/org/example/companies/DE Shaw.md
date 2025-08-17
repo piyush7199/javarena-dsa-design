@@ -27,3 +27,4 @@
 | 23 | MEDIUM | [Generate Parentheses](https://leetcode.com/problems/generate-parentheses) | [Solution](../coding/algorithms/recursionAndBacktracking/GenerateParentheses.java) | String, Dynamic Programming, Backtracking |
 | 24 | MEDIUM | [Rotate Image](https://leetcode.com/problems/rotate-image) | [Solution](../coding/datastructures/arrays/RotateImage.java) | Array, Math, Matrix |
 | 25 | MEDIUM | [Design A Leaderboard](https://leetcode.com/problems/design-a-leaderboard) | [Solution](../coding/datastructures/hashMapAndSet/DesignALeaderboard.java) | Hash Table, Design, Sorting |
+| 26 | HARD | [Split Array Largest Sum](https://leetcode.com/problems/split-array-largest-sum) | [Solution](../coding/algorithms/binarySearch/SplitArrayLargestSum.java) | Array, Binary Search, Dynamic Programming, Greedy, Prefix Sum |
