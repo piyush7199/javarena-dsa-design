@@ -43,3 +43,4 @@ two-pointers, and sorting.
 | 32 | [Plus One](https://leetcode.com/problems/plus-one/)                                                                     | [PlusOne.java](./PlusOne.java)                                                       |
 | 33 | [Largest Magic Square](https://leetcode.com/problems/largest-magic-square/)                                             | [LargestMagicSquare.java](./LargestMagicSquare.java)                                 |
 | 34 | [Ways To Split Array Into Three Subarrays](https://leetcode.com/problems/ways-to-split-array-into-three-subarrays/)     | [WaysToSplitArrayIntoThreeSubarrays.java](./WaysToSplitArrayIntoThreeSubarrays.java) |
+| 35 | [Number of Zero-Filled Subarrays](https://leetcode.com/problems/number-of-zero-filled-subarrays/)                       | [NumberOfZeroFilledSubarrays.java](./NumberOfZeroFilledSubarrays.java)               |
