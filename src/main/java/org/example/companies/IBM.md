@@ -37,3 +37,4 @@
 | 33 | MEDIUM | [Shortest And Lexicographically Smallest Beautiful String](https://leetcode.com/problems/shortest-and-lexicographically-smallest-beautiful-string) | [Solution](../coding/algorithms/SlidingWindow.java) | String, Sliding Window |
 | 34 | MEDIUM | [Rotate Image](https://leetcode.com/problems/rotate-image) | [Solution](../coding/datastructures/arrays/RotateImage.java) | Array, Math, Matrix |
 | 35 | EASY | [Backspace String Compare](https://leetcode.com/problems/backspace-string-compare) | [Solution](../coding/datastructures/string/BackspaceStringCompare.java) | Two Pointers, String, Stack, Simulation |
+| 36 | MEDIUM | [Maximum Sum Of Distinct Subarrays With Length K](https://leetcode.com/problems/maximum-sum-of-distinct-subarrays-with-length-k) | [Solution](../coding/algorithms/twoPointerAndSlidingWindow/MaximumSumOfDistinctSubarraysWithLengthK.java) | Array, Hash Table, Sliding Window |
