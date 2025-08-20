@@ -90,3 +90,4 @@
 | 86 | EASY | [Plus One](https://leetcode.com/problems/plus-one) | [Solution](../coding/datastructures/arrays/PlusOne.java) | Array, Math |
 | 87 | EASY | [Divisible And Non Divisible Sums Difference](https://leetcode.com/problems/divisible-and-non-divisible-sums-difference) | [Solution](../coding/algorithms/miscellaneous/DivisibleAndNonDivisibleSumsDifference.java) | Math |
 | 88 | MEDIUM | [Divide Two Integers](https://leetcode.com/problems/divide-two-integers) | [Solution](../coding/algorithms/bitManupulation/DivideTwoIntegers.java) | Math, Bit Manipulation |
+| 89 | EASY | [Single Number](https://leetcode.com/problems/single-number) | [Solution](../coding/algorithms/bitManupulation/SingleNumber.java) | Array, Bit Manipulation |
