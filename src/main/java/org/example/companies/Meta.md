@@ -86,3 +86,4 @@
 | 82 | MEDIUM | [Set Matrix Zeroes](https://leetcode.com/problems/set-matrix-zeroes) | [Solution](../coding/datastructures/arrays/SetMatrixZero.java) | Array, Hash Table, Matrix |
 | 83 | EASY | [Plus One](https://leetcode.com/problems/plus-one) | [Solution](../coding/datastructures/arrays/PlusOne.java) | Array, Math |
 | 84 | EASY | [Add Strings](https://leetcode.com/problems/add-strings) | [Solution](../coding/datastructures/string/AddStrings.java) | Math, String, Simulation |
+| 85 | MEDIUM | [Divide Two Integers](https://leetcode.com/problems/divide-two-integers) | [Solution](../coding/algorithms/bitManupulation/DivideTwoIntegers.java) | Math, Bit Manipulation |

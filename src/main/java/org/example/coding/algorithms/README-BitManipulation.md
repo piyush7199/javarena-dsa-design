@@ -138,3 +138,4 @@ Add problems you solve, including their names, platforms, links, and solution fi
 | 6 | [Number of 1 Bits](https://www.geeksforgeeks.org/problems/set-bits0143/1)                                            | [NoOfOneBits.java](./bitManupulation/NoOfOneBits.java)                                   |
 | 7 | [Set the rightmost unset bit](https://www.geeksforgeeks.org/problems/set-the-rightmost-unset-bit4436/1)              | [SetTheRightMostBit.java](./bitManupulation/SetTheRightMostBit.java)                     |
 | 8 | [Swap two numbers](https://www.geeksforgeeks.org/problems/swap-two-numbers3844/1)                                    | [SwapTwoNumbers.java](./bitManupulation/SwapTwoNumbers.java)                             |
+| 9 | [Divide Two Integers](https://leetcode.com/problems/divide-two-integers/)                                            | [DivideTwoIntegers.java](./bitManupulation/DivideTwoIntegers.java)                       |

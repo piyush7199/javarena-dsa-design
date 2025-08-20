@@ -62,3 +62,4 @@
 | 58 | MEDIUM | [Rotate Image](https://leetcode.com/problems/rotate-image) | [Solution](../coding/datastructures/arrays/RotateImage.java) | Array, Math, Matrix |
 | 59 | MEDIUM | [Set Matrix Zeroes](https://leetcode.com/problems/set-matrix-zeroes) | [Solution](../coding/datastructures/arrays/SetMatrixZero.java) | Array, Hash Table, Matrix |
 | 60 | EASY | [Plus One](https://leetcode.com/problems/plus-one) | [Solution](../coding/datastructures/arrays/PlusOne.java) | Array, Math |
+| 61 | MEDIUM | [Divide Two Integers](https://leetcode.com/problems/divide-two-integers) | [Solution](../coding/algorithms/bitManupulation/DivideTwoIntegers.java) | Math, Bit Manipulation |
