@@ -44,3 +44,4 @@ two-pointers, and sorting.
 | 33 | [Largest Magic Square](https://leetcode.com/problems/largest-magic-square/)                                             | [LargestMagicSquare.java](./LargestMagicSquare.java)                                 |
 | 34 | [Ways To Split Array Into Three Subarrays](https://leetcode.com/problems/ways-to-split-array-into-three-subarrays/)     | [WaysToSplitArrayIntoThreeSubarrays.java](./WaysToSplitArrayIntoThreeSubarrays.java) |
 | 35 | [Number of Zero-Filled Subarrays](https://leetcode.com/problems/number-of-zero-filled-subarrays/)                       | [NumberOfZeroFilledSubarrays.java](./NumberOfZeroFilledSubarrays.java)               |
+| 36 | [Find the Minimum Area to Cover All Ones I](https://leetcode.com/problems/find-the-minimum-area-to-cover-all-ones-i/)   | [FindTheMinimumAreaToCoverAllOnes.java](./FindTheMinimumAreaToCoverAllOnes.java)     |
