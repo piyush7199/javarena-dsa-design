@@ -21,3 +21,4 @@ This section includes problems related to *String.*
 | 11 | [Backspace String Compare](https://leetcode.com/problems/backspace-string-compare/)                                                                | [BackspaceStringCompare.java](./BackspaceStringCompare.java) |
 | 12 | [Maximum Number of Balloons](https://leetcode.com/problems/maximum-number-of-balloons/)                                                            | [MaxBalloons.java](./MaxBalloons.java)                       |
 | 13 | [Add Strings](https://leetcode.com/problems/add-strings/)                                                                                          | [AddStrings.java](./AddStrings.java)                         |
+| 14 | [Formate Date](https://leetcode.com/problems/reformat-date/)                                                                                       | [FormateDate.java](./FormateDate.java)                       |

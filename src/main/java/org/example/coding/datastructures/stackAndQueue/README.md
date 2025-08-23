@@ -89,30 +89,31 @@ Below is the complexity analysis for key operations in `StackImpl<T>` and `Queue
 
 ## 💻 Problem Tracker
 
-| #  | Problem                                                                                                                                   | Solution File                                  |
-|----|-------------------------------------------------------------------------------------------------------------------------------------------|------------------------------------------------|
-| 1  | [Implement Queue using Stacks](https://leetcode.com/problems/implement-queue-using-stacks/)                                               | [MyQueue.java](./MyQueue.java)                 |
-| 2  | [Implement Stack using Queues](https://leetcode.com/problems/implement-stack-using-queues/)                                               | [MyStack.java](./MyStack.java)                 |
-| 3  | [Generate Binary Numbers](https://www.geeksforgeeks.org/problems/generate-binary-numbers-1587115620/1)                                    | [Solution.java](./Solution.java)               |
-| 4  | [Two Stacks in an Array](https://www.geeksforgeeks.org/problems/implement-two-stacks-in-an-array/1)                                       | [TwoStacks.java](./TwoStacks.java)             |
-| 5  | [Reverse first K of a Queue](https://www.geeksforgeeks.org/problems/reverse-first-k-elements-of-queue/1)                                  | [Solution.java](./Solution.java)               |
-| 6  | [Sort a Stack](https://www.geeksforgeeks.org/problems/sort-a-stack/1)                                                                     | [Solution.java](./Solution.java)               |
-| 7  | [Next Greater Element](https://www.geeksforgeeks.org/problems/next-larger-element-1587115620/1)                                           | [Solution.java](./Solution.java)               |
-| 8  | [Valid Parentheses](https://leetcode.com/problems/valid-parentheses/)                                                                     | [Solution.java](./Solution.java)               |
-| 9  | [Postfix Evaluation](https://www.geeksforgeeks.org/problems/evaluation-of-postfix-expression1735/1)                                       | [Solution.java](./Solution.java)               |
-| 10 | [Min Stack](https://leetcode.com/problems/min-stack/)                                                                                     | [MinStack.java](./MinStack.java)               |
-| 11 | [Prefix to Infix Conversion](https://www.geeksforgeeks.org/problems/prefix-to-infix-conversion/1)                                         | [StackConversion.java](./StackConversion.java) |
-| 12 | [Prefix to Postfix Conversion](https://www.geeksforgeeks.org/problems/prefix-to-postfix-conversion/1)                                     | [StackConversion.java](./StackConversion.java) |
-| 13 | [Postfix to Infix Conversion](https://www.geeksforgeeks.org/problems/postfix-to-infix-conversion/1)                                       | [StackConversion.java](./StackConversion.java) |
-| 14 | [Postfix to Prefix Conversion](https://www.geeksforgeeks.org/problems/postfix-to-prefix-conversion/1)                                     | [StackConversion.java](./StackConversion.java) |
-| 15 | [Infix to Postfix](https://www.geeksforgeeks.org/problems/infix-to-postfix-1587115620/1)                                                  | [StackConversion.java](./StackConversion.java) |
-| 16 | [Convert Infix To Prefix Notation](https://www.geeksforgeeks.org/dsa/convert-infix-prefix-notation/)                                      | [StackConversion.java](./StackConversion.java) |
-| 17 | [Next Greater Element II](https://leetcode.com/problems/next-greater-element-ii/)                                                         | [Solution.java](./Solution.java)               |
-| 18 | [Remove K Digits](https://leetcode.com/problems/remove-k-digits/)                                                                         | [Solution.java](./Solution.java)               |
-| 19 | [Asteroid Collision](https://leetcode.com/problems/asteroid-collision/)                                                                   | [Solution.java](./Solution.java)               |
-| 20 | [Trapping Rain Water](https://leetcode.com/problems/trapping-rain-water/)                                                                 | [Solution.java](./Solution.java)               |
-| 21 | [First negative in every window of size k](https://www.geeksforgeeks.org/problems/first-negative-integer-in-every-window-of-size-k3345/1) | [Solution.java](./Solution.java)               |
-| 22 | [Sliding Window Maximum](https://leetcode.com/problems/sliding-window-maximum/)                                                           | [Solution.java](./Solution.java)               |
-| 23 | [Online Stock Span](https://leetcode.com/problems/online-stock-span/)                                                                     | [StockSpanner.java](./StockSpanner.java)       |
-| 24 | [Max Stack](https://leetcode.com/problems/max-stack/)                                                                                                                             | [MaxStack.java](./MaxStack.java)                            |
+| #  | Problem                                                                                                                                   | Solution File                                                            |
+|----|-------------------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------|
+| 1  | [Implement Queue using Stacks](https://leetcode.com/problems/implement-queue-using-stacks/)                                               | [MyQueue.java](./MyQueue.java)                                           |
+| 2  | [Implement Stack using Queues](https://leetcode.com/problems/implement-stack-using-queues/)                                               | [MyStack.java](./MyStack.java)                                           |
+| 3  | [Generate Binary Numbers](https://www.geeksforgeeks.org/problems/generate-binary-numbers-1587115620/1)                                    | [Solution.java](./Solution.java)                                         |
+| 4  | [Two Stacks in an Array](https://www.geeksforgeeks.org/problems/implement-two-stacks-in-an-array/1)                                       | [TwoStacks.java](./TwoStacks.java)                                       |
+| 5  | [Reverse first K of a Queue](https://www.geeksforgeeks.org/problems/reverse-first-k-elements-of-queue/1)                                  | [Solution.java](./Solution.java)                                         |
+| 6  | [Sort a Stack](https://www.geeksforgeeks.org/problems/sort-a-stack/1)                                                                     | [Solution.java](./Solution.java)                                         |
+| 7  | [Next Greater Element](https://www.geeksforgeeks.org/problems/next-larger-element-1587115620/1)                                           | [Solution.java](./Solution.java)                                         |
+| 8  | [Valid Parentheses](https://leetcode.com/problems/valid-parentheses/)                                                                     | [Solution.java](./Solution.java)                                         |
+| 9  | [Postfix Evaluation](https://www.geeksforgeeks.org/problems/evaluation-of-postfix-expression1735/1)                                       | [Solution.java](./Solution.java)                                         |
+| 10 | [Min Stack](https://leetcode.com/problems/min-stack/)                                                                                     | [MinStack.java](./MinStack.java)                                         |
+| 11 | [Prefix to Infix Conversion](https://www.geeksforgeeks.org/problems/prefix-to-infix-conversion/1)                                         | [StackConversion.java](./StackConversion.java)                           |
+| 12 | [Prefix to Postfix Conversion](https://www.geeksforgeeks.org/problems/prefix-to-postfix-conversion/1)                                     | [StackConversion.java](./StackConversion.java)                           |
+| 13 | [Postfix to Infix Conversion](https://www.geeksforgeeks.org/problems/postfix-to-infix-conversion/1)                                       | [StackConversion.java](./StackConversion.java)                           |
+| 14 | [Postfix to Prefix Conversion](https://www.geeksforgeeks.org/problems/postfix-to-prefix-conversion/1)                                     | [StackConversion.java](./StackConversion.java)                           |
+| 15 | [Infix to Postfix](https://www.geeksforgeeks.org/problems/infix-to-postfix-1587115620/1)                                                  | [StackConversion.java](./StackConversion.java)                           |
+| 16 | [Convert Infix To Prefix Notation](https://www.geeksforgeeks.org/dsa/convert-infix-prefix-notation/)                                      | [StackConversion.java](./StackConversion.java)                           |
+| 17 | [Next Greater Element II](https://leetcode.com/problems/next-greater-element-ii/)                                                         | [Solution.java](./Solution.java)                                         |
+| 18 | [Remove K Digits](https://leetcode.com/problems/remove-k-digits/)                                                                         | [Solution.java](./Solution.java)                                         |
+| 19 | [Asteroid Collision](https://leetcode.com/problems/asteroid-collision/)                                                                   | [Solution.java](./Solution.java)                                         |
+| 20 | [Trapping Rain Water](https://leetcode.com/problems/trapping-rain-water/)                                                                 | [Solution.java](./Solution.java)                                         |
+| 21 | [First negative in every window of size k](https://www.geeksforgeeks.org/problems/first-negative-integer-in-every-window-of-size-k3345/1) | [Solution.java](./Solution.java)                                         |
+| 22 | [Sliding Window Maximum](https://leetcode.com/problems/sliding-window-maximum/)                                                           | [Solution.java](./Solution.java)                                         |
+| 23 | [Online Stock Span](https://leetcode.com/problems/online-stock-span/)                                                                     | [StockSpanner.java](./StockSpanner.java)                                 |
+| 24 | [Max Stack](https://leetcode.com/problems/max-stack/)                                                                                     | [MaxStack.java](./MaxStack.java)                                         |
+| 25 | [Number of Visible People in a Queue](https://leetcode.com/problems/number-of-visible-people-in-a-queue/)                                 | [NumberOfVisiblePeopleInAQueue.java](NumberOfVisiblePeopleInAQueue.java) |
 

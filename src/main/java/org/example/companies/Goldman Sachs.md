@@ -57,3 +57,5 @@
 | 53 | MEDIUM | [Rotate Image](https://leetcode.com/problems/rotate-image) | [Solution](../coding/datastructures/arrays/RotateImage.java) | Array, Math, Matrix |
 | 54 | MEDIUM | [Set Matrix Zeroes](https://leetcode.com/problems/set-matrix-zeroes) | [Solution](../coding/datastructures/arrays/SetMatrixZero.java) | Array, Hash Table, Matrix |
 | 55 | EASY | [Backspace String Compare](https://leetcode.com/problems/backspace-string-compare) | [Solution](../coding/datastructures/string/BackspaceStringCompare.java) | Two Pointers, String, Stack, Simulation |
+| 56 | EASY | [Reformat Date](https://leetcode.com/problems/reformat-date) | [Solution](../coding/datastructures/string/FormateDate.java) | String |
+| 57 | EASY | [Count Number Of Pairs With Absolute Difference K](https://leetcode.com/problems/count-number-of-pairs-with-absolute-difference-k) | [Solution](../coding/datastructures/hashMapAndSet/CountPairsWithAbsDiffK.java) | Array, Hash Table, Counting |
