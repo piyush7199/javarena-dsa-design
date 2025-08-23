@@ -22,3 +22,4 @@
 | 18 | EASY | [Reformat Date](https://leetcode.com/problems/reformat-date) | [Solution](../coding/datastructures/string/FormateDate.java) | String |
 | 19 | HARD | [Number Of Visible People In A Queue](https://leetcode.com/problems/number-of-visible-people-in-a-queue) | [Solution](../coding/datastructures/stackAndQueue/NumberOfVisiblePeopleInAQueue.java) | Array, Stack, Monotonic Stack |
 | 20 | EASY | [Count Number Of Pairs With Absolute Difference K](https://leetcode.com/problems/count-number-of-pairs-with-absolute-difference-k) | [Solution](../coding/datastructures/hashMapAndSet/CountPairsWithAbsDiffK.java) | Array, Hash Table, Counting |
+| 21 | EASY | [Minimum Number Of Chairs In A Waiting Room](https://leetcode.com/problems/minimum-number-of-chairs-in-a-waiting-room) | [Solution](../coding/datastructures/string/MinChairsInRoom.java) | String, Simulation |

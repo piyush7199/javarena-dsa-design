@@ -22,3 +22,4 @@ This section includes problems related to *String.*
 | 12 | [Maximum Number of Balloons](https://leetcode.com/problems/maximum-number-of-balloons/)                                                            | [MaxBalloons.java](./MaxBalloons.java)                       |
 | 13 | [Add Strings](https://leetcode.com/problems/add-strings/)                                                                                          | [AddStrings.java](./AddStrings.java)                         |
 | 14 | [Formate Date](https://leetcode.com/problems/reformat-date/)                                                                                       | [FormateDate.java](./FormateDate.java)                       |
+| 15 | [Minimum Number of Chairs in a Waiting Room](https://leetcode.com/problems/minimum-number-of-chairs-in-a-waiting-room/)                            | [MinChairsInRoom.java](./MinChairsInRoom.java)               |
