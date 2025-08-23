@@ -116,4 +116,5 @@ Below is the complexity analysis for key operations in `StackImpl<T>` and `Queue
 | 23 | [Online Stock Span](https://leetcode.com/problems/online-stock-span/)                                                                     | [StockSpanner.java](./StockSpanner.java)                                 |
 | 24 | [Max Stack](https://leetcode.com/problems/max-stack/)                                                                                     | [MaxStack.java](./MaxStack.java)                                         |
 | 25 | [Number of Visible People in a Queue](https://leetcode.com/problems/number-of-visible-people-in-a-queue/)                                 | [NumberOfVisiblePeopleInAQueue.java](NumberOfVisiblePeopleInAQueue.java) |
+| 26 | [Least Number of Unique Integers after K Removals](https://leetcode.com/problems/least-number-of-unique-integers-after-k-removals/)       | [RemoveK.java](./RemoveK.java)                                           |
 
