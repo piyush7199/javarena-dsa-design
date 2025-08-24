@@ -15,3 +15,4 @@
 | 11 | MEDIUM | [Rotate Image](https://leetcode.com/problems/rotate-image) | [Solution](../coding/datastructures/arrays/RotateImage.java) | Array, Math, Matrix |
 | 12 | EASY | [Backspace String Compare](https://leetcode.com/problems/backspace-string-compare) | [Solution](../coding/datastructures/string/BackspaceStringCompare.java) | Two Pointers, String, Stack, Simulation |
 | 13 | MEDIUM | [Count Square Submatrices With All Ones](https://leetcode.com/problems/count-square-submatrices-with-all-ones) | [Solution](../coding/algorithms/dynamicProgramming/CountSquareSubmatricesWithAllOnes.java) | Array, Dynamic Programming, Matrix |
+| 14 | MEDIUM | [Longest Subarray Of 1s After Deleting One Element](https://leetcode.com/problems/longest-subarray-of-1s-after-deleting-one-element) | [Solution](../coding/algorithms/twoPointerAndSlidingWindow/LongestSubarrayOfOneAfterDeletingOneEle.java) | Array, Dynamic Programming, Sliding Window |
