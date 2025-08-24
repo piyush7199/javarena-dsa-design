@@ -86,3 +86,6 @@ lld/
 | 2 | [Message Broadcasting](./practice/message_broadcasting)                     |
 | 3 | [Real-Time Stock Price Update System](./practice/stock_price_update_system) |
 | 4 | [Tic Tac Toe](./practice/tic_tac_toe)                                       |
+| 5 | [Car Rental System](./practice/design_car_rental_system)                    |
+| 6 | [Parking Lot System](./practice/design_parking_lot_system)                  |
+| 7 | [Elevator System](./practice/design_elevator_system)                        |
