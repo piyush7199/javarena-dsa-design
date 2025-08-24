@@ -89,3 +89,4 @@ lld/
 | 5 | [Car Rental System](./practice/design_car_rental_system)                    |
 | 6 | [Parking Lot System](./practice/design_parking_lot_system)                  |
 | 7 | [Elevator System](./practice/design_elevator_system)                        |
+| 8 | [Vending Machine](./practice/design_vending_machine)                        |
