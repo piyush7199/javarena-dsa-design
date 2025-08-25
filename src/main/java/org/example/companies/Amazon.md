@@ -92,3 +92,4 @@
 | 88 | MEDIUM | [Divide Two Integers](https://leetcode.com/problems/divide-two-integers) | [Solution](../coding/algorithms/bitManupulation/DivideTwoIntegers.java) | Math, Bit Manipulation |
 | 89 | EASY | [Single Number](https://leetcode.com/problems/single-number) | [Solution](../coding/algorithms/bitManupulation/SingleNumber.java) | Array, Bit Manipulation |
 | 90 | MEDIUM | [Edit Distance](https://leetcode.com/problems/edit-distance) | [Solution](../coding/algorithms/dynamicProgramming/EditDistance.java) | String, Dynamic Programming |
+| 91 | HARD | [Permutation Sequence](https://leetcode.com/problems/permutation-sequence) | [Solution](../coding/algorithms/miscellaneous/PermutationSequence.java) | Math, Recursion |

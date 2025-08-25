@@ -96,3 +96,4 @@
 | 92 | MEDIUM | [Divide Two Integers](https://leetcode.com/problems/divide-two-integers) | [Solution](../coding/algorithms/bitManupulation/DivideTwoIntegers.java) | Math, Bit Manipulation |
 | 93 | EASY | [Single Number](https://leetcode.com/problems/single-number) | [Solution](../coding/algorithms/bitManupulation/SingleNumber.java) | Array, Bit Manipulation |
 | 94 | HARD | [Number Of Visible People In A Queue](https://leetcode.com/problems/number-of-visible-people-in-a-queue) | [Solution](../coding/datastructures/stackAndQueue/NumberOfVisiblePeopleInAQueue.java) | Array, Stack, Monotonic Stack |
+| 95 | HARD | [Permutation Sequence](https://leetcode.com/problems/permutation-sequence) | [Solution](../coding/algorithms/miscellaneous/PermutationSequence.java) | Math, Recursion |
