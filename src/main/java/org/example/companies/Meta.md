@@ -89,3 +89,4 @@
 | 85 | MEDIUM | [Divide Two Integers](https://leetcode.com/problems/divide-two-integers) | [Solution](../coding/algorithms/bitManupulation/DivideTwoIntegers.java) | Math, Bit Manipulation |
 | 86 | EASY | [Single Number](https://leetcode.com/problems/single-number) | [Solution](../coding/algorithms/bitManupulation/SingleNumber.java) | Array, Bit Manipulation |
 | 87 | MEDIUM | [Diagonal Traverse](https://leetcode.com/problems/diagonal-traverse) | [Solution](../coding/datastructures/arrays/DiagonalTraverse.java) | Array, Matrix, Simulation |
+| 88 | MEDIUM | [Edit Distance](https://leetcode.com/problems/edit-distance) | [Solution](../coding/algorithms/dynamicProgramming/EditDistance.java) | String, Dynamic Programming |

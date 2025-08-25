@@ -38,3 +38,4 @@
 | 34 | MEDIUM | [Longest Palindromic Subsequence](https://leetcode.com/problems/longest-palindromic-subsequence) | [Solution](../coding/algorithms/dynamicProgramming/LongestPalindromicSubsequence.java) | String, Dynamic Programming |
 | 35 | MEDIUM | [Rotate Image](https://leetcode.com/problems/rotate-image) | [Solution](../coding/datastructures/arrays/RotateImage.java) | Array, Math, Matrix |
 | 36 | EASY | [Single Number](https://leetcode.com/problems/single-number) | [Solution](../coding/algorithms/bitManupulation/SingleNumber.java) | Array, Bit Manipulation |
+| 37 | MEDIUM | [Edit Distance](https://leetcode.com/problems/edit-distance) | [Solution](../coding/algorithms/dynamicProgramming/EditDistance.java) | String, Dynamic Programming |

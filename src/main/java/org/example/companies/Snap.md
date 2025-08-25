@@ -35,3 +35,4 @@
 | 31 | MEDIUM | [Subarray Sum Equals K](https://leetcode.com/problems/subarray-sum-equals-k) | [Solution](../coding/datastructures/hashMapAndSet/SubArraySumEqualsK.java) | Array, Hash Table, Prefix Sum |
 | 32 | HARD | [Max Stack](https://leetcode.com/problems/max-stack) | [Solution](../coding/datastructures/stackAndQueue/MaxStack.java) | Linked List, Stack, Design, Doubly-Linked List, Ordered Set |
 | 33 | EASY | [Power Of Two](https://leetcode.com/problems/power-of-two) | [Solution](../coding/algorithms/bitManupulation/PowerOfTwo.java) | Math, Bit Manipulation, Recursion |
+| 34 | MEDIUM | [Edit Distance](https://leetcode.com/problems/edit-distance) | [Solution](../coding/algorithms/dynamicProgramming/EditDistance.java) | String, Dynamic Programming |

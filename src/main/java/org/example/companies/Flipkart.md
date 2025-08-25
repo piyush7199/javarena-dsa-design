@@ -39,3 +39,4 @@
 | 35 | MEDIUM | [3sum Closest](https://leetcode.com/problems/3sum-closest) | [Solution](../coding/algorithms/twoPointerAndSlidingWindow/ThreeSumClosest.java) | Array, Two Pointers, Sorting |
 | 36 | MEDIUM | [Subarray Sum Equals K](https://leetcode.com/problems/subarray-sum-equals-k) | [Solution](../coding/datastructures/hashMapAndSet/SubArraySumEqualsK.java) | Array, Hash Table, Prefix Sum |
 | 37 | MEDIUM | [Rotate Image](https://leetcode.com/problems/rotate-image) | [Solution](../coding/datastructures/arrays/RotateImage.java) | Array, Math, Matrix |
+| 38 | MEDIUM | [Edit Distance](https://leetcode.com/problems/edit-distance) | [Solution](../coding/algorithms/dynamicProgramming/EditDistance.java) | String, Dynamic Programming |

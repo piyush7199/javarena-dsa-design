@@ -49,3 +49,4 @@
 | 45 | MEDIUM | [Number Of Connected Components In An Undirected Graph](https://leetcode.com/problems/number-of-connected-components-in-an-undirected-graph) | [Solution](../coding/datastructures/graph/NoOfConnectedComponent.java) | Depth-First Search, Breadth-First Search, Union Find, Graph |
 | 46 | HARD | [Number Of Visible People In A Queue](https://leetcode.com/problems/number-of-visible-people-in-a-queue) | [Solution](../coding/datastructures/stackAndQueue/NumberOfVisiblePeopleInAQueue.java) | Array, Stack, Monotonic Stack |
 | 47 | MEDIUM | [Valid Triangle Number](https://leetcode.com/problems/valid-triangle-number) | [Solution](../coding/algorithms/binarySearch/ValidTriangleNumber.java) | Array, Two Pointers, Binary Search, Greedy, Sorting |
+| 48 | MEDIUM | [Edit Distance](https://leetcode.com/problems/edit-distance) | [Solution](../coding/algorithms/dynamicProgramming/EditDistance.java) | String, Dynamic Programming |

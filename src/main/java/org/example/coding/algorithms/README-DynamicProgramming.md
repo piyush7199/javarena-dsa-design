@@ -92,7 +92,7 @@ function knapsack(values, weights, W):
 | 21 | [Longest Common Substring](https://www.geeksforgeeks.org/problems/longest-common-substring1452/1)               | [LongestCommonSubstring.java](./dynamicProgramming/LongestCommonSubstring.java)                                                                                |
 | 22 | [Longest Palindromic Subsequence](https://leetcode.com/problems/longest-palindromic-subsequence/)               | [LongestPalindromicSubsequence.java](./dynamicProgramming/LongestPalindromicSubsequence.java)                                                                  |
 | 23 | [Count Square Submatrices with All Ones](https://leetcode.com/problems/count-square-submatrices-with-all-ones/) | [CountSquareSubmatricesWithAllOnes.java](./dynamicProgramming/CountSquareSubmatricesWithAllOnes.java)                                                          |
-| 24 |                                                                                                                 |                                                                                                                                                                |
+| 24 | [Edit Distance](https://leetcode.com/problems/edit-distance/)                                                   | [EditDistance.java](./dynamicProgramming/EditDistance.java)                                                                                                    |
 
 ---
 

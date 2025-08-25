@@ -29,3 +29,4 @@
 | 25 | MEDIUM | [Design A Leaderboard](https://leetcode.com/problems/design-a-leaderboard) | [Solution](../coding/datastructures/hashMapAndSet/DesignALeaderboard.java) | Hash Table, Design, Sorting |
 | 26 | HARD | [Split Array Largest Sum](https://leetcode.com/problems/split-array-largest-sum) | [Solution](../coding/algorithms/binarySearch/SplitArrayLargestSum.java) | Array, Binary Search, Dynamic Programming, Greedy, Prefix Sum |
 | 27 | MEDIUM | [Find The Smallest Divisor Given A Threshold](https://leetcode.com/problems/find-the-smallest-divisor-given-a-threshold) | [Solution](../coding/algorithms/binarySearch/SmallestDivisorGivenAThreshold.java) | Array, Binary Search |
+| 28 | MEDIUM | [Edit Distance](https://leetcode.com/problems/edit-distance) | [Solution](../coding/algorithms/dynamicProgramming/EditDistance.java) | String, Dynamic Programming |
