@@ -88,3 +88,4 @@
 | 84 | EASY | [Add Strings](https://leetcode.com/problems/add-strings) | [Solution](../coding/datastructures/string/AddStrings.java) | Math, String, Simulation |
 | 85 | MEDIUM | [Divide Two Integers](https://leetcode.com/problems/divide-two-integers) | [Solution](../coding/algorithms/bitManupulation/DivideTwoIntegers.java) | Math, Bit Manipulation |
 | 86 | EASY | [Single Number](https://leetcode.com/problems/single-number) | [Solution](../coding/algorithms/bitManupulation/SingleNumber.java) | Array, Bit Manipulation |
+| 87 | MEDIUM | [Diagonal Traverse](https://leetcode.com/problems/diagonal-traverse) | [Solution](../coding/datastructures/arrays/DiagonalTraverse.java) | Array, Matrix, Simulation |

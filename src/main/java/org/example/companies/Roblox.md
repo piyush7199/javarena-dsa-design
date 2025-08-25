@@ -17,3 +17,4 @@
 | 13 | EASY | [Longest Common Prefix](https://leetcode.com/problems/longest-common-prefix) | [Solution](../coding/datastructures/string/LongestCommonPrefix.java) | String, Trie |
 | 14 | HARD | [Block Placement Queries](https://leetcode.com/problems/block-placement-queries) | [Solution](../coding/datastructures/segmentTree/BlockPlacementQueries.java) | Array, Binary Search, Binary Indexed Tree, Segment Tree |
 | 15 | MEDIUM | [Rotate Image](https://leetcode.com/problems/rotate-image) | [Solution](../coding/datastructures/arrays/RotateImage.java) | Array, Math, Matrix |
+| 16 | MEDIUM | [Diagonal Traverse](https://leetcode.com/problems/diagonal-traverse) | [Solution](../coding/datastructures/arrays/DiagonalTraverse.java) | Array, Matrix, Simulation |
