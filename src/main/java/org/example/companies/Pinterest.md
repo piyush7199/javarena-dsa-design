@@ -14,3 +14,4 @@
 | 10 | MEDIUM | [Target Sum](https://leetcode.com/problems/target-sum) | [Solution](../coding/algorithms/dynamicProgramming/TargetSum.java) | Array, Dynamic Programming, Backtracking |
 | 11 | MEDIUM | [Is Graph Bipartite](https://leetcode.com/problems/is-graph-bipartite) | [Solution](../coding/datastructures/graph/DFSSolution.java) | Depth-First Search, Breadth-First Search, Union Find, Graph |
 | 12 | HARD | [Split Array Largest Sum](https://leetcode.com/problems/split-array-largest-sum) | [Solution](../coding/algorithms/binarySearch/SplitArrayLargestSum.java) | Array, Binary Search, Dynamic Programming, Greedy, Prefix Sum |
+| 13 | MEDIUM | [Implement Trie Prefix Tree](https://leetcode.com/problems/implement-trie-prefix-tree) | [Solution](../coding/datastructures/trie/Trie.java) | Hash Table, String, Design, Trie |

@@ -85,3 +85,4 @@
 | 81 | MEDIUM | [Divide Two Integers](https://leetcode.com/problems/divide-two-integers) | [Solution](../coding/algorithms/bitManupulation/DivideTwoIntegers.java) | Math, Bit Manipulation |
 | 82 | MEDIUM | [Valid Triangle Number](https://leetcode.com/problems/valid-triangle-number) | [Solution](../coding/algorithms/binarySearch/ValidTriangleNumber.java) | Array, Two Pointers, Binary Search, Greedy, Sorting |
 | 83 | MEDIUM | [Edit Distance](https://leetcode.com/problems/edit-distance) | [Solution](../coding/algorithms/dynamicProgramming/EditDistance.java) | String, Dynamic Programming |
+| 84 | EASY | [Next Greater Element I](https://leetcode.com/problems/next-greater-element-i) | [Solution](../coding/datastructures/stackAndQueue/NGE.java) | Array, Hash Table, Stack, Monotonic Stack |
