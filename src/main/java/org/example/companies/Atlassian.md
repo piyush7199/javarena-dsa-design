@@ -21,3 +21,4 @@
 | 17 | EASY | [Best Time To Buy And Sell Stock](https://leetcode.com/problems/best-time-to-buy-and-sell-stock) | [Solution](../coding/datastructures/arrays/StockBuySell.java) | Array, Dynamic Programming |
 | 18 | MEDIUM | [Integer To Roman](https://leetcode.com/problems/integer-to-roman) | [Solution](../coding/datastructures/arrays/IntegerToRoman.java) | Hash Table, Math, String |
 | 19 | MEDIUM | [Coin Change](https://leetcode.com/problems/coin-change) | [Solution](../coding/algorithms/dynamicProgramming/CoinChange.java) | Array, Dynamic Programming, Breadth-First Search |
+| 20 | EASY | [Maximum Area Of Longest Diagonal Rectangle](https://leetcode.com/problems/maximum-area-of-longest-diagonal-rectangle) | [Solution](../coding/datastructures/arrays/MaxRecArea.java) | Array |

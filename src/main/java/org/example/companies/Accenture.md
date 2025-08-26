@@ -47,3 +47,4 @@
 | 43 | EASY | [Plus One](https://leetcode.com/problems/plus-one) | [Solution](../coding/datastructures/arrays/PlusOne.java) | Array, Math |
 | 44 | MEDIUM | [Edit Distance](https://leetcode.com/problems/edit-distance) | [Solution](../coding/algorithms/dynamicProgramming/EditDistance.java) | String, Dynamic Programming |
 | 45 | EASY | [Next Greater Element I](https://leetcode.com/problems/next-greater-element-i) | [Solution](../coding/datastructures/stackAndQueue/NGE.java) | Array, Hash Table, Stack, Monotonic Stack |
+| 46 | EASY | [Maximum Area Of Longest Diagonal Rectangle](https://leetcode.com/problems/maximum-area-of-longest-diagonal-rectangle) | [Solution](../coding/datastructures/arrays/MaxRecArea.java) | Array |
