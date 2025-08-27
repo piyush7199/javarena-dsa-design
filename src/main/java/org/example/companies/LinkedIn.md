@@ -50,3 +50,4 @@
 | 46 | HARD | [Number Of Visible People In A Queue](https://leetcode.com/problems/number-of-visible-people-in-a-queue) | [Solution](../coding/datastructures/stackAndQueue/NumberOfVisiblePeopleInAQueue.java) | Array, Stack, Monotonic Stack |
 | 47 | MEDIUM | [Valid Triangle Number](https://leetcode.com/problems/valid-triangle-number) | [Solution](../coding/algorithms/binarySearch/ValidTriangleNumber.java) | Array, Two Pointers, Binary Search, Greedy, Sorting |
 | 48 | MEDIUM | [Edit Distance](https://leetcode.com/problems/edit-distance) | [Solution](../coding/algorithms/dynamicProgramming/EditDistance.java) | String, Dynamic Programming |
+| 49 | MEDIUM | [Combination Sum](https://leetcode.com/problems/combination-sum) | [Solution](../coding/algorithms/recursionAndBacktracking/CombinationSum.java) | Array, Backtracking |

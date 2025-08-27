@@ -89,3 +89,4 @@ Complexity varies by problem, but general guidelines for recursion and backtrack
 | 9  | [Count Number of Maximum Bitwise-OR Subsets](https://leetcode.com/problems/count-number-of-maximum-bitwise-or-subsets) | [CountMaxBitOr.java](./recursionAndBacktracking/CountMaxBitOr.java)             |
 | 10 | [Split Array into Fibonacci Sequence](https://leetcode.com/problems/split-array-into-fibonacci-sequence/)              | [FibonacciSplitter.java](./recursionAndBacktracking/FibonacciSplitter.java)     |
 | 11 | [Power Of Three](https://leetcode.com/problems/power-of-three/)                                                        | [PowerOfThree.java](./recursionAndBacktracking/PowerOfThree.java)               |
+| 12 | [Combination Sum](https://leetcode.com/problems/combination-sum/)                                                      | [CombinationSum.java](./recursionAndBacktracking/CombinationSum.java)           |
