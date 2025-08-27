@@ -39,3 +39,4 @@
 | 35 | EASY | [Diameter Of Binary Tree](https://leetcode.com/problems/diameter-of-binary-tree) | [Solution](../coding/datastructures/binaryTree/DiameterOfBinaryTree.java) | Tree, Depth-First Search, Binary Tree |
 | 36 | EASY | [Plus One](https://leetcode.com/problems/plus-one) | [Solution](../coding/datastructures/arrays/PlusOne.java) | Array, Math |
 | 37 | MEDIUM | [Edit Distance](https://leetcode.com/problems/edit-distance) | [Solution](../coding/algorithms/dynamicProgramming/EditDistance.java) | String, Dynamic Programming |
+| 38 | HARD | [Length Of Longest V Shaped Diagonal Segment](https://leetcode.com/problems/length-of-longest-v-shaped-diagonal-segment) | [Solution](../coding/datastructures/graph/DiagonalPathFinder.java) | Array, Dynamic Programming, Memoization, Matrix |
