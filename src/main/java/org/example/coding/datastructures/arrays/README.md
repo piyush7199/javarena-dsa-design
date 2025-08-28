@@ -48,3 +48,4 @@ two-pointers, and sorting.
 | 37 | [Diagonal Traverse](https://leetcode.com/problems/diagonal-traverse/)                                                               | [DiagonalTraverse.java](./DiagonalTraverse.java)                                     |
 | 38 | [Maximum Area of Longest Diagonal Rectangle](https://leetcode.com/problems/maximum-area-of-longest-diagonal-rectangle/)             | [MaxRecArea.java](./MaxRecArea.java)                                                 |
 | 39 | [Count Subarrays of Length Three With a Condition](https://leetcode.com/problems/count-subarrays-of-length-three-with-a-condition/) | [SubarrayWithCondition.java](./SubarrayWithCondition.java)                           |
+| 40 | [Sort Matrix By Diagonals](https://leetcode.com/problems/sort-matrix-by-diagonals/)                                                 | [SortMatrixByDiagonals.java](./SortMatrixByDiagonals.java)                           |
