@@ -50,3 +50,5 @@ two-pointers, and sorting.
 | 39 | [Count Subarrays of Length Three With a Condition](https://leetcode.com/problems/count-subarrays-of-length-three-with-a-condition/) | [SubarrayWithCondition.java](./SubarrayWithCondition.java)                           |
 | 40 | [Sort Matrix By Diagonals](https://leetcode.com/problems/sort-matrix-by-diagonals/)                                                 | [SortMatrixByDiagonals.java](./SortMatrixByDiagonals.java)                           |
 | 41 | [Rearrange Array Elements by Sign](https://leetcode.com/problems/rearrange-array-elements-by-sign/)                                 | [RearrangeArrayEleBySign.java](./RearrangeArrayEleBySign.java)                       |
+| 42 | [Remove Outermost Parentheses](https://leetcode.com/problems/remove-outermost-parentheses/)                                         | [RemoveOutermostParentheses.java](./RemoveOutermostParentheses.java)                 |
+| 43 | [01 Matrix](https://leetcode.com/problems/01-matrix/)                                                                               | [ZeroOneMatrix.java](./ZeroOneMatrix.java)                                           |
