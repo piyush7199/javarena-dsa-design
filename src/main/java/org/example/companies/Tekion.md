@@ -14,3 +14,4 @@
 | 10 | MEDIUM | [Find Peak Element](https://leetcode.com/problems/find-peak-element) | [Solution](../coding/algorithms/SearchingAlgorithms.java) | Array, Binary Search |
 | 11 | MEDIUM | [Ways To Split Array Into Three Subarrays](https://leetcode.com/problems/ways-to-split-array-into-three-subarrays) | [Solution](../coding/datastructures/arrays/WaysToSplitArrayIntoThreeSubarrays.java) | Array, Two Pointers, Binary Search, Prefix Sum |
 | 12 | HARD | [Split Array Largest Sum](https://leetcode.com/problems/split-array-largest-sum) | [Solution](../coding/algorithms/binarySearch/SplitArrayLargestSum.java) | Array, Binary Search, Dynamic Programming, Greedy, Prefix Sum |
+| 13 | EASY | [Cousins In Binary Tree](https://leetcode.com/problems/cousins-in-binary-tree) | [Solution](../coding/datastructures/binaryTree/CousinsInBinaryTree.java) | Tree, Depth-First Search, Breadth-First Search, Binary Tree |

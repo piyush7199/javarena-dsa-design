@@ -157,6 +157,7 @@ public class BinaryTree {
 | 29 | [Closest Nodes Queries in a Binary Search Tree](https://leetcode.com/problems/closest-nodes-queries-in-a-binary-search-tree/)                                                                    | [BSTClosetNode.java](./BSTClosetNode.java)               |
 | 30 | [Even Odd Tree](https://leetcode.com/problems/even-odd-tree/)                                                                                                                                    | [EvenOddTree.java](./EvenOddTree.java)                   |
 | 31 | [Diameter Of Binary Tree](https://leetcode.com/problems/diameter-of-binary-tree/)                                                                                                                | [DiameterOfBinaryTree.java](./DiameterOfBinaryTree.java) |
+| 32 | [Cousins in Binary Tree](https://leetcode.com/problems/cousins-in-binary-tree/)                                                                                                                  | [CousinsInBinaryTree.java](./CousinsInBinaryTree.java)   |
 
 ---
 
