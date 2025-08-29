@@ -46,3 +46,4 @@
 | 42 | MEDIUM | [Set Matrix Zeroes](https://leetcode.com/problems/set-matrix-zeroes) | [Solution](../coding/datastructures/arrays/SetMatrixZero.java) | Array, Hash Table, Matrix |
 | 43 | MEDIUM | [Edit Distance](https://leetcode.com/problems/edit-distance) | [Solution](../coding/algorithms/dynamicProgramming/EditDistance.java) | String, Dynamic Programming |
 | 44 | MEDIUM | [Combination Sum](https://leetcode.com/problems/combination-sum) | [Solution](../coding/algorithms/recursionAndBacktracking/CombinationSum.java) | Array, Backtracking |
+| 45 | MEDIUM | [Rearrange Array Elements By Sign](https://leetcode.com/problems/rearrange-array-elements-by-sign) | [Solution](../coding/datastructures/arrays/RearrangeArrayEleBySign.java) | Array, Two Pointers, Simulation |
