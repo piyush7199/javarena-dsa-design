@@ -26,3 +26,4 @@
 | 22 | EASY | [Longest Common Prefix](https://leetcode.com/problems/longest-common-prefix) | [Solution](../coding/datastructures/string/LongestCommonPrefix.java) | String, Trie |
 | 23 | MEDIUM | [Generate Parentheses](https://leetcode.com/problems/generate-parentheses) | [Solution](../coding/algorithms/recursionAndBacktracking/GenerateParentheses.java) | String, Dynamic Programming, Backtracking |
 | 24 | HARD | [Split Array Largest Sum](https://leetcode.com/problems/split-array-largest-sum) | [Solution](../coding/algorithms/binarySearch/SplitArrayLargestSum.java) | Array, Binary Search, Dynamic Programming, Greedy, Prefix Sum |
+| 25 | MEDIUM | [House Robber Iii](https://leetcode.com/problems/house-robber-iii) | [Solution](../coding/datastructures/binaryTree/HouseRobberIII.java) | Dynamic Programming, Tree, Depth-First Search, Binary Tree |

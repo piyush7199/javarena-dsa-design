@@ -158,6 +158,7 @@ public class BinaryTree {
 | 30 | [Even Odd Tree](https://leetcode.com/problems/even-odd-tree/)                                                                                                                                    | [EvenOddTree.java](./EvenOddTree.java)                   |
 | 31 | [Diameter Of Binary Tree](https://leetcode.com/problems/diameter-of-binary-tree/)                                                                                                                | [DiameterOfBinaryTree.java](./DiameterOfBinaryTree.java) |
 | 32 | [Cousins in Binary Tree](https://leetcode.com/problems/cousins-in-binary-tree/)                                                                                                                  | [CousinsInBinaryTree.java](./CousinsInBinaryTree.java)   |
+| 33 | [House Robber III](https://leetcode.com/problems/house-robber-iii/)                                                                                                                              | [HouseRobberIII.java](./HouseRobberIII.java)             |
 
 ---
 
