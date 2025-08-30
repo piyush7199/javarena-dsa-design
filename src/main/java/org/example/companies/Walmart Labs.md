@@ -61,3 +61,4 @@
 | 57 | MEDIUM | [Maximum Sum Of Distinct Subarrays With Length K](https://leetcode.com/problems/maximum-sum-of-distinct-subarrays-with-length-k) | [Solution](../coding/algorithms/twoPointerAndSlidingWindow/MaximumSumOfDistinctSubarraysWithLengthK.java) | Array, Hash Table, Sliding Window |
 | 58 | MEDIUM | [Diagonal Traverse](https://leetcode.com/problems/diagonal-traverse) | [Solution](../coding/datastructures/arrays/DiagonalTraverse.java) | Array, Matrix, Simulation |
 | 59 | MEDIUM | [Combination Sum](https://leetcode.com/problems/combination-sum) | [Solution](../coding/algorithms/recursionAndBacktracking/CombinationSum.java) | Array, Backtracking |
+| 60 | MEDIUM | [Valid Sudoku](https://leetcode.com/problems/valid-sudoku) | [Solution](../coding/datastructures/arrays/ValidSudoku.java) | Array, Hash Table, Matrix |

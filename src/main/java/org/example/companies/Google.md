@@ -98,3 +98,4 @@
 | 94 | HARD | [Number Of Visible People In A Queue](https://leetcode.com/problems/number-of-visible-people-in-a-queue) | [Solution](../coding/datastructures/stackAndQueue/NumberOfVisiblePeopleInAQueue.java) | Array, Stack, Monotonic Stack |
 | 95 | HARD | [Permutation Sequence](https://leetcode.com/problems/permutation-sequence) | [Solution](../coding/algorithms/miscellaneous/PermutationSequence.java) | Math, Recursion |
 | 96 | MEDIUM | [Combination Sum](https://leetcode.com/problems/combination-sum) | [Solution](../coding/algorithms/recursionAndBacktracking/CombinationSum.java) | Array, Backtracking |
+| 97 | MEDIUM | [Valid Sudoku](https://leetcode.com/problems/valid-sudoku) | [Solution](../coding/datastructures/arrays/ValidSudoku.java) | Array, Hash Table, Matrix |

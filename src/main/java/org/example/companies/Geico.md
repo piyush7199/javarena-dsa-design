@@ -7,3 +7,4 @@
 | 3 | MEDIUM | [Coin Change](https://leetcode.com/problems/coin-change) | [Solution](../coding/algorithms/dynamicProgramming/CoinChange.java) | Array, Dynamic Programming, Breadth-First Search |
 | 4 | MEDIUM | [Boundary Of Binary Tree](https://leetcode.com/problems/boundary-of-binary-tree) | [Solution](../coding/datastructures/binaryTree/Traversals.java) | Tree, Depth-First Search, Binary Tree |
 | 5 | MEDIUM | [Longest Happy String](https://leetcode.com/problems/longest-happy-string) | [Solution](../coding/algorithms/greedy/LongestHappyString.java) | String, Greedy, Heap (Priority Queue) |
+| 6 | MEDIUM | [Valid Sudoku](https://leetcode.com/problems/valid-sudoku) | [Solution](../coding/datastructures/arrays/ValidSudoku.java) | Array, Hash Table, Matrix |

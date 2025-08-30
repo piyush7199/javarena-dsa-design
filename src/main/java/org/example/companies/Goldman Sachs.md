@@ -60,3 +60,4 @@
 | 56 | EASY | [Reformat Date](https://leetcode.com/problems/reformat-date) | [Solution](../coding/datastructures/string/FormateDate.java) | String |
 | 57 | EASY | [Count Number Of Pairs With Absolute Difference K](https://leetcode.com/problems/count-number-of-pairs-with-absolute-difference-k) | [Solution](../coding/datastructures/hashMapAndSet/CountPairsWithAbsDiffK.java) | Array, Hash Table, Counting |
 | 58 | EASY | [Next Greater Element I](https://leetcode.com/problems/next-greater-element-i) | [Solution](../coding/datastructures/stackAndQueue/NGE.java) | Array, Hash Table, Stack, Monotonic Stack |
+| 59 | MEDIUM | [Valid Sudoku](https://leetcode.com/problems/valid-sudoku) | [Solution](../coding/datastructures/arrays/ValidSudoku.java) | Array, Hash Table, Matrix |

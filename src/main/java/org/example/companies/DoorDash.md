@@ -26,3 +26,4 @@
 | 22 | HARD | [Number Of Visible People In A Queue](https://leetcode.com/problems/number-of-visible-people-in-a-queue) | [Solution](../coding/datastructures/stackAndQueue/NumberOfVisiblePeopleInAQueue.java) | Array, Stack, Monotonic Stack |
 | 23 | MEDIUM | [Implement Trie Prefix Tree](https://leetcode.com/problems/implement-trie-prefix-tree) | [Solution](../coding/datastructures/trie/Trie.java) | Hash Table, String, Design, Trie |
 | 24 | MEDIUM | [Implement Trie Ii Prefix Tree](https://leetcode.com/problems/implement-trie-ii-prefix-tree) | [Solution](../coding/datastructures/trie/TrieII.java) | Hash Table, String, Design, Trie |
+| 25 | MEDIUM | [Valid Sudoku](https://leetcode.com/problems/valid-sudoku) | [Solution](../coding/datastructures/arrays/ValidSudoku.java) | Array, Hash Table, Matrix |

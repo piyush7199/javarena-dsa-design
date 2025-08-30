@@ -87,3 +87,4 @@
 | 83 | MEDIUM | [Edit Distance](https://leetcode.com/problems/edit-distance) | [Solution](../coding/algorithms/dynamicProgramming/EditDistance.java) | String, Dynamic Programming |
 | 84 | EASY | [Next Greater Element I](https://leetcode.com/problems/next-greater-element-i) | [Solution](../coding/datastructures/stackAndQueue/NGE.java) | Array, Hash Table, Stack, Monotonic Stack |
 | 85 | MEDIUM | [Combination Sum](https://leetcode.com/problems/combination-sum) | [Solution](../coding/algorithms/recursionAndBacktracking/CombinationSum.java) | Array, Backtracking |
+| 86 | MEDIUM | [Valid Sudoku](https://leetcode.com/problems/valid-sudoku) | [Solution](../coding/datastructures/arrays/ValidSudoku.java) | Array, Hash Table, Matrix |

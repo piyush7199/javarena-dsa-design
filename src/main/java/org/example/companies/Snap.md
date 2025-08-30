@@ -37,3 +37,4 @@
 | 33 | EASY | [Power Of Two](https://leetcode.com/problems/power-of-two) | [Solution](../coding/algorithms/bitManupulation/PowerOfTwo.java) | Math, Bit Manipulation, Recursion |
 | 34 | MEDIUM | [Edit Distance](https://leetcode.com/problems/edit-distance) | [Solution](../coding/algorithms/dynamicProgramming/EditDistance.java) | String, Dynamic Programming |
 | 35 | MEDIUM | [Combination Sum](https://leetcode.com/problems/combination-sum) | [Solution](../coding/algorithms/recursionAndBacktracking/CombinationSum.java) | Array, Backtracking |
+| 36 | MEDIUM | [Valid Sudoku](https://leetcode.com/problems/valid-sudoku) | [Solution](../coding/datastructures/arrays/ValidSudoku.java) | Array, Hash Table, Matrix |

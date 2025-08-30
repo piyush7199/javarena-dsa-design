@@ -48,3 +48,4 @@
 | 44 | MEDIUM | [Maximum Sum Of Distinct Subarrays With Length K](https://leetcode.com/problems/maximum-sum-of-distinct-subarrays-with-length-k) | [Solution](../coding/algorithms/twoPointerAndSlidingWindow/MaximumSumOfDistinctSubarraysWithLengthK.java) | Array, Hash Table, Sliding Window |
 | 45 | MEDIUM | [Valid Triangle Number](https://leetcode.com/problems/valid-triangle-number) | [Solution](../coding/algorithms/binarySearch/ValidTriangleNumber.java) | Array, Two Pointers, Binary Search, Greedy, Sorting |
 | 46 | MEDIUM | [Implement Trie Prefix Tree](https://leetcode.com/problems/implement-trie-prefix-tree) | [Solution](../coding/datastructures/trie/Trie.java) | Hash Table, String, Design, Trie |
+| 47 | MEDIUM | [Valid Sudoku](https://leetcode.com/problems/valid-sudoku) | [Solution](../coding/datastructures/arrays/ValidSudoku.java) | Array, Hash Table, Matrix |
