@@ -53,3 +53,4 @@ two-pointers, and sorting.
 | 42 | [Remove Outermost Parentheses](https://leetcode.com/problems/remove-outermost-parentheses/)                                         | [RemoveOutermostParentheses.java](./RemoveOutermostParentheses.java)                 |
 | 43 | [01 Matrix](https://leetcode.com/problems/01-matrix/)                                                                               | [ZeroOneMatrix.java](./ZeroOneMatrix.java)                                           |
 | 44 | [Valid Sudoku](https://leetcode.com/problems/valid-sudoku/)                                                                         | [ValidSudoku.java](./ValidSudoku.java)                                               |
+| 45 | [Zero Array Transformation I](https://leetcode.com/problems/zero-array-transformation-i/)                                           | [ZeroArrayTransformationI.java](./ZeroArrayTransformationI.java)                     |

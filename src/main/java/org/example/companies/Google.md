@@ -99,3 +99,4 @@
 | 95 | HARD | [Permutation Sequence](https://leetcode.com/problems/permutation-sequence) | [Solution](../coding/algorithms/miscellaneous/PermutationSequence.java) | Math, Recursion |
 | 96 | MEDIUM | [Combination Sum](https://leetcode.com/problems/combination-sum) | [Solution](../coding/algorithms/recursionAndBacktracking/CombinationSum.java) | Array, Backtracking |
 | 97 | MEDIUM | [Valid Sudoku](https://leetcode.com/problems/valid-sudoku) | [Solution](../coding/datastructures/arrays/ValidSudoku.java) | Array, Hash Table, Matrix |
+| 98 | MEDIUM | [Zero Array Transformation I](https://leetcode.com/problems/zero-array-transformation-i) | [Solution](../coding/datastructures/arrays/ZeroArrayTransformationI.java) | Array, Prefix Sum |
