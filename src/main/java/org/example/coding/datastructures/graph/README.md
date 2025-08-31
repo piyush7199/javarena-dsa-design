@@ -82,6 +82,7 @@ Graph traversal algorithms help in searching or visiting nodes:
 | 28 | [Find Minimum Time to Reach Last Room II](https://leetcode.com/problems/find-minimum-time-to-reach-last-room-ii/)                    | [FindMinimumTimeToReachLastRoomII.java](./FindMinimumTimeToReachLastRoomII.java) |
 | 29 | [Length of Longest V-Shaped Diagonal Segment](https://leetcode.com/problems/length-of-longest-v-shaped-diagonal-segment/)            | [DiagonalPathFinder.java](./graph/DiagonalPathFinder.java)                       |
 | 30 | [Cut Off Trees for Golf Event](https://leetcode.com/problems/cut-off-trees-for-golf-event/)                                          | [CutOffTreesForGolfEvent.java](./CutOffTreesForGolfEvent.java)                   |
+| 31 | [Find Minimum Time to Reach Last Room I](https://leetcode.com/problems/find-minimum-time-to-reach-last-room-i)                       | [FindMinimumTimeToReachLastRoomI.java](./FindMinimumTimeToReachLastRoomI.java)   |
 
 ---
 
