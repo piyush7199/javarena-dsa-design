@@ -27,3 +27,4 @@
 | 23 | MEDIUM | [Generate Parentheses](https://leetcode.com/problems/generate-parentheses) | [Solution](../coding/algorithms/recursionAndBacktracking/GenerateParentheses.java) | String, Dynamic Programming, Backtracking |
 | 24 | HARD | [Split Array Largest Sum](https://leetcode.com/problems/split-array-largest-sum) | [Solution](../coding/algorithms/binarySearch/SplitArrayLargestSum.java) | Array, Binary Search, Dynamic Programming, Greedy, Prefix Sum |
 | 25 | MEDIUM | [House Robber Iii](https://leetcode.com/problems/house-robber-iii) | [Solution](../coding/datastructures/binaryTree/HouseRobberIII.java) | Dynamic Programming, Tree, Depth-First Search, Binary Tree |
+| 26 | MEDIUM | [Magnetic Force Between Two Balls](https://leetcode.com/problems/magnetic-force-between-two-balls) | [Solution](../coding/algorithms/binarySearch/MagneticForce.java) | Array, Binary Search, Sorting |

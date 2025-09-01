@@ -19,3 +19,4 @@
 | 15 | MEDIUM | [Rotate Image](https://leetcode.com/problems/rotate-image) | [Solution](../coding/datastructures/arrays/RotateImage.java) | Array, Math, Matrix |
 | 16 | MEDIUM | [Diagonal Traverse](https://leetcode.com/problems/diagonal-traverse) | [Solution](../coding/datastructures/arrays/DiagonalTraverse.java) | Array, Matrix, Simulation |
 | 17 | MEDIUM | [Implement Trie Prefix Tree](https://leetcode.com/problems/implement-trie-prefix-tree) | [Solution](../coding/datastructures/trie/Trie.java) | Hash Table, String, Design, Trie |
+| 18 | MEDIUM | [Magnetic Force Between Two Balls](https://leetcode.com/problems/magnetic-force-between-two-balls) | [Solution](../coding/algorithms/binarySearch/MagneticForce.java) | Array, Binary Search, Sorting |
