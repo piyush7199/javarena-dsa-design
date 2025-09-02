@@ -57,3 +57,4 @@ two-pointers, and sorting.
 | 46 | [Most Frequent Even Element](https://leetcode.com/problems/most-frequent-even-element/)                                             | [MostFrequentEvenElement.java](./MostFrequentEvenElement.java)                       |
 | 47 | [Sum of Squares of Special Elements ](https://leetcode.com/problems/sum-of-squares-of-special-elements/)                            | [SquareSumOfSpecialEle.java](./SquareSumOfSpecialEle.java)                           |
 | 48 | [Check if Matrix Is X-Matrix](https://leetcode.com/problems/check-if-matrix-is-x-matrix/)                                           | [MatrixIsX.java](./MatrixIsX.java)                                                   |
+| 49 | [Find the Number of Ways to Place People I](https://leetcode.com/problems/find-the-number-of-ways-to-place-people-i/)               | [FindTheNumberOfWaysToPlacePeopleI.java](./FindTheNumberOfWaysToPlacePeopleI.java)   |
