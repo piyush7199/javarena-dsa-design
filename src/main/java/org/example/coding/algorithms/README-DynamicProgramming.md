@@ -93,6 +93,8 @@ function knapsack(values, weights, W):
 | 22 | [Longest Palindromic Subsequence](https://leetcode.com/problems/longest-palindromic-subsequence/)               | [LongestPalindromicSubsequence.java](./dynamicProgramming/LongestPalindromicSubsequence.java)                                                                  |
 | 23 | [Count Square Submatrices with All Ones](https://leetcode.com/problems/count-square-submatrices-with-all-ones/) | [CountSquareSubmatricesWithAllOnes.java](./dynamicProgramming/CountSquareSubmatricesWithAllOnes.java)                                                          |
 | 24 | [Edit Distance](https://leetcode.com/problems/edit-distance/)                                                   | [EditDistance.java](./dynamicProgramming/EditDistance.java)                                                                                                    |
+| 25 | [Jump Game](https://leetcode.com/problems/jump-game/description/)                                               | [JumpGame.java](./dynamicProgramming/JumpGame.java)                                                                                                            |
+| 26 | [Decode Ways](https://leetcode.com/problems/decode-ways/)                                                       | [DecodeWays.java](./dynamicProgramming/DecodeWays.java)                                                                                                        |
 
 ---
 

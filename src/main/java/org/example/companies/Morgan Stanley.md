@@ -27,3 +27,4 @@
 | 23 | HARD | [Count Subarrays With Fixed Bounds](https://leetcode.com/problems/count-subarrays-with-fixed-bounds) | [Solution](../coding/datastructures/arrays/CountSubArraysWithFixedBound.java) | Array, Queue, Sliding Window, Monotonic Queue |
 | 24 | MEDIUM | [Coin Change Ii](https://leetcode.com/problems/coin-change-ii) | [Solution](../coding/algorithms/dynamicProgramming/CoinChange.java) | Array, Dynamic Programming |
 | 25 | EASY | [Next Greater Element I](https://leetcode.com/problems/next-greater-element-i) | [Solution](../coding/datastructures/stackAndQueue/NGE.java) | Array, Hash Table, Stack, Monotonic Stack |
+| 26 | MEDIUM | [Decode Ways](https://leetcode.com/problems/decode-ways) | [Solution](../coding/algorithms/dynamicProgramming/DecodeWays.java) | String, Dynamic Programming |
