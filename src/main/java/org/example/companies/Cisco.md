@@ -39,3 +39,4 @@
 | 35 | MEDIUM | [Rotate Image](https://leetcode.com/problems/rotate-image) | [Solution](../coding/datastructures/arrays/RotateImage.java) | Array, Math, Matrix |
 | 36 | EASY | [Single Number](https://leetcode.com/problems/single-number) | [Solution](../coding/algorithms/bitManupulation/SingleNumber.java) | Array, Bit Manipulation |
 | 37 | MEDIUM | [Edit Distance](https://leetcode.com/problems/edit-distance) | [Solution](../coding/algorithms/dynamicProgramming/EditDistance.java) | String, Dynamic Programming |
+| 38 | MEDIUM | [Palindromic Substrings](https://leetcode.com/problems/palindromic-substrings) | [Solution](../coding/datastructures/string/PalindromicSubstrings.java) | Two Pointers, String, Dynamic Programming |

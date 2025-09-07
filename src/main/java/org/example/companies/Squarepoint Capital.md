@@ -7,3 +7,4 @@
 | 3 | MEDIUM | [Coin Change](https://leetcode.com/problems/coin-change) | [Solution](../coding/algorithms/dynamicProgramming/CoinChange.java) | Array, Dynamic Programming, Breadth-First Search |
 | 4 | MEDIUM | [Kth Largest Element In An Array](https://leetcode.com/problems/kth-largest-element-in-an-array) | [Solution](../coding/datastructures/arrays/KthLargetElement.java) | Array, Divide and Conquer, Sorting, Heap (Priority Queue), Quickselect |
 | 5 | HARD | [Subarrays With K Different Integers](https://leetcode.com/problems/subarrays-with-k-different-integers) | [Solution](../coding/algorithms/twoPointerAndSlidingWindow/SubarrayWithKDifferentInteger.java) | Array, Hash Table, Sliding Window, Counting |
+| 6 | MEDIUM | [Longest Increasing Subsequence](https://leetcode.com/problems/longest-increasing-subsequence) | [Solution](../coding/algorithms/dynamicProgramming/LIS.java) | Array, Binary Search, Dynamic Programming |

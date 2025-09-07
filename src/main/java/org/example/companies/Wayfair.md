@@ -16,3 +16,5 @@
 | 12 | MEDIUM | [Longest Happy String](https://leetcode.com/problems/longest-happy-string) | [Solution](../coding/algorithms/greedy/LongestHappyString.java) | String, Greedy, Heap (Priority Queue) |
 | 13 | EASY | [Add Strings](https://leetcode.com/problems/add-strings) | [Solution](../coding/datastructures/string/AddStrings.java) | Math, String, Simulation |
 | 14 | EASY | [Delete Characters To Make Fancy String](https://leetcode.com/problems/delete-characters-to-make-fancy-string) | [Solution](../coding/datastructures/string/FancyString.java) | String |
+| 15 | MEDIUM | [Longest Increasing Subsequence](https://leetcode.com/problems/longest-increasing-subsequence) | [Solution](../coding/algorithms/dynamicProgramming/LIS.java) | Array, Binary Search, Dynamic Programming |
+| 16 | MEDIUM | [Palindromic Substrings](https://leetcode.com/problems/palindromic-substrings) | [Solution](../coding/datastructures/string/PalindromicSubstrings.java) | Two Pointers, String, Dynamic Programming |

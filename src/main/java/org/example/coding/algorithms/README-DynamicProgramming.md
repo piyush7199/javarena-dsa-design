@@ -95,6 +95,7 @@ function knapsack(values, weights, W):
 | 24 | [Edit Distance](https://leetcode.com/problems/edit-distance/)                                                   | [EditDistance.java](./dynamicProgramming/EditDistance.java)                                                                                                    |
 | 25 | [Jump Game](https://leetcode.com/problems/jump-game/description/)                                               | [JumpGame.java](./dynamicProgramming/JumpGame.java)                                                                                                            |
 | 26 | [Decode Ways](https://leetcode.com/problems/decode-ways/)                                                       | [DecodeWays.java](./dynamicProgramming/DecodeWays.java)                                                                                                        |
+| 27 | [Longest Increasing Subsequence](https://leetcode.com/problems/longest-increasing-subsequence/)                 | [LIS.java](./dynamicProgramming/LIS.java)                                                                                                                      |
 
 ---
 

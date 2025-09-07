@@ -7,3 +7,4 @@
 | 3 | MEDIUM | [Spiral Matrix](https://leetcode.com/problems/spiral-matrix) | [Solution](../coding/datastructures/arrays/SpiralMatrix.java) | Array, Matrix, Simulation |
 | 4 | EASY | [Best Time To Buy And Sell Stock](https://leetcode.com/problems/best-time-to-buy-and-sell-stock) | [Solution](../coding/datastructures/arrays/StockBuySell.java) | Array, Dynamic Programming |
 | 5 | MEDIUM | [Course Schedule](https://leetcode.com/problems/course-schedule) | [Solution](../coding/datastructures/graph/TopologicalSorting.java) | Depth-First Search, Breadth-First Search, Graph, Topological Sort |
+| 6 | MEDIUM | [Encode And Decode Strings](https://leetcode.com/problems/encode-and-decode-strings) | [Solution](../coding/datastructures/string/EncodeAndDecode.java) | Array, String, Design |

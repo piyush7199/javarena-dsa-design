@@ -23,3 +23,5 @@ This section includes problems related to *String.*
 | 13 | [Add Strings](https://leetcode.com/problems/add-strings/)                                                                                          | [AddStrings.java](./AddStrings.java)                         |
 | 14 | [Formate Date](https://leetcode.com/problems/reformat-date/)                                                                                       | [FormateDate.java](./FormateDate.java)                       |
 | 15 | [Minimum Number of Chairs in a Waiting Room](https://leetcode.com/problems/minimum-number-of-chairs-in-a-waiting-room/)                            | [MinChairsInRoom.java](./MinChairsInRoom.java)               |
+| 16 | [Encode and Decode String](https://www.geeksforgeeks.org/problems/encode-and-decode-strings/1)                                                     | [EncodeAndDecode.java](./EncodeAndDecode.java)               |
+| 17 | [Palindromic Substrings](https://leetcode.com/problems/palindromic-substrings/)                                                                    | [PalindromicSubstrings.java](PalindromicSubstrings.java)     |

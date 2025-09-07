@@ -48,3 +48,5 @@
 | 44 | MEDIUM | [Edit Distance](https://leetcode.com/problems/edit-distance) | [Solution](../coding/algorithms/dynamicProgramming/EditDistance.java) | String, Dynamic Programming |
 | 45 | EASY | [Next Greater Element I](https://leetcode.com/problems/next-greater-element-i) | [Solution](../coding/datastructures/stackAndQueue/NGE.java) | Array, Hash Table, Stack, Monotonic Stack |
 | 46 | EASY | [Maximum Area Of Longest Diagonal Rectangle](https://leetcode.com/problems/maximum-area-of-longest-diagonal-rectangle) | [Solution](../coding/datastructures/arrays/MaxRecArea.java) | Array |
+| 47 | MEDIUM | [Longest Increasing Subsequence](https://leetcode.com/problems/longest-increasing-subsequence) | [Solution](../coding/algorithms/dynamicProgramming/LIS.java) | Array, Binary Search, Dynamic Programming |
+| 48 | MEDIUM | [Palindromic Substrings](https://leetcode.com/problems/palindromic-substrings) | [Solution](../coding/datastructures/string/PalindromicSubstrings.java) | Two Pointers, String, Dynamic Programming |

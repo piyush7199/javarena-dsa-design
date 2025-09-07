@@ -16,3 +16,4 @@
 | 12 | MEDIUM | [Course Schedule Ii](https://leetcode.com/problems/course-schedule-ii) | [Solution](../coding/datastructures/graph/TopologicalSorting.java) | Depth-First Search, Breadth-First Search, Graph, Topological Sort |
 | 13 | MEDIUM | [Longest Common Subsequence](https://leetcode.com/problems/longest-common-subsequence) | [Solution](../coding/algorithms/dynamicProgramming/LongestCommonSubsequence.java) | String, Dynamic Programming |
 | 14 | MEDIUM | [Implement Trie Prefix Tree](https://leetcode.com/problems/implement-trie-prefix-tree) | [Solution](../coding/datastructures/trie/Trie.java) | Hash Table, String, Design, Trie |
+| 15 | MEDIUM | [Palindromic Substrings](https://leetcode.com/problems/palindromic-substrings) | [Solution](../coding/datastructures/string/PalindromicSubstrings.java) | Two Pointers, String, Dynamic Programming |
