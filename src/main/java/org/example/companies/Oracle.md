@@ -82,3 +82,4 @@
 | 78 | EASY | [Valid Anagram](https://leetcode.com/problems/valid-anagram) | [Solution](../coding/datastructures/string/ValidAnagram.java) | Hash Table, String, Sorting |
 | 79 | EASY | [Invert Binary Tree](https://leetcode.com/problems/invert-binary-tree) | [Solution](../coding/datastructures/binaryTree/InvertTree.java) | Tree, Depth-First Search, Breadth-First Search, Binary Tree |
 | 80 | MEDIUM | [Kth Smallest Element In A Bst](https://leetcode.com/problems/kth-smallest-element-in-a-bst) | [Solution](../coding/datastructures/binaryTree/KthSmallest.java) | Tree, Depth-First Search, Binary Search Tree, Binary Tree |
+| 81 | MEDIUM | [Lowest Common Ancestor Of A Binary Search Tree](https://leetcode.com/problems/lowest-common-ancestor-of-a-binary-search-tree) | [Solution](../coding/datastructures/binaryTree/LCA.java) | Tree, Depth-First Search, Binary Search Tree, Binary Tree |

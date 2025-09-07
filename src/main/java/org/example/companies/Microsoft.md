@@ -100,3 +100,4 @@
 | 96 | MEDIUM | [Encode And Decode Strings](https://leetcode.com/problems/encode-and-decode-strings) | [Solution](../coding/datastructures/string/EncodeAndDecode.java) | Array, String, Design |
 | 97 | EASY | [Valid Anagram](https://leetcode.com/problems/valid-anagram) | [Solution](../coding/datastructures/string/ValidAnagram.java) | Hash Table, String, Sorting |
 | 98 | HARD | [Serialize And Deserialize Binary Tree](https://leetcode.com/problems/serialize-and-deserialize-binary-tree) | [Solution](../coding/datastructures/binaryTree/SerializeDeserialize.java) | String, Tree, Depth-First Search, Breadth-First Search, Design, Binary Tree |
+| 99 | MEDIUM | [Lowest Common Ancestor Of A Binary Search Tree](https://leetcode.com/problems/lowest-common-ancestor-of-a-binary-search-tree) | [Solution](../coding/datastructures/binaryTree/LCA.java) | Tree, Depth-First Search, Binary Search Tree, Binary Tree |

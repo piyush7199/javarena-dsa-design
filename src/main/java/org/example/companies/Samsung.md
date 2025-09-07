@@ -34,3 +34,4 @@
 | 30 | MEDIUM | [Coin Change](https://leetcode.com/problems/coin-change) | [Solution](../coding/algorithms/dynamicProgramming/CoinChange.java) | Array, Dynamic Programming, Breadth-First Search |
 | 31 | MEDIUM | [Implement Trie Prefix Tree](https://leetcode.com/problems/implement-trie-prefix-tree) | [Solution](../coding/datastructures/trie/Trie.java) | Hash Table, String, Design, Trie |
 | 32 | MEDIUM | [Longest Increasing Subsequence](https://leetcode.com/problems/longest-increasing-subsequence) | [Solution](../coding/algorithms/dynamicProgramming/LIS.java) | Array, Binary Search, Dynamic Programming |
+| 33 | MEDIUM | [Lowest Common Ancestor Of A Binary Search Tree](https://leetcode.com/problems/lowest-common-ancestor-of-a-binary-search-tree) | [Solution](../coding/datastructures/binaryTree/LCA.java) | Tree, Depth-First Search, Binary Search Tree, Binary Tree |

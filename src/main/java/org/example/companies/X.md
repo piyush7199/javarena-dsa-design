@@ -16,3 +16,4 @@
 | 12 | MEDIUM | [Number Of Connected Components In An Undirected Graph](https://leetcode.com/problems/number-of-connected-components-in-an-undirected-graph) | [Solution](../coding/datastructures/graph/NoOfConnectedComponent.java) | Depth-First Search, Breadth-First Search, Union Find, Graph |
 | 13 | HARD | [Permutation Sequence](https://leetcode.com/problems/permutation-sequence) | [Solution](../coding/algorithms/miscellaneous/PermutationSequence.java) | Math, Recursion |
 | 14 | MEDIUM | [Implement Trie Prefix Tree](https://leetcode.com/problems/implement-trie-prefix-tree) | [Solution](../coding/datastructures/trie/Trie.java) | Hash Table, String, Design, Trie |
+| 15 | MEDIUM | [Lowest Common Ancestor Of A Binary Search Tree](https://leetcode.com/problems/lowest-common-ancestor-of-a-binary-search-tree) | [Solution](../coding/datastructures/binaryTree/LCA.java) | Tree, Depth-First Search, Binary Search Tree, Binary Tree |

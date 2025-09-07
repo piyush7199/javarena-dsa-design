@@ -56,3 +56,4 @@
 | 52 | MEDIUM | [Longest Increasing Subsequence](https://leetcode.com/problems/longest-increasing-subsequence) | [Solution](../coding/algorithms/dynamicProgramming/LIS.java) | Array, Binary Search, Dynamic Programming |
 | 53 | EASY | [Valid Palindrome](https://leetcode.com/problems/valid-palindrome) | [Solution](../coding/datastructures/string/ValidPalindrome.java) | Two Pointers, String |
 | 54 | EASY | [Valid Anagram](https://leetcode.com/problems/valid-anagram) | [Solution](../coding/datastructures/string/ValidAnagram.java) | Hash Table, String, Sorting |
+| 55 | MEDIUM | [Lowest Common Ancestor Of A Binary Search Tree](https://leetcode.com/problems/lowest-common-ancestor-of-a-binary-search-tree) | [Solution](../coding/datastructures/binaryTree/LCA.java) | Tree, Depth-First Search, Binary Search Tree, Binary Tree |
