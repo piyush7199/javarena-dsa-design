@@ -26,3 +26,4 @@
 | 22 | MEDIUM | [Kth Largest Element In An Array](https://leetcode.com/problems/kth-largest-element-in-an-array) | [Solution](../coding/datastructures/arrays/KthLargetElement.java) | Array, Divide and Conquer, Sorting, Heap (Priority Queue), Quickselect |
 | 23 | MEDIUM | [Partition Equal Subset Sum](https://leetcode.com/problems/partition-equal-subset-sum) | [Solution](../coding/algorithms/DynamicProgramming.java) | Array, Dynamic Programming |
 | 24 | EASY | [Binary Search](https://leetcode.com/problems/binary-search) | [Solution](../coding/algorithms/SearchingAlgorithms.java) | Array, Binary Search |
+| 25 | EASY | [Valid Palindrome](https://leetcode.com/problems/valid-palindrome) | [Solution](../coding/datastructures/string/ValidPalindrome.java) | Two Pointers, String |

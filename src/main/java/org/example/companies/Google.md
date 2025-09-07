@@ -101,3 +101,4 @@
 | 97 | MEDIUM | [Valid Sudoku](https://leetcode.com/problems/valid-sudoku) | [Solution](../coding/datastructures/arrays/ValidSudoku.java) | Array, Hash Table, Matrix |
 | 98 | MEDIUM | [Zero Array Transformation I](https://leetcode.com/problems/zero-array-transformation-i) | [Solution](../coding/datastructures/arrays/ZeroArrayTransformationI.java) | Array, Prefix Sum |
 | 99 | MEDIUM | [Longest Increasing Subsequence](https://leetcode.com/problems/longest-increasing-subsequence) | [Solution](../coding/algorithms/dynamicProgramming/LIS.java) | Array, Binary Search, Dynamic Programming |
+| 100 | EASY | [Valid Palindrome](https://leetcode.com/problems/valid-palindrome) | [Solution](../coding/datastructures/string/ValidPalindrome.java) | Two Pointers, String |

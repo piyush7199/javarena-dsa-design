@@ -67,3 +67,4 @@
 | 63 | MEDIUM | [Edit Distance](https://leetcode.com/problems/edit-distance) | [Solution](../coding/algorithms/dynamicProgramming/EditDistance.java) | String, Dynamic Programming |
 | 64 | MEDIUM | [Combination Sum](https://leetcode.com/problems/combination-sum) | [Solution](../coding/algorithms/recursionAndBacktracking/CombinationSum.java) | Array, Backtracking |
 | 65 | MEDIUM | [Valid Sudoku](https://leetcode.com/problems/valid-sudoku) | [Solution](../coding/datastructures/arrays/ValidSudoku.java) | Array, Hash Table, Matrix |
+| 66 | EASY | [Valid Palindrome](https://leetcode.com/problems/valid-palindrome) | [Solution](../coding/datastructures/string/ValidPalindrome.java) | Two Pointers, String |

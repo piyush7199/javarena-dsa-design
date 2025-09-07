@@ -17,3 +17,4 @@
 | 13 | MEDIUM | [Kth Largest Element In An Array](https://leetcode.com/problems/kth-largest-element-in-an-array) | [Solution](../coding/datastructures/arrays/KthLargetElement.java) | Array, Divide and Conquer, Sorting, Heap (Priority Queue), Quickselect |
 | 14 | EASY | [Reverse Linked List](https://leetcode.com/problems/reverse-linked-list) | [Solution](../coding/datastructures/linkedList/LinkedList.java) | Linked List, Recursion |
 | 15 | MEDIUM | [Max Consecutive Ones Iii](https://leetcode.com/problems/max-consecutive-ones-iii) | [Solution](../coding/algorithms/SlidingWindow.java) | Array, Binary Search, Sliding Window, Prefix Sum |
+| 16 | EASY | [Valid Palindrome](https://leetcode.com/problems/valid-palindrome) | [Solution](../coding/datastructures/string/ValidPalindrome.java) | Two Pointers, String |

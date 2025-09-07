@@ -80,3 +80,4 @@
 | 76 | MEDIUM | [Valid Sudoku](https://leetcode.com/problems/valid-sudoku) | [Solution](../coding/datastructures/arrays/ValidSudoku.java) | Array, Hash Table, Matrix |
 | 77 | MEDIUM | [Decode Ways](https://leetcode.com/problems/decode-ways) | [Solution](../coding/algorithms/dynamicProgramming/DecodeWays.java) | String, Dynamic Programming |
 | 78 | MEDIUM | [Longest Increasing Subsequence](https://leetcode.com/problems/longest-increasing-subsequence) | [Solution](../coding/algorithms/dynamicProgramming/LIS.java) | Array, Binary Search, Dynamic Programming |
+| 79 | EASY | [Valid Palindrome](https://leetcode.com/problems/valid-palindrome) | [Solution](../coding/datastructures/string/ValidPalindrome.java) | Two Pointers, String |

@@ -54,3 +54,4 @@
 | 50 | MEDIUM | [Find All Anagrams In A String](https://leetcode.com/problems/find-all-anagrams-in-a-string) | [Solution](../coding/algorithms/twoPointerAndSlidingWindow/FindAllAnagramsInAString.java) | Hash Table, String, Sliding Window |
 | 51 | MEDIUM | [Longest Subarray Of 1s After Deleting One Element](https://leetcode.com/problems/longest-subarray-of-1s-after-deleting-one-element) | [Solution](../coding/algorithms/twoPointerAndSlidingWindow/LongestSubarrayOfOneAfterDeletingOneEle.java) | Array, Dynamic Programming, Sliding Window |
 | 52 | MEDIUM | [Longest Increasing Subsequence](https://leetcode.com/problems/longest-increasing-subsequence) | [Solution](../coding/algorithms/dynamicProgramming/LIS.java) | Array, Binary Search, Dynamic Programming |
+| 53 | EASY | [Valid Palindrome](https://leetcode.com/problems/valid-palindrome) | [Solution](../coding/datastructures/string/ValidPalindrome.java) | Two Pointers, String |

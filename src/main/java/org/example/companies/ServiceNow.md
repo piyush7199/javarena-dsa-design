@@ -50,3 +50,4 @@
 | 46 | HARD | [Number Of Visible People In A Queue](https://leetcode.com/problems/number-of-visible-people-in-a-queue) | [Solution](../coding/datastructures/stackAndQueue/NumberOfVisiblePeopleInAQueue.java) | Array, Stack, Monotonic Stack |
 | 47 | MEDIUM | [Implement Trie Prefix Tree](https://leetcode.com/problems/implement-trie-prefix-tree) | [Solution](../coding/datastructures/trie/Trie.java) | Hash Table, String, Design, Trie |
 | 48 | MEDIUM | [Combination Sum](https://leetcode.com/problems/combination-sum) | [Solution](../coding/algorithms/recursionAndBacktracking/CombinationSum.java) | Array, Backtracking |
+| 49 | EASY | [Valid Palindrome](https://leetcode.com/problems/valid-palindrome) | [Solution](../coding/datastructures/string/ValidPalindrome.java) | Two Pointers, String |

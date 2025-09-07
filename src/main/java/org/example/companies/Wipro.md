@@ -17,3 +17,4 @@
 | 13 | MEDIUM | [Kth Largest Element In An Array](https://leetcode.com/problems/kth-largest-element-in-an-array) | [Solution](../coding/datastructures/arrays/KthLargetElement.java) | Array, Divide and Conquer, Sorting, Heap (Priority Queue), Quickselect |
 | 14 | EASY | [Power Of Two](https://leetcode.com/problems/power-of-two) | [Solution](../coding/algorithms/bitManupulation/PowerOfTwo.java) | Math, Bit Manipulation, Recursion |
 | 15 | EASY | [Binary Search](https://leetcode.com/problems/binary-search) | [Solution](../coding/algorithms/SearchingAlgorithms.java) | Array, Binary Search |
+| 16 | EASY | [Valid Palindrome](https://leetcode.com/problems/valid-palindrome) | [Solution](../coding/datastructures/string/ValidPalindrome.java) | Two Pointers, String |

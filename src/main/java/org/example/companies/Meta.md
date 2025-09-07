@@ -94,3 +94,4 @@
 | 90 | MEDIUM | [Valid Sudoku](https://leetcode.com/problems/valid-sudoku) | [Solution](../coding/datastructures/arrays/ValidSudoku.java) | Array, Hash Table, Matrix |
 | 91 | MEDIUM | [Decode Ways](https://leetcode.com/problems/decode-ways) | [Solution](../coding/algorithms/dynamicProgramming/DecodeWays.java) | String, Dynamic Programming |
 | 92 | MEDIUM | [Palindromic Substrings](https://leetcode.com/problems/palindromic-substrings) | [Solution](../coding/datastructures/string/PalindromicSubstrings.java) | Two Pointers, String, Dynamic Programming |
+| 93 | EASY | [Valid Palindrome](https://leetcode.com/problems/valid-palindrome) | [Solution](../coding/datastructures/string/ValidPalindrome.java) | Two Pointers, String |

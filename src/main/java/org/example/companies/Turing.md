@@ -19,3 +19,4 @@
 | 15 | EASY | [Best Time To Buy And Sell Stock](https://leetcode.com/problems/best-time-to-buy-and-sell-stock) | [Solution](../coding/datastructures/arrays/StockBuySell.java) | Array, Dynamic Programming |
 | 16 | EASY | [Longest Common Prefix](https://leetcode.com/problems/longest-common-prefix) | [Solution](../coding/datastructures/string/LongestCommonPrefix.java) | String, Trie |
 | 17 | MEDIUM | [Find All Anagrams In A String](https://leetcode.com/problems/find-all-anagrams-in-a-string) | [Solution](../coding/algorithms/twoPointerAndSlidingWindow/FindAllAnagramsInAString.java) | Hash Table, String, Sliding Window |
+| 18 | EASY | [Valid Palindrome](https://leetcode.com/problems/valid-palindrome) | [Solution](../coding/datastructures/string/ValidPalindrome.java) | Two Pointers, String |

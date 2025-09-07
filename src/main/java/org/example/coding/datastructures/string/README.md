@@ -25,3 +25,4 @@ This section includes problems related to *String.*
 | 15 | [Minimum Number of Chairs in a Waiting Room](https://leetcode.com/problems/minimum-number-of-chairs-in-a-waiting-room/)                            | [MinChairsInRoom.java](./MinChairsInRoom.java)               |
 | 16 | [Encode and Decode String](https://www.geeksforgeeks.org/problems/encode-and-decode-strings/1)                                                     | [EncodeAndDecode.java](./EncodeAndDecode.java)               |
 | 17 | [Palindromic Substrings](https://leetcode.com/problems/palindromic-substrings/)                                                                    | [PalindromicSubstrings.java](PalindromicSubstrings.java)     |
+| 18 | [Valid Palindrome](https://leetcode.com/problems/valid-palindrome/)                                                                                | [ValidPalindrome.java](./ValidPalindrome.java)               |

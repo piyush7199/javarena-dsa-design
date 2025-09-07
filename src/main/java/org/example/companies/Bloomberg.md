@@ -89,3 +89,4 @@
 | 85 | MEDIUM | [Combination Sum](https://leetcode.com/problems/combination-sum) | [Solution](../coding/algorithms/recursionAndBacktracking/CombinationSum.java) | Array, Backtracking |
 | 86 | MEDIUM | [Valid Sudoku](https://leetcode.com/problems/valid-sudoku) | [Solution](../coding/datastructures/arrays/ValidSudoku.java) | Array, Hash Table, Matrix |
 | 87 | MEDIUM | [Decode Ways](https://leetcode.com/problems/decode-ways) | [Solution](../coding/algorithms/dynamicProgramming/DecodeWays.java) | String, Dynamic Programming |
+| 88 | EASY | [Valid Palindrome](https://leetcode.com/problems/valid-palindrome) | [Solution](../coding/datastructures/string/ValidPalindrome.java) | Two Pointers, String |

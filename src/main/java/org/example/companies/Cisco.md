@@ -40,3 +40,4 @@
 | 36 | EASY | [Single Number](https://leetcode.com/problems/single-number) | [Solution](../coding/algorithms/bitManupulation/SingleNumber.java) | Array, Bit Manipulation |
 | 37 | MEDIUM | [Edit Distance](https://leetcode.com/problems/edit-distance) | [Solution](../coding/algorithms/dynamicProgramming/EditDistance.java) | String, Dynamic Programming |
 | 38 | MEDIUM | [Palindromic Substrings](https://leetcode.com/problems/palindromic-substrings) | [Solution](../coding/datastructures/string/PalindromicSubstrings.java) | Two Pointers, String, Dynamic Programming |
+| 39 | EASY | [Valid Palindrome](https://leetcode.com/problems/valid-palindrome) | [Solution](../coding/datastructures/string/ValidPalindrome.java) | Two Pointers, String |

@@ -47,3 +47,4 @@
 | 43 | MEDIUM | [Edit Distance](https://leetcode.com/problems/edit-distance) | [Solution](../coding/algorithms/dynamicProgramming/EditDistance.java) | String, Dynamic Programming |
 | 44 | MEDIUM | [Combination Sum](https://leetcode.com/problems/combination-sum) | [Solution](../coding/algorithms/recursionAndBacktracking/CombinationSum.java) | Array, Backtracking |
 | 45 | MEDIUM | [Rearrange Array Elements By Sign](https://leetcode.com/problems/rearrange-array-elements-by-sign) | [Solution](../coding/datastructures/arrays/RearrangeArrayEleBySign.java) | Array, Two Pointers, Simulation |
+| 46 | EASY | [Valid Palindrome](https://leetcode.com/problems/valid-palindrome) | [Solution](../coding/datastructures/string/ValidPalindrome.java) | Two Pointers, String |
