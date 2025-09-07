@@ -49,3 +49,4 @@
 | 45 | MEDIUM | [Valid Triangle Number](https://leetcode.com/problems/valid-triangle-number) | [Solution](../coding/algorithms/binarySearch/ValidTriangleNumber.java) | Array, Two Pointers, Binary Search, Greedy, Sorting |
 | 46 | MEDIUM | [Implement Trie Prefix Tree](https://leetcode.com/problems/implement-trie-prefix-tree) | [Solution](../coding/datastructures/trie/Trie.java) | Hash Table, String, Design, Trie |
 | 47 | MEDIUM | [Valid Sudoku](https://leetcode.com/problems/valid-sudoku) | [Solution](../coding/datastructures/arrays/ValidSudoku.java) | Array, Hash Table, Matrix |
+| 48 | HARD | [Serialize And Deserialize Binary Tree](https://leetcode.com/problems/serialize-and-deserialize-binary-tree) | [Solution](../coding/datastructures/binaryTree/SerializeDeserialize.java) | String, Tree, Depth-First Search, Breadth-First Search, Design, Binary Tree |
