@@ -27,3 +27,4 @@
 | 23 | MEDIUM | [Implement Trie Prefix Tree](https://leetcode.com/problems/implement-trie-prefix-tree) | [Solution](../coding/datastructures/trie/Trie.java) | Hash Table, String, Design, Trie |
 | 24 | MEDIUM | [Implement Trie Ii Prefix Tree](https://leetcode.com/problems/implement-trie-ii-prefix-tree) | [Solution](../coding/datastructures/trie/TrieII.java) | Hash Table, String, Design, Trie |
 | 25 | MEDIUM | [Valid Sudoku](https://leetcode.com/problems/valid-sudoku) | [Solution](../coding/datastructures/arrays/ValidSudoku.java) | Array, Hash Table, Matrix |
+| 26 | HARD | [Word Search Ii](https://leetcode.com/problems/word-search-ii) | [Solution](../coding/datastructures/trie/WordSearchII.java) | Array, String, Backtracking, Trie, Matrix |

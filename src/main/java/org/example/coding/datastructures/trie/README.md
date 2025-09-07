@@ -104,9 +104,10 @@ function startsWith(root, prefix):
 
 ## Practice Problems
 
-| # | Problem                                                                                               | Solution                     |
-|---|-------------------------------------------------------------------------------------------------------|------------------------------|
-| 1 | [Implement Trie (Prefix Tree)](https://leetcode.com/problems/implement-trie-prefix-tree/description/) | [Trie.java](./Trie.java)     |
-| 2 | [Implement Trie II(Prefix Tree)](https://leetcode.com/problems/implement-trie-ii-prefix-tree/)        | [TrieII.java](./TrieII.java) |
-| 3 | [Count of distinct substrings](https://www.geeksforgeeks.org/problems/count-of-distinct-substrings/1) |                              |
+| # | Problem                                                                                               | Solution                                 |
+|---|-------------------------------------------------------------------------------------------------------|------------------------------------------|
+| 1 | [Implement Trie (Prefix Tree)](https://leetcode.com/problems/implement-trie-prefix-tree/description/) | [Trie.java](./Trie.java)                 |
+| 2 | [Implement Trie II(Prefix Tree)](https://leetcode.com/problems/implement-trie-ii-prefix-tree/)        | [TrieII.java](./TrieII.java)             |
+| 3 | [Count of distinct substrings](https://www.geeksforgeeks.org/problems/count-of-distinct-substrings/1) |                                          |
+| 4 | [Word Search II](https://leetcode.com/problems/word-search-ii/)                                       | [WordSearchII.java](./WordSearchII.java) |
 
