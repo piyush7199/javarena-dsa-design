@@ -23,3 +23,4 @@
 | 19 | MEDIUM | [Coin Change](https://leetcode.com/problems/coin-change) | [Solution](../coding/algorithms/dynamicProgramming/CoinChange.java) | Array, Dynamic Programming, Breadth-First Search |
 | 20 | EASY | [Maximum Area Of Longest Diagonal Rectangle](https://leetcode.com/problems/maximum-area-of-longest-diagonal-rectangle) | [Solution](../coding/datastructures/arrays/MaxRecArea.java) | Array |
 | 21 | MEDIUM | [Longest Increasing Subsequence](https://leetcode.com/problems/longest-increasing-subsequence) | [Solution](../coding/algorithms/dynamicProgramming/LIS.java) | Array, Binary Search, Dynamic Programming |
+| 22 | EASY | [Valid Anagram](https://leetcode.com/problems/valid-anagram) | [Solution](../coding/datastructures/string/ValidAnagram.java) | Hash Table, String, Sorting |

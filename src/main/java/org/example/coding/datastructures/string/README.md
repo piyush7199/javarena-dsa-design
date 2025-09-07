@@ -26,3 +26,4 @@ This section includes problems related to *String.*
 | 16 | [Encode and Decode String](https://www.geeksforgeeks.org/problems/encode-and-decode-strings/1)                                                     | [EncodeAndDecode.java](./EncodeAndDecode.java)               |
 | 17 | [Palindromic Substrings](https://leetcode.com/problems/palindromic-substrings/)                                                                    | [PalindromicSubstrings.java](PalindromicSubstrings.java)     |
 | 18 | [Valid Palindrome](https://leetcode.com/problems/valid-palindrome/)                                                                                | [ValidPalindrome.java](./ValidPalindrome.java)               |
+| 19 | [Valid Anagram](https://leetcode.com/problems/valid-anagram/)                                                                                      | [ValidAnagram.java](./ValidAnagram.java)                     |

@@ -14,3 +14,4 @@
 | 10 | EASY | [Reverse Linked List](https://leetcode.com/problems/reverse-linked-list) | [Solution](../coding/datastructures/linkedList/LinkedList.java) | Linked List, Recursion |
 | 11 | EASY | [Palindrome Linked List](https://leetcode.com/problems/palindrome-linked-list) | [Solution](../coding/datastructures/linkedList/LinkedList.java) | Linked List, Two Pointers, Stack, Recursion |
 | 12 | MEDIUM | [Minimum Add To Make Parentheses Valid](https://leetcode.com/problems/minimum-add-to-make-parentheses-valid) | [Solution](../coding/datastructures/string/AddParentheses.java) | String, Stack, Greedy |
+| 13 | EASY | [Valid Anagram](https://leetcode.com/problems/valid-anagram) | [Solution](../coding/datastructures/string/ValidAnagram.java) | Hash Table, String, Sorting |

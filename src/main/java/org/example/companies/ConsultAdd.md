@@ -7,3 +7,4 @@
 | 3 | MEDIUM | [Zigzag Conversion](https://leetcode.com/problems/zigzag-conversion) | [Solution](../coding/datastructures/string/ZigZagConversion.java) | String |
 | 4 | MEDIUM | [Coin Change](https://leetcode.com/problems/coin-change) | [Solution](../coding/algorithms/dynamicProgramming/CoinChange.java) | Array, Dynamic Programming, Breadth-First Search |
 | 5 | MEDIUM | [Rotate Image](https://leetcode.com/problems/rotate-image) | [Solution](../coding/datastructures/arrays/RotateImage.java) | Array, Math, Matrix |
+| 6 | EASY | [Valid Anagram](https://leetcode.com/problems/valid-anagram) | [Solution](../coding/datastructures/string/ValidAnagram.java) | Hash Table, String, Sorting |

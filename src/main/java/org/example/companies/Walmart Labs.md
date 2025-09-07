@@ -64,3 +64,4 @@
 | 60 | MEDIUM | [Valid Sudoku](https://leetcode.com/problems/valid-sudoku) | [Solution](../coding/datastructures/arrays/ValidSudoku.java) | Array, Hash Table, Matrix |
 | 61 | MEDIUM | [Decode Ways](https://leetcode.com/problems/decode-ways) | [Solution](../coding/algorithms/dynamicProgramming/DecodeWays.java) | String, Dynamic Programming |
 | 62 | MEDIUM | [Palindromic Substrings](https://leetcode.com/problems/palindromic-substrings) | [Solution](../coding/datastructures/string/PalindromicSubstrings.java) | Two Pointers, String, Dynamic Programming |
+| 63 | EASY | [Valid Anagram](https://leetcode.com/problems/valid-anagram) | [Solution](../coding/datastructures/string/ValidAnagram.java) | Hash Table, String, Sorting |

@@ -48,3 +48,4 @@
 | 44 | MEDIUM | [Combination Sum](https://leetcode.com/problems/combination-sum) | [Solution](../coding/algorithms/recursionAndBacktracking/CombinationSum.java) | Array, Backtracking |
 | 45 | MEDIUM | [Rearrange Array Elements By Sign](https://leetcode.com/problems/rearrange-array-elements-by-sign) | [Solution](../coding/datastructures/arrays/RearrangeArrayEleBySign.java) | Array, Two Pointers, Simulation |
 | 46 | EASY | [Valid Palindrome](https://leetcode.com/problems/valid-palindrome) | [Solution](../coding/datastructures/string/ValidPalindrome.java) | Two Pointers, String |
+| 47 | EASY | [Valid Anagram](https://leetcode.com/problems/valid-anagram) | [Solution](../coding/datastructures/string/ValidAnagram.java) | Hash Table, String, Sorting |

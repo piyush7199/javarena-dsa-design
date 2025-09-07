@@ -17,3 +17,4 @@
 | 13 | EASY | [Longest Common Prefix](https://leetcode.com/problems/longest-common-prefix) | [Solution](../coding/datastructures/string/LongestCommonPrefix.java) | String, Trie |
 | 14 | EASY | [Binary Search](https://leetcode.com/problems/binary-search) | [Solution](../coding/algorithms/SearchingAlgorithms.java) | Array, Binary Search |
 | 15 | EASY | [Count Subarrays Of Length Three With A Condition](https://leetcode.com/problems/count-subarrays-of-length-three-with-a-condition) | [Solution](../coding/datastructures/arrays/SubarrayWithCondition.java) | Array |
+| 16 | EASY | [Valid Anagram](https://leetcode.com/problems/valid-anagram) | [Solution](../coding/datastructures/string/ValidAnagram.java) | Hash Table, String, Sorting |

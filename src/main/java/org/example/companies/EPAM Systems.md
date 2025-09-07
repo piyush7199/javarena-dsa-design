@@ -27,3 +27,4 @@
 | 23 | MEDIUM | [Partition Equal Subset Sum](https://leetcode.com/problems/partition-equal-subset-sum) | [Solution](../coding/algorithms/DynamicProgramming.java) | Array, Dynamic Programming |
 | 24 | EASY | [Binary Search](https://leetcode.com/problems/binary-search) | [Solution](../coding/algorithms/SearchingAlgorithms.java) | Array, Binary Search |
 | 25 | EASY | [Valid Palindrome](https://leetcode.com/problems/valid-palindrome) | [Solution](../coding/datastructures/string/ValidPalindrome.java) | Two Pointers, String |
+| 26 | EASY | [Valid Anagram](https://leetcode.com/problems/valid-anagram) | [Solution](../coding/datastructures/string/ValidAnagram.java) | Hash Table, String, Sorting |

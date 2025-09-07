@@ -9,3 +9,4 @@
 | 5 | MEDIUM | [Generate Parentheses](https://leetcode.com/problems/generate-parentheses) | [Solution](../coding/algorithms/recursionAndBacktracking/GenerateParentheses.java) | String, Dynamic Programming, Backtracking |
 | 6 | MEDIUM | [Coin Change](https://leetcode.com/problems/coin-change) | [Solution](../coding/algorithms/dynamicProgramming/CoinChange.java) | Array, Dynamic Programming, Breadth-First Search |
 | 7 | MEDIUM | [Boundary Of Binary Tree](https://leetcode.com/problems/boundary-of-binary-tree) | [Solution](../coding/datastructures/binaryTree/Traversals.java) | Tree, Depth-First Search, Binary Tree |
+| 8 | EASY | [Valid Anagram](https://leetcode.com/problems/valid-anagram) | [Solution](../coding/datastructures/string/ValidAnagram.java) | Hash Table, String, Sorting |

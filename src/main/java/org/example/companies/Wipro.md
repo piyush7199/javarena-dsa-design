@@ -18,3 +18,4 @@
 | 14 | EASY | [Power Of Two](https://leetcode.com/problems/power-of-two) | [Solution](../coding/algorithms/bitManupulation/PowerOfTwo.java) | Math, Bit Manipulation, Recursion |
 | 15 | EASY | [Binary Search](https://leetcode.com/problems/binary-search) | [Solution](../coding/algorithms/SearchingAlgorithms.java) | Array, Binary Search |
 | 16 | EASY | [Valid Palindrome](https://leetcode.com/problems/valid-palindrome) | [Solution](../coding/datastructures/string/ValidPalindrome.java) | Two Pointers, String |
+| 17 | EASY | [Valid Anagram](https://leetcode.com/problems/valid-anagram) | [Solution](../coding/datastructures/string/ValidAnagram.java) | Hash Table, String, Sorting |

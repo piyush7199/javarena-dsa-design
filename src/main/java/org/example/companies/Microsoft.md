@@ -98,3 +98,4 @@
 | 94 | MEDIUM | [Valid Sudoku](https://leetcode.com/problems/valid-sudoku) | [Solution](../coding/datastructures/arrays/ValidSudoku.java) | Array, Hash Table, Matrix |
 | 95 | MEDIUM | [Decode Ways](https://leetcode.com/problems/decode-ways) | [Solution](../coding/algorithms/dynamicProgramming/DecodeWays.java) | String, Dynamic Programming |
 | 96 | MEDIUM | [Encode And Decode Strings](https://leetcode.com/problems/encode-and-decode-strings) | [Solution](../coding/datastructures/string/EncodeAndDecode.java) | Array, String, Design |
+| 97 | EASY | [Valid Anagram](https://leetcode.com/problems/valid-anagram) | [Solution](../coding/datastructures/string/ValidAnagram.java) | Hash Table, String, Sorting |

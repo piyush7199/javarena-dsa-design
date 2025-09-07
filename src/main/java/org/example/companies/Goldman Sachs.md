@@ -64,3 +64,4 @@
 | 60 | MEDIUM | [Decode Ways](https://leetcode.com/problems/decode-ways) | [Solution](../coding/algorithms/dynamicProgramming/DecodeWays.java) | String, Dynamic Programming |
 | 61 | MEDIUM | [Longest Increasing Subsequence](https://leetcode.com/problems/longest-increasing-subsequence) | [Solution](../coding/algorithms/dynamicProgramming/LIS.java) | Array, Binary Search, Dynamic Programming |
 | 62 | MEDIUM | [Palindromic Substrings](https://leetcode.com/problems/palindromic-substrings) | [Solution](../coding/datastructures/string/PalindromicSubstrings.java) | Two Pointers, String, Dynamic Programming |
+| 63 | EASY | [Valid Anagram](https://leetcode.com/problems/valid-anagram) | [Solution](../coding/datastructures/string/ValidAnagram.java) | Hash Table, String, Sorting |

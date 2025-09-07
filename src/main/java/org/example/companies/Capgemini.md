@@ -17,3 +17,4 @@
 | 13 | MEDIUM | [Reverse Words In A String](https://leetcode.com/problems/reverse-words-in-a-string) | [Solution](../coding/datastructures/string/ReverseWords.java) | Two Pointers, String |
 | 14 | MEDIUM | [Longest Happy String](https://leetcode.com/problems/longest-happy-string) | [Solution](../coding/algorithms/greedy/LongestHappyString.java) | String, Greedy, Heap (Priority Queue) |
 | 15 | EASY | [Valid Palindrome](https://leetcode.com/problems/valid-palindrome) | [Solution](../coding/datastructures/string/ValidPalindrome.java) | Two Pointers, String |
+| 16 | EASY | [Valid Anagram](https://leetcode.com/problems/valid-anagram) | [Solution](../coding/datastructures/string/ValidAnagram.java) | Hash Table, String, Sorting |
