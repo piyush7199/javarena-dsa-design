@@ -161,6 +161,8 @@ public class BinaryTree {
 | 33 | [House Robber III](https://leetcode.com/problems/house-robber-iii/)                                                                                                                              | [HouseRobberIII.java](./HouseRobberIII.java)             |
 | 34 | [Invert Binary Tree](https://leetcode.com/problems/invert-binary-tree/)                                                                                                                          | [InvertTree.java](./InvertTree.java)                     |
 | 35 | [Serialize and Deserialize Binary Tree](https://leetcode.com/problems/serialize-and-deserialize-binary-tree/)                                                                                    | [SerializeDeserialize.java](./SerializeDeserialize.java) |
+| 36 | [Subtree of Another Tree](https://leetcode.com/problems/subtree-of-another-tree/)                                                                                                                | [SubTree.java](./SubTree.java)                           |
+| 37 | [Kth Smallest Ele](https://leetcode.com/problems/kth-smallest-element-in-a-bst/)                                                                                                                 | [KthSmallest.java](./KthSmallest.java)                   |
 
 ---
 

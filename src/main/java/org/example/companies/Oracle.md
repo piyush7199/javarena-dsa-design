@@ -81,3 +81,4 @@
 | 77 | MEDIUM | [Palindromic Substrings](https://leetcode.com/problems/palindromic-substrings) | [Solution](../coding/datastructures/string/PalindromicSubstrings.java) | Two Pointers, String, Dynamic Programming |
 | 78 | EASY | [Valid Anagram](https://leetcode.com/problems/valid-anagram) | [Solution](../coding/datastructures/string/ValidAnagram.java) | Hash Table, String, Sorting |
 | 79 | EASY | [Invert Binary Tree](https://leetcode.com/problems/invert-binary-tree) | [Solution](../coding/datastructures/binaryTree/InvertTree.java) | Tree, Depth-First Search, Breadth-First Search, Binary Tree |
+| 80 | MEDIUM | [Kth Smallest Element In A Bst](https://leetcode.com/problems/kth-smallest-element-in-a-bst) | [Solution](../coding/datastructures/binaryTree/KthSmallest.java) | Tree, Depth-First Search, Binary Search Tree, Binary Tree |

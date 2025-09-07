@@ -39,3 +39,4 @@
 | 35 | MEDIUM | [Set Matrix Zeroes](https://leetcode.com/problems/set-matrix-zeroes) | [Solution](../coding/datastructures/arrays/SetMatrixZero.java) | Array, Hash Table, Matrix |
 | 36 | EASY | [Remove One Element To Make The Array Strictly Increasing](https://leetcode.com/problems/remove-one-element-to-make-the-array-strictly-increasing) | [Solution](../coding/datastructures/arrays/ArrayInIncreasingOrder.java) | Array |
 | 37 | HARD | [Word Search Ii](https://leetcode.com/problems/word-search-ii) | [Solution](../coding/datastructures/trie/WordSearchII.java) | Array, String, Backtracking, Trie, Matrix |
+| 38 | EASY | [Subtree Of Another Tree](https://leetcode.com/problems/subtree-of-another-tree) | [Solution](../coding/datastructures/binaryTree/SubTree.java) | Tree, Depth-First Search, String Matching, Binary Tree, Hash Function |
