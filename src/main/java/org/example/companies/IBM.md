@@ -41,3 +41,4 @@
 | 37 | MEDIUM | [Least Number Of Unique Integers After K Removals](https://leetcode.com/problems/least-number-of-unique-integers-after-k-removals) | [Solution](../coding/datastructures/stackAndQueue/RemoveK.java) | Array, Hash Table, Greedy, Sorting, Counting |
 | 38 | MEDIUM | [Find The Smallest Divisor Given A Threshold](https://leetcode.com/problems/find-the-smallest-divisor-given-a-threshold) | [Solution](../coding/algorithms/binarySearch/SmallestDivisorGivenAThreshold.java) | Array, Binary Search |
 | 39 | MEDIUM | [Longest Increasing Subsequence](https://leetcode.com/problems/longest-increasing-subsequence) | [Solution](../coding/algorithms/dynamicProgramming/LIS.java) | Array, Binary Search, Dynamic Programming |
+| 40 | MEDIUM | [Task Scheduler](https://leetcode.com/problems/task-scheduler) | [Solution](../coding/datastructures/stackAndQueue/TaskScheduler.java) | Array, Hash Table, Greedy, Sorting, Heap (Priority Queue), Counting |

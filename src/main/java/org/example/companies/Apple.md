@@ -87,3 +87,4 @@
 | 83 | MEDIUM | [Decode Ways](https://leetcode.com/problems/decode-ways) | [Solution](../coding/algorithms/dynamicProgramming/DecodeWays.java) | String, Dynamic Programming |
 | 84 | EASY | [Valid Palindrome](https://leetcode.com/problems/valid-palindrome) | [Solution](../coding/datastructures/string/ValidPalindrome.java) | Two Pointers, String |
 | 85 | HARD | [Serialize And Deserialize Binary Tree](https://leetcode.com/problems/serialize-and-deserialize-binary-tree) | [Solution](../coding/datastructures/binaryTree/SerializeDeserialize.java) | String, Tree, Depth-First Search, Breadth-First Search, Design, Binary Tree |
+| 86 | MEDIUM | [Task Scheduler](https://leetcode.com/problems/task-scheduler) | [Solution](../coding/datastructures/stackAndQueue/TaskScheduler.java) | Array, Hash Table, Greedy, Sorting, Heap (Priority Queue), Counting |

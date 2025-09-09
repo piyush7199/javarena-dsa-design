@@ -82,3 +82,4 @@
 | 78 | EASY | [Valid Palindrome](https://leetcode.com/problems/valid-palindrome) | [Solution](../coding/datastructures/string/ValidPalindrome.java) | Two Pointers, String |
 | 79 | HARD | [Word Search Ii](https://leetcode.com/problems/word-search-ii) | [Solution](../coding/datastructures/trie/WordSearchII.java) | Array, String, Backtracking, Trie, Matrix |
 | 80 | MEDIUM | [Kth Smallest Element In A Bst](https://leetcode.com/problems/kth-smallest-element-in-a-bst) | [Solution](../coding/datastructures/binaryTree/KthSmallest.java) | Tree, Depth-First Search, Binary Search Tree, Binary Tree |
+| 81 | MEDIUM | [Task Scheduler](https://leetcode.com/problems/task-scheduler) | [Solution](../coding/datastructures/stackAndQueue/TaskScheduler.java) | Array, Hash Table, Greedy, Sorting, Heap (Priority Queue), Counting |

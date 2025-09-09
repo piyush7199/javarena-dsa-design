@@ -118,4 +118,5 @@ Below is the complexity analysis for key operations in `StackImpl<T>` and `Queue
 | 25 | [Number of Visible People in a Queue](https://leetcode.com/problems/number-of-visible-people-in-a-queue/)                                 | [NumberOfVisiblePeopleInAQueue.java](NumberOfVisiblePeopleInAQueue.java) |
 | 26 | [Least Number of Unique Integers after K Removals](https://leetcode.com/problems/least-number-of-unique-integers-after-k-removals/)       | [RemoveK.java](./RemoveK.java)                                           |
 | 27 | [Next Greater Element I](https://leetcode.com/problems/next-greater-element-i/)                                                           | [NGE.java](./NGE.java)                                                   |
+| 28 | [Task Scheduler](https://leetcode.com/problems/task-scheduler/)                                                                           | [TaskScheduler.java](./TaskScheduler.java)                               |
 

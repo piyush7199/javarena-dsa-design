@@ -40,3 +40,4 @@
 | 36 | MEDIUM | [Find All Anagrams In A String](https://leetcode.com/problems/find-all-anagrams-in-a-string) | [Solution](../coding/algorithms/twoPointerAndSlidingWindow/FindAllAnagramsInAString.java) | Hash Table, String, Sliding Window |
 | 37 | MEDIUM | [Longest Increasing Subsequence](https://leetcode.com/problems/longest-increasing-subsequence) | [Solution](../coding/algorithms/dynamicProgramming/LIS.java) | Array, Binary Search, Dynamic Programming |
 | 38 | HARD | [Serialize And Deserialize Binary Tree](https://leetcode.com/problems/serialize-and-deserialize-binary-tree) | [Solution](../coding/datastructures/binaryTree/SerializeDeserialize.java) | String, Tree, Depth-First Search, Breadth-First Search, Design, Binary Tree |
+| 39 | MEDIUM | [Task Scheduler](https://leetcode.com/problems/task-scheduler) | [Solution](../coding/datastructures/stackAndQueue/TaskScheduler.java) | Array, Hash Table, Greedy, Sorting, Heap (Priority Queue), Counting |
