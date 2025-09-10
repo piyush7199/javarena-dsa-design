@@ -29,3 +29,4 @@
 | 25 | EASY | [Next Greater Element I](https://leetcode.com/problems/next-greater-element-i) | [Solution](../coding/datastructures/stackAndQueue/NGE.java) | Array, Hash Table, Stack, Monotonic Stack |
 | 26 | MEDIUM | [Decode Ways](https://leetcode.com/problems/decode-ways) | [Solution](../coding/algorithms/dynamicProgramming/DecodeWays.java) | String, Dynamic Programming |
 | 27 | EASY | [Subtree Of Another Tree](https://leetcode.com/problems/subtree-of-another-tree) | [Solution](../coding/datastructures/binaryTree/SubTree.java) | Tree, Depth-First Search, String Matching, Binary Tree, Hash Function |
+| 28 | MEDIUM | [Contiguous Array](https://leetcode.com/problems/contiguous-array) | [Solution](../coding/datastructures/arrays/ContiguousArray.java) | Array, Hash Table, Prefix Sum |
