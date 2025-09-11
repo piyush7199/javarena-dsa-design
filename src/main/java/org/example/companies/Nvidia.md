@@ -50,3 +50,4 @@
 | 46 | MEDIUM | [Implement Trie Prefix Tree](https://leetcode.com/problems/implement-trie-prefix-tree) | [Solution](../coding/datastructures/trie/Trie.java) | Hash Table, String, Design, Trie |
 | 47 | MEDIUM | [Valid Sudoku](https://leetcode.com/problems/valid-sudoku) | [Solution](../coding/datastructures/arrays/ValidSudoku.java) | Array, Hash Table, Matrix |
 | 48 | HARD | [Serialize And Deserialize Binary Tree](https://leetcode.com/problems/serialize-and-deserialize-binary-tree) | [Solution](../coding/datastructures/binaryTree/SerializeDeserialize.java) | String, Tree, Depth-First Search, Breadth-First Search, Design, Binary Tree |
+| 49 | HARD | [Special Binary String](https://leetcode.com/problems/special-binary-string) | [Solution](../coding/algorithms/recursionAndBacktracking/SpecialBinaryString.java) | String, Recursion |
