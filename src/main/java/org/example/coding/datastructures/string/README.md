@@ -27,3 +27,4 @@ This section includes problems related to *String.*
 | 17 | [Palindromic Substrings](https://leetcode.com/problems/palindromic-substrings/)                                                                    | [PalindromicSubstrings.java](PalindromicSubstrings.java)     |
 | 18 | [Valid Palindrome](https://leetcode.com/problems/valid-palindrome/)                                                                                | [ValidPalindrome.java](./ValidPalindrome.java)               |
 | 19 | [Valid Anagram](https://leetcode.com/problems/valid-anagram/)                                                                                      | [ValidAnagram.java](./ValidAnagram.java)                     |
+| 20 | [Binary String](https://leetcode.com/problems/binary-string-with-substrings-representing-1-to-n/)                                                  | [BinaryString.java](./BinaryString.java)                     |

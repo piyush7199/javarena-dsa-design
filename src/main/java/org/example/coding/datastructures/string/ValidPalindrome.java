@@ -4,7 +4,7 @@ public class ValidPalindrome {
     public boolean isPalindrome(String s1) {
         int i = 0;
         int j = s1.length() - 1;
-        ;
+
         String s = s1.toLowerCase();
         while (i <= j) {
             char ch1 = s.charAt(i);
