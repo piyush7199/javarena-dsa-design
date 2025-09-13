@@ -19,7 +19,6 @@ public class BackspaceStringCompare {
         for (char ch : t.toCharArray()) {
             if (ch == '#') {
                 if (!sb.isEmpty()) {
-
                     sb.deleteCharAt(sb.length() - 1);
                 }
             } else {

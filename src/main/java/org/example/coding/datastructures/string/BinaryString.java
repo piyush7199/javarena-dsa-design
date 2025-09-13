@@ -17,7 +17,7 @@ public class BinaryString {
 
         while (n > 0) {
             int r = n % 2;
-            s.insert(0, String.valueOf(r));
+            s.insert(0, r);
             n = n / 2;
         }
         return s.toString();
