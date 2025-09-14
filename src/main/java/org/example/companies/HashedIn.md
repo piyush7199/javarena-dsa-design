@@ -10,3 +10,4 @@
 | 6 | MEDIUM | [3sum](https://leetcode.com/problems/3sum) | [Solution](../coding/algorithms/TwoPointerSum.java) | Array, Two Pointers, Sorting |
 | 7 | EASY | [Best Time To Buy And Sell Stock](https://leetcode.com/problems/best-time-to-buy-and-sell-stock) | [Solution](../coding/datastructures/arrays/StockBuySell.java) | Array, Dynamic Programming |
 | 8 | MEDIUM | [Edit Distance](https://leetcode.com/problems/edit-distance) | [Solution](../coding/algorithms/dynamicProgramming/EditDistance.java) | String, Dynamic Programming |
+| 9 | MEDIUM | [Jump Game Ii](https://leetcode.com/problems/jump-game-ii) | [Solution](../coding/algorithms/greedy/JumpGameII.java) | Array, Dynamic Programming, Greedy |

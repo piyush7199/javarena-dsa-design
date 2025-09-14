@@ -22,3 +22,4 @@
 | 18 | MEDIUM | [Magnetic Force Between Two Balls](https://leetcode.com/problems/magnetic-force-between-two-balls) | [Solution](../coding/algorithms/binarySearch/MagneticForce.java) | Array, Binary Search, Sorting |
 | 19 | HARD | [Word Search Ii](https://leetcode.com/problems/word-search-ii) | [Solution](../coding/datastructures/trie/WordSearchII.java) | Array, String, Backtracking, Trie, Matrix |
 | 20 | MEDIUM | [Task Scheduler](https://leetcode.com/problems/task-scheduler) | [Solution](../coding/datastructures/stackAndQueue/TaskScheduler.java) | Array, Hash Table, Greedy, Sorting, Heap (Priority Queue), Counting |
+| 21 | MEDIUM | [Jump Game Ii](https://leetcode.com/problems/jump-game-ii) | [Solution](../coding/algorithms/greedy/JumpGameII.java) | Array, Dynamic Programming, Greedy |

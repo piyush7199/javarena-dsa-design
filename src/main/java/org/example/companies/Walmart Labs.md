@@ -65,3 +65,5 @@
 | 61 | MEDIUM | [Decode Ways](https://leetcode.com/problems/decode-ways) | [Solution](../coding/algorithms/dynamicProgramming/DecodeWays.java) | String, Dynamic Programming |
 | 62 | MEDIUM | [Palindromic Substrings](https://leetcode.com/problems/palindromic-substrings) | [Solution](../coding/datastructures/string/PalindromicSubstrings.java) | Two Pointers, String, Dynamic Programming |
 | 63 | EASY | [Valid Anagram](https://leetcode.com/problems/valid-anagram) | [Solution](../coding/datastructures/string/ValidAnagram.java) | Hash Table, String, Sorting |
+| 64 | MEDIUM | [Jump Game Ii](https://leetcode.com/problems/jump-game-ii) | [Solution](../coding/algorithms/greedy/JumpGameII.java) | Array, Dynamic Programming, Greedy |
+| 65 | MEDIUM | [Divide Intervals Into Minimum Number Of Groups](https://leetcode.com/problems/divide-intervals-into-minimum-number-of-groups) | [Solution](../coding/datastructures/arrays/DivideIntervals.java) | Array, Two Pointers, Greedy, Sorting, Heap (Priority Queue), Prefix Sum |

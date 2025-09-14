@@ -56,3 +56,4 @@
 | 52 | MEDIUM | [Decode Ways](https://leetcode.com/problems/decode-ways) | [Solution](../coding/algorithms/dynamicProgramming/DecodeWays.java) | String, Dynamic Programming |
 | 53 | MEDIUM | [Longest Increasing Subsequence](https://leetcode.com/problems/longest-increasing-subsequence) | [Solution](../coding/algorithms/dynamicProgramming/LIS.java) | Array, Binary Search, Dynamic Programming |
 | 54 | HARD | [Word Search Ii](https://leetcode.com/problems/word-search-ii) | [Solution](../coding/datastructures/trie/WordSearchII.java) | Array, String, Backtracking, Trie, Matrix |
+| 55 | MEDIUM | [Jump Game Ii](https://leetcode.com/problems/jump-game-ii) | [Solution](../coding/algorithms/greedy/JumpGameII.java) | Array, Dynamic Programming, Greedy |

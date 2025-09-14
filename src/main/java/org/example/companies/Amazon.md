@@ -102,3 +102,4 @@
 | 98 | HARD | [Word Search Ii](https://leetcode.com/problems/word-search-ii) | [Solution](../coding/datastructures/trie/WordSearchII.java) | Array, String, Backtracking, Trie, Matrix |
 | 99 | EASY | [Invert Binary Tree](https://leetcode.com/problems/invert-binary-tree) | [Solution](../coding/datastructures/binaryTree/InvertTree.java) | Tree, Depth-First Search, Breadth-First Search, Binary Tree |
 | 100 | HARD | [Serialize And Deserialize Binary Tree](https://leetcode.com/problems/serialize-and-deserialize-binary-tree) | [Solution](../coding/datastructures/binaryTree/SerializeDeserialize.java) | String, Tree, Depth-First Search, Breadth-First Search, Design, Binary Tree |
+| 101 | MEDIUM | [Jump Game Ii](https://leetcode.com/problems/jump-game-ii) | [Solution](../coding/algorithms/greedy/JumpGameII.java) | Array, Dynamic Programming, Greedy |

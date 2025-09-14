@@ -91,3 +91,4 @@
 | 87 | MEDIUM | [Decode Ways](https://leetcode.com/problems/decode-ways) | [Solution](../coding/algorithms/dynamicProgramming/DecodeWays.java) | String, Dynamic Programming |
 | 88 | EASY | [Valid Palindrome](https://leetcode.com/problems/valid-palindrome) | [Solution](../coding/datastructures/string/ValidPalindrome.java) | Two Pointers, String |
 | 89 | EASY | [Valid Anagram](https://leetcode.com/problems/valid-anagram) | [Solution](../coding/datastructures/string/ValidAnagram.java) | Hash Table, String, Sorting |
+| 90 | MEDIUM | [Jump Game Ii](https://leetcode.com/problems/jump-game-ii) | [Solution](../coding/algorithms/greedy/JumpGameII.java) | Array, Dynamic Programming, Greedy |

@@ -23,3 +23,4 @@
 | 19 | MEDIUM | [Find The Smallest Divisor Given A Threshold](https://leetcode.com/problems/find-the-smallest-divisor-given-a-threshold) | [Solution](../coding/algorithms/binarySearch/SmallestDivisorGivenAThreshold.java) | Array, Binary Search |
 | 20 | EASY | [Next Greater Element I](https://leetcode.com/problems/next-greater-element-i) | [Solution](../coding/datastructures/stackAndQueue/NGE.java) | Array, Hash Table, Stack, Monotonic Stack |
 | 21 | MEDIUM | [Kth Smallest Element In A Bst](https://leetcode.com/problems/kth-smallest-element-in-a-bst) | [Solution](../coding/datastructures/binaryTree/KthSmallest.java) | Tree, Depth-First Search, Binary Search Tree, Binary Tree |
+| 22 | MEDIUM | [Jump Game Ii](https://leetcode.com/problems/jump-game-ii) | [Solution](../coding/algorithms/greedy/JumpGameII.java) | Array, Dynamic Programming, Greedy |

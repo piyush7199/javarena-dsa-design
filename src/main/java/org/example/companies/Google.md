@@ -106,3 +106,4 @@
 | 102 | HARD | [Word Search Ii](https://leetcode.com/problems/word-search-ii) | [Solution](../coding/datastructures/trie/WordSearchII.java) | Array, String, Backtracking, Trie, Matrix |
 | 103 | MEDIUM | [Kth Smallest Element In A Bst](https://leetcode.com/problems/kth-smallest-element-in-a-bst) | [Solution](../coding/datastructures/binaryTree/KthSmallest.java) | Tree, Depth-First Search, Binary Search Tree, Binary Tree |
 | 104 | MEDIUM | [Lowest Common Ancestor Of A Binary Search Tree](https://leetcode.com/problems/lowest-common-ancestor-of-a-binary-search-tree) | [Solution](../coding/datastructures/binaryTree/LCA.java) | Tree, Depth-First Search, Binary Search Tree, Binary Tree |
+| 105 | MEDIUM | [Jump Game Ii](https://leetcode.com/problems/jump-game-ii) | [Solution](../coding/algorithms/greedy/JumpGameII.java) | Array, Dynamic Programming, Greedy |

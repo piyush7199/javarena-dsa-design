@@ -17,3 +17,4 @@
 | 13 | MEDIUM | [Generate Parentheses](https://leetcode.com/problems/generate-parentheses) | [Solution](../coding/algorithms/recursionAndBacktracking/GenerateParentheses.java) | String, Dynamic Programming, Backtracking |
 | 14 | MEDIUM | [Edit Distance](https://leetcode.com/problems/edit-distance) | [Solution](../coding/algorithms/dynamicProgramming/EditDistance.java) | String, Dynamic Programming |
 | 15 | MEDIUM | [Implement Trie Prefix Tree](https://leetcode.com/problems/implement-trie-prefix-tree) | [Solution](../coding/datastructures/trie/Trie.java) | Hash Table, String, Design, Trie |
+| 16 | MEDIUM | [Jump Game Ii](https://leetcode.com/problems/jump-game-ii) | [Solution](../coding/algorithms/greedy/JumpGameII.java) | Array, Dynamic Programming, Greedy |

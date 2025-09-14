@@ -84,3 +84,4 @@
 | 80 | MEDIUM | [Kth Smallest Element In A Bst](https://leetcode.com/problems/kth-smallest-element-in-a-bst) | [Solution](../coding/datastructures/binaryTree/KthSmallest.java) | Tree, Depth-First Search, Binary Search Tree, Binary Tree |
 | 81 | MEDIUM | [Lowest Common Ancestor Of A Binary Search Tree](https://leetcode.com/problems/lowest-common-ancestor-of-a-binary-search-tree) | [Solution](../coding/datastructures/binaryTree/LCA.java) | Tree, Depth-First Search, Binary Search Tree, Binary Tree |
 | 82 | MEDIUM | [Task Scheduler](https://leetcode.com/problems/task-scheduler) | [Solution](../coding/datastructures/stackAndQueue/TaskScheduler.java) | Array, Hash Table, Greedy, Sorting, Heap (Priority Queue), Counting |
+| 83 | MEDIUM | [Jump Game Ii](https://leetcode.com/problems/jump-game-ii) | [Solution](../coding/algorithms/greedy/JumpGameII.java) | Array, Dynamic Programming, Greedy |

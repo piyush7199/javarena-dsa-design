@@ -45,3 +45,4 @@
 | 41 | MEDIUM | [Minimum Number Of Days To Make M Bouquets](https://leetcode.com/problems/minimum-number-of-days-to-make-m-bouquets) | [Solution](../coding/algorithms/binarySearch/MinimumDaysMakeBouquets.java) | Array, Binary Search |
 | 42 | MEDIUM | [Magnetic Force Between Two Balls](https://leetcode.com/problems/magnetic-force-between-two-balls) | [Solution](../coding/algorithms/binarySearch/MagneticForce.java) | Array, Binary Search, Sorting |
 | 43 | MEDIUM | [Decode Ways](https://leetcode.com/problems/decode-ways) | [Solution](../coding/algorithms/dynamicProgramming/DecodeWays.java) | String, Dynamic Programming |
+| 44 | MEDIUM | [Jump Game Ii](https://leetcode.com/problems/jump-game-ii) | [Solution](../coding/algorithms/greedy/JumpGameII.java) | Array, Dynamic Programming, Greedy |

@@ -32,3 +32,4 @@
 | 28 | MEDIUM | [Longest Common Subsequence](https://leetcode.com/problems/longest-common-subsequence) | [Solution](../coding/algorithms/dynamicProgramming/LongestCommonSubsequence.java) | String, Dynamic Programming |
 | 29 | MEDIUM | [Longest Palindromic Subsequence](https://leetcode.com/problems/longest-palindromic-subsequence) | [Solution](../coding/algorithms/dynamicProgramming/LongestPalindromicSubsequence.java) | String, Dynamic Programming |
 | 30 | MEDIUM | [Set Matrix Zeroes](https://leetcode.com/problems/set-matrix-zeroes) | [Solution](../coding/datastructures/arrays/SetMatrixZero.java) | Array, Hash Table, Matrix |
+| 31 | MEDIUM | [Jump Game Ii](https://leetcode.com/problems/jump-game-ii) | [Solution](../coding/algorithms/greedy/JumpGameII.java) | Array, Dynamic Programming, Greedy |

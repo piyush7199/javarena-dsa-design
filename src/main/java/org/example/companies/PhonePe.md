@@ -28,3 +28,4 @@
 | 24 | HARD | [Split Array Largest Sum](https://leetcode.com/problems/split-array-largest-sum) | [Solution](../coding/algorithms/binarySearch/SplitArrayLargestSum.java) | Array, Binary Search, Dynamic Programming, Greedy, Prefix Sum |
 | 25 | MEDIUM | [House Robber Iii](https://leetcode.com/problems/house-robber-iii) | [Solution](../coding/datastructures/binaryTree/HouseRobberIII.java) | Dynamic Programming, Tree, Depth-First Search, Binary Tree |
 | 26 | MEDIUM | [Magnetic Force Between Two Balls](https://leetcode.com/problems/magnetic-force-between-two-balls) | [Solution](../coding/algorithms/binarySearch/MagneticForce.java) | Array, Binary Search, Sorting |
+| 27 | MEDIUM | [Jump Game Ii](https://leetcode.com/problems/jump-game-ii) | [Solution](../coding/algorithms/greedy/JumpGameII.java) | Array, Dynamic Programming, Greedy |
