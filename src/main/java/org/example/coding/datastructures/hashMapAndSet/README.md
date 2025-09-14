@@ -53,3 +53,4 @@ Below is the complexity analysis for key operations in Java’s HashMap and Hash
 | 9  | [Count Number of Pairs With Absolute Difference K](https://leetcode.com/problems/count-number-of-pairs-with-absolute-difference-k/)       | [CountPairsWithAbsDiffK.java](./CountPairsWithAbsDiffK.java)       |
 | 10 | [Maximum Difference Between Even and Odd Frequency I](https://leetcode.com/problems/maximum-difference-between-even-and-odd-frequency-i/) | [MaxDiffBtwOddEvenFreq.java](./MaxDiffBtwOddEvenFreq.java)         |
 | 11 | [Find Most Frequent Vowel and Consonantl̥](https://leetcode.com/problems/find-most-frequent-vowel-and-consonant/)                         | [SumOfMaxCAndMaxV.java](./SumOfMaxCAndMaxV.java)                   |
+| 12 | [Vowel Spellchecker](https://leetcode.com/problems/vowel-spellchecker/)                                                                   | [VowelSpellChecker.java](./VowelSpellChecker.java)                 |
