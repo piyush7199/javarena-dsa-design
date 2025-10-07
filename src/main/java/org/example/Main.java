@@ -4,9 +4,6 @@ import java.util.*;
 
 public class Main {
     public static void main(String[] args) {
-        /**
-         *
-         */
        int[] arr = {1,2,3,4,5,6,7,8,9};
 
        int targetValue = 8;
@@ -19,6 +16,7 @@ public class Main {
             int sum = arr[i]+arr[j];
             if(sum == targetValue) {
                 System.out.println("Pair exists");
+                break;
             } else if(sum > targetValue) {
                 j--;
             } else {

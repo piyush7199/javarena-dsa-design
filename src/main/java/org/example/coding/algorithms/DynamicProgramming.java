@@ -72,7 +72,7 @@ public class DynamicProgramming {
      * <p><b>Time Complexity:</b> O(n * sum)
      * <br><b>Space Complexity:</b> O(n * sum)
      */
-    public Boolean isSubsetSum(int[] arr, int sum) {
+    public boolean isSubsetSum(int[] arr, int sum) {
         int n = arr.length;
         boolean[][] dp = new boolean[n][sum + 1];
         for (int i = 0; i < n; i++) dp[i][0] = true;
