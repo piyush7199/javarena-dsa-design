@@ -1,4 +1,4 @@
-package com.javarena.dsa.algorithms;
+package com.javarena.dsa.algorithms.greedy;
 
 import java.util.*;
 

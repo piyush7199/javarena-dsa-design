@@ -1,0 +1,419 @@
+# Javarena DSA & Design - Cursor Rules
+
+## Project Overview
+This is a comprehensive Java-based repository for Data Structures & Algorithms (DSA) and system design patterns, organized for interview preparation targeting FAANG companies.
+
+---
+
+## Code Style & Conventions
+
+### Java Naming Conventions
+- **Classes**: PascalCase (e.g., `BinarySearch`, `DynamicProgramming`)
+- **Methods**: camelCase (e.g., `findMedian`, `longestSubstring`)
+- **Variables**: camelCase (e.g., `maxLength`, `leftPointer`)
+- **Constants**: UPPER_SNAKE_CASE (e.g., `MAX_SIZE`, `DEFAULT_CAPACITY`)
+- **Packages**: lowercase (e.g., `com.javarena.dsa.algorithms`)
+
+### File Organization
+- One public class per file
+- File name must match the public class name
+- Group related problem solutions in the same package
+- Keep utility/helper classes in separate files if reusable
+
+---
+
+## Documentation Standards
+
+### Class-Level Documentation
+Every class must have JavaDoc with:
+```java
+/**
+ * Brief description of the problem/algorithm.
+ *
+ * <p><b>Problem:</b> Detailed problem statement or link to problem
+ *
+ * <p><b>Intuition:</b>
+ * - Key insight 1
+ * - Key insight 2
+ * - Why this approach works
+ *
+ * <p><b>Time Complexity:</b> O(...)
+ * <br><b>Space Complexity:</b> O(...)
+ *
+ * @see <a href="problem-link">Problem Link</a>
+ */
+```
+
+### Method-Level Documentation
+Each public method should have:
+- Brief description of what it does
+- @param tags for all parameters
+- @return tag for return value
+- Time and space complexity as inline comments
+
+### Inline Comments
+- Explain complex logic or non-obvious optimizations
+- Add comments for algorithm steps
+- Use TODO/FIXME/NOTE where appropriate
+
+---
+
+## Directory Structure
+
+### Algorithms (`src/main/java/com/javarena/dsa/algorithms/`)
+```
+algorithms/
+├── binarySearch/              # Binary search problems
+├── bitManupulation/           # Bit manipulation techniques
+├── dynamicProgramming/        # DP problems and approaches
+├── graph/                     # Graph algorithm documentation
+├── greedy/                    # Greedy algorithm implementations
+├── miscellaneous/             # Other algorithm problems
+├── recursionAndBacktracking/  # Recursion & backtracking
+├── searching/                 # Searching algorithms
+├── sorting/                   # Sorting algorithms
+├── string/                    # String algorithms (KMP, etc.)
+└── twoPointerAndSlidingWindow/ # Two-pointer & sliding window
+```
+
+### Data Structures (`src/main/java/com/javarena/dsa/datastructures/`)
+```
+datastructures/
+├── arrays/                    # Array problems
+├── binaryTree/                # Binary tree implementations
+├── fenwickTree/               # Fenwick tree (BIT)
+├── graph/                     # Graph implementations
+├── hashMapAndSet/             # HashMap & HashSet problems
+├── linkedList/                # Linked list problems
+├── segmentTree/               # Segment tree
+├── stackAndQueue/             # Stack & queue problems
+├── string/                    # String data structure problems
+└── trie/                      # Trie implementations
+```
+
+### Company-Wise Problems (`src/main/java/com/javarena/dsa/companies/`)
+- Each company has a dedicated markdown file
+- Format: `CompanyName.md`
+- Track problems by company for targeted preparation
+
+---
+
+## Adding New Problems
+
+### Step 1: Choose the Right Directory
+- Identify the primary technique/data structure used
+- Place in the most specific applicable directory
+- If multiple techniques apply, choose the primary one
+
+### Step 2: Create the File
+```java
+package com.javarena.dsa.algorithms.category;
+
+/**
+ * Problem Name - Brief Description
+ *
+ * <p><b>Problem:</b> 
+ * [Problem statement or link]
+ *
+ * <p><b>Intuition:</b><br>
+ * - Main insight
+ * - Why this approach works
+ *
+ * <p><b>Time Complexity:</b> O(...)
+ * <br><b>Space Complexity:</b> O(...)
+ */
+public class ProblemName {
+    /**
+     * Main solution method.
+     *
+     * @param param1 description
+     * @return result description
+     */
+    public ReturnType solutionMethod(ParamType param1) {
+        // Implementation
+        return result;
+    }
+}
+```
+
+### Step 3: Update Documentation
+- Add problem to the appropriate README.md
+- Include: problem number, name, link, solution file, difficulty
+- Update company markdown file if applicable
+- Follow the existing table format
+
+### Step 4: Add Tests (Optional but Recommended)
+- Create corresponding test file in `src/test/java/`
+- Include edge cases and common test scenarios
+- Use meaningful test method names
+
+---
+
+## README Guidelines
+
+Each algorithm/data structure directory should have a README.md with:
+
+1. **Introduction**: Brief overview of the technique
+2. **Intuition**: Why and how it works
+3. **Use Cases**: Real-world applications
+4. **Complexity Analysis**: Time and space complexity
+5. **Algorithm Pseudocode**: Step-by-step algorithm
+6. **Problems Table**: Organized list of problems with links
+
+### README Template
+```markdown
+# 📘 [Topic Name]
+
+## Introduction
+Brief description of the technique/data structure
+
+## Intuition
+- Key insight 1
+- Key insight 2
+- Why it works
+
+## Use Cases
+- Real-world application 1
+- Real-world application 2
+
+## Complexity Analysis
+- Time Complexity: O(...)
+- Space Complexity: O(...)
+
+## Algorithm
+\`\`\`
+pseudocode here
+\`\`\`
+
+## 🧪 Problems
+
+| # | Problem | Solution | Difficulty |
+|---|---------|----------|------------|
+| 1 | [Problem Name](link) | [File](./File.java) | Easy |
+```
+
+---
+
+## Git Workflow
+
+### Commit Messages
+Follow conventional commits format:
+```
+type(scope): subject
+
+[optional body]
+[optional footer]
+```
+
+Types:
+- `feat`: New feature/problem solution
+- `fix`: Bug fix
+- `docs`: Documentation updates
+- `refactor`: Code restructuring
+- `test`: Adding tests
+- `chore`: Maintenance tasks
+
+Examples:
+- `feat(dp): add coin change problem solution`
+- `docs(sorting): update README with complexity analysis`
+- `refactor(algorithms): reorganize directory structure`
+
+### Branch Naming
+- `feature/problem-name`
+- `fix/issue-description`
+- `docs/documentation-update`
+- `refactor/restructure-category`
+
+---
+
+## Code Quality
+
+### Best Practices
+- Write clean, readable code
+- Avoid unnecessary complexity
+- Use meaningful variable names
+- Extract complex logic into helper methods
+- Follow DRY (Don't Repeat Yourself)
+- Optimize for readability first, then performance
+
+### Code Review Checklist
+- [ ] Code follows naming conventions
+- [ ] All public methods have JavaDoc
+- [ ] Complex logic has inline comments
+- [ ] Time and space complexity documented
+- [ ] No unused imports or variables
+- [ ] README updated if applicable
+- [ ] Solution is optimal or explanation provided
+- [ ] Edge cases considered
+
+### Performance Guidelines
+- Always mention the time complexity
+- If multiple solutions exist, include both optimal and brute force
+- Explain trade-offs between approaches
+- Consider space-time trade-offs
+
+---
+
+## Testing
+
+### What to Test
+- Edge cases (empty arrays, null inputs, etc.)
+- Boundary conditions (min/max values)
+- Common scenarios
+- Large input sizes (if relevant)
+
+### Test Naming
+```java
+@Test
+public void testMethodName_scenario_expectedBehavior() {
+    // Test implementation
+}
+```
+
+Example:
+```java
+@Test
+public void testBinarySearch_elementExists_returnsCorrectIndex() {
+    // Test
+}
+```
+
+---
+
+## Problem Difficulty Guidelines
+
+### Easy
+- Single technique application
+- Straightforward logic
+- No complex edge cases
+- Time limit: 15-20 minutes
+
+### Medium
+- Multiple technique combinations
+- Requires optimization thinking
+- Some edge cases to handle
+- Time limit: 30-45 minutes
+
+### Hard
+- Advanced techniques required
+- Multiple approaches to consider
+- Complex edge case handling
+- Optimization crucial
+- Time limit: 45-60 minutes
+
+---
+
+## Resources Management
+
+### External Links
+- Always use HTTPS
+- Prefer official problem links (LeetCode, GFG)
+- Include problem number if applicable
+- Verify links are not broken
+
+### Assets
+- Minimize external dependencies
+- Keep images/diagrams in a dedicated assets folder
+- Use relative paths in markdown
+
+---
+
+## Special Considerations
+
+### For Algorithms
+- Multiple approaches when applicable (brute force → optimal)
+- Explain why the optimal solution works
+- Include complexity analysis for each approach
+- Mention when to use each approach
+
+### For Data Structures
+- Include both implementation and usage examples
+- Explain time complexity of operations
+- Compare with similar data structures
+- Real-world use cases
+
+### For Design Patterns
+- Include UML diagrams if applicable
+- Provide concrete examples
+- Explain when to use the pattern
+- Mention trade-offs
+
+---
+
+## Maintenance
+
+### Regular Updates
+- Keep problem links valid
+- Update complexity analysis if improved solutions found
+- Add new problems as they become popular
+- Refactor code for better readability
+- Update documentation to reflect code changes
+
+### Version Control
+- Review changes before committing
+- Write descriptive commit messages
+- Create pull requests for major changes
+- Tag releases for major milestones
+
+---
+
+## Questions & Support
+
+### When Stuck
+1. Review the problem statement carefully
+2. Check existing similar problems in the repo
+3. Refer to the README for technique explanation
+4. Look at the intuition section for insights
+5. Open an issue for clarification
+
+### Contributing
+- Follow all guidelines above
+- Create a branch for your changes
+- Write clear commit messages
+- Update documentation
+- Submit a pull request with description
+
+---
+
+## Additional Notes
+
+- This is a learning repository - prioritize clarity over cleverness
+- Document your thought process in comments
+- If multiple solutions exist, include them with explanations
+- Keep code interview-ready (concise but readable)
+- Update company-wise lists when solving company-specific problems
+- Maintain consistency with existing code style
+
+---
+
+## Tools & IDE Setup
+
+### Recommended IDE
+- IntelliJ IDEA (Community or Ultimate)
+- VSCode with Java Extension Pack
+- Eclipse
+
+### Plugins
+- Checkstyle (for code style)
+- SonarLint (for code quality)
+- GitLens (for Git integration)
+
+### Maven Commands
+```bash
+# Compile the project
+mvn clean compile
+
+# Run tests
+mvn test
+
+# Run a specific class
+mvn exec:java -Dexec.mainClass="com.javarena.dsa.utils.ClassName"
+
+# Generate documentation
+mvn javadoc:javadoc
+```
+
+---
+
+**Remember**: This repository is meant to help you and others prepare for technical interviews. Prioritize understanding over memorization, and always document your learning process!
+

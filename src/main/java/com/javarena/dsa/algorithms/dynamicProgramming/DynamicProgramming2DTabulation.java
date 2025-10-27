@@ -1,4 +1,4 @@
-package com.javarena.dsa.algorithms;
+package com.javarena.dsa.algorithms.dynamicProgramming;
 
 public class DynamicProgramming2DTabulation {
 

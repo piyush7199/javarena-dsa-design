@@ -1,4 +1,4 @@
-package com.javarena.dsa.algorithms;
+package com.javarena.dsa.algorithms.twoPointerAndSlidingWindow;
 
 import java.util.HashMap;
 import java.util.HashSet;
