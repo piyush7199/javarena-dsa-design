@@ -1,51 +1,67 @@
 package com.javarena.dsa.algorithms.binarySearch;
 
+/**
+ * 410. Split Array Largest Sum
+ *
+ * <p><b>Problem Link:</b> 
+ * <a href="https://leetcode.com/problems/split-array-largest-sum/">LeetCode - Split Array Largest Sum</a>
+ *
+ * <p><b>Difficulty:</b> Hard
+ *
+ * <p><b>Topics:</b> Binary Search, Array, Dynamic Programming, Greedy
+ *
+ * ---
+ *
+ * <p><b>Problem Statement:</b><br>
+ * Split array nums into k non-empty contiguous subarrays. Minimize the largest sum among these subarrays.
+ *
+ * <p><b>Example:</b>
+ * <pre>
+ * Input: nums = [7,2,5,10,8], k = 2
+ * Output: 18
+ * Explanation: [7,2,5] and [10,8]. Largest sum = max(14, 18) = 18.
+ *
+ * Input: nums = [1,2,3,4,5], k = 2
+ * Output: 9
+ * Explanation: [1,2,3,4] and [5]. Largest = 9.
+ * </pre>
+ *
+ * ---
+ *
+ * <p><b>Intuition:</b><br>
+ * Binary search on answer (largest subarray sum). For candidate max X, greedily check if can split
+ * into ≤k subarrays with each sum ≤X. Search space: [max(nums), sum(nums)].
+ *
+ * ---
+ *
+ * <p><b>Approach:</b>
+ * <ol>
+ *   <li>Binary search: low=max(nums), high=sum(nums)</li>
+ *   <li>For mid, greedily split: accumulate until adding next element exceeds mid</li>
+ *   <li>If splits ≤k: try smaller max (high=mid-1)</li>
+ *   <li>Else: need larger max (low=mid+1)</li>
+ * </ol>
+ *
+ * ---
+ *
+ * <p><b>Time Complexity:</b> O(n log S)<br>
+ * Where S = sum(nums). Binary search O(log S), each check O(n).
+ *
+ * <p><b>Space Complexity:</b> O(1)<br>
+ *
+ * ---
+ *
+ * <p><b>Edge Cases:</b>
+ * <ul>
+ *   <li>k = 1: Return sum of array</li>
+ *   <li>k = n: Return max element</li>
+ *   <li>All elements equal: Even distribution</li>
+ * </ul>
+ */
 public class SplitArrayLargestSum {
-    /**
-     * Problem: Split Array Largest Sum
-     * <p>
-     * Intuition:
-     * -----------
-     * We want to split the array into 'k' subarrays such that the maximum sum
-     * among these subarrays is minimized.
-     * - If we think about possible answers, the minimum possible largest sum
-     * is the maximum element in the array (since no subarray can have sum less than its largest element).
-     * - The maximum possible largest sum is the sum of the entire array (if we don't split at all).
-     * <p>
-     * So, the problem boils down to searching within this range [maxElement, totalSum]
-     * for the minimum largest sum that allows a valid split into ≤ k subarrays.
-     * <p>
-     * <p>
-     * Approach:
-     * ----------
-     * 1. Binary Search on Answer:
-     * - Let low = max(nums) and high = sum(nums).
-     * - Perform binary search on this range.
-     * <p>
-     * 2. Feasibility Check (isValid):
-     * - For a given mid (candidate largest sum), check if it's possible to split the array
-     * into at most 'k' subarrays such that each subarray's sum ≤ mid.
-     * - If feasible, try smaller values (move left).
-     * - Otherwise, move right (increase the allowed largest sum).
-     * <p>
-     * 3. The binary search converges to the minimum largest sum that satisfies the condition.
-     * <p>
-     * <p>
-     * Time Complexity:
-     * -----------------
-     * - Binary search runs on the range [maxElement, totalSum].
-     * Let `S = sum(nums)`, and `M = max(nums)`.
-     * The search space size is (S - M), so ~ O(log S).
-     * - For each mid, we do a linear scan of nums → O(n).
-     * - Total = O(n * log S)
-     * <p>
-     * Space Complexity:
-     * ------------------
-     * - O(1) (only a few variables, no extra data structures).
-     */
+    
     public int splitArray(int[] nums, int k) {
-        int low = nums[0];
-        int high = 0;
+        int low = nums[0], high = 0;
         for (int ele : nums) {
             low = Math.max(low, ele);
             high += ele;
@@ -62,13 +78,8 @@ public class SplitArrayLargestSum {
         return low;
     }
 
-    /**
-     * Helper function to check if it's possible to split the array into
-     * at most 'k' subarrays where each subarray has sum ≤ mid.
-     */
     private boolean isValid(int[] nums, int k, int mid) {
-        int cnt = 1;
-        int sm = 0;
+        int cnt = 1, sm = 0;
         for (int i = 0; i < nums.length; i++) {
             if (sm + nums[i] <= mid) {
                 sm += nums[i];

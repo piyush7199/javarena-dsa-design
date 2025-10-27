@@ -1,93 +1,102 @@
 package com.javarena.dsa.algorithms.binarySearch;
 
+/**
+ * 1482. Minimum Number of Days to Make m Bouquets
+ *
+ * <p><b>Problem Link:</b> 
+ * <a href="https://leetcode.com/problems/minimum-number-of-days-to-make-m-bouquets/">LeetCode - Minimum Days Bouquets</a>
+ *
+ * <p><b>Difficulty:</b> Medium
+ *
+ * <p><b>Topics:</b> Binary Search, Array
+ *
+ * ---
+ *
+ * <p><b>Problem Statement:</b><br>
+ * Given array bloom Day where bloomDay[i] is the day the ith flower blooms, integers m and k,
+ * find the minimum days to wait to make m bouquets where each bouquet needs k adjacent flowers.
+ * Return -1 if impossible.
+ *
+ * <p><b>Example:</b>
+ * <pre>
+ * Input: bloomDay = [1,10,3,10,2], m = 3, k = 1
+ * Output: 3
+ * Explanation: Day 3: flowers at [1,3,2] bloom. Can make 3 bouquets.
+ *
+ * Input: bloomDay = [1,10,3,10,2], m = 3, k = 2
+ * Output: -1
+ * Explanation: Need 6 adjacent flowers, only have 5.
+ * </pre>
+ *
+ * ---
+ *
+ * <p><b>Intuition:</b><br>
+ * Binary search on days. For each day, count consecutive bloomed flowers to form bouquets.
+ * Search space: [min(bloomDay), max(bloomDay)]. If can make m bouquets by day X, try earlier days.
+ *
+ * ---
+ *
+ * <p><b>Approach:</b>
+ * <ol>
+ *   <li>Check if total flowers < m×k (impossible)</li>
+ *   <li>Binary search on days: low=min(bloomDay), high=max(bloomDay)</li>
+ *   <li>For mid day, count bouquets: scan array, count consecutive bloomed (≤mid)</li>
+ *   <li>Every k consecutive forms one bouquet</li>
+ *   <li>If ≥m bouquets: try earlier day (high=mid-1)</li>
+ *   <li>Else: need more days (low=mid+1)</li>
+ * </ol>
+ *
+ * ---
+ *
+ * <p><b>Time Complexity:</b> O(n log D)<br>
+ * <p><b>Space Complexity:</b> O(1)<br>
+ *
+ * ---
+ *
+ * <p><b>Edge Cases:</b>
+ * <ul>
+ *   <li>n < m×k: Impossible, return -1</li>
+ *   <li>k = 1: Each flower is a bouquet</li>
+ *   <li>All flowers bloom same day: That day is answer</li>
+ * </ul>
+ */
 public class MinimumDaysMakeBouquets {
-    /*
-     * Problem: Minimum Number of Days to Make m Bouquets (LeetCode 1482)
-     *
-     * Intuition:
-     * -----------
-     * - We need to find the earliest day when it's possible to make `m` bouquets,
-     *   each requiring `k` consecutive flowers.
-     * - If we imagine a "day X", we can check if enough flowers have bloomed by then
-     *   to make `m` bouquets.
-     * - This naturally suggests a **binary search on the minimum day**:
-     *   - Lower bound = earliest bloom day (min value in bloomDay).
-     *   - Upper bound = latest bloom day (max value in bloomDay).
-     * - For each mid-day, check feasibility using a helper function.
-     *
-     * Approach:
-     * -----------
-     * 1. Edge case: If total flowers < m*k, it's impossible → return -1.
-     * 2. Find the min (low) and max (high) bloom days.
-     * 3. Apply binary search:
-     *      - mid = candidate minimum day.
-     *      - If it's possible to make m bouquets by `mid`, try smaller days.
-     *      - Otherwise, try larger days.
-     * 4. Return the smallest feasible day (stored in low).
-     *
-     * Time Complexity:
-     *  - O(n log(maxBloom))
-     *    where n = length of bloomDay, maxBloom = max(bloomDay).
-     *    Because for each binary search step (log(maxBloom)), we scan the array (O(n)).
-     *
-     * Space Complexity:
-     *  - O(1) extra space (in-place computation).
-     */
-
+    
     public int minDays(int[] bloomDay, int m, int k) {
         int n = bloomDay.length;
-
-        // If total flowers < required flowers for m bouquets → impossible
         if (n / k < m) return -1;
 
-        // Find min and max bloom days
-        int low = bloomDay[0];
-        int high = bloomDay[0];
+        int low = bloomDay[0], high = bloomDay[0];
         for (int ele : bloomDay) {
             low = Math.min(low, ele);
             high = Math.max(high, ele);
         }
 
-        // Binary search on the number of days
         while (low <= high) {
-            int mid = low + (high - low) / 2; // candidate day (avoid overflow)
+            int mid = low + (high - low) / 2;
             if (helper(bloomDay, mid, m, k)) {
-                // If possible by mid, try earlier
                 high = mid - 1;
             } else {
-                // Otherwise, need more days
                 low = mid + 1;
             }
         }
-        return low; // Smallest feasible day
+        return low;
     }
 
-    /*
-     * Helper function:
-     * - Given a day `mid`, check if we can make at least `m` bouquets.
-     */
     private boolean helper(int[] bloomDay, int mid, int m, int k) {
-        int bouq = 0; // number of bouquets formed
-        int adj = 0;  // count of consecutive bloomed flowers
-
+        int bouq = 0, adj = 0;
         for (int ele : bloomDay) {
             if (ele <= mid) {
-                adj++; // flower bloomed, extend streak
+                adj++;
             } else {
-                adj = 0; // streak breaks
+                adj = 0;
             }
-
-            // Once we collect k consecutive flowers → form a bouquet
             if (adj == k) {
                 bouq++;
-                adj = 0; // reset for next bouquet
+                adj = 0;
             }
-
-            // Early exit if we already have enough bouquets
             if (bouq >= m) return true;
         }
-
         return false;
     }
-
 }

@@ -1,57 +1,110 @@
 package com.javarena.dsa.algorithms.bitManupulation;
 
+/**
+ * Set the Rightmost Unset Bit
+ *
+ * <p><b>Problem Link:</b> 
+ * <a href="https://www.geeksforgeeks.org/problems/set-the-rightmost-unset-bit/1">GFG - Set Rightmost Unset Bit</a>
+ *
+ * <p><b>Difficulty:</b> Easy
+ *
+ * <p><b>Topics:</b> Bit Manipulation, Math
+ *
+ * ---
+ *
+ * <p><b>Problem Statement:</b><br>
+ * Given a non-negative number n, the task is to set the rightmost unset bit in the binary 
+ * representation of n. If there are no unset bits, then just leave the number as it is.
+ *
+ * <p><b>Example:</b>
+ * <pre>
+ * Input: n = 6
+ * Output: 7
+ * Explanation: Binary of 6 is 110. After setting rightmost unset bit it becomes 111 = 7.
+ *
+ * Input: n = 15
+ * Output: 15
+ * Explanation: Binary of 15 is 1111. There is no unset bit, so output is 15.
+ *
+ * Input: n = 10
+ * Output: 11
+ * Explanation: Binary of 10 is 1010. After setting rightmost unset bit it becomes 1011 = 11.
+ * </pre>
+ *
+ * ---
+ *
+ * <p><b>Intuition:</b><br>
+ * Two approaches to set the rightmost unset bit:
+ * - **Loop Method:** Scan from LSB until finding the first 0 bit, then set it
+ * - **Bitwise Trick:** Use n | (n + 1) to set the rightmost unset bit in O(1)
+ * - When you add 1 to n, it flips the rightmost sequence of 1s to 0s and first 0 to 1
+ * - OR operation (n | (n+1)) preserves all original set bits while setting the first unset bit
+ *
+ * ---
+ *
+ * <p><b>Approach:</b>
+ * <ol>
+ *   <li><b>Optimal Method:</b> Simply compute n | (n + 1)</li>
+ *   <li>This works because n+1 flips bits up to first 0 in n</li>
+ *   <li>OR operation combines both, setting the target bit</li>
+ *   <li><b>Loop Method:</b> Count positions while LSB is 1</li>
+ *   <li>Once found first 0 bit, OR with (1 << position) to set it</li>
+ * </ol>
+ *
+ * ---
+ *
+ * <p><b>Time Complexity:</b> O(1) for optimal, O(log n) for loop method<br>
+ * Optimal method uses only constant-time operations.
+ * Loop method may iterate through all bit positions in worst case.
+ *
+ * <p><b>Space Complexity:</b> O(1)<br>
+ * Only uses a constant number of variables for computation.
+ *
+ * ---
+ *
+ * <p><b>Edge Cases:</b>
+ * <ul>
+ *   <li>n = 0: First bit (LSB) is unset, result is 1</li>
+ *   <li>All bits set (e.g., 2^k - 1): No unset bit, returns same number</li>
+ *   <li>Single unset bit: That bit gets set</li>
+ *   <li>Multiple unset bits: Only rightmost one is set</li>
+ * </ul>
+ *
+ * @see <a href="https://www.geeksforgeeks.org/problems/set-kth-bit/1">Set Kth Bit</a>
+ */
 public class SetTheRightMostBit {
+    
     /**
-     * Sets the rightmost unset (0) bit of the given integer `n`.
+     * Sets the rightmost unset bit using optimal O(1) approach.
      *
-     * <p><b>Intuition:</b>
-     * - To set the rightmost 0 bit, we need to scan from the least significant bit (LSB)
-     * until we find the first unset (0) bit.
-     * - Once found, we set that bit to 1 by using bitwise OR with (1 << position).
+     * @param n the number whose rightmost unset bit should be set
+     * @return number with rightmost unset bit set to 1
+     */
+    static int setBitOptimal(int n) {
+        // Step 1: Use the property n | (n + 1)
+        // When we add 1, it flips rightmost 1s to 0s and first 0 to 1
+        // OR operation preserves original bits and sets the target bit
+        return n | (n + 1);
+    }
+    
+    /**
+     * Sets the rightmost unset bit using loop method - for comparison.
      *
-     * <p><b>Approach:</b>
-     * 1. Start with a copy of n.
-     * 2. Right-shift until the least significant bit is 0.
-     * 3. Count how many shifts we did → that’s the position of the first 0 bit.
-     * 4. Set that bit in the original number using bitwise OR.
-     *
-     * <p><b>Time Complexity:</b>
-     * O(log n) in the worst case, since we may need to shift through all bits.
-     *
-     * <p><b>Space Complexity:</b>
-     * O(1), as we only use a constant amount of extra variables.
+     * @param n the number whose rightmost unset bit should be set
+     * @return number with rightmost unset bit set to 1
      */
     static int setBit(int n) {
+        // Step 1: Find position of first unset bit
         int unsetBit = 0;
         int m = n;
+        
+        // Step 2: Count how many positions until we find a 0 bit
         while ((m & 1) != 0) {
             unsetBit++;
             m = m >> 1;
         }
+        
+        // Step 3: Set that bit using OR with (1 << position)
         return n | (1 << unsetBit);
     }
-
-
-    /**
-     * Sets the rightmost unset (0) bit of the given integer `n` without using a loop.
-     *
-     * <p><b>Intuition:</b>
-     * - Adding 1 to a number flips the rightmost sequence of 1’s to 0’s, and the first 0 to 1.
-     * - Therefore, `n + 1` has the rightmost unset bit of `n` set to 1, with lower bits reset.
-     * - Performing OR (`n | (n + 1)`) ensures that bit is set in `n`, without affecting other bits.
-     *
-     * <p><b>Approach:</b>
-     * 1. Simply compute `n | (n + 1)`.
-     * 2. This ensures the first unset bit in `n` is set to 1.
-     *
-     * <p><b>Time Complexity:</b>
-     * O(1), since it uses only one addition and one OR operation.
-     *
-     * <p><b>Space Complexity:</b>
-     * O(1), as no extra space is used.
-     */
-    static int setBitWithoutLoop(int n) {
-        return n | (n + 1);
-    }
-
 }

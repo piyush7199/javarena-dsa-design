@@ -1,79 +1,89 @@
 package com.javarena.dsa.algorithms.binarySearch;
 
+/**
+ * 1283. Find the Smallest Divisor Given a Threshold
+ *
+ * <p><b>Problem Link:</b> 
+ * <a href="https://leetcode.com/problems/find-the-smallest-divisor-given-a-threshold/">LeetCode - Smallest Divisor</a>
+ *
+ * <p><b>Difficulty:</b> Medium
+ *
+ * <p><b>Topics:</b> Binary Search, Array
+ *
+ * ---
+ *
+ * <p><b>Problem Statement:</b><br>
+ * Given array nums and integer threshold, find the smallest divisor such that the result of
+ * dividing all elements by it (rounded up) and summing them is ≤ threshold.
+ *
+ * <p><b>Example:</b>
+ * <pre>
+ * Input: nums = [1,2,5,9], threshold = 6
+ * Output: 5
+ * Explanation: Divisor 5: ceil(1/5)+ceil(2/5)+ceil(5/5)+ceil(9/5) = 1+1+1+2 = 5 ≤ 6
+ *
+ * Input: nums = [44,22,33,11,1], threshold = 5
+ * Output: 44
+ * </pre>
+ *
+ * ---
+ *
+ * <p><b>Intuition:</b><br>
+ * Binary search on divisor value. Smaller divisor → larger sum, larger divisor → smaller sum.
+ * Monotonic property allows binary search. Search space: [1, max(nums)].
+ *
+ * ---
+ *
+ * <p><b>Approach:</b>
+ * <ol>
+ *   <li>Binary search: low=1, high=max(nums)</li>
+ *   <li>For mid divisor, calculate sum of ceil(nums[i]/mid)</li>
+ *   <li>Use trick: ceil(a/b) = (a+b-1)/b</li>
+ *   <li>If sum ≤ threshold: try smaller divisor (high=mid-1)</li>
+ *   <li>Else: need larger divisor (low=mid+1)</li>
+ * </ol>
+ *
+ * ---
+ *
+ * <p><b>Time Complexity:</b> O(n log M)<br>
+ * Where M = max(nums). Binary search O(log M), each check O(n).
+ *
+ * <p><b>Space Complexity:</b> O(1)<br>
+ *
+ * ---
+ *
+ * <p><b>Edge Cases:</b>
+ * <ul>
+ *   <li>threshold = n: Divisor must be at least max(nums)</li>
+ *   <li>All elements same: Simple calculation</li>
+ *   <li>Large values: Use ceil trick to avoid overflow</li>
+ * </ul>
+ */
 public class SmallestDivisorGivenAThreshold {
-    /**
-     * Problem: LeetCode 1283 – Find the Smallest Divisor Given a Threshold
-     * <p>
-     * We need the smallest integer divisor such that:
-     * sum( ceil(nums[i] / divisor) ) <= threshold
-     * <p>
-     * Intuition:
-     * - The divisor affects the sum:
-     * - Smaller divisor → larger quotients → larger sum.
-     * - Larger divisor → smaller quotients → smaller sum.
-     * - This property is monotonic → we can apply Binary Search.
-     * <p>
-     * Approach:
-     * 1. Search range:
-     * - Low = 1 (smallest possible divisor).
-     * - High = max(nums) (largest divisor needed, since dividing by max(nums) yields at most 1).
-     * 2. Binary Search:
-     * - Mid = (low + high) / 2 → test this divisor.
-     * - Compute sum = Σ ceil(nums[i] / mid).
-     * - If sum <= threshold → mid might be valid, but try smaller divisor (move left).
-     * - Else → mid is too small, increase divisor (move right).
-     * 3. Return low (first valid divisor found).
-     * <p>
-     * Helper function:
-     * - `helper(nums, mid, threshold)` checks if divisor = mid keeps sum ≤ threshold.
-     * - Uses integer trick: ceil(a / b) = (a + b - 1) / b.
-     * <p>
-     * Time Complexity: O(n log(max(nums)))
-     * - Binary search range = [1, max(nums)] → log(max(nums)) steps.
-     * - Each step computes sum in O(n).
-     * <p>
-     * Space Complexity: O(1)
-     * - Uses constant extra space.
-     */
+    
     public int smallestDivisor(int[] nums, int threshold) {
-        int n = nums.length;
-
-        // Search space: [1, max(nums)]
-        int low = 1;
-        int high = 0;
+        int low = 1, high = 0;
         for (int ele : nums) {
             high = Math.max(high, ele);
         }
 
-        // Binary Search
         while (low <= high) {
             int mid = (low + high) / 2;
-
-            // If mid is valid, try smaller divisor
             if (helper(nums, mid, threshold)) {
                 high = mid - 1;
-            } else { // Otherwise, need larger divisor
+            } else {
                 low = mid + 1;
             }
         }
-
         return low;
     }
 
-    /**
-     * Helper function to check if divisor = mid satisfies threshold.
-     * Returns true if sum of ceil(nums[i] / mid) <= threshold.
-     */
     private boolean helper(int[] nums, int mid, int threshold) {
         int sum = 0;
         for (int ele : nums) {
-            // ceil division: (a + b - 1) / b
-            sum += (ele + mid - 1) / mid;
-
-            // Early exit if threshold exceeded
+            sum += (ele + mid - 1) / mid;  // ceil(ele/mid)
             if (sum > threshold) return false;
         }
         return sum <= threshold;
     }
-
 }

@@ -415,5 +415,544 @@ mvn javadoc:javadoc
 
 ---
 
+## 📐 Standard Code Format
+
+### Problem Solution Template
+
+Every problem solution file MUST follow this exact structure:
+
+#### Class-Level Documentation (Mandatory)
+
+```java
+/**
+ * [Problem Number]. [Problem Name]
+ *
+ * <p><b>Problem Link:</b> 
+ * <a href="[URL]">[Platform] - [Problem Name]</a>
+ *
+ * <p><b>Difficulty:</b> [Easy | Medium | Hard]
+ *
+ * <p><b>Topics:</b> [Topic1], [Topic2], [Topic3]
+ *
+ * ---
+ *
+ * <p><b>Problem Statement:</b><br>
+ * [Concise problem description]
+ *
+ * <p><b>Example:</b>
+ * <pre>
+ * Input: [sample input]
+ * Output: [sample output]
+ * Explanation: [brief explanation]
+ * </pre>
+ *
+ * ---
+ *
+ * <p><b>Intuition:</b><br>
+ * [Core insight - the "aha!" moment]
+ * - Why this approach works
+ * - Key observation
+ *
+ * ---
+ *
+ * <p><b>Approach:</b>
+ * <ol>
+ *   <li>Step 1: [Clear action]</li>
+ *   <li>Step 2: [Clear action]</li>
+ *   <li>Step 3: [Clear action]</li>
+ * </ol>
+ *
+ * ---
+ *
+ * <p><b>Time Complexity:</b> O(...)<br>
+ * [Explanation of why]
+ *
+ * <p><b>Space Complexity:</b> O(...)<br>
+ * [Explanation of space usage]
+ *
+ * ---
+ *
+ * <p><b>Edge Cases:</b>
+ * <ul>
+ *   <li>Empty input: [how handled]</li>
+ *   <li>Single element: [how handled]</li>
+ *   <li>Maximum constraints: [how handled]</li>
+ * </ul>
+ *
+ * @see <a href="[related link]">Related Problem</a>
+ */
+```
+
+#### Method Documentation (Mandatory)
+
+```java
+/**
+ * [One-line description of what method does]
+ *
+ * @param param1 [parameter description]
+ * @param param2 [parameter description]
+ * @return [return value description]
+ */
+public ReturnType methodName(ParamType param1, ParamType param2) {
+    // Step 1: [Comment explaining this section]
+    
+    // Step 2: [Comment explaining next section]
+    
+    return result;
+}
+```
+
+#### Helper Methods (Mandatory Documentation)
+
+```java
+/**
+ * Helper method - [description of what it does]
+ *
+ * @param param [parameter description]
+ * @return [return value description]
+ */
+private ReturnType helperMethod(ParamType param) {
+    // Implementation
+}
+```
+
+---
+
+### README Standard Format
+
+Each algorithm directory MUST have a README.md with these sections:
+
+1. **Introduction** - 2-3 sentence overview
+2. **Intuition** - Why the technique works, when to use
+3. **Common Patterns** - Recognizable problem patterns
+4. **Complexity Analysis** - Table format
+5. **Algorithm Template** - Pseudocode
+6. **Practice Problems** - Categorized by difficulty (Easy/Medium/Hard)
+7. **Real-World Applications** - Practical use cases
+8. **Comparison with Similar Techniques** - When to choose what
+9. **Learning Path** - Prerequisites and recommended sequence
+10. **Additional Resources** - Videos, articles, related topics
+11. **Checklist for Mastery** - Self-assessment items
+
+#### Problems Table Format
+
+```markdown
+| # | Problem | Solution | Difficulty | Topics | Companies |
+|---|---------|----------|------------|--------|-----------|
+| 1 | [Name](link) | [File.java](./File.java) | Easy | Tag1, Tag2 | Company1 |
+```
+
+---
+
+### Mandatory Requirements for All Code
+
+✅ **Every file MUST have:**
+
+1. **Complete class-level JavaDoc** with ALL sections:
+   - Problem link
+   - Difficulty level
+   - Topics/tags (minimum 2)
+   - Problem statement
+   - Example with input/output
+   - Intuition (minimum 3 points)
+   - Approach (minimum 4 steps)
+   - Time complexity with explanation
+   - Space complexity with explanation
+   - Edge cases (minimum 3)
+
+2. **Method documentation** for ALL public methods:
+   - One-line description
+   - @param for each parameter
+   - @return for return value
+   - Additional notes if method is complex
+
+3. **Inline comments**:
+   - One comment per logical block/step
+   - Explain WHY, not just WHAT
+   - No obvious comments (e.g., "increment i")
+
+4. **Helper methods**:
+   - Always documented with JavaDoc
+   - Purpose clearly stated
+   - Complexity mentioned if different from main method
+
+5. **Alternative approaches**:
+   - If a significantly different approach exists, include it
+   - Document trade-offs
+   - Mention when to use each approach
+
+---
+
+### Forbidden in Code
+
+❌ **NEVER commit code with:**
+
+1. Missing or incomplete class-level JavaDoc
+2. Undocumented public methods
+3. No problem link
+4. No difficulty level
+5. Missing complexity analysis
+6. No intuition section
+7. Magic numbers without explanation
+8. Unused imports or variables
+9. main() method (unless utility class)
+10. TODO/FIXME comments
+11. System.out.println for debugging
+12. Commented-out code blocks
+13. IDE warnings
+
+---
+
+### File Naming Convention
+
+- **Class Name:** PascalCase describing the problem
+  - Good: `TwoSum.java`, `BinarySearchRotatedArray.java`
+  - Bad: `Problem1.java`, `solution.java`, `test.java`
+
+- **File Name:** Must match class name exactly
+  - Class: `MaxSubarray` → File: `MaxSubarray.java`
+
+---
+
+### Code Organization
+
+```java
+package com.javarena.dsa.category.subcategory;
+
+// Imports (only what's needed, organized)
+import java.util.*;
+
+/**
+ * Complete class-level JavaDoc here
+ */
+public class ProblemName {
+    
+    // Constants (if any)
+    private static final int MAX_VALUE = 1000;
+    
+    // Main solution method
+    public ReturnType mainMethod() {
+        // Implementation
+    }
+    
+    // Helper methods
+    private ReturnType helper1() {
+        // Implementation
+    }
+    
+    private ReturnType helper2() {
+        // Implementation
+    }
+    
+    // Alternative approaches (if any)
+    /**
+     * Alternative approach: [Name]
+     * [Brief description and trade-offs]
+     */
+    public ReturnType alternativeMethod() {
+        // Implementation
+    }
+}
+```
+
+---
+
+### Quality Metrics
+
+#### Minimum Documentation Requirements
+
+| Element | Minimum Requirement |
+|---------|-------------------|
+| Class JavaDoc | 20 lines minimum |
+| Intuition Points | 3 minimum |
+| Approach Steps | 4 minimum |
+| Edge Cases | 3 minimum |
+| Example Test Cases | 1 minimum |
+| Method JavaDoc | All public methods |
+| Inline Comments | One per logical block |
+| Helper Method Docs | All private methods |
+
+---
+
+### Pre-Commit Checklist
+
+Before committing any solution, verify ALL of these:
+
+- [ ] Class JavaDoc complete (all sections present)
+- [ ] Problem link is valid and accessible
+- [ ] Difficulty level matches source
+- [ ] Minimum 2 topic tags included
+- [ ] Company tags added if applicable
+- [ ] Problem statement is clear
+- [ ] Example with input/output provided
+- [ ] Intuition has minimum 3 bullet points
+- [ ] Approach has minimum 4 clear steps
+- [ ] Time complexity documented with explanation
+- [ ] Space complexity documented with explanation
+- [ ] Minimum 3 edge cases documented
+- [ ] All public methods have JavaDoc
+- [ ] All helper methods documented
+- [ ] @param tags for all parameters
+- [ ] @return tags for return values
+- [ ] Inline comments for complex logic
+- [ ] Code follows naming conventions
+- [ ] No unused imports
+- [ ] No unused variables
+- [ ] No magic numbers (or explained)
+- [ ] No System.out.println debugging
+- [ ] No commented-out code
+- [ ] No TODO/FIXME comments
+- [ ] Package declaration matches structure
+- [ ] README updated with problem entry
+- [ ] File compiles without errors
+- [ ] No IDE warnings
+- [ ] Alternative approaches included (if applicable)
+- [ ] Trade-offs explained (if multiple approaches)
+
+---
+
+### Common Patterns to Follow
+
+#### Pattern 1: Problem with Multiple Approaches
+
+```java
+/**
+ * [Problem documentation with ALL sections]
+ */
+public class Problem {
+    
+    /**
+     * Optimal approach using [technique]
+     * @return result
+     */
+    public int optimal(int[] arr) {
+        // Optimal implementation
+    }
+    
+    /**
+     * Brute force approach for comparison
+     * 
+     * <p><b>Time:</b> O(n²) vs O(n) in optimal
+     * <br><b>Space:</b> O(1)
+     * <br><b>Trade-off:</b> Easier to understand but slower
+     * 
+     * @return result
+     */
+    public int bruteForce(int[] arr) {
+        // Brute force implementation
+    }
+}
+```
+
+#### Pattern 2: Problem with Helper Class/Structure
+
+```java
+/**
+ * [Main problem documentation]
+ */
+public class Problem {
+    
+    /**
+     * Helper class to store [purpose]
+     */
+    private static class Helper {
+        int field1;
+        int field2;
+        
+        Helper(int f1, int f2) {
+            this.field1 = f1;
+            this.field2 = f2;
+        }
+    }
+    
+    // Main implementation using Helper
+}
+```
+
+---
+
+### README Quality Standards
+
+Every algorithm directory README must score 100% on this checklist:
+
+- [ ] Has clear introduction (2-3 sentences)
+- [ ] Explains intuition (why it works)
+- [ ] Lists when to use vs when not to use
+- [ ] Contains common patterns section
+- [ ] Has complexity analysis table
+- [ ] Includes algorithm pseudocode
+- [ ] Problems categorized by difficulty
+- [ ] All problems have: link, solution, difficulty, topics, companies
+- [ ] Real-world applications mentioned (minimum 2)
+- [ ] Comparison table with alternatives
+- [ ] Learning path with prerequisites
+- [ ] Additional resources (videos, articles)
+- [ ] Mastery checklist provided
+- [ ] Last updated date included
+- [ ] Total problem count displayed
+
+---
+
+### Examples of Good vs Bad
+
+#### ❌ Bad - Insufficient Documentation
+
+```java
+public class TwoSum {
+    // Find two numbers that add up to target
+    public int[] twoSum(int[] nums, int target) {
+        Map<Integer, Integer> map = new HashMap<>();
+        for (int i = 0; i < nums.length; i++) {
+            int complement = target - nums[i];
+            if (map.containsKey(complement)) {
+                return new int[]{map.get(complement), i};
+            }
+            map.put(nums[i], i);
+        }
+        return new int[]{};
+    }
+}
+```
+
+#### ✅ Good - Complete Documentation
+
+```java
+package com.javarena.dsa.datastructures.arrays;
+
+import java.util.HashMap;
+import java.util.Map;
+
+/**
+ * 1. Two Sum
+ *
+ * <p><b>Problem Link:</b> 
+ * <a href="https://leetcode.com/problems/two-sum/">LeetCode - Two Sum</a>
+ *
+ * <p><b>Difficulty:</b> Easy
+ *
+ * <p><b>Topics:</b> Array, Hash Table
+ *
+ * <p><b>Companies:</b> Amazon, Google, Facebook, Microsoft
+ *
+ * ---
+ *
+ * <p><b>Problem Statement:</b><br>
+ * Given an array of integers nums and an integer target, return indices of the two numbers 
+ * such that they add up to target. You may assume that each input would have exactly one 
+ * solution, and you may not use the same element twice.
+ *
+ * <p><b>Example:</b>
+ * <pre>
+ * Input: nums = [2,7,11,15], target = 9
+ * Output: [0,1]
+ * Explanation: Because nums[0] + nums[1] == 9, we return [0, 1]
+ * </pre>
+ *
+ * ---
+ *
+ * <p><b>Intuition:</b><br>
+ * The key insight is to use a hash map to store numbers we've seen along with their indices.
+ * - For each number, we calculate its complement (target - current number)
+ * - If the complement exists in our hash map, we've found our pair
+ * - This allows us to solve in a single pass instead of nested loops
+ *
+ * ---
+ *
+ * <p><b>Approach:</b>
+ * <ol>
+ *   <li>Create a hash map to store number → index mapping</li>
+ *   <li>Iterate through the array once</li>
+ *   <li>For each number, calculate complement = target - current</li>
+ *   <li>Check if complement exists in hash map; if yes, return indices</li>
+ *   <li>Otherwise, add current number and index to hash map</li>
+ * </ol>
+ *
+ * ---
+ *
+ * <p><b>Time Complexity:</b> O(n)<br>
+ * We traverse the list once, and hash map operations (get/put) are O(1) average case.
+ *
+ * <p><b>Space Complexity:</b> O(n)<br>
+ * In the worst case, we store all n elements in the hash map.
+ *
+ * ---
+ *
+ * <p><b>Edge Cases:</b>
+ * <ul>
+ *   <li>Array with exactly 2 elements: Directly check if they sum to target</li>
+ *   <li>Negative numbers: Algorithm works the same way</li>
+ *   <li>Zero in array: Handled correctly by complement calculation</li>
+ * </ul>
+ *
+ * @see <a href="https://leetcode.com/problems/two-sum-ii-input-array-is-sorted/">Two Sum II</a>
+ */
+public class TwoSum {
+    
+    /**
+     * Finds two indices of numbers that add up to the target using hash map.
+     *
+     * @param nums array of integers to search
+     * @param target the target sum to find
+     * @return array containing two indices [i, j] where nums[i] + nums[j] == target
+     */
+    public int[] twoSum(int[] nums, int target) {
+        // Step 1: Create hash map to store number → index
+        Map<Integer, Integer> numToIndex = new HashMap<>();
+        
+        // Step 2: Iterate through array
+        for (int i = 0; i < nums.length; i++) {
+            // Step 3: Calculate complement
+            int complement = target - nums[i];
+            
+            // Step 4: Check if complement exists in our map
+            if (numToIndex.containsKey(complement)) {
+                return new int[]{numToIndex.get(complement), i};
+            }
+            
+            // Step 5: Add current number to map
+            numToIndex.put(nums[i], i);
+        }
+        
+        // Problem guarantees solution exists, but return empty array as fallback
+        return new int[]{};
+    }
+    
+    /**
+     * Brute force approach - for comparison and learning purposes.
+     * 
+     * <p><b>Time:</b> O(n²) - nested loops
+     * <br><b>Space:</b> O(1) - no extra space needed
+     * <br><b>Trade-off:</b> Simple to understand but too slow for large inputs
+     *
+     * @param nums array of integers
+     * @param target target sum
+     * @return indices of two numbers that sum to target
+     */
+    public int[] twoSumBruteForce(int[] nums, int target) {
+        // Try all pairs
+        for (int i = 0; i < nums.length; i++) {
+            for (int j = i + 1; j < nums.length; j++) {
+                if (nums[i] + nums[j] == target) {
+                    return new int[]{i, j};
+                }
+            }
+        }
+        return new int[]{};
+    }
+}
+```
+
+---
+
+## 📝 Documentation Examples
+
+See `STANDARD_TEMPLATE.md` for complete examples of:
+- Full class template
+- README template
+- All documentation sections
+- Multiple approaches example
+
+---
+
 **Remember**: This repository is meant to help you and others prepare for technical interviews. Prioritize understanding over memorization, and always document your learning process!
 
