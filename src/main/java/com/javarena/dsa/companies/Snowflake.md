@@ -1,0 +1,35 @@
+# Snowflake
+
+| # | Difficulty | Problem | Solution | Topic |
+|---|------------|---------|----------|--------|
+| 1 | EASY | [Merge Two Sorted Lists](https://leetcode.com/problems/merge-two-sorted-lists) | [Solution](../datastructures/linkedList/LinkedList.java) | Linked List, Recursion |
+| 2 | MEDIUM | [Lru Cache](https://leetcode.com/problems/lru-cache) | [Solution](../datastructures/linkedList/LRUCache.java) | Hash Table, Linked List, Design, Doubly-Linked List |
+| 3 | MEDIUM | [Merge Intervals](https://leetcode.com/problems/merge-intervals) | [Solution](../datastructures/arrays/SubArrays.java) | Array, Sorting |
+| 4 | MEDIUM | [Top K Frequent Elements](https://leetcode.com/problems/top-k-frequent-elements) | [Solution](../datastructures/hashMapAndSet/Solutions.java) | Array, Hash Table, Divide and Conquer, Sorting, Heap (Priority Queue), Bucket Sort, Counting, Quickselect |
+| 5 | EASY | [Two Sum](https://leetcode.com/problems/two-sum) | [Solution](../datastructures/hashMapAndSet/Solutions.java) | Array, Hash Table |
+| 6 | MEDIUM | [Longest Substring Without Repeating Characters](https://leetcode.com/problems/longest-substring-without-repeating-characters) | [Solution](../algorithms/SlidingWindow.java) | Hash Table, String, Sliding Window |
+| 7 | MEDIUM | [Min Stack](https://leetcode.com/problems/min-stack) | [Solution](../datastructures/stackAndQueue/MinStack.java) | Stack, Design |
+| 8 | HARD | [Trapping Rain Water](https://leetcode.com/problems/trapping-rain-water) | [Solution](../datastructures/stackAndQueue/MinStack.java) | Array, Two Pointers, Dynamic Programming, Stack, Monotonic Stack |
+| 9 | MEDIUM | [Remove K Digits](https://leetcode.com/problems/remove-k-digits) | [Solution](../datastructures/stackAndQueue/MinStack.java) | String, Stack, Greedy, Monotonic Stack |
+| 10 | MEDIUM | [Boundary Of Binary Tree](https://leetcode.com/problems/boundary-of-binary-tree) | [Solution](../datastructures/binaryTree/Traversals.java) | Tree, Depth-First Search, Binary Tree |
+| 11 | MEDIUM | [Course Schedule](https://leetcode.com/problems/course-schedule) | [Solution](../datastructures/graph/TopologicalSorting.java) | Depth-First Search, Breadth-First Search, Graph, Topological Sort |
+| 12 | MEDIUM | [Course Schedule Ii](https://leetcode.com/problems/course-schedule-ii) | [Solution](../datastructures/graph/TopologicalSorting.java) | Depth-First Search, Breadth-First Search, Graph, Topological Sort |
+| 13 | MEDIUM | [Single Element In A Sorted Array](https://leetcode.com/problems/single-element-in-a-sorted-array) | [Solution](../algorithms/SearchingAlgorithms.java) | Array, Binary Search |
+| 14 | MEDIUM | [Path With Minimum Effort](https://leetcode.com/problems/path-with-minimum-effort) | [Solution](../datastructures/graph/ShortestPathUsingDijkstra.java) | Array, Binary Search, Depth-First Search, Breadth-First Search, Union Find, Heap (Priority Queue), Matrix |
+| 15 | MEDIUM | [Cheapest Flights Within K Stops](https://leetcode.com/problems/cheapest-flights-within-k-stops) | [Solution](../datastructures/graph/ShortestPathUsingDijkstra.java) | Dynamic Programming, Depth-First Search, Breadth-First Search, Graph, Heap (Priority Queue), Shortest Path |
+| 16 | HARD | [N Queens](https://leetcode.com/problems/n-queens) | [Solution](../algorithms/recursionAndBacktracking/NQueens.java) | Array, Backtracking |
+| 17 | MEDIUM | [Word Break](https://leetcode.com/problems/word-break) | [Solution](../algorithms/recursionAndBacktracking/WordBreak.java) | Array, Hash Table, String, Dynamic Programming, Trie, Memoization |
+| 18 | MEDIUM | [Construct Binary Tree From Preorder And Inorder Traversal](https://leetcode.com/problems/construct-binary-tree-from-preorder-and-inorder-traversal) | [Solution](../datastructures/binaryTree/ConstructTree.java) | Array, Hash Table, Divide and Conquer, Tree, Binary Tree |
+| 19 | HARD | [Minimum Window Substring](https://leetcode.com/problems/minimum-window-substring) | [Solution](../algorithms/twoPointerAndSlidingWindow/MinimumWindowSubstring.java) | Hash Table, String, Sliding Window |
+| 20 | MEDIUM | [Insert Delete Getrandom O1](https://leetcode.com/problems/insert-delete-getrandom-o1) | [Solution](../datastructures/hashMapAndSet/RandomizedSet.java) | Array, Hash Table, Math, Design, Randomized |
+| 21 | MEDIUM | [Meeting Rooms Ii](https://leetcode.com/problems/meeting-rooms-ii) | [Solution](../datastructures/arrays/MeetingScheduleII.java) | Array, Two Pointers, Greedy, Sorting, Heap (Priority Queue), Prefix Sum |
+| 22 | HARD | [Merge K Sorted Lists](https://leetcode.com/problems/merge-k-sorted-lists) | [Solution](../datastructures/linkedList/MergeKSortedLists.java) | Linked List, Divide and Conquer, Heap (Priority Queue), Merge Sort |
+| 23 | EASY | [Best Time To Buy And Sell Stock](https://leetcode.com/problems/best-time-to-buy-and-sell-stock) | [Solution](../datastructures/arrays/StockBuySell.java) | Array, Dynamic Programming |
+| 24 | EASY | [Roman To Integer](https://leetcode.com/problems/roman-to-integer) | [Solution](../datastructures/arrays/RomanToInt.java) | Hash Table, Math, String |
+| 25 | MEDIUM | [Swap Nodes In Pairs](https://leetcode.com/problems/swap-nodes-in-pairs) | [Solution](../datastructures/linkedList/SwapNodeInPairs.java) | Linked List, Recursion |
+| 26 | HARD | [Count Subarrays With Fixed Bounds](https://leetcode.com/problems/count-subarrays-with-fixed-bounds) | [Solution](../datastructures/arrays/CountSubArraysWithFixedBound.java) | Array, Queue, Sliding Window, Monotonic Queue |
+| 27 | MEDIUM | [Find All Anagrams In A String](https://leetcode.com/problems/find-all-anagrams-in-a-string) | [Solution](../algorithms/twoPointerAndSlidingWindow/FindAllAnagramsInAString.java) | Hash Table, String, Sliding Window |
+| 28 | MEDIUM | [Implement Trie Prefix Tree](https://leetcode.com/problems/implement-trie-prefix-tree) | [Solution](../datastructures/trie/Trie.java) | Hash Table, String, Design, Trie |
+| 29 | MEDIUM | [Encode And Decode Strings](https://leetcode.com/problems/encode-and-decode-strings) | [Solution](../datastructures/string/EncodeAndDecode.java) | Array, String, Design |
+| 30 | HARD | [Word Search Ii](https://leetcode.com/problems/word-search-ii) | [Solution](../datastructures/trie/WordSearchII.java) | Array, String, Backtracking, Trie, Matrix |
+| 31 | MEDIUM | [Task Scheduler](https://leetcode.com/problems/task-scheduler) | [Solution](../datastructures/stackAndQueue/TaskScheduler.java) | Array, Hash Table, Greedy, Sorting, Heap (Priority Queue), Counting |

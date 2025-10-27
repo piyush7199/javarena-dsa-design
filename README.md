@@ -1,7 +1,7 @@
-# Javarena: DSA, LLD & HLD in Java
+# Javarena: Data Structures & Algorithms in Java
 
-Welcome to **Javarena** – a structured, Java-based repository crafted to help you master **coding interviews** and *
-*system design** with real-world examples, design patterns, and company-specific problem tracking.
+Welcome to **Javarena** – a comprehensive, Java-based repository crafted to help you master **coding interviews** with
+carefully curated DSA problems organized by topics and companies.
 
 ---
 
@@ -11,8 +11,6 @@ Welcome to **Javarena** – a structured, Java-based repository crafted to help 
 - [📁 Project Structure](#-project-structure)
 - [📘 DSA Topics](#-dsa-topics)
 - [🏢 Company-Wise Problems](#-company-wise-problems)
-- [🧩 Low-Level Design (LLD)](#-low-level-design-lld)
-- [🏗 High-Level Design (HLD)](#-high-level-design-hld)
 - [🚀 Getting Started](#-getting-started)
 - [🏷️ Badges](#%EF%B8%8F-badges)
 
@@ -22,41 +20,80 @@ Welcome to **Javarena** – a structured, Java-based repository crafted to help 
 
 This repository includes:
 
-- ✅ **Data Structures & Algorithms (DSA)** – Topic-wise and company-wise curated problems from **LeetCode**, *
-  *GeeksforGeeks**, etc.
+- ✅ **Data Structures & Algorithms (DSA)** – Comprehensive topic-wise and company-wise curated problems from **LeetCode
+  **, **GeeksforGeeks**, and more
 - 🏢 **Company-Wise Tracking** – Solved and categorized interview problems for top tech companies like Amazon, Adobe,
-  Google, etc.
-- 🧩 **Low-Level Design (LLD)** – Core OOP design patterns with hands-on examples. *(In Progress)*
-- 🏗 **High-Level Design (HLD)** – Scalable architecture design with trade-offs and system diagrams. *(In Progress)*
+  Google, Microsoft, and many others
+- 📊 **Progress Tracking** – Built-in topic suggester to help you practice consistently
 
 ---
 
 ## 📁 Project Structure
 
 ```
-src/
-└── main/
-└── java/
-└── org/
-└── example/
-├── coding/ # DSA by topic
-├── companies/ # DSA by company
-├── lld/ # Low-Level Design
-└── hld/ # High-Level Design
+src/main/java/com/javarena/dsa/
+├── algorithms/              # Algorithm implementations & problems
+│   ├── binarySearch/       # Binary search problems
+│   ├── bitManupulation/    # Bit manipulation problems
+│   ├── dynamicProgramming/ # DP problems
+│   ├── greedy/             # Greedy algorithm problems
+│   ├── recursionAndBacktracking/ # Recursion & backtracking
+│   ├── string/             # String algorithms (KMP, etc.)
+│   ├── twoPointerAndSlidingWindow/ # Two pointer problems
+│   └── miscellaneous/      # Other algorithm problems
+│
+├── datastructures/         # Data structure implementations
+│   ├── arrays/            # Array problems
+│   ├── binaryTree/        # Binary tree problems
+│   ├── graph/             # Graph algorithms
+│   ├── linkedList/        # Linked list problems
+│   ├── stackAndQueue/     # Stack & queue problems
+│   ├── string/            # String data structure problems
+│   ├── trie/              # Trie implementations
+│   ├── segmentTree/       # Segment tree
+│   ├── fenwickTree/       # Fenwick tree (BIT)
+│   └── hashMapAndSet/     # HashMap & HashSet problems
+│
+├── companies/             # Company-wise problem tracking (386 companies)
+│   ├── Amazon.md
+│   ├── Google.md
+│   ├── Microsoft.md
+│   └── ... (and many more)
+│
+└── utils/                 # Utility classes
+    ├── Main.java          # Main entry point
+    └── TopicSuggester.java # Daily topic suggestion tool
 ```
 
 ---
 
 ## 📘 DSA Topics
 
-| # | Topic                                                                                      | 
-|---|--------------------------------------------------------------------------------------------|
-| 1 | [Algorithms](./src/main/java/org/example/coding/algorithms/README.md)                      |
-| 2 | [Array](./src/main/java/org/example/coding/datastructures/arrays/README.md)                |
-| 3 | [Linked List](./src/main/java/org/example/coding/datastructures/linkedList/README.md)      |
-| 4 | [Stack & Queue](./src/main/java/org/example/coding/datastructures/stackAndQueue/README.md) |
-| 5 | [Graph](./src/main/java/org/example/coding/datastructures/graph/README.md)                 |
-| 6 | [Segment Tree](./src/main/java/org/example/coding/datastructures/segmentTree/README.md)    |
+### Algorithms
+
+| # | Topic                                                                                                      | 
+|---|------------------------------------------------------------------------------------------------------------|
+| 1 | [Binary Search](./src/main/java/com/javarena/dsa/algorithms/binarySearch/)                                 |
+| 2 | [Bit Manipulation](./src/main/java/com/javarena/dsa/algorithms/README-BitManipulation.md)                  |
+| 3 | [Dynamic Programming](./src/main/java/com/javarena/dsa/algorithms/README-DynamicProgramming.md)            |
+| 4 | [Greedy Algorithms](./src/main/java/com/javarena/dsa/algorithms/README-GreedyAlgorithms.md)                |
+| 5 | [Recursion & Backtracking](./src/main/java/com/javarena/dsa/algorithms/README-RecursionAndBacktracking.md) |
+| 6 | [String Algorithms](./src/main/java/com/javarena/dsa/algorithms/README-StringAlgorithms.md)                |
+| 7 | [Two Pointer](./src/main/java/com/javarena/dsa/algorithms/README-TwoPointer.md)                            |
+| 8 | [Sliding Window](./src/main/java/com/javarena/dsa/algorithms/README-SlidingWindowAlgorithms.md)            |
+
+### Data Structures
+
+| # | Topic                                                                                    | 
+|---|------------------------------------------------------------------------------------------|
+| 1 | [Arrays](./src/main/java/com/javarena/dsa/datastructures/arrays/README.md)               |
+| 2 | [Linked List](./src/main/java/com/javarena/dsa/datastructures/linkedList/README.md)      |
+| 3 | [Stack & Queue](./src/main/java/com/javarena/dsa/datastructures/stackAndQueue/README.md) |
+| 4 | [Binary Tree](./src/main/java/com/javarena/dsa/datastructures/binaryTree/README.md)      |
+| 5 | [Graph](./src/main/java/com/javarena/dsa/datastructures/graph/README.md)                 |
+| 6 | [Trie](./src/main/java/com/javarena/dsa/datastructures/trie/README.md)                   |
+| 7 | [Segment Tree](./src/main/java/com/javarena/dsa/datastructures/segmentTree/README.md)    |
+| 8 | [Fenwick Tree](./src/main/java/com/javarena/dsa/datastructures/fenwickTree/README.md)    |
 
 ---
 
@@ -64,13 +101,15 @@ src/
 
 Solve company-tagged questions like real interviews and track your progress here:
 
-| Company                                          | File                                                               |
-|--------------------------------------------------|--------------------------------------------------------------------|
-| Amazon                                           | [Amazon.md](./src/main/java/org/example/companies/Amazon.md)       |
-| Adobe                                            | [Adobe.md](./src/main/java/org/example/companies/Adobe.md)         |
-| Google                                           | [Google.md](./src/main/java/org/example/companies/Google.md)       |
-| Microsoft                                        | [Microsoft.md](./src/main/java/org/example/companies/Microsoft.md) |
-| [More...](./src/main/java/org/example/companies) | 📁 View all                                                        |
+| Company                                                    | File                                                                    |
+|------------------------------------------------------------|-------------------------------------------------------------------------|
+| Amazon                                                     | [Amazon.md](./src/main/java/com/javarena/dsa/companies/Amazon.md)       |
+| Adobe                                                      | [Adobe.md](./src/main/java/com/javarena/dsa/companies/Adobe.md)         |
+| Google                                                     | [Google.md](./src/main/java/com/javarena/dsa/companies/Google.md)       |
+| Microsoft                                                  | [Microsoft.md](./src/main/java/com/javarena/dsa/companies/Microsoft.md) |
+| Meta                                                       | [Meta.md](./src/main/java/com/javarena/dsa/companies/Meta.md)           |
+| Apple                                                      | [Apple.md](./src/main/java/com/javarena/dsa/companies/Apple.md)         |
+| [+380 More...](./src/main/java/com/javarena/dsa/companies) | 📁 View all companies                                                   |
 
 Each file contains:
 
@@ -80,70 +119,34 @@ Each file contains:
 
 ---
 
-## 🧩 Low-Level Design (LLD)
-
-### 📚 Basics
-
-| # | Pattern Name                                                   | Description       | 
-|---|----------------------------------------------------------------|-------------------|
-| 1 | [LLD Basics](./src/main/java/org/example/lld/basics/README.md) | OOPs & LLD basics |
-
-### 🔨 Creational Design Patterns
-
-| # | Pattern Name                                                                                      | Description                                                                                                            |
-|---|---------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------|
-| 1 | [Singleton](./src/main/java/org/example/lld/patterns/creational/singleton/README.md)              | Ensure a class has only one instance and provide a global point of access to it.                                       |
-| 2 | [Builder](./src/main/java/org/example/lld/patterns/creational/builder/README.md)                  | Separates complex object construction from its representation.                                                         |
-| 3 | [Factory](./src/main/java/org/example/lld/patterns/creational/factory/README.md)                  | Creates objects without exposing the instantiation logic.                                                              |
-| 4 | [Prototype](./src/main/java/org/example/lld/patterns/creational/prototype/README.md)              | Create new objects by copying existing ones, reducing the cost of creation.                                            |
-| 5 | [Abstract Factory](./src/main/java/org/example/lld/patterns/creational/abstractFactory/README.md) | Provides an interface for creating families of related or dependent objects without specifying their concrete classes. |
-
-### 🧠 Behavioural Design Patterns
-
-| # | Pattern Name                                                                                                    | Description                                                                                                                        |
-|---|-----------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------|
-| 1 | [Chain Of Responsibility](./src/main/java/org/example/lld/patterns/behavioural/chainOfResponsibility/README.md) | Passes a request along a chain of handlers until one of them handles it.                                                           |
-| 2 | [Observer](./src/main/java/org/example/lld/patterns/behavioural/observer/README.md)                             | Defines a one-to-many dependency so that when one object changes state, all its dependents are notified and updated automatically. |
-| 3 | [Strategy](./src/main/java/org/example/lld/patterns/behavioural/strategy/README.md)                             | Enables selecting an algorithm's behavior at runtime by encapsulating it within a class and making it interchangeable.             |
-| 4 | [Command](./src/main/java/org/example/lld/patterns/behavioural/command/README.md)                               | Encapsulates a request as an object, thereby allowing users to parameterize clients, delay execution, or queue and log operations. |
-| 5 | [State](./src/main/java/org/example/lld/patterns/behavioural/state/README.md)                                   | Allows an object to change its behavior when its internal state changes, appearing as if it changed its class.                     |
-
-### 🧱 Structural Design Patterns
-
-| # | Pattern Name                                                                         | Description                                                                 |
-|---|--------------------------------------------------------------------------------------|-----------------------------------------------------------------------------|
-| 1 | [Decorator](./src/main/java/org/example/lld/patterns/structural/decorator/README.md) | Dynamically adds new behavior to objects at runtime.                        |
-| 2 | [Flyweight](./src/main/java/org/example/lld/patterns/structural/flyweight/README.md) | Reduces memory usage by sharing common parts of object state among objects. |
-| 3 | [Adapter](./src/main/java/org/example/lld/patterns/structural/adapter/README.md)     | Converts one interface into another expected by the client.                 |
-
----
-
-## 🏗 High-Level Design (HLD)
-
-### Concepts
-
-- [Database Design and Databases](./src/main/java/org/example/hld/concepts/database_design.md)
-- [Consistency Patterns](./src/main/java/org/example/hld/concepts/consistency_models.md)
-- [Isolation Level](./src/main/java/org/example/hld/concepts/isolation_levels.md)
-- [Cache](./src/main/java/org/example/hld/concepts/cache.md)
-- [Networks & Communication](./src/main/java/org/example/hld/concepts/networks.md)
-- [Rate Limiting](./src/main/java/org/example/hld/concepts/rate-limiting.md)
-
-| # | System         | Status         | Description                   |
-|---|----------------|----------------|-------------------------------|
-| 1 | URL Shortener  | 🛠 In Progress | Service decomposition planned |
-| 2 | WhatsApp Clone | 🛠 In Progress | Scalable chat architecture    |
-
----
-
 ## 🚀 Getting Started
 
+### Clone the Repository
+
 ```bash
-git clone https://github.com/piyush7199/javarena-dsa-design.git
-cd javarena-dsa-design
+git clone https://github.com/piyush7199/javarena-dsa.git
+cd javarena-dsa
 ```
 
-Open in your favorite IDE (IntelliJ or VSCode recommended for Java).
+### Build with Maven
+
+```bash
+mvn clean compile
+```
+
+### Run Topic Suggester
+
+```bash
+mvn exec:java -Dexec.mainClass="com.javarena.dsa.utils.TopicSuggester"
+```
+
+### IDE Setup
+
+Open in your favorite IDE:
+
+- **IntelliJ IDEA**: File → Open → Select project directory
+- **VS Code**: Install Java Extension Pack, then open project directory
+- **Eclipse**: File → Import → Maven → Existing Maven Projects
 
 ---
 
@@ -152,4 +155,5 @@ Open in your favorite IDE (IntelliJ or VSCode recommended for Java).
 ![Java](https://img.shields.io/badge/language-Java-orange)
 ![LeetCode](https://img.shields.io/badge/platform-LeetCode-blue)
 ![GFG](https://img.shields.io/badge/platform-GeeksforGeeks-blue)
-![Design](https://img.shields.io/badge/focus-HLD/LLD-success)
+![DSA](https://img.shields.io/badge/focus-Data%20Structures%20%26%20Algorithms-success)
+![Interview Prep](https://img.shields.io/badge/goal-Interview%20Preparation-brightgreen)

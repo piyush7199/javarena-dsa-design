@@ -1,0 +1,29 @@
+# Wix
+
+| # | Difficulty | Problem | Solution | Topic |
+|---|------------|---------|----------|--------|
+| 1 | EASY | [Merge Two Sorted Lists](https://leetcode.com/problems/merge-two-sorted-lists) | [Solution](../datastructures/linkedList/LinkedList.java) | Linked List, Recursion |
+| 2 | MEDIUM | [Validate Binary Search Tree](https://leetcode.com/problems/validate-binary-search-tree) | [Solution](../datastructures/binaryTree/Solutions.java) | Tree, Depth-First Search, Binary Search Tree, Binary Tree |
+| 3 | HARD | [Median Of Two Sorted Arrays](https://leetcode.com/problems/median-of-two-sorted-arrays) | [Solution](../algorithms/SearchingAlgorithms.java) | Array, Binary Search, Divide and Conquer |
+| 4 | MEDIUM | [Maximum Subarray](https://leetcode.com/problems/maximum-subarray) | [Solution](../datastructures/arrays/SubArrays.java) | Array, Divide and Conquer, Dynamic Programming |
+| 5 | MEDIUM | [Merge Intervals](https://leetcode.com/problems/merge-intervals) | [Solution](../datastructures/arrays/SubArrays.java) | Array, Sorting |
+| 6 | EASY | [Two Sum](https://leetcode.com/problems/two-sum) | [Solution](../datastructures/hashMapAndSet/Solutions.java) | Array, Hash Table |
+| 7 | EASY | [Valid Parentheses](https://leetcode.com/problems/valid-parentheses) | [Solution](../datastructures/stackAndQueue/Solution.java) | String, Stack |
+| 8 | HARD | [Trapping Rain Water](https://leetcode.com/problems/trapping-rain-water) | [Solution](../datastructures/stackAndQueue/MinStack.java) | Array, Two Pointers, Dynamic Programming, Stack, Monotonic Stack |
+| 9 | MEDIUM | [Rotting Oranges](https://leetcode.com/problems/rotting-oranges) | [Solution](../datastructures/graph/BFSSolution.java) | Array, Breadth-First Search, Matrix |
+| 10 | MEDIUM | [3sum](https://leetcode.com/problems/3sum) | [Solution](../algorithms/TwoPointerSum.java) | Array, Two Pointers, Sorting |
+| 11 | MEDIUM | [Powx N](https://leetcode.com/problems/powx-n) | [Solution](../algorithms/recursionAndBacktracking/MyPow.java) | Math, Recursion |
+| 12 | MEDIUM | [Word Search](https://leetcode.com/problems/word-search) | [Solution](../algorithms/recursionAndBacktracking/WordSearch.java) | Array, String, Backtracking, Depth-First Search, Matrix |
+| 13 | MEDIUM | [Longest Palindromic Substring](https://leetcode.com/problems/longest-palindromic-substring) | [Solution](../algorithms/twoPointerAndSlidingWindow/LongestPalindromic.java) | Two Pointers, String, Dynamic Programming |
+| 14 | MEDIUM | [Integer To Roman](https://leetcode.com/problems/integer-to-roman) | [Solution](../datastructures/arrays/IntegerToRoman.java) | Hash Table, Math, String |
+| 15 | EASY | [Roman To Integer](https://leetcode.com/problems/roman-to-integer) | [Solution](../datastructures/arrays/RomanToInt.java) | Hash Table, Math, String |
+| 16 | HARD | [Alien Dictionary](https://leetcode.com/problems/alien-dictionary) | [Solution](../datastructures/graph/TopologicalSorting.java) | Array, String, Depth-First Search, Breadth-First Search, Graph, Topological Sort |
+| 17 | HARD | [Binary Tree Maximum Path Sum](https://leetcode.com/problems/binary-tree-maximum-path-sum) | [Solution](../datastructures/binaryTree/Solutions.java) | Dynamic Programming, Tree, Depth-First Search, Binary Tree |
+| 18 | MEDIUM | [Lowest Common Ancestor Of A Binary Tree](https://leetcode.com/problems/lowest-common-ancestor-of-a-binary-tree) | [Solution](../datastructures/binaryTree/Solutions.java) | Tree, Depth-First Search, Binary Tree |
+| 19 | EASY | [Pascals Triangle](https://leetcode.com/problems/pascals-triangle) | [Solution](../algorithms/dynamicProgramming/PascalTriangle.java) | Array, Dynamic Programming |
+| 20 | EASY | [Diameter Of Binary Tree](https://leetcode.com/problems/diameter-of-binary-tree) | [Solution](../datastructures/binaryTree/DiameterOfBinaryTree.java) | Tree, Depth-First Search, Binary Tree |
+| 21 | MEDIUM | [All Nodes Distance K In Binary Tree](https://leetcode.com/problems/all-nodes-distance-k-in-binary-tree) | [Solution](../datastructures/binaryTree/Solutions.java) | Hash Table, Tree, Depth-First Search, Breadth-First Search, Binary Tree |
+| 22 | MEDIUM | [Find Peak Element](https://leetcode.com/problems/find-peak-element) | [Solution](../algorithms/SearchingAlgorithms.java) | Array, Binary Search |
+| 23 | MEDIUM | [Binary Tree Right Side View](https://leetcode.com/problems/binary-tree-right-side-view) | [Solution](../datastructures/binaryTree/Traversals.java) | Tree, Depth-First Search, Breadth-First Search, Binary Tree |
+| 24 | EASY | [Power Of Four](https://leetcode.com/problems/power-of-four) | [Solution](../algorithms/miscellaneous/PowerOfFour.java) | Math, Bit Manipulation, Recursion |
+| 25 | HARD | [Word Search Ii](https://leetcode.com/problems/word-search-ii) | [Solution](../datastructures/trie/WordSearchII.java) | Array, String, Backtracking, Trie, Matrix |

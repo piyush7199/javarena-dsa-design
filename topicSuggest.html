@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>System Design Topic Suggester</title>
+    <title>DSA Topic Suggester</title>
     <!-- Tailwind CSS CDN -->
     <script src="https://cdn.tailwindcss.com"></script>
     <style>
@@ -237,9 +237,9 @@
 </head>
 <body>
 <div class="container">
-    <h1 class="text-3xl font-bold text-gray-800 mb-4">Study Topic Suggester</h1>
-    <p class="text-gray-600 mb-6">Select difficulty levels and click 'Suggest New Topics' to get random topics from each
-        category. Use the buttons to get explanations or interview questions!</p>
+    <h1 class="text-3xl font-bold text-gray-800 mb-4">DSA & Backend Tech Topic Suggester</h1>
+    <p class="text-gray-600 mb-6">Select difficulty levels and click 'Suggest New Topics' to get random DSA and Backend topics.
+        Use the buttons to get explanations or interview questions!</p>
 
     <div class="difficulty-filters">
         <label>
@@ -330,95 +330,6 @@
         { name: "Monotonic Stack/Queue Applications", difficulty: "Intermediate" }, // New
         { name: "Line Sweep Algorithms", difficulty: "Advanced" }, // New
         { name: "Union-Find with Rollback", difficulty: "Advanced" }, // New
-    ],
-    lld: [
-        { name: "Builder Pattern with Fluent Interfaces", difficulty: "Intermediate" },
-        { name: "Validation Frameworks (JSR-303, Hibernate Validator)", difficulty: "Intermediate" },
-        { name: "API Rate Limiting Implementation (Token Bucket, Leaky Bucket)", difficulty: "Advanced" },
-        { name: "SOLID Principles (Single Responsibility, Open/Closed, Liskov Substitution, Interface Segregation, Dependency Inversion)", difficulty: "Beginner" },
-        { name: "Design Patterns (Creational: Singleton, Factory Method, Abstract Factory, Builder, Prototype)", difficulty: "Intermediate" },
-        { name: "Design Patterns (Structural: Adapter, Decorator, Facade, Proxy, Bridge, Composite, Flyweight)", difficulty: "Intermediate" },
-        { name: "Design Patterns (Behavioral: Observer, Strategy, Command, State, Template Method, Iterator, Mediator, Chain of Responsibility, Memento, Visitor, Interpreter)", difficulty: "Advanced" },
-        { name: "UML Diagrams (Class Diagrams, Sequence Diagrams)", difficulty: "Beginner" },
-        { name: "UML Diagrams (Component Diagrams, Activity Diagrams, State Machine Diagrams)", difficulty: "Intermediate" },
-        { name: "Concurrency Patterns (Producer-Consumer, Reader-Writer, Thread Pool)", difficulty: "Intermediate" },
-        { name: "Concurrency Patterns (Fork-Join Framework, Phaser, StampedLock, Latch, Barrier, Semaphore, Atomic Operations)", difficulty: "Advanced" },
-        { name: "Error Handling Strategies (Custom Exceptions, try-with-resources, Exception Propagation)", difficulty: "Beginner" },
-        { name: "Resilience Patterns (Circuit Breaker, Retry, Fallback)", difficulty: "Intermediate" },
-        { name: "API Design Principles (RESTful principles, Idempotency, API Versioning)", difficulty: "Beginner" },
-        { name: "API Design Principles (HATEOAS, API Gateway patterns)", difficulty: "Intermediate" },
-        { name: "Code Quality & Refactoring (Clean Code principles, Code Smells, Refactoring Techniques)", difficulty: "Beginner" },
-        { name: "Static Analysis Tools (basics)", difficulty: "Intermediate" },
-        { name: "Testing Principles (Unit Testing, Integration Testing, Mocking, Stubbing, Testable Code)", difficulty: "Beginner" },
-        { name: "Testing Principles (Test Driven Development (TDD), Behavior Driven Development (BDD))", difficulty: "Intermediate" },
-        { name: "Object-Oriented Design Case Studies (e.g., Vending Machine, Parking Lot, Tic-Tac-Toe)", difficulty: "Beginner" },
-        { name: "Object-Oriented Design Case Studies (e.g., Elevator System, Online Chess Game, ATM)", difficulty: "Intermediate" },
-        { name: "Object-Oriented Design Case Studies (e.g., Distributed Logger, Rate Limiter, URL Shortener)", difficulty: "Advanced" },
-        { name: "GRASP Principles (Creator, Information Expert, Low Coupling, High Cohesion)", difficulty: "Intermediate" },
-        { name: "GRASP Principles (Controller, Polymorphism, Pure Fabrication, Indirection, Protected Variations)", difficulty: "Advanced" },
-        { name: "Domain-Driven Design (DDD) Basics (Entities, Value Objects, Aggregates, Bounded Contexts)", difficulty: "Intermediate" },
-        { name: "Domain-Driven Design (DDD) (Domain Events, Repositories, Services)", difficulty: "Advanced" },
-        { name: "Event-Driven Architecture (LLD perspective: Events, Event Handlers, Message Bus/Broker)", difficulty: "Intermediate" },
-        { name: "Event Sourcing & CQRS (LLD perspective)", difficulty: "Advanced" },
-        { name: "Dependency Injection Frameworks (e.g., Spring IoC Container, Guice)", difficulty: "Beginner" },
-        { name: "Aspect-Oriented Programming (AOP) concepts", difficulty: "Intermediate" },
-        { name: "JVM Internals (Class Loading, Memory Management, JIT Compilation basics)", difficulty: "Intermediate" },
-        { name: "Garbage Collection (Types, Tuning basics)", difficulty: "Intermediate" },
-        { name: "Concurrency Primitives (Locks, Semaphores, Mutexes, Condition Variables)", difficulty: "Intermediate" },
-        { name: "Object Pooling Pattern", difficulty: "Intermediate" }, // New
-        { name: "Command Query Separation (CQS)", difficulty: "Intermediate" }, // New
-        { name: "Repository Pattern", difficulty: "Intermediate" }, // New
-        { name: "Unit of Work Pattern", difficulty: "Advanced" }, // New
-    ],
-    hld: [
-        { name: "Data Modeling (ER Modeling, Star vs. Snowflake Schema)", difficulty: "Intermediate" },
-        { name: "Job Scheduling Systems (Quartz, CRON, Event-based Triggers)", difficulty: "Intermediate" },
-        { name: "Geo-based Systems (Geohashing, Radius Search, Spatial Indexing)", difficulty: "Advanced" },
-        { name: "Scalability (Vertical vs. Horizontal Scaling, Load Balancing Algorithms - Round Robin, Least Connections, IP Hash)", difficulty: "Beginner" },
-        { name: "Scalability (Weighted Round Robin, Consistent Hashing)", difficulty: "Intermediate" },
-        { name: "Caching Strategies (CDN, Application-level, Database-level, Cache Invalidation, Cache Aside, Write Through, Write Back)", difficulty: "Intermediate" },
-        { name: "Database Sharding/Partitioning (Range, Hash, Directory-based)", difficulty: "Intermediate" },
-        { name: "Replication (Master-Slave, Multi-Master, Leader-Follower; Read Replicas, Data Locality)", difficulty: "Beginner" },
-        { name: "Availability & Reliability (Redundancy, Fault Tolerance, Disaster Recovery (RTO/RPO), N-tier Architecture)", difficulty: "Intermediate" },
-        { name: "Availability & Reliability (Microservices vs. Monolith, Serverless, Health Checks, Self-healing Systems)", difficulty: "Intermediate" },
-        { name: "Resilience Patterns (Circuit Breakers, Bulkheads, Retries, Fallbacks)", difficulty: "Intermediate" },
-        { name: "Consistency Models (ACID, BASE, Strong Consistency, Eventual Consistency)", difficulty: "Beginner" },
-        { name: "Consistency Models (Causal Consistency, Read-Your-Writes Consistency, Linearizability, Sequential Consistency)", difficulty: "Advanced" },
-        { name: "Data Storage (Relational vs. NoSQL Databases - Document, Key-Value, Column-Family, Graph)", difficulty: "Beginner" },
-        { name: "Data Storage (Database Indexing, Denormalization, Data Warehousing basics, Data Lakes, ETL/ELT, OLAP/OLTP)", difficulty: "Intermediate" },
-        { name: "Messaging Systems (Message Queues - SQS, RabbitMQ, ActiveMQ; Pub/Sub - SNS, Kafka, Google Pub/Sub)", difficulty: "Intermediate" },
-        { name: "Messaging Systems (Message Brokers, Idempotent Consumers, Dead Letter Queues, Message Ordering, Retries)", difficulty: "Advanced" },
-        { name: "Security (Authentication - OAuth2, OpenID Connect, JWT, SAML)", difficulty: "Intermediate" },
-        { name: "Security (Authorization - RBAC, ABAC; HTTPS/TLS, Encryption at Rest/In Transit, Rate Limiting, WAFs, DDoS Protection, Security Headers, OWASP Top 10)", difficulty: "Advanced" },
-        { name: "Monitoring & Logging (Centralized Logging - ELK Stack, Splunk; Metrics - Prometheus, Grafana; Alerting)", difficulty: "Intermediate" },
-        { name: "Monitoring & Logging (Distributed Tracing - Jaeger, Zipkin, OpenTelemetry; APM tools)", difficulty: "Advanced" },
-        { name: "Networking Basics (DNS, TCP/IP, HTTP/HTTPS, Proxies, Reverse Proxies, Firewalls)", difficulty: "Beginner" },
-        { name: "Networking Basics (VPNs, CIDR, Subnetting)", difficulty: "Intermediate" },
-        { name: "Common System Designs (URL Shortener, Chat System, Notification Service, News Feed)", difficulty: "Intermediate" },
-        { name: "Common System Designs (Payment Gateway, Distributed Cache, Ride-Sharing App, E-commerce Platform)", difficulty: "Advanced" },
-        { name: "Common System Designs (Recommendation Engine, Search Engine, Social Media Feed, Online Gaming Platform, Video Streaming Service, Analytics Platform)", difficulty: "Advanced" },
-        { name: "Distributed Consensus (Paxos, Raft - basic understanding, Zookeeper, etcd, Consul)", difficulty: "Advanced" },
-        { name: "API Gateway (Purpose, features - Authentication, Throttling, Routing, Transformation, Caching, Logging, Monitoring)", difficulty: "Intermediate" },
-        { name: "Service Discovery (Client-side vs. Server-side, Eureka, Consul, ZooKeeper, Kubernetes Service Discovery)", difficulty: "Intermediate" },
-        { name: "CDN (Content Delivery Network, Edge Caching, Cache Invalidation)", difficulty: "Beginner" },
-        { name: "Containerization & Orchestration (Docker, Kubernetes - Pods, Deployments, Services, Ingress)", difficulty: "Intermediate" },
-        { name: "Containerization & Orchestration (Helm Charts, StatefulSets)", difficulty: "Advanced" },
-        { name: "CI/CD Pipelines (Build, Test, Deploy Automation, Jenkins, GitLab CI, GitHub Actions, ArgoCD, Spinnaker)", difficulty: "Intermediate" },
-        { name: "Cloud Computing Concepts (IaaS, PaaS, SaaS; AWS/GCP/Azure core services - Compute, Storage, Databases, Serverless)", difficulty: "Beginner" },
-        { name: "Cloud Computing Concepts (Advanced Cloud Services, Cost Optimization, Multi-Cloud Strategies)", difficulty: "Intermediate" },
-        { name: "Event Sourcing & CQRS (Command Query Responsibility Segregation)", difficulty: "Advanced" },
-        { name: "GraphQL vs. REST (Comparison, Use Cases, N+1 problem)", difficulty: "Intermediate" },
-        { name: "System Reliability Engineering (SRE) Principles (SLAs, SLOs, SLIs, Error Budgets, Post-mortems, Toil)", difficulty: "Advanced" },
-        { name: "Data Streaming (Kafka Streams, Flink, Spark Streaming)", difficulty: "Advanced" },
-        { name: "Search Technologies (Elasticsearch, Solr, Lucene)", difficulty: "Intermediate" },
-        { name: "API Gateways & Service Mesh (Istio, Linkerd)", difficulty: "Advanced" },
-        { name: "Distributed Transactions (2PC, Saga Pattern, TCC)", difficulty: "Advanced" },
-        { name: "Feature Flags/Toggle Systems", difficulty: "Intermediate" },
-        { name: "A/B Testing Infrastructure", difficulty: "Intermediate" },
-        { name: "Time Series Databases (InfluxDB, Prometheus)", difficulty: "Intermediate" }, // New
-        { name: "Distributed Locking Mechanisms (Redis, Zookeeper)", difficulty: "Advanced" }, // New
-        { name: "Event-Driven Microservices (Design and Implementation)", difficulty: "Advanced" }, // New
-        { name: "Data Consistency in Microservices (Eventual Consistency Patterns)", difficulty: "Advanced" }, // New
     ],
     backendTech: [
         { name: "Thread Dumps & Heap Dumps (Analyzing with VisualVM, MAT)", difficulty: "Advanced" },
@@ -554,7 +465,7 @@
     }
 
     /**
-     * Suggests one random topic from each category (DSA, Algorithms, LLD, HLD, Backend Tech)
+     * Suggests one random topic from each category (DSA, Algorithms, Backend Tech)
      * based on selected difficulty levels.
      * Attaches event listeners for the new Gemini-powered buttons.
      */

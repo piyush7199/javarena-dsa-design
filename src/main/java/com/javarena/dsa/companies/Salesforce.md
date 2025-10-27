@@ -1,0 +1,58 @@
+# Salesforce
+
+| # | Difficulty | Problem | Solution | Topic |
+|---|------------|---------|----------|--------|
+| 1 | EASY | [Merge Two Sorted Lists](https://leetcode.com/problems/merge-two-sorted-lists) | [Solution](../datastructures/linkedList/LinkedList.java) | Linked List, Recursion |
+| 2 | MEDIUM | [Lru Cache](https://leetcode.com/problems/lru-cache) | [Solution](../datastructures/linkedList/LRUCache.java) | Hash Table, Linked List, Design, Doubly-Linked List |
+| 3 | MEDIUM | [Validate Binary Search Tree](https://leetcode.com/problems/validate-binary-search-tree) | [Solution](../datastructures/binaryTree/Solutions.java) | Tree, Depth-First Search, Binary Search Tree, Binary Tree |
+| 4 | EASY | [Binary Tree Preorder Traversal](https://leetcode.com/problems/binary-tree-preorder-traversal) | [Solution](../datastructures/binaryTree/Solutions.java) | Stack, Tree, Depth-First Search, Binary Tree |
+| 5 | MEDIUM | [Maximum Subarray](https://leetcode.com/problems/maximum-subarray) | [Solution](../datastructures/arrays/SubArrays.java) | Array, Divide and Conquer, Dynamic Programming |
+| 6 | HARD | [Lfu Cache](https://leetcode.com/problems/lfu-cache) | [Solution](../datastructures/linkedList/LFUCache.java) | Hash Table, Linked List, Design, Doubly-Linked List |
+| 7 | MEDIUM | [Merge Intervals](https://leetcode.com/problems/merge-intervals) | [Solution](../datastructures/arrays/SubArrays.java) | Array, Sorting |
+| 8 | MEDIUM | [Top K Frequent Elements](https://leetcode.com/problems/top-k-frequent-elements) | [Solution](../datastructures/hashMapAndSet/Solutions.java) | Array, Hash Table, Divide and Conquer, Sorting, Heap (Priority Queue), Bucket Sort, Counting, Quickselect |
+| 9 | MEDIUM | [Longest Substring Without Repeating Characters](https://leetcode.com/problems/longest-substring-without-repeating-characters) | [Solution](../algorithms/SlidingWindow.java) | Hash Table, String, Sliding Window |
+| 10 | MEDIUM | [Max Consecutive Ones Iii](https://leetcode.com/problems/max-consecutive-ones-iii) | [Solution](../algorithms/SlidingWindow.java) | Array, Binary Search, Sliding Window, Prefix Sum |
+| 11 | MEDIUM | [Group Anagrams](https://leetcode.com/problems/group-anagrams) | [Solution](../algorithms/SortingAlgorithms.java) | Array, Hash Table, String, Sorting |
+| 12 | MEDIUM | [Jump Game](https://leetcode.com/problems/jump-game) | [Solution](../algorithms/GreedyAlgorithms.java) | Array, Dynamic Programming, Greedy |
+| 13 | EASY | [Valid Parentheses](https://leetcode.com/problems/valid-parentheses) | [Solution](../datastructures/stackAndQueue/Solution.java) | String, Stack |
+| 14 | MEDIUM | [Min Stack](https://leetcode.com/problems/min-stack) | [Solution](../datastructures/stackAndQueue/MinStack.java) | Stack, Design |
+| 15 | HARD | [Trapping Rain Water](https://leetcode.com/problems/trapping-rain-water) | [Solution](../datastructures/stackAndQueue/MinStack.java) | Array, Two Pointers, Dynamic Programming, Stack, Monotonic Stack |
+| 16 | MEDIUM | [Asteroid Collision](https://leetcode.com/problems/asteroid-collision) | [Solution](../datastructures/stackAndQueue/MinStack.java) | Array, Stack, Simulation |
+| 17 | MEDIUM | [Rotting Oranges](https://leetcode.com/problems/rotting-oranges) | [Solution](../datastructures/graph/BFSSolution.java) | Array, Breadth-First Search, Matrix |
+| 18 | HARD | [Word Ladder](https://leetcode.com/problems/word-ladder) | [Solution](../datastructures/graph/WordLadder.java) | Hash Table, String, Breadth-First Search |
+| 19 | MEDIUM | [House Robber](https://leetcode.com/problems/house-robber) | [Solution](../algorithms/DynamicProgramming.java) | Array, Dynamic Programming |
+| 20 | HARD | [Binary Tree Maximum Path Sum](https://leetcode.com/problems/binary-tree-maximum-path-sum) | [Solution](../datastructures/binaryTree/Solutions.java) | Dynamic Programming, Tree, Depth-First Search, Binary Tree |
+| 21 | MEDIUM | [3sum](https://leetcode.com/problems/3sum) | [Solution](../algorithms/TwoPointerSum.java) | Array, Two Pointers, Sorting |
+| 22 | MEDIUM | [Course Schedule Ii](https://leetcode.com/problems/course-schedule-ii) | [Solution](../datastructures/graph/TopologicalSorting.java) | Depth-First Search, Breadth-First Search, Graph, Topological Sort |
+| 23 | MEDIUM | [Search In Rotated Sorted Array](https://leetcode.com/problems/search-in-rotated-sorted-array) | [Solution](../algorithms/SearchingAlgorithms.java) | Array, Binary Search |
+| 24 | MEDIUM | [Minimum Path Sum](https://leetcode.com/problems/minimum-path-sum) | [Solution](../algorithms/DynamicProgramming2DTabulation.java) | Array, Dynamic Programming, Matrix |
+| 25 | MEDIUM | [Lowest Common Ancestor Of A Binary Tree](https://leetcode.com/problems/lowest-common-ancestor-of-a-binary-tree) | [Solution](../datastructures/binaryTree/Solutions.java) | Tree, Depth-First Search, Binary Tree |
+| 26 | MEDIUM | [All Nodes Distance K In Binary Tree](https://leetcode.com/problems/all-nodes-distance-k-in-binary-tree) | [Solution](../datastructures/binaryTree/Solutions.java) | Hash Table, Tree, Depth-First Search, Breadth-First Search, Binary Tree |
+| 27 | MEDIUM | [Powx N](https://leetcode.com/problems/powx-n) | [Solution](../algorithms/recursionAndBacktracking/MyPow.java) | Math, Recursion |
+| 28 | HARD | [N Queens](https://leetcode.com/problems/n-queens) | [Solution](../algorithms/recursionAndBacktracking/NQueens.java) | Array, Backtracking |
+| 29 | MEDIUM | [Word Break](https://leetcode.com/problems/word-break) | [Solution](../algorithms/recursionAndBacktracking/WordBreak.java) | Array, Hash Table, String, Dynamic Programming, Trie, Memoization |
+| 30 | MEDIUM | [Construct Binary Tree From Preorder And Inorder Traversal](https://leetcode.com/problems/construct-binary-tree-from-preorder-and-inorder-traversal) | [Solution](../datastructures/binaryTree/ConstructTree.java) | Array, Hash Table, Divide and Conquer, Tree, Binary Tree |
+| 31 | MEDIUM | [Word Search](https://leetcode.com/problems/word-search) | [Solution](../algorithms/recursionAndBacktracking/WordSearch.java) | Array, String, Backtracking, Depth-First Search, Matrix |
+| 32 | MEDIUM | [Triangle](https://leetcode.com/problems/triangle) | [Solution](../algorithms/dynamicProgramming/TrianglePathSum.java) | Array, Dynamic Programming |
+| 33 | HARD | [Minimum Window Substring](https://leetcode.com/problems/minimum-window-substring) | [Solution](../algorithms/twoPointerAndSlidingWindow/MinimumWindowSubstring.java) | Hash Table, String, Sliding Window |
+| 34 | MEDIUM | [Letter Combinations Of A Phone Number](https://leetcode.com/problems/letter-combinations-of-a-phone-number) | [Solution](../algorithms/recursionAndBacktracking/LetterCombination.java) | Hash Table, String, Backtracking |
+| 35 | MEDIUM | [Target Sum](https://leetcode.com/problems/target-sum) | [Solution](../algorithms/dynamicProgramming/TargetSum.java) | Array, Dynamic Programming, Backtracking |
+| 36 | MEDIUM | [Longest Palindromic Substring](https://leetcode.com/problems/longest-palindromic-substring) | [Solution](../algorithms/twoPointerAndSlidingWindow/LongestPalindromic.java) | Two Pointers, String, Dynamic Programming |
+| 37 | MEDIUM | [Zigzag Conversion](https://leetcode.com/problems/zigzag-conversion) | [Solution](../datastructures/string/ZigZagConversion.java) | String |
+| 38 | MEDIUM | [Insert Delete Getrandom O1](https://leetcode.com/problems/insert-delete-getrandom-o1) | [Solution](../datastructures/hashMapAndSet/RandomizedSet.java) | Array, Hash Table, Math, Design, Randomized |
+| 39 | MEDIUM | [Meeting Rooms Ii](https://leetcode.com/problems/meeting-rooms-ii) | [Solution](../datastructures/arrays/MeetingScheduleII.java) | Array, Two Pointers, Greedy, Sorting, Heap (Priority Queue), Prefix Sum |
+| 40 | HARD | [Merge K Sorted Lists](https://leetcode.com/problems/merge-k-sorted-lists) | [Solution](../datastructures/linkedList/MergeKSortedLists.java) | Linked List, Divide and Conquer, Heap (Priority Queue), Merge Sort |
+| 41 | MEDIUM | [Kth Largest Element In An Array](https://leetcode.com/problems/kth-largest-element-in-an-array) | [Solution](../datastructures/arrays/KthLargetElement.java) | Array, Divide and Conquer, Sorting, Heap (Priority Queue), Quickselect |
+| 42 | EASY | [Best Time To Buy And Sell Stock](https://leetcode.com/problems/best-time-to-buy-and-sell-stock) | [Solution](../datastructures/arrays/StockBuySell.java) | Array, Dynamic Programming |
+| 43 | MEDIUM | [Integer To Roman](https://leetcode.com/problems/integer-to-roman) | [Solution](../datastructures/arrays/IntegerToRoman.java) | Hash Table, Math, String |
+| 44 | EASY | [Roman To Integer](https://leetcode.com/problems/roman-to-integer) | [Solution](../datastructures/arrays/RomanToInt.java) | Hash Table, Math, String |
+| 45 | MEDIUM | [Coin Change](https://leetcode.com/problems/coin-change) | [Solution](../algorithms/dynamicProgramming/CoinChange.java) | Array, Dynamic Programming, Breadth-First Search |
+| 46 | MEDIUM | [Longest Common Subsequence](https://leetcode.com/problems/longest-common-subsequence) | [Solution](../algorithms/dynamicProgramming/LongestCommonSubsequence.java) | String, Dynamic Programming |
+| 47 | EASY | [Backspace String Compare](https://leetcode.com/problems/backspace-string-compare) | [Solution](../datastructures/string/BackspaceStringCompare.java) | Two Pointers, String, Stack, Simulation |
+| 48 | HARD | [Split Array Largest Sum](https://leetcode.com/problems/split-array-largest-sum) | [Solution](../algorithms/binarySearch/SplitArrayLargestSum.java) | Array, Binary Search, Dynamic Programming, Greedy, Prefix Sum |
+| 49 | MEDIUM | [Least Number Of Unique Integers After K Removals](https://leetcode.com/problems/least-number-of-unique-integers-after-k-removals) | [Solution](../datastructures/stackAndQueue/RemoveK.java) | Array, Hash Table, Greedy, Sorting, Counting |
+| 50 | MEDIUM | [Combination Sum](https://leetcode.com/problems/combination-sum) | [Solution](../algorithms/recursionAndBacktracking/CombinationSum.java) | Array, Backtracking |
+| 51 | MEDIUM | [Decode Ways](https://leetcode.com/problems/decode-ways) | [Solution](../algorithms/dynamicProgramming/DecodeWays.java) | String, Dynamic Programming |
+| 52 | MEDIUM | [Palindromic Substrings](https://leetcode.com/problems/palindromic-substrings) | [Solution](../datastructures/string/PalindromicSubstrings.java) | Two Pointers, String, Dynamic Programming |
+| 53 | HARD | [Serialize And Deserialize Binary Tree](https://leetcode.com/problems/serialize-and-deserialize-binary-tree) | [Solution](../datastructures/binaryTree/SerializeDeserialize.java) | String, Tree, Depth-First Search, Breadth-First Search, Design, Binary Tree |
+| 54 | MEDIUM | [Task Scheduler](https://leetcode.com/problems/task-scheduler) | [Solution](../datastructures/stackAndQueue/TaskScheduler.java) | Array, Hash Table, Greedy, Sorting, Heap (Priority Queue), Counting |

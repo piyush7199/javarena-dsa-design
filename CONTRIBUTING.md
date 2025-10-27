@@ -1,8 +1,7 @@
 # 🤝 Contributing to Javarena
 
 Thank you for your interest in contributing! 🚀  
-Javarena is a curated repository to help developers prepare for interviews with topic-wise, company-wise, and system
-design content in Java.
+Javarena is a curated repository to help developers prepare for coding interviews with comprehensive Data Structures & Algorithms content organized by topics and companies in Java.
 
 ---
 
@@ -21,11 +20,6 @@ We welcome contributions in the following areas:
 - If you're solving problems asked in companies (Amazon, Google, etc.):
     - Add the solution file to the appropriate DSA topic folder.
     - Make sure to update the respective company `.md` file (or let the script do it).
-
-### 🧩 LLD / 🏗 HLD
-
-- Add new design pattern implementations with comments and sample usage.
-- Submit HLD designs using clean folder structure and if possible, diagrams (PlantUML or image format).
 
 ---
 

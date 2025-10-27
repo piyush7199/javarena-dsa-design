@@ -1,0 +1,17 @@
+# Zepto
+
+| # | Difficulty | Problem | Solution | Topic |
+|---|------------|---------|----------|--------|
+| 1 | MEDIUM | [Lru Cache](https://leetcode.com/problems/lru-cache) | [Solution](../datastructures/linkedList/LRUCache.java) | Hash Table, Linked List, Design, Doubly-Linked List |
+| 2 | MEDIUM | [Merge Intervals](https://leetcode.com/problems/merge-intervals) | [Solution](../datastructures/arrays/SubArrays.java) | Array, Sorting |
+| 3 | HARD | [Sliding Window Maximum](https://leetcode.com/problems/sliding-window-maximum) | [Solution](../datastructures/stackAndQueue/MinStack.java) | Array, Queue, Sliding Window, Heap (Priority Queue), Monotonic Queue |
+| 4 | HARD | [Trapping Rain Water](https://leetcode.com/problems/trapping-rain-water) | [Solution](../datastructures/stackAndQueue/MinStack.java) | Array, Two Pointers, Dynamic Programming, Stack, Monotonic Stack |
+| 5 | MEDIUM | [Rotting Oranges](https://leetcode.com/problems/rotting-oranges) | [Solution](../datastructures/graph/BFSSolution.java) | Array, Breadth-First Search, Matrix |
+| 6 | MEDIUM | [Find Peak Element](https://leetcode.com/problems/find-peak-element) | [Solution](../algorithms/SearchingAlgorithms.java) | Array, Binary Search |
+| 7 | MEDIUM | [Search In Rotated Sorted Array](https://leetcode.com/problems/search-in-rotated-sorted-array) | [Solution](../algorithms/SearchingAlgorithms.java) | Array, Binary Search |
+| 8 | MEDIUM | [Unique Paths Ii](https://leetcode.com/problems/unique-paths-ii) | [Solution](../algorithms/DynamicProgramming2DTabulation.java) | Array, Dynamic Programming, Matrix |
+| 9 | MEDIUM | [Word Search](https://leetcode.com/problems/word-search) | [Solution](../algorithms/recursionAndBacktracking/WordSearch.java) | Array, String, Backtracking, Depth-First Search, Matrix |
+| 10 | MEDIUM | [Longest Repeating Character Replacement](https://leetcode.com/problems/longest-repeating-character-replacement) | [Solution](../algorithms/twoPointerAndSlidingWindow/RepeatingChars.java) | Hash Table, String, Sliding Window |
+| 11 | MEDIUM | [Longest Palindromic Substring](https://leetcode.com/problems/longest-palindromic-substring) | [Solution](../algorithms/twoPointerAndSlidingWindow/LongestPalindromic.java) | Two Pointers, String, Dynamic Programming |
+| 12 | MEDIUM | [Divide Two Integers](https://leetcode.com/problems/divide-two-integers) | [Solution](../algorithms/bitManupulation/DivideTwoIntegers.java) | Math, Bit Manipulation |
+| 13 | MEDIUM | [Jump Game Ii](https://leetcode.com/problems/jump-game-ii) | [Solution](../algorithms/greedy/JumpGameII.java) | Array, Dynamic Programming, Greedy |

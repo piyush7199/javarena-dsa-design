@@ -1,0 +1,15 @@
+# Disney
+
+| # | Difficulty | Problem | Solution | Topic |
+|---|------------|---------|----------|--------|
+| 1 | MEDIUM | [Lru Cache](https://leetcode.com/problems/lru-cache) | [Solution](../datastructures/linkedList/LRUCache.java) | Hash Table, Linked List, Design, Doubly-Linked List |
+| 2 | MEDIUM | [Merge Intervals](https://leetcode.com/problems/merge-intervals) | [Solution](../datastructures/arrays/SubArrays.java) | Array, Sorting |
+| 3 | MEDIUM | [Group Anagrams](https://leetcode.com/problems/group-anagrams) | [Solution](../algorithms/SortingAlgorithms.java) | Array, Hash Table, String, Sorting |
+| 4 | EASY | [Valid Parentheses](https://leetcode.com/problems/valid-parentheses) | [Solution](../datastructures/stackAndQueue/Solution.java) | String, Stack |
+| 5 | EASY | [Climbing Stairs](https://leetcode.com/problems/climbing-stairs) | [Solution](../algorithms/DynamicProgramming.java) | Math, Dynamic Programming, Memoization |
+| 6 | MEDIUM | [Search In Rotated Sorted Array](https://leetcode.com/problems/search-in-rotated-sorted-array) | [Solution](../algorithms/SearchingAlgorithms.java) | Array, Binary Search |
+| 7 | MEDIUM | [Longest Palindromic Substring](https://leetcode.com/problems/longest-palindromic-substring) | [Solution](../algorithms/twoPointerAndSlidingWindow/LongestPalindromic.java) | Two Pointers, String, Dynamic Programming |
+| 8 | EASY | [Longest Common Prefix](https://leetcode.com/problems/longest-common-prefix) | [Solution](../datastructures/string/LongestCommonPrefix.java) | String, Trie |
+| 9 | MEDIUM | [Generate Parentheses](https://leetcode.com/problems/generate-parentheses) | [Solution](../algorithms/recursionAndBacktracking/GenerateParentheses.java) | String, Dynamic Programming, Backtracking |
+| 10 | MEDIUM | [Subarray Sum Equals K](https://leetcode.com/problems/subarray-sum-equals-k) | [Solution](../datastructures/hashMapAndSet/SubArraySumEqualsK.java) | Array, Hash Table, Prefix Sum |
+| 11 | EASY | [Valid Anagram](https://leetcode.com/problems/valid-anagram) | [Solution](../datastructures/string/ValidAnagram.java) | Hash Table, String, Sorting |
