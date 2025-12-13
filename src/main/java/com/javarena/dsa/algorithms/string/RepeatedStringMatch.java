@@ -1,110 +1,62 @@
 package com.javarena.dsa.algorithms.string;
 
 /**
- * 686. Repeated String Match
- *
- * <p><b>Problem Link:</b> 
- * <a href="https://leetcode.com/problems/repeated-string-match/">LeetCode - Repeated String Match</a>
- *
- * <p><b>Difficulty:</b> Medium
- *
- * <p><b>Topics:</b> String, String Matching
- *
- * ---
+ * Repeated String Match
  *
  * <p><b>Problem Statement:</b><br>
- * Given two strings a and b, return the minimum number of times you should repeat string a 
- * so that string b is a substring of it. If it is impossible for b to be a substring of a 
- * after repeating it, return -1.
+ * Given strings a and b, return minimum number of times string a must be repeated
+ * so that string b is a substring of the repeated string. Return -1 if impossible.
  *
- * <p><b>Example:</b>
- * <pre>
- * Input: a = "abcd", b = "cdabcdab"
- * Output: 3
- * Explanation: "abcdabcdabcd" contains b.
+ * <p><b>Intuition & Approach:</b><br>
+ * Calculate minimum repetitions needed:
+ * - Minimum possible: ceil(b.length / a.length)
+ * - May need one extra repetition if b spans across repeat boundary
+ * - Try minimum repetitions, then minimum + 1
+ * - Check if b is substring using contains()
+ * 
+ * Key insight:
+ * - If b can be found, it will appear within at most (len(b)/len(a)) + 2 repetitions
+ * - Beyond that, pattern will repeat without new possibilities
+ * 
+ * Example: a="abc", b="cabcab"
+ * - Repeat 3 times: "abcabcabc" contains "cabcab" starting at index 2
+ * 
+ * Early termination if b contains characters not in a.
  *
- * Input: a = "a", b = "aa"
- * Output: 2
- * Explanation: "aa" contains b.
- *
- * Input: a = "a", b = "a"
- * Output: 1
- * Explanation: Single "a" contains b.
- *
- * Input: a = "abc", b = "wxyz"
- * Output: -1
- * Explanation: No amount of repetition will create b as substring.
- * </pre>
- *
- * ---
- *
- * <p><b>Intuition:</b><br>
- * Minimum repetitions with boundary considerations:
- * - At minimum, need to repeat a until length >= b.length()
- * - String b might span across repetition boundaries
- * - Check if b exists in current concatenation
- * - If not, try one more repetition (handles boundary cases)
- * - More than one extra repetition is never needed
- * - If b doesn't appear in these cases, it's impossible
- *
- * ---
- *
- * <p><b>Approach:</b>
- * <ol>
- *   <li>Initialize empty StringBuilder and count = 0</li>
- *   <li>Keep appending a until StringBuilder length >= b.length()</li>
- *   <li>Check if current concatenation contains b</li>
- *   <li>If yes, return count</li>
- *   <li>If no, try one more repetition (handles boundary case)</li>
- *   <li>If still not found, return -1 (impossible)</li>
- * </ol>
- *
- * ---
- *
- * <p><b>Time Complexity:</b> O(n × (m + n))<br>
- * Where n = length of a, m = length of b. StringBuilder building O(m), contains() O(n×m).
- *
- * <p><b>Space Complexity:</b> O(n + m)<br>
- * Space for StringBuilder storing repeated string.
- *
- * ---
- *
- * <p><b>Edge Cases:</b>
- * <ul>
- *   <li>b longer than a: Need multiple repetitions</li>
- *   <li>b equals a: Return 1</li>
- *   <li>b spans repetition boundary: One extra check handles this</li>
- *   <li>Characters in b not in a: Return -1</li>
- * </ul>
- *
- * @see <a href="https://leetcode.com/problems/rotate-string/">Rotate String</a>
+ * <p><b>Time Complexity:</b> O(N × M) - N=length(a), M=length(b), substring check
+ * <br><b>Space Complexity:</b> O(N) - String concatenation space
  */
 public class RepeatedStringMatch {
     
     /**
-     * Returns minimum repetitions of a needed for b to be substring.
-     *
-     * @param a the string to repeat
-     * @param b the target substring
-     * @return minimum number of repetitions, or -1 if impossible
+     * Finds minimum repetitions of a to contain b as substring.
      */
     public int repeatedStringMatch(String a, String b) {
-        StringBuilder sb = new StringBuilder();
-        int count = 0;
+        int lenA = a.length();
+        int lenB = b.length();
         
-        // Step 1: Repeat a until length >= b.length()
-        while (sb.length() < b.length()) {
-            sb.append(a);
-            count++;
+        // Calculate minimum repetitions needed
+        int minReps = (lenB + lenA - 1) / lenA;  // Ceiling division
+        
+        StringBuilder repeated = new StringBuilder();
+        
+        // Build string with minimum repetitions
+        for (int i = 0; i < minReps; i++) {
+            repeated.append(a);
         }
         
-        // Step 2: Check if b is substring now
-        if (sb.toString().contains(b)) return count;
+        // Check if b is substring
+        if (repeated.toString().contains(b)) {
+            return minReps;
+        }
         
-        // Step 3: Try one more repetition (handles boundary cases)
-        if (sb.append(a).toString().contains(b)) return ++count;
+        // Try one more repetition (b might span boundary)
+        repeated.append(a);
+        if (repeated.toString().contains(b)) {
+            return minReps + 1;
+        }
         
-        // Step 4: Not possible
+        // Impossible to form b
         return -1;
     }
 }
