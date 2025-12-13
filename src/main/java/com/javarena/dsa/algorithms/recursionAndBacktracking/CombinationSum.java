@@ -3,41 +3,27 @@ package com.javarena.dsa.algorithms.recursionAndBacktracking;
 import java.util.ArrayList;
 import java.util.List;
 
+/**
+ * Combination Sum
+ *
+ * <p><b>Problem Statement:</b><br>
+ * Given an array of distinct integers candidates and a target integer, find all unique combinations
+ * of candidates where the chosen numbers sum up to the target. The same number may be used unlimited times.
+ *
+ * <p><b>Intuition & Approach:</b><br>
+ * - Use backtracking (DFS) to explore all possible combinations
+ * - At each step, two choices: include current number (stay at same index) or skip it (move to next)
+ * - If target becomes 0, found a valid combination - add to result
+ * - If target becomes negative or no more candidates, backtrack
+ * - Since we can reuse numbers, stay at same index when including a number
+ * - Move to next index only when excluding current number
+ *
+ * <p><b>Time Complexity:</b> O(N^(T/M)) - N=candidates, T=target, M=min(candidates)
+ * <br><b>Space Complexity:</b> O(T/M) - Recursion depth and temp combination storage
+ */
 public class CombinationSum {
     /**
-     * Problem Intuition:
-     * ------------------
-     * Given an array of distinct integers (candidates) and a target integer,
-     * find all unique combinations of candidates where the chosen numbers sum up to the target.
-     * A number may be used multiple times.
-     * <p>
-     * Example:
-     * --------
-     * candidates = [2,3,6,7], target = 7
-     * Output: [[2,2,3],[7]]
-     * <p>
-     * Approach:
-     * ---------
-     * 1. Use backtracking (DFS) to explore combinations.
-     * 2. At each step, we have two choices:
-     * - Include the current number (stay on the same index since repetitions are allowed).
-     * - Skip the current number (move to the next index).
-     * 3. If the target becomes 0, we found a valid combination → add it to the answer list.
-     * 4. If target < 0 or we run out of numbers, backtrack.
-     * <p>
-     * Time Complexity:
-     * ----------------
-     * - Worst case: O(2^T) where T = target / min(candidates)
-     * (since each recursive call can branch into "include" or "exclude").
-     * - Each valid combination requires O(k) time to copy into the result,
-     * where k is the length of the combination.
-     * - So overall: O(N^(T/minVal)) in the worst case (exponential).
-     * <p>
-     * Space Complexity:
-     * -----------------
-     * - O(target/minVal) recursion depth (stack).
-     * - O(k) extra space for storing current combination.
-     * - Final result storage depends on the number of valid combinations.
+     * Finds all unique combinations that sum to target.
      */
     private List<List<Integer>> ans;
 

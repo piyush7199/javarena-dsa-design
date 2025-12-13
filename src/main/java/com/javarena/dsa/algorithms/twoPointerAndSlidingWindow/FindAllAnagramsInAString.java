@@ -3,30 +3,28 @@ package com.javarena.dsa.algorithms.twoPointerAndSlidingWindow;
 import java.util.ArrayList;
 import java.util.List;
 
+/**
+ * Find All Anagrams in a String
+ *
+ * <p><b>Problem Statement:</b><br>
+ * Given two strings s and p, return an array of all the start indices of p's anagrams in s.
+ * An anagram is a word formed by rearranging the letters of another word using all original letters exactly once.
+ *
+ * <p><b>Intuition & Approach:</b><br>
+ * - Use sliding window of fixed size (length of p) over string s
+ * - Build frequency array for pattern string p
+ * - Maintain frequency array for current window in s
+ * - Slide window: add new character, remove leftmost character when window exceeds size
+ * - Compare frequency arrays: if they match, substring is an anagram
+ * - Add starting index to result when frequencies match
+ * - Use arrays of size 26 for lowercase English letters
+ *
+ * <p><b>Time Complexity:</b> O(N) - N is length of s, comparing 26 chars is O(1)
+ * <br><b>Space Complexity:</b> O(1) - Frequency arrays are constant size (26)
+ */
 public class FindAllAnagramsInAString {
     /**
-     * Problem: Find all start indices of p's anagrams in string s.
-     * <p>
-     * Intuition:
-     * - An anagram is just a permutation of characters.
-     * - If two strings have the same frequency count of each character (a–z), they are anagrams.
-     * - We can use a sliding window of size = p.length() over s and compare frequency counts.
-     * <p>
-     * Approach:
-     * 1. Build a frequency map for string p (pattern).
-     * 2. Use a sliding window of size m = p.length() over s:
-     * - Add the current character into the window frequency.
-     * - Remove the character that falls out of the window (when i >= m).
-     * - Compare the frequency arrays of window and p.
-     * - If they match → it means substring is an anagram → add index.
-     * 3. Return all valid starting indices.
-     * <p>
-     * Time Complexity:
-     * - O(n * 26) = O(26n) = O(n), where n = length of s.
-     * (Each index requires checking 26 characters in worst case.)
-     * <p>
-     * Space Complexity:
-     * - O(26) = O(1), since frequency arrays are constant size (for lowercase English letters).
+     * Finds all start indices of p's anagrams in s.
      */
     public List<Integer> findAnagrams(String s, String p) {
         // Frequency array for pattern string p

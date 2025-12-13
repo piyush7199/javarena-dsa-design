@@ -3,19 +3,30 @@ package com.javarena.dsa.datastructures.arrays;
 import java.util.ArrayList;
 import java.util.List;
 
+/**
+ * Array Utility Problems
+ *
+ * <p><b>Problem Statement:</b><br>
+ * Collection of common array problems including finding missing/repeating elements and candy distribution.
+ *
+ * <p><b>Intuition & Approach:</b><br>
+ * 1. Missing and Repeating: Use mathematical formulas
+ *    - Calculate expected sum and sum of squares for 1 to n
+ *    - Subtract actual values to get differences
+ *    - Solve equations: missing - repeating and missing² - repeating²
+ *    - Extract both values using algebra
+ * 
+ * 2. Kids with Candies: Simple comparison
+ *    - Find maximum candies any kid has
+ *    - For each kid, check if their candies + extra >= max
+ *
+ * <p><b>Time Complexity:</b> O(N) for both problems
+ * <br><b>Space Complexity:</b> O(1) excluding output
+ */
 public class Arrays {
 
     /**
-     * Finds the missing and repeating elements in an array of size `n` containing
-     * numbers from 1 to n where one number is repeated and one is missing.
-     * <p>
-     * Intuition:
-     * - The sum and sum of squares of 1 to n are known.
-     * - Subtract actual values to get the difference of missing - repeating and missing^2 - repeating^2.
-     * - Use equations to find missing and repeating.
-     * <p>
-     * Time Complexity: O(n)
-     * Space Complexity: O(1)
+     * Finds the missing and repeating elements in array.
      */
     public ArrayList<Integer> findTwoElement(int arr[]) {
         ArrayList<Integer> ans = new ArrayList<>();
@@ -36,6 +47,9 @@ public class Arrays {
         return ans;
     }
 
+    /**
+     * Determines which kids will have greatest number of candies after receiving extra.
+     */
     public List<Boolean> kidsWithCandies(int[] candies, int extraCandies) {
         ArrayList<Boolean> result = new ArrayList<>();
         int max = 0;

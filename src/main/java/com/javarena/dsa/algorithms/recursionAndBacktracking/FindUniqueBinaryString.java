@@ -4,33 +4,30 @@ import java.util.Arrays;
 import java.util.HashSet;
 import java.util.Set;
 
+/**
+ * Find Unique Binary String
+ *
+ * <p><b>Problem Statement:</b><br>
+ * Given an array of binary strings nums of length n, return a binary string of length n
+ * that does not appear in nums.
+ *
+ * <p><b>Intuition & Approach:</b><br>
+ * Approach 1 (Backtracking):
+ * - Store all existing strings in a HashSet for O(1) lookup
+ * - Generate binary strings recursively, trying '0' and '1' at each position
+ * - Return first string not present in the set
+ *
+ * Approach 2 (Cantor's Diagonalization - Optimal):
+ * - For each index i, flip the i-th character of nums[i]
+ * - This guarantees the result differs from each input string at position i
+ * - Much faster and elegant solution
+ *
+ * <p><b>Time Complexity:</b> O(2^N * N) for backtracking, O(N) for diagonalization
+ * <br><b>Space Complexity:</b> O(N) for both approaches
+ */
 public class FindUniqueBinaryString {
     /**
-     * Solution to find a unique binary string of length n
-     * that is not present in the given array nums.
-     *
-     * <p>There are two approaches explained below:
-     *
-     * <h2>Approach 1: Backtracking (Brute Force)</h2>
-     * <ul>
-     *   <li>Use a HashSet to store all existing binary strings for O(1) lookups.</li>
-     *   <li>Generate all possible binary strings of length n using recursion.</li>
-     *   <li>At each index, try placing '0' and '1'.</li>
-     *   <li>Once a generated string is not in the set, return it as the answer.</li>
-     * </ul>
-     *
-     * <b>Time Complexity:</b> O(2^n * n)
-     * <ul>
-     *   <li>There are 2^n possible binary strings of length n.</li>
-     *   <li>Each string takes O(n) to generate and check.</li>
-     * </ul>
-     *
-     * <b>Space Complexity:</b> O(2^n + n)
-     * <ul>
-     *   <li>O(2^n) for the recursion call stack in the worst case.</li>
-     *   <li>O(n) for the character array used to build strings.</li>
-     *   <li>O(n) extra for the HashSet to store input strings.</li>
-     * </ul>
+     * Solution using backtracking to find a unique binary string.
      */
     public String findDifferentBinaryString(String[] nums) {
         Set<String> st = new HashSet<>(Arrays.asList(nums));
@@ -75,22 +72,7 @@ public class FindUniqueBinaryString {
     }
 
     /**
-     * <h2>Approach 2: Cantor's Diagonalization (Optimal)</h2>
-     * <ul>
-     *   <li>For each index i, flip the i-th character of nums[i].</li>
-     *   <li>This guarantees the constructed string differs from each string at index i.</li>
-     *   <li>Thus, the generated string cannot match any string in nums.</li>
-     * </ul>
-     *
-     * <b>Time Complexity:</b> O(n)
-     * <ul>
-     *   <li>We loop through the array once and build the result string in O(n).</li>
-     * </ul>
-     *
-     * <b>Space Complexity:</b> O(n)
-     * <ul>
-     *   <li>O(n) for the StringBuilder used to construct the result.</li>
-     * </ul>
+     * Optimal solution using Cantor's Diagonalization.
      */
     public String findDifferentBinaryStringEffi(String[] nums) {
         StringBuilder ans = new StringBuilder();

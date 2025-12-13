@@ -1,20 +1,25 @@
 package com.javarena.dsa.algorithms.recursionAndBacktracking;
 
+/**
+ * Power of Three
+ *
+ * <p><b>Problem Statement:</b><br>
+ * Given an integer n, return true if it is a power of three. Otherwise, return false.
+ * An integer n is a power of three if there exists an integer x such that n == 3^x.
+ *
+ * <p><b>Intuition & Approach:</b><br>
+ * - A number is a power of three if dividing by 3 repeatedly results in exactly 1
+ * - Iterative: Keep dividing by 3 while divisible, check if final result is 1
+ * - Recursive: Base cases - if n==1 return true, if n<=0 return false, if n%3!=0 return false
+ * - Otherwise recursively check n/3
+ * - Handle edge cases: negative numbers and 0 are not powers of three
+ *
+ * <p><b>Time Complexity:</b> O(log₃ N) - Divide by 3 at each step
+ * <br><b>Space Complexity:</b> O(1) for iterative, O(log₃ N) for recursive (stack)
+ */
 public class PowerOfThree {
     /**
-     * Determines if a given integer is a power of three using an iterative approach.
-     *
-     * <p><b>Intuition:</b>
-     * A number is a power of three if it can be divided by 3 repeatedly until it becomes exactly 1,
-     * without leaving any remainder in the process.
-     *
-     * <p><b>Approach:</b>
-     * 1. Immediately return {@code false} if {@code n} is non-positive.
-     * 2. While {@code n} is divisible by 3, divide it by 3.
-     * 3. After the loop, check if {@code n} is exactly 1.
-     *
-     * <p><b>Time Complexity:</b> O(log₃ n) — Each division by 3 reduces the problem size by a factor of 3.
-     * <b>Space Complexity:</b> O(1) — Constant extra memory is used.
+     * Iterative approach to check if number is power of three.
      */
     public boolean isPowerOfThree(int n) {
         if (n <= 0) {

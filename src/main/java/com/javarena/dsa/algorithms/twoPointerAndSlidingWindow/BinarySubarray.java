@@ -1,18 +1,26 @@
 package com.javarena.dsa.algorithms.twoPointerAndSlidingWindow;
 
+/**
+ * Binary Subarrays With Sum
+ *
+ * <p><b>Problem Statement:</b><br>
+ * Given a binary array nums and an integer goal, return the number of non-empty subarrays with sum equal to goal.
+ *
+ * <p><b>Intuition & Approach:</b><br>
+ * - Use sliding window technique to count subarrays
+ * - Key insight: count(sum = goal) = count(sum ≤ goal) - count(sum ≤ goal-1)
+ * - For "at most k sum": use sliding window with two pointers
+ * - Expand right pointer, shrink left pointer when sum exceeds k
+ * - For each valid window, all subarrays ending at right are valid: (right - left + 1)
+ * - Subtract the two counts to get exact sum = goal
+ *
+ * <p><b>Time Complexity:</b> O(N) - Two passes through array
+ * <br><b>Space Complexity:</b> O(1) - Constant extra space
+ */
 public class BinarySubarray {
 
     /**
-     * Counts the number of subarrays with sum exactly equal to `goal`.
-     * <p>
-     * Intuition:
-     * - Similar to counting number of subarrays with exactly k odd elements,
-     * but this time count subarrays with sum equal to `goal` using sliding window
-     * for at most `goal` and at most `goal - 1`.
-     * <p>
-     * <p>
-     * Time Complexity: O(n)
-     * Space Complexity: O(1)
+     * Counts the number of subarrays with sum exactly equal to goal.
      */
     public int numSubarraysWithSum(int[] nums, int goal) {
         return freqLessThanEquals(nums, goal) - freqLessThanEquals(nums, goal - 1);

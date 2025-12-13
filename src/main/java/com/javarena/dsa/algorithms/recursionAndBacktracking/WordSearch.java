@@ -1,24 +1,32 @@
 package com.javarena.dsa.algorithms.recursionAndBacktracking;
 
+/**
+ * Word Search
+ *
+ * <p><b>Problem Statement:</b><br>
+ * Given an m x n grid of characters board and a string word, return true if word exists in the grid.
+ * The word can be constructed from letters of sequentially adjacent cells, where adjacent cells are
+ * horizontally or vertically neighboring. The same letter cell may not be used more than once.
+ *
+ * <p><b>Intuition & Approach:</b><br>
+ * - Use backtracking with DFS to explore all possible paths from each cell
+ * - Start from each cell and try to match the word character by character
+ * - Explore all 4 directions (up, down, left, right) from current cell
+ * - Mark visited cells temporarily (set to '.') to avoid reuse in same path
+ * - Backtrack by restoring the cell value when returning from recursion
+ * - If any path successfully matches entire word, return true
+ *
+ * <p><b>Time Complexity:</b> O(N * M * 4^L) - N=rows, M=columns, L=word length
+ * <br><b>Space Complexity:</b> O(L) - Recursion stack depth equals word length
+ */
 public class WordSearch {
 
     /**
-     * Checks if a given word exists in the board by performing DFS-based backtracking.
-     * <p>
-     * Intuition:
-     * - Start from each cell in the grid.
-     * - Use DFS to explore all 4 directions (up, down, left, right) from the current cell,
-     * matching each character of the word.
-     * - Mark the cell as visited temporarily (e.g., by setting it to '.') to avoid revisiting in the same path.
-     * - Backtrack if the current path does not lead to a solution.
-     * <p>
-     * Time Complexity: O(N * M * 4^L)
-     * - N = number of rows, M = number of columns, L = length of the word.
-     * - For each cell, we may explore up to 4 directions at each step (DFS depth = L).
-     * <p>
-     * Space Complexity: O(L)
-     * - Stack space used by recursion in the worst case (depth of the DFS = length of the word).
-     * - In-place marking avoids extra visited matrix.
+     * Main method to check if word exists in board.
+     *
+     * @param board 2D character grid
+     * @param word word to search for
+     * @return true if word exists in board
      */
     public boolean exist(char[][] board, String word) {
         int n = board.length;
@@ -33,6 +41,16 @@ public class WordSearch {
         return false;
     }
 
+    /**
+     * Helper method for DFS backtracking.
+     *
+     * @param board character grid
+     * @param word target word
+     * @param i current row
+     * @param j current column
+     * @param wInd current word index
+     * @return true if word can be formed from this position
+     */
     private boolean wordSearcher(char[][] board, String word, int i, int j, int wInd) {
         if (wInd == word.length()) {
             return true;

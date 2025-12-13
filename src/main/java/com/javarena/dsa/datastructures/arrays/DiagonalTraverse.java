@@ -1,37 +1,26 @@
 package com.javarena.dsa.datastructures.arrays;
 
+/**
+ * Diagonal Traverse
+ *
+ * <p><b>Problem Statement:</b><br>
+ * Given an m x n matrix mat, return an array of all elements of the matrix in diagonal order.
+ * The diagonal traversal alternates direction: one goes bottom-left to top-right, next goes top-right to bottom-left.
+ *
+ * <p><b>Intuition & Approach:</b><br>
+ * - Visit elements where (row + col) is constant to form diagonals
+ * - Start from top row (0,0) to (0, m-1), traverse each diagonal downward (i++, j--)
+ * - Continue from rightmost column (m-1, 1) to (m-1, n-1)
+ * - Alternate direction for each diagonal using a reverse flag
+ * - Collect elements in each diagonal, reverse when needed
+ * - Use helper methods to traverse diagonal and reverse segments
+ *
+ * <p><b>Time Complexity:</b> O(N * M) - Visit each element once, reversing is O(N+M) total
+ * <br><b>Space Complexity:</b> O(1) - Constant extra space excluding output array
+ */
 public class DiagonalTraverse {
     /**
-     * Problem: Diagonal Traverse (LeetCode 498)
-     * <p>
-     * Intuition:
-     * -----------
-     * We want to visit all elements of the matrix in a diagonal order:
-     * - Start at the top-left (0,0).
-     * - Each diagonal is formed by elements where (row + col) is constant.
-     * - The tricky part is that the traversal alternates direction:
-     * * One diagonal goes from bottom-left to top-right.
-     * * The next diagonal goes from top-right to bottom-left.
-     * <p>
-     * Approach:
-     * -----------
-     * 1. Start from the top row (row = 0, col = 0 → m-1).
-     * - For each starting cell, traverse the diagonal downward (i++, j--).
-     * 2. Then continue from the rightmost column (col = m-1, row = 1 → n-1).
-     * - Again traverse diagonals downward (i++, j--).
-     * 3. Each diagonal is collected in order.
-     * 4. To maintain the zig-zag pattern:
-     * - Use a boolean `reverse` flag to decide whether to reverse the diagonal’s order.
-     * - Reverse the collected segment of `ans` when needed.
-     * <p>
-     * Complexity:
-     * ------------
-     * - Time Complexity: O(n * m)
-     * * Each element is visited exactly once.
-     * * Reversing diagonals costs at most O(n+m) total across the run (still linear).
-     * <p>
-     * - Space Complexity: O(1) extra
-     * * Aside from the output array, we use only constant extra variables.
+     * Returns diagonal traversal of matrix.
      */
     public int[] findDiagonalOrder(int[][] mat) {
         int n = mat.length;

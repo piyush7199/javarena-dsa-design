@@ -1,33 +1,27 @@
 package com.javarena.dsa.algorithms.twoPointerAndSlidingWindow;
 
+/**
+ * Longest Subarray of 1's After Deleting One Element
+ *
+ * <p><b>Problem Statement:</b><br>
+ * Given a binary array nums, return the length of the longest contiguous subarray of 1's
+ * after deleting exactly one element. You must delete one element.
+ *
+ * <p><b>Intuition & Approach:</b><br>
+ * - Since we must delete exactly one element, find longest subarray with at most one 0
+ * - Use sliding window with two pointers (left and right)
+ * - Track position of the last 0 seen in current window
+ * - When encountering first 0, mark its position and continue expanding
+ * - When encountering second 0, update max length (minus the deleted element)
+ * - Shrink window by moving left pointer past the first 0
+ * - Final answer excludes one element (the deleted one)
+ *
+ * <p><b>Time Complexity:</b> O(N) - Each element visited at most twice
+ * <br><b>Space Complexity:</b> O(1) - Only a few integer variables
+ */
 public class LongestSubarrayOfOneAfterDeletingOneEle {
     /**
-     * Problem: Given a binary array `nums`, return the length of the longest subarray
-     * of 1's after deleting exactly one element (which must be deleted).
-     * <p>
-     * Intuition:
-     * - Since we must delete one element, the problem reduces to finding the longest subarray
-     * of 1's allowing at most one 0 inside it.
-     * - We use a sliding window (two pointers `l` and `r`) to maintain a valid window
-     * where at most one 0 is included.
-     * - If we encounter a second 0, we shrink the window from the left until we remove the first 0.
-     * <p>
-     * Approach:
-     * - Maintain two pointers: `l` (left boundary) and `r` (right boundary).
-     * - Use variable `d` to record the index of the last 0 in the current window.
-     * - Expand `r` forward:
-     * - If `nums[r]` is 1, simply continue expanding.
-     * - If `nums[r]` is 0 and no zero has been used (`d == -1`), mark its position.
-     * - If a second zero is encountered, update max length (excluding one zero),
-     * then shrink window by moving `l` past the first zero (`d + 1`).
-     * - Finally, compute the maximum subarray length by considering the last window.
-     * <p>
-     * Time Complexity: O(n)
-     * - Each element is visited at most twice (once by `r`, once by `l`).
-     * <p>
-     * Space Complexity: O(1)
-     * - Uses only a few integer variables, independent of input size.
-
+     * Returns length of longest subarray of 1's after deleting exactly one element.
      */
     public int longestSubarray(int[] nums) {
         int l = 0;       // left pointer of the window

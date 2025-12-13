@@ -1,5 +1,21 @@
 package com.javarena.dsa.algorithms.recursionAndBacktracking;
 
+/**
+ * Pow(x, n)
+ *
+ * <p><b>Problem Statement:</b><br>
+ * Implement pow(x, n), which calculates x raised to the power n (i.e., x^n).
+ *
+ * <p><b>Intuition & Approach:</b><br>
+ * - Use fast exponentiation (divide and conquer) to compute power efficiently
+ * - Key insight: x^n = (x^2)^(n/2) if n is even, x^n = x * x^(n-1) if n is odd
+ * - Handle negative exponents by inverting x and making n positive
+ * - Iterative approach: repeatedly square x and halve n, multiply result when n is odd
+ * - Use long to handle Integer.MIN_VALUE overflow
+ *
+ * <p><b>Time Complexity:</b> O(log N) - Divide problem size by 2 at each step
+ * <br><b>Space Complexity:</b> O(log N) for recursive, O(1) for iterative
+ */
 public class MyPow {
 
 

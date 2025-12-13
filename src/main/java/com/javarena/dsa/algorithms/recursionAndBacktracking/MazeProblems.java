@@ -3,20 +3,29 @@ package com.javarena.dsa.algorithms.recursionAndBacktracking;
 import java.util.ArrayList;
 import java.util.Collections;
 
+/**
+ * Rat in a Maze
+ *
+ * <p><b>Problem Statement:</b><br>
+ * Given a maze represented as an n×n grid where 1 represents an open cell and 0 represents a blocked cell,
+ * find all possible paths for a rat to move from top-left (0,0) to bottom-right (n-1,n-1).
+ * The rat can move in four directions: Down (D), Right (R), Up (U), Left (L).
+ *
+ * <p><b>Intuition & Approach:</b><br>
+ * - Use backtracking to explore all possible paths from source to destination
+ * - At each cell, try all four directions (D, R, U, L) if the move is valid
+ * - A move is valid if: cell is within bounds, not blocked (value = 1), and not already visited
+ * - Mark cell as visited before exploring, unmark after (backtracking)
+ * - When destination is reached, add the path string to result
+ * - Sort final paths lexicographically
+ *
+ * <p><b>Time Complexity:</b> O(4^(N²)) - Each cell can try 4 directions
+ * <br><b>Space Complexity:</b> O(N²) - Visited array and recursion stack
+ */
 public class MazeProblems {
 
     /**
      * Finds all possible paths for a rat to reach the destination in a maze.
-     * <p>
-     * Intuition:
-     * - This is a standard backtracking problem where we explore all possible paths
-     * from the top-left to bottom-right cell in a grid (maze) with only valid moves.
-     * - A move is valid if the cell is within bounds, unvisited, and not blocked (`1`).
-     * - At each step, we try all four directions (Down, Right, Up, Left) recursively.
-     * - If we reach the destination, we record the path string.
-     * <p>
-     * Time Complexity: O(4^(n²)) in the worst case (every cell tries 4 directions)
-     * Space Complexity: O(n²) due to the visited array and recursion stack
      */
     public ArrayList<String> ratInMaze(int[][] maze) {
         // code here

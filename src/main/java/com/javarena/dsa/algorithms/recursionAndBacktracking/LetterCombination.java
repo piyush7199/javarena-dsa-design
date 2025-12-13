@@ -4,10 +4,28 @@ import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 
+/**
+ * Letter Combinations of a Phone Number
+ *
+ * <p><b>Problem Statement:</b><br>
+ * Given a string containing digits from 2-9 inclusive, return all possible letter combinations
+ * that the number could represent. The mapping of digits to letters (similar to telephone buttons) is:
+ * 2-abc, 3-def, 4-ghi, 5-jkl, 6-mno, 7-pqrs, 8-tuv, 9-wxyz
+ *
+ * <p><b>Intuition & Approach:</b><br>
+ * - Use backtracking to explore all possible combinations character by character
+ * - Create a mapping of digits to their corresponding characters (like phone keypad)
+ * - For each digit in the input, try all possible characters it maps to
+ * - Use StringBuilder for efficient string building
+ * - When all digits are processed, add the combination to result
+ * - Backtrack by removing last character to explore other possibilities
+ *
+ * <p><b>Time Complexity:</b> O(4^N) - N is length of digits, each digit maps to at most 4 characters
+ * <br><b>Space Complexity:</b> O(N) - Recursion stack depth
+ */
 public class LetterCombination {
     /**
-     * Given a string containing digits from 2-9 inclusive, returns all possible letter combinations
-     * that the number could represent using a mapping similar to the telephone buttons.
+     * Returns all possible letter combinations that the number could represent.
      * <p>
      * Intuition:
      * - Use a backtracking approach to explore every possible character combination.

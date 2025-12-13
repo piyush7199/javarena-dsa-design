@@ -1,24 +1,29 @@
 package com.javarena.dsa.algorithms.recursionAndBacktracking;
 
+/**
+ * Sudoku Solver
+ *
+ * <p><b>Problem Statement:</b><br>
+ * Fill empty cells (marked as '.') in a 9×9 Sudoku board such that each row, column, and 3×3 sub-box
+ * contains digits 1-9 without repetition.
+ *
+ * <p><b>Intuition & Approach:</b><br>
+ * - Use backtracking to fill empty cells one by one
+ * - For each empty cell, try placing digits 1-9
+ * - Check if placement is valid: digit not in same row, column, or 3×3 box
+ * - If valid, place digit and recursively solve remaining board
+ * - If recursion succeeds, return true (puzzle solved)
+ * - If recursion fails, backtrack by resetting cell to '.' and try next digit
+ * - If no digit works, return false (triggers backtracking in previous call)
+ * - Modify board in-place
+ *
+ * <p><b>Time Complexity:</b> O(9^N) - N is number of empty cells, try up to 9 digits each
+ * <br><b>Space Complexity:</b> O(1) - In-place modification, O(N) recursion stack
+ */
 public class SudokuSolver {
 
     /**
-     * Solves the Sudoku puzzle by filling the empty cells using backtracking.
-     * <p>
-     * Intuition:
-     * - This is a classic backtracking problem where for each empty cell,
-     * we try placing digits from 1 to 9.
-     * - For each digit, we check whether placing it maintains Sudoku validity
-     * (i.e., the digit is not repeated in the current row, column, or 3x3 box).
-     * - If valid, we proceed recursively to solve the rest of the board.
-     * - If any choice leads to a dead-end, we backtrack (undo the choice).
-     * <p>
-     * Time Complexity: O(9^(n)), where n is the number of empty cells.
-     * - For each empty cell, we try up to 9 digits, so it's exponential in worst case.
-     * <p>
-     * Space Complexity: O(1)
-     * - The board is modified in-place.
-     * - No extra space other than recursion stack (which can go up to 81 levels).
+     * Solves the Sudoku puzzle using backtracking.
      */
     public void solveSudoku(char[][] board) {
         sudokuHelper(board, 0, 0);

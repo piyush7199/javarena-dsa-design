@@ -1,11 +1,26 @@
 package com.javarena.dsa.algorithms.recursionAndBacktracking;
 
+/**
+ * Count Number of Maximum Bitwise-OR Subsets
+ *
+ * <p><b>Problem Statement:</b><br>
+ * Given an integer array nums, find the maximum possible bitwise OR of a subset of nums
+ * and return the number of different non-empty subsets with the maximum bitwise OR.
+ *
+ * <p><b>Intuition & Approach:</b><br>
+ * - Maximum bitwise OR is achieved by ORing all elements together
+ * - Once we know the maximum OR value, count all subsets that produce it using backtracking
+ * - For each element, we have two choices: include it or exclude it
+ * - Optimization: If current OR equals max, all remaining elements can be included/excluded,
+ *   so we can calculate remaining combinations as 2^(remaining elements)
+ *
+ * <p><b>Time Complexity:</b> O(2^N) - Explore all possible subsets in worst case
+ * <br><b>Space Complexity:</b> O(N) - Recursion stack depth
+ */
 public class CountMaxBitOr {
 
     /**
-     * Counts the number of subsets from the given array `nums` such that the
-     * bitwise OR of the elements in the subset is equal to the maximum bitwise OR
-     * possible from any subset of the array.
+     * Counts the number of subsets with maximum bitwise OR.
      *
      * <p><strong>Initialization:</strong>
      * <ul>

@@ -2,16 +2,28 @@ package com.javarena.dsa.datastructures.arrays;
 
 import java.util.HashMap;
 
+/**
+ * Contiguous Array
+ *
+ * <p><b>Problem Statement:</b><br>
+ * Given a binary array nums, find the maximum length of a contiguous subarray with an equal number of 0 and 1.
+ *
+ * <p><b>Intuition & Approach:</b><br>
+ * Optimal Solution (Prefix Sum + HashMap):
+ * - Transform problem: treat 0 as -1 and 1 as +1
+ * - Now find longest subarray with sum = 0
+ * - Use HashMap to store first occurrence of each running sum
+ * - If same sum appears again, subarray between them has equal 0s and 1s
+ * - Track maximum length found
+ * 
+ * Brute Force: Check all subarrays, count 0s and 1s (O(N²))
+ *
+ * <p><b>Time Complexity:</b> O(N) for optimal, O(N²) for brute force
+ * <br><b>Space Complexity:</b> O(N) for HashMap, O(1) for brute force
+ */
 public class ContiguousArray {
     /**
-     * Brute Force Solution
-     * <p>
-     * Intuition:
-     * - Check every possible subarray and count the number of 0s and 1s.
-     * - If they are equal, update the maximum length.
-     * <p>
-     * Time Complexity: O(n^2) -> Two nested loops to consider all subarrays.
-     * Space Complexity: O(1) -> Only variables used for counting.
+     * Brute Force Solution - checks all subarrays.
      */
     public int findMaxLengthBruteForce(int[] nums) {
         int maxLength = 0;
@@ -32,19 +44,7 @@ public class ContiguousArray {
     }
 
     /**
-     * Optimal Solution: Prefix Sum + HashMap
-     * <p>
-     * Intuition:
-     * - Treat 0 as -1 and 1 as +1.
-     * - Now the problem becomes finding the longest subarray with sum = 0.
-     * - Use a HashMap to store the first occurrence of each running sum.
-     * - If the same sum appears again, it means the subarray between them has equal 0s and 1s.
-     * <p>
-     * Time Complexity: O(n)
-     * -> Single pass through the array, each lookup in HashMap is O(1).
-     * <p>
-     * Space Complexity: O(n)
-     * -> HashMap stores at most n unique sums.
+     * Optimal Solution using prefix sum and HashMap.
      */
     public int findMaxLength(int[] nums) {
         HashMap<Integer, Integer> map = new HashMap<>();

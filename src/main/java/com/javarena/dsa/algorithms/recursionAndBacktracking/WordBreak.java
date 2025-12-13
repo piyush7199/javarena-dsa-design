@@ -5,18 +5,29 @@ import java.util.HashSet;
 import java.util.List;
 import java.util.Set;
 
+/**
+ * Word Break
+ *
+ * <p><b>Problem Statement:</b><br>
+ * Given a string s and a dictionary of strings wordDict, determine if s can be segmented into
+ * a space-separated sequence of one or more dictionary words.
+ *
+ * <p><b>Intuition & Approach:</b><br>
+ * - Use backtracking to try all possible ways to split the string
+ * - At each index, try all substrings starting from that index
+ * - If substring exists in dictionary, recursively check remaining string
+ * - If we reach end of string, we found a valid segmentation
+ * - Optimization: Use memoization (DP) to avoid recomputing same subproblems
+ * - dp[i] stores whether substring from index i to end can be segmented
+ * - Convert wordDict to HashSet for O(1) lookup
+ *
+ * <p><b>Time Complexity:</b> O(N²) with memoization, O(2^N) without
+ * <br><b>Space Complexity:</b> O(N) - DP array and recursion stack
+ */
 public class WordBreak {
 
     /**
-     * Backtracking approach for the Word Break problem (inefficient for large inputs).
-     * <p>
-     * Intuition:
-     * - Try every possible substring starting from index `i`.
-     * - If the substring exists in the dictionary, recursively check the remaining string.
-     * - If the end of the string is reached, a valid segmentation is found.
-     * <p>
-     * Time Complexity: O(2^n) — each index can either be split or not, leading to exponential time.
-     * Space Complexity: O(n) — recursion stack depth in the worst case.
+     * Backtracking approach (inefficient for large inputs).
      */
     public boolean wordBreak1(String s, List<String> wordDict) {
         Set<String> wordSet = new HashSet<>(wordDict);
