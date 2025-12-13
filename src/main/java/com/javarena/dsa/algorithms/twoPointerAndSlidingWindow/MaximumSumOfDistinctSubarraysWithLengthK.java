@@ -1,64 +1,64 @@
 package com.javarena.dsa.algorithms.twoPointerAndSlidingWindow;
 
+/**
+ * Maximum Sum of Distinct Subarrays With Length K
+ *
+ * <p><b>Problem Statement:</b><br>
+ * Given integer array nums and integer k, return maximum possible sum of
+ * subarray of size k with all distinct elements. Return 0 if no such subarray exists.
+ *
+ * <p><b>Intuition & Approach:</b><br>
+ * Fixed-size sliding window with distinct element tracking:
+ * - Use frequency array to track occurrences in window
+ * - Maintain count of distinct elements
+ * - Slide window of size k across array
+ * - When window has k distinct elements: update max sum
+ * 
+ * Window management:
+ * - Add new element: update frequency, check if new distinct
+ * - Remove old element: update frequency, check if no longer distinct
+ * - Track running sum of current window
+ * 
+ * Key insight: Only consider windows with all k elements distinct.
+ *
+ * <p><b>Time Complexity:</b> O(N) - Single pass with fixed window
+ * <br><b>Space Complexity:</b> O(U) - U is max value in nums (frequency array)
+ */
 public class MaximumSumOfDistinctSubarraysWithLengthK {
+    
     /**
-     * Finds the maximum possible sum of a subarray of size `k` such that all elements
-     * in that subarray are distinct.
-     * <p>
-     * Intuition:
-     * - We use a sliding window of size `k` to maintain the current subarray.
-     * - We track the sum of elements and the count of distinct elements inside the window.
-     * - To efficiently check distinct elements, we use a frequency array `temp` where
-     * temp[x] represents how many times `x` occurs in the current window.
-     * - As we slide the window, we update:
-     * - The sum of elements.
-     * - The distinct element count (`dis`).
-     * - Whenever the number of distinct elements equals `k`, it means the window has all
-     * unique elements, so we check and update the maximum sum.
-     * <p>
-     * Time Complexity:
-     * - O(n), where n = length of nums.
-     * Each element is processed once when entering the window and once when leaving.
-     * <p>
-     * Space Complexity:
-     * - O(U), where U = maximum value in nums (bounded by 1,000,000 as given in problem).
-     * We use a frequency array `temp` of size 1,000,001.
+     * Finds maximum sum of subarray of size k with all distinct elements.
      */
     public long maximumSubarraySum(int[] nums, int k) {
-        long sum = 0;   // running sum of elements in the current window
-        long max = 0;   // maximum sum found so far
-        int dis = 0;    // number of distinct elements in the current window
-
-        // frequency array to track occurrences of numbers in the window
-        int[] temp = new int[1000001];
-
+        long sum = 0;
+        long maxSum = 0;
+        int distinctCount = 0;
+        int[] freq = new int[100001];  // Frequency array
+        
         for (int i = 0; i < nums.length; i++) {
-            if (i < k) {
-                // Expanding the initial window of size k
-                if (temp[nums[i]] == 0) // new distinct element
-                    dis++;
-                temp[nums[i]]++;        // increment frequency
-                sum += nums[i];         // add to running sum
-            } else {
-                // Sliding the window: remove the outgoing element
-                temp[nums[i - k]]--;    // decrement frequency of outgoing element
-                if (temp[nums[i - k]] == 0)
-                    dis--;              // lost a distinct element
-                sum -= nums[i - k];     // subtract outgoing element from sum
-
-                // Add the new incoming element
-                temp[nums[i]]++;
-                if (temp[nums[i]] == 1) // if it's a new distinct element
-                    dis++;
-                sum += nums[i];
+            // Add new element to window
+            if (freq[nums[i]] == 0) {
+                distinctCount++;
             }
-
-            // If window has exactly k distinct elements, check max sum
-            if (dis == k)
-                max = Math.max(sum, max);
+            freq[nums[i]]++;
+            sum += nums[i];
+            
+            // Remove element from window if size > k
+            if (i >= k) {
+                int removed = nums[i - k];
+                sum -= removed;
+                freq[removed]--;
+                if (freq[removed] == 0) {
+                    distinctCount--;
+                }
+            }
+            
+            // Update max if window has all distinct elements
+            if (i >= k - 1 && distinctCount == k) {
+                maxSum = Math.max(maxSum, sum);
+            }
         }
-
-        return max;
+        
+        return maxSum;
     }
-
 }

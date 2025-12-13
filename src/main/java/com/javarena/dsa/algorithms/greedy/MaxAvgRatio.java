@@ -3,93 +3,69 @@ package com.javarena.dsa.algorithms.greedy;
 import java.util.PriorityQueue;
 
 /**
- * Intuition:
- * -----------
- * We are given several classes, each with a number of passing students (i)
- * and a total number of students (j). The pass ratio for a class is i/j.
- * <p>
- * When we add one more passing student, the new ratio becomes (i+1)/(j+1).
- * The important observation is that we should always assign an extra student
- * to the class where this operation yields the **largest gain**:
- * <p>
- * gain(i, j) = (i+1)/(j+1) - i/j
- * <p>
- * By repeatedly applying this greedy choice, we ensure that every student
- * contributes maximally to the overall average.
- * <p>
- * Approach:
- * -----------
- * 1. Use a max-heap (PriorityQueue) ordered by "gain" instead of current avg.
- * 2. For each class, compute its initial gain and push it into the heap.
- * 3. While we still have extra students:
- * - Pop the class with the maximum gain.
- * - Add one passing student to it (i++, j++).
- * - Push it back with its updated gain.
- * 4. Finally, compute the average ratio across all classes.
- * <p>
- * Time Complexity:
- * - Building the heap: O(n log n), where n = number of classes.
- * - For each extra student, we do one poll and one offer: O(extraStudents * log n).
- * - Final accumulation: O(n).
- * - Total: O((n + extraStudents) * log n).
- * <p>
- * Space Complexity:
- * - PriorityQueue holds all n classes → O(n).
+ * Maximum Average Pass Ratio
+ *
+ * <p><b>Problem Statement:</b><br>
+ * Given classes with (pass, total) students and extraStudents to assign,
+ * maximize average pass ratio across all classes by assigning students optimally.
+ *
+ * <p><b>Intuition & Approach:</b><br>
+ * Greedy with max-heap on gain:
+ * - Gain of adding student to class (i,j): (i+1)/(j+1) - i/j
+ * - Always assign to class with maximum gain (greedy choice)
+ * - Gain decreases as students added, so recalculate each time
+ * 
+ * Strategy:
+ * 1. Build max-heap ordered by gain function
+ * 2. For each extra student:
+ *    - Pop class with max gain
+ *    - Add one student (pass++, total++)
+ *    - Recalculate gain and push back
+ * 3. Calculate final average of all pass ratios
+ * 
+ * Greedy works: Maximum gain choice always optimal for overall average.
+ *
+ * <p><b>Time Complexity:</b> O((N + E) log N) - N classes, E extra students
+ * <br><b>Space Complexity:</b> O(N) - Priority queue storage
  */
 public class MaxAvgRatio {
-
+    
     /**
-     * Node representing a class with i passing students and j total students
+     * Maximizes average pass ratio using greedy heap approach.
      */
-    static class Node {
-        int i, j;
-
-        Node(int i, int j) {
-            this.i = i;
-            this.j = j;
-        }
-
-        /**
-         * Current average ratio
-         */
-        double avg() {
-            return (double) i / j;
-        }
-
-        /**
-         * Gain if we add one more passing student
-         */
-        double gain() {
-            return ((double) (i + 1) / (j + 1)) - ((double) i / j);
-        }
-    }
-
     public double maxAverageRatio(int[][] classes, int extraStudents) {
-        // Max-heap ordered by gain
-        PriorityQueue<Node> pq = new PriorityQueue<>(
-                (a, b) -> Double.compare(b.gain(), a.gain())
+        PriorityQueue<double[]> maxHeap = new PriorityQueue<>(
+            (a, b) -> Double.compare(b[2], a[2])  // Sort by gain descending
         );
-
-        // Insert all classes into the heap
-        for (int[] arr : classes) {
-            pq.offer(new Node(arr[0], arr[1]));
+        
+        for (int[] c : classes) {
+            int pass = c[0];
+            int total = c[1];
+            double gain = calculateGain(pass, total);
+            maxHeap.offer(new double[]{pass, total, gain});
         }
-
-        // Assign extra students one by one
-        for (int k = 0; k < extraStudents; k++) {
-            Node node = pq.poll();   // take the class with max gain
-            node.i++;                // add one passing student
-            node.j++;                // total students also increases
-            pq.offer(node);          // push it back with updated gain
+        
+        for (int i = 0; i < extraStudents; i++) {
+            double[] best = maxHeap.poll();
+            int pass = (int) best[0] + 1;
+            int total = (int) best[1] + 1;
+            double newGain = calculateGain(pass, total);
+            maxHeap.offer(new double[]{pass, total, newGain});
         }
-
-        // Compute final average ratio
-        double ans = 0;
-        int n = pq.size();
-        while (!pq.isEmpty()) {
-            ans += pq.poll().avg();
+        
+        double totalRatio = 0.0;
+        while (!maxHeap.isEmpty()) {
+            double[] c = maxHeap.poll();
+            totalRatio += c[0] / c[1];
         }
-
-        return ans / n;
+        
+        return totalRatio / classes.length;
+    }
+    
+    /**
+     * Calculates gain from adding one student to class (pass, total).
+     */
+    private double calculateGain(int pass, int total) {
+        return ((double)(pass + 1) / (total + 1)) - ((double) pass / total);
     }
 }

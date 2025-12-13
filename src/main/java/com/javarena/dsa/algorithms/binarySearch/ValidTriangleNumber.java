@@ -3,93 +3,41 @@ package com.javarena.dsa.algorithms.binarySearch;
 import java.util.Arrays;
 
 /**
- * 611. Valid Triangle Number
- *
- * <p><b>Problem Link:</b> 
- * <a href="https://leetcode.com/problems/valid-triangle-number/">LeetCode - Valid Triangle Number</a>
- *
- * <p><b>Difficulty:</b> Medium
- *
- * <p><b>Topics:</b> Array, Two Pointers, Binary Search, Greedy, Sorting
- *
- * ---
+ * Valid Triangle Number
  *
  * <p><b>Problem Statement:</b><br>
- * Given integer array nums, return number of triplets (i,j,k) where i<j<k and nums forms a valid triangle.
- * Triangle inequality: sum of any two sides > third side.
+ * Given integer array nums, return number of triplets (i,j,k) where i<j<k
+ * and nums forms a valid triangle. Triangle inequality: sum of any two sides > third side.
  *
- * <p><b>Example:</b>
- * <pre>
- * Input: nums = [2,2,3,4]
- * Output: 3
- * Explanation: Valid triangles: [2,3,4], [2,3,4], [2,2,3]
+ * <p><b>Intuition & Approach:</b><br>
+ * Two-pointer technique after sorting:
+ * - Sort array for efficient checking
+ * - Fix largest side at position k (iterate right to left)
+ * - Use two pointers (i, j) to find valid smaller sides
+ * - If nums[i] + nums[j] > nums[k] (sorted):
+ *   - All elements between i and j also work with j
+ *   - Count (j - i) triangles
+ *   - Move j left
+ * - Else: move i right (need larger sum)
+ * - Sorting enables efficient counting without checking all triplets
  *
- * Input: nums = [4,2,3,4]
- * Output: 4
- * </pre>
- *
- * ---
- *
- * <p><b>Intuition:</b><br>
- * Sort array. Fix largest side, use two pointers to find valid pairs.
- * If a+b>c (sorted), all elements between a and b also work with b.
- *
- * ---
- *
- * <p><b>Approach:</b>
- * <ol>
- *   <li>Sort nums array</li>
- *   <li>Fix largest side at position k (iterate right to left)</li>
- *   <li>Use two pointers: i=0, j=k-1</li>
- *   <li>If nums[i]+nums[j]>nums[k]: count (j-i) triangles, j--</li>
- *   <li>Else: i++</li>
- * </ol>
- *
- * ---
- *
- * <p><b>Time Complexity:</b> O(n²)<br>
- * Sorting O(n log n), two-pointer O(n²).
- *
- * <p><b>Space Complexity:</b> O(1)<br>
- *
- * ---
- *
- * <p><b>Edge Cases:</b>
- * <ul>
- *   <li>Less than 3 elements: Return 0</li>
- *   <li>All zeros: No valid triangles</li>
- *   <li>All equal: Many valid triangles</li>
- * </ul>
+ * <p><b>Time Complexity:</b> O(N²) - Sorting O(N log N), two-pointer O(N²)
+ * <br><b>Space Complexity:</b> O(1) - Constant space
  */
 public class ValidTriangleNumber {
     
     /**
-     * Brute force: try all triplets O(n³).
-     */
-    public int triangleNumberBrute(int[] nums) {
-        int n = nums.length, count = 0;
-        for (int i = 0; i < n - 2; i++) {
-            for (int j = i + 1; j < n - 1; j++) {
-                for (int k = j + 1; k < n; k++) {
-                    int a = nums[i], b = nums[j], c = nums[k];
-                    if (a + b > c && a + c > b && b + c > a) {
-                        count++;
-                    }
-                }
-            }
-        }
-        return count;
-    }
-
-    /**
-     * Optimized O(n²) using sort + two pointers.
+     * Counts number of valid triangles.
      */
     public int triangleNumber(int[] nums) {
         Arrays.sort(nums);
-        int n = nums.length, count = 0;
+        int count = 0;
+        int n = nums.length;
 
         for (int k = n - 1; k >= 2; k--) {
-            int i = 0, j = k - 1;
+            int i = 0;
+            int j = k - 1;
+
             while (i < j) {
                 if (nums[i] + nums[j] > nums[k]) {
                     count += (j - i);

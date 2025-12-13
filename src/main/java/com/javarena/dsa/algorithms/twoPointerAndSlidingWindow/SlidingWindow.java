@@ -5,25 +5,43 @@ import java.util.HashSet;
 import java.util.Map;
 import java.util.Set;
 
+/**
+ * Sliding Window Technique - Collection
+ *
+ * <p><b>Problem Statement:</b><br>
+ * Collection of problems solved using sliding window technique:
+ * 1. Shortest Beautiful Substring - shortest substring with k ones
+ * 2. Longest Substring Without Repeating Characters
+ * 3. Max Consecutive Ones III - with k flips allowed
+ * 4. Fruit Into Baskets - longest subarray with at most 2 types
+ *
+ * <p><b>Intuition & Approach:</b><br>
+ * Sliding window patterns:
+ * - Fixed-size window: Move both pointers together, maintain k elements
+ * - Variable-size window: Expand right, shrink left when invalid
+ * - Two pointers: left/right define window boundaries
+ * 
+ * Key principles:
+ * - Expands window by moving right pointer
+ * - Shrinks window by moving left pointer when constraint violated
+ * - Maintains window invariant (sum, count, distinct elements, etc.)
+ * - Avoids recalculating from scratch for each window
+ * 
+ * Common applications:
+ * - Maximum/minimum subarray with constraints
+ * - Longest substring with k distinct characters
+ * - Maximum sum of k consecutive elements
+ * - Smallest window containing all characters
+ * - Count of subarrays meeting criteria
+ *
+ * <p><b>Time Complexity:</b> O(N) - Each element visited at most twice
+ * <br><b>Space Complexity:</b> O(K) - K is distinct elements or window size
+ */
 public class SlidingWindow {
 
     /**
-     * Finds the shortest lexicographically smallest substring in a binary string `s` that contains exactly `k` ones.
-     *
-     * <p><b>Intuition:</b></p>
-     * We use the sliding window technique with two pointers (`left` and `right`) to explore all substrings of `s`.
-     * As we move the right pointer, we count the number of '1's in the window.
-     * If the count exceeds `k`, we move the left pointer to shrink the window until we have at most `k` '1's.
-     * Whenever the window has exactly `k` '1's:
-     * - We check if the window is shorter than the previous shortest (update if yes).
-     * - If lengths are equal, we keep the lexicographically smaller one.
-     * This approach ensures we find the shortest valid substring efficiently.
-     *
-     * <p><b>Time Complexity:</b> O(n)</p>
-     * - Each character is visited at most twice (once by `right`, once by `left`).
-     *
-     * <p><b>Space Complexity:</b> O(1)</p>
-     * - Only constant extra space is used (a few variables), excluding the result string.
+     * Shortest Beautiful Substring: Find shortest substring with exactly k ones,
+     * lexicographically smallest if tie.
      */
     public String shortestBeautifulSubstring(String s, int k) {
         int n = s.length();
@@ -45,17 +63,16 @@ public class SlidingWindow {
                 left++;
             }
 
-            // Try to shrink while still maintaining exactly k 1s
+            // Try to shrink while maintaining exactly k 1s
             while (ones == k) {
                 int len = right - left + 1;
-                String candidate = s.substring(left, right + 1);
-
-                if (len < minLen || (len == minLen && candidate.compareTo(result) < 0)) {
+                String cur = s.substring(left, right + 1);
+                
+                if (len < minLen || (len == minLen && cur.compareTo(result) < 0)) {
                     minLen = len;
-                    result = candidate;
+                    result = cur;
                 }
-
-                // Try to shrink the window from the left
+                
                 if (s.charAt(left) == '1') {
                     ones--;
                 }
@@ -67,100 +84,77 @@ public class SlidingWindow {
     }
 
     /**
-     * Finds the length of the longest substring without repeating characters.
-     *
-     * <p><b>Problem:</b> Given a string, find the length of the longest substring
-     * without repeating characters.
-     *
-     * <p><b>Intuition:</b> <br>
-     * - Use a sliding window with a HashSet to track unique characters.                <br>
-     * - Expand the window with `right`, and shrink with `left` when duplicates occur.
-     *
-     * <p><b>Time Complexity:</b> O(n) — Each character is visited at most twice.
-     * <br><b>Space Complexity:</b> O(min(n, m)) — where m is the size of the character set.
+     * Longest Substring Without Repeating Characters using sliding window.
      */
     public int lengthOfLongestSubstring(String s) {
         Set<Character> set = new HashSet<>();
-        int left = 0, right = 0, ans = 0, n = s.length();
-
-        while (right < n) {
-            char ch = s.charAt(right);
-            while (right > left && set.contains(ch)) {
+        int maxLen = 0;
+        int left = 0;
+        
+        for (int right = 0; right < s.length(); right++) {
+            // Shrink window until no duplicate
+            while (set.contains(s.charAt(right))) {
                 set.remove(s.charAt(left));
                 left++;
             }
-            set.add(ch);
-            ans = Math.max(ans, right - left + 1);
-            right++;
-        }
-
-        return ans;
-    }
-
-    /**
-     * Returns the maximum number of consecutive 1s in the array if you can flip at most k 0s.
-     *
-     * <p><b>Problem:</b> You are given a binary array and an integer k.
-     * Return the length of the longest contiguous subarray with at most k zeros.
-     *
-     * <p><b>Intuition:</b> <br>
-     * - Use two pointers and track the number of zeros in the window. <br>
-     * - Shrink the window from the left when `zero > k`.
-     *
-     * <p><b>Time Complexity:</b> O(n) — Both pointers traverse the array once.
-     * <br><b>Space Complexity:</b> O(1)
-     */
-    public int longestOnes(int[] nums, int k) {
-        int zero = 0, left = 0, right = 0, ans = 0;
-
-        while (right < nums.length) {
-            if (nums[right] == 0) zero++;
-            if (zero > k) {
-                if (nums[left] == 0) zero--;
-                left++;
-            }
-            ans = Math.max(ans, right - left + 1);
-            right++;
-        }
-
-        return ans;
-    }
-
-    /**
-     * Finds the length of the longest subarray containing at most two types of fruits.
-     *
-     * <p><b>Problem:</b> You are given an array where each element is a tree type.
-     * You can pick only two types of fruits in a basket. Find the longest subarray
-     * where you can only collect two types.
-     *
-     * <p><b>Intuition:</b> <br>
-     * - Use a sliding window and HashMap to track counts of each fruit type. <br>
-     * - When size > 2, shrink the window from the left.
-     *
-     * <p><b>Time Complexity:</b> O(n) — Each element is visited at most twice.
-     * <br><b>Space Complexity:</b> O(1) — Since only 2 distinct fruit types are allowed.
-     */
-    public int totalFruit(int[] fruits) {
-        Map<Integer, Integer> map = new HashMap<>();
-        int left = 0, right = 0, maxLen = Integer.MIN_VALUE;
-
-        while (right < fruits.length) {
-            map.put(fruits[right], map.getOrDefault(fruits[right], 0) + 1);
-
-            while (map.size() > 2) {
-                map.put(fruits[left], map.get(fruits[left]) - 1);
-                if (map.get(fruits[left]) == 0) {
-                    map.remove(fruits[left]);
-                }
-                left++;
-            }
-
+            
+            set.add(s.charAt(right));
             maxLen = Math.max(maxLen, right - left + 1);
-            right++;
         }
-
+        
         return maxLen;
     }
 
+    /**
+     * Max Consecutive Ones III: Longest subarray of 1s with at most k flips.
+     */
+    public int longestOnes(int[] nums, int k) {
+        int left = 0;
+        int zeros = 0;
+        int maxLen = 0;
+        
+        for (int right = 0; right < nums.length; right++) {
+            if (nums[right] == 0) {
+                zeros++;
+            }
+            
+            // Shrink window if too many zeros
+            while (zeros > k) {
+                if (nums[left] == 0) {
+                    zeros--;
+                }
+                left++;
+            }
+            
+            maxLen = Math.max(maxLen, right - left + 1);
+        }
+        
+        return maxLen;
+    }
 
+    /**
+     * Fruit Into Baskets: Longest subarray with at most 2 distinct types.
+     */
+    public int totalFruit(int[] fruits) {
+        Map<Integer, Integer> basket = new HashMap<>();
+        int left = 0;
+        int maxFruits = 0;
+        
+        for (int right = 0; right < fruits.length; right++) {
+            basket.put(fruits[right], basket.getOrDefault(fruits[right], 0) + 1);
+            
+            // Shrink window if more than 2 types
+            while (basket.size() > 2) {
+                basket.put(fruits[left], basket.get(fruits[left]) - 1);
+                if (basket.get(fruits[left]) == 0) {
+                    basket.remove(fruits[left]);
+                }
+                left++;
+            }
+            
+            maxFruits = Math.max(maxFruits, right - left + 1);
+        }
+        
+        return maxFruits;
+    }
 }

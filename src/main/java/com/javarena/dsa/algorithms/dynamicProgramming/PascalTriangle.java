@@ -3,60 +3,66 @@ package com.javarena.dsa.algorithms.dynamicProgramming;
 import java.util.ArrayList;
 import java.util.List;
 
+/**
+ * Pascal's Triangle
+ *
+ * <p><b>Problem Statement:</b><br>
+ * Given integer numRows, return first numRows of Pascal's triangle.
+ * In Pascal's triangle, each number is sum of two numbers directly above it.
+ *
+ * <p><b>Intuition & Approach:</b><br>
+ * Build triangle row by row:
+ * - First and last element of each row = 1
+ * - Middle elements: triangle[i][j] = triangle[i-1][j-1] + triangle[i-1][j]
+ * 
+ * Properties:
+ * - Row i has i+1 elements
+ * - Symmetrical: triangle[i][j] = triangle[i][i-j]
+ * - Can be computed using combinations: C(n, k)
+ * 
+ * Simple DP where each row depends only on previous row.
+ *
+ * <p><b>Time Complexity:</b> O(N²) - Generate N rows, row i has i elements
+ * <br><b>Space Complexity:</b> O(N²) - Store entire triangle
+ */
 public class PascalTriangle {
+    
     /**
-     * Generates the first `numRows` of Pascal's Triangle.
-     *
-     * <p><b>Intuition:</b></p>
-     * Pascal's Triangle is a triangle where:
-     * - Each row starts and ends with 1.
-     * - Every inner element is the sum of the two elements directly above it from the previous row.
-     * <p>
-     * Example:
-     * ```
-     * Row 0:        1
-     * Row 1:       1 1
-     * Row 2:      1 2 1
-     * Row 3:     1 3 3 1
-     * Row 4:    1 4 6 4 1
-     * ```
-     *
-     * <p><b>Approach:</b></p>
-     * - Start with the first row `[1]`.
-     * - For each new row:
-     * - Begin with 1.
-     * - For each position `j` from 1 to length-2 in the previous row:
-     * - Add the sum of the two numbers directly above from the previous row.
-     * - End with 1.
-     * - Append each new row to the result list.
-     *
-     *
-     * <p><b>Time Complexity:</b> O(numRows²) – Since each row has up to `numRows` elements in total.</p>
-     * <p><b>Space Complexity:</b> O(numRows²) – The output list stores all rows with their elements.</p>
+     * Generates Pascal's triangle with numRows rows.
      */
     public List<List<Integer>> generate(int numRows) {
-        List<List<Integer>> ans = new ArrayList<>();
-
-        // First row is always [1]
-        ans.add(new ArrayList<>());
-        ans.get(0).add(1);
-
-        // Build each row from 1 to numRows - 1
-        for (int i = 1; i < numRows; i++) {
-            List<Integer> temp = new ArrayList<>();
-            temp.add(1); // First element is always 1
-
-            // Calculate inner values using previous row
-            for (int j = 0; j < ans.getLast().size() - 1; j++) {
-                int val = ans.getLast().get(j) + ans.getLast().get(j + 1);
-                temp.add(val);
+        List<List<Integer>> triangle = new ArrayList<>();
+        
+        for (int i = 0; i < numRows; i++) {
+            List<Integer> row = new ArrayList<>();
+            for (int j = 0; j <= i; j++) {
+                if (j == 0 || j == i) {
+                    row.add(1);
+                } else {
+                    int sum = triangle.get(i - 1).get(j - 1) + triangle.get(i - 1).get(j);
+                    row.add(sum);
+                }
             }
-
-            temp.add(1); // Last element is always 1
-            ans.add(temp);
+            triangle.add(row);
         }
-
-        return ans;
+        
+        return triangle;
     }
-
+    
+    /**
+     * Returns the kth row of Pascal's triangle (0-indexed).
+     */
+    public List<Integer> getRow(int rowIndex) {
+        List<Integer> row = new ArrayList<>();
+        row.add(1);
+        
+        for (int i = 1; i <= rowIndex; i++) {
+            for (int j = row.size() - 1; j > 0; j--) {
+                row.set(j, row.get(j) + row.get(j - 1));
+            }
+            row.add(1);
+        }
+        
+        return row;
+    }
 }

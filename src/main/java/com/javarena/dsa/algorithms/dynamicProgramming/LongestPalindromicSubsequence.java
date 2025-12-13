@@ -1,100 +1,80 @@
 package com.javarena.dsa.algorithms.dynamicProgramming;
 
 /**
- * 516. Longest Palindromic Subsequence
- *
- * <p><b>Problem Link:</b> 
- * <a href="https://leetcode.com/problems/longest-palindromic-subsequence/">LeetCode - Longest Palindromic Subsequence</a>
- *
- * <p><b>Difficulty:</b> Medium
- *
- * <p><b>Topics:</b> Dynamic Programming, String
- *
- * ---
+ * Longest Palindromic Subsequence
  *
  * <p><b>Problem Statement:</b><br>
- * Given a string s, find the longest palindromic subsequence's length in s.
- * A subsequence is a sequence that can be derived from another sequence by deleting some
- * or no elements without changing the order of the remaining elements.
+ * Given string, find length of longest palindromic subsequence.
+ * Subsequence maintains order but need not be contiguous.
  *
- * <p><b>Example:</b>
- * <pre>
- * Input: s = "bbbab"
- * Output: 4
- * Explanation: One possible longest palindromic subsequence is "bbbb"
- * </pre>
+ * <p><b>Intuition & Approach:</b><br>
+ * Reduce to LCS problem:
+ * - LPS of string s = LCS(s, reverse(s))
+ * - Characters matching in both directions form palindrome
+ * 
+ * Alternative direct DP:
+ * - dp[i][j] = LPS length in substring s[i...j]
+ * - If s[i] == s[j]: dp[i][j] = 2 + dp[i+1][j-1]
+ * - Else: dp[i][j] = max(dp[i+1][j], dp[i][j-1])
+ * 
+ * Build DP table diagonally or in reverse order.
  *
- * ---
- *
- * <p><b>Intuition:</b><br>
- * Key insight: A palindrome reads the same forwards and backwards
- * - If we reverse string s to get rev, the longest common subsequence between s and rev
- *   will be the longest palindromic subsequence
- * - This transforms the problem into finding LCS(s, reverse(s))
- *
- * ---
- *
- * <p><b>Approach:</b>
- * <ol>
- *   <li>Reverse the input string to get rev</li>
- *   <li>Find longest common subsequence between s and rev</li>
- *   <li>Use standard LCS dynamic programming algorithm</li>
- *   <li>Return the result</li>
- * </ol>
- *
- * ---
- *
- * <p><b>Time Complexity:</b> O(N²)<br>
- * LCS algorithm takes O(N*M) where N = M = length of string
- *
- * <p><b>Space Complexity:</b> O(N²)<br>
- * For the DP table in LCS algorithm
- *
- * ---
- *
- * <p><b>Edge Cases:</b>
- * <ul>
- *   <li>Single character: Return 1</li>
- *   <li>Empty string: Return 0</li>
- *   <li>All same characters: Return length of string</li>
- * </ul>
+ * <p><b>Time Complexity:</b> O(N²) - N = string length
+ * <br><b>Space Complexity:</b> O(N²) for 2D DP
  */
 public class LongestPalindromicSubsequence {
     
     /**
-     * Finds the length of longest palindromic subsequence.
-     *
-     * @param s input string
-     * @return length of longest palindromic subsequence
+     * Finds LPS using LCS approach.
      */
     public int longestPalindromeSubseq(String s) {
-        StringBuilder res = new StringBuilder();
-        res.append(s);
-        res.reverse();
-        return tabularLongestCommonSubsequence(s, res.toString());
+        String reversed = new StringBuilder(s).reverse().toString();
+        return longestCommonSubsequence(s, reversed);
     }
-
+    
     /**
-     * Helper method - Standard LCS tabulation algorithm.
-     *
-     * @param text1 first string
-     * @param text2 second string
-     * @return length of longest common subsequence
+     * Helper: Computes LCS of two strings.
      */
-    public int tabularLongestCommonSubsequence(String text1, String text2) {
+    private int longestCommonSubsequence(String text1, String text2) {
         int n = text1.length();
         int m = text2.length();
         int[][] dp = new int[n + 1][m + 1];
-
-        for (int ind1 = 1; ind1 <= n; ind1++) {
-            for (int ind2 = 1; ind2 <= m; ind2++) {
-                if (text1.charAt(ind1 - 1) == text2.charAt(ind2 - 1)) {
-                    dp[ind1][ind2] = 1 + dp[ind1 - 1][ind2 - 1];
+        
+        for (int i = 1; i <= n; i++) {
+            for (int j = 1; j <= m; j++) {
+                if (text1.charAt(i - 1) == text2.charAt(j - 1)) {
+                    dp[i][j] = 1 + dp[i - 1][j - 1];
                 } else {
-                    dp[ind1][ind2] = Math.max(dp[ind1 - 1][ind2], dp[ind1][ind2 - 1]);
+                    dp[i][j] = Math.min(dp[i - 1][j], dp[i][j - 1]);
                 }
             }
         }
+        
         return dp[n][m];
+    }
+    
+    /**
+     * Direct DP approach without LCS.
+     */
+    public int longestPalindromeSubseqDirect(String s) {
+        int n = s.length();
+        int[][] dp = new int[n][n];
+        
+        for (int i = 0; i < n; i++) {
+            dp[i][i] = 1;
+        }
+        
+        for (int len = 2; len <= n; len++) {
+            for (int i = 0; i <= n - len; i++) {
+                int j = i + len - 1;
+                if (s.charAt(i) == s.charAt(j)) {
+                    dp[i][j] = 2 + (len > 2 ? dp[i + 1][j - 1] : 0);
+                } else {
+                    dp[i][j] = Math.max(dp[i + 1][j], dp[i][j - 1]);
+                }
+            }
+        }
+        
+        return dp[0][n - 1];
     }
 }

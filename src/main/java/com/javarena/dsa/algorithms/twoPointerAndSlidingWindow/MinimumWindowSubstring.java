@@ -1,49 +1,84 @@
 package com.javarena.dsa.algorithms.twoPointerAndSlidingWindow;
 
+/**
+ * Minimum Window Substring
+ *
+ * <p><b>Problem Statement:</b><br>
+ * Given strings s and t, find minimum window substring in s that contains all characters
+ * from t (including duplicates). Return empty string if no such window exists.
+ *
+ * <p><b>Intuition & Approach:</b><br>
+ * Sliding window with character frequency tracking:
+ * - Use frequency map to track required characters from t
+ * - Expand window (right pointer) until all characters matched
+ * - Shrink window (left pointer) while maintaining validity
+ * - Track minimum valid window found
+ * 
+ * Two-phase approach:
+ * Phase 1 (Expand): Move right, include characters, increment match count
+ * Phase 2 (Shrink): Move left, remove characters while window still valid
+ * 
+ * Implementation:
+ * - Use ASCII array (256) as frequency map
+ * - Positive values: needed characters, negative: extra characters
+ * - cnt tracks how many required characters matched
+ * - When cnt == t.length(): window is valid
+ *
+ * <p><b>Time Complexity:</b> O(N + M) - N=s.length(), M=t.length()
+ * <br><b>Space Complexity:</b> O(1) - Fixed 256-size array
+ */
 public class MinimumWindowSubstring {
-
+    
     /**
-     * Finds the minimum window in string `s` which will contain all the characters of string `t`.
-     * <p>
-     * Intuition:
-     * - Use a sliding window to expand the right boundary to include characters until all characters from `t` are included.
-     * - Then shrink the left boundary to minimize the window while still containing all characters from `t`.
-     * - Track the minimum-length valid window found.
-     * <p>
-     * Implementation Details:
-     * - An integer array of size 256 is used to simulate a frequency map for all ASCII characters.
-     * - Each time a required character is included in the window, the `cnt` is increased.
-     * - Once all characters from `t` are matched, the window is potentially shrunk from the left.
-     * <p>
-     * Time Complexity: O(n) — Each character in `s` is processed at most twice (once by right and once by left pointer).
-     * Space Complexity: O(1) — Fixed size map of 256 characters (ASCII), regardless of input size.
+     * Finds minimum window in s containing all characters of t.
      */
     public String minWindow(String s, String t) {
         int n = s.length();
         int m = t.length();
+        
+        if (n < m) return "";
+        
+        // Build frequency map for t
         int[] map = new int[256];
-        for (char it : t.toCharArray()) {
-            map[it]++;
+        for (char c : t.toCharArray()) {
+            map[c]++;
         }
-        int lastIndex = -1;
-        int r = 0, l = 0;
-        int cnt = 0;
-        int maxLen = Integer.MAX_VALUE;
-        while (r < n) {
-            if (map[s.charAt(r)] > 0) cnt++;
-            map[s.charAt(r)]--;
-            while (cnt == m) {
-                if (r - l + 1 < maxLen) {
-                    maxLen = r - l + 1;
-                    lastIndex = l;
-                }
-                map[s.charAt(l)]++;
-                if (map[s.charAt(l)] > 0) cnt--;
-                l++;
+        
+        int left = 0, right = 0;
+        int cnt = 0;  // Matched required characters
+        int minLen = Integer.MAX_VALUE;
+        int startIndex = -1;
+        
+        // Expand window with right pointer
+        while (right < n) {
+            char c = s.charAt(right);
+            
+            // If required character found
+            if (map[c] > 0) {
+                cnt++;
             }
-            r++;
+            map[c]--;
+            
+            // Shrink window while valid
+            while (cnt == m) {
+                // Update minimum window
+                if (right - left + 1 < minLen) {
+                    minLen = right - left + 1;
+                    startIndex = left;
+                }
+                
+                // Try to shrink from left
+                char leftChar = s.charAt(left);
+                map[leftChar]++;
+                if (map[leftChar] > 0) {
+                    cnt--;
+                }
+                left++;
+            }
+            
+            right++;
         }
-
-        return lastIndex == -1 ? "" : s.substring(lastIndex, lastIndex + maxLen);
+        
+        return startIndex == -1 ? "" : s.substring(startIndex, startIndex + minLen);
     }
 }

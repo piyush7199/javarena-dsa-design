@@ -2,33 +2,35 @@ package com.javarena.dsa.algorithms.greedy;
 
 import java.util.*;
 
+/**
+ * Rearranging Fruits (Minimum Cost Swaps)
+ *
+ * <p><b>Problem Statement:</b><br>
+ * Given two baskets with fruits, find minimum cost to make both baskets identical.
+ * Can swap fruits between baskets with cost = min(fruitA, fruitB).
+ * Return -1 if impossible.
+ *
+ * <p><b>Intuition & Approach:</b><br>
+ * Greedy balancing with swap optimization:
+ * - Count net difference of each fruit between baskets
+ * - If any fruit has odd difference: impossible (can't balance)
+ * - Identify excess fruits in each basket (need swapping out)
+ * - Greedy pairing: pair smallest excess from basket1 with largest from basket2
+ * 
+ * Cost optimization:
+ * - Direct swap: cost = min(fruit1, fruit2)
+ * - Indirect swap via cheapest fruit: cost = 2 × minElement
+ * - Choose minimum of both options
+ * 
+ * Why greedy works: Pairing extremes minimizes total cost.
+ *
+ * <p><b>Time Complexity:</b> O(N log N) - Sorting excess lists
+ * <br><b>Space Complexity:</b> O(N) - Maps and excess lists
+ */
 public class RearrangingFruits {
-
+    
     /**
-     * Calculates the minimum cost to make both baskets have the same fruit composition
-     * by swapping elements between them.
-     *
-     * <p><b>Intuition:</b></p>
-     * If both baskets can be made identical by swapping fruits, we must balance the number
-     * of each fruit type. For each fruit, the difference in counts between the two baskets
-     * must be even (as each swap fixes two occurrences). If this is not the case, return -1.
-     *
-     * <p><b>Approach:</b></p>
-     * 1. Count the net difference of each fruit type between basket1 and basket2.
-     * 2. If a fruit has an odd difference, it's impossible to balance → return -1.
-     * 3. Divide excess fruits into two lists:
-     * - `b1Extra`: Fruits that need to be swapped *out* from basket1.
-     * - `b2Extra`: Fruits that need to be swapped *out* from basket2.
-     * 4. Sort `b1Extra` in ascending and `b2Extra` in descending order.
-     * 5. Pair them greedily, and for each pair, the cost is:
-     * - `min(fruitA, fruitB)` — swap directly,
-     * - or `2 * minElem` — replace both with the cheapest fruit type (if cheaper).
-     *
-     * <p><b>Time Complexity:</b> O(n log n), where n is the number of fruits.
-     * - O(n) for count diff and extra list creation.
-     * - O(n log n) for sorting the extras.
-     *
-     * <p><b>Space Complexity:</b> O(n) for maps and extra lists.
+     * Calculates minimum cost to balance baskets using greedy swaps.
      */
     public long minCost(int[] basket1, int[] basket2) {
         Map<Integer, Integer> countMap = new HashMap<>();
@@ -47,31 +49,29 @@ public class RearrangingFruits {
         for (Map.Entry<Integer, Integer> entry : countMap.entrySet()) {
             int fruit = entry.getKey();
             int diff = entry.getValue();
-
+            
             if (diff % 2 != 0) return -1;
-
-            int half = Math.abs(diff) / 2;
-
+            
+            int halfDiff = Math.abs(diff) / 2;
             if (diff > 0) {
-                for (int i = 0; i < half; i++) b1Extra.add(fruit);
+                for (int i = 0; i < halfDiff; i++) {
+                    b1Extra.add(fruit);
+                }
             } else if (diff < 0) {
-                for (int i = 0; i < half; i++) b2Extra.add(fruit);
+                for (int i = 0; i < halfDiff; i++) {
+                    b2Extra.add(fruit);
+                }
             }
         }
-
-        if (b1Extra.size() != b2Extra.size()) return -1;
 
         Collections.sort(b1Extra);
         Collections.sort(b2Extra, Collections.reverseOrder());
 
         long cost = 0;
         for (int i = 0; i < b1Extra.size(); i++) {
-            int a = b1Extra.get(i);
-            int b = b2Extra.get(i);
-            cost += Math.min(Math.min(a, b), 2 * minElem);
+            cost += Math.min(Math.min(b1Extra.get(i), b2Extra.get(i)), 2L * minElem);
         }
 
         return cost;
-
     }
 }

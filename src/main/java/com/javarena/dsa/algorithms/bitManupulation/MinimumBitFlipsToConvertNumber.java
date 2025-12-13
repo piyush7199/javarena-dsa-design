@@ -1,103 +1,55 @@
 package com.javarena.dsa.algorithms.bitManupulation;
 
 /**
- * 2220. Minimum Bit Flips to Convert Number
- *
- * <p><b>Problem Link:</b> 
- * <a href="https://leetcode.com/problems/minimum-bit-flips-to-convert-number/">LeetCode - Minimum Bit Flips</a>
- *
- * <p><b>Difficulty:</b> Easy
- *
- * <p><b>Topics:</b> Bit Manipulation
- *
- * ---
+ * Minimum Bit Flips to Convert Number
  *
  * <p><b>Problem Statement:</b><br>
- * A bit flip of a number x is choosing a bit in the binary representation of x and flipping it 
- * from either 0 to 1 or from 1 to 0. Given two integers start and goal, return the minimum 
- * number of bit flips to convert start to goal.
+ * Given integers start and goal, return minimum number of bit flips
+ * to convert start to goal. Can flip any bit (0→1 or 1→0).
  *
- * <p><b>Example:</b>
- * <pre>
- * Input: start = 10, goal = 7
- * Output: 3
- * Explanation: Binary: 10 = 1010, 7 = 0111. Need to flip 3 bits.
+ * <p><b>Intuition & Approach:</b><br>
+ * XOR operation to identify differing bits:
+ * - XOR returns 1 where bits differ, 0 where same
+ * - start ^ goal = number with 1s at positions needing flips
+ * - Count number of 1s in XOR result = number of flips needed
+ * 
+ * Two methods to count 1s:
+ * 1. Brian Kernighan's: n & (n-1) removes rightmost set bit, count iterations
+ * 2. Standard: Check each bit with (n & 1), right shift, repeat
  *
- * Input: start = 3, goal = 4
- * Output: 3
- * Explanation: Binary: 3 = 011, 4 = 100. Need to flip all 3 bits.
- *
- * Input: start = 0, goal = 0
- * Output: 0
- * Explanation: Numbers are already equal.
- * </pre>
- *
- * ---
- *
- * <p><b>Intuition:</b><br>
- * XOR operation to find differing bits:
- * - XOR returns 1 where bits differ, 0 where bits are same
- * - start ^ goal gives a number with 1s at positions that need flipping
- * - Problem reduces to counting number of 1s (set bits) in XOR result
- * - This is also known as Hamming distance between two numbers
- * - Use bit manipulation to count set bits efficiently
- *
- * ---
- *
- * <p><b>Approach:</b>
- * <ol>
- *   <li>Compute diffBit = start ^ goal</li>
- *   <li>Each set bit (1) in diffBit represents a position where bits differ</li>
- *   <li>Count number of set bits using loop:</li>
- *   <li>- Check LSB using (diffBit & 1)</li>
- *   <li>- Right shift diffBit to check next bit</li>
- *   <li>- Continue until diffBit becomes 0</li>
- *   <li>Return count as minimum flips needed</li>
- * </ol>
- *
- * ---
- *
- * <p><b>Time Complexity:</b> O(log n)<br>
- * Where n = max(start, goal). We iterate through all bits, which is at most log₂(n) iterations.
- *
- * <p><b>Space Complexity:</b> O(1)<br>
- * Only uses a constant number of variables for counting and shifting.
- *
- * ---
- *
- * <p><b>Edge Cases:</b>
- * <ul>
- *   <li>start = goal: XOR = 0, no flips needed</li>
- *   <li>start = 0: Count set bits in goal</li>
- *   <li>goal = 0: Count set bits in start</li>
- *   <li>Powers of 2: Often results in many bit differences</li>
- * </ul>
- *
- * @see <a href="https://leetcode.com/problems/hamming-distance/">Hamming Distance</a>
+ * <p><b>Time Complexity:</b> O(log N) - Check all bits in larger number
+ * <br><b>Space Complexity:</b> O(1) - Constant space
  */
 public class MinimumBitFlipsToConvertNumber {
     
     /**
-     * Returns minimum number of bit flips to convert start to goal.
-     *
-     * @param start the starting integer
-     * @param goal the target integer
-     * @return minimum number of bit flips required
+     * Counts minimum bit flips using XOR and bit counting.
      */
     public int minBitFlips(int start, int goal) {
-        // Step 1: XOR to find differing bits
-        int diffBit = start ^ goal;
-        int ans = 0;
+        int xor = start ^ goal;
+        int count = 0;
         
-        // Step 2: Count set bits in XOR result
-        while (diffBit != 0) {
-            // Check if LSB is 1
-            ans += (diffBit & 1);
-            
-            // Right shift to check next bit
-            diffBit = diffBit >> 1;
+        // Count set bits in XOR
+        while (xor != 0) {
+            count += (xor & 1);
+            xor >>= 1;
         }
         
-        return ans;
+        return count;
+    }
+    
+    /**
+     * Alternative: Using Brian Kernighan's algorithm.
+     */
+    public int minBitFlipsBK(int start, int goal) {
+        int xor = start ^ goal;
+        int count = 0;
+        
+        while (xor != 0) {
+            xor &= (xor - 1);  // Remove rightmost set bit
+            count++;
+        }
+        
+        return count;
     }
 }

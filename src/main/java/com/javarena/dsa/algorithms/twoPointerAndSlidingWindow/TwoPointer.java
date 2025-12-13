@@ -1,84 +1,93 @@
 package com.javarena.dsa.algorithms.twoPointerAndSlidingWindow;
 
+/**
+ * Two Pointer Technique - Collection
+ *
+ * <p><b>Problem Statement:</b><br>
+ * Collection of problems solved using two-pointer technique:
+ * 1. Celebrity Problem - Find celebrity in party
+ * 2. Merge Sorted Arrays - Merge nums2 into nums1 in-place
+ *
+ * <p><b>Intuition & Approach:</b><br>
+ * Two-pointer technique patterns:
+ * - Opposite ends: Start from both ends, move towards center
+ * - Same direction: Both pointers move left-to-right at different speeds
+ * - Fast-slow pointers: One moves twice as fast (cycle detection)
+ * 
+ * Key principles:
+ * - Reduces O(N²) brute force to O(N) by eliminating redundant checks
+ * - Works best on sorted/organized data
+ * - Maintains invariants while moving pointers
+ * - Often eliminates need for extra space
+ * 
+ * Common applications:
+ * - Pair/triplet sum problems
+ * - Merging sorted arrays
+ * - Removing duplicates in-place
+ * - Palindrome checking
+ * - Container with most water
+ *
+ * <p><b>Time Complexity:</b> O(N) typical - single pass through data
+ * <br><b>Space Complexity:</b> O(1) typical - constant extra space
+ */
 public class TwoPointer {
+    
     /**
-     * Finds the celebrity in a party using two-pointer elimination method.
-     *
-     * <p>🔍 Intuition:
-     * - A celebrity is someone who:
-     * 1. Knows no one: row should have all 0s.
-     * 2. Is known by everyone: column should have all 1s.
-     * <p>
-     * - Start with two pointers `i = 0` and `j = n - 1`.
-     * - If j knows i → j can't be celeb, move j--.
-     * - Else i can't be celeb, move i++.
-     * - At the end, i is the only possible candidate.
-     * - Validate that this person satisfies both celebrity conditions.
-     * <p>
-     * <p>
-     * ⏱ Time Complexity: O(n)
-     * - One pass to eliminate (n-1 comparisons)
-     * - One pass to validate candidate
-     * <p>
-     * 🧠 Space Complexity: O(1)
-     * - No extra data structures used
+     * Celebrity Problem: Find person who knows no one but is known by everyone.
+     * 
+     * Two-phase elimination:
+     * Phase 1: Use two pointers to eliminate n-1 non-celebrities
+     * Phase 2: Validate the remaining candidate
      */
     public int celebrity(int[][] mat) {
         int n = mat.length;
         int i = 0, j = n - 1;
 
-        // Step 1: Eliminate non-celebrities
+        // Phase 1: Eliminate non-celebrities using two pointers
         while (i < j) {
             if (mat[j][i] == 1) {
-                // j knows i → j can't be celebrity
-                j--;
+                j--;  // j knows i → j can't be celebrity
             } else {
-                // j doesn't know i → i can't be celebrity
-                i++;
+                i++;  // j doesn't know i → i can't be celebrity
             }
         }
 
-        // Step 2: Candidate found at index i
-        int c = i;
-
-        // Step 3: Verify if c is actually a celebrity
+        // Phase 2: Candidate found at index i, now validate
+        int candidate = i;
         for (i = 0; i < n; i++) {
-            if (i == c) continue;
-
-            // If c knows anyone or someone doesn't know c → not a celeb
-            if (mat[c][i] != 0 || mat[i][c] != 1) {
+            if (i == candidate) continue;
+            // Celebrity must not know anyone AND be known by everyone
+            if (mat[candidate][i] != 0 || mat[i][candidate] != 1) {
                 return -1;
             }
         }
-
-        return c;
+        
+        return candidate;
     }
 
     /**
-     * Merges two sorted arrays `nums1` and `nums2` into `nums1` in-place.
-     * `nums1` has a size of m + n with the first `m` elements initialized.
-     * <p>
-     * Intuition:
-     * - We fill `nums1` from the back (largest index) to avoid overwriting.
-     * - Compare the elements from end of `nums1` and `nums2`, place the larger at the end.
-     * <p>
-     * Time Complexity: O(m + n)
-     * Space Complexity: O(1) – in-place
+     * Merge Sorted Arrays: Merge nums2 into nums1 in-place (nums1 has extra space).
+     * 
+     * Key insight: Fill from end to avoid overwriting unprocessed elements.
+     * Use three pointers: p1 (nums1 last), p2 (nums2 last), p (result last).
      */
     public void merge(int[] nums1, int m, int[] nums2, int n) {
-        int i = m - 1;
-        int j = n - 1;
-        int k = m + n - 1;
-        while (j >= 0) {
-            if (i >= 0 && nums1[i] > nums2[j]) {
-                nums1[k] = nums1[i];
-                i--;
+        int p1 = m - 1;
+        int p2 = n - 1;
+        int p = m + n - 1;
+        
+        // Fill from end, choosing larger element
+        while (p1 >= 0 && p2 >= 0) {
+            if (nums1[p1] > nums2[p2]) {
+                nums1[p--] = nums1[p1--];
             } else {
-                nums1[k] = nums2[j];
-                j--;
+                nums1[p--] = nums2[p2--];
             }
-            k--;
         }
-
+        
+        // Copy remaining elements from nums2 (if any)
+        while (p2 >= 0) {
+            nums1[p--] = nums2[p2--];
+        }
     }
 }

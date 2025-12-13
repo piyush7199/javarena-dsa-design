@@ -2,42 +2,68 @@ package com.javarena.dsa.algorithms.twoPointerAndSlidingWindow;
 
 import java.util.Arrays;
 
+/**
+ * 3Sum Closest
+ *
+ * <p><b>Problem Statement:</b><br>
+ * Given an integer array nums and target, find three integers whose sum is closest to target.
+ * Return the sum of the three integers. Assume each input has exactly one solution.
+ *
+ * <p><b>Intuition & Approach:</b><br>
+ * Similar to 3Sum but instead of finding exact target, find closest sum:
+ * - Sort array to enable two-pointer technique
+ * - Fix first number, use two pointers for remaining two
+ * - Track minimum difference from target
+ * - For each triplet sum:
+ *   - If sum == target: return immediately (closest possible)
+ *   - If |target - sum| < minDiff: update result
+ *   - If sum > target: move right pointer left (decrease sum)
+ *   - If sum < target: move left pointer right (increase sum)
+ * 
+ * Key insight: Sorted array allows efficient pointer movement towards target.
+ *
+ * <p><b>Time Complexity:</b> O(N²) - O(N log N) sort + O(N²) two-pointer loop
+ * <br><b>Space Complexity:</b> O(1) - Constant extra space
+ */
 public class ThreeSumClosest {
+    
     /**
-     * Finds the sum of three integers in the array `nums` such that the sum is closest to the given target.
-     *
-     * <p>This method first sorts the array and then uses a two-pointer technique to explore
-     * possible triplets. It iterates over each element and for each fixed element, tries to find
-     * the best pair using the remaining sorted elements with two pointers (left and right).
-     * <p>
-     * Time Complexity: O(n^2)
-     * - Sorting takes O(n log n)
-     * - The main loop runs in O(n), and the inner two-pointer loop runs in O(n)
-     * => Total: O(n log n + n^2) ≈ O(n^2)
-     * <p>
-     * Space Complexity: O(1)
-     * - No extra space is used beyond variables; sorting is in-place.
+     * Finds sum of three integers closest to target.
      */
     public int threeSumClosest(int[] nums, int target) {
         Arrays.sort(nums);
         int ans = 0;
-        int dif = Integer.MAX_VALUE;
+        int minDiff = Integer.MAX_VALUE;
         int n = nums.length;
+        
         for (int i = 0; i < n - 1; i++) {
+            // Skip duplicates
             if (i > 0 && nums[i] == nums[i - 1]) continue;
+            
             int j = i + 1;
             int k = n - 1;
+            
             while (j < k) {
                 int sum = nums[i] + nums[j] + nums[k];
+                
+                // Exact match - return immediately
                 if (sum == target) return target;
-                if (Math.abs(target - sum) < dif) {
+                
+                // Update if closer
+                if (Math.abs(target - sum) < minDiff) {
                     ans = sum;
-                    dif = Math.abs(target - sum);
+                    minDiff = Math.abs(target - sum);
                 }
-                if (sum > target) k--;
-                else j++;
+                
+                // Move pointers based on sum vs target
+                if (sum > target) {
+                    k--;
+                } else {
+                    j++;
+                }
             }
         }
+        
         return ans;
     }
 }

@@ -4,114 +4,117 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
+/**
+ * Sum Problems Using Two Pointers
+ *
+ * <p><b>Problem Statement:</b><br>
+ * Collection of sum-based problems solved with two-pointer technique:
+ * 1. Three Sum - Find all unique triplets that sum to zero
+ * 2. Four Sum - Find all unique quadruplets that sum to target
+ *
+ * <p><b>Intuition & Approach:</b><br>
+ * General pattern for K-sum problems:
+ * - Sort array first to enable two-pointer technique
+ * - Fix K-2 numbers, use two pointers for remaining two
+ * - Skip duplicates to ensure unique combinations
+ * 
+ * Three Sum strategy:
+ * - Fix first number, reduce to Two Sum problem
+ * - Use two pointers (left/right) on remaining sorted subarray
+ * - If sum == target: record triplet, skip duplicates
+ * - If sum < target: move left pointer right
+ * - If sum > target: move right pointer left
+ * 
+ * Four Sum extends this by fixing two numbers first.
+ *
+ * <p><b>Time Complexity:</b> O(N²) for 3Sum, O(N³) for 4Sum
+ * <br><b>Space Complexity:</b> O(1) excluding output list
+ */
 public class TwoPointerSum {
 
     /**
-     * Finds all unique triplets in the array that sum to zero.
-     * <p>
-     * Intuition:
-     * - Sort the array.
-     * - Fix one number and use two-pointer technique to find valid triplets.
-     * - Skip duplicates to ensure unique triplets.
-     * <p>
-     * Time Complexity: O(n^2) – for each element, search a pair in remaining array
-     * Space Complexity: O(1) (excluding output list)
+     * Three Sum: Find all unique triplets that sum to zero.
      */
     public List<List<Integer>> threeSum(int[] nums) {
         Arrays.sort(nums);
         List<List<Integer>> ans = new ArrayList<>();
         int n = nums.length;
+        
         for (int i = 0; i < n; i++) {
+            // Skip duplicates for first number
             if (i > 0 && nums[i - 1] == nums[i]) {
                 continue;
             }
+            
+            // Two-pointer for remaining two numbers
             int j = i + 1;
             int k = n - 1;
+            
             while (j < k) {
                 int sum = nums[i] + nums[j] + nums[k];
+                
                 if (sum == 0) {
-                    List<Integer> temp = new ArrayList<>();
-                    temp.add(nums[i]);
-                    temp.add(nums[j]);
-                    temp.add(nums[k]);
-                    ans.add(temp);
+                    ans.add(Arrays.asList(nums[i], nums[j], nums[k]));
                     j++;
                     k--;
-                    while (j < n && nums[j] == nums[j - 1]) {
-                        j++;
-                    }
-
-                    while (k >= 0 && nums[k] == nums[k + 1]) {
-                        k--;
-                    }
-                } else if (sum > 0) {
-                    k--;
+                    
+                    // Skip duplicates for second number
+                    while (j < k && nums[j] == nums[j - 1]) j++;
+                    // Skip duplicates for third number
+                    while (j < k && nums[k] == nums[k + 1]) k--;
+                    
+                } else if (sum < 0) {
+                    j++;
                 } else {
-                    j++;
+                    k--;
                 }
             }
         }
+        
         return ans;
     }
 
     /**
-     * Finds all unique quadruplets [a, b, c, d] in the array such that:
-     * a + b + c + d == target
-     * <p>
-     * Intuition:
-     * - Sort the array.
-     * - Use two nested loops to fix the first two elements.
-     * - Use two-pointer technique to find the remaining two.
-     * - Skip duplicates for all positions to avoid redundant quadruplets.
-     * <p>
-     * Time Complexity: O(n^3)
-     * Space Complexity: O(1) (excluding output list)
-     * <p>
-     * Note: Uses long type for sum to avoid overflow when inputs are large.`
+     * Four Sum: Find all unique quadruplets that sum to target.
      */
     public List<List<Integer>> fourSum(int[] nums, int target) {
         Arrays.sort(nums);
         List<List<Integer>> ans = new ArrayList<>();
         int n = nums.length;
-        for (int i = 0; i < n - 1; i++) {
-            if (i > 0 && nums[i - 1] == nums[i]) {
-                continue;
-            }
-            for (int l = i + 1; l < n; l++) {
-                if (l != i + 1 && nums[l] == nums[l - 1]) {
-                    continue;
-                }
-                int j = l + 1;
-                int k = n - 1;
-                while (j < k) {
-                    long sum = nums[i];
-                    sum += nums[j];
-                    sum += nums[k];
-                    sum += nums[l];
-                    if (sum > target) {
-                        k--;
+        
+        for (int i = 0; i < n; i++) {
+            // Skip duplicates for first number
+            if (i > 0 && nums[i] == nums[i - 1]) continue;
+            
+            for (int j = i + 1; j < n; j++) {
+                // Skip duplicates for second number
+                if (j > i + 1 && nums[j] == nums[j - 1]) continue;
+                
+                // Two-pointer for remaining two numbers
+                int k = j + 1;
+                int l = n - 1;
+                
+                while (k < l) {
+                    long sum = (long) nums[i] + nums[j] + nums[k] + nums[l];
+                    
+                    if (sum == target) {
+                        ans.add(Arrays.asList(nums[i], nums[j], nums[k], nums[l]));
+                        k++;
+                        l--;
+                        
+                        // Skip duplicates
+                        while (k < l && nums[k] == nums[k - 1]) k++;
+                        while (k < l && nums[l] == nums[l + 1]) l--;
+                        
                     } else if (sum < target) {
-                        j++;
+                        k++;
                     } else {
-                        List<Integer> temp = new ArrayList<>();
-                        temp.add(nums[i]);
-                        temp.add(nums[l]);
-                        temp.add(nums[j]);
-                        temp.add(nums[k]);
-                        ans.add(temp);
-                        j++;
-                        k--;
-                        while (j < n && nums[j] == nums[j - 1]) {
-                            j++;
-                        }
-
-                        while (k >= 0 && nums[k] == nums[k + 1]) {
-                            k--;
-                        }
+                        l--;
                     }
                 }
             }
         }
+        
         return ans;
     }
 }

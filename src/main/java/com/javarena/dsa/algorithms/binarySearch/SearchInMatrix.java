@@ -1,63 +1,27 @@
 package com.javarena.dsa.algorithms.binarySearch;
 
 /**
- * 74. Search a 2D Matrix
- *
- * <p><b>Problem Link:</b> 
- * <a href="https://leetcode.com/problems/search-a-2d-matrix/">LeetCode - Search 2D Matrix</a>
- *
- * <p><b>Difficulty:</b> Medium
- *
- * <p><b>Topics:</b> Binary Search, Matrix, Array
- *
- * ---
+ * Search in 2D Matrix
  *
  * <p><b>Problem Statement:</b><br>
- * Search for a target in an m×n matrix with properties:
- * - Each row is sorted in ascending order
- * - First integer of each row is greater than last integer of previous row
- * Return true if target exists, false otherwise.
+ * Search for target in m×n matrix where:
+ * - Each row is sorted ascending
+ * - First integer of each row > last integer of previous row
+ * Return true if target exists.
  *
- * <p><b>Example:</b>
- * <pre>
- * Input: matrix = [[1,3,5,7],[10,11,16,20],[23,30,34,60]], target = 3
- * Output: true
+ * <p><b>Intuition & Approach:</b><br>
+ * Start from top-right corner:
+ * - If current > target: move left (smaller values)
+ * - If current < target: move down (larger values)
+ * - If current == target: found
+ * 
+ * This works because:
+ * - Moving left decreases values (row sorted)
+ * - Moving down increases values (column sorted)
+ * - At most m+n moves before out of bounds
  *
- * Input: matrix = [[1,3,5,7],[10,11,16,20],[23,30,34,60]], target = 13
- * Output: false
- * </pre>
- *
- * ---
- *
- * <p><b>Intuition:</b><br>
- * Start from top-right corner: if current > target move left, if current < target move down.
- * This works because rows and columns are sorted.
- *
- * ---
- *
- * <p><b>Approach:</b>
- * <ol>
- *   <li>Start at top-right: i=0, j=m-1</li>
- *   <li>While in bounds:</li>
- *   <li>- If matrix[i][j] == target: return true</li>
- *   <li>- If matrix[i][j] > target: move left (j--)</li>
- *   <li>- If matrix[i][j] < target: move down (i++)</li>
- *   <li>Return false if not found</li>
- * </ol>
- *
- * ---
- *
- * <p><b>Time Complexity:</b> O(m + n)<br>
- * <p><b>Space Complexity:</b> O(1)<br>
- *
- * ---
- *
- * <p><b>Edge Cases:</b>
- * <ul>
- *   <li>Single element matrix</li>
- *   <li>Target at corners</li>
- *   <li>Target smaller/larger than all elements</li>
- * </ul>
+ * <p><b>Time Complexity:</b> O(M + N) - M rows, N columns
+ * <br><b>Space Complexity:</b> O(1) - Constant space
  */
 public class SearchInMatrix {
     

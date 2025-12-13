@@ -3,66 +3,31 @@ package com.javarena.dsa.algorithms.binarySearch;
 import java.util.Arrays;
 
 /**
- * 1552. Magnetic Force Between Two Balls
- *
- * <p><b>Problem Link:</b> 
- * <a href="https://leetcode.com/problems/magnetic-force-between-two-balls/">LeetCode - Magnetic Force</a>
- *
- * <p><b>Difficulty:</b> Medium
- *
- * <p><b>Topics:</b> Binary Search, Array, Greedy
- *
- * ---
+ * Magnetic Force Between Two Balls
  *
  * <p><b>Problem Statement:</b><br>
- * Given an array position representing basket positions and integer m representing number of balls,
- * place m balls in baskets such that the minimum magnetic force between any two balls is maximized.
- * The magnetic force between two balls at positions x and y is |x - y|.
+ * Given basket positions and m balls, place balls such that minimum magnetic force 
+ * (distance) between any two balls is maximized. Return maximum possible minimum force.
  *
- * <p><b>Example:</b>
- * <pre>
- * Input: position = [1,2,3,4,7], m = 3
- * Output: 3
- * Explanation: Place balls at positions 1, 4, 7. Min distance = 3.
+ * <p><b>Intuition & Approach:</b><br>
+ * Binary search on minimum distance (same as Aggressive Cows):
+ * - Search space: [1, max_position - min_position]
+ * - Sort positions for greedy placement
+ * - For candidate distance:
+ *   1. Place first ball at first position
+ *   2. Place next ball at first position >= distance away
+ *   3. If all m balls placed: try larger distance
+ *   4. Else: try smaller distance
+ * - Return largest feasible distance
  *
- * Input: position = [5,4,3,2,1,1000000000], m = 2
- * Output: 999999999
- * </pre>
- *
- * ---
- *
- * <p><b>Intuition:</b><br>
- * Binary search to maximize minimum distance - same pattern as Aggressive Cows.
- * Sort positions, search on possible distances [1, max-min], greedily verify if distance achievable.
- *
- * ---
- *
- * <p><b>Approach:</b>
- * <ol>
- *   <li>Sort position array</li>
- *   <li>Binary search on distance: low=1, high=position[n-1]-position[0]</li>
- *   <li>For each mid, greedily place balls with distance ≥ mid</li>
- *   <li>If m balls placed: try larger distance</li>
- *   <li>Else: try smaller distance</li>
- *   <li>Return high (largest feasible distance)</li>
- * </ol>
- *
- * ---
- *
- * <p><b>Time Complexity:</b> O(n log n + n log D)<br>
- * <p><b>Space Complexity:</b> O(1)<br>
- *
- * ---
- *
- * <p><b>Edge Cases:</b>
- * <ul>
- *   <li>m = 2: Maximum distance between any two positions</li>
- *   <li>All positions same: Return 0</li>
- *   <li>Large position values: Use proper mid calculation</li>
- * </ul>
+ * <p><b>Time Complexity:</b> O(N log N + N log D) - N positions, D = range
+ * <br><b>Space Complexity:</b> O(1) - Constant space
  */
 public class MagneticForce {
     
+    /**
+     * Finds maximum possible minimum magnetic force.
+     */
     public int maxDistance(int[] position, int m) {
         Arrays.sort(position);
         int n = position.length;
@@ -80,6 +45,9 @@ public class MagneticForce {
         return high;
     }
 
+    /**
+     * Checks if m balls can be placed with minimum distance mid.
+     */
     private boolean isPossible(int[] position, int mid, int m) {
         int last = position[0];
         int cnt = 1;
