@@ -22,27 +22,39 @@ This is a comprehensive Java-based repository for Data Structures & Algorithms (
 
 ---
 
-## Documentation Standards
+## Documentation Standards ⭐ STANDARDIZED FORMAT
 
-### Class-Level Documentation
-Every class must have JavaDoc with:
+### Class-Level Documentation (ENFORCED ACROSS 238 FILES)
+
+Every class MUST have JavaDoc with EXACTLY these 3 sections:
+
 ```java
 /**
- * Brief description of the problem/algorithm.
+ * [Problem Name]
  *
- * <p><b>Problem:</b> Detailed problem statement or link to problem
+ * <p><b>Problem Statement:</b><br>
+ * [Clear, concise description of what needs to be solved]
  *
- * <p><b>Intuition:</b>
- * - Key insight 1
- * - Key insight 2
+ * <p><b>Intuition & Approach:</b><br>
+ * [Core insights and strategy]
+ * - Key observations
  * - Why this approach works
+ * - Algorithm steps
+ * - Alternative approaches (if applicable)
  *
- * <p><b>Time Complexity:</b> O(...)
- * <br><b>Space Complexity:</b> O(...)
- *
- * @see <a href="problem-link">Problem Link</a>
+ * <p><b>Time Complexity:</b> O(...) - [Explanation]
+ * <br><b>Space Complexity:</b> O(...) - [Explanation]
  */
 ```
+
+**CRITICAL:** Do NOT include:
+- ❌ Problem links (belong in READMEs)
+- ❌ Examples (belong in READMEs)
+- ❌ Company names (belong in company/*.md files)
+- ❌ Difficulty tags (belong in READMEs)
+- ❌ Topic tags (belong in READMEs)
+- ❌ Edge case sections
+- ❌ @see references
 
 ### Method-Level Documentation
 Each public method should have:
@@ -105,22 +117,24 @@ datastructures/
 - Place in the most specific applicable directory
 - If multiple techniques apply, choose the primary one
 
-### Step 2: Create the File
+### Step 2: Create the File (Use STANDARD FORMAT)
 ```java
 package com.javarena.dsa.algorithms.category;
 
 /**
- * Problem Name - Brief Description
+ * Problem Name
  *
- * <p><b>Problem:</b> 
- * [Problem statement or link]
+ * <p><b>Problem Statement:</b><br>
+ * [Clear description of what needs to be solved]
  *
- * <p><b>Intuition:</b><br>
- * - Main insight
+ * <p><b>Intuition & Approach:</b><br>
+ * [Core insight and strategy]
+ * - Key observations
  * - Why this approach works
+ * - Algorithm steps
  *
- * <p><b>Time Complexity:</b> O(...)
- * <br><b>Space Complexity:</b> O(...)
+ * <p><b>Time Complexity:</b> O(...) - [Explanation]
+ * <br><b>Space Complexity:</b> O(...) - [Explanation]
  */
 public class ProblemName {
     /**
@@ -415,73 +429,47 @@ mvn javadoc:javadoc
 
 ---
 
-## 📐 Standard Code Format
+## 📐 Standard Code Format (ENFORCED)
 
 ### Problem Solution Template
 
-Every problem solution file MUST follow this exact structure:
+Every problem solution file MUST follow this EXACT structure:
 
 #### Class-Level Documentation (Mandatory)
 
 ```java
 /**
- * [Problem Number]. [Problem Name]
- *
- * <p><b>Problem Link:</b> 
- * <a href="[URL]">[Platform] - [Problem Name]</a>
- *
- * <p><b>Difficulty:</b> [Easy | Medium | Hard]
- *
- * <p><b>Topics:</b> [Topic1], [Topic2], [Topic3]
- *
- * ---
+ * [Problem Name]
  *
  * <p><b>Problem Statement:</b><br>
- * [Concise problem description]
+ * [Clear, concise problem description - what needs to be solved]
  *
- * <p><b>Example:</b>
- * <pre>
- * Input: [sample input]
- * Output: [sample output]
- * Explanation: [brief explanation]
- * </pre>
- *
- * ---
- *
- * <p><b>Intuition:</b><br>
- * [Core insight - the "aha!" moment]
+ * <p><b>Intuition & Approach:</b><br>
+ * [Core insight and strategy]
+ * - Key observations
  * - Why this approach works
- * - Key observation
+ * - Algorithm steps or strategy
+ * - Alternative approaches if applicable
  *
- * ---
- *
- * <p><b>Approach:</b>
- * <ol>
- *   <li>Step 1: [Clear action]</li>
- *   <li>Step 2: [Clear action]</li>
- *   <li>Step 3: [Clear action]</li>
- * </ol>
- *
- * ---
- *
- * <p><b>Time Complexity:</b> O(...)<br>
- * [Explanation of why]
- *
- * <p><b>Space Complexity:</b> O(...)<br>
- * [Explanation of space usage]
- *
- * ---
- *
- * <p><b>Edge Cases:</b>
- * <ul>
- *   <li>Empty input: [how handled]</li>
- *   <li>Single element: [how handled]</li>
- *   <li>Maximum constraints: [how handled]</li>
- * </ul>
- *
- * @see <a href="[related link]">Related Problem</a>
+ * <p><b>Time Complexity:</b> O(...) - [Brief explanation]
+ * <br><b>Space Complexity:</b> O(...) - [Brief explanation]
  */
 ```
+
+#### ✅ MUST INCLUDE:
+1. **Problem Statement** - Clear description of what to solve
+2. **Intuition & Approach** - How and why the solution works
+3. **Time Complexity** - Big-O with brief explanation
+4. **Space Complexity** - Big-O with brief explanation
+
+#### ❌ MUST NOT INCLUDE:
+1. **Problem Links** - No LeetCode/GFG URLs (links go in READMEs only)
+2. **Examples** - No input/output examples (examples in READMEs only)
+3. **Company Names** - No company tags (company info in separate company/*.md files)
+4. **Difficulty Tags** - No Easy/Medium/Hard (difficulty in READMEs only)
+5. **Topic Tags** - No topic lists (topics in READMEs only)
+6. **Edge Cases Section** - Handle in code comments, not separate section
+7. **@see References** - No cross-references in solution files
 
 #### Method Documentation (Mandatory)
 
@@ -546,19 +534,12 @@ Each algorithm directory MUST have a README.md with these sections:
 
 ### Mandatory Requirements for All Code
 
-✅ **Every file MUST have:**
+✅ **Every solution file MUST have:**
 
-1. **Complete class-level JavaDoc** with ALL sections:
-   - Problem link
-   - Difficulty level
-   - Topics/tags (minimum 2)
-   - Problem statement
-   - Example with input/output
-   - Intuition (minimum 3 points)
-   - Approach (minimum 4 steps)
-   - Time complexity with explanation
-   - Space complexity with explanation
-   - Edge cases (minimum 3)
+1. **Class-level JavaDoc** with exactly 3 sections:
+   - **Problem Statement**: Clear description of what to solve
+   - **Intuition & Approach**: How the solution works, key insights, algorithm steps
+   - **Time & Space Complexity**: Big-O notation with explanations
 
 2. **Method documentation** for ALL public methods:
    - One-line description
@@ -576,7 +557,7 @@ Each algorithm directory MUST have a README.md with these sections:
    - Purpose clearly stated
    - Complexity mentioned if different from main method
 
-5. **Alternative approaches**:
+5. **Alternative approaches** (if applicable):
    - If a significantly different approach exists, include it
    - Document trade-offs
    - Mention when to use each approach
@@ -589,17 +570,19 @@ Each algorithm directory MUST have a README.md with these sections:
 
 1. Missing or incomplete class-level JavaDoc
 2. Undocumented public methods
-3. No problem link
-4. No difficulty level
-5. Missing complexity analysis
-6. No intuition section
-7. Magic numbers without explanation
-8. Unused imports or variables
-9. main() method (unless utility class)
-10. TODO/FIXME comments
-11. System.out.println for debugging
-12. Commented-out code blocks
-13. IDE warnings
+3. **Problem links in solution files** (links belong in READMEs only)
+4. **Examples in solution files** (examples belong in READMEs only)
+5. **Company names in solution files** (company info in company/*.md files)
+6. **Difficulty tags in solution files** (difficulty in READMEs only)
+7. Missing complexity analysis
+8. No intuition section
+9. Magic numbers without explanation
+10. Unused imports or variables
+11. main() method (unless utility class)
+12. TODO/FIXME comments in committed code
+13. System.out.println for debugging
+14. Commented-out code blocks
+15. IDE warnings
 
 ---
 
@@ -663,11 +646,10 @@ public class ProblemName {
 
 | Element | Minimum Requirement |
 |---------|-------------------|
-| Class JavaDoc | 20 lines minimum |
-| Intuition Points | 3 minimum |
-| Approach Steps | 4 minimum |
-| Edge Cases | 3 minimum |
-| Example Test Cases | 1 minimum |
+| Class JavaDoc | 3 sections (Problem Statement, Intuition & Approach, Complexity) |
+| Problem Statement | Clear, concise description |
+| Intuition & Approach | Core insights, key observations, algorithm steps |
+| Complexity Analysis | Both time and space with explanations |
 | Method JavaDoc | All public methods |
 | Inline Comments | One per logical block |
 | Helper Method Docs | All private methods |
@@ -678,36 +660,44 @@ public class ProblemName {
 
 Before committing any solution, verify ALL of these:
 
-- [ ] Class JavaDoc complete (all sections present)
-- [ ] Problem link is valid and accessible
-- [ ] Difficulty level matches source
-- [ ] Minimum 2 topic tags included
-- [ ] Company tags added if applicable
-- [ ] Problem statement is clear
-- [ ] Example with input/output provided
-- [ ] Intuition has minimum 3 bullet points
-- [ ] Approach has minimum 4 clear steps
+**DOCUMENTATION:**
+- [ ] Class JavaDoc has exactly 3 sections: Problem Statement, Intuition & Approach, Complexity
+- [ ] Problem statement is clear and concise
+- [ ] Intuition explains WHY the approach works
+- [ ] Approach explains HOW the algorithm works (key steps)
 - [ ] Time complexity documented with explanation
 - [ ] Space complexity documented with explanation
-- [ ] Minimum 3 edge cases documented
 - [ ] All public methods have JavaDoc
 - [ ] All helper methods documented
 - [ ] @param tags for all parameters
 - [ ] @return tags for return values
 - [ ] Inline comments for complex logic
+
+**COMPLIANCE CHECKS:**
+- [ ] ❌ NO problem links in solution files (put in READMEs)
+- [ ] ❌ NO examples in solution files (put in READMEs)
+- [ ] ❌ NO company names in solution files (use company/*.md files)
+- [ ] ❌ NO difficulty tags in solution files (put in READMEs)
+- [ ] ❌ NO topic tags in solution files (put in READMEs)
+- [ ] ❌ NO edge case sections (handle in code comments)
+- [ ] ❌ NO @see references in solution files
+
+**CODE QUALITY:**
 - [ ] Code follows naming conventions
 - [ ] No unused imports
 - [ ] No unused variables
-- [ ] No magic numbers (or explained)
-- [ ] No System.out.println debugging
+- [ ] No magic numbers (or explained with constants)
+- [ ] No System.out.println debugging statements
 - [ ] No commented-out code
-- [ ] No TODO/FIXME comments
-- [ ] Package declaration matches structure
-- [ ] README updated with problem entry
+- [ ] No TODO/FIXME comments in committed code
+- [ ] Package declaration matches directory structure
 - [ ] File compiles without errors
 - [ ] No IDE warnings
 - [ ] Alternative approaches included (if applicable)
 - [ ] Trade-offs explained (if multiple approaches)
+
+**README UPDATES:**
+- [ ] README updated with problem entry (with link, difficulty, topics)
 
 ---
 
@@ -814,7 +804,7 @@ public class TwoSum {
 }
 ```
 
-#### ✅ Good - Complete Documentation
+#### ✅ Good - STANDARD COMPLIANT Format
 
 ```java
 package com.javarena.dsa.datastructures.arrays;
@@ -823,113 +813,64 @@ import java.util.HashMap;
 import java.util.Map;
 
 /**
- * 1. Two Sum
- *
- * <p><b>Problem Link:</b> 
- * <a href="https://leetcode.com/problems/two-sum/">LeetCode - Two Sum</a>
- *
- * <p><b>Difficulty:</b> Easy
- *
- * <p><b>Topics:</b> Array, Hash Table
- *
- * <p><b>Companies:</b> Amazon, Google, Facebook, Microsoft
- *
- * ---
+ * Two Sum
  *
  * <p><b>Problem Statement:</b><br>
- * Given an array of integers nums and an integer target, return indices of the two numbers 
- * such that they add up to target. You may assume that each input would have exactly one 
- * solution, and you may not use the same element twice.
+ * Given array of integers nums and integer target, return indices of two numbers
+ * that add up to target. Each input has exactly one solution, cannot use same element twice.
  *
- * <p><b>Example:</b>
- * <pre>
- * Input: nums = [2,7,11,15], target = 9
- * Output: [0,1]
- * Explanation: Because nums[0] + nums[1] == 9, we return [0, 1]
- * </pre>
+ * <p><b>Intuition & Approach:</b><br>
+ * Hash map for O(n) single-pass solution:
+ * - Store numbers and their indices in hash map as we iterate
+ * - For each number, calculate complement = target - current
+ * - If complement exists in map, we found the pair
+ * - Otherwise, add current number to map and continue
+ * 
+ * Key insight: Avoid O(n²) nested loops by using O(1) hash map lookups.
+ * Trade-off: Use O(n) extra space for O(n) time improvement.
+ * 
+ * Alternative: Two-pointer on sorted array (modifies input, returns values not indices).
  *
- * ---
- *
- * <p><b>Intuition:</b><br>
- * The key insight is to use a hash map to store numbers we've seen along with their indices.
- * - For each number, we calculate its complement (target - current number)
- * - If the complement exists in our hash map, we've found our pair
- * - This allows us to solve in a single pass instead of nested loops
- *
- * ---
- *
- * <p><b>Approach:</b>
- * <ol>
- *   <li>Create a hash map to store number → index mapping</li>
- *   <li>Iterate through the array once</li>
- *   <li>For each number, calculate complement = target - current</li>
- *   <li>Check if complement exists in hash map; if yes, return indices</li>
- *   <li>Otherwise, add current number and index to hash map</li>
- * </ol>
- *
- * ---
- *
- * <p><b>Time Complexity:</b> O(n)<br>
- * We traverse the list once, and hash map operations (get/put) are O(1) average case.
- *
- * <p><b>Space Complexity:</b> O(n)<br>
- * In the worst case, we store all n elements in the hash map.
- *
- * ---
- *
- * <p><b>Edge Cases:</b>
- * <ul>
- *   <li>Array with exactly 2 elements: Directly check if they sum to target</li>
- *   <li>Negative numbers: Algorithm works the same way</li>
- *   <li>Zero in array: Handled correctly by complement calculation</li>
- * </ul>
- *
- * @see <a href="https://leetcode.com/problems/two-sum-ii-input-array-is-sorted/">Two Sum II</a>
+ * <p><b>Time Complexity:</b> O(N) - Single pass, hash map operations O(1)
+ * <br><b>Space Complexity:</b> O(N) - Store up to n elements in hash map
  */
 public class TwoSum {
     
     /**
-     * Finds two indices of numbers that add up to the target using hash map.
+     * Finds two indices that sum to target using hash map.
      *
      * @param nums array of integers to search
      * @param target the target sum to find
      * @return array containing two indices [i, j] where nums[i] + nums[j] == target
      */
     public int[] twoSum(int[] nums, int target) {
-        // Step 1: Create hash map to store number → index
         Map<Integer, Integer> numToIndex = new HashMap<>();
         
-        // Step 2: Iterate through array
         for (int i = 0; i < nums.length; i++) {
-            // Step 3: Calculate complement
             int complement = target - nums[i];
             
-            // Step 4: Check if complement exists in our map
             if (numToIndex.containsKey(complement)) {
                 return new int[]{numToIndex.get(complement), i};
             }
             
-            // Step 5: Add current number to map
             numToIndex.put(nums[i], i);
         }
         
-        // Problem guarantees solution exists, but return empty array as fallback
         return new int[]{};
     }
     
     /**
-     * Brute force approach - for comparison and learning purposes.
+     * Brute force approach - for learning and comparison.
      * 
-     * <p><b>Time:</b> O(n²) - nested loops
-     * <br><b>Space:</b> O(1) - no extra space needed
-     * <br><b>Trade-off:</b> Simple to understand but too slow for large inputs
+     * <p><b>Time:</b> O(N²) - Nested loops
+     * <br><b>Space:</b> O(1) - No extra space
+     * <br><b>Trade-off:</b> Simple but slower
      *
      * @param nums array of integers
      * @param target target sum
-     * @return indices of two numbers that sum to target
+     * @return indices of two numbers
      */
     public int[] twoSumBruteForce(int[] nums, int target) {
-        // Try all pairs
         for (int i = 0; i < nums.length; i++) {
             for (int j = i + 1; j < nums.length; j++) {
                 if (nums[i] + nums[j] == target) {
