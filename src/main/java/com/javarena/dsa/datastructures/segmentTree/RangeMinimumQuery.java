@@ -1,19 +1,31 @@
 package com.javarena.dsa.datastructures.segmentTree;
 
-
 /**
- * Segment Tree implementation for Range Minimum Query (RMQ).
- * <p>
- * Supports building the segment tree and querying the minimum value
- * in a given range [l, r].
- * <p>
- * Time Complexities:
- * - Build: O(n)
- * - Query: O(log n)
- * <p>
- * Space Complexity: O(4n)
+ * Segment Tree - Range Minimum Query (RMQ)
+ *
+ * <p><b>Problem Statement:</b><br>
+ * Build data structure to efficiently answer range minimum queries on static array.
+ * Support querying minimum value in any range [l, r].
+ *
+ * <p><b>Intuition & Approach:</b><br>
+ * Segment Tree divides array into segments:
+ * - Each node represents a range
+ * - Leaf nodes: single elements
+ * - Internal nodes: minimum of children
+ * - Binary tree structure
+ * 
+ * Operations:
+ * - Build: Recursively construct tree bottom-up
+ * - Query: Combine relevant segments
+ *   - Complete overlap: return node value
+ *   - Partial overlap: recurse on children
+ *   - No overlap: return infinity
+ * 
+ * Tree stored in array (4n space for safety).
+ *
+ * <p><b>Time Complexity:</b> O(N) build, O(log N) query
+ * <br><b>Space Complexity:</b> O(4N) for tree array
  */
-
 public class RangeMinimumQuery {
 
     // Segment tree array

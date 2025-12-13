@@ -1,35 +1,28 @@
 package com.javarena.dsa.datastructures.arrays;
 
 /**
- * <p><b>Problem Intuition:</b></p>
- * Imagine a grid where each cell has a diagonal board:
- * - `1` means the board redirects the ball to the right.
- * - `-1` means the board redirects the ball to the left.
- * <p>
- * The ball starts at the top of a column and moves down row by row.
- * The ball can get stuck if:
- * 1. It hits the boundary of the grid (moving outside the grid).
- * 2. It forms a "V-shape" with two adjacent boards:
- * - Example: cell `(r, c)` has `1` and cell `(r, c + 1)` has `-1`.
- * <p>
- * The goal is to determine for each starting column where the ball ends up.
- * If the ball gets stuck, return -1 for that column.
+ * Where Will the Ball Fall
  *
- * <p><b>Approach:</b></p>
- * - We simulate the ball's movement recursively or iteratively.
- * - Start from each column at the top and move row by row until:
- * - The ball reaches the bottom successfully (return the final column index).
- * - The ball gets stuck (return -1).
+ * <p><b>Problem Statement:</b><br>
+ * Given a grid where each cell has diagonal board (1 = right, -1 = left), determine where balls starting 
+ * from top of each column end up. Ball gets stuck if it hits boundary or forms V-shape with adjacent boards.
  *
- * <p><b>Time Complexity:</b></p>
- * - For each starting column, we potentially traverse all rows once.
- * - There are `m` starting columns and `n` rows.
- * - Total = O(m * n)
+ * <p><b>Intuition & Approach:</b><br>
+ * - Simulate ball movement recursively row by row
+ * - For each starting column, trace path down:
+ *   - If grid[row][col] == 1: try move right
+ *     - Check if grid[row][col+1] also == 1 (valid path)
+ *     - If valid, move to (row+1, col+1)
+ *     - Otherwise stuck (V-shape or boundary)
+ *   - If grid[row][col] == -1: try move left
+ *     - Check if grid[row][col-1] also == -1 (valid path)
+ *     - If valid, move to (row+1, col-1)
+ *     - Otherwise stuck
+ * - Base case: reached bottom, return final column
+ * - Return -1 if stuck anywhere
  *
- * <p><b>Space Complexity:</b></p>
- * - Recursive stack space = O(n) in the worst case (if recursion goes all the way down).
- * - Output array of size O(m).
- * - Total = O(n + m)
+ * <p><b>Time Complexity:</b> O(M × N) - M columns, each traces N rows
+ * <br><b>Space Complexity:</b> O(N) - Recursive stack depth
  */
 public class WhereWillBallFall {
 

@@ -1,30 +1,30 @@
 package com.javarena.dsa.datastructures.arrays;
 
+/**
+ * Find the Minimum Area to Cover All Ones
+ *
+ * <p><b>Problem Statement:</b><br>
+ * Given a binary grid (0s and 1s), find the minimum rectangular area that covers all cells containing 1.
+ *
+ * <p><b>Intuition & Approach:</b><br>
+ * The smallest rectangle is defined by boundaries:
+ * - Topmost row with a 1
+ * - Bottommost row with a 1
+ * - Leftmost column with a 1
+ * - Rightmost column with a 1
+ * 
+ * Two approaches:
+ * 1. With Extra Space O(N+M): Track which rows/cols have 1s, find boundaries
+ * 2. Optimal O(1) Space: Scan from edges to find first/last row and column with 1s
+ * 
+ * Area = (bottomRow - topRow + 1) × (rightCol - leftCol + 1)
+ *
+ * <p><b>Time Complexity:</b> O(N × M) - Must scan grid to find all 1s
+ * <br><b>Space Complexity:</b> O(1) for optimal approach, O(N+M) for first approach
+ */
 public class FindTheMinimumAreaToCoverAllOnes {
     /**
-     * Finds the minimum rectangular area in a binary grid (0s and 1s)
-     * that covers all the cells containing 1.
-     * <p>
-     * Intuition:
-     * - We want the smallest rectangle that contains all the 1s in the grid.
-     * - This rectangle can be defined by the minimum and maximum rows/columns that have at least one `1`.
-     * - Once we know the topmost row, bottommost row, leftmost column, and rightmost column that contain a `1`,
-     * we can calculate the rectangle’s dimensions and area.
-     * <p>
-     * Approach:
-     * 1. Traverse the grid once to mark which rows and columns contain at least one `1`.
-     * 2. From the `row[]` array, find the first and last row that contains a `1` → gives the height of the rectangle.
-     * 3. From the `col[]` array, find the first and last column that contains a `1` → gives the width of the rectangle.
-     * 4. Multiply height × width to get the minimum area.
-     * <p>
-     * Time Complexity:
-     * - O(n * m) for scanning the grid.
-     * - O(n) to find top/bottom rows containing `1`.
-     * - O(m) to find left/right columns containing `1`.
-     * - Total = O(n * m), dominated by the grid traversal.
-     * <p>
-     * Space Complexity:
-     * - O(n + m) for `row[]` and `col[]` arrays.
+     * Finds minimum area using extra space for row/col tracking.
      */
     public int minimumAreaWithSpace(int[][] grid) {
         int n = grid.length;
@@ -61,31 +61,7 @@ public class FindTheMinimumAreaToCoverAllOnes {
     }
 
     /**
-     * Finds the minimum rectangular area in a binary grid (0s and 1s)
-     * that covers all the cells containing 1.
-     * <p>
-     * Intuition:
-     * - The smallest rectangle containing all 1s is defined by:
-     * - the topmost row with a 1
-     * - the bottommost row with a 1
-     * - the leftmost column with a 1
-     * - the rightmost column with a 1
-     * - Once these boundaries are known, the rectangle area = (height × width).
-     * <p>
-     * Approach:
-     * 1. Scan rows from top → find first row containing a `1` (ri).
-     * 2. Scan rows from bottom → find last row containing a `1` (rl).
-     * 3. Scan columns from left → find first column containing a `1` (ci).
-     * 4. Scan columns from right → find last column containing a `1` (cl).
-     * 5. Compute area = (rl - ri + 1) × (cl - ci + 1).
-     * <p>
-     * Time Complexity:
-     * - O(n * m) in the worst case (we may scan almost the entire grid
-     * while checking for top/bottom rows and left/right columns).
-     * - Still optimal, since we must at least inspect all 1s.
-     * <p>
-     * Space Complexity:
-     * - O(1), since we only use a few variables to store boundaries.
+     * Finds minimum area with O(1) space by scanning from edges.
      */
     public int minimumArea(int[][] arr) {
         int rows = arr.length, cols = arr[0].length;

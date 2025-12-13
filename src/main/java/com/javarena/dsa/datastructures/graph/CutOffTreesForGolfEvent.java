@@ -2,50 +2,37 @@ package com.javarena.dsa.datastructures.graph;
 
 import java.util.*;
 
+/**
+ * Cut Off Trees for Golf Event
+ *
+ * <p><b>Problem Statement:</b><br>
+ * Given forest grid: 0=obstacle, 1=grass, >1=tree (height).
+ * Start at (0,0), cut all trees in increasing height order.
+ * Return total steps, or -1 if any tree unreachable.
+ *
+ * <p><b>Intuition & Approach:</b><br>
+ * Multiple shortest path problem:
+ * - Must visit trees in sorted height order
+ * - Use BFS to find shortest path between consecutive trees
+ * - Accumulate total distance
+ * 
+ * Algorithm:
+ * 1. Collect all trees (value > 1) with positions
+ * 2. Sort trees by height (ascending)
+ * 3. Start at (0, 0)
+ * 4. For each tree in sorted order:
+ *    - BFS from current position to tree
+ *    - If unreachable, return -1
+ *    - Add distance to total
+ *    - Update current position
+ * 5. Return total steps
+ *
+ * <p><b>Time Complexity:</b> O(T log T + T×M×N) - T trees, M×N grid, BFS per tree
+ * <br><b>Space Complexity:</b> O(M×N) - Visited array + O(T) for tree list
+ */
 public class CutOffTreesForGolfEvent {
     /**
-     * Problem: Cut Off Trees for Golf Event (LeetCode 675)
-     * ----------------------------------------------------
-     * We are given a forest represented as a 2D grid where:
-     * - 0 represents obstacles (impassable cells),
-     * - 1 represents grass (walkable cells),
-     * - values > 1 represent trees (walkable and cuttable cells).
-     * <p>
-     * Task:
-     * We must cut all trees in **increasing order of their height**.
-     * The starting position is (0,0). From each tree to the next, we can only move
-     * in 4 directions (up, down, left, right) and must find the **shortest path**.
-     * <p>
-     * If any tree is unreachable, return -1. Otherwise, return the total number
-     * of steps required to cut all trees.
-     * <p>
-     * ----------------------------------------------------
-     * Intuition:
-     * 1. Since trees must be cut in ascending height order, we sort all tree positions by height.
-     * 2. From the current position, use BFS to compute the shortest path to the next tree.
-     * 3. Accumulate the steps; if BFS cannot reach a tree, return -1.
-     * <p>
-     * ----------------------------------------------------
-     * Approach:
-     * 1. Collect all trees (value > 1) into a list of (height, row, col).
-     * 2. Sort the list by height.
-     * 3. Initialize (sr, sc) = (0, 0).
-     * 4. For each tree in sorted order:
-     * - Run BFS from (sr, sc) to the tree's position (tr, tc).
-     * - If BFS returns -1, return -1.
-     * - Otherwise, add BFS distance to total steps.
-     * - Update (sr, sc) = (tr, tc).
-     * 5. Return total steps after processing all trees.
-     * <p>
-     * ----------------------------------------------------
-     * Time Complexity:
-     * - Sorting trees: O(T log T), where T = number of trees.
-     * - BFS per tree: O(m * n), where m = rows, n = cols.
-     * - Total: O(T log T + T * m * n).
-     * <p>
-     * Space Complexity:
-     * - O(m * n) for visited array during BFS.
-     * - O(T) for storing tree list.
+     * Calculates total steps to cut all trees in order.
      */
     public int cutOffTree(List<List<Integer>> forest) {
         int n = forest.size();

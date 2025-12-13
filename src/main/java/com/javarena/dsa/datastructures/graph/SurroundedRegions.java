@@ -1,17 +1,29 @@
 package com.javarena.dsa.datastructures.graph;
 
+/**
+ * Surrounded Regions
+ *
+ * <p><b>Problem Statement:</b><br>
+ * Given a board with 'X' and 'O', capture all regions surrounded by 'X' by flipping 'O' to 'X'.
+ * A region is captured if it's not connected to the border.
+ *
+ * <p><b>Intuition & Approach:</b><br>
+ * - Any 'O' connected to border cannot be captured (has escape route)
+ * - Use DFS from all border 'O' cells to mark safe regions
+ * - Start from:
+ *   - Top/bottom rows: board[0][j] and board[n-1][j]
+ *   - Left/right columns: board[i][0] and board[i][m-1]
+ * - Mark all connected 'O' cells as visited (safe)
+ * - After DFS, flip all unvisited 'O' to 'X' (captured regions)
+ * - This is similar to enclaves problem
+ *
+ * <p><b>Time Complexity:</b> O(N × M) - Visit each cell at most once
+ * <br><b>Space Complexity:</b> O(N × M) - Visited array + recursion stack
+ */
 public class SurroundedRegions {
 
     /**
-     * Solves the Surrounded Regions problem on a 2D board.
-     * <p>
-     * Intuition:
-     * - Any 'O' connected to the border should not be flipped.
-     * - Use DFS from the borders to mark all such safe 'O's.
-     * - After that, flip all unvisited 'O's to 'X'.
-     * <p>
-     * Time Complexity: O(N * M)
-     * Space Complexity: O(N * M) for the visited matrix and recursion stack
+     * Captures surrounded regions by flipping 'O' to 'X'.
      */
     public void solve(char[][] board) {
         int n = board.length;

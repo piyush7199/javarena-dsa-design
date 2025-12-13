@@ -1,19 +1,31 @@
 package com.javarena.dsa.datastructures.arrays;
 
+/**
+ * Rotate Array
+ *
+ * <p><b>Problem Statement:</b><br>
+ * Rotate an array to the right by k steps in-place.
+ *
+ * <p><b>Intuition & Approach:</b><br>
+ * Use three-reversal trick:
+ * 1. Reverse entire array
+ * 2. Reverse first k elements
+ * 3. Reverse remaining n-k elements
+ * 
+ * Example: [1,2,3,4,5,6,7], k=3
+ * - After reversing all: [7,6,5,4,3,2,1]
+ * - After reversing first 3: [5,6,7,4,3,2,1]
+ * - After reversing last 4: [5,6,7,1,2,3,4] ✓
+ * 
+ * Handle k > n with k = k % n
+ *
+ * <p><b>Time Complexity:</b> O(N) - Three passes through array
+ * <br><b>Space Complexity:</b> O(1) - In-place rotation
+ */
 public class RotateArrays {
 
     /**
-     * Rotates the given array to the right by k steps using array reversal.
-     *
-     * <p>Intuition:
-     * - To rotate the array right by k positions, we can:
-     * 1. Reverse the entire array.
-     * 2. Reverse the first k elements.
-     * 3. Reverse the remaining n-k elements.
-     * - This results in the rotated version with O(1) space and O(n) time.
-     * <p>
-     * Time Complexity: O(n) — Three passes over the array
-     * Space Complexity: O(1) — In-place rotation
+     * Rotates array to right by k steps.
      */
     public void rotate(int[] nums, int k) {
         int n = nums.length;

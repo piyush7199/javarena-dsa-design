@@ -1,23 +1,37 @@
 package com.javarena.dsa.datastructures.linkedList;
 
+/**
+ * LinkedList Core Operations
+ *
+ * <p><b>Problem Statement:</b><br>
+ * Collection of fundamental linked list operations: reverse (iterative/recursive),
+ * cycle detection (Floyd's algorithm), find cycle start, palindrome check.
+ *
+ * <p><b>Intuition & Approach:</b><br>
+ * Key techniques:
+ * 
+ * 1. Reverse List:
+ *    - Iterative: Three pointers (prev, curr, next)
+ *    - Recursive: Reverse rest, adjust pointers
+ * 
+ * 2. Cycle Detection (Floyd's):
+ *    - Fast pointer moves 2 steps, slow moves 1
+ *    - If they meet, cycle exists
+ *    - Distance reduces by 1 each iteration
+ * 
+ * 3. Find Cycle Start:
+ *    - After meeting, reset one pointer to head
+ *    - Move both 1 step until they meet
+ * 
+ * 4. Palindrome: Reverse second half, compare
+ *
+ * <p><b>Time Complexity:</b> O(N) for all operations
+ * <br><b>Space Complexity:</b> O(1) iterative, O(N) recursive
+ */
 public class LinkedList {
 
     /**
-     * Reverses a singly linked list using an iterative approach.
-     *
-     * <p>Uses two pointers (prev and curr) to reverse the direction of the list one node at a time.
-     * This method operates in-place and returns the new head of the reversed list.
-     *
-     * <pre>{@code
-     * Input:  1 -> 2 -> 3 -> 4 -> null
-     * Output: 4 -> 3 -> 2 -> 1 -> null
-     * }</pre>
-     * <p>
-     * Time and Space Complexity:
-     * <ul>
-     *   <li>Time Complexity: O(n)</li>
-     *   <li>Space Complexity: O(1)</li>
-     * </ul>
+     * Reverses linked list iteratively.
      */
     public static ListNode reverseListIter(ListNode head) {
         ListNode curr = head;

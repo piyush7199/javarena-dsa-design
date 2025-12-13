@@ -2,16 +2,31 @@ package com.javarena.dsa.datastructures.hashMapAndSet;
 
 import java.util.HashMap;
 
+/**
+ * Subarray Sum Equals K
+ *
+ * <p><b>Problem Statement:</b><br>
+ * Count number of continuous subarrays whose sum equals k.
+ *
+ * <p><b>Intuition & Approach:</b><br>
+ * Prefix sum with HashMap:
+ * - Subarray sum [i, j] = prefixSum[j] - prefixSum[i-1]
+ * - If prefixSum[j] - prefixSum[i-1] = k, then prefixSum[i-1] = prefixSum[j] - k
+ * - Store frequency of prefix sums in HashMap
+ * - For each position, check if (currentSum - k) exists in map
+ * - Add its frequency to result (multiple subarrays possible)
+ * 
+ * Two approaches:
+ * 1. Brute force O(N²): Check all subarrays
+ * 2. Prefix sum + HashMap O(N): Optimal
+ *
+ * <p><b>Time Complexity:</b> O(N) for optimized, O(N²) for brute force
+ * <br><b>Space Complexity:</b> O(N) for HashMap
+ */
 public class SubArraySumEqualsK {
 
     /**
-     * Brute force approach to count the number of subarrays that sum up to a target value K.
-     *
-     * <p><b>Intuition:</b> Try all possible subarrays using two nested loops.
-     * For each subarray, calculate the sum and compare with K.
-     *
-     * <p><b>Time Complexity:</b> O(n^2) – Two nested loops over the array.</p>
-     * <p><b>Space Complexity:</b> O(1) – No extra space used.</p>
+     * Brute force approach.
      */
     public int subarraySumBrute(int[] Arr, int K) {
         int ans = 0;

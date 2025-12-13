@@ -1,9 +1,25 @@
 package com.javarena.dsa.datastructures.stackAndQueue;
 
 /**
- * A generic queue implementation using circular array logic.
+ * Queue Implementation using Circular Array
  *
- * @param <T> the type of elements stored in the queue
+ * <p><b>Problem Statement:</b><br>
+ * Implement generic queue using fixed-size circular array.
+ * Support enqueue, dequeue, peek, isEmpty, isFull operations.
+ *
+ * <p><b>Intuition & Approach:</b><br>
+ * Circular array with front and rear pointers:
+ * - Front: points to first element
+ * - Rear: points to last element
+ * - Enqueue: Move rear forward (circularly), add element
+ * - Dequeue: Remove from front, move front forward
+ * - Use modulo for circular wrapping
+ * - Track size to detect full/empty
+ * 
+ * Efficient space utilization with wraparound.
+ *
+ * <p><b>Time Complexity:</b> O(1) for all operations
+ * <br><b>Space Complexity:</b> O(N) - Array size
  */
 public class QueueImpl<T> {
     private final T[] arr;

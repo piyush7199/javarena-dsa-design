@@ -3,7 +3,24 @@ package com.javarena.dsa.datastructures.binaryTree;
 import java.util.*;
 
 /**
- * A collection of binary tree problems commonly asked in top tech companies.
+ * Binary Tree Solutions Collection
+ *
+ * <p><b>Problem Statement:</b><br>
+ * Collection of common binary tree problems: identical trees, max depth, zigzag traversal, 
+ * balanced tree check, symmetric tree, path sum, and more.
+ *
+ * <p><b>Intuition & Approach:</b><br>
+ * Common patterns:
+ * - DFS recursion for tree properties (height, balance, identical)
+ * - BFS with queue for level-order traversals
+ * - Deque for zigzag/spiral traversals
+ * - Path tracking for sum problems
+ * - Post-order for bottom-up computations
+ * 
+ * Each method implements a specific tree algorithm with optimal complexity.
+ *
+ * <p><b>Time Complexity:</b> Varies by problem, mostly O(N)
+ * <br><b>Space Complexity:</b> O(H) for recursion, O(N) for BFS
  */
 public class Solutions {
 

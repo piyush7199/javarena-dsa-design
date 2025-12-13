@@ -1,12 +1,28 @@
 package com.javarena.dsa.datastructures.binaryTree;
 
+/**
+ * Count Nodes in Binary Tree
+ *
+ * <p><b>Problem Statement:</b><br>
+ * Count the total number of nodes in a binary tree. Optimize for complete binary trees.
+ *
+ * <p><b>Intuition & Approach:</b><br>
+ * Standard approach: DFS recursion counting 1 + left + right
+ * 
+ * Optimized for Complete Binary Tree:
+ * - Check if left height == right height
+ * - If equal: perfect binary tree, count = 2^h - 1
+ * - If not equal: recursively count left and right
+ * - For complete tree: O(log² N) vs O(N) for standard
+ * - Height computation takes O(log N), done at each level
+ *
+ * <p><b>Time Complexity:</b> O(N) standard, O(log² N) for complete tree
+ * <br><b>Space Complexity:</b> O(H) recursion stack where H = height
+ */
 public class CountNodes {
 
     /**
-     * Counts the number of nodes in a binary tree using standard DFS traversal.
-     * <p>
-     * Time Complexity: O(n) — visits every node.
-     * Space Complexity: O(h) — recursion stack, h = height of tree.
+     * Standard DFS node counting.
      */
     public int countNodes1(Node root) {
         if (root == null) {
@@ -17,14 +33,7 @@ public class CountNodes {
     }
 
     /**
-     * Optimized node counting for a complete binary tree using tree height.
-     * <p>
-     * Intuition:
-     * - In a perfect binary tree (left and right heights equal), node count = 2^h - 1.
-     * - Otherwise, recursively count left and right subtrees.
-     * <p>
-     * Time Complexity: O(log² n) — height computation O(log n), done at each level.
-     * Space Complexity: O(log n) — due to recursion stack.
+     * Optimized counting for complete binary tree.
      */
     public int countNodes(Node root) {
         if (root == null) {

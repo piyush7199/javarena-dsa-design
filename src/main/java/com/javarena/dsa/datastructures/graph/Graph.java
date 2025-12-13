@@ -4,9 +4,34 @@ import java.util.ArrayList;
 import java.util.List;
 
 /**
- * <b>Representation of Undirected Graph as Adjacency Matrix</b>
+ * Graph Representations and Utilities
+ *
+ * <p><b>Problem Statement:</b><br>
+ * Implement graph data structures using adjacency matrix and adjacency list representations.
+ * Provide utilities for graph conversion and manipulation.
+ *
+ * <p><b>Intuition & Approach:</b><br>
+ * Two main representations:
+ * 
+ * 1. Adjacency Matrix: 2D array where matrix[i][j] = 1 if edge exists
+ *    - Space: O(V²)
+ *    - Edge lookup: O(1)
+ *    - Good for dense graphs
+ * 
+ * 2. Adjacency List: Array of lists, each list contains neighbors
+ *    - Space: O(V + E)
+ *    - Edge lookup: O(degree)
+ *    - Good for sparse graphs
+ * 
+ * Includes Pair class for coordinates/values in graph problems.
+ *
+ * <p><b>Time Complexity:</b> Varies by operation
+ * <br><b>Space Complexity:</b> O(V²) for matrix, O(V+E) for list
  */
 
+/**
+ * Adjacency Matrix representation for undirected graph.
+ */
 class AdjacencyMatrixUndirectedGraph {
     private final int[][] graph;
     private final int n;

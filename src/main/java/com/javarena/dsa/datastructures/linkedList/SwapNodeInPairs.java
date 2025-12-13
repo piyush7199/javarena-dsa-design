@@ -1,26 +1,30 @@
 package com.javarena.dsa.datastructures.linkedList;
 
+/**
+ * Swap Nodes In Pairs
+ *
+ * <p><b>Problem Statement:</b><br>
+ * Swap every two adjacent nodes in a singly linked list.
+ * Only pointers are changed, not node values.
+ *
+ * <p><b>Intuition & Approach:</b><br>
+ * Pointer manipulation with dummy node:
+ * - Use dummy node to simplify edge cases (first pair)
+ * - For each pair (cur, second):
+ *   1. Save next pair: npn = second.next
+ *   2. Reverse pair: second.next = cur, cur.next = npn
+ *   3. Connect previous: prev.next = second
+ *   4. Move pointers: prev = cur, cur = npn
+ * 
+ * Process pairs iteratively until end.
+ *
+ * <p><b>Time Complexity:</b> O(N) - Single pass, each node visited once
+ * <br><b>Space Complexity:</b> O(1) - Only a few pointers used
+ */
 public class SwapNodeInPairs {
 
     /**
-     * Swaps every two adjacent nodes in a singly linked list.
-     * <p>
-     * Given the head of a singly linked list, this method swaps every two adjacent nodes
-     * and returns the new head of the modified list. Node values are not modified—only
-     * the node connections (pointers) are changed.
-     * </p>
-     *
-     *
-     * <p>
-     * A dummy node is used to simplify edge cases, especially when swapping the first pair.
-     * Pointers are moved in groups of two to perform in-place swaps.
-     * </p>
-     *
-     * @implNote The method performs in-place swapping using constant extra space.
-     * Only node pointers are changed, not the node values.
-     * @timecomplexity O(n) - where n is the number of nodes in the list.
-     * Each node is visited once during the iteration.
-     * @spacecomplexity O(1) - No additional space is used other than a few pointers.
+     * Swaps adjacent pairs of nodes.
      */
     public ListNode swapPairs(ListNode head) {
         ListNode dummy = new ListNode(0);

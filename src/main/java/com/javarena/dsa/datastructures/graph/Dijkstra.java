@@ -5,7 +5,31 @@ import java.util.Comparator;
 import java.util.List;
 import java.util.PriorityQueue;
 
+/**
+ * Dijkstra's Shortest Path Algorithm
+ *
+ * <p><b>Problem Statement:</b><br>
+ * Find shortest paths from a source node to all other nodes in a weighted graph with non-negative edge weights.
+ *
+ * <p><b>Intuition & Approach:</b><br>
+ * Greedy algorithm using priority queue (min-heap):
+ * - Initialize distances array with infinity, source = 0
+ * - Use min-heap to always process nearest unvisited node
+ * - For each node, relax all outgoing edges:
+ *   - If new path shorter: update distance, add to heap
+ * - Mark nodes as visited to avoid reprocessing
+ * - Continue until heap empty or all nodes processed
+ * 
+ * Key: Always process closest node first (greedy choice)
+ * Works only with non-negative weights.
+ *
+ * <p><b>Time Complexity:</b> O((V + E) log V) with binary heap
+ * <br><b>Space Complexity:</b> O(V + E) for adjacency list and priority queue
+ */
 public class Dijkstra {
+    /**
+     * Edge representation with target and weight.
+     */
     static class Edge {
         int target;
         int weight;
@@ -17,10 +41,7 @@ public class Dijkstra {
     }
 
     /**
-     * Finds shortest paths from source to all nodes in a weighted graph.
-     *
-     * @TimeComplexity O(( V + E) log V) with binary heap
-     * @SpaceComplexity O(V + E) for adjacency list and priority queue
+     * Finds shortest paths from source to all nodes.
      */
     public int[] dijkstra(List<List<Edge>> graph, int V, int source) {
         int[] distances = new int[V];

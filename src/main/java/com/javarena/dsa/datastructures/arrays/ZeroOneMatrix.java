@@ -3,38 +3,35 @@ package com.javarena.dsa.datastructures.arrays;
 import java.util.LinkedList;
 import java.util.Queue;
 
+/**
+ * 01 Matrix - Distance to Nearest Zero
+ *
+ * <p><b>Problem Statement:</b><br>
+ * Given an m x n binary matrix, return the distance of the nearest 0 for each cell.
+ * Distance between adjacent cells is 1.
+ *
+ * <p><b>Intuition & Approach:</b><br>
+ * Classic multi-source BFS problem:
+ * - Cells with 0 are "sources" (distance = 0)
+ * - From all 0s simultaneously, expand outward using BFS
+ * - Update distances of neighboring 1s layer by layer
+ * 
+ * Steps:
+ * 1. Initialize result matrix, mark 0-cells with distance 0
+ * 2. Mark 1-cells as infinity (unvisited)
+ * 3. Add all 0-cells to queue for multi-source BFS
+ * 4. For each cell in queue, check 4 neighbors (up/down/left/right)
+ * 5. If neighbor distance can be improved (current + 1 < neighbor), update and enqueue
+ * 6. Continue until queue empty
+ *
+ * <p><b>Time Complexity:</b> O(M × N) - Each cell processed once
+ * <br><b>Space Complexity:</b> O(M × N) - Result matrix + queue
+ */
 public class ZeroOneMatrix {
-    /**
-     * Given an m x n binary matrix mat, return the distance of the nearest 0 for each cell.
-     * The distance between two adjacent cells is 1.
-     * <p>
-     * -------------------------
-     * Intuition:
-     * - Cells with value 0 are "sources" (distance = 0).
-     * - From each 0, we expand outward using BFS to update the distances of neighboring 1s.
-     * - This is a classic "multi-source BFS" problem.
-     * <p>
-     * Approach:
-     * 1. Initialize an answer matrix `ans` of the same size as mat.
-     * 2. Push all 0-cells into a queue (multi-source BFS).
-     * - Mark their distance as 0 in `ans`.
-     * - Mark 1-cells as initially "infinity" (Integer.MAX_VALUE).
-     * 3. Perform BFS:
-     * - Pop a cell (i, j).
-     * - For each of its 4 neighbors (up, down, left, right):
-     * - If the neighbor's distance can be improved (greater than current + 1),
-     * update it and push it into the queue.
-     * 4. Return the filled `ans` matrix.
-     * <p>
-     * Time Complexity:  O(n * m)
-     * - Each cell is enqueued and dequeued at most once.
-     * - Each edge (neighbor check) is processed at most once.
-     * <p>
-     * Space Complexity: O(n * m)
-     * - We use an extra matrix `ans` of size n * m.
-     * - The queue in the worst case can store all cells.
-     */
 
+    /**
+     * Finds distance to nearest 0 for each cell using multi-source BFS.
+     */
     public int[][] updateMatrix(int[][] mat) {
         Queue<int[]> q = new LinkedList<>();
         int n = mat.length;

@@ -1,39 +1,34 @@
 package com.javarena.dsa.datastructures.arrays;
 
+/**
+ * Valid Sudoku
+ *
+ * <p><b>Problem Statement:</b><br>
+ * Determine if a 9x9 Sudoku board is valid according to rules:
+ * 1. Each row must contain digits 1-9 without repetition
+ * 2. Each column must contain digits 1-9 without repetition
+ * 3. Each 3x3 sub-box must contain digits 1-9 without repetition
+ * Empty cells are marked with '.'
+ *
+ * <p><b>Intuition & Approach:</b><br>
+ * - Use 3 boolean arrays to track seen numbers:
+ *   - rows[9][9]: track if number appeared in row
+ *   - cols[9][9]: track if number appeared in column
+ *   - boxes[9][9]: track if number appeared in 3x3 box
+ * - Traverse board cell by cell, skip empty ('.')
+ * - Convert char to index (0-8)
+ * - Calculate box index: (row/3)*3 + (col/3)
+ * - If number already seen in row/col/box, return false
+ * - Otherwise mark as seen and continue
+ *
+ * <p><b>Time Complexity:</b> O(1) - Fixed 81 cells
+ * <br><b>Space Complexity:</b> O(1) - Fixed size arrays
+ */
 public class ValidSudoku {
-    /**
-     * Intuition:
-     * -----------
-     * We don't need to solve the Sudoku — just check if the current board configuration is valid
-     * according to Sudoku rules:
-     * 1. Each row must contain digits 1–9 without repetition.
-     * 2. Each column must contain digits 1–9 without repetition.
-     * 3. Each 3x3 sub-box must contain digits 1–9 without repetition.
-     * <p>
-     * Approach:
-     * ----------
-     * - Use 3 boolean arrays:
-     * - rows[9][9] → tracks if a number already appeared in a row.
-     * - cols[9][9] → tracks if a number already appeared in a column.
-     * - boxes[9][9] → tracks if a number already appeared in a 3x3 sub-box.
-     * - Traverse the board cell by cell:
-     * - Skip empty cells ('.').
-     * - Convert the character to an index (0–8).
-     * - Check if the number is already marked in its row, column, or sub-box.
-     * - If yes → invalid board (return false).
-     * - Otherwise → mark it as seen.
-     * <p>
-     * Time Complexity:
-     * ----------------
-     * O(81) = O(1)
-     * - We check each cell once (9x9 grid = 81 cells).
-     * <p>
-     * Space Complexity:
-     * -----------------
-     * O(9*9*3) = O(1)
-     * - We use fixed-size boolean arrays (independent of input size).
-     */
 
+    /**
+     * Checks if Sudoku board configuration is valid.
+     */
     public boolean isValidSudoku(char[][] board) {
         // Track seen numbers in rows, columns, and 3x3 sub-boxes
         boolean[][] rows = new boolean[9][9];

@@ -2,19 +2,35 @@ package com.javarena.dsa.datastructures.graph;
 
 import java.util.*;
 
+/**
+ * Topological Sorting Problems
+ *
+ * <p><b>Problem Statement:</b><br>
+ * Implement topological sorting for Directed Acyclic Graphs (DAGs). Solve course schedule problems
+ * and find eventual safe nodes.
+ *
+ * <p><b>Intuition & Approach:</b><br>
+ * Topological Sort gives linear ordering where prerequisites come first.
+ * 
+ * Kahn's Algorithm (BFS-based):
+ * - Calculate in-degree for all nodes
+ * - Start with nodes having in-degree 0 (no dependencies)
+ * - Process each node, reduce in-degree of neighbors
+ * - Add neighbors with in-degree 0 to queue
+ * - If cycle exists, not all nodes processed
+ * 
+ * Applications:
+ * - Course Schedule: Check if all courses can be finished
+ * - Find Order: Return valid course sequence
+ * - Safe Nodes: Reverse graph, find nodes leading to terminals
+ *
+ * <p><b>Time Complexity:</b> O(V + E) - Process all vertices and edges
+ * <br><b>Space Complexity:</b> O(V + E) - Adjacency list + queue
+ */
 public class TopologicalSorting {
 
     /**
-     * Returns the order in which courses should be taken based on the prerequisites.
-     * <p>
-     * Intuition:
-     * - This is a classic **topological sort** problem.
-     * - Each course is a node; prerequisites define directed edges.
-     * - We use **Kahn’s Algorithm** (BFS-based Topological Sort) to process nodes with 0 indegree.
-     * - If the graph contains a cycle (not all nodes processed), return an empty array.
-     * <p>
-     * Time Complexity: O(V + E), where V = number of courses, E = number of prerequisites
-     * Space Complexity: O(V + E) for adjacency list, queue, and auxiliary arrays
+     * Finds order to take courses given prerequisites.
      */
     public int[] findOrder(int numCourses, int[][] prerequisites) {
         List<List<Integer>> adj = new ArrayList<>();

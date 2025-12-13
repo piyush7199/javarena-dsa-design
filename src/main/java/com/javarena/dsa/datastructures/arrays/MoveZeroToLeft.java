@@ -1,13 +1,27 @@
 package com.javarena.dsa.datastructures.arrays;
 
+/**
+ * Move Zeros to Left
+ *
+ * <p><b>Problem Statement:</b><br>
+ * Move all zeros in the array to the left side while maintaining the relative order of non-zero elements 
+ * on the right side.
+ *
+ * <p><b>Intuition & Approach:</b><br>
+ * - Use two-pointer approach from end of array (reverse of "move zeros to right")
+ * - Pointer i: traverse from end to start
+ * - Pointer j: track where to place next non-zero element from right
+ * - When non-zero found at i, swap arr[i] with arr[j], decrement j
+ * - This pushes non-zeros toward right end, leaving left side for zeros
+ * - Single pass, in-place solution
+ *
+ * <p><b>Time Complexity:</b> O(N) - Single pass through array
+ * <br><b>Space Complexity:</b> O(1) - In-place swapping
+ */
 public class MoveZeroToLeft {
 
     /**
-     * Instead of shifting elements one by one (which is slow), we use a two-pointer approach from the end of the array:
-     * One pointer (i) goes through every element from the end to the start.
-     * The other pointer (j) tracks where to place the next non-zero element.
-     * When we find a non-zero element, we swap it with the element at position j.
-     * This pushes the non-zero elements toward the end of the array and leaves the beginning (the left side) for zeros.
+     * Moves all zeros to left side of array.
      */
     public static void moveZeroToLeft(int[] arr) {
         int i = arr.length - 1;

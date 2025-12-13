@@ -2,6 +2,25 @@ package com.javarena.dsa.datastructures.stackAndQueue;
 
 import java.util.Stack;
 
+/**
+ * Max Stack
+ *
+ * <p><b>Problem Statement:</b><br>
+ * Design stack supporting push, pop, top, peekMax, and popMax operations.
+ * All operations should be efficient.
+ *
+ * <p><b>Intuition & Approach:</b><br>
+ * Similar to MinStack but tracking maximum:
+ * - Maintain regular stack + track current max
+ * - On push: Update max if new value larger
+ * - PopMax: Find and remove max element, recalculate new max
+ * - Uses temporary stack to access middle elements
+ * 
+ * Optimization: Use two stacks or TreeMap for better popMax performance.
+ *
+ * <p><b>Time Complexity:</b> O(1) for push/top/peekMax, O(N) for popMax
+ * <br><b>Space Complexity:</b> O(N) for stack
+ */
 public class MaxStack {
     private int max;
     private final Stack<Integer> maxStack;

@@ -4,9 +4,30 @@ import java.util.HashMap;
 import java.util.Map;
 import java.util.TreeMap;
 
+/**
+ * Design A Leaderboard
+ *
+ * <p><b>Problem Statement:</b><br>
+ * Design leaderboard supporting addScore, top K scores sum, and reset operations.
+ *
+ * <p><b>Intuition & Approach:</b><br>
+ * Combine HashMap and TreeMap:
+ * - HashMap: playerId → cumulative score (O(1) lookup)
+ * - TreeMap: score → frequency (sorted, O(log N) operations)
+ * 
+ * Operations:
+ * - addScore: Update player score in HashMap, adjust TreeMap frequencies
+ * - top(K): Traverse TreeMap from highest scores, sum top K
+ * - reset: Remove player from both structures
+ * 
+ * TreeMap enables efficient top K retrieval in sorted order.
+ *
+ * <p><b>Time Complexity:</b> O(log N) for add/reset, O(K) for top
+ * <br><b>Space Complexity:</b> O(N) - Two maps
+ */
 public class DesignALeaderboard {
     private final Map<Integer, Integer> playerScores;      // playerId -> score
-    private final TreeMap<Integer, Integer> scoreCounts;   // score -> frequency of players
+    private final TreeMap<Integer, Integer> scoreCounts;   // score -> frequency
 
     public DesignALeaderboard() {
         playerScores = new HashMap<>();
@@ -14,8 +35,7 @@ public class DesignALeaderboard {
     }
 
     /**
-     * Add a player's score or update existing player's score.
-     * Time: O(log N)
+     * Adds score to player's total.
      */
     public void addScore(int playerId, int score) {
         int oldScore = playerScores.getOrDefault(playerId, 0);
@@ -24,7 +44,7 @@ public class DesignALeaderboard {
         // Update player's score
         playerScores.put(playerId, newScore);
 
-        // Remove old score from TreeMap (if existed)
+        // Remove old score from TreeMap
         if (oldScore > 0) {
             int count = scoreCounts.get(oldScore);
             if (count == 1) scoreCounts.remove(oldScore);
@@ -36,8 +56,7 @@ public class DesignALeaderboard {
     }
 
     /**
-     * Return the sum of the top K players' scores.
-     * Time: O(K + log N)
+     * Returns sum of top K scores.
      */
     public int top(int K) {
         int sum = 0;
@@ -57,13 +76,12 @@ public class DesignALeaderboard {
     }
 
     /**
-     * Reset the player's score to 0 (remove from leaderboard).
-     * Time: O(log N)
+     * Resets player's score to 0.
      */
     public void reset(int playerId) {
         int oldScore = playerScores.get(playerId);
 
-        // Remove player's score from TreeMap
+        // Remove from TreeMap
         int count = scoreCounts.get(oldScore);
         if (count == 1) scoreCounts.remove(oldScore);
         else scoreCounts.put(oldScore, count - 1);

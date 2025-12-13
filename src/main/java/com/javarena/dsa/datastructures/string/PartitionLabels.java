@@ -4,23 +4,31 @@ import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 
+/**
+ * Partition Labels
+ *
+ * <p><b>Problem Statement:</b><br>
+ * Partition string into maximum number of parts such that each letter appears in at most one part.
+ * Return list of partition sizes.
+ *
+ * <p><b>Intuition & Approach:</b><br>
+ * Greedy with last occurrence tracking:
+ * - Record last index of each character
+ * - Iterate through string:
+ *   - Track maximum last index seen so far
+ *   - When current index equals max last index, partition here
+ *   - All characters in partition won't appear later
+ * 
+ * Two approaches:
+ * 1. Brute force: Check frequencies (O(N²))
+ * 2. Optimized: Use last occurrence array (O(N))
+ *
+ * <p><b>Time Complexity:</b> O(N) for optimized approach
+ * <br><b>Space Complexity:</b> O(1) - Fixed size array (26 letters)
+ */
 public class PartitionLabels {
     /**
-     * Brute-force approach to partition labels.
-     * <p>
-     * Intuition:
-     * - First, count the frequency of each character in the string.
-     * - Then, iterate through the string and decrease the count of each character.
-     * - When the current character’s count reaches 0, check if all characters up to this point
-     * also have a frequency of 0. If so, this index can be the end of a partition.
-     * <p>
-     * Approach:
-     * - Count character frequencies.
-     * - Traverse the string, updating frequencies.
-     * - At each character, if it’s the last occurrence and no previous characters are pending, mark a partition.
-     * <p>
-     * Time Complexity: O(n^2) — due to nested check for previous characters in the check function.
-     * Space Complexity: O(n) — for the HashMap used to store character frequencies.
+     * Brute force approach with frequency checking.
      */
     public List<Integer> partitionLabels1(String s) {
         HashMap<Character, Integer> map = new HashMap<>();

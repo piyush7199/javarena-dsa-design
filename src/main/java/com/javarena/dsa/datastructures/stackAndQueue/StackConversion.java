@@ -3,16 +3,33 @@ package com.javarena.dsa.datastructures.stackAndQueue;
 import java.util.Set;
 import java.util.Stack;
 
+/**
+ * Expression Conversion Algorithms
+ *
+ * <p><b>Problem Statement:</b><br>
+ * Convert between infix, prefix, and postfix notation.
+ * Handle operator precedence and associativity correctly.
+ *
+ * <p><b>Intuition & Approach:</b><br>
+ * Stack-based conversions:
+ * 
+ * Prefix ↔ Infix ↔ Postfix:
+ * - Infix to Postfix: Shunting-yard algorithm (precedence + parentheses)
+ * - Infix to Prefix: Reverse, convert to postfix, reverse again
+ * - Prefix to Infix: Traverse reverse, form "(op1 operator op2)"
+ * - Postfix to Infix: Traverse forward, form "(op2 operator op1)"
+ * - Prefix to Postfix: Traverse reverse, form "op1 op2 operator"
+ * - Postfix to Prefix: Traverse forward, form "operator op2 op1"
+ * 
+ * All use stack for operator/operand management.
+ *
+ * <p><b>Time Complexity:</b> O(N) for all conversions
+ * <br><b>Space Complexity:</b> O(N) for stack
+ */
 public class StackConversion {
 
     /**
-     * Converts a prefix expression to an infix expression.
-     *
-     * <p><b>Intuition:</b> Traverse the prefix expression in reverse. For each operator, pop two operands from the stack,
-     * form a string "(operand1 operator operand2)", and push it back. For each operand, push it as a string.</p>
-     *
-     * <p><b>Time Complexity:</b> O(n) – each character is processed once.</p>
-     * <p><b>Space Complexity:</b> O(n) – due to the stack usage.</p>
+     * Converts prefix to infix.
      */
     public static String preToInfix(String pre_exp) {
         Stack<String> stack = new Stack<>();

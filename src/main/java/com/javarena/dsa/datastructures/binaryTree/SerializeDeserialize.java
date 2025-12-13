@@ -3,6 +3,31 @@ package com.javarena.dsa.datastructures.binaryTree;
 import java.util.LinkedList;
 import java.util.Queue;
 
+/**
+ * Serialize and Deserialize Binary Tree
+ *
+ * <p><b>Problem Statement:</b><br>
+ * Design an algorithm to serialize a binary tree to a string and deserialize it back to the original tree structure.
+ *
+ * <p><b>Intuition & Approach:</b><br>
+ * Use Level-Order Traversal (BFS):
+ * - Serialize: BFS through tree, append values with space separator, use "n" for null
+ * - Deserialize: Parse string, use queue to reconstruct level by level
+ * 
+ * Example: Tree [1,2,3,null,null,4,5] → "1 2 3 n n 4 5 n n n n"
+ * 
+ * Serialize:
+ * - Queue-based BFS, add node values or "n" for nulls
+ * - Join with spaces
+ * 
+ * Deserialize:
+ * - Split string, create root from first value
+ * - Use queue to assign left/right children in order
+ * - Skip "n" markers (null nodes)
+ *
+ * <p><b>Time Complexity:</b> O(N) for both operations
+ * <br><b>Space Complexity:</b> O(N) for queue and string
+ */
 public class SerializeDeserialize {
     /**
      * Definition for a binary tree node.
@@ -20,43 +45,8 @@ public class SerializeDeserialize {
     class Codec {
 
         /**
-         * Intuition:
-         * ----------
-         * We need to convert a binary tree into a single string (serialization)
-         * and then reconstruct the exact same tree from that string (deserialization).
-         *
-         * The best way to do this is using a **Level Order Traversal (BFS)**.
-         * - While traversing the tree level by level, we add each node's value to the result string.
-         * - For null nodes, we insert a special marker like `"n"` to indicate missing children.
-         * - This allows us to reconstruct the exact structure later.
-         *
-         * Example:
-         * --------
-         * Tree:
-         *        1
-         *       / \
-         *      2   3
-         *         / \
-         *        4   5
-         *
-         * Serialized String: "1 2 3 n n 4 5 n n n n"
-         */
-
-        /**
-         * Approach for Serialization:
-         * ---------------------------
-         * 1. Use a queue for BFS traversal.
-         * 2. Start from the root, add nodes to the queue.
-         * 3. For each node:
-         * - If it's not null, append its value and add its left and right children to the queue.
-         * - If it's null, append "n".
-         * 4. Return the constructed string.
-         * <p>
-         * Time Complexity: O(N)
-         * - Each node is processed exactly once.
-         * <p>
-         * Space Complexity: O(N)
-         * - Queue can hold up to N/2 nodes at the last level in the worst case.
+         * Serialization using level-order traversal (BFS).
+         * Converts tree to string like "1 2 3 n n 4 5 n n n n"
          *
          * @param root The root of the binary tree
          * @return A string representing the serialized binary tree

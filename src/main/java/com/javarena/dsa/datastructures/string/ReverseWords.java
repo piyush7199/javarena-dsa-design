@@ -2,17 +2,29 @@ package com.javarena.dsa.datastructures.string;
 
 import java.util.Stack;
 
+/**
+ * Reverse Words in a String
+ *
+ * <p><b>Problem Statement:</b><br>
+ * Reverse order of words in string. Words are separated by spaces.
+ * Multiple spaces should be reduced to single space in output.
+ *
+ * <p><b>Intuition & Approach:</b><br>
+ * Three approaches:
+ * 
+ * 1. Split and reverse: Split by spaces, iterate backwards
+ * 2. Stack-based: Push words to stack, pop for reverse order
+ * 3. Two-pointer: Build words and insert at beginning
+ * 
+ * Split approach is simplest and most efficient.
+ *
+ * <p><b>Time Complexity:</b> O(N) for split/stack, O(N²) for two-pointer
+ * <br><b>Space Complexity:</b> O(N) for all approaches
+ */
 public class ReverseWords {
 
     /**
-     * Reverses the words in a given string using built-in split.
-     * <p>
-     * Intuition:
-     * - Split the input by one or more spaces (`\\s+`) to get clean words.
-     * - Append them in reverse order to construct the result.
-     * <p>
-     * Time Complexity: O(n), where n is the length of the input string.
-     * Space Complexity: O(n), for storing words and result.
+     * Reverses words using split.
      */
     public String reverseWords(String s) {
         String[] words = s.split("\\s+");

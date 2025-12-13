@@ -3,8 +3,37 @@ package com.javarena.dsa.datastructures.graph;
 import java.util.Arrays;
 import java.util.PriorityQueue;
 
+/**
+ * Find Minimum Time to Reach Last Room II
+ *
+ * <p><b>Problem Statement:</b><br>
+ * Similar to Room I, but moves alternate between 1 second and 2 seconds.
+ * First move: 1s, second: 2s, third: 1s, etc. Find minimum time to reach (n-1, m-1).
+ *
+ * <p><b>Intuition & Approach:</b><br>
+ * Modified Dijkstra with alternating edge weights:
+ * - Track state as (row, col, stepType) where stepType = parity of next move
+ * - stepType 0: next move costs 1 second
+ * - stepType 1: next move costs 2 seconds
+ * - After each move, toggle stepType
+ * 
+ * Algorithm:
+ * - Use 3D distance array: dist[i][j][stepType]
+ * - Process states by earliest time using min-heap
+ * - For each neighbor:
+ *   - Wait if room not open: max(currentTime, moveTime[nx][ny])
+ *   - Add step cost (1 or 2 based on stepType)
+ *   - Toggle stepType for next state
+ * - Return earliest time to reach destination
+ *
+ * <p><b>Time Complexity:</b> O(N×M log(N×M)) - 2 states per cell
+ * <br><b>Space Complexity:</b> O(N×M) - Distance array + PQ
+ */
 public class FindMinimumTimeToReachLastRoomII {
 
+    /**
+     * State tracking position and move parity.
+     */
     static class State {
         int i, j, stepType, time;
 
@@ -17,47 +46,7 @@ public class FindMinimumTimeToReachLastRoomII {
     }
 
     /**
-     * Computes the minimum time required to reach the bottom-right room (n-1, m-1)
-     * in a dungeon grid where each room (i,j) can only be entered at or after
-     * a given time moveTime[i][j]. Movement rules:
-     * <ul>
-     *   <li>You start at (0,0) at time 0.</li>
-     *   <li>You may only move into adjacent cells (up, down, left, right).</li>
-     *   <li>Moving between adjacent rooms alternates between taking 1 second
-     *       and 2 seconds: the first move costs 1 second, the next costs 2 seconds,
-     *       then 1 second, then 2 seconds, and so on.</li>
-     *   <li>You cannot start moving into room (i,j) before time moveTime[i][j].</li>
-     * </ul>
-     *
-     * <p><b>Intuition:</b>
-     * This is a shortest path problem on a grid with alternating edge weights
-     * (1s or 2s) and additional waiting constraints. Standard BFS/Dijkstra needs
-     * to be modified to track both the current position and the parity of the
-     * last move (whether the next step should take 1s or 2s). Each state is thus
-     * defined as (row, col, stepType). The algorithm explores states with the
-     * earliest possible times first using a priority queue (Dijkstra’s algorithm).
-     *
-     * <p><b>Approach:</b>
-     * <ol>
-     *   <li>Use a priority queue (min-heap) to always expand the earliest reachable state.</li>
-     *   <li>Maintain a distance array dist[n][m][2], where dist[i][j][stepType] stores
-     *       the minimum time to reach cell (i,j) with next move type = stepType.</li>
-     *   <li>When moving to a neighbor (ni,nj):
-     *       <ul>
-     *         <li>Wait until max(currentTime, moveTime[ni][nj]) before starting the move.</li>
-     *         <li>Add the step cost (1 or 2, depending on stepType).</li>
-     *         <li>Update the state with the opposite stepType (since moves alternate).</li>
-     *       </ul>
-     *   </li>
-     *   <li>Stop when (n-1, m-1) is reached, returning its earliest time.</li>
-     * </ol>
-     *
-     * <p><b>Time Complexity:</b> O(n * m * log(n*m)) —
-     * each of the n*m cells has 2 possible stepTypes, and every push/pop on the priority queue
-     * takes logarithmic time.</p>
-     *
-     * <p><b>Space Complexity:</b> O(n * m) —
-     * storing distances for 2 states per cell, plus the priority queue.</p>
+     * Finds minimum time with alternating move costs.
      */
     public int minTimeToReach(int[][] moveTime) {
         int n = moveTime.length, m = moveTime[0].length;

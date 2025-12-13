@@ -3,34 +3,49 @@ package com.javarena.dsa.datastructures.graph;
 import java.util.ArrayList;
 import java.util.List;
 
+/**
+ * Minimum Score of a Path Between Two Cities
+ *
+ * <p><b>Problem Statement:</b><br>
+ * Given n cities and roads [u, v, score], find minimum score of any path from city 1 to city n.
+ * Score of path = minimum edge weight in that path.
+ *
+ * <p><b>Intuition & Approach:</b><br>
+ * Key insight: If cities are connected, answer = minimum edge in entire connected component.
+ * 
+ * Two approaches:
+ * 
+ * 1. DFS Approach:
+ *    - Build undirected graph
+ *    - DFS from city 1 to explore all reachable cities
+ *    - Track minimum edge weight encountered
+ *    - Return minimum across all edges in component
+ * 
+ * 2. Union-Find (DSU) Approach:
+ *    - Use DSU to track connected components
+ *    - During union, maintain minimum edge in each component
+ *    - Query minimum for component containing city 1
+ *    - More efficient for multiple queries
+ *
+ * <p><b>Time Complexity:</b> O(V + E) for DFS, O(E × α(V)) for DSU
+ * <br><b>Space Complexity:</b> O(V + E) for graph, O(V) for DSU
+ */
 public class MinScorePath {
 
     /**
-     * Disjoint Set Union (Union-Find) based solution to find the minimum score
-     * (edge weight) in the connected component that includes node n (or node 1).
-     *
-     * <p><b>Intuition:</b> Use Union-Find to group connected cities and track
-     * the minimum score (edge weight) within each component during union.
-     *
-     * <p><b>Approach:</b>
-     * <ul>
-     *   <li>Initialize Union-Find with `n` nodes and set initial rank as Integer.MAX_VALUE.</li>
-     *   <li>For every road [u, v, score], union u and v and update the min score in that set.</li>
-     *   <li>Return the minimum score in the connected component of node n (or node 1).</li>
-     * </ul>
-     *
-     * <p><b>Time Complexity:</b> O(N + E * α(N)) – where α is the inverse Ackermann function (almost constant).</p>
-     * <p><b>Space Complexity:</b> O(N)</p>
+     * Finds minimum score using Union-Find.
      */
     public int minScoreUsingDisjointSet(int n, int[][] roads) {
         Dsjoin ds = new Dsjoin(n);
         for (int[] road : roads) {
             ds.union(road[0] - 1, road[1] - 1, road[2]);
         }
-
         return ds.getMin(0); // 0-based index for city 1
     }
 
+    /**
+     * Disjoint Set Union with minimum tracking.
+     */
     static class Dsjoin {
         int[] parent;
         int[] rank;
@@ -70,28 +85,14 @@ public class MinScorePath {
         }
     }
 
-
     /**
-     * DFS-based approach to find the minimum score (edge weight) in the
-     * connected component containing node 1.
-     *
-     * <p><b>Intuition:</b> Traverse all reachable cities from city 1 and keep track
-     * of the minimum edge encountered during DFS.
-     *
-     * <p><b>Approach:</b>
-     * <ul>
-     *   <li>Build an undirected graph with edges and weights.</li>
-     *   <li>Use DFS to explore all cities reachable from node 1, maintaining
-     *       the minimum distance (score) found.</li>
-     * </ul>
-     *
-     * <p><b>Time Complexity:</b> O(N + E) – for DFS traversal.</p>
-     * <p><b>Space Complexity:</b> O(N + E) – for graph representation and visited array.</p>
+     * Finds minimum score using DFS.
      */
     public int minScore(int n, int[][] roads) {
         List<List<int[]>> gr = new ArrayList<>();
         for (int i = 0; i <= n; i++) gr.add(new ArrayList<>());
 
+        // Build undirected graph
         for (int[] edge : roads) {
             gr.get(edge[0]).add(new int[]{edge[1], edge[2]});
             gr.get(edge[1]).add(new int[]{edge[0], edge[2]});
@@ -101,6 +102,9 @@ public class MinScorePath {
         return dfs(1, vis, gr, Integer.MAX_VALUE);
     }
 
+    /**
+     * DFS to find minimum edge in connected component.
+     */
     public int dfs(int src, boolean[] vis, List<List<int[]>> gr, int currentMin) {
         vis[src] = true;
 

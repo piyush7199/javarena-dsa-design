@@ -2,8 +2,32 @@ package com.javarena.dsa.datastructures.graph;
 
 import java.util.*;
 
+/**
+ * Shortest Path Problems Using Dijkstra's Algorithm
+ *
+ * <p><b>Problem Statement:</b><br>
+ * Collection of shortest path problems: basic Dijkstra, cheapest flights with K stops,
+ * path with minimum effort, and path with maximum probability.
+ *
+ * <p><b>Intuition & Approach:</b><br>
+ * Dijkstra's algorithm with variations:
+ * 
+ * 1. Basic Dijkstra: Standard shortest path in weighted graph
+ * 2. Cheapest Flights with K Stops: Add constraint on number of stops
+ * 3. Minimum Effort Path: Minimize maximum absolute difference in path
+ * 4. Maximum Probability: Maximize product of probabilities
+ * 
+ * All use priority queue to greedily select best option.
+ * Modifications handle different optimization criteria.
+ *
+ * <p><b>Time Complexity:</b> O((V+E) log V) for most variants
+ * <br><b>Space Complexity:</b> O(V + E) for graph + distance arrays
+ */
 public class ShortestPathUsingDijkstra {
 
+    /**
+     * Edge representation with target and weight.
+     */
     static class Edge {
         int target;
         int weight;
@@ -14,6 +38,9 @@ public class ShortestPathUsingDijkstra {
         }
     }
 
+    /**
+     * State for flights with stops constraint.
+     */
     static class State {
         int city;
         int cost;
@@ -26,6 +53,9 @@ public class ShortestPathUsingDijkstra {
         }
     }
 
+    /**
+     * Pair for grid-based problems.
+     */
     static class Pair {
         int row;
         int col;

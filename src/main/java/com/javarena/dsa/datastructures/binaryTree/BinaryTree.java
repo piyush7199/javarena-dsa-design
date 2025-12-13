@@ -3,8 +3,26 @@ package com.javarena.dsa.datastructures.binaryTree;
 import java.util.*;
 
 /**
- * BinaryTree provides various recursive and iterative tree traversal algorithms,
- * including inorder, preorder, postorder, level-order, and a combined traversal.
+ * Binary Tree Traversals Collection
+ *
+ * <p><b>Problem Statement:</b><br>
+ * Implement all major tree traversal algorithms: inorder, preorder, postorder, level-order, and combined traversals.
+ * Provide both recursive and iterative implementations.
+ *
+ * <p><b>Intuition & Approach:</b><br>
+ * Traversal patterns:
+ * - Inorder (Left-Root-Right): Gives sorted order for BST
+ * - Preorder (Root-Left-Right): Used for tree copying
+ * - Postorder (Left-Right-Root): Used for tree deletion
+ * - Level-order: BFS using queue
+ * 
+ * Recursive: Natural and clean, uses call stack
+ * Iterative: Uses explicit stack/queue, better for large trees
+ * 
+ * Combined traversal: Returns all three in single pass using stack
+ *
+ * <p><b>Time Complexity:</b> O(N) for all traversals - visit each node once
+ * <br><b>Space Complexity:</b> O(H) for recursive, O(N) for iterative worst case
  */
 public class BinaryTree {
 

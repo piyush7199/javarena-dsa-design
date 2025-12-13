@@ -1,5 +1,25 @@
 package com.javarena.dsa.datastructures.stackAndQueue;
 
+/**
+ * Stack Implementation using Array
+ *
+ * <p><b>Problem Statement:</b><br>
+ * Implement generic stack using fixed-size array.
+ * Support push, pop, peek, isEmpty, isFull operations.
+ *
+ * <p><b>Intuition & Approach:</b><br>
+ * Array-based stack with top pointer:
+ * - Array stores elements
+ * - Top pointer tracks last element index (-1 when empty)
+ * - Push: Increment top, add element
+ * - Pop: Return element, decrement top
+ * - Check bounds for overflow/underflow
+ * 
+ * Fixed capacity, O(1) operations.
+ *
+ * <p><b>Time Complexity:</b> O(1) for all operations
+ * <br><b>Space Complexity:</b> O(N) - Array size
+ */
 public class StackImpl<T> {
     private final int maxSize;
     private final T[] arr;

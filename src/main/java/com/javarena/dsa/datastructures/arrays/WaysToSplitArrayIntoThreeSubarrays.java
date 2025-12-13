@@ -1,44 +1,30 @@
 package com.javarena.dsa.datastructures.arrays;
 
+/**
+ * Ways to Split Array Into Three Subarrays
+ *
+ * <p><b>Problem Statement:</b><br>
+ * Given an integer array, count ways to split into three contiguous non-empty subarrays (left, mid, right)
+ * such that sum(left) <= sum(mid) <= sum(right). Return result mod 10^9+7.
+ *
+ * <p><b>Intuition & Approach:</b><br>
+ * Use prefix sums + binary search:
+ * - Build prefix sum array for O(1) subarray sum queries
+ * - For each possible end of left subarray (index i):
+ *   - Use binary search to find valid range for end of mid subarray (j)
+ *   - Find first valid j where midSum >= leftSum
+ *   - Find last valid j where midSum <= rightSum
+ *   - Count = (lastJ - firstJ + 1)
+ * - Sum all valid counts
+ * - Key insight: Binary search makes it efficient
+ *
+ * <p><b>Time Complexity:</b> O(N log N) - N iterations with 2 binary searches each
+ * <br><b>Space Complexity:</b> O(N) - Prefix sum array
+ */
 public class WaysToSplitArrayIntoThreeSubarrays {
 
     /**
-     * Given an integer array nums, returns the number of ways to split it into
-     * three contiguous non-empty subarrays (left, mid, right) such that:
-     * - sum(left) <= sum(mid)
-     * - sum(mid) <= sum(right)
-     * <p>
-     * Intuition:
-     * ----------
-     * We want to count valid partitions into three subarrays.
-     * Using a prefix sum array, we can quickly compute subarray sums.
-     * For each possible first cut index i (end of left subarray),
-     * we binary search for the valid range of indices j (end of mid subarray):
-     * 1. The smallest j where midSum >= leftSum.
-     * 2. The largest j where midSum <= rightSum.
-     * The count of valid splits for this i is (last - first + 1).
-     * <p>
-     * Approach:
-     * ---------
-     * 1. Build prefix sum array for O(1) sum queries.
-     * 2. Iterate over i (end of left subarray).
-     * 3. For each i, binary search twice:
-     * - Find the first valid j.
-     * - Find the last valid j.
-     * 4. Add the number of valid j’s to the total answer.
-     * 5. Return result modulo 1e9+7.
-     * <p>
-     * Complexity:
-     * -----------
-     * Time:  O(n log n)
-     * - O(n) for prefix sums
-     * - O(n log n) for n iterations with 2 binary searches each
-     * <p>
-     * Space: O(n)
-     * - Prefix sum array
-     *
-     * @param nums input array of positive integers
-     * @return number of valid ways to split the array (modulo 1_000_000_007)
+     * Counts ways to split array with sum constraints.
      */
     public int waysToSplit(int[] nums) {
         int MOD = 1_000_000_007;

@@ -1,17 +1,32 @@
 package com.javarena.dsa.datastructures.binaryTree;
 
+/**
+ * Search in Binary Search Tree
+ *
+ * <p><b>Problem Statement:</b><br>
+ * Given a BST and target value, find and return the node with that value. Return null if not found.
+ *
+ * <p><b>Intuition & Approach:</b><br>
+ * Leverage BST property:
+ * - All nodes < root are in left subtree
+ * - All nodes > root are in right subtree
+ * 
+ * Algorithm:
+ * - If root.val == target: found, return root
+ * - If root.val > target: search left subtree
+ * - If root.val < target: search right subtree
+ * - If null reached: not found
+ * 
+ * Two implementations:
+ * - Iterative: Uses while loop, O(1) space
+ * - Recursive: Cleaner code, O(H) stack space
+ *
+ * <p><b>Time Complexity:</b> O(log N) average, O(H) worst case where H = height
+ * <br><b>Space Complexity:</b> O(1) iterative, O(H) recursive stack
+ */
 public class BSTSearch {
     /**
-     * As we know what in binary search tree has a  property that
-     * All nodes less than its root are on left and all node whose value is
-     * greater than root is on right
-     * So we will use this property and traverse the substree in which
-     * We might that target value
-     * if the root value is equal then we have found the node and will return that;
-     * Else we check if the root value is greater it means the and is in left
-     * else in right
-     * Time Complexity - log(n)
-     * Space Complexity - O(h) - h is the height of the tree (In recursion stack)
+     * Iterative search in BST.
      */
     public Node searchBST(Node root, int val) {
         if (root == null) {
@@ -33,6 +48,9 @@ public class BSTSearch {
         return null;
     }
 
+    /**
+     * Recursive search in BST.
+     */
     public Node searchBSTRecursive(Node root, int val) {
         if (root == null) {
             return null;

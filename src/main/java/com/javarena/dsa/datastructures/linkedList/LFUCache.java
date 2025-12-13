@@ -5,26 +5,28 @@ import java.util.LinkedHashSet;
 import java.util.Map;
 
 /**
- * LFUCache implements a Least Frequently Used (LFU) cache with O(1) average time complexity
- * for both get and put operations.
- * <p>
- * 🔍 Intuition:
- * - Each key has a frequency count.
- * - When a key is accessed or updated, its frequency increases.
- * - If capacity is full, the least frequently used key is removed.
- * - If multiple keys have the same frequency, the least recently used (LRU) one among them is evicted.
- * <p>
- * 📦 Internal Structure:
- * - keyToVal: stores key-value pairs
- * - keyToFreq: stores frequency count for each key
- * - freqToLRUKeys: maps frequencies to ordered sets of keys to track recency (LRU within same frequency)
- * - minFreq: tracks the minimum frequency present in the cache
- * <p>
- * ⏱ Time Complexity:
- * - get(key): O(1)
- * - put(key, value): O(1)
- * <p>
- * 🧠 Space Complexity: O(capacity)
+ * LFU Cache (Least Frequently Used)
+ *
+ * <p><b>Problem Statement:</b><br>
+ * Design and implement LFU cache supporting get and put in O(1) time.
+ * When cache reaches capacity, invalidate least frequently used item.
+ * If multiple items have same frequency, remove least recently used.
+ *
+ * <p><b>Intuition & Approach:</b><br>
+ * Triple HashMap design:
+ * - keyToVal: Key → Value mapping
+ * - keyToFreq: Key → Frequency count
+ * - freqToLRUKeys: Frequency → LinkedHashSet (LRU order within frequency)
+ * 
+ * Operations:
+ * - get: Retrieve value, increment frequency, update structures
+ * - put: Insert/update, increment frequency, evict if needed
+ * - Eviction: Remove first element from minFreq's LinkedHashSet
+ * 
+ * LinkedHashSet provides insertion order + O(1) operations.
+ *
+ * <p><b>Time Complexity:</b> O(1) for both get and put
+ * <br><b>Space Complexity:</b> O(capacity) - Three maps
  */
 public class LFUCache {
     private final int capacity;

@@ -1,36 +1,25 @@
 package com.javarena.dsa.datastructures.arrays;
 
 /**
- * Problem:
- * We are given an array nums[] and queries[][], where each query = [l, r].
- * For each query, we can select some indices in [l, r] and decrement nums[i] by 1.
- * We must check if it's possible to make nums a Zero Array after applying all queries.
- * <p>
- * -----------------------------------------
- * Intuition:
- * Each query provides a chance to reduce values in a subarray range [l, r].
- * To make nums[i] = 0, the total number of opportunities (times index i is covered by queries)
- * must be at least nums[i]. If any nums[i] > coverage(i), it's impossible.
- * <p>
- * -----------------------------------------
- * Brute Force Approach:
- * - For each query, decrement nums[l..r] directly (O(n) per query).
- * - After all queries, check if array is zero.
- * - Very slow for large input (O(n*q)).
- * <p>
- * Optimal Approach (Prefix Difference / Range Coverage):
- * - Instead of applying queries directly, calculate how many times each index is covered.
- * - Use a difference array: For query [l, r], do diff[l]++, diff[r+1]--.
- * - Take prefix sum to compute coverage[i] = number of times index i is covered.
- * - Finally, check if nums[i] <= coverage[i] for all i.
- * <p>
- * -----------------------------------------
- * Time Complexity:
- * - Brute Force: O(n*q) → inefficient for large inputs.
- * - Optimal: O(n + q) → much faster.
- * Space Complexity:
- * - Brute Force: O(1).
- * - Optimal: O(n) for difference array.
+ * Zero Array Transformation I
+ *
+ * <p><b>Problem Statement:</b><br>
+ * Given array nums and queries [l, r], for each query we can decrement any indices in range [l, r] by 1.
+ * Check if it's possible to make entire array zero after applying all queries.
+ *
+ * <p><b>Intuition & Approach:</b><br>
+ * Optimal Solution using Difference Array:
+ * - Each query provides coverage to reduce values in range [l, r]
+ * - To make nums[i] = 0, coverage at i must be >= nums[i]
+ * - Use difference array to efficiently track coverage:
+ *   - For query [l, r]: diff[l]++, diff[r+1]--
+ * - Compute prefix sum to get coverage[i]
+ * - Check if nums[i] <= coverage[i] for all i
+ * 
+ * Brute Force: Apply each query directly (O(N*Q))
+ *
+ * <p><b>Time Complexity:</b> O(N + Q) for optimal, O(N × Q) for brute force
+ * <br><b>Space Complexity:</b> O(N) for difference array, O(1) for brute force
  */
 public class ZeroArrayTransformationI {
     /**

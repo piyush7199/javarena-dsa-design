@@ -2,12 +2,34 @@ package com.javarena.dsa.datastructures.graph;
 
 import java.util.*;
 
+/**
+ * Graph Algorithms Collection
+ *
+ * <p><b>Problem Statement:</b><br>
+ * Core graph traversal algorithms: BFS (breadth-first search) and DFS (depth-first search).
+ * Both recursive and iterative implementations provided.
+ *
+ * <p><b>Intuition & Approach:</b><br>
+ * BFS (Queue-based):
+ * - Explores level by level
+ * - Uses queue for FIFO processing
+ * - Finds shortest path in unweighted graphs
+ * - Good for finding nearest/closest elements
+ * 
+ * DFS (Recursion/Stack-based):
+ * - Explores deeply before backtracking
+ * - Uses recursion or explicit stack
+ * - Good for path finding, cycle detection
+ * - Memory efficient for deep graphs
+ * 
+ * Both handle disconnected components.
+ *
+ * <p><b>Time Complexity:</b> O(V + E) - Visit all vertices and edges
+ * <br><b>Space Complexity:</b> O(V) - Visited array + queue/stack
+ */
 public class GraphAlgorithms {
     /**
-     * Performs Breadth-First Search (BFS) starting from a source node.
-     *
-     * <p><b>Time Complexity:</b> O(V+E)
-     * <br><b>Space Complexity:</b> O(V)
+     * BFS traversal from source node.
      */
     public void bfs(List<List<Integer>> adj, int s, boolean[] visited, List<Integer> res) {
         Queue<Integer> queue = new LinkedList<>();

@@ -2,27 +2,31 @@ package com.javarena.dsa.datastructures.hashMapAndSet;
 
 import java.util.*;
 
+/**
+ * HashMap/HashSet Solutions Collection
+ *
+ * <p><b>Problem Statement:</b><br>
+ * Collection of problems using HashMap and HashSet: top K frequent elements/words,
+ * longest consecutive sequence, group anagrams, and contains duplicate variants.
+ *
+ * <p><b>Intuition & Approach:</b><br>
+ * Hash-based techniques:
+ * 
+ * 1. Top K Frequent: Frequency map + min-heap
+ * 2. Longest Consecutive: HashSet for O(1) lookups
+ * 3. Group Anagrams: Sorted string as key
+ * 4. Contains Duplicate: HashSet for seen elements
+ * 
+ * HashMap/HashSet provide O(1) average lookup/insert.
+ * Combined with heap/sorting for ordering requirements.
+ *
+ * <p><b>Time Complexity:</b> Varies - O(N) to O(N log K) depending on problem
+ * <br><b>Space Complexity:</b> O(N) for hash structures
+ */
 public class Solutions {
 
     /**
-     * Finds the top k most frequent elements in an integer array.
-     *
-     * <p>🔍 Intuition:
-     * - Count the frequency of each element using a HashMap.
-     * - Use a Min Heap (PriorityQueue) to keep track of the top k frequent elements.
-     * - If the heap size exceeds k, remove the least frequent element.
-     * - Finally, extract the k elements from the heap.
-     *
-     * <p> Why Min Heap?
-     * - So we can efficiently evict the least frequent element when the heap exceeds size k.
-     * <p>
-     * Time Complexity:
-     * - O(n log k), where n is the number of elements in nums.
-     * - O(n) for frequency counting.
-     * - O(n log k) for pushing into the heap.
-     * <p>
-     * 🧠 Space Complexity: O(n)
-     * - For the frequency map and the heap (worst case all unique).
+     * Finds top K frequent elements using min-heap.
      */
     public int[] topKFrequent(int[] nums, int k) {
         HashMap<Integer, Integer> map = new HashMap<>();

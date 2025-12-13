@@ -2,27 +2,28 @@ package com.javarena.dsa.datastructures.arrays;
 
 import java.util.List;
 
+/**
+ * Minimum Right Shifts to Sort Array
+ *
+ * <p><b>Problem Statement:</b><br>
+ * Find the minimum number of right circular shifts required to make the list sorted in non-decreasing order.
+ * Return -1 if impossible.
+ *
+ * <p><b>Intuition & Approach:</b><br>
+ * - Sorted and rotated array has at most one "drop" where nums[i] < nums[i-1]
+ * - Example: [3,4,5,1,2] has one drop at 5→1 (rotated from [1,2,3,4,5])
+ * - More than one drop means impossible to sort by rotation
+ * - Find the drop index by scanning array
+ * - If no drop, already sorted, return 0
+ * - Validate rotation: last element must be ≤ first element
+ * - If valid, right shifts needed = n - dropIndex
+ *
+ * <p><b>Time Complexity:</b> O(N) - Single pass through array
+ * <br><b>Space Complexity:</b> O(1) - Only variables for tracking
+ */
 public class MinRightShiftToSort {
     /**
-     * Finds the minimum number of right circular shifts required to make the given list sorted in non-decreasing order.
-     * If it is not possible to do so with any number of right shifts, returns -1.
-     *
-     * <p><b>Intuition:</b></p>
-     * A sorted and right-rotated array will have **at most one drop** (where a[i] > a[i+1]).
-     * For example, [3, 4, 5, 1, 2] is a rotated version of [1, 2, 3, 4, 5] with one drop at 5 → 1.
-     * This drop indicates the rotation point. If there is more than one such drop, the array cannot be sorted by rotation.
-     *
-     * <p><b>Approach:</b></p>
-     * <ol>
-     *     <li>Iterate through the array to find if there's more than one drop (i.e., nums[i] < nums[i-1]).</li>
-     *     <li>If more than one drop exists, return -1.</li>
-     *     <li>If no drop is found, the array is already sorted → return 0.</li>
-     *     <li>Check that the array is properly rotated: the last element must be ≤ the first after rotation.</li>
-     *     <li>If the rotation is valid, return the number of right shifts required: n - dropIndex.</li>
-     * </ol>
-     *
-     * <p><b>Time Complexity:</b> O(n) – A single pass through the list.</p>
-     * <p><b>Space Complexity:</b> O(1) – No extra space used except for variables.</p>
+     * Finds minimum right shifts to sort array.
      */
     public static int minimumRightShifts(List<Integer> nums) {
         int n = nums.size();

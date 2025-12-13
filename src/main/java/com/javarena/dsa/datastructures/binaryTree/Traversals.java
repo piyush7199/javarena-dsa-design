@@ -2,6 +2,29 @@ package com.javarena.dsa.datastructures.binaryTree;
 
 import java.util.*;
 
+/**
+ * Advanced Binary Tree Traversals
+ *
+ * <p><b>Problem Statement:</b><br>
+ * Implement advanced traversals: vertical order, top view, bottom view, left view, right view, 
+ * boundary traversal, and diagonal traversal.
+ *
+ * <p><b>Intuition & Approach:</b><br>
+ * Use coordinate system (row, col) for tree:
+ * - Root at (0, 0)
+ * - Left child: (row+1, col-1)
+ * - Right child: (row+1, col+1)
+ * 
+ * Vertical Order: Group by column, sort by row then value
+ * Top View: First node at each column
+ * Bottom View: Last node at each column
+ * Left/Right View: First/Last node at each level
+ * Boundary: Left boundary + leaves + right boundary (reverse)
+ * Diagonal: Nodes at same (row - col) value
+ *
+ * <p><b>Time Complexity:</b> O(N log N) for sorting, O(N) for simple traversals
+ * <br><b>Space Complexity:</b> O(N) for maps and queues
+ */
 public class Traversals {
 
     static class NodeInfo {

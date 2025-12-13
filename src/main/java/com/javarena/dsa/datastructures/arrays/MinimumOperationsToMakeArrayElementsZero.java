@@ -1,48 +1,27 @@
 package com.javarena.dsa.datastructures.arrays;
 
+/**
+ * Minimum Operations to Make Array Elements Zero
+ *
+ * <p><b>Problem Statement:</b><br>
+ * Given queries [l, r], reduce all numbers in range to zero using operation: replace two numbers a, b 
+ * with floor(a/4) and floor(b/4). Find total minimum operations for all queries.
+ *
+ * <p><b>Intuition & Approach:</b><br>
+ * - Each number x can be reduced to 0 by repeatedly applying floor(x/4)
+ * - Calculate steps needed for single number: divide by 4 until 0
+ * - Use prefix sum approach: prefixSteps(n) = total steps for [1, n]
+ * - For query [l, r]: totalSteps = prefixSteps(r) - prefixSteps(l-1)
+ * - Since each operation handles 2 numbers: minOps = ceil(totalSteps/2)
+ * - Sum results for all queries
+ * - Avoids creating arrays, uses mathematical computation
+ *
+ * <p><b>Time Complexity:</b> O(Q × log(max(R))) where Q = queries, R = max range value
+ * <br><b>Space Complexity:</b> O(1) - No extra arrays needed
+ */
 public class MinimumOperationsToMakeArrayElementsZero {
     /**
-     * Solves the problem of reducing all numbers in given ranges [l, r] to zero
-     * using a defined operation where two numbers a and b are replaced by
-     * floor(a/4) and floor(b/4).
-     *
-     * <p><b>Intuition:</b>
-     * Each number can be independently reduced to zero by repeatedly applying
-     * floor(x/4). The total steps required for all numbers in a range can be
-     * computed using a mathematical approach without explicitly creating the array.
-     * Since each operation processes two numbers, the final minimum operations are
-     * ceil(totalSteps / 2).
-     *
-     * <p><b>Approach:</b>
-     * <ol>
-     *   <li>Create a helper function {@code stepsToZero(x)} to compute how many steps it
-     *       takes to reduce a single number x to zero using floor(x/4).</li>
-     *   <li>Create a function {@code prefixSteps(n)} to calculate total steps for all numbers
-     *       from 1 to n.</li>
-     *   <li>For a query [l, r], the total steps required are:
-     *       totalSteps = prefixSteps(r) - prefixSteps(l-1).</li>
-     *   <li>The minimum operations for this query = ceil(totalSteps / 2).</li>
-     *   <li>Sum up the result for all queries.</li>
-     * </ol>
-     *
-     * <p><b>Complexity Analysis:</b>
-     * <ul>
-     *   <li><b>Brute Force:</b>
-     *       <ul>
-     *         <li>Time Complexity: O(Σ(r-l+1) * log(max(r)))</li>
-     *         <li>Space Complexity: O(r-l+1)</li>
-     *       </ul>
-     *   </li>
-     *   <li><b>Optimized Approach:</b>
-     *       <ul>
-     *         <li>Time Complexity: O(queries.length * log(max(r)))</li>
-     *         <li>Space Complexity: O(1)</li>
-     *       </ul>
-     *   </li>
-     * </ul>
-     *
-     * @param queries 2D array where each query is of the form [l, r].
-     * @return The sum of minimum operations required for all queries.
+     * Calculates minimum operations for all queries.
      */
     public long minOperations(int[][] queries) {
         long totalOperations = 0;

@@ -1,36 +1,31 @@
 package com.javarena.dsa.datastructures.arrays;
 
+/**
+ * Find Missing and Repeated Values
+ *
+ * <p><b>Problem Statement:</b><br>
+ * Given an n x n grid containing numbers from 1 to n², where one number is missing and one is repeated,
+ * return [repeated, missing].
+ *
+ * <p><b>Intuition & Approach:</b><br>
+ * Use mathematical formulas for sum and sum of squares:
+ * - Expected sum = n² × (n² + 1) / 2
+ * - Expected square sum = n² × (n² + 1) × (2n² + 1) / 6
+ * - Subtract actual grid values from expected:
+ *   - sum = y - x (missing - repeated)
+ *   - sqSum = y² - x² = (y - x)(y + x)
+ * - Solve system of equations:
+ *   - eq1 = y - x
+ *   - eq2 = y + x = sqSum / sum
+ *   - x (repeated) = (eq2 - eq1) / 2
+ *   - y (missing) = (eq2 + eq1) / 2
+ *
+ * <p><b>Time Complexity:</b> O(N²) - Single pass through grid
+ * <br><b>Space Complexity:</b> O(1) - Only variables for calculations
+ */
 public class FindMissingNRepeatedNum {
     /**
-     * Finds the missing and the repeated value in an n x n grid that contains numbers from 1 to n^2.
-     *
-     * <p><b>Intuition:</b></p>
-     * The grid is supposed to contain all numbers from 1 to n^2 exactly once, but:
-     * - One number is missing (say `y`)
-     * - One number is repeated (say `x`)
-     * <p>
-     * Using the mathematical formulas for sum and sum of squares of first `n^2` natural numbers:
-     * - Actual sum = 1 + 2 + ... + n^2 = n^2 * (n^2 + 1) / 2
-     * - Actual square sum = 1² + 2² + ... + n^2² = n^2 * (n^2 + 1) * (2n^2 + 1) / 6
-     * <p>
-     * If we subtract the sum and square sum of grid values from these formulas:
-     * - We get two equations:
-     * 1. x - y = diffSum   (difference in total sum)
-     * 2. x² - y² = diffSq  (difference in total square sum)
-     * <p>
-     * Solving these gives us:
-     * x = (diffSum + diffSq / diffSum) / 2
-     * y = x - diffSum
-     *
-     * <p><b>Approach:</b></p>
-     * <ol>
-     *   <li>Calculate expected sum and square sum for numbers 1 to n^2.</li>
-     *   <li>Iterate through the grid and subtract actual numbers and their squares from those sums.</li>
-     *   <li>Use the resulting `sum` and `sqSum` to derive two equations and solve for missing and repeated values.</li>
-     * </ol>
-     *
-     * <p><b>Time Complexity:</b> O(n²) – A single pass through the entire grid.</p>
-     * <p><b>Space Complexity:</b> O(1) – Only constant extra space used for calculations.</p>
+     * Finds missing and repeated values using mathematical approach.
      */
     public int[] findMissingAndRepeatedValues(int[][] grid) {
         int n = grid.length;

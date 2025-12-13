@@ -1,12 +1,39 @@
 package com.javarena.dsa.datastructures.trie;
 
+/**
+ * Trie (Prefix Tree) Implementation
+ *
+ * <p><b>Problem Statement:</b><br>
+ * Implement trie data structure for efficient string storage and retrieval.
+ * Support insert, search, and prefix matching operations.
+ *
+ * <p><b>Intuition & Approach:</b><br>
+ * Tree-based structure where each node represents a character:
+ * - Root is empty
+ * - Each path from root represents a word/prefix
+ * - Each node has array of 26 children (for lowercase letters)
+ * - Flag marks end of complete word
+ * 
+ * Operations:
+ * - Insert: Traverse/create path for each character
+ * - Search: Traverse path, check end-of-word flag
+ * - StartsWith: Traverse path, don't need end flag
+ * 
+ * Efficient for autocomplete, spell check, IP routing.
+ *
+ * <p><b>Time Complexity:</b> O(M) per operation, M = word/prefix length
+ * <br><b>Space Complexity:</b> O(ALPHABET_SIZE × N × M) worst case, N words of length M
+ */
 public class Trie {
+    /**
+     * Trie node with 26 children for lowercase letters.
+     */
     static class TrieNode {
         TrieNode[] children;
         boolean isEndOfWord;
 
         TrieNode() {
-            children = new TrieNode[26]; // Assuming lowercase letters
+            children = new TrieNode[26]; // Lowercase letters a-z
             isEndOfWord = false;
         }
     }
@@ -14,21 +41,14 @@ public class Trie {
     private TrieNode root;
 
     /**
-     * Initializes an empty Trie.
-     *
-     * @TimeComplexity O(1)
-     * @SpaceComplexity O(1)
+     * Initializes empty Trie.
      */
     public Trie() {
         root = new TrieNode();
     }
 
     /**
-     * Inserts a word into the Trie.
-     *
-     * @param word Word to insert
-     * @TimeComplexity O(m), where m is word length
-     * @SpaceComplexity O(m)
+     * Inserts word into Trie.
      */
     public void insert(String word) {
         TrieNode node = root;
@@ -43,12 +63,7 @@ public class Trie {
     }
 
     /**
-     * Searches for a word in the Trie.
-     *
-     * @param word Word to search
-     * @return True if word exists, false otherwise
-     * @TimeComplexity O(m), where m is word length
-     * @SpaceComplexity O(1)
+     * Searches for exact word in Trie.
      */
     public boolean search(String word) {
         TrieNode node = root;
@@ -63,11 +78,7 @@ public class Trie {
     }
 
     /**
-     * Checks if there is any word with the given prefix.
-     * @param prefix Prefix to check
-     * @return True if prefix exists, false otherwise
-     * @TimeComplexity O(m), where m is prefix length
-     * @SpaceComplexity O(1)
+     * Checks if any word starts with given prefix.
      */
     public boolean startsWith(String prefix) {
         TrieNode node = root;
@@ -81,24 +92,47 @@ public class Trie {
         return true;
     }
 
-    public static void main(String[] args) {
-        Trie trie = new Trie();
+    /**
+     * Deletes word from Trie.
+     */
+    public boolean delete(String word) {
+        return deleteHelper(root, word.toLowerCase(), 0);
+    }
 
-        // Test insert
-        trie.insert("cat");
-        trie.insert("car");
-        trie.insert("cake");
+    /**
+     * Helper for recursive deletion.
+     */
+    private boolean deleteHelper(TrieNode node, String word, int index) {
+        if (node == null) {
+            return false;
+        }
 
-        // Test search
-        System.out.println("Search 'cat': " + trie.search("cat")); // true
-        System.out.println("Search 'cap': " + trie.search("cap")); // false
+        if (index == word.length()) {
+            if (!node.isEndOfWord) {
+                return false; // Word doesn't exist
+            }
+            node.isEndOfWord = false;
+            return hasNoChildren(node);
+        }
 
-        // Test startsWith
-        System.out.println("Prefix 'ca': " + trie.startsWith("ca")); // true
-        System.out.println("Prefix 'cb': " + trie.startsWith("cb")); // false
+        int charIndex = word.charAt(index) - 'a';
+        if (deleteHelper(node.children[charIndex], word, index + 1)) {
+            node.children[charIndex] = null;
+            return !node.isEndOfWord && hasNoChildren(node);
+        }
 
-        // Test edge cases
-        System.out.println("Search empty: " + trie.search("")); // false
-        System.out.println("Prefix empty: " + trie.startsWith("")); // true
+        return false;
+    }
+
+    /**
+     * Checks if node has no children.
+     */
+    private boolean hasNoChildren(TrieNode node) {
+        for (TrieNode child : node.children) {
+            if (child != null) {
+                return false;
+            }
+        }
+        return true;
     }
 }

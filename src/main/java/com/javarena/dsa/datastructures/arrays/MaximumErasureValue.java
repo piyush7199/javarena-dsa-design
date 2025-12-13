@@ -3,27 +3,26 @@ package com.javarena.dsa.datastructures.arrays;
 import java.util.HashSet;
 import java.util.Set;
 
+/**
+ * Maximum Erasure Value
+ *
+ * <p><b>Problem Statement:</b><br>
+ * Find the maximum possible sum of a subarray that contains only unique elements.
+ *
+ * <p><b>Intuition & Approach:</b><br>
+ * - Use sliding window with two pointers (i, j)
+ * - Use HashSet to track elements in current window
+ * - Expand window: If nums[j] not in set, add it, update sum, move j forward
+ * - Shrink window: If nums[j] is duplicate, remove nums[i] from set, update sum, move i forward
+ * - Track maximum sum found during expansion
+ * - This ensures we only consider subarrays with unique elements
+ *
+ * <p><b>Time Complexity:</b> O(N) - Each element added/removed from set at most once
+ * <br><b>Space Complexity:</b> O(N) - HashSet storing current window elements
+ */
 public class MaximumErasureValue {
     /**
-     * Finds the maximum possible sum of a subarray that contains only unique elements.
-     *
-     * <p><b>Simple Intuition:</b></p>
-     * We want the largest sum of any subarray (contiguous part of the array)
-     * where no number repeats. So, as soon as we see a duplicate, we shrink
-     * the window from the left to remove it.
-     *
-     * <p><b>Approach:</b></p>
-     * - Use the sliding window technique with two pointers (i and j).
-     * - Use a HashSet to keep track of which numbers are in the current window.
-     * - If `nums[j]` is not in the set, add it and move `j` forward.
-     * - If it is a duplicate, remove `nums[i]` from the set and move `i` forward to shrink the window.
-     * - Keep updating the sum and track the maximum found so far.
-     *
-     * @param nums An array of integers.
-     * @return The maximum sum of any subarray with all unique elements.
-     *
-     * <p><b>Time Complexity:</b> O(n) – Each element is added and removed from the set at most once.</p>
-     * <p><b>Space Complexity:</b> O(n) – For the HashSet storing current subarray elements.</p>
+     * Finds maximum sum of subarray with unique elements.
      */
     public int maximumUniqueSubarray(int[] nums) {
         int n = nums.length;

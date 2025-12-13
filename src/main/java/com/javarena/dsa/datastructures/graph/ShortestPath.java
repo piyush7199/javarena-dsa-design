@@ -2,7 +2,37 @@ package com.javarena.dsa.datastructures.graph;
 
 import java.util.*;
 
+/**
+ * Shortest Path Algorithms
+ *
+ * <p><b>Problem Statement:</b><br>
+ * Find shortest paths in graphs: unweighted graphs (BFS), DAGs (topological sort + relaxation),
+ * and weighted graphs with negative edges (Bellman-Ford).
+ *
+ * <p><b>Intuition & Approach:</b><br>
+ * Three approaches for different graph types:
+ * 
+ * 1. Unweighted Graph - BFS:
+ *    - First visit is shortest path
+ *    - Level-order traversal with distance tracking
+ * 
+ * 2. DAG - Topological Sort + Relaxation:
+ *    - Process nodes in topological order
+ *    - Relax edges in order (no cycles)
+ * 
+ * 3. Negative Weights - Bellman-Ford:
+ *    - Relax all edges V-1 times
+ *    - Detects negative cycles
+ * 
+ * Choose based on graph properties.
+ *
+ * <p><b>Time Complexity:</b> O(V+E) for BFS/DAG, O(V×E) for Bellman-Ford
+ * <br><b>Space Complexity:</b> O(V) for distance arrays
+ */
 public class ShortestPath {
+    /**
+     * Pair class for (node, distance) tuples.
+     */
     static class Pair {
         int first;
         int sec;
@@ -14,15 +44,7 @@ public class ShortestPath {
     }
 
     /**
-     * Computes the shortest path from a source node to all other nodes in an unweighted undirected graph.
-     * <p>
-     * Intuition:
-     * - Since all edges have equal weight (unweighted), we can use Breadth-First Search (BFS).
-     * - The first time we reach a node will always be through the shortest path.
-     * - We use a queue to perform level-wise traversal and maintain visited states and distance.
-     * <p>
-     * Time Complexity: O(V + E), where V = number of vertices and E = number of edges
-     * Space Complexity: O(V) for visited array and distance array
+     * Shortest path in unweighted graph using BFS.
      */
     public int[] shortestPath(ArrayList<ArrayList<Integer>> adj, int src) {
         // code here

@@ -1,36 +1,30 @@
 package com.javarena.dsa.datastructures.string;
 
 /**
- * This class provides two methods to count the total number of palindromic substrings
- * in a given string: an optimized center-expansion approach and a brute-force approach.
+ * Palindromic Substrings
+ *
+ * <p><b>Problem Statement:</b><br>
+ * Count number of palindromic substrings in given string.
+ * Every character counts as palindrome of length 1.
+ *
+ * <p><b>Intuition & Approach:</b><br>
+ * Center expansion technique:
+ * - Palindrome mirrors around center
+ * - Two types: odd length (single char center), even length (between chars)
+ * - For each possible center, expand outward
+ * - Count valid palindromes while characters match
+ * 
+ * Two approaches:
+ * 1. Optimized O(N²): Expand from each center
+ * 2. Brute force O(N³): Check every substring
+ *
+ * <p><b>Time Complexity:</b> O(N²) for optimized, O(N³) for brute force
+ * <br><b>Space Complexity:</b> O(1) - No extra space
  */
 public class PalindromicSubstrings {
 
     /**
-     * Optimized method to count palindromic substrings using the center expansion technique.
-     *
-     * <p><b>Intuition:</b>
-     * A palindrome mirrors around its center.
-     * There are two types of centers:
-     * - Odd length palindromes (center at a single character)
-     * - Even length palindromes (center between two characters)
-     * <p>
-     * We expand around every possible center and count valid palindromes.
-     *
-     * <p><b>Approach:</b>
-     * 1. Iterate over each character to consider it as the middle of an odd-length palindrome.
-     * 2. Expand outward while characters on both sides are equal.
-     * 3. Repeat the same for even-length palindromes by considering the gap between two characters as the center.
-     * 4. Count each valid palindrome found.
-     *
-     * <p><b>Time Complexity:</b> O(n²) —
-     * For each of the n centers, in the worst case, we expand O(n) times.
-     *
-     * <p><b>Space Complexity:</b> O(1) —
-     * No extra space is used apart from variables.
-     *
-     * @param s the input string
-     * @return the total number of palindromic substrings
+     * Optimized center expansion approach.
      */
     public int countSubstrings(String s) {
         int n = s.length();

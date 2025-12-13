@@ -3,38 +3,31 @@ package com.javarena.dsa.datastructures.stackAndQueue;
 import java.util.HashMap;
 import java.util.PriorityQueue;
 
+/**
+ * Task Scheduler
+ *
+ * <p><b>Problem Statement:</b><br>
+ * Given tasks array and cooldown interval n, find minimum time to complete all tasks.
+ * Same task cannot run again within n intervals.
+ *
+ * <p><b>Intuition & Approach:</b><br>
+ * Greedy with max-heap:
+ * - Always execute most frequent task first
+ * - Process tasks in cycles of (n+1) length
+ * - In each cycle: execute up to (n+1) different tasks
+ * - If fewer tasks available, CPU idles
+ * - Use max-heap to track task frequencies
+ * - After cycle, add back tasks with remaining count
+ * 
+ * Key: Maximize task execution, minimize idle time.
+ *
+ * <p><b>Time Complexity:</b> O(T × log K) - T tasks, K unique types
+ * <br><b>Space Complexity:</b> O(K) - Frequency map + heap
+ */
 public class TaskScheduler {
-    /**
-     * Solution to the Task Scheduler problem.
-     *
-     * <p>Intuition:
-     * We are given a list of tasks (represented as characters) and a cooldown interval 'n'.
-     * The same task cannot be executed again until after 'n' units of time.
-     * To minimize total time, we should:
-     *  1. Always execute the task with the highest remaining frequency first.
-     *  2. Fill idle slots with other tasks if possible.
-     *  3. If no other tasks are available, the CPU stays idle.
-     *
-     * <p>Approach:
-     *  1. Count the frequency of each task using a HashMap.
-     *  2. Use a max-heap (PriorityQueue) to always pick the most frequent task first.
-     *  3. For each cycle of size (n + 1), schedule up to (n + 1) tasks:
-     *      - Decrease their frequency by 1.
-     *      - If a task still has remaining instances, put it into a temporary queue.
-     *  4. After processing one cycle, push tasks from the temporary queue back into the max-heap.
-     *  5. Repeat until all tasks are completed.
-     *
-     * <p>Time Complexity: O(T * log K)
-     *  - T = total number of tasks
-     *  - K = number of unique tasks
-     *  - Each task insertion and removal from the priority queue takes O(log K).
-     *
-     * <p>Space Complexity: O(K)
-     *  - Storing task frequencies and priority queues.
-     */
 
     /**
-     * Helper class to store a task and its remaining count.
+     * Pair stores task and remaining count.
      */
     static class Pair {
         char ch;

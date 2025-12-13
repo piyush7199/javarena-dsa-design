@@ -6,11 +6,26 @@ import java.util.Map;
 import java.util.Random;
 
 /**
- * RandomizedSet is a data structure that allows insertion, deletion, and fetching
- * a random element—all in average constant time O(1).
- * <p>
- * Internally, it uses an ArrayList to store values and a HashMap to store
- * value-to-index mappings. This allows efficient random access and updates.
+ * Insert Delete GetRandom O(1)
+ *
+ * <p><b>Problem Statement:</b><br>
+ * Design data structure supporting insert, delete, and getRandom operations in O(1) average time.
+ * Each element should have equal probability of being returned by getRandom.
+ *
+ * <p><b>Intuition & Approach:</b><br>
+ * Combine ArrayList and HashMap:
+ * - ArrayList: Stores elements (enables O(1) random access)
+ * - HashMap: Maps value → index in ArrayList (enables O(1) search/delete)
+ * 
+ * Operations:
+ * - Insert: Add to end of list, store index in map
+ * - Delete: Swap with last element, remove last, update map
+ * - GetRandom: Generate random index, return list[index]
+ * 
+ * Swap-with-last trick maintains O(1) deletion.
+ *
+ * <p><b>Time Complexity:</b> O(1) average for all operations
+ * <br><b>Space Complexity:</b> O(N) - ArrayList + HashMap
  */
 public class RandomizedSet {
     private ArrayList<Integer> list; // Stores the elements

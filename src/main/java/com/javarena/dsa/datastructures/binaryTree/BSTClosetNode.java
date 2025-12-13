@@ -3,41 +3,34 @@ package com.javarena.dsa.datastructures.binaryTree;
 import java.util.ArrayList;
 import java.util.List;
 
+/**
+ * Closest Nodes in BST
+ *
+ * <p><b>Problem Statement:</b><br>
+ * For each query value, find the closest floor (largest ≤ query) and ceiling (smallest ≥ query) in BST.
+ *
+ * <p><b>Intuition & Approach:</b><br>
+ * Two approaches:
+ * 
+ * Approach 1 - Direct BST Search: O(K × log N)
+ * - For each query, traverse BST to find floor and ceiling
+ * - Use BST property to navigate left/right
+ * - Degrades to O(K × H) for skewed trees
+ * 
+ * Approach 2 - Inorder + Binary Search: O(N + K log N) (Implemented)
+ * - Perform inorder traversal to get sorted list O(N)
+ * - For each query, binary search on sorted list O(log N)
+ * - Find floor: greatest element ≤ query (right pointer after search)
+ * - Find ceiling: smallest element ≥ query (left pointer after search)
+ * - Better for multiple queries
+ *
+ * <p><b>Time Complexity:</b> O(N + K log N) where N = nodes, K = queries
+ * <br><b>Space Complexity:</b> O(N) for inorder list
+ */
 public class BSTClosetNode {
 
     /**
-     * 1. Approach 1
-     * <p>
-     * For each query, we perform a floor and a ceiling search on the BST using binary-like logic.
-     * <p>
-     * Although the search per query is O(log n) on average, for k queries it becomes O(k * log n) for each of floor and ceil. So total is O(2 * k * log n).
-     * <p>
-     * Optimization: If floor equals the query, no need to compute the ceiling again.
-     * <p>
-     * But in the worst case (if tree is skewed), complexity degrades to O(k * h), where h is the height.
-     * 2. Approach 2
-     * <p>
-     * First perform an inorder traversal of the BST to get a sorted list of all node values in O(n).
-     * <p>
-     * Then, for each query, perform a binary search on this sorted list to find:
-     * <p>
-     * Floor → greatest element ≤ query
-     * <p>
-     * Ceil → smallest element ≥ query
-     * <p>
-     * Per query binary search is O(log n), so total time complexity:
-     * O(n + k * log n), where:
-     * <p>
-     * n = number of nodes in BST
-     * <p>
-     * k = number of queries
-     * Time Complexity:
-     * - Inorder traversal: O(n)
-     * - For k queries, each binary search: O(log n)
-     * - Total: O(n + k * log n)
-     * <p>
-     * Space Complexity:
-     * - O(n) for storing the inorder traversal
+     * Finds closest floor and ceiling for each query.
      */
     public List<List<Integer>> closestNodes(Node root, List<Integer> queries) {
         List<List<Integer>> res = new ArrayList<>();

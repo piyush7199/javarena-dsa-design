@@ -1,15 +1,30 @@
 package com.javarena.dsa.datastructures.linkedList;
 
+/**
+ * LinkedList Operations Collection
+ *
+ * <p><b>Problem Statement:</b><br>
+ * Collection of common linked list operations: delete middle, sort list, reverse,
+ * find middle, detect cycle, merge sorted lists, add two numbers, partition list.
+ *
+ * <p><b>Intuition & Approach:</b><br>
+ * Core techniques:
+ * 
+ * 1. Two-pointer (fast/slow): Find middle, detect cycle
+ * 2. Merge sort: Sort linked list in O(N log N)
+ * 3. Dummy node: Simplify edge cases
+ * 4. Three pointers: Reverse operations
+ * 5. Carry management: Add two numbers
+ * 
+ * Most operations use O(1) space (except recursion stack).
+ *
+ * <p><b>Time Complexity:</b> O(N) for most, O(N log N) for sort
+ * <br><b>Space Complexity:</b> O(1) to O(log N) depending on operation
+ */
 public class OperationsOnLL {
 
     /**
-     * Delete Middle Node of a Linked List
-     * <p>
-     * Intuition:
-     * Use slow and fast pointers to find the middle. Then remove the middle node by linking its previous node to the next node.
-     * <p>
-     * Time Complexity: O(n)
-     * Space Complexity: O(1)
+     * Deletes middle node using two-pointer technique.
      */
     public ListNode deleteMiddle(ListNode head) {
         if (head == null || head.next == null) return null;

@@ -1,44 +1,26 @@
 package com.javarena.dsa.datastructures.arrays;
 
+/**
+ * Maximum Unique Subarray Sum
+ *
+ * <p><b>Problem Statement:</b><br>
+ * Calculate the maximum possible sum by including only distinct positive elements from the array.
+ * If all elements are negative, return the maximum (least negative) number.
+ *
+ * <p><b>Intuition & Approach:</b><br>
+ * - Only consider positive numbers (negatives reduce sum)
+ * - Use frequency array of size 101 (values 0-100) to mark distinct positives
+ * - Track if all numbers are negative and keep max element
+ * - If all negative, return max element
+ * - Otherwise, sum all distinct positive numbers using presence array
+ * - This ensures we count each positive value only once
+ *
+ * <p><b>Time Complexity:</b> O(N) - Single pass + fixed 101 iterations = O(N)
+ * <br><b>Space Complexity:</b> O(1) - Fixed size array of 101 elements
+ */
 public class MaxUniqueSubArray {
     /**
-     * Calculates the maximum possible sum from the given integer array `nums` by
-     * including only the distinct positive elements. If all elements are negative,
-     * it returns the maximum (least negative) number in the array.
-     *
-     * <p><b>Intuition:</b></p>
-     * <ul>
-     *   <li>We only want to consider positive numbers because negative numbers would reduce the sum.</li>
-     *   <li>To avoid duplicates, we use a fixed-size boolean-like array `arr` of size 101
-     *       (because values range from 0 to 100) to mark the presence of each positive number.</li>
-     *   <li>If all numbers are negative, the best we can do is return the maximum among them.</li>
-     * </ul>
-     *
-     * <p><b>Steps:</b></p>
-     * <ol>
-     *   <li>Traverse the array once to:
-     *       <ul>
-     *         <li>Mark the presence of positive numbers.</li>
-     *         <li>Track whether all numbers are negative.</li>
-     *         <li>Keep track of the maximum number.</li>
-     *       </ul>
-     *   </li>
-     *   <li>If all numbers are negative, return the maximum number.</li>
-     *   <li>Otherwise, sum all distinct positive numbers using the presence array.</li>
-     * </ol>
-     *
-     * <p><b>Time Complexity:</b> O(n)</p>
-     * <ul>
-     *   <li>We iterate over the array `nums` once — O(n)</li>
-     *   <li>We iterate over the fixed-size array `arr` of size 101 — O(101) = O(1)</li>
-     *   <li>Total: O(n)</li>
-     * </ul>
-     *
-     * <p><b>Space Complexity:</b> O(1)</p>
-     * <ul>
-     *   <li>The extra space used is a fixed-size array of 101 elements, which is constant space.</li>
-     *   <li>No space usage depends on the input size `n`.</li>
-     * </ul>
+     * Calculates maximum sum from distinct positive elements.
      */
     public int maxSum(int[] nums) {
         int[] arr = new int[101]; // to mark presence of numbers from 0 to 100

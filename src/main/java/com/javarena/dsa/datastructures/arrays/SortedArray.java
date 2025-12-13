@@ -4,23 +4,32 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
+/**
+ * Sorted Array Problems Collection
+ *
+ * <p><b>Problem Statement:</b><br>
+ * Collection of common problems on sorted arrays including merge intervals, sorted squares, bitonic point,
+ * two sum, three sum, closest 3-sum, and rotation check.
+ *
+ * <p><b>Intuition & Approach:</b><br>
+ * Sorted arrays enable efficient algorithms:
+ * - Two pointers for finding pairs/triplets
+ * - Binary search for finding peaks/targets
+ * - Merging by comparing adjacent elements
+ * - Detecting rotation by counting discontinuities
+ * 
+ * Common patterns:
+ * - Sort first if not sorted (O(N log N))
+ * - Use two/three pointers to explore combinations
+ * - Binary search for O(log N) lookups
+ *
+ * <p><b>Time Complexity:</b> Varies by problem (O(N) to O(N²))
+ * <br><b>Space Complexity:</b> Varies by problem (O(1) to O(N))
+ */
 public class SortedArray {
 
     /**
-     * Problem
-     * <p>
-     * Given an array of intervals where intervals[i] = [starti, endi], merge all overlapping intervals, and return an array of the non-overlapping intervals that cover all the intervals in the input.
-     * <p>
-     * Intuition
-     * <p></p>
-     * We are given a list of intervals. If any intervals overlap, we want to merge them into one.
-     * Sorting by start time allows us to scan through and merge overlapping intervals on the go.
-     * <p>
-     * Complexity
-     * <p>
-     * Time complexity:{@code O(nlogn)} (for sorting)
-     * <p></p>
-     * Space complexity:{@code O(n)} (for storing merged intervals)
+     * Merge Intervals - Merges overlapping intervals.
      */
     public static int[][] merge(int[][] intervals) {
         Arrays.sort(intervals, (a, b) -> a[0] - b[0]);

@@ -21,22 +21,26 @@ class Node {
 }
 
 /**
- * Least Recently Used (LRU) Cache implementation.
- * <p>
- * Intuition:
- * - We use a Doubly Linked List to maintain the usage order (most recent at the front).
- * - A HashMap gives O(1) access to nodes by key.
- * - When accessing a key (get/put), we move the node to the front (most recently used).
- * - If capacity is exceeded, we remove the least recently used node from the tail.
- * <p>
- * Time Complexity:
- * - get(): O(1)
- * - put(): O(1)
- * <p>
- * Space Complexity: O(capacity)
- * - For the HashMap and Doubly Linked List nodes
- * <p>
- * 💼 Asked In: Amazon, Google, Microsoft, Facebook, Netflix, Adobe
+ * LRU Cache (Least Recently Used)
+ *
+ * <p><b>Problem Statement:</b><br>
+ * Design and implement LRU cache supporting get and put in O(1) time.
+ * When cache reaches capacity, invalidate least recently used item.
+ *
+ * <p><b>Intuition & Approach:</b><br>
+ * Doubly Linked List + HashMap:
+ * - Doubly Linked List: Maintains usage order (most recent at head, LRU at tail)
+ * - HashMap: Provides O(1) access to nodes by key
+ * 
+ * Operations:
+ * - get: Access node, move to front (most recently used)
+ * - put: Insert/update node at front, evict tail if capacity exceeded
+ * - Eviction: Remove tail node (LRU)
+ * 
+ * Dummy head/tail nodes simplify edge cases.
+ *
+ * <p><b>Time Complexity:</b> O(1) for both get and put
+ * <br><b>Space Complexity:</b> O(capacity) - HashMap + DLL nodes
  */
 public class LRUCache {
 

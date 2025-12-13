@@ -1,17 +1,28 @@
 package com.javarena.dsa.datastructures.string;
 
+/**
+ * Longest Common Prefix
+ *
+ * <p><b>Problem Statement:</b><br>
+ * Find longest common prefix string amongst array of strings.
+ * Return empty string if no common prefix.
+ *
+ * <p><b>Intuition & Approach:</b><br>
+ * Character-by-character comparison:
+ * - Find length of shortest string (max possible prefix)
+ * - For each position i from 0 to min length:
+ *   - Compare character at position i across all strings
+ *   - If all match: add to prefix
+ *   - If mismatch: return current prefix
+ * - Continue until mismatch or end of shortest string
+ *
+ * <p><b>Time Complexity:</b> O(S) - S = sum of all characters, worst case compare all
+ * <br><b>Space Complexity:</b> O(1) - Excluding output
+ */
 public class LongestCommonPrefix {
 
     /**
-     * Finds the longest common prefix string amongst an array of strings.
-     *
-     * <p>The method compares characters in each string one-by-one from left to right.
-     * It stops when a mismatch is found or the shortest string ends.
-     * <p>
-     * Time Complexity: O(S), where S is the total number of characters across all strings.
-     * In the worst case, we compare every character of every string until a mismatch or end.
-     * <p>
-     * Space Complexity: O(1), excluding the output. The only additional space used is for a few variables and the StringBuilder.
+     * Finds longest common prefix.
      */
     public String longestCommonPrefix(String[] strs) {
         int n = strs[0].length();

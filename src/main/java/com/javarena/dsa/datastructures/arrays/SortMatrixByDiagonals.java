@@ -2,26 +2,28 @@ package com.javarena.dsa.datastructures.arrays;
 
 import java.util.Arrays;
 
+/**
+ * Sort Matrix Diagonally
+ *
+ * <p><b>Problem Statement:</b><br>
+ * Sort all diagonals of a matrix independently. Each diagonal runs from top-left to bottom-right direction.
+ *
+ * <p><b>Intuition & Approach:</b><br>
+ * - Process diagonals starting from first column (left edge)
+ * - Process diagonals starting from first row (top edge, except corner)
+ * - For each diagonal:
+ *   1. Extract elements into temporary array
+ *   2. Sort the array
+ *   3. Place sorted elements back along diagonal
+ * - Diagonals move from (i,j) to (i+k, j+k) direction
+ * - Total (m + n - 1) diagonals to process
+ *
+ * <p><b>Time Complexity:</b> O(M × N × log(min(M,N))) - Sort each diagonal
+ * <br><b>Space Complexity:</b> O(min(M,N)) - Temporary array for diagonal
+ */
 public class SortMatrixByDiagonals {
     /**
-     * Sorts all diagonals of the given square matrix.
-     *
-     * <p>
-     * - Diagonals starting from the first column (left edge) are sorted in
-     * descending order.
-     * - Diagonals starting from the first row (top edge, except the first element)
-     * are sorted in ascending order.
-     * </p>
-     *
-     * <p>
-     * <b>Time Complexity:</b> O(m * n * log(min(m, n)))
-     * - Each diagonal (up to m+n diagonals) of length ≤ min(m, n) is sorted.
-     * - Sorting each diagonal costs O(k log k).
-     * </p>
-     *
-     * <b>Space Complexity:</b> O(min(m, n))
-     * - Temporary array used to store each diagonal.
-     * </p>
+     * Sorts all matrix diagonals independently.
      */
     public int[][] sortMatrix(int[][] grid) {
 

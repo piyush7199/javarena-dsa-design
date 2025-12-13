@@ -1,30 +1,27 @@
 package com.javarena.dsa.datastructures.arrays;
 
+/**
+ * Integer to Roman
+ *
+ * <p><b>Problem Statement:</b><br>
+ * Convert an integer to its Roman numeral representation using symbols I, V, X, L, C, D, M.
+ * Roman numerals include subtractive cases like IV (4), IX (9), XL (40), XC (90), CD (400), CM (900).
+ *
+ * <p><b>Intuition & Approach:</b><br>
+ * - Create arrays of values and corresponding symbols in descending order
+ * - Include both standard (M=1000, D=500) and subtractive pairs (CM=900, CD=400)
+ * - Greedily subtract largest possible value from num
+ * - Append corresponding symbol to result
+ * - Repeat until num becomes 0
+ * - This ensures we build the shortest valid Roman numeral
+ *
+ * <p><b>Time Complexity:</b> O(1) - Fixed 13 values, bounded iterations
+ * <br><b>Space Complexity:</b> O(1) - Fixed size arrays and string builder
+ */
 public class IntegerToRoman {
 
     /**
-     * Converts an integer to its Roman numeral representation.
-     *
-     * <p>Roman numerals are based on seven symbols:
-     * <pre>
-     * Symbol    Value
-     *   I         1
-     *   V         5
-     *   X         10
-     *   L         50
-     *   C         100
-     *   D         500
-     *   M         1000
-     * </pre>
-     * This method subtracts the largest possible values successively
-     * from the given integer while appending the corresponding Roman symbols.
-     * <p>
-     * Time Complexity: O(1)
-     * The number of iterations is bounded by the number of Roman numeral values (13),
-     * which does not change based on the input size.
-     * <p>
-     * Space Complexity: O(1)
-     * The space used is constant (string builder and fixed arrays).
+     * Converts integer to Roman numeral.
      */
     public String intToRoman(int num) {
         int[] values = {1000, 900, 500, 400, 100, 90, 50, 40, 10, 9, 5, 4, 1};

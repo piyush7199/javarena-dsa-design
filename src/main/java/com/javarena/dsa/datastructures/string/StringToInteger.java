@@ -1,33 +1,29 @@
 package com.javarena.dsa.datastructures.string;
 
+/**
+ * String to Integer (atoi)
+ *
+ * <p><b>Problem Statement:</b><br>
+ * Convert string to 32-bit signed integer. Handle whitespace, signs, overflow.
+ * Stop parsing on first non-digit character.
+ *
+ * <p><b>Intuition & Approach:</b><br>
+ * Simulate C/C++ atoi function:
+ * 1. Skip leading whitespaces
+ * 2. Handle optional '+' or '-' sign
+ * 3. Process digit characters sequentially
+ * 4. Check overflow before each multiplication/addition
+ * 5. Clamp to [Integer.MIN_VALUE, Integer.MAX_VALUE]
+ * 6. Stop on first non-digit
+ * 
+ * Overflow check: if result > MAX/10 or (result == MAX/10 && digit > 7)
+ *
+ * <p><b>Time Complexity:</b> O(N) - Single pass through string
+ * <br><b>Space Complexity:</b> O(1) - Constant space
+ */
 public class StringToInteger {
     /**
-     * Converts a string to a 32-bit signed integer (similar to C/C++'s atoi function).
-     *
-     * <p>This function handles the following:
-     * <ul>
-     *   <li>Ignores leading whitespace characters</li>
-     *   <li>Handles optional '+' or '-' sign before the digits</li>
-     *   <li>Parses digit characters and stops on encountering any non-digit character</li>
-     *   <li>Clamps the result to {@link Integer#MAX_VALUE} or {@link Integer#MIN_VALUE} in case of overflow</li>
-     * </ul>
-     *
-     * <p><b>Intuition:</b><br>
-     * 1. Skip all leading whitespaces.<br>
-     * 2. Handle optional sign.<br>
-     * 3. Process each digit character and build the integer result.<br>
-     * 4. Before each update, check for potential overflow and return clamped values accordingly.<br>
-     * 5. Multiply the final result by the sign.
-     *
-     * <p><b>Edge Cases Handled:</b>
-     * <ul>
-     *   <li>Strings with only whitespace</li>
-     *   <li>Overflow/underflow beyond 32-bit range</li>
-     *   <li>Strings with non-digit characters after initial digits</li>
-     * </ul>
-     *
-     * <p><b>Time Complexity:</b> O(n), where n is the length of the input string (we may scan all characters).<br>
-     * <b>Space Complexity:</b> O(1), since we use only constant extra space.
+     * Converts string to integer with overflow handling.
      */
     public int myAtoi(String s) {
         int sign = 1, res = 0, idx = 0;

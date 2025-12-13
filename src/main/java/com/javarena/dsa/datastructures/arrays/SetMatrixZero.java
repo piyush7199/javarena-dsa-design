@@ -1,38 +1,29 @@
 package com.javarena.dsa.datastructures.arrays;
 
+/**
+ * Set Matrix Zeroes
+ *
+ * <p><b>Problem Statement:</b><br>
+ * If an element in an m x n matrix is 0, set its entire row and column to 0. Do it in-place.
+ *
+ * <p><b>Intuition & Approach:</b><br>
+ * Cannot modify while scanning (causes false positives). Use two-pass approach:
+ * 
+ * 1. First Pass - Mark:
+ *    - Create row[n] and col[m] arrays as markers
+ *    - If matrix[i][j] == 0, mark row[i] = -1 and col[j] = -1
+ * 
+ * 2. Second Pass - Set:
+ *    - If row[i] == -1 OR col[j] == -1, set matrix[i][j] = 0
+ * 
+ * Alternative O(1) space: Use first row/column as markers
+ *
+ * <p><b>Time Complexity:</b> O(N × M) - Two passes through matrix
+ * <br><b>Space Complexity:</b> O(N + M) - Two marker arrays
+ */
 public class SetMatrixZero {
     /**
-     * Sets entire rows and columns to zero in a given matrix if any element in them is zero.
-     *
-     * <p><b>Intuition:</b>
-     * The problem is: if an element at position (i, j) is zero, then the entire row `i` and
-     * the entire column `j` should be set to zero. To avoid modifying the matrix while scanning
-     * (which would cause false positives), we first store which rows and columns need to be
-     * zeroed, and then update the matrix in a second pass.
-     *
-     * <p><b>Approach:</b>
-     * 1. Create two arrays: `row[]` of size `n` (number of rows) and `col[]` of size `m`
-     * (number of columns). These act as markers.
-     * 2. First pass:
-     * - Iterate through the matrix.
-     * - If `matrix[i][j] == 0`, mark `row[i] = -1` and `col[j] = -1`.
-     * 3. Second pass:
-     * - Iterate through the matrix again.
-     * - If the current cell's row or column is marked (-1), set that cell to zero.
-     *
-     * <p><b>Time Complexity:</b> O(n * m)
-     * <ul>
-     *   <li>We scan the matrix twice: once for marking and once for setting values.</li>
-     *   <li>Both passes are O(n * m), so total time complexity is O(n * m).</li>
-     * </ul>
-     *
-     * <p><b>Space Complexity:</b> O(n + m)
-     * <ul>
-     *   <li>We use two additional arrays: one of length `n` for rows and one of length `m` for columns.</li>
-     *   <li>No extra space proportional to n*m is used.</li>
-     * </ul>
-     *
-     * @param matrix The input 2D array of integers. Modified in-place.
+     * Sets entire rows and columns to zero if any element is zero.
      */
     public void setZeroes(int[][] matrix) {
         int n = matrix.length;

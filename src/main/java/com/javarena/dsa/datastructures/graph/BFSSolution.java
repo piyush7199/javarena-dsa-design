@@ -5,20 +5,32 @@ import java.util.LinkedList;
 import java.util.List;
 import java.util.Queue;
 
+/**
+ * BFS-Based Graph Solutions Collection
+ *
+ * <p><b>Problem Statement:</b><br>
+ * Collection of graph problems solved using Breadth-First Search (BFS): provinces, rotting oranges,
+ * flood fill, cycle detection, topological sort (Kahn's algorithm), and distance matrix.
+ *
+ * <p><b>Intuition & Approach:</b><br>
+ * BFS explores graph level by level using queue:
+ * - Connected Components: Count BFS initiations from unvisited nodes
+ * - Multi-source BFS: Start from multiple sources simultaneously (oranges, 0s in matrix)
+ * - Cycle Detection: Track parent, if visited node isn't parent → cycle
+ * - Topological Sort: Use in-degree, process nodes with in-degree 0
+ * - Flood Fill: BFS from starting pixel, recolor connected same-color pixels
+ * 
+ * BFS guarantees shortest path in unweighted graphs.
+ *
+ * <p><b>Time Complexity:</b> O(V + E) for most problems
+ * <br><b>Space Complexity:</b> O(V + E) for adjacency list + queue
+ */
 public class BFSSolution {
 
     private static final GraphAlgorithms graphAlgorithms = new GraphAlgorithms();
 
     /**
-     * "Number of Provinces" problem using BFS traversal.
-     *
-     * <p><b>Intuition:</b>
-     * The problem reduces to counting the number of connected components in an undirected graph.
-     * Each node is a city, and a connection implies an edge. We perform BFS from unvisited nodes,
-     * counting how many times we initiate BFS — that’s the number of provinces.
-     *
-     * <p><b>Time Complexity:</b> O(V + E), where V is number of cities and E is number of connections.</p>
-     * <p><b>Space Complexity:</b> O(V + E) for adjacency list and visited array.</p>
+     * Counts number of provinces (connected components) using BFS.
      */
 
     public static int findCircleNum(int[][] isConnected) {

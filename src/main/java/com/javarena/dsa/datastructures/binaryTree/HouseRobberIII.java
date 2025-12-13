@@ -1,37 +1,33 @@
 package com.javarena.dsa.datastructures.binaryTree;
 
+/**
+ * House Robber III
+ *
+ * <p><b>Problem Statement:</b><br>
+ * Houses are arranged in binary tree. Each house has money. Adjacent houses (parent-child) cannot be robbed 
+ * on same night. Find maximum money that can be robbed.
+ *
+ * <p><b>Intuition & Approach:</b><br>
+ * Classic tree DP problem:
+ * - For each node, two choices:
+ *   1. Rob this node → cannot rob children
+ *   2. Skip this node → free to rob children
+ * 
+ * - Use DFS to compute two values at each node:
+ *   - res[0] = max money if node NOT robbed
+ *   - res[1] = max money if node IS robbed
+ * 
+ * - If rob current: value + left[0] + right[0]
+ * - If skip current: max(left[0], left[1]) + max(right[0], right[1])
+ * - Answer = max(rob root, skip root)
+ *
+ * <p><b>Time Complexity:</b> O(N) - Visit each node once
+ * <br><b>Space Complexity:</b> O(H) - Recursion stack where H = height
+ */
 public class HouseRobberIII {
 
     /**
-     * You are a thief planning to rob houses along a binary tree structure.
-     * Each house has a certain amount of money. Adjacent houses (parent-child)
-     * cannot be robbed on the same night.
-     * <p>
-     * -------------------------
-     * Intuition:
-     * - For each node (house), we have two choices:
-     * 1. Rob this node → then we cannot rob its children.
-     * 2. Skip this node → then we are free to rob its children.
-     * <p>
-     * - This is a classic tree DP problem solved using DFS.
-     * - At each node, we compute two values:
-     * [0] = maximum money if this node is NOT robbed.
-     * [1] = maximum money if this node IS robbed.
-     * <p>
-     * Approach:
-     * 1. Perform DFS from the root.
-     * 2. For each node:
-     * - If we rob it: include its value + "not robbed" values of left and right children.
-     * - If we skip it: take max of robbed or not robbed from both children.
-     * 3. The answer is the maximum of robbing or not robbing the root.
-     * <p>
-     * Time Complexity:  O(n)
-     * - Each node is visited once.
-     * <p>
-     * Space Complexity: O(h)
-     * - h = height of tree (recursion stack).
-     * - In worst case (skewed tree), O(n).
-     * - In balanced tree, O(log n).
+     * Finds maximum money that can be robbed.
      */
     public int rob(Node root) {
         int[] res = dfs(root);

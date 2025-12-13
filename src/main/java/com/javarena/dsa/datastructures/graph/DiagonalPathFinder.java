@@ -1,47 +1,38 @@
 package com.javarena.dsa.datastructures.graph;
 
 /**
- * Problem Intuition:
- * ------------------
- * Given a binary grid, we want to find the maximum length of a diagonal path
- * that starts from a cell with value 1. The path can move in diagonal directions
- * (↖, ↗, ↘, ↙), and it must follow an alternating sequence of values {1 → 2 → 0 → 2 → 0 ...}.
- * Additionally, at most one direction change (turn) is allowed along the path.
- * <p>
- * Approach:
- * ---------
- * 1. Iterate through every cell in the grid.
- * 2. If the current cell has value 1, it is a potential starting point.
- * 3. For each of the four diagonal directions, run a DFS to:
- * - Continue straight if the next cell matches the required alternating target value.
- * - Optionally turn once (change direction) and continue.
- * 4. Track the maximum diagonal length found across all starting cells.
- * <p>
- * Time Complexity:
- * ----------------
- * - For each cell (m * n), we may explore in 4 directions using DFS.
- * - DFS in the worst case can traverse O(min(m, n)) cells along a diagonal.
- * - Hence, worst case: O(m * n * min(m, n) * 4).
- * <p>
- * Space Complexity:
- * -----------------
- * - O(min(m, n)) recursion depth (DFS stack).
- * - O(1) additional memory for variables.
- * <p>
- * Overall: O(m * n * min(m, n)) time, O(min(m, n)) space.
+ * Maximum Length of Valid Diagonal Path
+ *
+ * <p><b>Problem Statement:</b><br>
+ * Find maximum length diagonal path in binary grid starting from cell with value 1.
+ * Path moves diagonally (↖, ↗, ↘, ↙) following alternating sequence {1 → 2 → 0 → 2 → 0 ...}.
+ * At most one direction change allowed.
+ *
+ * <p><b>Intuition & Approach:</b><br>
+ * DFS exploration with constraints:
+ * - Start from every cell with value 1
+ * - Explore 4 diagonal directions
+ * - Must alternate between values: 1 → 2 → 0 → 2 → 0...
+ * - Track if already turned (max 1 turn allowed)
+ * - For each cell, try:
+ *   1. Continue straight in same direction
+ *   2. Turn once (if not already turned)
+ * - Return maximum path length found
+ * 
+ * Key: DFS with state (position, direction, target, turned).
+ *
+ * <p><b>Time Complexity:</b> O(M×N×min(M,N)) - Each cell, 4 directions, diagonal length
+ * <br><b>Space Complexity:</b> O(min(M,N)) - Recursion depth
  */
 public class DiagonalPathFinder {
 
-    // Directions representing 4 diagonals: ↖, ↗, ↘, ↙
+    // Directions: ↖, ↗, ↘, ↙
     private final int[][] dirs = new int[][]{{-1, 1}, {1, 1}, {1, -1}, {-1, -1}};
     private int[][] grid;
     private int m, n;
 
     /**
-     * Finds the maximum length of a valid diagonal path in the grid.
-     *
-     * @param grid input binary grid
-     * @return maximum length of valid diagonal path
+     * Finds maximum length of valid diagonal path.
      */
     public int lenOfVDiagonal(int[][] grid) {
         this.m = grid.length;
@@ -50,13 +41,11 @@ public class DiagonalPathFinder {
 
         int res = 0;
 
-        // Iterate over every cell as a possible starting point
+        // Try every cell as starting point
         for (int i = 0; i < m; i++) {
             for (int j = 0; j < n; j++) {
-                // Only start if cell value is 1
                 if (grid[i][j] == 1) {
                     res = Math.max(res, 1);
-
                     // Explore all 4 diagonal directions
                     for (int d = 0; d < 4; d++) {
                         res = Math.max(res, dfs(i, j, d, 2, false));
@@ -68,34 +57,33 @@ public class DiagonalPathFinder {
     }
 
     /**
-     * Depth-first search to explore diagonal paths.
+     * DFS to explore diagonal paths with alternating values.
      *
-     * @param i      current row
-     * @param j      current column
-     * @param dir    current direction index (0-3)
-     * @param target expected value in the next cell (alternates between 2 and 0)
-     * @param turned whether we have already turned once
-     * @return maximum diagonal path length from this point
+     * @param i current row
+     * @param j current column
+     * @param dir current direction (0-3)
+     * @param target expected next value (alternates 2 ↔ 0)
+     * @param turned whether already turned once
+     * @return maximum path length from this point
      */
     private int dfs(int i, int j, int dir, int target, boolean turned) {
         int x = i + dirs[dir][0];
         int y = j + dirs[dir][1];
 
-        // Out of bounds or mismatch in target value
+        // Out of bounds or wrong value
         if (x < 0 || x >= m || y < 0 || y >= n || grid[x][y] != target) {
             return 1;
         }
 
-        // Continue straight in the same direction
+        // Continue straight
         int straight = 1 + dfs(x, y, dir, target == 2 ? 0 : 2, turned);
 
-        // Optionally take a turn (only once allowed)
+        // Try turning (if not already turned)
         int turn = 0;
         if (!turned) {
             turn = 1 + dfs(x, y, (dir + 1) % 4, target == 2 ? 0 : 2, true);
         }
 
-        // Return the max of straight path vs turned path
         return Math.max(straight, turn);
     }
 }

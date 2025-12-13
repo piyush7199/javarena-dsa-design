@@ -4,49 +4,28 @@ import java.util.Arrays;
 import java.util.PriorityQueue;
 
 /**
- * Problem:
- * 3341. Find Minimum Time to Reach Last Room I
- * <p>
- * You are given an n x m grid where moveTime[i][j] represents the earliest time
- * when the room (i, j) opens. You start from (0, 0) at time t = 0.
- * Moving between adjacent rooms (up, down, left, right) takes exactly 1 second.
- * You cannot enter a room before it has opened.
- * Return the minimum time needed to reach the bottom-right room (n-1, m-1).
- * <p>
- * --------------------------------------------------------------------
- * Intuition:
- * This is essentially a shortest path problem on a weighted grid.
- * - Each move takes 1 second.
- * - A room (i, j) cannot be entered until time >= moveTime[i][j].
- * So, when moving into a neighbor cell (nx, ny), the time is:
- * max(currentTime, moveTime[nx][ny]) + 1
- * → currentTime: time when we're at current cell
- * → moveTime[nx][ny]: minimum opening time of the neighbor
- * → +1: movement cost
- * <p>
- * This structure exactly matches Dijkstra’s algorithm:
- * - Nodes = grid cells.
- * - Edge weight = 1 second (plus waiting if door not open).
- * - Goal = shortest time to reach (n-1, m-1).
- * <p>
- * --------------------------------------------------------------------
- * Approach:
- * - Use Dijkstra’s algorithm with a min-heap (PriorityQueue).
- * - Maintain a dist[][] array for minimum arrival time at each cell.
- * - Start from (0,0) with time = 0.
- * - Pop the cell with smallest time from PQ, mark visited.
- * - For each neighbor (nx, ny):
- * newTime = max(dist[x][y], moveTime[nx][ny]) + 1
- * If newTime < dist[nx][ny], update and push into PQ.
- * - Stop when we reach (n-1, m-1).
- * <p>
- * --------------------------------------------------------------------
- * Time Complexity:
- * - O(n*m log(n*m)), since each of the n*m cells can enter PQ once
- * and each PQ operation costs O(log(n*m)).
- * <p>
- * Space Complexity:
- * - O(n*m) for distance array, visited array, and PQ.
+ * Find Minimum Time to Reach Last Room I
+ *
+ * <p><b>Problem Statement:</b><br>
+ * Given n×m grid where moveTime[i][j] = earliest time room (i,j) opens.
+ * Start at (0,0) at time 0. Moving between adjacent rooms takes 1 second.
+ * Cannot enter room before it opens. Find minimum time to reach (n-1, m-1).
+ *
+ * <p><b>Intuition & Approach:</b><br>
+ * Shortest path on weighted grid using Dijkstra:
+ * - Each move costs 1 second
+ * - Must wait if room not open yet
+ * - Time to enter neighbor (nx, ny) = max(currentTime, moveTime[nx][ny]) + 1
+ * 
+ * Algorithm:
+ * - Use min-heap to process cells by earliest arrival time
+ * - Track minimum time to reach each cell
+ * - For each neighbor: calculate arrival time considering wait
+ * - Update if found shorter path
+ * - Return time when reaching (n-1, m-1)
+ *
+ * <p><b>Time Complexity:</b> O(N×M log(N×M)) - Each cell enters PQ once
+ * <br><b>Space Complexity:</b> O(N×M) - Distance array + visited + PQ
  */
 public class FindMinimumTimeToReachLastRoomI {
     private static final int INF = 0x3f3f3f3f;

@@ -1,33 +1,31 @@
 package com.javarena.dsa.datastructures.arrays;
 
+/**
+ * Rotate Image (Matrix) 90 Degrees
+ *
+ * <p><b>Problem Statement:</b><br>
+ * Rotate an n x n matrix 90 degrees clockwise in-place.
+ *
+ * <p><b>Intuition & Approach:</b><br>
+ * Use two-step transformation:
+ * 1. Transpose the matrix: Swap matrix[i][j] with matrix[j][i] for all i > j
+ *    - This converts rows to columns
+ * 2. Reverse each row: Swap elements from both ends toward center
+ *    - This completes the 90° clockwise rotation
+ * 
+ * Example: [[1,2,3],[4,5,6],[7,8,9]]
+ * - After transpose: [[1,4,7],[2,5,8],[3,6,9]]
+ * - After row reverse: [[7,4,1],[8,5,2],[9,6,3]] ✓
+ * 
+ * In-place transformation without extra space
+ *
+ * <p><b>Time Complexity:</b> O(N²) - Visit each element constant times
+ * <br><b>Space Complexity:</b> O(1) - In-place rotation
+ */
 public class RotateImage {
 
     /**
-     * Rotates a given {@code n x n} matrix 90 degrees clockwise in-place.
-     *
-     * <p><b>Intuition:</b>
-     * A 90° clockwise rotation can be achieved without using extra space by
-     * first transposing the matrix (swapping rows and columns) and then reversing each row.
-     * Transposition moves elements to their rotated positions along the diagonal,
-     * and row reversal finalizes the clockwise rotation.
-     *
-     * <p><b>Approach:</b>
-     * <ol>
-     *   <li>Transpose the matrix:
-     *       <ul>
-     *           <li>Swap {@code matrix[i][j]} with {@code matrix[j][i]} for all {@code i > j}.</li>
-     *       </ul>
-     *   </li>
-     *   <li>Reverse each row:
-     *       <ul>
-     *           <li>Swap elements from both ends of the row, moving toward the center.</li>
-     *       </ul>
-     *   </li>
-     *   <li>This transforms the matrix in-place into its 90° rotated form.</li>
-     * </ol>
-     *
-     * <p><b>Time Complexity:</b> O(n²) — Each element is visited a constant number of times.
-     * <b>Space Complexity:</b> O(1) — Rotation is done in-place without extra storage.
+     * Rotates matrix 90 degrees clockwise in-place.
      */
     public void rotate(int[][] matrix) {
         int n = matrix.length;

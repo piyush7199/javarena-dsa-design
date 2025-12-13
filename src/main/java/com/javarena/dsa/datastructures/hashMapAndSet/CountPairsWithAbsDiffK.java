@@ -3,27 +3,32 @@ package com.javarena.dsa.datastructures.hashMapAndSet;
 import java.util.HashMap;
 import java.util.Map;
 
+/**
+ * Count Pairs With Absolute Difference K
+ *
+ * <p><b>Problem Statement:</b><br>
+ * Count number of pairs (i, j) where i < j and |nums[i] - nums[j]| = k.
+ *
+ * <p><b>Intuition & Approach:</b><br>
+ * Frequency-based counting optimization:
+ * - For each number num, valid pairs formed with:
+ *   - (num - k) if it appeared before
+ *   - (num + k) if it appeared before
+ * - Use frequency array/map to track previous occurrences
+ * - Add count of (num - k) and (num + k) to result
+ * - Increment frequency of current number
+ * 
+ * Three approaches:
+ * 1. Brute force O(N²): Check all pairs
+ * 2. Array O(N): For bounded range [1, 100]
+ * 3. HashMap O(N): For unbounded range
+ *
+ * <p><b>Time Complexity:</b> O(N) for optimized, O(N²) for brute force
+ * <br><b>Space Complexity:</b> O(1) for array (fixed size), O(N) for HashMap
+ */
 public class CountPairsWithAbsDiffK {
     /**
-     * Problem: Count number of pairs (i, j) where |nums[i] - nums[j]| = k
-     * <p>
-     * Intuition:
-     * - Instead of comparing every pair (brute force), we can use frequency counting.
-     * - For each number `num`, the pairs that contribute to the answer must involve:
-     * - (num - k) or (num + k)
-     * - If we already know how many times (num - k) or (num + k) appeared before,
-     * we can directly add those counts to our answer.
-     * <p>
-     * Approach:
-     * 1. Use a frequency array freq[101] (since 1 <= nums[i] <= 100).
-     * 2. For each num in nums:
-     * - Add freq[num - k] to count if valid.
-     * - Add freq[num + k] to count if valid.
-     * - Increment freq[num].
-     * 3. Return count.
-     * <p>
-     * Time Complexity: O(n) → single pass over nums.
-     * Space Complexity: O(1) → fixed array of size 101.
+     * Optimal approach using frequency array.
      */
     public int countKDifferenceOptimal(int[] nums, int k) {
         int[] freq = new int[101]; // problem constraint: nums[i] in [1,100]

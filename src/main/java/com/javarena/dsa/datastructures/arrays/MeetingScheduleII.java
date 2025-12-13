@@ -3,7 +3,29 @@ package com.javarena.dsa.datastructures.arrays;
 import java.util.List;
 import java.util.PriorityQueue;
 
+/**
+ * Meeting Schedule II
+ *
+ * <p><b>Problem Statement:</b><br>
+ * Find the minimum number of meeting rooms required to schedule all meetings without overlap.
+ *
+ * <p><b>Intuition & Approach:</b><br>
+ * - Sort meetings by start time to process in chronological order
+ * - Use min-heap to track end times of ongoing meetings
+ * - For each meeting:
+ *   - If earliest ending meeting finishes before current starts, reuse that room (poll from heap)
+ *   - Add current meeting's end time to heap (allocate room)
+ * - Heap size represents number of simultaneously active meetings
+ * - Final heap size = minimum rooms needed
+ * - Greedy approach: always reuse earliest available room
+ *
+ * <p><b>Time Complexity:</b> O(N log N) - Sorting + N heap operations
+ * <br><b>Space Complexity:</b> O(N) - Heap storing end times
+ */
 public class MeetingScheduleII {
+    /**
+     * Interval class to represent meeting times.
+     */
     static class Interval {
         public int start, end;
 
@@ -14,23 +36,7 @@ public class MeetingScheduleII {
     }
 
     /**
-     * The goal is to find the minimum number of meeting rooms required to schedule all meetings without overlap.
-     * <p>
-     * Intuition:
-     * - For each meeting, we need to check if a room is available (i.e., if the meeting's start time is after or equal to the
-     * end time of an ongoing meeting).
-     * - A naive approach would be to compare each meeting with all others to find a suitable room, which would lead to
-     * O(n^2) time complexity.
-     * <p>
-     * Optimized Approach:
-     * - Sort all meetings by their start time.
-     * - Use a min-heap (priority queue) to keep track of the end times of ongoing meetings.
-     * - If the earliest ending meeting finishes before the current meeting starts, we can reuse that room.
-     * - Otherwise, we need a new room.
-     * - The number of elements in the priority queue at the end represents the minimum number of rooms required.
-     * <p>
-     * Time Complexity: O(n log n), due to sorting and heap operations.
-     * Space Complexity: O(n), for storing end times in the heap.
+     * Finds minimum number of meeting rooms required.
      */
     public int minMeetingRooms(List<Interval> intervals) {
         if (intervals == null || intervals.isEmpty()) return 0;

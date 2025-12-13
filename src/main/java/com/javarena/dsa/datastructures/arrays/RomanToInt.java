@@ -2,20 +2,30 @@ package com.javarena.dsa.datastructures.arrays;
 
 import java.util.Map;
 
+/**
+ * Roman to Integer
+ *
+ * <p><b>Problem Statement:</b><br>
+ * Convert a Roman numeral string to its integer value. Roman numerals use symbols I, V, X, L, C, D, M
+ * with subtractive notation (IV=4, IX=9, XL=40, XC=90, CD=400, CM=900).
+ *
+ * <p><b>Intuition & Approach:</b><br>
+ * - Create map of Roman symbols to values
+ * - Traverse string left to right
+ * - For each character, compare with next:
+ *   - If current < next: subtract current (subtractive case like IV)
+ *   - Otherwise: add current (normal case)
+ * - Example: "XIV" = X(10) + I(-1) + V(5) = 14
+ * - Example: "IX" = I(-1) + X(10) = 9
+ * - This handles all subtractive pairs automatically
+ *
+ * <p><b>Time Complexity:</b> O(N) where N = length of string
+ * <br><b>Space Complexity:</b> O(1) - Fixed size map
+ */
 public class RomanToInt {
 
     /**
-     * Converts a Roman numeral string to its integer value.
-     *
-     * <p>This method traverses the input string and uses subtraction logic:
-     * if a smaller-value symbol precedes a larger-value one (like "IV" or "IX"),
-     * we subtract the smaller value; otherwise, we add it.</p>
-     * <p>
-     * Time Complexity: O(n), where n is the length of the string.
-     * Each character is processed once.
-     * <p>
-     * Space Complexity: O(1)
-     * Only a constant-size map and a few integer variables are used.
+     * Converts Roman numeral to integer.
      */
     public int romanToInt(String s) {
         Map<Character, Integer> map = Map.of(

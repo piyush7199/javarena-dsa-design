@@ -3,7 +3,29 @@ package com.javarena.dsa.datastructures.binaryTree;
 import java.util.LinkedList;
 import java.util.Queue;
 
+/**
+ * Cousins in Binary Tree
+ *
+ * <p><b>Problem Statement:</b><br>
+ * Two nodes are cousins if they are at the same depth but have different parents.
+ * Given values x and y, determine if they are cousins.
+ *
+ * <p><b>Intuition & Approach:</b><br>
+ * Use level-order traversal (BFS):
+ * - Process tree level by level
+ * - For each level, track if x and y are found
+ * - Check if they are siblings (same parent): return false
+ * - If both found at same level and not siblings: return true
+ * - If only one found at level: return false (different depths)
+ * - Continue until both found or tree exhausted
+ *
+ * <p><b>Time Complexity:</b> O(N) - Visit all nodes in worst case
+ * <br><b>Space Complexity:</b> O(W) - Queue stores width of tree (max nodes at any level)
+ */
 public class CousinsInBinaryTree {
+    /**
+     * Checks if two nodes are cousins.
+     */
     public boolean isCousins(Node root, int x, int y) {
         if (root == null) return false;
 
@@ -15,18 +37,18 @@ public class CousinsInBinaryTree {
             boolean foundX = false;
             boolean foundY = false;
 
-            for (int i = 0; i < size; i++) { // FIXED i++
+            for (int i = 0; i < size; i++) {
                 Node node = queue.poll();
 
-                // check if x or y found at this level
+                // Check if x or y found at this level
                 if (node.val == x) foundX = true;
                 if (node.val == y) foundY = true;
 
-                // ❗ check if they are siblings
+                // Check if they are siblings (same parent)
                 if (node.left != null && node.right != null) {
                     if ((node.left.val == x && node.right.val == y) ||
                             (node.left.val == y && node.right.val == x)) {
-                        return false; // same parent → not cousins
+                        return false; // Same parent → not cousins
                     }
                 }
 

@@ -3,18 +3,35 @@ package com.javarena.dsa.datastructures.binaryTree;
 import java.util.HashMap;
 import java.util.Map;
 
+/**
+ * Construct Binary Tree from Traversals
+ *
+ * <p><b>Problem Statement:</b><br>
+ * Reconstruct binary tree from:
+ * 1. Preorder and Inorder traversals
+ * 2. Inorder and Postorder traversals
+ *
+ * <p><b>Intuition & Approach:</b><br>
+ * From Preorder + Inorder:
+ * - Preorder gives root first
+ * - Find root in inorder to separate left/right subtrees
+ * - Recursively build left (preStart+1 to preStart+leftSize)
+ * - Recursively build right (preStart+leftSize+1 to preEnd)
+ * 
+ * From Postorder + Inorder:
+ * - Postorder gives root last
+ * - Find root in inorder to separate left/right subtrees
+ * - Build right first, then left (postorder processes right before left)
+ * 
+ * Use HashMap for O(1) inorder index lookup
+ *
+ * <p><b>Time Complexity:</b> O(N) - Each node visited once with O(1) lookup
+ * <br><b>Space Complexity:</b> O(N) - Recursion stack + HashMap
+ */
 public class ConstructTree {
 
     /**
-     * Reconstructs a binary tree from preorder and inorder traversal.
-     * <p>
-     * Intuition:
-     * - Preorder gives root first; find its index in inorder to separate left and right subtrees.
-     * - Recursively build left and right subtrees.
-     * <p>
-     * <p>
-     * Time Complexity: O(n) — each node is visited once, and hashmap lookup is O(1).
-     * Space Complexity: O(n) — recursion stack + hashmap.
+     * Builds tree from preorder and inorder traversals.
      */
     public Node buildTreeFromPreOrderAndInorder(int[] preorder, int[] inorder) {
         Map<Integer, Integer> inMap = new HashMap<>();
@@ -38,15 +55,7 @@ public class ConstructTree {
     }
 
     /**
-     * Reconstructs a binary tree from inorder and postorder traversal.
-     * <p>
-     * Intuition:
-     * - Postorder gives the root at the end.
-     * - Use the inorder index to divide left and right subtrees.
-     * <p>
-     * <p>
-     * Time Complexity: O(n) — each node is processed once with O(1) map lookup.
-     * Space Complexity: O(n) — recursion stack and map.
+     * Builds tree from inorder and postorder traversals.
      */
     public Node buildTree(int[] inorder, int[] postorder) {
         HashMap<Integer, Integer> map = new HashMap<>();

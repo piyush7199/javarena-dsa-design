@@ -2,25 +2,33 @@ package com.javarena.dsa.datastructures.string;
 
 import java.util.HashMap;
 
+/**
+ * Reformat Date
+ *
+ * <p><b>Problem Statement:</b><br>
+ * Convert date from format "20th Oct 2052" to ISO format "YYYY-MM-DD".
+ *
+ * <p><b>Intuition & Approach:</b><br>
+ * Two approaches for date parsing:
+ * 
+ * 1. Manual parsing:
+ *    - Extract year (last 4 characters)
+ *    - Find month by comparing with array of month names
+ *    - Extract day (skip suffix like "th", "st", "nd", "rd")
+ *    - Pad with zeros if needed
+ * 
+ * 2. Split and HashMap:
+ *    - Split by spaces: [day, month, year]
+ *    - Use HashMap for month name → number mapping
+ *    - Remove suffixes from day
+ *    - Assemble result
+ *
+ * <p><b>Time Complexity:</b> O(1) - Fixed format, constant lookups
+ * <br><b>Space Complexity:</b> O(1) - Fixed size month array/map
+ */
 public class FormateDate {
     /**
-     * Reformat a date string from the format like "20th Oct 2052"
-     * into the ISO format "YYYY-MM-DD".
-     * <p>
-     * Intuition:
-     * - Extract the year directly (last 4 characters).
-     * - Identify the month abbreviation ("Jan", "Feb", etc.) and map it to its numeric form.
-     * - Extract the day while handling suffixes like "th", "st", "nd", "rd".
-     * - Pad both month and day with leading zeros if necessary.
-     * <p>
-     * Approach:
-     * 1. Get year from last 4 chars.
-     * 2. Extract month substring and compare against known month list.
-     * 3. Extract day (first 1–2 characters before suffix).
-     * 4. Assemble final string in "YYYY-MM-DD".
-     * <p>
-     * Time Complexity: O(1) → The string has fixed structure and constant month lookups.
-     * Space Complexity: O(1) → Uses a few helper variables and a small array of months.
+     * Manual parsing approach.
      */
     public String reformatDate(String date) {
         int n = date.length();

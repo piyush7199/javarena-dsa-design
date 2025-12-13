@@ -2,16 +2,37 @@ package com.javarena.dsa.datastructures.stackAndQueue;
 
 import java.util.*;
 
+/**
+ * Stack and Queue Utility Solutions
+ *
+ * <p><b>Problem Statement:</b><br>
+ * Collection of problems using stacks and queues: generate binary numbers,
+ * reverse first K elements, sort stack recursively, and more.
+ *
+ * <p><b>Intuition & Approach:</b><br>
+ * Various techniques:
+ * 
+ * 1. Generate Binary (Queue/BFS):
+ *    - Start with "1", append "0" and "1" to generate next
+ *    - Level-order generation ensures sorted order
+ * 
+ * 2. Reverse First K (Stack):
+ *    - Pop first K to stack, push back (reverses)
+ *    - Append remaining queue elements
+ * 
+ * 3. Sort Stack (Recursion):
+ *    - Pop all elements recursively
+ *    - Insert each in sorted position on way back
+ * 
+ * All demonstrate stack/queue data structure applications.
+ *
+ * <p><b>Time Complexity:</b> Varies by problem - O(N) to O(N²)
+ * <br><b>Space Complexity:</b> O(N) for stack/queue storage
+ */
 public class Solution {
 
     /**
-     * Generates binary numbers from 1 to n in string format using BFS.
-     *
-     * <p><b>Intuition:</b> Use a queue to generate numbers by appending "0" and "1" to previously generated binary strings.
-     * This ensures that the numbers are generated in level-order (i.e., lexicographically increasing in binary form).
-     *
-     * <p><b>Time Complexity:</b> O(n) — One operation per binary number.
-     * <p><b>Space Complexity:</b> O(n) — For the queue and output list.
+     * Generates binary numbers from 1 to n using queue.
      */
     public static ArrayList<String> generate(int n) {
         ArrayList<String> ans = new ArrayList<>();

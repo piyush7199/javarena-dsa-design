@@ -2,18 +2,31 @@ package com.javarena.dsa.datastructures.graph;
 
 import java.util.*;
 
+/**
+ * DFS-Based Graph Solutions Collection
+ *
+ * <p><b>Problem Statement:</b><br>
+ * Collection of graph problems solved using Depth-First Search (DFS): provinces, flood fill,
+ * cycle detection, topological sort, and bipartite check.
+ *
+ * <p><b>Intuition & Approach:</b><br>
+ * DFS explores graph deeply using recursion or stack:
+ * - Connected Components: Count DFS initiations from unvisited nodes
+ * - Flood Fill: Recursively recolor connected same-color pixels
+ * - Cycle Detection: Track parent, if visited node isn't parent → cycle
+ * - Topological Sort: Post-order DFS, reverse result
+ * - Bipartite: Color alternately (0/1), conflict → not bipartite
+ * 
+ * DFS is memory efficient for deep graphs, uses recursion stack.
+ *
+ * <p><b>Time Complexity:</b> O(V + E) for most problems
+ * <br><b>Space Complexity:</b> O(V + E) for adjacency list + recursion stack
+ */
 public class DFSSolution {
     private static final GraphAlgorithms graphAlgorithms = new GraphAlgorithms();
 
     /**
-     * "Number of Provinces" problem using DFS traversal.
-     *
-     * <p><b>Intuition:</b>
-     * We use DFS to explore all cities connected to a given city. For every new unvisited city,
-     * we initiate a DFS and count it as a new province.
-     *
-     * <p><b>Time Complexity:</b> O(V + E), where V is number of cities and E is number of connections.</p>
-     * <p><b>Space Complexity:</b> O(V + E) for adjacency list and visited array.</p>
+     * Counts number of provinces using DFS.
      */
     public static int findCircleNum(int[][] isConnected) {
         int V = isConnected.length;
